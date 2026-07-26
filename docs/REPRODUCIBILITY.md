@@ -17,6 +17,17 @@ versions, accelerator information, and CPU/GPU forward-backward smoke tests.
 It exits with a nonzero status if the installed version is not the expected
 release candidate or if any value or gradient is non-finite.
 
+For the `0.1.0rc1` release candidate, install runtime dependencies from PyPI
+and the package itself from TestPyPI:
+
+```bash
+python -m pip install torch numpy matplotlib mpmath
+python -m pip install --no-deps --index-url https://test.pypi.org/simple/ dfsc==0.1.0rc1
+```
+
+Keeping dependency installation on PyPI avoids resolving unrelated dependency
+packages from the TestPyPI index.
+
 ## Source-tree verification
 
 From a clean checkout of the matching tag:
@@ -46,4 +57,3 @@ developer environment and complete
 `reproduction/EXTERNAL_REPRODUCTION_REPORT.md`. A GitHub-hosted CI run
 demonstrates clean infrastructure execution; it is not labeled an independent
 human reproduction.
-

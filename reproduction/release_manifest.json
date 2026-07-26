@@ -6,7 +6,19 @@
     "dfsc-0.1.0rc1.tar.gz",
     "SHA256SUMS"
   ],
+  "testpypi": {
+    "project_url": "https://test.pypi.org/project/dfsc/0.1.0rc1/",
+    "workflow_run": "https://github.com/hzhooning-art/DFSC/actions/runs/30189367483",
+    "artifacts": {
+      "dfsc-0.1.0rc1-py3-none-any.whl": {
+        "sha256": "35c1a13d289197ff80a59de8cb93e88b711ea8b4391006b9976eb010a0085b8c"
+      },
+      "dfsc-0.1.0rc1.tar.gz": {
+        "sha256": "a5e2197714197039bf14a8c6291e6875a015805e6d94ed57fac4b5153f3ccd12"
+      }
+    }
+  },
   "verification_script": "reproduction/verify_install.py",
   "external_report_template": "reproduction/EXTERNAL_REPRODUCTION_REPORT.md",
-  "release_status": "candidate"
+  "release_status": "testpypi-published"
 }
