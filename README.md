@@ -1,5 +1,9 @@
 # dfsc
 
+[![PyPI](https://img.shields.io/pypi/v/dfsc.svg)](https://pypi.org/project/dfsc/)
+[![Documentation](https://img.shields.io/badge/docs-GitHub%20Pages-blue.svg)](https://hzhooning-art.github.io/DFSC/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21588833.svg)](https://doi.org/10.5281/zenodo.21588833)
+
 Research code for:
 
 **A differentiable fractional scientific-computing environment for Mittag-Leffler spectral learning**
