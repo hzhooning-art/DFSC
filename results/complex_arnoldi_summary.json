@@ -1,0 +1,16 @@
+{
+  "complex_scalar_max_absolute_error": 3.867952577557995e-15,
+  "complex_scalar_max_relative_error": 1.3883238206077224e-15,
+  "complex_scalar_all_converged": true,
+  "arnoldi_matrix_relative_error": 6.861377731825186e-17,
+  "arnoldi_alpha_gradient_relative_error": 3.516741232519331e-11,
+  "arnoldi_observed_reduced_radius": 0.27062750623211185,
+  "arnoldi_reduced_nonnormality": 0.15144541089816588,
+  "gpu": {
+    "available": true,
+    "device": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "relative_error_vs_cpu": 0.0,
+    "alpha_gradient_finite": true
+  },
+  "validated_scope": "complex scalar |z|<=4 and Arnoldi reduced radius <=4"
+}

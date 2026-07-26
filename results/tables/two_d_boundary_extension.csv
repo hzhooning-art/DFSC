@@ -1,0 +1,5 @@
+case,num_points,num_modes,finite_output,finite_alpha_grad,finite_beta_grad,output_shape
+neumann_2d,144,16,True,True,True,"(5, 144)"
+periodic_2d,144,25,True,True,True,"(5, 144)"
+mixed_dn_2d,144,16,True,True,True,"(5, 144)"
+mixed_nd_2d,144,16,True,True,True,"(5, 144)"

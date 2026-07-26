@@ -1,0 +1,27 @@
+{
+  "name": "Heated steam injection experimental temperature profiles",
+  "source_doi": "10.5281/zenodo.15064388",
+  "source_file": "2025_Garcia-Martinez_Summary_LabNumData.xlsx",
+  "source_md5": "d14aa1ee2a77890e75817ef0e185a363",
+  "license": "CC BY 4.0",
+  "creators": [
+    "Noe Garcia-Martinez",
+    "Tarsilo Girona",
+    "David Benavente"
+  ],
+  "experiments": 16,
+  "depth_coordinates_m": [
+    0.03,
+    0.06,
+    0.09,
+    0.12,
+    0.15,
+    0.18,
+    0.21,
+    0.24,
+    0.27,
+    0.3
+  ],
+  "rows": 32370,
+  "conversion": "Temperature_Profiles worksheet converted without interpolation or smoothing."
+}

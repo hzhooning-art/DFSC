@@ -1,0 +1,66 @@
+{
+  "scope": "diagnostic controls on the matched known-propagator task",
+  "fairness_boundary": "The sweep tests sensitivity to update count while holding architecture, optimizer, and data fixed; it is not an exhaustive hyperparameter search or a claim of general neural-operator superiority.",
+  "summary": [
+    {
+      "model": "FNO1D",
+      "budget": "1x",
+      "updates": 90,
+      "train_samples": 126,
+      "parameters": 79169,
+      "train_error_mean": 0.331206386819524,
+      "long_time_error_mean": 2.1490394670816944,
+      "long_time_error_std": 0.32376543167316635
+    },
+    {
+      "model": "FNO1D",
+      "budget": "2x",
+      "updates": 180,
+      "train_samples": 126,
+      "parameters": 79169,
+      "train_error_mean": 0.303148137575679,
+      "long_time_error_mean": 2.056039744740288,
+      "long_time_error_std": 0.3295873165582105
+    },
+    {
+      "model": "FNO1D",
+      "budget": "4x",
+      "updates": 360,
+      "train_samples": 126,
+      "parameters": 79169,
+      "train_error_mean": 0.15239828283445245,
+      "long_time_error_mean": 2.7598971691850367,
+      "long_time_error_std": 0.3586200618738045
+    },
+    {
+      "model": "DeepONet1D",
+      "budget": "1x",
+      "updates": 120,
+      "train_samples": 126,
+      "parameters": 35361,
+      "train_error_mean": 0.5372779997505678,
+      "long_time_error_mean": 1.5927144419796313,
+      "long_time_error_std": 0.05338613699876928
+    },
+    {
+      "model": "DeepONet1D",
+      "budget": "2x",
+      "updates": 240,
+      "train_samples": 126,
+      "parameters": 35361,
+      "train_error_mean": 0.40516858257368965,
+      "long_time_error_mean": 1.6094751331193091,
+      "long_time_error_std": 0.24509224295117327
+    },
+    {
+      "model": "DeepONet1D",
+      "budget": "4x",
+      "updates": 480,
+      "train_samples": 126,
+      "parameters": 35361,
+      "train_error_mean": 0.32450358473977875,
+      "long_time_error_mean": 1.5019778914367266,
+      "long_time_error_std": 0.2301403475534385
+    }
+  ]
+}

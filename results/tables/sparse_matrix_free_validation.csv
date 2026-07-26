@@ -1,0 +1,4 @@
+representation,relative_error_vs_full_eigh,elapsed_seconds,effective_dimension,finite
+dense,2.5463833275809517e-15,0.011548799928277731,64,True
+sparse,2.085518305910899e-15,0.013998100068420172,64,True
+matrix_free,2.085518305910899e-15,0.012234100024215877,64,True

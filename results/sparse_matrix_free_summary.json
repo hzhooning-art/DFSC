@@ -1,0 +1,19 @@
+{
+  "small_reference_size": 64,
+  "sparse_relative_error": 2.085518305910899e-15,
+  "matrix_free_relative_error": 2.085518305910899e-15,
+  "operator_parameter_gradient_finite": true,
+  "large_matrix_free_size": 4096,
+  "large_matrix_free_elapsed_seconds": 0.008138400036841631,
+  "large_matrix_free_finite": true,
+  "large_effective_krylov_dimension": 32,
+  "estimated_dense_storage_bytes": 134217728,
+  "estimated_krylov_basis_bytes": 1048576,
+  "estimated_storage_reduction_ratio": 128.0,
+  "gpu": {
+    "available": true,
+    "device": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "matrix_free_finite": true,
+    "alpha_gradient_finite": true
+  }
+}

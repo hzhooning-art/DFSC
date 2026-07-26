@@ -1,0 +1,15 @@
+{
+  "krylov_full_dimension_relative_error": 1.832321741106565e-15,
+  "krylov_alpha_gradient_relative_error": 1.9877889341609635e-16,
+  "krylov_convergence_rows": 4,
+  "semilinear_retcode": "success",
+  "semilinear_iterations": 3,
+  "semilinear_residual": 6.871440732251477e-11,
+  "semilinear_alpha_gradient_finite": true,
+  "semilinear_gamma_gradient_finite": true,
+  "gpu": {
+    "available": true,
+    "device": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "krylov_finite": true
+  }
+}

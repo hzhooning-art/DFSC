@@ -1,0 +1,14 @@
+{
+  "DeepONet_latent64_hidden96_long_time_error_mean": 1.7108346212074725,
+  "DeepONet_latent64_hidden96_long_time_error_std": 0.18934178234111296,
+  "DeepONet_latent64_hidden96_train_error_mean": 0.5285866875872504,
+  "FNO1D_width32_modes12_long_time_error_mean": 2.0982700898233455,
+  "FNO1D_width32_modes12_long_time_error_std": 0.3449030045458794,
+  "FNO1D_width32_modes12_train_error_mean": 0.32979549764032856,
+  "Hybrid_MLSL_residual_long_time_error_mean": 0.003261661631046369,
+  "Hybrid_MLSL_residual_long_time_error_std": 8.191407141688753e-05,
+  "Hybrid_MLSL_residual_train_error_mean": 0.00047316456328515884,
+  "MLSL_backbone_only_long_time_error_mean": 0.28171147341851704,
+  "MLSL_backbone_only_long_time_error_std": 0.0012174171688021976,
+  "MLSL_backbone_only_train_error_mean": 0.06584214592943477
+}

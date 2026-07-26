@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dfsc"
+version = "0.1.0rc1"
+description = "Differentiable Mittag-Leffler propagators for fractional scientific computing"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+  {name = "Ning Hu", email = "jluhooning@163.com"},
+  {name = "Haitao Duan", email = "duanhaitao@hdu.edu.cn"},
+]
+maintainers = [
+  {name = "Haitao Duan", email = "duanhaitao@hdu.edu.cn"},
+]
+dependencies = [
+  "torch",
+  "numpy",
+  "matplotlib",
+  "mpmath",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Scientific/Engineering :: Mathematics",
+]
+keywords = ["fractional calculus", "scientific machine learning", "Mittag-Leffler", "PyTorch", "inverse problems"]
+
+[project.urls]
+Homepage = "https://hzhooning-art.github.io/DFSC/"
+Documentation = "https://hzhooning-art.github.io/DFSC/"
+Repository = "https://github.com/hzhooning-art/DFSC"
+Issues = "https://github.com/hzhooning-art/DFSC/issues"
+
+[project.optional-dependencies]
+test = ["pytest"]
+docs = ["mkdocs", "mkdocstrings[python]"]
+benchmark = ["scipy>=1.10", "FDEint==0.1.1", "pycaputo==0.10.2", "pymittagleffler==0.2.1"]
+release = ["build>=1.2", "twine>=5.0"]
+
+[tool.setuptools]
+packages = ["dfsc"]

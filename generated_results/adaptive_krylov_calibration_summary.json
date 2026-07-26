@@ -1,0 +1,35 @@
+{
+  "device": "cuda",
+  "torch_version": "2.11.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "estimator_boundary": "successive Krylov disagreement is empirical and is not a rigorous error bound",
+  "summary": [
+    {
+      "requested_rtol": 0.001,
+      "runs": 10,
+      "convergence_rate": 1.0,
+      "selected_dimension_mean": 13.2,
+      "actual_error_mean": 6.1998726820131505e-06,
+      "actual_error_max": 1.3331407636838467e-05,
+      "fraction_actual_error_below_10x_rtol": 1.0
+    },
+    {
+      "requested_rtol": 1e-05,
+      "runs": 10,
+      "convergence_rate": 1.0,
+      "selected_dimension_mean": 20.8,
+      "actual_error_mean": 8.398551992676584e-07,
+      "actual_error_max": 3.1552387861183574e-06,
+      "fraction_actual_error_below_10x_rtol": 1.0
+    },
+    {
+      "requested_rtol": 1e-07,
+      "runs": 10,
+      "convergence_rate": 0.8,
+      "selected_dimension_mean": 41.6,
+      "actual_error_mean": 2.7419785817999316e-08,
+      "actual_error_max": 9.02466515215125e-08,
+      "fraction_actual_error_below_10x_rtol": 1.0
+    }
+  ]
+}

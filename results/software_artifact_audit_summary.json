@@ -1,0 +1,54 @@
+{
+  "total_checks": 38,
+  "passed_checks": 38,
+  "failed_checks": 0,
+  "pass_rate": 1.0,
+  "by_axis": {
+    "packaging": {
+      "passed": 6,
+      "total": 6
+    },
+    "documentation": {
+      "passed": 6,
+      "total": 6
+    },
+    "data_contract": {
+      "passed": 1,
+      "total": 1
+    },
+    "examples": {
+      "passed": 1,
+      "total": 1
+    },
+    "tests": {
+      "passed": 1,
+      "total": 1
+    },
+    "diagnostics": {
+      "passed": 1,
+      "total": 1
+    },
+    "dfsc_ecosystem": {
+      "passed": 14,
+      "total": 14
+    },
+    "api": {
+      "passed": 1,
+      "total": 1
+    },
+    "reproducibility": {
+      "passed": 3,
+      "total": 3
+    },
+    "results": {
+      "passed": 2,
+      "total": 2
+    },
+    "paper_assets": {
+      "passed": 2,
+      "total": 2
+    }
+  },
+  "status": "software-paper-core-ready",
+  "csv_path": "results/tables/software_artifact_audit.csv"
+}

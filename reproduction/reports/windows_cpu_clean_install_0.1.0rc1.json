@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "expected_dfsc_version": "0.1.0rc1",
+  "dfsc_version": "0.1.0rc1",
+  "python": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "torch_version": "2.13.0+cpu",
+  "cuda_available": false,
+  "cuda_version": null,
+  "gpu": null,
+  "smoke_tests": [
+    {
+      "device": "cpu",
+      "dtype": "float64",
+      "output_shape": [
+        5,
+        48
+      ],
+      "finite_output": true,
+      "finite_alpha_grad": true,
+      "finite_beta_grad": true,
+      "loss": 0.3933081333671576
+    }
+  ]
+}

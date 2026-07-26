@@ -1,0 +1,85 @@
+{
+  "gradient_scan": {
+    "alpha_probes": 185,
+    "work_budget_switches": 3,
+    "finite_gradient_rate": 1.0,
+    "convergence_rate": 1.0,
+    "max_objective_relative_error": 0.0,
+    "max_gradient_relative_error": 0.0,
+    "max_gradient_relative_error_at_switch": 0.0,
+    "max_gradient_relative_error_away_from_switch": 0.0,
+    "interpretation": "The selected evaluator is differentiable inside a fixed-budget region. Finite gradients and agreement with a richer truncation are empirical diagnostics, not a claim of differentiability across every budget-selection boundary."
+  },
+  "inverse_stability": {
+    "runs": 6,
+    "learning_rates": [
+      0.001,
+      0.005,
+      0.02
+    ],
+    "starts": [
+      0.56,
+      0.92
+    ],
+    "target_alpha": 0.77,
+    "successful_recoveries_at_1e-2": 2,
+    "max_final_alpha_absolute_error": 0.19476841296212521,
+    "all_losses_finite": true,
+    "runs_detail": [
+      {
+        "learning_rate": 0.001,
+        "start_alpha": 0.56,
+        "final_alpha": 0.5752315870378748,
+        "alpha_absolute_error": 0.19476841296212521,
+        "final_loss": 0.0011722849792028492,
+        "max_abs_raw_gradient": 0.0011049191113497775,
+        "distinct_work_budgets": 1
+      },
+      {
+        "learning_rate": 0.001,
+        "start_alpha": 0.92,
+        "final_alpha": 0.9031489489214035,
+        "alpha_absolute_error": 0.1331489489214035,
+        "final_loss": 0.000717439933481589,
+        "max_abs_raw_gradient": 0.0013328796781789263,
+        "distinct_work_budgets": 1
+      },
+      {
+        "learning_rate": 0.005,
+        "start_alpha": 0.56,
+        "final_alpha": 0.6498195947362496,
+        "alpha_absolute_error": 0.1201804052637504,
+        "final_loss": 0.0004728939273922852,
+        "max_abs_raw_gradient": 0.0011265014849904476,
+        "distinct_work_budgets": 2
+      },
+      {
+        "learning_rate": 0.005,
+        "start_alpha": 0.92,
+        "final_alpha": 0.8336232737107281,
+        "alpha_absolute_error": 0.06362327371072807,
+        "final_loss": 0.00015439058375314057,
+        "max_abs_raw_gradient": 0.0013328796781789263,
+        "distinct_work_budgets": 2
+      },
+      {
+        "learning_rate": 0.02,
+        "start_alpha": 0.56,
+        "final_alpha": 0.7703946757148243,
+        "alpha_absolute_error": 0.00039467571482432184,
+        "final_loss": 5.630432255813695e-09,
+        "max_abs_raw_gradient": 0.0011265018356293628,
+        "distinct_work_budgets": 3
+      },
+      {
+        "learning_rate": 0.02,
+        "start_alpha": 0.92,
+        "final_alpha": 0.7700631129821462,
+        "alpha_absolute_error": 6.311298214622951e-05,
+        "final_loss": 1.4393850225246371e-10,
+        "max_abs_raw_gradient": 0.0013328796781789263,
+        "distinct_work_budgets": 2
+      }
+    ]
+  }
+}

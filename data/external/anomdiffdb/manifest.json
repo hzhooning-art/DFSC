@@ -1,0 +1,17 @@
+{
+  "name": "anomdiffdb-750nm-h-actin",
+  "domain": "experimental single-particle anomalous diffusion",
+  "task": "effective-order inversion and held-out scattering-curve prediction",
+  "source": "https://github.com/AnomDiffDB/DB/blob/master/750nm_mesh_size.mat",
+  "license": "not stated on source page; do not redistribute without owner permission",
+  "citation": "Granik et al., Biophysical Journal 117, 185-192 (2019), doi:10.1016/j.bpj.2019.06.015",
+  "splits": "deterministic 70/30 trajectory-level split for seeds 0 through 4",
+  "tensors": {
+    "raw_mat": "750nm_mesh_size.mat"
+  },
+  "sha256": "fd11f82f60df8235f311f34940ac9fc9226348221ca17cf80a02c3436401d4cd",
+  "raw_variable": "tr",
+  "raw_columns": ["x", "y", "trajectory_id"],
+  "coordinate_unit": "source coordinate unit",
+  "time_unit": "frame"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "anomdiffdb-water-glycerol-brownian-beads",
+  "domain": "experimental single-particle diffusion",
+  "task": "held-out scattering-curve prediction in two empirical populations",
+  "source": "https://github.com/AnomDiffDB/DB/blob/master/brownian_beads.mat",
+  "license": "not stated on source page; do not redistribute without owner permission",
+  "citation": "Granik et al., Biophysical Journal 117, 185-192 (2019), doi:10.1016/j.bpj.2019.06.015",
+  "sha256": "1bc05922899172053126df80b28e43a645411d8b6919b1575a9a70ef4aa9d8e6",
+  "eligible_trajectories_length_gt_40": 660,
+  "population_definition": "deterministic two-means clustering of log median one-frame diffusivity",
+  "interpretation_boundary": "clusters are empirical conditions and not ground-truth bead labels"
+}

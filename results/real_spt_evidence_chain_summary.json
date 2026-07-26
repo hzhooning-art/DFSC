@@ -1,0 +1,81 @@
+{
+  "dataset": "750 nm H-actin mesh",
+  "source": "https://github.com/AnomDiffDB/DB",
+  "citation": "Granik et al., Biophysical Journal 117, 185-192 (2019), doi:10.1016/j.bpj.2019.06.015",
+  "num_trajectories": 3112,
+  "num_localizations": 426620,
+  "wave_number_inverse_source_units": 0.24084315975001644,
+  "trajectory_split": "70/30, seeds 0/1/2/3/4",
+  "training_lags_frames": [
+    1,
+    20
+  ],
+  "extrapolation_lags_frames": [
+    21,
+    40
+  ],
+  "best_scattering_model_by_late_error": "Direct MLSL inverse",
+  "best_scattering_late_error_mean": 0.03658025456286266,
+  "direct_mlsl_vs_stretched_late_error_reduction": 0.45742653697499036,
+  "hybrid_vs_pure_mlp_late_error_reduction": 0.7404400923809342,
+  "hybrid_improves_over_direct_mlsl": false,
+  "model_comparison": [
+    {
+      "model": "MSD power law",
+      "target": "MSD",
+      "seeds": 5,
+      "heldout_all_error_mean": 0.019060529185291816,
+      "heldout_all_error_std": 0.0138828468,
+      "late_lag_error_mean": 0.019649285320474493,
+      "late_lag_error_std": 0.015110083671832381,
+      "inferred_alpha_mean": 0.9113398134706614,
+      "parameter_count": 2
+    },
+    {
+      "model": "Stretched exponential",
+      "target": "scattering",
+      "seeds": 5,
+      "heldout_all_error_mean": 0.02385115058439425,
+      "heldout_all_error_std": 0.007402940971487937,
+      "late_lag_error_mean": 0.06741991095347122,
+      "late_lag_error_std": 0.027927396570254323,
+      "inferred_alpha_mean": 0.887156961137187,
+      "parameter_count": 2
+    },
+    {
+      "model": "Direct MLSL inverse",
+      "target": "scattering",
+      "seeds": 5,
+      "heldout_all_error_mean": 0.014126867575003333,
+      "heldout_all_error_std": 0.008032209506856324,
+      "late_lag_error_mean": 0.03658025456286266,
+      "late_lag_error_std": 0.018912550551470345,
+      "inferred_alpha_mean": 0.9134089458892772,
+      "parameter_count": 2
+    },
+    {
+      "model": "Pure MLP",
+      "target": "scattering",
+      "seeds": 5,
+      "heldout_all_error_mean": 0.053463493329676204,
+      "heldout_all_error_std": 0.017025279836908814,
+      "late_lag_error_mean": 0.16520424731123154,
+      "late_lag_error_std": 0.05552960655363654,
+      "inferred_alpha_mean": null,
+      "parameter_count": 1153
+    },
+    {
+      "model": "MLSL + residual MLP",
+      "target": "scattering",
+      "seeds": 5,
+      "heldout_all_error_mean": 0.01619395753293894,
+      "heldout_all_error_std": 0.0063417309153781624,
+      "late_lag_error_mean": 0.04288039917038054,
+      "late_lag_error_std": 0.01511308142547966,
+      "inferred_alpha_mean": 0.9028487792153612,
+      "parameter_count": 323
+    }
+  ],
+  "interpretation_boundary": "MLSL alpha is an effective model-conditional order; the source describes this condition as FBM.",
+  "redistribution_boundary": "source page does not state a dataset license; raw MAT is excluded from release artifacts"
+}

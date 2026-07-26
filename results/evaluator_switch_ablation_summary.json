@@ -1,0 +1,9 @@
+{
+  "switch_ablation_cases": 246,
+  "hard_max_adjacent_value_jump": 0.0026402036797890105,
+  "smooth_max_adjacent_value_jump": 0.0026402036797890105,
+  "value_jump_reduction_factor": 1.0,
+  "hard_max_adjacent_grad_jump": 0.03497950965182345,
+  "smooth_max_adjacent_grad_jump": 0.026560986271033066,
+  "grad_jump_reduction_factor": 1.316950707134376
+}

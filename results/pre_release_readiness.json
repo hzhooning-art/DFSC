@@ -1,0 +1,500 @@
+{
+  "scope": "pre-release internal readiness",
+  "score_percent": 100.0,
+  "passed": 23,
+  "total": 23,
+  "gate_threshold_percent": 95.0,
+  "gate_passed": true,
+  "checks": [
+    {
+      "name": "E_1(z) exponential identity",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "E_2(-x^2) cosine identity",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "E_1,1(z) exponential identity",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "alpha autograd finite-difference agreement",
+      "passed": true,
+      "details": {
+        "autograd": -0.16497084449865196,
+        "finite_difference": -0.16497084446287502,
+        "relative_disagreement": 2.168682416885906e-10
+      }
+    },
+    {
+      "name": "two-parameter alpha/beta gradients",
+      "passed": true,
+      "details": {
+        "alpha_gradient": 0.023553318029959885,
+        "beta_gradient": 0.756621611721276
+      }
+    },
+    {
+      "name": "strict reliability-domain guard",
+      "passed": true,
+      "details": {
+        "outside_domain_rejected": true
+      }
+    },
+    {
+      "name": "dfsc identity and version",
+      "passed": true,
+      "details": {
+        "version": "0.1.0rc1"
+      }
+    },
+    {
+      "name": "single distributed namespace",
+      "passed": true,
+      "details": {
+        "distributed_packages": [
+          "dfsc"
+        ],
+        "legacy_source_files": [],
+        "legacy_imports": []
+      }
+    },
+    {
+      "name": "public primitive entrypoints",
+      "passed": true,
+      "details": {
+        "entrypoints": [
+          "ForcedMittagLefflerSpectralLayer",
+          "MLSLConfig",
+          "MittagLefflerSpectralLayer",
+          "build_mlsl",
+          "mittag_leffler_e",
+          "mittag_leffler_e_ab_hybrid"
+        ]
+      }
+    },
+    {
+      "name": "solution reliability contract",
+      "passed": true,
+      "details": {
+        "algorithm": "mlsl-stable",
+        "problem_type": "FractionalSpectralProblem",
+        "retcode": "success",
+        "success": true,
+        "quality": "moderate",
+        "shape": [
+          3,
+          24
+        ],
+        "warnings": [],
+        "stats": {
+          "elapsed_seconds": 0.003673400031402707,
+          "device": "cpu",
+          "dtype": "torch.float64",
+          "direct_query": true
+        },
+        "reliability": {
+          "level": "moderate",
+          "trusted": true,
+          "within_validated_domain": true,
+          "finite": true,
+          "converged": true,
+          "gradient_reliability": "not-assessed",
+          "error_estimate_kind": "no-global-error-estimate",
+          "relative_error_estimate": null,
+          "rigorous_error_bound": false,
+          "messages": [
+            "no rigorous global solver error bound is available"
+          ],
+          "indicators": {}
+        }
+      }
+    },
+    {
+      "name": "unit-test gate",
+      "passed": true,
+      "details": {
+        "tests_run": 94,
+        "tests_passed": 94,
+        "failures": 0,
+        "errors": 0
+      }
+    },
+    {
+      "name": "software artifact audit",
+      "passed": true,
+      "details": {
+        "total_checks": 38,
+        "passed_checks": 38,
+        "failed_checks": 0,
+        "pass_rate": 1.0,
+        "by_axis": {
+          "packaging": {
+            "passed": 6,
+            "total": 6
+          },
+          "documentation": {
+            "passed": 6,
+            "total": 6
+          },
+          "data_contract": {
+            "passed": 1,
+            "total": 1
+          },
+          "examples": {
+            "passed": 1,
+            "total": 1
+          },
+          "tests": {
+            "passed": 1,
+            "total": 1
+          },
+          "diagnostics": {
+            "passed": 1,
+            "total": 1
+          },
+          "dfsc_ecosystem": {
+            "passed": 14,
+            "total": 14
+          },
+          "api": {
+            "passed": 1,
+            "total": 1
+          },
+          "reproducibility": {
+            "passed": 3,
+            "total": 3
+          },
+          "results": {
+            "passed": 2,
+            "total": 2
+          },
+          "paper_assets": {
+            "passed": 2,
+            "total": 2
+          }
+        },
+        "status": "software-paper-core-ready",
+        "csv_path": "results/tables/software_artifact_audit.csv"
+      }
+    },
+    {
+      "name": "maturity evidence gate",
+      "passed": true,
+      "details": {
+        "library": {
+          "library_name": "dfsc",
+          "python_package": "dfsc",
+          "compatibility_aliases": [],
+          "implemented_count": 22,
+          "experimental_count": 2,
+          "planned_count": 0,
+          "implemented_components": [
+            "Mittag-Leffler spectral layer",
+            "Forced Mittag-Leffler wrapper",
+            "Boundary spectral constructors",
+            "Operator spectral adapter",
+            "Generalized operator spectral adapter",
+            "Lanczos Mittag-Leffler action",
+            "Controlled complex Mittag-Leffler and Arnoldi action",
+            "Sparse and matrix-free operator contract",
+            "Problem-algorithm-solve interface",
+            "Diagnostic Mittag-Leffler evaluator",
+            "Numerical reliability contract",
+            "Automatic algorithm selection",
+            "Caputo L1 history fallback",
+            "FFT Caputo-L1 trajectory operator",
+            "Semilinear mild-form Picard solver",
+            "Hybrid residual workflow",
+            "Experimental relaxation hybrid",
+            "Inverse-order workflow",
+            "Applicability contract",
+            "Public benchmark manifest contract",
+            "Experimental SPT benchmark workflow",
+            "Domain application templates"
+          ],
+          "experimental_components": [
+            "Variable-order fractional operators",
+            "Distributed-order fractional operators"
+          ],
+          "planned_components": []
+        },
+        "installed_package_version": "0.1.0",
+        "maturity_checks": {
+          "runtime_smoke_tests": true,
+          "editable_package_install": true,
+          "software_artifact_audit": true,
+          "primitive_generality": true,
+          "boundary_generality": true,
+          "two_d_boundary_extension": true,
+          "semilinear_backbone": true,
+          "reaction_diffusion": true,
+          "eab_reference_accuracy": true,
+          "manufactured_forcing": true,
+          "gpu_validation": true,
+          "krylov_reference_and_gradient": true,
+          "semilinear_picard_and_gradients": true,
+          "sparse_matrix_free_reference": true,
+          "large_matrix_free_and_gpu": true,
+          "fft_history_reference_and_gradients": true,
+          "fft_history_convergence_and_gpu": true,
+          "complex_mittag_leffler_reference": true,
+          "arnoldi_reference_gradient_and_gpu": true,
+          "scoped_application_domain_validation": true,
+          "experimental_spt_evidence_chain": true,
+          "adaptive_error_control": true,
+          "external_solver_benchmark": true,
+          "multi_domain_real_evidence": true,
+          "cross_cycle_forced_real_evidence": true,
+          "single_dfsc_namespace": true,
+          "numerical_reliability_contract": true,
+          "pre_release_internal_gate": true
+        },
+        "passed": 28,
+        "total": 28,
+        "pass_rate": 1.0,
+        "suggested_status": "specialized-beta",
+        "artifact_core_gate": "pass",
+        "maturity_axes": {
+          "differentiable_spectral_core": "research-grade-tested",
+          "problem_algorithm_interface": "pre-release-beta",
+          "package_identity": "single-dfsc-distribution",
+          "numerical_reliability": "validated-domain-and-empirical-error-contract",
+          "history_aware_solver_breadth": "linear-caputo-stepper-plus-fft-trajectory-operator",
+          "operator_coverage": "self-adjoint-generalized-plus-controlled-general-complex-arnoldi",
+          "nonlinear_coverage": "mild-form-picard-for-known-spectral-backbones",
+          "application_coverage": "four-templates-plus-cross-cycle-real-evidence-in-three-domains",
+          "external_benchmark_evidence": "FDEint-and-pycaputo-on-scalar-and-coupled-linear-systems",
+          "public_release_ecosystem": "not-released"
+        },
+        "production_release_ready": false,
+        "internal_pre_release_ready": true,
+        "pre_release_internal_readiness_percent": 100.0,
+        "general_fractional_solver_ready": false,
+        "software_paper_artifact_readiness": "internally synchronized bilingual manuscript and evidence assets; public release and independent reproduction remain"
+      }
+    },
+    {
+      "name": "runtime smoke tests",
+      "passed": true,
+      "details": {
+        "environment": {
+          "python": "3.12.13",
+          "platform": "Windows-11-10.0.26200-SP0",
+          "torch_version": "2.11.0+cu128",
+          "cuda_available": true,
+          "torch_cuda_version": "12.8",
+          "torch_cuda_built": true,
+          "default_dtype": "float64",
+          "cuda_device_count": 1,
+          "cuda_device_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+          "cuda_device_capability": [
+            12,
+            0
+          ]
+        },
+        "smoke_tests": [
+          {
+            "device": "cpu",
+            "dtype": "float64",
+            "output_shape": [
+              5,
+              48
+            ],
+            "finite_output": true,
+            "finite_alpha_grad": true,
+            "finite_beta_grad": true,
+            "loss": 0.3933081333671574
+          },
+          {
+            "device": "cuda",
+            "dtype": "float64",
+            "output_shape": [
+              5,
+              48
+            ],
+            "finite_output": true,
+            "finite_alpha_grad": true,
+            "finite_beta_grad": true,
+            "loss": 0.3933081333671577
+          },
+          {
+            "device": "cuda",
+            "dtype": "float32",
+            "output_shape": [
+              5,
+              48
+            ],
+            "finite_output": true,
+            "finite_alpha_grad": true,
+            "finite_beta_grad": true,
+            "loss": 0.3933080732822418
+          }
+        ],
+        "all_smoke_tests_passed": true
+      }
+    },
+    {
+      "name": "application catalog",
+      "passed": true,
+      "details": {
+        "count": 4
+      }
+    },
+    {
+      "name": "experimental SPT evidence",
+      "passed": true,
+      "details": {
+        "dataset": "750 nm H-actin mesh",
+        "source": "https://github.com/AnomDiffDB/DB",
+        "citation": "Granik et al., Biophysical Journal 117, 185-192 (2019), doi:10.1016/j.bpj.2019.06.015",
+        "num_trajectories": 3112,
+        "num_localizations": 426620,
+        "wave_number_inverse_source_units": 0.24084315975001644,
+        "trajectory_split": "70/30, seeds 0/1/2/3/4",
+        "training_lags_frames": [
+          1,
+          20
+        ],
+        "extrapolation_lags_frames": [
+          21,
+          40
+        ],
+        "best_scattering_model_by_late_error": "Direct MLSL inverse",
+        "best_scattering_late_error_mean": 0.03658025456286266,
+        "direct_mlsl_vs_stretched_late_error_reduction": 0.45742653697499036,
+        "hybrid_vs_pure_mlp_late_error_reduction": 0.7404400923809342,
+        "hybrid_improves_over_direct_mlsl": false,
+        "model_comparison": [
+          {
+            "model": "MSD power law",
+            "target": "MSD",
+            "seeds": 5,
+            "heldout_all_error_mean": 0.019060529185291816,
+            "heldout_all_error_std": 0.0138828468,
+            "late_lag_error_mean": 0.019649285320474493,
+            "late_lag_error_std": 0.015110083671832381,
+            "inferred_alpha_mean": 0.9113398134706614,
+            "parameter_count": 2
+          },
+          {
+            "model": "Stretched exponential",
+            "target": "scattering",
+            "seeds": 5,
+            "heldout_all_error_mean": 0.02385115058439425,
+            "heldout_all_error_std": 0.007402940971487937,
+            "late_lag_error_mean": 0.06741991095347122,
+            "late_lag_error_std": 0.027927396570254323,
+            "inferred_alpha_mean": 0.887156961137187,
+            "parameter_count": 2
+          },
+          {
+            "model": "Direct MLSL inverse",
+            "target": "scattering",
+            "seeds": 5,
+            "heldout_all_error_mean": 0.014126867575003333,
+            "heldout_all_error_std": 0.008032209506856324,
+            "late_lag_error_mean": 0.03658025456286266,
+            "late_lag_error_std": 0.018912550551470345,
+            "inferred_alpha_mean": 0.9134089458892772,
+            "parameter_count": 2
+          },
+          {
+            "model": "Pure MLP",
+            "target": "scattering",
+            "seeds": 5,
+            "heldout_all_error_mean": 0.053463493329676204,
+            "heldout_all_error_std": 0.017025279836908814,
+            "late_lag_error_mean": 0.16520424731123154,
+            "late_lag_error_std": 0.05552960655363654,
+            "inferred_alpha_mean": null,
+            "parameter_count": 1153
+          },
+          {
+            "model": "MLSL + residual MLP",
+            "target": "scattering",
+            "seeds": 5,
+            "heldout_all_error_mean": 0.01619395753293894,
+            "heldout_all_error_std": 0.0063417309153781624,
+            "late_lag_error_mean": 0.04288039917038054,
+            "late_lag_error_std": 0.01511308142547966,
+            "inferred_alpha_mean": 0.9028487792153612,
+            "parameter_count": 323
+          }
+        ],
+        "interpretation_boundary": "MLSL alpha is an effective model-conditional order; the source describes this condition as FBM.",
+        "redistribution_boundary": "source page does not state a dataset license; raw MAT is excluded from release artifacts"
+      }
+    },
+    {
+      "name": "multi-domain real evidence",
+      "passed": true,
+      "details": {
+        "brownian_conditions": 2,
+        "geomembrane_conditions": 4,
+        "physical_domains": 2
+      }
+    },
+    {
+      "name": "cross-cycle forced real evidence",
+      "passed": true,
+      "details": {
+        "dataset": "GeoTES pilot-scale thermocouple histories",
+        "models": [
+          "Integer propagation",
+          "DFSC",
+          "Pure MLP",
+          "DFSC + residual MLP"
+        ]
+      }
+    },
+    {
+      "name": "external solver breadth",
+      "passed": true,
+      "details": {
+        "tasks": [
+          "coupled 2-state relaxation",
+          "scalar relaxation"
+        ],
+        "methods": [
+          "FDEint predictor-corrector",
+          "dfsc adaptive direct query",
+          "pycaputo PECE"
+        ]
+      }
+    },
+    {
+      "name": "data provenance boundary",
+      "passed": true,
+      "details": {
+        "redistribution_boundary": "source page does not state a dataset license; raw MAT is excluded from release artifacts"
+      }
+    },
+    {
+      "name": "continuous-integration definition",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "documentation surface",
+      "passed": true,
+      "details": {}
+    },
+    {
+      "name": "release metadata",
+      "passed": true,
+      "details": {}
+    }
+  ],
+  "excluded_external_axes": [
+    "public package and source release",
+    "hosted documentation availability",
+    "independent downstream adopters",
+    "public issue and pull-request history",
+    "redistribution permission for the current SPT raw data"
+  ]
+}

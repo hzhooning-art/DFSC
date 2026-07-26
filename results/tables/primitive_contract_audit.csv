@@ -1,0 +1,17 @@
+axis,case,device,dtype,observed,expected,passed
+shape_autograd,single_vector_time,cpu,float64,"(6, 96)","(6, 96)",True
+shape_autograd,batch_vector_time,cpu,float64,"(4, 6, 96)","(4, 6, 96)",True
+constructor,1d_dirichlet,cpu,float64,"(4, 48)",finite output and alpha/beta grads,True
+constructor,1d_neumann,cpu,float64,"(4, 48)",finite output and alpha/beta grads,True
+constructor,1d_periodic,cpu,float64,"(4, 48)",finite output and alpha/beta grads,True
+constructor,1d_mixed_dn,cpu,float64,"(4, 48)",finite output and alpha/beta grads,True
+constructor,1d_mixed_nd,cpu,float64,"(4, 48)",finite output and alpha/beta grads,True
+constructor,2d_dirichlet,cpu,float64,"(4, 100)",finite output and alpha/beta grads,True
+constructor,2d_neumann,cpu,float64,"(4, 100)",finite output and alpha/beta grads,True
+constructor,2d_periodic,cpu,float64,"(4, 100)",finite output and alpha/beta grads,True
+constructor,2d_mixed_dn,cpu,float64,"(4, 100)",finite output and alpha/beta grads,True
+constructor,2d_mixed_nd,cpu,float64,"(4, 100)",finite output and alpha/beta grads,True
+gpu_precision,batched_periodic_forward,cuda,float64,"(8, 5, 64)","(8, 5, 64), finite",True
+gpu_precision,batched_periodic_forward,cuda,float32,"(8, 5, 64)","(8, 5, 64), finite",True
+gpu_precision,batched_periodic_forward,cuda,float16,"(8, 5, 64)","(8, 5, 64), finite",True
+gpu_precision,batched_periodic_forward,cuda,bfloat16,"(8, 5, 64)","(8, 5, 64), finite",True

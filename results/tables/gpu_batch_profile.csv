@@ -1,0 +1,11 @@
+check,dtype,batch_size,seconds_min,seconds_per_sample,finite_output,finite_alpha_grad,finite_beta_grad,output_shape
+gpu_batch_profile,float64,1,0.0021951000671833754,0.0021951000671833754,True,True,True,"(1, 12, 256)"
+gpu_batch_profile,float64,16,0.0020339000038802624,0.0001271187502425164,True,True,True,"(16, 12, 256)"
+gpu_batch_profile,float64,64,0.002171600004658103,3.393125007278286e-05,True,True,True,"(64, 12, 256)"
+gpu_batch_profile,float64,256,0.0024349000304937363,9.511328244116157e-06,True,True,True,"(256, 12, 256)"
+gpu_batch_profile,float64,1024,0.003215300152078271,3.1399415547639364e-06,True,True,True,"(1024, 12, 256)"
+gpu_batch_profile,float32,1,0.002120699966326356,0.002120699966326356,True,True,True,"(1, 12, 256)"
+gpu_batch_profile,float32,16,0.002128999913111329,0.00013306249456945807,True,True,True,"(16, 12, 256)"
+gpu_batch_profile,float32,64,0.0022110999561846256,3.4548436815384775e-05,True,True,True,"(64, 12, 256)"
+gpu_batch_profile,float32,256,0.0022849999368190765,8.925781003199518e-06,True,True,True,"(256, 12, 256)"
+gpu_batch_profile,float32,1024,0.002321199979633093,2.2667968551104423e-06,True,True,True,"(1024, 12, 256)"

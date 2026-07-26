@@ -1,0 +1,12 @@
+{
+  "project": "dfsc",
+  "version": "0.1.0rc1",
+  "expected_artifacts": [
+    "dfsc-0.1.0rc1-py3-none-any.whl",
+    "dfsc-0.1.0rc1.tar.gz",
+    "SHA256SUMS"
+  ],
+  "verification_script": "reproduction/verify_install.py",
+  "external_report_template": "reproduction/EXTERNAL_REPRODUCTION_REPORT.md",
+  "release_status": "candidate"
+}

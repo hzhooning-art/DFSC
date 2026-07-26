@@ -1,0 +1,39 @@
+axis,case,observed,expected,passed
+packaging,pyproject,editable Python package metadata,present,True
+packaging,requirements,minimal dependency record,present,True
+documentation,api_doc,API reference page,present,True
+documentation,roadmap_doc,roadmap separates stable and experimental work,present,True
+documentation,ecosystem_maturity_doc,ecosystem maturity comparison notes,present,True
+documentation,release_checklist,release checklist,present,True
+documentation,status_doc,implementation status page,present,True
+documentation,generality_doc,generality-validation notes,present,True
+packaging,license,open-source license,present,True
+packaging,citation,citation metadata,present,True
+packaging,docs_site_config,documentation-site config,present,True
+packaging,root_ci,repository-level CI workflow,present,True
+data_contract,benchmark_manifest_template,public benchmark manifest template,present,True
+examples,example_scripts,9 Python examples,present,True
+tests,unit_tests,16 unit-test files,present,True
+diagnostics,diagnostic_tools,9 tool scripts,present,True
+dfsc_ecosystem,canonical_name,dfsc canonical library name,dfsc,True
+dfsc_ecosystem,no_compatibility_alias,single public namespace,no alias package,True
+dfsc_ecosystem,component_registry,22 implemented components,>=8 implemented components,True
+dfsc_ecosystem,operator_adapter,"standard, generalized, and graph operator adapters importable",assembled-operator adapter entry points,True
+dfsc_ecosystem,problem_algorithm_solve,"problem, algorithm, and solve entry points",SciML-style specialized interface,True
+dfsc_ecosystem,diagnostic_algorithm_selection,diagnostic evaluator and automatic selection importable,inspectable numerical routing,True
+dfsc_ecosystem,history_fallback,constant-order Caputo L1 fallback importable,first history-aware fallback path,True
+dfsc_ecosystem,fft_history_operator,direct and FFT Caputo-L1 trajectory operators importable,differentiable long-trajectory history evaluation,True
+dfsc_ecosystem,krylov_and_semilinear,Lanczos matrix-function action and semilinear Picard problem importable,operator-scale and nonlinear extension paths,True
+dfsc_ecosystem,sparse_matrix_free_contract,sparse and matrix-free operator entry points importable,non-dense operator representation path,True
+dfsc_ecosystem,complex_general_operator,controlled complex evaluator and general-operator Arnoldi importable,moderate-radius non-self-adjoint propagation path,True
+dfsc_ecosystem,workflow_entrypoints,hybrid and inverse-order workflows,workflow helpers importable,True
+dfsc_ecosystem,domain_application_templates,four scoped domain templates importable,"tested anomalous diffusion, relaxation, graph, and transport entry points",True
+dfsc_ecosystem,experimental_spt_evidence_chain,"experimental SPT loader, hybrid regressor, provenance manifest, and result summary",complete local real-data evidence chain,True
+api,public_symbols,77 public symbols,layer/evaluator/baseline/diagnostic symbols,True
+reproducibility,validation_gate,validate.py,available and regenerable,True
+reproducibility,core_reproduction,tools/reproduce_core.py,available and regenerable,True
+reproducibility,maturity_report,tools/maturity_report.py,available and regenerable,True
+results,csv_result_tables,62 CSV result tables,available and regenerable,True
+results,json_summaries,24 JSON summaries,available and regenerable,True
+paper_assets,latex_tables,17 generated LaTeX tables,available and regenerable,True
+paper_assets,figures,8 generated PDF figures,available and regenerable,True

@@ -1,0 +1,13 @@
+{
+  "transition_probe_cases": 63,
+  "transition_finite_value_rate": 1.0,
+  "transition_finite_grad_rate": 1.0,
+  "transition_max_adjacent_value_jump": 0.00520319405779901,
+  "transition_max_adjacent_grad_jump": 0.0442828780956612,
+  "same_setting_inverse_rows": 6,
+  "mlsl_inverse_alpha_error_mean": 2.2760606561871118e-08,
+  "fpinn_inverse_alpha_error_mean": 0.3273705701344607,
+  "mlsl_vs_fpinn_alpha_error_ratio": 14383209.394905863,
+  "mlsl_inverse_solution_error_mean": 6.160148398109403e-05,
+  "fpinn_inverse_solution_error_mean": 0.6288023654434652
+}

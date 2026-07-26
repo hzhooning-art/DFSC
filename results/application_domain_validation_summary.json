@@ -1,0 +1,13 @@
+{
+  "catalog_size": 4,
+  "anomalous_diffusion_finite": true,
+  "anomalous_diffusion_alpha_gradient_finite": true,
+  "anomalous_diffusion_beta_gradient_finite": true,
+  "assembled_relaxation_mass_projection": true,
+  "graph_constant_mode_max_error": 5.551115123125783e-16,
+  "advection_diffusion_exponential_relative_error": 1.8825924099021742e-16,
+  "advection_diffusion_alpha_gradient_finite": true,
+  "advection_diffusion_diffusivity_gradient_finite": true,
+  "advection_diffusion_velocity_gradient_finite": true,
+  "scope": "four tested templates centered on differentiable fractional spectral propagation"
+}

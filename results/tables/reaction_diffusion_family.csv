@@ -1,0 +1,4 @@
+pde_family,reaction,alpha,beta,finite_output,finite_alpha_grad,finite_beta_grad,loss
+linear_reaction_fractional_diffusion,1.25,0.65,1.5,True,True,True,0.1795641044549788
+linear_reaction_fractional_diffusion,1.25,1.1,1.5,True,True,True,0.3708752744406483
+linear_reaction_fractional_diffusion,1.25,1.6,1.5,True,True,True,0.4894710122969966

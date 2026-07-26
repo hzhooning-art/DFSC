@@ -1,0 +1,35 @@
+check,dimension,field,alpha,beta,output_shape,finite_output,finite_alpha_grad,finite_beta_grad,metric,passed
+1d_forward_gradient,1d,low_mode,0.65,1.0,"(7, 96)",True,True,True,0.2701660990051769,True
+1d_forward_gradient,1d,low_mode,0.65,1.5,"(7, 96)",True,True,True,0.16911095925222344,True
+1d_forward_gradient,1d,low_mode,0.65,2.0,"(7, 96)",True,True,True,0.0844759815817556,True
+1d_forward_gradient,1d,low_mode,1.2,1.0,"(7, 96)",True,True,True,0.49542362107764104,True
+1d_forward_gradient,1d,low_mode,1.2,1.5,"(7, 96)",True,True,True,0.45899826140692196,True
+1d_forward_gradient,1d,low_mode,1.2,2.0,"(7, 96)",True,True,True,0.400486236918039,True
+1d_forward_gradient,1d,low_mode,1.75,1.0,"(7, 96)",True,True,True,0.540834356070672,True
+1d_forward_gradient,1d,low_mode,1.75,1.5,"(7, 96)",True,True,True,0.5364283037054608,True
+1d_forward_gradient,1d,low_mode,1.75,2.0,"(7, 96)",True,True,True,0.5286845461344063,True
+1d_forward_gradient,1d,multi_mode,0.65,1.0,"(7, 96)",True,True,True,0.2782778950111194,True
+1d_forward_gradient,1d,multi_mode,0.65,1.5,"(7, 96)",True,True,True,0.17136717711870256,True
+1d_forward_gradient,1d,multi_mode,0.65,2.0,"(7, 96)",True,True,True,0.08535828584513355,True
+1d_forward_gradient,1d,multi_mode,1.2,1.0,"(7, 96)",True,True,True,0.5250871077267374,True
+1d_forward_gradient,1d,multi_mode,1.2,1.5,"(7, 96)",True,True,True,0.47629769776984765,True
+1d_forward_gradient,1d,multi_mode,1.2,2.0,"(7, 96)",True,True,True,0.4049465286949727,True
+1d_forward_gradient,1d,multi_mode,1.75,1.0,"(7, 96)",True,True,True,0.5784889994387254,True
+1d_forward_gradient,1d,multi_mode,1.75,1.5,"(7, 96)",True,True,True,0.5719084595418084,True
+1d_forward_gradient,1d,multi_mode,1.75,2.0,"(7, 96)",True,True,True,0.5581351776074949,True
+1d_forward_gradient,1d,localized,0.65,1.0,"(7, 96)",True,True,True,0.030399268538105245,True
+1d_forward_gradient,1d,localized,0.65,1.5,"(7, 96)",True,True,True,0.010341709311189162,True
+1d_forward_gradient,1d,localized,0.65,2.0,"(7, 96)",True,True,True,0.003555955131778702,True
+1d_forward_gradient,1d,localized,1.2,1.0,"(7, 96)",True,True,True,0.10080092958660153,True
+1d_forward_gradient,1d,localized,1.2,1.5,"(7, 96)",True,True,True,0.06343492667384325,True
+1d_forward_gradient,1d,localized,1.2,2.0,"(7, 96)",True,True,True,0.030859263539768814,True
+1d_forward_gradient,1d,localized,1.75,1.0,"(7, 96)",True,True,True,0.12958610005848376,True
+1d_forward_gradient,1d,localized,1.75,1.5,"(7, 96)",True,True,True,0.12030341240259824,True
+1d_forward_gradient,1d,localized,1.75,2.0,"(7, 96)",True,True,True,0.09694378050750797,True
+linearity,1d,combined,1.35,1.45,"(5, 80)",True,True,True,2.503059772337277e-16,True
+batch_consistency,1d,three_fields,1.35,1.45,"(3, 5, 80)",True,True,True,2.0812781502782464e-16,True
+2d_forward_gradient,2d,tensor_product_modes,0.75,1.2,"(5, 196)",True,True,True,0.21186376500667814,True
+2d_forward_gradient,2d,tensor_product_modes,1.35,1.5,"(5, 196)",True,True,True,0.2841260052064703,True
+2d_forward_gradient,2d,tensor_product_modes,1.75,1.9,"(5, 196)",True,True,True,0.2910447422417614,True
+alpha_only,1d,low_mode_alpha_only,1.25,1.2,"(7, 96)",True,True,True,2.9952699453161814e-06,True
+joint_alpha_beta,1d,multi_mode_joint,1.45,1.55,"(7, 96)",True,True,True,9.347366576962384e-06,True

@@ -1,0 +1,55 @@
+{
+  "dataset": "Effects of viscoelastic properties on geomembrane mechanics and deformations",
+  "source": "https://doi.org/10.5281/zenodo.14329961",
+  "license": "CC BY 4.0",
+  "md5": "557d7f5b4996234ff0c37493fceb91fd",
+  "tasks": [
+    "stress relaxation at stretch ratio 1.001",
+    "stress relaxation at stretch ratio 1.003",
+    "stress relaxation at stretch ratio 1.005",
+    "stress relaxation at stretch ratio 1.008"
+  ],
+  "protocol": "10-second median bins; 120 uniform-time samples; first 60% train, final 40% extrapolation",
+  "summary": [
+    {
+      "model": "Exponential",
+      "runs": 12,
+      "tasks": 4,
+      "extrapolation_error_mean": 0.26136293564807145,
+      "extrapolation_error_std": 0.03782584742699483,
+      "extrapolation_error_median": 0.25944851674728464
+    },
+    {
+      "model": "Stretched exponential",
+      "runs": 12,
+      "tasks": 4,
+      "extrapolation_error_mean": 0.3498332352766882,
+      "extrapolation_error_std": 0.021453350932043796,
+      "extrapolation_error_median": 0.34186142969577255
+    },
+    {
+      "model": "Fractional Zener / MLSL",
+      "runs": 12,
+      "tasks": 4,
+      "extrapolation_error_mean": 0.40903987730110664,
+      "extrapolation_error_std": 0.030371453671029412,
+      "extrapolation_error_median": 0.40347090870356034
+    },
+    {
+      "model": "Pure MLP",
+      "runs": 12,
+      "tasks": 4,
+      "extrapolation_error_mean": 0.31071039480689894,
+      "extrapolation_error_std": 0.09399889705092698,
+      "extrapolation_error_median": 0.32920143300145566
+    },
+    {
+      "model": "MLSL + residual MLP",
+      "runs": 12,
+      "tasks": 4,
+      "extrapolation_error_mean": 0.24807353199713658,
+      "extrapolation_error_std": 0.08621657804830371,
+      "extrapolation_error_median": 0.25743502325169104
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "dataset": "GeoTES pilot-scale thermocouple histories",
+  "source": "https://doi.org/10.5281/zenodo.18979098",
+  "license": "CC BY 4.0",
+  "protocol": "first measured heating/cooling cycle for identification; second cycle for transfer; T1 driver; T2-T4 responses; 56 samples per cycle; three seeds",
+  "sensor_geometry_boundary": "No sensor coordinates are assumed; the three response channels use only their documented channel ordering.",
+  "raw": [
+    {
+      "model": "Integer propagation",
+      "seed": 0,
+      "train_relative_error": 0.8516850435416807,
+      "cycle2_relative_error": 0.89235632959402,
+      "cycle2_channel_errors": [
+        0.8365134040139822,
+        1.0575040730954084,
+        1.6152129504789354
+      ],
+      "alpha": 1.0,
+      "beta": 2.0,
+      "parameter_count": 1,
+      "training_seconds": 5.047604799969122,
+      "residual_fraction": 0.0
+    },
+    {
+      "model": "Integer propagation",
+      "seed": 1,
+      "train_relative_error": 0.8516850435416807,
+      "cycle2_relative_error": 0.89235632959402,
+      "cycle2_channel_errors": [
+        0.8365134040139822,
+        1.0575040730954084,
+        1.6152129504789354
+      ],
+      "alpha": 1.0,
+      "beta": 2.0,
+      "parameter_count": 1,
+      "training_seconds": 4.979107799939811,
+      "residual_fraction": 0.0
+    },
+    {
+      "model": "Integer propagation",
+      "seed": 2,
+      "train_relative_error": 0.8516850435416807,
+      "cycle2_relative_error": 0.89235632959402,
+      "cycle2_channel_errors": [
+        0.8365134040139822,
+        1.0575040730954084,
+        1.6152129504789354
+      ],
+      "alpha": 1.0,
+      "beta": 2.0,
+      "parameter_count": 1,
+      "training_seconds": 4.93668639997486,
+      "residual_fraction": 0.0
+    },
+    {
+      "model": "DFSC",
+      "seed": 0,
+      "train_relative_error": 0.5769511165649445,
+      "cycle2_relative_error": 0.666922013962953,
+      "cycle2_channel_errors": [
+        0.5253669654617021,
+        1.0340036255999463,
+        1.5760023485955252
+      ],
+      "alpha": 0.37727828454055423,
+      "beta": 1.5625353212127482,
+      "parameter_count": 3,
+      "training_seconds": 10.39477460004855,
+      "residual_fraction": 0.0
+    },
+    {
+      "model": "DFSC",
+      "seed": 1,
+      "train_relative_error": 0.5769511165649445,
+      "cycle2_relative_error": 0.666922013962953,
+      "cycle2_channel_errors": [
+        0.5253669654617021,
+        1.0340036255999463,
+        1.5760023485955252
+      ],
+      "alpha": 0.37727828454055423,
+      "beta": 1.5625353212127482,
+      "parameter_count": 3,
+      "training_seconds": 10.025550600024872,
+      "residual_fraction": 0.0
+    },
+    {
+      "model": "DFSC",
+      "seed": 2,
+      "train_relative_error": 0.5769511165649445,
+      "cycle2_relative_error": 0.666922013962953,
+      "cycle2_channel_errors": [
+        0.5253669654617021,
+        1.0340036255999463,
+        1.5760023485955252
+      ],
+      "alpha": 0.37727828454055423,
+      "beta": 1.5625353212127482,
+      "parameter_count": 3,
+      "training_seconds": 10.348738700035028,
+      "residual_fraction": 0.0
+    },
+    {
+      "model": "Pure MLP",
+      "seed": 0,
+      "train_relative_error": 0.04705222112188529,
+      "cycle2_relative_error": 0.37081410195437775,
+      "cycle2_channel_errors": [
+        0.25037442061770265,
+        0.6559710448601814,
+        0.8642588633718546
+      ],
+      "alpha": null,
+      "beta": null,
+      "parameter_count": 1251,
+      "training_seconds": 0.2642636999953538,
+      "residual_fraction": 0.0
+    },
+    {
+      "model": "Pure MLP",
+      "seed": 1,
+      "train_relative_error": 0.04841302728481605,
+      "cycle2_relative_error": 0.3618120658872324,
+      "cycle2_channel_errors": [
+        0.24609825113262626,
+        0.643292842964635,
+        0.7508313988274161
+      ],
+      "alpha": null,
+      "beta": null,
+      "parameter_count": 1251,
+      "training_seconds": 0.2613761000102386,
+      "residual_fraction": 0.0
+    },
+    {
+      "model": "Pure MLP",
+      "seed": 2,
+      "train_relative_error": 0.05906567271811359,
+      "cycle2_relative_error": 0.35684483274020823,
+      "cycle2_channel_errors": [
+        0.2234718593580634,
+        0.654960169242531,
+        0.8838178290279923
+      ],
+      "alpha": null,
+      "beta": null,
+      "parameter_count": 1251,
+      "training_seconds": 0.23860889999195933,
+      "residual_fraction": 0.0
+    },
+    {
+      "model": "DFSC + residual MLP",
+      "seed": 0,
+      "train_relative_error": 0.3704844512082887,
+      "cycle2_relative_error": 0.3706353835107996,
+      "cycle2_channel_errors": [
+        0.19636251307557082,
+        0.7096059627866237,
+        1.1488379998540188
+      ],
+      "alpha": 0.3992871283732753,
+      "beta": 1.6841501394552696,
+      "parameter_count": 750,
+      "training_seconds": 10.27457859995775,
+      "residual_fraction": 0.78356903493069
+    },
+    {
+      "model": "DFSC + residual MLP",
+      "seed": 1,
+      "train_relative_error": 0.3703676537164495,
+      "cycle2_relative_error": 0.36133487512570145,
+      "cycle2_channel_errors": [
+        0.24078892646635625,
+        0.6413491761684792,
+        0.8845140517953174
+      ],
+      "alpha": 0.39882362343007743,
+      "beta": 1.68009704293509,
+      "parameter_count": 750,
+      "training_seconds": 10.56407650001347,
+      "residual_fraction": 0.8683300292933652
+    },
+    {
+      "model": "DFSC + residual MLP",
+      "seed": 2,
+      "train_relative_error": 0.36990719718668097,
+      "cycle2_relative_error": 0.35362340156967587,
+      "cycle2_channel_errors": [
+        0.19608846270136027,
+        0.6629526773033998,
+        1.1313674380242194
+      ],
+      "alpha": 0.39770935087231324,
+      "beta": 1.6731495135003405,
+      "parameter_count": 750,
+      "training_seconds": 11.187025399995036,
+      "residual_fraction": 0.8185876186292173
+    }
+  ],
+  "summary": [
+    {
+      "model": "Integer propagation",
+      "runs": 3,
+      "cycle2_error_mean": 0.89235632959402,
+      "cycle2_error_std": 0.0,
+      "parameter_count": 1,
+      "alpha_mean": 1.0,
+      "beta_mean": 2.0
+    },
+    {
+      "model": "DFSC",
+      "runs": 3,
+      "cycle2_error_mean": 0.666922013962953,
+      "cycle2_error_std": 0.0,
+      "parameter_count": 3,
+      "alpha_mean": 0.37727828454055423,
+      "beta_mean": 1.5625353212127482
+    },
+    {
+      "model": "Pure MLP",
+      "runs": 3,
+      "cycle2_error_mean": 0.3631570001939395,
+      "cycle2_error_std": 0.007081084437535276,
+      "parameter_count": 1251,
+      "alpha_mean": null,
+      "beta_mean": null
+    },
+    {
+      "model": "DFSC + residual MLP",
+      "runs": 3,
+      "cycle2_error_mean": 0.36186455340205903,
+      "cycle2_error_std": 0.008518350879050117,
+      "parameter_count": 750,
+      "alpha_mean": 0.3986067008918887,
+      "beta_mean": 1.6791322319635666
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+check,dtype,supported,finite_output,message
+half_precision_probe,float16,True,True,
+half_precision_probe,bfloat16,True,True,

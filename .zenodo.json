@@ -1,0 +1,34 @@
+{
+  "title": "dfsc: Error-Controlled Differentiable Mittag-Leffler Propagation for Fractional Scientific Machine Learning",
+  "description": "A research-grade PyTorch environment for differentiable Mittag-Leffler propagation, inverse problems, and structured neural residual composition.",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "version": "0.1.0rc1",
+  "creators": [
+    {
+      "name": "Hu, Ning",
+      "affiliation": "Hangzhou Dianzi University",
+      "orcid": "0000-0002-2718-0385"
+    },
+    {
+      "name": "Duan, Haitao",
+      "affiliation": "Hangzhou Dianzi University",
+      "orcid": "0009-0006-4611-8639"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/hzhooning-art/DFSC",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "keywords": [
+    "fractional scientific machine learning",
+    "Mittag-Leffler function",
+    "differentiable programming",
+    "PyTorch",
+    "inverse problems"
+  ]
+}

@@ -1,0 +1,13 @@
+include LICENSE
+include CITATION.cff
+include README.md
+include CHANGELOG.md
+include CONTRIBUTING.md
+include CODE_OF_CONDUCT.md
+include SECURITY.md
+include DATA_LICENSES.md
+include .zenodo.json
+include mkdocs.yml
+recursive-include docs *.md
+recursive-include reproduction *.md *.py *.json
+prune reproduction/reports

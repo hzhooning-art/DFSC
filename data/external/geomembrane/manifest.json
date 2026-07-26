@@ -1,0 +1,12 @@
+{
+  "name": "effects-of-viscoelastic-properties-on-geomembrane-mechanics-and-deformations",
+  "domain": "experimental geomembrane stress relaxation",
+  "task": "long-time stress extrapolation at four stretch ratios",
+  "source": "https://doi.org/10.5281/zenodo.14329961",
+  "license": "CC BY 4.0",
+  "citation": "Vorlet, Effects of viscoelastic properties on geomembrane mechanics and deformations, Zenodo (2025), doi:10.5281/zenodo.14329961",
+  "archive": "Effects-of-viscoelasticity.zip",
+  "md5": "557d7f5b4996234ff0c37493fceb91fd",
+  "protocol": "10-second median bins; 120 uniform-time samples; first 60 percent train and final 40 percent extrapolation",
+  "stretch_ratios": [1.001, 1.003, 1.005, 1.008]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "GeoTES pilot-scale thermocouple histories",
+  "domain": "high-temperature thermal energy storage",
+  "task": "cross-cycle forced multi-channel response identification",
+  "source": "https://doi.org/10.5281/zenodo.18979098",
+  "license": "CC BY 4.0",
+  "citation": "Georgiou, Dataset for: Modular High-Temperature Geopolymer Thermal Energy Storage, Zenodo (2026)",
+  "splits": {
+    "train": "first charging-discharge cycle",
+    "test": "second charging-discharge cycle"
+  },
+  "tensors": {},
+  "files": {
+    "thermocouple_measurements.xlsx": {
+      "sha256": "6fdf00d4a3e17e6da2b212a52e2e11d71af7dc5f7764a5f80d84473a85887597",
+      "role": "unaltered source workbook"
+    },
+    "geotes_thermocouples.csv": {
+      "sha256": "83c81aaf1f0bec0af45f788a775b645698b6963f61fbd801faf347a3a090fe6f",
+      "role": "timestamp-aligned derived table"
+    }
+  },
+  "measurement_boundary": "T1 is used as the measured driving channel; T2-T4 are response channels. No undocumented sensor coordinates are assumed.",
+  "preprocessing": "inner timestamp join across T1-T4; Celsius values retained; no interpolation or smoothing"
+}

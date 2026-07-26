@@ -1,0 +1,6 @@
+boundary,finite_output,finite_alpha_grad,finite_beta_grad
+dirichlet,True,True,True
+neumann,True,True,True
+periodic,True,True,True
+mixed_dn,True,True,True
+mixed_nd,True,True,True

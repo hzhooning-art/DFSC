@@ -1,0 +1,17 @@
+{
+  "name": "viscoelastic-relaxation-example",
+  "domain": "fractional viscoelasticity",
+  "task": "inverse fractional-order recovery",
+  "source": "replace with public data URL or repository",
+  "license": "replace with dataset license",
+  "citation": "replace with dataset citation",
+  "splits": {
+    "train": "document split rule",
+    "validation": "document split rule",
+    "test": "document split rule"
+  },
+  "tensors": {
+    "inputs": "inputs.pt",
+    "targets": "targets.pt"
+  }
+}

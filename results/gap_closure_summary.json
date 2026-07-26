@@ -1,0 +1,12 @@
+{
+  "eab_reference_max_relative_error": 1.2955069439953537e-06,
+  "eab_reference_max_absolute_error": 1.0678214236448103e-08,
+  "gap_gpu_available": false,
+  "mixed_precision_profiles": 2,
+  "reaction_diffusion_pass_rate": 1.0,
+  "extended_boundary_pass_rate": 1.0,
+  "DeepONet_latent96_hidden128_gap_multiseed_mean": 1.953671560515998,
+  "DeepONet_latent96_hidden128_gap_multiseed_std": 0.2911820486896655,
+  "FNO1D_width56_modes16_gap_multiseed_mean": 3.308904368155505,
+  "FNO1D_width56_modes16_gap_multiseed_std": 1.2438748519213074
+}

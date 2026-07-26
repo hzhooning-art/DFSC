@@ -1,0 +1,20 @@
+{
+  "max_fft_vs_direct_relative_error": 5.093508916145123e-16,
+  "alpha_gradient_relative_error": 3.43702700054075e-16,
+  "trajectory_gradient_relative_error": 5.749253737205487e-16,
+  "analytic_error_128": 0.0011632893653316019,
+  "analytic_error_2048": 3.0363307176312656e-05,
+  "analytic_error_reduction": 38.312340568721694,
+  "measured_speedup_2048": 77.89894322123617,
+  "largest_fft_steps": 65536,
+  "largest_fft_seconds": 0.005208800081163645,
+  "largest_fft_finite": true,
+  "gpu": {
+    "available": true,
+    "device": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "relative_error_vs_cpu": 1.1699224745185142e-13,
+    "alpha_gradient_finite": true,
+    "trajectory_gradient_finite": true
+  },
+  "scope": "offline full-trajectory Caputo-L1 derivative; not an online implicit time stepper"
+}

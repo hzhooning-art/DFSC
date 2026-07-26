@@ -1,0 +1,18 @@
+{
+  "evaluator_reference_cases": 42,
+  "evaluator_reference_max_hybrid_relative_error": 0.0028699623191646615,
+  "evaluator_reference_max_series_relative_error": 3.1302241210271507e+41,
+  "evaluator_tail_cases": 28,
+  "evaluator_tail_hybrid_finite_rate": 1.0,
+  "evaluator_tail_series_finite_rate": 1.0,
+  "evaluator_series_large_error_cases": 3,
+  "evaluator_gradient_cases": 9,
+  "evaluator_gradient_finite_rate": 1.0,
+  "evaluator_gradient_max_relative_error": 0.00020900997950237143,
+  "evaluator_gradient_median_relative_error": 2.2648812033846698e-08,
+  "inverse_robustness_cases": 80,
+  "inverse_robustness_aggregate_cases": 16,
+  "inverse_dense_noise_1e_minus_3_joint_error_mean": 0.00035040349080857184,
+  "inverse_sparse_high_noise_joint_error_mean": 0.1778348199263235,
+  "inverse_sparse_high_noise_joint_error_max": 0.5433651841876304
+}
