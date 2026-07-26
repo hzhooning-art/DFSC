@@ -94,16 +94,10 @@ accuracy win.
 
 ## Install
 
-The release candidate can be installed from a built wheel:
+Install the stable release from PyPI:
 
 ```bash
-python -m pip install dist/dfsc-0.1.0rc1-py3-none-any.whl
-```
-
-After the public release, the standard installation command will be:
-
-```bash
-python -m pip install dfsc
+python -m pip install "dfsc==0.1.0"
 ```
 
 For development from this folder:

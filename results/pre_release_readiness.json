@@ -49,7 +49,7 @@
       "name": "dfsc identity and version",
       "passed": true,
       "details": {
-        "version": "0.1.0rc1"
+        "version": "0.1.0"
       }
     },
     {
@@ -92,7 +92,7 @@
         ],
         "warnings": [],
         "stats": {
-          "elapsed_seconds": 0.003673400031402707,
+          "elapsed_seconds": 0.0034642000682651997,
           "device": "cpu",
           "dtype": "torch.float64",
           "direct_query": true

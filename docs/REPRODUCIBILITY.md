@@ -15,18 +15,16 @@ python reproduction/verify_install.py
 The script records the package version, operating system, Python and PyTorch
 versions, accelerator information, and CPU/GPU forward-backward smoke tests.
 It exits with a nonzero status if the installed version is not the expected
-release candidate or if any value or gradient is non-finite.
+release or if any value or gradient is non-finite.
 
-For the `0.1.0rc1` release candidate, install runtime dependencies from PyPI
-and the package itself from TestPyPI:
+For the `0.1.0` release, install from PyPI:
 
 ```bash
-python -m pip install torch numpy matplotlib mpmath
-python -m pip install --no-deps --index-url https://test.pypi.org/simple/ dfsc==0.1.0rc1
+python -m pip install "dfsc==0.1.0"
 ```
 
-Keeping dependency installation on PyPI avoids resolving unrelated dependency
-packages from the TestPyPI index.
+The archived `0.1.0rc1` TestPyPI artifact and its verification hashes remain
+recorded in `reproduction/release_manifest.json`.
 
 ## Source-tree verification
 

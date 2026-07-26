@@ -3,7 +3,7 @@
 All notable changes to `dfsc` are recorded here. The project follows semantic
 versioning once public releases begin.
 
-## 0.1.0rc1 - Unreleased
+## 0.1.0 - 2026-07-26
 
 ### Added
 
@@ -18,5 +18,5 @@ versioning once public releases begin.
 ### Known limitations
 
 - The validated direct-propagator domain is narrower than a general fractional solver.
-- Variable-order and distributed-order wrappers remain experimental.
-- Public package, source, documentation, and archival releases are pending.
+- Variable-order, distributed-order, complex-domain, and nonlinear paths retain
+  the applicability limits documented by their reliability reports.

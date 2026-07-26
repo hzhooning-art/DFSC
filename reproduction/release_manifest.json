@@ -1,9 +1,9 @@
 {
   "project": "dfsc",
-  "version": "0.1.0rc1",
+  "version": "0.1.0",
   "expected_artifacts": [
-    "dfsc-0.1.0rc1-py3-none-any.whl",
-    "dfsc-0.1.0rc1.tar.gz",
+    "dfsc-0.1.0-py3-none-any.whl",
+    "dfsc-0.1.0.tar.gz",
     "SHA256SUMS"
   ],
   "testpypi": {
@@ -20,5 +20,5 @@
   },
   "verification_script": "reproduction/verify_install.py",
   "external_report_template": "reproduction/EXTERNAL_REPRODUCTION_REPORT.md",
-  "release_status": "testpypi-published"
+  "release_status": "release-candidate-frozen"
 }

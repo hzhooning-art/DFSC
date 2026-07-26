@@ -13,7 +13,7 @@ import torch
 import dfsc
 
 
-EXPECTED_VERSION = "0.1.0rc1"
+EXPECTED_VERSION = "0.1.0"
 
 
 def main() -> None:
@@ -56,4 +56,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

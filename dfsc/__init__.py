@@ -188,7 +188,7 @@ from .semilinear import PicardDiagnostics, semilinear_mild_picard
 from .selection import AlgorithmDecision, choose_algorithm
 from .workflows import HybridResidualModel, MittagLefflerResidualRegressor, TrainableOrders, make_trainable_orders, relative_l2_error
 
-__version__ = "0.1.0rc1"
+__version__ = "0.1.0"
 LIBRARY_NAME = "dfsc"
 
 __all__ = _primitive_all + [
