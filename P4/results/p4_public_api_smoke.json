@@ -1,0 +1,34 @@
+{
+  "registry_backends": 4,
+  "profile_rows": 12,
+  "summary": {
+    "schema": "DFSC-Primitive-Protocol-v1",
+    "backends": [
+      {
+        "backend": "MLSL",
+        "family": "fractional_propagation",
+        "status": "pass_with_scope_limits",
+        "coverage": 1.0
+      },
+      {
+        "backend": "matrix_exponential_action",
+        "family": "matrix_function_action",
+        "status": "pass_with_scope_limits",
+        "coverage": 1.0
+      },
+      {
+        "backend": "rk4_linear_ode_step",
+        "family": "linear_time_integration",
+        "status": "pass_with_scope_limits",
+        "coverage": 1.0
+      },
+      {
+        "backend": "logistic_rk4_step",
+        "family": "nonlinear_time_integration",
+        "status": "pass_with_scope_limits",
+        "coverage": 1.0
+      }
+    ]
+  },
+  "status": "pass"
+}

@@ -1,0 +1,34 @@
+{
+  "backend": "exponential_propagator_demo",
+  "domain": {
+    "input_description": "batched scalar time points",
+    "parameter_ranges": {
+      "amplitude": [
+        0.5,
+        2.0
+      ],
+      "rate": [
+        0.1,
+        1.5
+      ]
+    },
+    "output_description": "batched propagated scalar field",
+    "supports_batch": true,
+    "supports_gpu": true,
+    "supports_autograd": true
+  },
+  "status": "pass_with_scope_limits",
+  "gates": {
+    "value_finite": true,
+    "gradient_finite": true,
+    "batch_shape": true,
+    "device_local": true
+  },
+  "metrics": {
+    "value_max_abs_error": 0.0,
+    "gradient_directional_relative_error": 7.103644740396703e-12
+  },
+  "warnings": [
+    "interface smoke test only; not a domain validation study"
+  ]
+}

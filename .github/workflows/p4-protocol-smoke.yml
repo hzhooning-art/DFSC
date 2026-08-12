@@ -1,0 +1,59 @@
+name: P4 primitive protocol smoke
+
+on:
+  push:
+    paths:
+      - "P4/**"
+      - ".github/workflows/p4-protocol-smoke.yml"
+  pull_request:
+    paths:
+      - "P4/**"
+      - ".github/workflows/p4-protocol-smoke.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: p4-protocol-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  protocol-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: P4/pyproject.toml
+      - name: Install CPU test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+      - name: Compile protocol code
+        shell: bash
+        run: python -m py_compile P4/primitive_protocol.py P4/dfsc_protocol/audit.py P4/dfsc_protocol/registry.py P4/experiments/p4_generic_protocol_smoke.py P4/experiments/p4_public_api_smoke.py
+      - name: Run backend-independent smoke test
+        shell: bash
+        run: python P4/experiments/p4_generic_protocol_smoke.py
+      - name: Validate public registry and profile API
+        shell: bash
+        run: python P4/experiments/p4_public_api_smoke.py
+      - name: Install protocol package
+        shell: bash
+        run: python -m pip install --no-deps ./P4
+      - name: Run package tests
+        shell: bash
+        run: python -m unittest discover -s P4/tests -p "test_*.py" -v
+      - name: Upload audit artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: p4-protocol-audit-results
+          if-no-files-found: warn
+          path: |
+            P4/results/p4_generic_protocol_smoke.json
+            P4/results/p4_public_api_smoke.json
+            P4/results/p4_primitive_protocol_registry.json
