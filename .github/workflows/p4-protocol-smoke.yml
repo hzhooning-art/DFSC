@@ -35,15 +35,15 @@ jobs:
       - name: Compile protocol code
         shell: bash
         run: python -m py_compile P4/primitive_protocol.py P4/dfsc_protocol/audit.py P4/dfsc_protocol/registry.py P4/experiments/p4_generic_protocol_smoke.py P4/experiments/p4_public_api_smoke.py
+      - name: Install protocol package
+        shell: bash
+        run: python -m pip install --no-deps ./P4
       - name: Run backend-independent smoke test
         shell: bash
         run: python P4/experiments/p4_generic_protocol_smoke.py
       - name: Validate public registry and profile API
         shell: bash
         run: python P4/experiments/p4_public_api_smoke.py
-      - name: Install protocol package
-        shell: bash
-        run: python -m pip install --no-deps ./P4
       - name: Run package tests
         shell: bash
         run: python -m unittest discover -s P4/tests -p "test_*.py" -v
