@@ -1,0 +1,191 @@
+{
+  "schema": "DFSC-Primitive-Profile-v1",
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "batch_sizes": [
+    1,
+    64,
+    256,
+    1024
+  ],
+  "rows": [
+    {
+      "backend": "matrix_exponential_action",
+      "batch": 1,
+      "dtype": "torch.float64",
+      "device": "cuda",
+      "iterations": 50,
+      "mean_latency_ms": 0.5100620002485812,
+      "samples_per_second": 1960.5459718870356,
+      "output_shape": [
+        1,
+        2
+      ],
+      "peak_memory_bytes": 8525824,
+      "outputs_finite": true
+    },
+    {
+      "backend": "matrix_exponential_action",
+      "batch": 64,
+      "dtype": "torch.float64",
+      "device": "cuda",
+      "iterations": 50,
+      "mean_latency_ms": 0.9457980003207922,
+      "samples_per_second": 67667.72606655197,
+      "output_shape": [
+        64,
+        2
+      ],
+      "peak_memory_bytes": 8549376,
+      "outputs_finite": true
+    },
+    {
+      "backend": "matrix_exponential_action",
+      "batch": 256,
+      "dtype": "torch.float64",
+      "device": "cuda",
+      "iterations": 50,
+      "mean_latency_ms": 0.9420339995995164,
+      "samples_per_second": 271752.3997104482,
+      "output_shape": [
+        256,
+        2
+      ],
+      "peak_memory_bytes": 8635392,
+      "outputs_finite": true
+    },
+    {
+      "backend": "matrix_exponential_action",
+      "batch": 1024,
+      "dtype": "torch.float64",
+      "device": "cuda",
+      "iterations": 50,
+      "mean_latency_ms": 0.9285939997062087,
+      "samples_per_second": 1102742.4259945424,
+      "output_shape": [
+        1024,
+        2
+      ],
+      "peak_memory_bytes": 8979456,
+      "outputs_finite": true
+    },
+    {
+      "backend": "rk4_linear_ode_step",
+      "batch": 1,
+      "dtype": "torch.float64",
+      "device": "cuda",
+      "iterations": 50,
+      "mean_latency_ms": 0.3332279995083809,
+      "samples_per_second": 3000.948304090063,
+      "output_shape": [
+        1,
+        2
+      ],
+      "peak_memory_bytes": 8525312,
+      "outputs_finite": true
+    },
+    {
+      "backend": "rk4_linear_ode_step",
+      "batch": 64,
+      "dtype": "torch.float64",
+      "device": "cuda",
+      "iterations": 50,
+      "mean_latency_ms": 0.3405639994889498,
+      "samples_per_second": 187923.5623731175,
+      "output_shape": [
+        64,
+        2
+      ],
+      "peak_memory_bytes": 8530432,
+      "outputs_finite": true
+    },
+    {
+      "backend": "rk4_linear_ode_step",
+      "batch": 256,
+      "dtype": "torch.float64",
+      "device": "cuda",
+      "iterations": 50,
+      "mean_latency_ms": 0.35704800160601735,
+      "samples_per_second": 716990.4294338602,
+      "output_shape": [
+        256,
+        2
+      ],
+      "peak_memory_bytes": 8561152,
+      "outputs_finite": true
+    },
+    {
+      "backend": "rk4_linear_ode_step",
+      "batch": 1024,
+      "dtype": "torch.float64",
+      "device": "cuda",
+      "iterations": 50,
+      "mean_latency_ms": 0.3552899998612702,
+      "samples_per_second": 2882152.6088542896,
+      "output_shape": [
+        1024,
+        2
+      ],
+      "peak_memory_bytes": 8684032,
+      "outputs_finite": true
+    },
+    {
+      "backend": "logistic_rk4_step",
+      "batch": 1,
+      "dtype": "torch.float64",
+      "device": "cuda",
+      "iterations": 50,
+      "mean_latency_ms": 0.43059999821707606,
+      "samples_per_second": 2322.34092926279,
+      "output_shape": [
+        1
+      ],
+      "peak_memory_bytes": 8525312,
+      "outputs_finite": true
+    },
+    {
+      "backend": "logistic_rk4_step",
+      "batch": 64,
+      "dtype": "torch.float64",
+      "device": "cuda",
+      "iterations": 50,
+      "mean_latency_ms": 0.43878399999812245,
+      "samples_per_second": 145857.6429411142,
+      "output_shape": [
+        64
+      ],
+      "peak_memory_bytes": 8525824,
+      "outputs_finite": true
+    },
+    {
+      "backend": "logistic_rk4_step",
+      "batch": 256,
+      "dtype": "torch.float64",
+      "device": "cuda",
+      "iterations": 50,
+      "mean_latency_ms": 0.44471000088378787,
+      "samples_per_second": 575656.0443687845,
+      "output_shape": [
+        256
+      ],
+      "peak_memory_bytes": 8542720,
+      "outputs_finite": true
+    },
+    {
+      "backend": "logistic_rk4_step",
+      "batch": 1024,
+      "dtype": "torch.float64",
+      "device": "cuda",
+      "iterations": 50,
+      "mean_latency_ms": 0.45449999859556556,
+      "samples_per_second": 2253025.309492247,
+      "output_shape": [
+        1024
+      ],
+      "peak_memory_bytes": 8610304,
+      "outputs_finite": true
+    }
+  ],
+  "timing_rule": "10 warmup calls, 50 measured calls, device synchronization before timing readout",
+  "interpretation": "comparable runtime/memory profile for three generic backends; not a cross-domain speed ranking"
+}

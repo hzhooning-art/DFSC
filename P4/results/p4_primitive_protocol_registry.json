@@ -1,0 +1,511 @@
+{
+  "schema": "DFSC-Primitive-Protocol-v1",
+  "required_dimensions": [
+    "value",
+    "gradient",
+    "calibration",
+    "module_reuse",
+    "ood",
+    "long_horizon"
+  ],
+  "records": [
+    {
+      "backend": "MLSL",
+      "family": "fractional_propagation",
+      "value": "pass",
+      "gradient": "pass",
+      "calibration": "pass",
+      "module_reuse": "pass",
+      "ood": "pass",
+      "long_horizon": "pass",
+      "scope": [
+        "validated only for the stable real-negative spectral regime",
+        "the high-precision reference uses the convergent series and does not validate complex or positive arguments",
+        "GPU timing is a local profile, not a cross-machine benchmark"
+      ],
+      "validation_artifact": "p4_mlsl_protocol_validation.json",
+      "coverage": 1.0,
+      "status": "pass_with_scope_limits"
+    },
+    {
+      "backend": "matrix_exponential_action",
+      "family": "matrix_function_action",
+      "value": "pass",
+      "gradient": "pass",
+      "calibration": "pass",
+      "module_reuse": "pass",
+      "ood": "pass",
+      "long_horizon": "pass",
+      "scope": [
+        "2x2 stable matrix",
+        "PyTorch matrix_exp backend"
+      ],
+      "coverage": 1.0,
+      "status": "pass_with_scope_limits"
+    },
+    {
+      "backend": "rk4_linear_ode_step",
+      "family": "linear_time_integration",
+      "value": "pass",
+      "gradient": "pass",
+      "calibration": "pass",
+      "module_reuse": "pass",
+      "ood": "pass",
+      "long_horizon": "pass",
+      "scope": [
+        "2D linear ODE",
+        "fixed-step RK4"
+      ],
+      "coverage": 1.0,
+      "status": "pass_with_scope_limits"
+    },
+    {
+      "backend": "logistic_rk4_step",
+      "family": "nonlinear_time_integration",
+      "value": "pass",
+      "gradient": "pass",
+      "calibration": "pass",
+      "module_reuse": "pass",
+      "ood": "pass",
+      "long_horizon": "pass",
+      "scope": [
+        "scalar Logistic ODE",
+        "fixed-step RK4"
+      ],
+      "coverage": 1.0,
+      "status": "pass_with_scope_limits"
+    }
+  ],
+  "registry_status": "complete_for_current_backends",
+  "comparability_warning": "Backend metrics are not pooled because the mathematical domains and reference problems differ; the evidence supports protocol reuse, not a universal accuracy ranking.",
+  "missing_next": [
+    "hosted CPU CI run after repository push",
+    "formal public API packaging for the registry and profile schemas"
+  ],
+  "profile_schema": "DFSC-Primitive-Profile-v1",
+  "real_data_evidence": {
+    "schema": "DFSC-P4-Real-Data-Evidence-v1",
+    "datasets": [
+      {
+        "name": "GeoTES pilot-scale thermocouple histories",
+        "source": "https://doi.org/10.5281/zenodo.18979098",
+        "result_file": "p4_real_geotes_cross_cycle.json",
+        "models": [
+          {
+            "model": "Integer propagation",
+            "runs": 3,
+            "cycle2_error_mean": 0.89235632959402,
+            "cycle2_error_std": 0.0,
+            "parameter_count": 1,
+            "alpha_mean": 1.0,
+            "beta_mean": 2.0
+          },
+          {
+            "model": "DFSC",
+            "runs": 3,
+            "cycle2_error_mean": 0.666922013962953,
+            "cycle2_error_std": 0.0,
+            "parameter_count": 3,
+            "alpha_mean": 0.37727828454055423,
+            "beta_mean": 1.5625353212127482
+          },
+          {
+            "model": "Pure MLP",
+            "runs": 3,
+            "cycle2_error_mean": 0.3631570001939395,
+            "cycle2_error_std": 0.007081084437535276,
+            "parameter_count": 1251,
+            "alpha_mean": null,
+            "beta_mean": null
+          },
+          {
+            "model": "DFSC + residual MLP",
+            "runs": 3,
+            "cycle2_error_mean": 0.36186455340205903,
+            "cycle2_error_std": 0.008518350879050117,
+            "parameter_count": 750,
+            "alpha_mean": 0.3986067008918887,
+            "beta_mean": 1.6791322319635666
+          }
+        ]
+      },
+      {
+        "name": "Heated steam injection experimental temperature profiles",
+        "source": "https://doi.org/10.5281/zenodo.15064388",
+        "result_file": "p4_real_heated_steam.json",
+        "models": [
+          {
+            "model": "integer",
+            "parameters": 46,
+            "train_rmse_k_mean": 36.189193857312716,
+            "train_rmse_k_std": 0.11015904221850306,
+            "heldout_rmse_k_mean": 43.65842643375297,
+            "heldout_rmse_k_std": 0.4049922749405207,
+            "heldout_mae_k_mean": 31.13514667928007,
+            "heldout_mae_k_std": 0.2810208523699985,
+            "alpha_mean": 1.0
+          },
+          {
+            "model": "dfsc",
+            "parameters": 47,
+            "train_rmse_k_mean": 35.99584710767076,
+            "train_rmse_k_std": 0.16413972662940685,
+            "heldout_rmse_k_mean": 43.33362976306129,
+            "heldout_rmse_k_std": 0.5643192213251341,
+            "heldout_mae_k_mean": 30.95267169620693,
+            "heldout_mae_k_std": 0.3595468626809466,
+            "alpha_mean": 0.6560614189206267
+          },
+          {
+            "model": "mlp",
+            "parameters": 4673,
+            "train_rmse_k_mean": 8.155223256214496,
+            "train_rmse_k_std": 0.6777065953244444,
+            "heldout_rmse_k_mean": 13.251885798370546,
+            "heldout_rmse_k_std": 1.4481171667311505,
+            "heldout_mae_k_mean": 9.463067116959941,
+            "heldout_mae_k_std": 1.1471088664248654
+          },
+          {
+            "model": "hybrid",
+            "parameters": 1360,
+            "train_rmse_k_mean": 11.493891610128363,
+            "train_rmse_k_std": 0.14427167704942181,
+            "heldout_rmse_k_mean": 16.03331312346279,
+            "heldout_rmse_k_std": 0.137199568482171,
+            "heldout_mae_k_mean": 12.027847451912281,
+            "heldout_mae_k_std": 0.3690608166761817,
+            "alpha_mean": 0.7097757838069132
+          }
+        ]
+      },
+      {
+        "name": "GeoTES few-shot cross-cycle transfer",
+        "source": "https://doi.org/10.5281/zenodo.18979098",
+        "result_file": "p4_real_geotes_fewshot.json",
+        "models": [
+          {
+            "train_fraction": 0.2,
+            "model": "Integer propagation",
+            "runs": 3,
+            "cycle2_error_mean": 0.8900093788083883,
+            "cycle2_error_std": 0.0,
+            "parameter_count": 1
+          },
+          {
+            "train_fraction": 0.2,
+            "model": "DFSC",
+            "runs": 3,
+            "cycle2_error_mean": 0.6677877473219974,
+            "cycle2_error_std": 1.3597399555105182e-16,
+            "parameter_count": 3
+          },
+          {
+            "train_fraction": 0.2,
+            "model": "Pure MLP",
+            "runs": 3,
+            "cycle2_error_mean": 0.37419318500110627,
+            "cycle2_error_std": 0.004011141912768402,
+            "parameter_count": 1251
+          },
+          {
+            "train_fraction": 0.2,
+            "model": "DFSC + residual MLP",
+            "runs": 3,
+            "cycle2_error_mean": 0.3849529141156968,
+            "cycle2_error_std": 0.02248592027776431,
+            "parameter_count": 750
+          },
+          {
+            "train_fraction": 0.4,
+            "model": "Integer propagation",
+            "runs": 3,
+            "cycle2_error_mean": 0.890554113214942,
+            "cycle2_error_std": 0.0,
+            "parameter_count": 1
+          },
+          {
+            "train_fraction": 0.4,
+            "model": "DFSC",
+            "runs": 3,
+            "cycle2_error_mean": 0.6641090808279999,
+            "cycle2_error_std": 0.0,
+            "parameter_count": 3
+          },
+          {
+            "train_fraction": 0.4,
+            "model": "Pure MLP",
+            "runs": 3,
+            "cycle2_error_mean": 0.36571411206888477,
+            "cycle2_error_std": 0.008420176648184001,
+            "parameter_count": 1251
+          },
+          {
+            "train_fraction": 0.4,
+            "model": "DFSC + residual MLP",
+            "runs": 3,
+            "cycle2_error_mean": 0.3607334447289192,
+            "cycle2_error_std": 0.008244534811825278,
+            "parameter_count": 750
+          },
+          {
+            "train_fraction": 0.6,
+            "model": "Integer propagation",
+            "runs": 3,
+            "cycle2_error_mean": 0.8914334499470905,
+            "cycle2_error_std": 0.0,
+            "parameter_count": 1
+          },
+          {
+            "train_fraction": 0.6,
+            "model": "DFSC",
+            "runs": 3,
+            "cycle2_error_mean": 0.6658939146627286,
+            "cycle2_error_std": 0.0,
+            "parameter_count": 3
+          },
+          {
+            "train_fraction": 0.6,
+            "model": "Pure MLP",
+            "runs": 3,
+            "cycle2_error_mean": 0.3624336598563129,
+            "cycle2_error_std": 0.008353537597153255,
+            "parameter_count": 1251
+          },
+          {
+            "train_fraction": 0.6,
+            "model": "DFSC + residual MLP",
+            "runs": 3,
+            "cycle2_error_mean": 0.37057479974162466,
+            "cycle2_error_std": 0.00585040665458291,
+            "parameter_count": 750
+          },
+          {
+            "train_fraction": 1.0,
+            "model": "Integer propagation",
+            "runs": 3,
+            "cycle2_error_mean": 0.89235632959402,
+            "cycle2_error_std": 0.0,
+            "parameter_count": 1
+          },
+          {
+            "train_fraction": 1.0,
+            "model": "DFSC",
+            "runs": 3,
+            "cycle2_error_mean": 0.666922013962953,
+            "cycle2_error_std": 0.0,
+            "parameter_count": 3
+          },
+          {
+            "train_fraction": 1.0,
+            "model": "Pure MLP",
+            "runs": 3,
+            "cycle2_error_mean": 0.3631570001939395,
+            "cycle2_error_std": 0.007081084437535276,
+            "parameter_count": 1251
+          },
+          {
+            "train_fraction": 1.0,
+            "model": "DFSC + residual MLP",
+            "runs": 3,
+            "cycle2_error_mean": 0.36186455340205903,
+            "cycle2_error_std": 0.008518350879050117,
+            "parameter_count": 750
+          }
+        ]
+      }
+    ],
+    "status": "pass_with_scope_limits"
+  },
+  "common_module_ood": {
+    "schema": "DFSC-Common-Module-OOD-v1",
+    "backends": {
+      "t1.0_noise0.003": {
+        "matrix": {
+          "primitive_ood_rmse": {
+            "mean": 0.16613950853326379,
+            "std": 0.022661032343992468
+          },
+          "baseline_ood_rmse": {
+            "mean": 0.15486229677869176,
+            "std": 0.002233042482888346
+          },
+          "primitive_parameter_l1_error": {
+            "mean": 0.19769633752172425,
+            "std": 0.009442597112663188
+          },
+          "primitive_training_seconds": {
+            "mean": 1.0544383000427235,
+            "std": 0.028051255706240556
+          },
+          "baseline_training_seconds": {
+            "mean": 0.2871012333392476,
+            "std": 0.0003339917372245121
+          }
+        },
+        "logistic": {
+          "primitive_ood_rmse": {
+            "mean": 0.14051981553215448,
+            "std": 0.025902206671061082
+          },
+          "baseline_ood_rmse": {
+            "mean": 0.16672184606143978,
+            "std": 0.007952305920021024
+          },
+          "primitive_parameter_l1_error": {
+            "mean": 0.43201129106608666,
+            "std": 0.0500312552766008
+          },
+          "primitive_training_seconds": {
+            "mean": 9.687575533326404,
+            "std": 0.05840977735109534
+          },
+          "baseline_training_seconds": {
+            "mean": 0.37899483332876116,
+            "std": 0.009711996159388009
+          }
+        }
+      },
+      "t1.0_noise0.01": {
+        "matrix": {
+          "primitive_ood_rmse": {
+            "mean": 0.16579669454758528,
+            "std": 0.026476726723936257
+          },
+          "baseline_ood_rmse": {
+            "mean": 0.1562466144643315,
+            "std": 0.0027187829061732843
+          },
+          "primitive_parameter_l1_error": {
+            "mean": 0.1978450072369993,
+            "std": 0.009383869119501271
+          },
+          "primitive_training_seconds": {
+            "mean": 1.138006466673687,
+            "std": 0.006502056311022645
+          },
+          "baseline_training_seconds": {
+            "mean": 0.36045133334118873,
+            "std": 0.010314696368008495
+          }
+        },
+        "logistic": {
+          "primitive_ood_rmse": {
+            "mean": 0.14935754930137077,
+            "std": 0.022004659285820433
+          },
+          "baseline_ood_rmse": {
+            "mean": 0.16687217096089804,
+            "std": 0.007893196508532036
+          },
+          "primitive_parameter_l1_error": {
+            "mean": 0.44091063039928224,
+            "std": 0.04104916200214213
+          },
+          "primitive_training_seconds": {
+            "mean": 9.703326366647767,
+            "std": 0.05928831662620381
+          },
+          "baseline_training_seconds": {
+            "mean": 0.3735624333688368,
+            "std": 0.0031862374759314646
+          }
+        }
+      },
+      "t1.5_noise0.003": {
+        "matrix": {
+          "primitive_ood_rmse": {
+            "mean": 0.1997745159928178,
+            "std": 0.027152674155343136
+          },
+          "baseline_ood_rmse": {
+            "mean": 0.16380577754240236,
+            "std": 0.009749211929193764
+          },
+          "primitive_parameter_l1_error": {
+            "mean": 0.20790187537068086,
+            "std": 0.011922199979503306
+          },
+          "primitive_training_seconds": {
+            "mean": 1.1462267333408818,
+            "std": 0.009681016099518753
+          },
+          "baseline_training_seconds": {
+            "mean": 0.3599430000176653,
+            "std": 0.002707422378326206
+          }
+        },
+        "logistic": {
+          "primitive_ood_rmse": {
+            "mean": 0.23400705256287213,
+            "std": 0.03228787170254418
+          },
+          "baseline_ood_rmse": {
+            "mean": 0.27130402948474047,
+            "std": 0.009621928486579525
+          },
+          "primitive_parameter_l1_error": {
+            "mean": 0.4343633685765131,
+            "std": 0.03751928737858957
+          },
+          "primitive_training_seconds": {
+            "mean": 9.873006166657433,
+            "std": 0.13954217645264286
+          },
+          "baseline_training_seconds": {
+            "mean": 0.3820559333156173,
+            "std": 0.011068853234857894
+          }
+        }
+      },
+      "t1.5_noise0.01": {
+        "matrix": {
+          "primitive_ood_rmse": {
+            "mean": 0.19881546737681302,
+            "std": 0.03074280759393546
+          },
+          "baseline_ood_rmse": {
+            "mean": 0.16820550618997251,
+            "std": 0.008081446174672343
+          },
+          "primitive_parameter_l1_error": {
+            "mean": 0.20584055493169365,
+            "std": 0.013399385833513055
+          },
+          "primitive_training_seconds": {
+            "mean": 1.3134962666857366,
+            "std": 0.11496089279551518
+          },
+          "baseline_training_seconds": {
+            "mean": 0.4374210333141188,
+            "std": 0.060921207711041474
+          }
+        },
+        "logistic": {
+          "primitive_ood_rmse": {
+            "mean": 0.24182005015659347,
+            "std": 0.02971207692344701
+          },
+          "baseline_ood_rmse": {
+            "mean": 0.27143490489284255,
+            "std": 0.009562729158821778
+          },
+          "primitive_parameter_l1_error": {
+            "mean": 0.4371382941974365,
+            "std": 0.036073188896737586
+          },
+          "primitive_training_seconds": {
+            "mean": 10.367896466671178,
+            "std": 0.036342431947542705
+          },
+          "baseline_training_seconds": {
+            "mean": 0.38252496665033203,
+            "std": 0.014755306548483425
+          }
+        }
+      }
+    },
+    "all_gradients_finite": true,
+    "interpretation": "common template completed; backend benefits remain task-dependent"
+  }
+}

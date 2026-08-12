@@ -1,0 +1,93 @@
+{
+  "schema": "DFSC-MLSL-Protocol-Validation-v1",
+  "implementation": {
+    "package": "P1/paper1_mlsl/dfsc",
+    "api": "build_mlsl",
+    "preset": "MLSLConfig.stable"
+  },
+  "scope": {
+    "boundary": "1D Dirichlet",
+    "modes": 3,
+    "negative_real_spectrum": true,
+    "alpha_range_tested": [
+      0.73,
+      0.9
+    ],
+    "beta_range_tested": [
+      1.65,
+      2.1
+    ],
+    "reference": "80-digit mpmath series on moderate negative-real arguments"
+  },
+  "value": {
+    "max_relative_error": 1.3178456378198384e-12,
+    "finite": true
+  },
+  "gradient": {
+    "relative_error_vs_central_difference": {
+      "alpha": 2.216808745401415e-09,
+      "beta": 5.000919202209502e-10
+    },
+    "finite": true
+  },
+  "calibration": {
+    "true": {
+      "alpha": 0.78,
+      "beta": 1.8
+    },
+    "initial": {
+      "alpha": 0.9,
+      "beta": 2.1
+    },
+    "estimated": {
+      "alpha": 0.7800343418588187,
+      "beta": 1.8000746346359746
+    },
+    "final_loss": 4.170589495379053e-11,
+    "iterations": 140
+  },
+  "module_reuse": {
+    "batch": 3,
+    "residual_head": "MLP(16,12,16)",
+    "finite_gradients": true
+  },
+  "ood": {
+    "finite": true,
+    "query_times": [
+      0.025,
+      0.35,
+      0.9
+    ]
+  },
+  "long_horizon": {
+    "finite": true,
+    "monotone_amplitude_probe": true,
+    "query_times": [
+      1.0,
+      2.0,
+      4.0,
+      8.0
+    ]
+  },
+  "gpu": {
+    "available": true,
+    "batch": 256,
+    "query_times": 3,
+    "mean_ms": 6.279549999938657,
+    "finite": true
+  },
+  "gates": {
+    "value": true,
+    "gradient": true,
+    "calibration": true,
+    "module_reuse": true,
+    "ood": true,
+    "long_horizon": true
+  },
+  "status": "pass_with_scope_limits",
+  "limitations": [
+    "validated only for the stable real-negative spectral regime",
+    "the high-precision reference uses the convergent series and does not validate complex or positive arguments",
+    "GPU timing is a local profile, not a cross-machine benchmark"
+  ]
+}
