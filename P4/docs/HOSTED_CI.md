@@ -21,6 +21,17 @@ per-commit CI job. This separation keeps CI deterministic and bounded while
 preserving the distinction between software-contract checks and scientific
 benchmark execution.
 
+## Verified run
+
+The workflow passed on 2026-08-12 for software commit `20fab75`:
+
+- Repository: <https://github.com/hzhooning-art/DFSC>
+- Workflow run: <https://github.com/hzhooning-art/DFSC/actions/runs/31581391771>
+
+The tested commit identifies the protocol package and CI configuration used
+for this hosted check. Later manuscript or experiment commits should be
+recorded separately rather than silently attributed to this run.
+
 ## How to activate it
 
 Push the repository to GitHub with the workflow at
