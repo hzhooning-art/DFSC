@@ -1,0 +1,138 @@
+{
+  "schema": "DFSC-CSCI-Conformance-Validation-v1",
+  "specification_status": "proposed_project_specification_not_formal_standard",
+  "profiles": [
+    "core",
+    "extended",
+    "application"
+  ],
+  "interoperability": {
+    "trials": 40,
+    "api_cli_equivalence_rate": 1.0,
+    "key_order_invariance_rate": 1.0,
+    "migration_evidence_preservation_rate": 1.0,
+    "migration_requalification_rate": 1.0,
+    "api_cli_wilson_95": [
+      0.9123754607496077,
+      1.0
+    ]
+  },
+  "fault_injection": {
+    "catalogue": [
+      {
+        "fault": "inadequate_truncation",
+        "injections": 20,
+        "detected": 20,
+        "detection_rate": 1.0,
+        "wilson_95": [
+          0.8388698745050667,
+          1.0
+        ]
+      },
+      {
+        "fault": "detached_gradient",
+        "injections": 20,
+        "detected": 20,
+        "detection_rate": 1.0,
+        "wilson_95": [
+          0.8388698745050667,
+          1.0
+        ]
+      },
+      {
+        "fault": "silent_dtype_downgrade",
+        "injections": 20,
+        "detected": 20,
+        "detection_rate": 1.0,
+        "wilson_95": [
+          0.8388698745050667,
+          1.0
+        ]
+      },
+      {
+        "fault": "batch_crosstalk",
+        "injections": 20,
+        "detected": 20,
+        "detection_rate": 1.0,
+        "wilson_95": [
+          0.8388698745050667,
+          1.0
+        ]
+      },
+      {
+        "fault": "silent_cpu_fallback",
+        "injections": 20,
+        "detected": 20,
+        "detection_rate": 1.0,
+        "wilson_95": [
+          0.8388698745050667,
+          1.0
+        ]
+      },
+      {
+        "fault": "ood_scope_misuse",
+        "injections": 20,
+        "detected": 20,
+        "detection_rate": 1.0,
+        "wilson_95": [
+          0.8388698745050667,
+          1.0
+        ]
+      },
+      {
+        "fault": "unit_mismatch",
+        "injections": 20,
+        "detected": 20,
+        "detection_rate": 1.0,
+        "wilson_95": [
+          0.8388698745050667,
+          1.0
+        ]
+      },
+      {
+        "fault": "missing_provenance",
+        "injections": 20,
+        "detected": 20,
+        "detection_rate": 1.0,
+        "wilson_95": [
+          0.8388698745050667,
+          1.0
+        ]
+      },
+      {
+        "fault": "unfrozen_scope",
+        "injections": 20,
+        "detected": 20,
+        "detection_rate": 1.0,
+        "wilson_95": [
+          0.8388698745050667,
+          1.0
+        ]
+      },
+      {
+        "fault": "insufficient_scope_coverage",
+        "injections": 20,
+        "detected": 20,
+        "detection_rate": 1.0,
+        "wilson_95": [
+          0.8388698745050667,
+          1.0
+        ]
+      }
+    ],
+    "overall_injections": 200,
+    "overall_detected": 200,
+    "overall_detection_rate": 1.0,
+    "overall_detection_wilson_95": [
+      0.9811539940816791,
+      1.0
+    ],
+    "clean_records": 40,
+    "false_rejections": 0,
+    "false_rejection_rate": 0.0,
+    "false_rejection_wilson_95": [
+      -6.938893903907228e-18,
+      0.08762453925039232
+    ]
+  }
+}

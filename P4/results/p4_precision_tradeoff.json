@@ -1,0 +1,64 @@
+{
+  "schema": "DFSC-P4-Precision-Tradeoff-v1",
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "warmup": 10,
+  "repeats": 50,
+  "rows": [
+    {
+      "primitive": "matrix_exponential_action",
+      "dtype": "float32",
+      "batch": 1024,
+      "max_abs_value_error": 4.3229103940944924e-07,
+      "directional_gradient": 0.016615567728877068,
+      "reference_directional_gradient": 0.01661556702712076,
+      "directional_gradient_abs_error": 7.017563058431264e-10,
+      "directional_gradient_relative_error": 4.223486954719538e-08,
+      "mean_forward_ms": 1.0376499999983935,
+      "peak_incremental_cuda_bytes": 210432,
+      "finite": true
+    },
+    {
+      "primitive": "periodic_heat_2d_spectral",
+      "dtype": "float32",
+      "grid": 256,
+      "state_dimension": 65536,
+      "max_abs_value_error": 2.897797766188148e-07,
+      "energy_gradient": -2.3655285835266113,
+      "reference_energy_gradient": -2.3655290190259004,
+      "energy_gradient_abs_error": 4.354992890753806e-07,
+      "energy_gradient_relative_error": 1.8410228138089574e-07,
+      "mean_forward_ms": 0.29824199998984113,
+      "peak_incremental_cuda_bytes": 1312256,
+      "finite": true
+    },
+    {
+      "primitive": "matrix_exponential_action",
+      "dtype": "float64",
+      "batch": 1024,
+      "max_abs_value_error": 1.7763568394002505e-15,
+      "directional_gradient": 0.016615567028889503,
+      "reference_directional_gradient": 0.01661556702712076,
+      "directional_gradient_abs_error": 1.7687414033407123e-12,
+      "directional_gradient_relative_error": 1.0645086023568644e-10,
+      "mean_forward_ms": 1.066209999989951,
+      "peak_incremental_cuda_bytes": 418304,
+      "finite": true
+    },
+    {
+      "primitive": "periodic_heat_2d_spectral",
+      "dtype": "float64",
+      "grid": 256,
+      "state_dimension": 65536,
+      "max_abs_value_error": 1.6375789613221059e-15,
+      "energy_gradient": -2.365529019025901,
+      "reference_energy_gradient": -2.3655290190259004,
+      "energy_gradient_abs_error": 4.440892098500626e-16,
+      "energy_gradient_relative_error": 1.8773357091722925e-16,
+      "mean_forward_ms": 0.306159999963711,
+      "peak_incremental_cuda_bytes": 2624000,
+      "finite": true
+    }
+  ],
+  "interpretation": "Dtype-specific errors and profiles are valid only for the declared workloads. The results calibrate gate tolerances; they do not define universal float32 or float64 thresholds."
+}

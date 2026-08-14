@@ -1,0 +1,305 @@
+{
+  "device": "cuda",
+  "calibration": [
+    {
+      "kind": "tempered_power_law",
+      "seed": 100,
+      "margin": 0.7017560420073319,
+      "selected": "exponential_mixture",
+      "selected_error": 0.07121182233095169,
+      "oracle_error": 0.05740118399262428,
+      "regret": 0.013810638338327408
+    },
+    {
+      "kind": "tempered_power_law",
+      "seed": 101,
+      "margin": 0.0012492843632635814,
+      "selected": "fractional_tempered",
+      "selected_error": 0.022638367488980293,
+      "oracle_error": 0.022638367488980293,
+      "regret": 0.0
+    },
+    {
+      "kind": "tempered_power_law",
+      "seed": 102,
+      "margin": 0.005331988024294525,
+      "selected": "fractional_tempered",
+      "selected_error": 0.0342520996928215,
+      "oracle_error": 0.0342520996928215,
+      "regret": 0.0
+    },
+    {
+      "kind": "tempered_power_law",
+      "seed": 103,
+      "margin": 0.0013359111026896955,
+      "selected": "distributed_order",
+      "selected_error": 0.03789248317480087,
+      "oracle_error": 0.03789248317480087,
+      "regret": 0.0
+    },
+    {
+      "kind": "tempered_power_law",
+      "seed": 104,
+      "margin": 0.00462537484320839,
+      "selected": "fractional_tempered",
+      "selected_error": 0.039245083928108215,
+      "oracle_error": 0.03621207922697067,
+      "regret": 0.0030330047011375427
+    },
+    {
+      "kind": "tempered_power_law",
+      "seed": 105,
+      "margin": 0.12409694215221001,
+      "selected": "exponential_mixture",
+      "selected_error": 0.048508308827877045,
+      "oracle_error": 0.023241475224494934,
+      "regret": 0.02526683360338211
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 100,
+      "margin": 0.5459420055587332,
+      "selected": "exponential_mixture",
+      "selected_error": 0.028794102370738983,
+      "oracle_error": 0.028794102370738983,
+      "regret": 0.0
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 101,
+      "margin": 0.0008040993191207933,
+      "selected": "distributed_order",
+      "selected_error": 0.06487929821014404,
+      "oracle_error": 0.032120414078235626,
+      "regret": 0.03275888413190842
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 102,
+      "margin": 0.0002264655370305349,
+      "selected": "fractional_tempered",
+      "selected_error": 0.077620729804039,
+      "oracle_error": 0.03379735350608826,
+      "regret": 0.043823376297950745
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 103,
+      "margin": 0.005111226232189987,
+      "selected": "exponential_mixture",
+      "selected_error": 0.032475728541612625,
+      "oracle_error": 0.032475728541612625,
+      "regret": 0.0
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 104,
+      "margin": 0.0060163573690838095,
+      "selected": "distributed_order",
+      "selected_error": 0.06253951042890549,
+      "oracle_error": 0.06108656898140907,
+      "regret": 0.0014529414474964142
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 105,
+      "margin": 0.08763087709854465,
+      "selected": "exponential_mixture",
+      "selected_error": 0.03501839190721512,
+      "oracle_error": 0.03501839190721512,
+      "regret": 0.0
+    }
+  ],
+  "test": [
+    {
+      "kind": "tempered_power_law",
+      "seed": 200,
+      "margin": 0.025119629737048912,
+      "selected": "fractional_tempered",
+      "selected_error": 0.00452949246391654,
+      "oracle_error": 0.00452949246391654,
+      "regret": 0.0
+    },
+    {
+      "kind": "tempered_power_law",
+      "seed": 201,
+      "margin": 0.01757898073879105,
+      "selected": "distributed_order",
+      "selected_error": 0.044497158378362656,
+      "oracle_error": 0.012749857269227505,
+      "regret": 0.03174730110913515
+    },
+    {
+      "kind": "tempered_power_law",
+      "seed": 202,
+      "margin": 0.03327563961970578,
+      "selected": "exponential_mixture",
+      "selected_error": 0.030409300699830055,
+      "oracle_error": 0.030409300699830055,
+      "regret": 0.0
+    },
+    {
+      "kind": "tempered_power_law",
+      "seed": 203,
+      "margin": 0.0013939270240933676,
+      "selected": "distributed_order",
+      "selected_error": 0.0799415335059166,
+      "oracle_error": 0.0799415335059166,
+      "regret": 0.0
+    },
+    {
+      "kind": "tempered_power_law",
+      "seed": 204,
+      "margin": 0.00048504515197822946,
+      "selected": "fractional_tempered",
+      "selected_error": 0.07003137469291687,
+      "oracle_error": 0.056927505880594254,
+      "regret": 0.013103868812322617
+    },
+    {
+      "kind": "tempered_power_law",
+      "seed": 205,
+      "margin": 0.015617610611382483,
+      "selected": "fractional_tempered",
+      "selected_error": 0.02837800420820713,
+      "oracle_error": 0.02837800420820713,
+      "regret": 0.0
+    },
+    {
+      "kind": "tempered_power_law",
+      "seed": 206,
+      "margin": 0.004861207212354829,
+      "selected": "fractional_tempered",
+      "selected_error": 0.01967870444059372,
+      "oracle_error": 0.01967870444059372,
+      "regret": 0.0
+    },
+    {
+      "kind": "tempered_power_law",
+      "seed": 207,
+      "margin": 0.0302727896728874,
+      "selected": "fractional_tempered",
+      "selected_error": 0.036861635744571686,
+      "oracle_error": 0.02311057783663273,
+      "regret": 0.013751057907938957
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 200,
+      "margin": 0.0001641653412232022,
+      "selected": "distributed_order",
+      "selected_error": 0.062254514545202255,
+      "oracle_error": 0.014508713036775589,
+      "regret": 0.047745801508426666
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 201,
+      "margin": 0.031660332762174274,
+      "selected": "exponential_mixture",
+      "selected_error": 0.026514142751693726,
+      "oracle_error": 0.026514142751693726,
+      "regret": 0.0
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 202,
+      "margin": 0.032116157418785964,
+      "selected": "exponential_mixture",
+      "selected_error": 0.034612298011779785,
+      "oracle_error": 0.034612298011779785,
+      "regret": 0.0
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 203,
+      "margin": 0.02235855452465337,
+      "selected": "exponential_mixture",
+      "selected_error": 0.08087380230426788,
+      "oracle_error": 0.07987534254789352,
+      "regret": 0.0009984597563743591
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 204,
+      "margin": 0.002840034031672488,
+      "selected": "distributed_order",
+      "selected_error": 0.07628390192985535,
+      "oracle_error": 0.05398699641227722,
+      "regret": 0.022296905517578125
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 205,
+      "margin": 0.0005875451660999126,
+      "selected": "distributed_order",
+      "selected_error": 0.06803002953529358,
+      "oracle_error": 0.029791247099637985,
+      "regret": 0.038238782435655594
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 206,
+      "margin": 0.0001806904107056267,
+      "selected": "fractional_tempered",
+      "selected_error": 0.0641053095459938,
+      "oracle_error": 0.026584796607494354,
+      "regret": 0.03752051293849945
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 207,
+      "margin": 0.0014894623868388125,
+      "selected": "distributed_order",
+      "selected_error": 0.055921103805303574,
+      "oracle_error": 0.011881938204169273,
+      "regret": 0.0440391656011343
+    }
+  ],
+  "summary": {
+    "tempered_power_law": {
+      "calibration_count": 6,
+      "test_count": 8,
+      "calibrated_threshold": 0.0049786814488470554,
+      "test_coverage": 0.625,
+      "accepted_count": 5,
+      "accepted_regret_bootstrap_95": [
+        0.009099671617150307,
+        0.0,
+        0.021798590198159218
+      ],
+      "accepted_error_bootstrap_95": [
+        0.028935115784406662,
+        0.016171881929039955,
+        0.03888414427638054
+      ],
+      "unconditional_regret_bootstrap_95": [
+        0.007325278595089912,
+        0.001637983601540327,
+        0.01628854125738144
+      ]
+    },
+    "two_timescale": {
+      "calibration_count": 6,
+      "test_count": 8,
+      "calibrated_threshold": 0.005563791841268539,
+      "test_coverage": 0.375,
+      "accepted_count": 3,
+      "accepted_regret_bootstrap_95": [
+        0.0003328199090901762,
+        0.0,
+        0.0009984597563743591
+      ],
+      "accepted_error_bootstrap_95": [
+        0.04733341559767723,
+        0.026514142751693726,
+        0.08087380230426788
+      ],
+      "unconditional_regret_bootstrap_95": [
+        0.023854952305555344,
+        0.010444574989378452,
+        0.037320807576179504
+      ]
+    }
+  }
+}

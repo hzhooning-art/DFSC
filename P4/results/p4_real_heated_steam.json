@@ -1,0 +1,169 @@
+{
+  "dataset_doi": "10.5281/zenodo.15064388",
+  "license": "CC BY 4.0",
+  "held_out_experiments": [
+    5,
+    8,
+    12,
+    16
+  ],
+  "held_out_rule": "largest flow, inlet temperature, column height, and water content",
+  "train_rows": 5090,
+  "test_rows": 1470,
+  "scope": "condition OOD on measured spatial temperature profiles; no interpolation or smoothing",
+  "raw": [
+    {
+      "seed": 0,
+      "model": "integer",
+      "parameters": 46,
+      "train_rmse_k": 36.167852663237205,
+      "heldout_rmse_k": 43.966136991496754,
+      "heldout_mae_k": 31.459457291387178,
+      "alpha": 1.0
+    },
+    {
+      "seed": 0,
+      "model": "dfsc",
+      "parameters": 47,
+      "train_rmse_k": 36.017246368721,
+      "heldout_rmse_k": 43.81830081888389,
+      "heldout_mae_k": 31.36588450220217,
+      "alpha": 0.6881089981340155
+    },
+    {
+      "seed": 0,
+      "model": "mlp",
+      "parameters": 4673,
+      "train_rmse_k": 8.936099240031766,
+      "heldout_rmse_k": 14.916140817892593,
+      "heldout_mae_k": 10.78718943483628,
+      "alpha": null
+    },
+    {
+      "seed": 0,
+      "model": "hybrid",
+      "parameters": 1360,
+      "train_rmse_k": 11.379072918446976,
+      "heldout_rmse_k": 15.882838459655297,
+      "heldout_mae_k": 12.452814530190617,
+      "alpha": 0.7493834740822375
+    },
+    {
+      "seed": 1,
+      "model": "integer",
+      "parameters": 46,
+      "train_rmse_k": 36.09126689609491,
+      "heldout_rmse_k": 43.19960492355168,
+      "heldout_mae_k": 30.982461833764148,
+      "alpha": 1.0
+    },
+    {
+      "seed": 1,
+      "model": "dfsc",
+      "parameters": 47,
+      "train_rmse_k": 35.82205730706218,
+      "heldout_rmse_k": 42.714098451381325,
+      "heldout_mae_k": 30.711203721459526,
+      "alpha": 0.605671924652733
+    },
+    {
+      "seed": 1,
+      "model": "mlp",
+      "parameters": 4673,
+      "train_rmse_k": 7.720504876216901,
+      "heldout_rmse_k": 12.560238718129835,
+      "heldout_mae_k": 8.83073501631298,
+      "alpha": null
+    },
+    {
+      "seed": 1,
+      "model": "hybrid",
+      "parameters": 1360,
+      "train_rmse_k": 11.446769535673127,
+      "heldout_rmse_k": 16.06563480256117,
+      "heldout_mae_k": 11.787829875830228,
+      "alpha": 0.6461016339388859
+    },
+    {
+      "seed": 2,
+      "model": "integer",
+      "parameters": 46,
+      "train_rmse_k": 36.30846201260604,
+      "heldout_rmse_k": 43.80953738621048,
+      "heldout_mae_k": 30.96352091268888,
+      "alpha": 1.0
+    },
+    {
+      "seed": 2,
+      "model": "dfsc",
+      "parameters": 47,
+      "train_rmse_k": 36.14823764722912,
+      "heldout_rmse_k": 43.46849001891867,
+      "heldout_mae_k": 30.78092686495909,
+      "alpha": 0.6744033339751315
+    },
+    {
+      "seed": 2,
+      "model": "mlp",
+      "parameters": 4673,
+      "train_rmse_k": 7.809065652394822,
+      "heldout_rmse_k": 12.279277859089214,
+      "heldout_mae_k": 8.771276899730562,
+      "alpha": null
+    },
+    {
+      "seed": 2,
+      "model": "hybrid",
+      "parameters": 1360,
+      "train_rmse_k": 11.655832376264982,
+      "heldout_rmse_k": 16.1514661081719,
+      "heldout_mae_k": 11.842897949716003,
+      "alpha": 0.7338422433996161
+    }
+  ],
+  "summary": [
+    {
+      "model": "integer",
+      "parameters": 46,
+      "train_rmse_k_mean": 36.189193857312716,
+      "train_rmse_k_std": 0.11015904221850306,
+      "heldout_rmse_k_mean": 43.65842643375297,
+      "heldout_rmse_k_std": 0.4049922749405207,
+      "heldout_mae_k_mean": 31.13514667928007,
+      "heldout_mae_k_std": 0.2810208523699985,
+      "alpha_mean": 1.0
+    },
+    {
+      "model": "dfsc",
+      "parameters": 47,
+      "train_rmse_k_mean": 35.99584710767076,
+      "train_rmse_k_std": 0.16413972662940685,
+      "heldout_rmse_k_mean": 43.33362976306129,
+      "heldout_rmse_k_std": 0.5643192213251341,
+      "heldout_mae_k_mean": 30.95267169620693,
+      "heldout_mae_k_std": 0.3595468626809466,
+      "alpha_mean": 0.6560614189206267
+    },
+    {
+      "model": "mlp",
+      "parameters": 4673,
+      "train_rmse_k_mean": 8.155223256214496,
+      "train_rmse_k_std": 0.6777065953244444,
+      "heldout_rmse_k_mean": 13.251885798370546,
+      "heldout_rmse_k_std": 1.4481171667311505,
+      "heldout_mae_k_mean": 9.463067116959941,
+      "heldout_mae_k_std": 1.1471088664248654
+    },
+    {
+      "model": "hybrid",
+      "parameters": 1360,
+      "train_rmse_k_mean": 11.493891610128363,
+      "train_rmse_k_std": 0.14427167704942181,
+      "heldout_rmse_k_mean": 16.03331312346279,
+      "heldout_rmse_k_std": 0.137199568482171,
+      "heldout_mae_k_mean": 12.027847451912281,
+      "heldout_mae_k_std": 0.3690608166761817,
+      "alpha_mean": 0.7097757838069132
+    }
+  ]
+}

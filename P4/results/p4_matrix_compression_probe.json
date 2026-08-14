@@ -1,0 +1,73 @@
+{
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "dimension": 256,
+  "batch": 512,
+  "time_domain": [
+    0.2,
+    2.0
+  ],
+  "reference_terms": 100,
+  "full_basis_bytes": 524288,
+  "results": [
+    {
+      "model": "spectral_truncation_r32",
+      "value_rmse": 0.43828203328843623,
+      "gradient_abs_error": 64.85620894658638,
+      "mean_batch_seconds": 0.0020018799928948282,
+      "gradient_finite": true,
+      "rank": 32,
+      "basis_bytes": 65536,
+      "compression_ratio": 8.0
+    },
+    {
+      "model": "spectral_truncation_r64",
+      "value_rmse": 0.3655675839953986,
+      "gradient_abs_error": 88.369337993933,
+      "mean_batch_seconds": 0.005346359987743199,
+      "gradient_finite": true,
+      "rank": 64,
+      "basis_bytes": 131072,
+      "compression_ratio": 4.0
+    },
+    {
+      "model": "spectral_truncation_r128",
+      "value_rmse": 0.2519550885204122,
+      "gradient_abs_error": 103.273261338454,
+      "mean_batch_seconds": 0.008985340013168752,
+      "gradient_finite": true,
+      "rank": 128,
+      "basis_bytes": 262144,
+      "compression_ratio": 2.0
+    },
+    {
+      "model": "spectral_truncation_r256",
+      "value_rmse": 0.0,
+      "gradient_abs_error": 0.0,
+      "mean_batch_seconds": 0.01599725999403745,
+      "gradient_finite": true,
+      "rank": 256,
+      "basis_bytes": 524288,
+      "compression_ratio": 1.0
+    },
+    {
+      "model": "spectral_truncation_r512",
+      "value_rmse": 0.0,
+      "gradient_abs_error": 0.0,
+      "mean_batch_seconds": 0.01897240001708269,
+      "gradient_finite": true,
+      "rank": 512,
+      "basis_bytes": 1048576,
+      "compression_ratio": 0.5
+    },
+    {
+      "model": "full_spectral_reference",
+      "value_rmse": 0.0,
+      "gradient_abs_error": 0.0,
+      "mean_batch_seconds": 0.015501099987886846,
+      "gradient_finite": true
+    }
+  ],
+  "exit_rule": "retain compression only if one rank has lower time and memory with value RMSE <= 1e-4 and gradient error <= 1e-3",
+  "interpretation": "matrix-scale probe; spectral truncation is a baseline, not a final compression algorithm"
+}

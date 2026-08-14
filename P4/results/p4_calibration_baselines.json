@@ -1,0 +1,144 @@
+{
+  "model": "2x2 stable matrix-exponential action",
+  "seeds": 5,
+  "noise_sigma": 0.002,
+  "truth": [
+    0.72,
+    0.41
+  ],
+  "adam": {
+    "parameter_l2_error_mean": 0.0020601665510674144,
+    "parameter_l2_error_std": 0.0006995377806852702,
+    "final_loss_mean": 4.116156496429681e-06,
+    "elapsed_seconds_mean": 1.368010939998203
+  },
+  "lbfgs_b": {
+    "parameter_l2_error_mean": 0.0020757630444655285,
+    "parameter_l2_error_std": 0.0007405179015631044,
+    "final_loss_mean": 4.1161443721775244e-06,
+    "elapsed_seconds_mean": 0.028351999996812084
+  },
+  "per_seed": [
+    {
+      "seed": 0,
+      "adam": {
+        "theta": [
+          0.7182556335660829,
+          0.4074398008347906
+        ],
+        "parameter_l2_error": 0.0030979725662625525,
+        "final_loss": 4.1015586225367875e-06,
+        "elapsed_seconds": 1.4332987000088906,
+        "iterations": 140
+      },
+      "lbfgs_b": {
+        "theta": [
+          0.7182440137202982,
+          0.40739382932188284
+        ],
+        "parameter_l2_error": 0.0031425488728066466,
+        "final_loss": 4.101581324393396e-06,
+        "elapsed_seconds": 0.029568800004199147,
+        "function_evaluations": 27,
+        "success": true
+      }
+    },
+    {
+      "seed": 1,
+      "adam": {
+        "theta": [
+          0.719836417075342,
+          0.40771364613324823
+        ],
+        "parameter_l2_error": 0.0022921983721419757,
+        "final_loss": 4.708575313591569e-06,
+        "elapsed_seconds": 1.3548022999893874,
+        "iterations": 140
+      },
+      "lbfgs_b": {
+        "theta": [
+          0.7198080747161767,
+          0.407671226485476
+        ],
+        "parameter_l2_error": 0.0023366688675375124,
+        "final_loss": 4.708587635469625e-06,
+        "elapsed_seconds": 0.028652399996644817,
+        "function_evaluations": 27,
+        "success": true
+      }
+    },
+    {
+      "seed": 2,
+      "adam": {
+        "theta": [
+          0.7193027360258128,
+          0.40822445937640583
+        ],
+        "parameter_l2_error": 0.0019075433299750471,
+        "final_loss": 4.340928628858061e-06,
+        "elapsed_seconds": 1.3155548999930033,
+        "iterations": 140
+      },
+      "lbfgs_b": {
+        "theta": [
+          0.7192796307381588,
+          0.40817373136298457
+        ],
+        "parameter_l2_error": 0.001963208854898449,
+        "final_loss": 4.3409460850872745e-06,
+        "elapsed_seconds": 0.026717899992945604,
+        "function_evaluations": 27,
+        "success": true
+      }
+    },
+    {
+      "seed": 3,
+      "adam": {
+        "theta": [
+          0.7208946571098621,
+          0.4108031372750129
+        ],
+        "parameter_l2_error": 0.0012022648737869878,
+        "final_loss": 2.7474172616001076e-06,
+        "elapsed_seconds": 1.3904151000024285,
+        "iterations": 140
+      },
+      "lbfgs_b": {
+        "theta": [
+          0.7208532268463826,
+          0.4107322817217622
+        ],
+        "parameter_l2_error": 0.0011243809725422873,
+        "final_loss": 2.747351574631761e-06,
+        "elapsed_seconds": 0.02788959999452345,
+        "function_evaluations": 27,
+        "success": true
+      }
+    },
+    {
+      "seed": 4,
+      "adam": {
+        "theta": [
+          0.7211157652189393,
+          0.4085864435942366
+        ],
+        "parameter_l2_error": 0.0018008536131705066,
+        "final_loss": 4.682302655561879e-06,
+        "elapsed_seconds": 1.345983699997305,
+        "iterations": 140
+      },
+      "lbfgs_b": {
+        "theta": [
+          0.7210731766356921,
+          0.4085399782026538
+        ],
+        "parameter_l2_error": 0.0018120076545427469,
+        "final_loss": 4.682255241305566e-06,
+        "elapsed_seconds": 0.028931299995747395,
+        "function_evaluations": 27,
+        "success": true
+      }
+    }
+  ],
+  "scope": "matched low-dimensional calibration benchmark; not a universal optimizer ranking"
+}

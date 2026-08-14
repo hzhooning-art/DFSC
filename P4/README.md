@@ -1,55 +1,69 @@
-# P4: Differentiable Primitive Reliability Protocol
+# P4: Executable Conformance Specification for Differentiable Components
 
-**Route status:** P4 has converged to a protocol and software artifact for
-auditing differentiable scientific-computing primitives in scientific machine
-learning. The manuscript claim is deliberately narrower than a universal
-solver claim: it specifies what must be measured before a primitive is treated
-as reliable and reusable on a declared domain.
+P4 provides a backend-independent engineering-software workflow for qualifying
+differentiable numerical components on a declared domain. It separates numerical
+value fidelity, parameter-gradient credibility, calibration, module reuse,
+OOD and long-horizon behavior, and hardware profiling into auditable gates.
+Predeclared error tolerances produce deterministic conformance outcomes and
+machine-readable failure reasons suitable for continuous integration.
 
-The protocol is instantiated with MLSL as the motivating fractional case study,
-and with matrix-exponential, linear RK4, and Logistic RK4 backends as
-cross-primitive controls. The current evidence supports a standalone P4 paper
-about reproducible evaluation and module reuse, subject to the scope limits in
-`docs/GENERAL_DIFFERENTIABLE_PRIMITIVE_PROTOCOL.md`.
-The first feasibility route uses a positive normalized mixture of exponential
-kernels,
+The project-local `DFSC-DNC-Conformance-v2` specification defines Core,
+Extended, and Application profiles. A standalone JSON Schema, deterministic
+canonicalization, SHA-256 record digests, legacy-record migration, and matching
+Python/CLI adapters make conformance records portable across tool boundaries.
+This specification draws on established software-quality and testing concepts;
+it is not represented as an ISO, IEC, or IEEE standard.
 
-\[
-k(t)=\sum_{j=1}^M w_j r_j \exp(-r_j t),\qquad
-w_j\geq 0,\quad \sum_j w_j=1,\quad r_j>0.
-\]
+The current evidence covers four backend families: a Mittag--Leffler spectral
+layer, matrix-exponential actions, fixed-step linear RK4, and nonlinear
+Logistic RK4. A direct 2D periodic heat-equation audit and public-data transfer
+records extend the protocol beyond scalar smoke tests. Backend-specific metrics
+must not be interpreted as a universal solver ranking.
 
-This parameterization is causal and non-negative by construction. It is a
-finite-dimensional approximation to a broader positive memory-kernel family,
-not yet a general fractional solver or a claim of complete monotonicity for
-every future extension.
+## Layout
 
-## Paper assets
+- `dfsc_protocol/`: public audit and registry API.
+- `spec/`: versioned JSON Schema, profile requirements, and example records.
+- `experiments/`: scripts used by the current manuscript evidence.
+- `results/`: machine-readable JSON audit records.
+- `tests/`: CPU-compatible contract and 2D heat-equation checks.
+- `examples/`: minimal executable component-qualification examples.
+- `docs/ENGINEERING_SOFTWARE_QUALIFICATION.md`: CI and integration workflow.
+- `paper/`: synchronized manuscript sources, bibliography, figures, and data
+  assembly scripts.
 
-- `paper/dfsc_primitive_protocol_en.tex`: English manuscript draft.
-- `paper/dfsc_primitive_protocol_zh.tex`: synchronized Chinese draft.
-- `paper/build_paper_data.py`: rebuilds the auditable paper-data bundle.
-- `paper/paper_data.json`: generated data bundle with source-file provenance.
+## Minimal verification
 
-The drafts distinguish direct generic-protocol experiments from prior MLSL
-validation and retain the negative matrix-backend module-level result.
+```bash
+python -m pip install torch
+python -m unittest discover -s P4/tests -p "test_*.py" -v
+python P4/experiments/p4_generic_protocol_smoke.py
+python P4/experiments/p4_public_api_smoke.py
+python P4/examples/qualify_exponential_component.py
+python -m dfsc_protocol.cli record.json --output evaluated.json
+python P4/experiments/p4_csi_conformance_validation.py
+```
 
-## Historical feasibility material
+The precision, calibration, plotting, and selected baseline scripts additionally
+use NumPy, SciPy, and Matplotlib. GPU profile records state their device and
+dtype and are not reproduced by the hosted CPU workflow.
 
-`experiments/feasibility_positive_mixture.py` fits a positive exponential mixture
-to a tempered power-law target. It reports kernel fit, causal convolution error,
-held-out long-time error, positivity, normalization, and gradient finiteness.
+## Manuscript data
 
-## Current P4 boundary
+```bash
+python P4/paper/build_paper_data.py
+python P4/paper/make_figures.py
+```
 
-- P1 supplies the differentiable propagation primitive and software base.
-- P2 supplies numerical reliability diagnostics for propagation and gradients.
-- P3 studies when to activate a learned correction around a fixed structured
-  operator.
-- P4 maintains a reusable temporal state under irregular query requests.
+`paper/paper_data.json` records the source JSON files used by manuscript tables
+and figures. Public-data summary records include dataset DOI, license, split,
+and source-result provenance. Regenerating the upstream public-data fits
+requires their dataset files and the corresponding DFSC propagation code;
+the normalization script can also operate directly on the included result
+records without a machine-specific path.
 
-The current result is sufficient for a protocol-focused draft, but not for a
-claim of a complete fractional solver ecosystem. Remaining evidence gaps are
-hosted CI, independent external reproduction, broader numerical domains, and
-at least one public physical benchmark if the target venue requires application
-evidence.
+## Scope
+
+Passing the protocol qualifies one implementation on its declared domain. It
+does not establish universal solver accuracy, downstream predictive benefit,
+or reliability on untested geometries, discretizations, dtypes, and devices.

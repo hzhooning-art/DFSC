@@ -1,0 +1,511 @@
+{
+  "schema": "DFSC-Common-Module-OOD-v1",
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "train_tasks": 512,
+  "test_tasks": 256,
+  "seeds": [
+    55700,
+    55701,
+    55702
+  ],
+  "target_times": [
+    1.0,
+    1.5
+  ],
+  "noise_regimes": [
+    0.003,
+    0.01
+  ],
+  "results": {
+    "t1.0_noise0.003": {
+      "matrix": {
+        "backend": "matrix",
+        "noise_sigma": 0.003,
+        "target_time": 1.0,
+        "summary": {
+          "primitive_ood_rmse": {
+            "mean": 0.16613950853326379,
+            "std": 0.022661032343992468
+          },
+          "baseline_ood_rmse": {
+            "mean": 0.15486229677869176,
+            "std": 0.002233042482888346
+          },
+          "primitive_parameter_l1_error": {
+            "mean": 0.19769633752172425,
+            "std": 0.009442597112663188
+          },
+          "primitive_training_seconds": {
+            "mean": 1.0544383000427235,
+            "std": 0.028051255706240556
+          },
+          "baseline_training_seconds": {
+            "mean": 0.2871012333392476,
+            "std": 0.0003339917372245121
+          }
+        },
+        "all_gradients_finite": true,
+        "rows": [
+          {
+            "seed": 55700,
+            "primitive_ood_rmse": 0.14259632819318585,
+            "baseline_ood_rmse": 0.15405529558814215,
+            "primitive_parameter_l1_error": 0.18864492848898923,
+            "primitive_training_seconds": 1.0867025000043213,
+            "baseline_training_seconds": 0.2868587999837473,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          },
+          {
+            "seed": 55701,
+            "primitive_ood_rmse": 0.16802113502786903,
+            "baseline_ood_rmse": 0.15314493893002867,
+            "primitive_parameter_l1_error": 0.19695738287308712,
+            "primitive_training_seconds": 1.0407839000690728,
+            "baseline_training_seconds": 0.28696270007640123,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          },
+          {
+            "seed": 55702,
+            "primitive_ood_rmse": 0.18780106237873648,
+            "baseline_ood_rmse": 0.1573866558179045,
+            "primitive_parameter_l1_error": 0.2074867012030964,
+            "primitive_training_seconds": 1.0358285000547767,
+            "baseline_training_seconds": 0.2874821999575943,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          }
+        ]
+      },
+      "logistic": {
+        "backend": "logistic",
+        "noise_sigma": 0.003,
+        "target_time": 1.0,
+        "summary": {
+          "primitive_ood_rmse": {
+            "mean": 0.14051981553215448,
+            "std": 0.025902206671061082
+          },
+          "baseline_ood_rmse": {
+            "mean": 0.16672184606143978,
+            "std": 0.007952305920021024
+          },
+          "primitive_parameter_l1_error": {
+            "mean": 0.43201129106608666,
+            "std": 0.0500312552766008
+          },
+          "primitive_training_seconds": {
+            "mean": 9.687575533326404,
+            "std": 0.05840977735109534
+          },
+          "baseline_training_seconds": {
+            "mean": 0.37899483332876116,
+            "std": 0.009711996159388009
+          }
+        },
+        "all_gradients_finite": true,
+        "rows": [
+          {
+            "seed": 55700,
+            "primitive_ood_rmse": 0.17033820016064558,
+            "baseline_ood_rmse": 0.1745903824522879,
+            "primitive_parameter_l1_error": 0.4893989171507281,
+            "primitive_training_seconds": 9.630027599981986,
+            "baseline_training_seconds": 0.39019960002042353,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          },
+          {
+            "seed": 55701,
+            "primitive_ood_rmse": 0.12762860836178025,
+            "baseline_ood_rmse": 0.15868833760164652,
+            "primitive_parameter_l1_error": 0.40907263083054984,
+            "primitive_training_seconds": 9.685888399952091,
+            "baseline_training_seconds": 0.37379590002819896,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          },
+          {
+            "seed": 55702,
+            "primitive_ood_rmse": 0.1235926380740376,
+            "baseline_ood_rmse": 0.16688681813038492,
+            "primitive_parameter_l1_error": 0.39756232521698204,
+            "primitive_training_seconds": 9.746810600045137,
+            "baseline_training_seconds": 0.372988999937661,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          }
+        ]
+      }
+    },
+    "t1.0_noise0.01": {
+      "matrix": {
+        "backend": "matrix",
+        "noise_sigma": 0.01,
+        "target_time": 1.0,
+        "summary": {
+          "primitive_ood_rmse": {
+            "mean": 0.16579669454758528,
+            "std": 0.026476726723936257
+          },
+          "baseline_ood_rmse": {
+            "mean": 0.1562466144643315,
+            "std": 0.0027187829061732843
+          },
+          "primitive_parameter_l1_error": {
+            "mean": 0.1978450072369993,
+            "std": 0.009383869119501271
+          },
+          "primitive_training_seconds": {
+            "mean": 1.138006466673687,
+            "std": 0.006502056311022645
+          },
+          "baseline_training_seconds": {
+            "mean": 0.36045133334118873,
+            "std": 0.010314696368008495
+          }
+        },
+        "all_gradients_finite": true,
+        "rows": [
+          {
+            "seed": 55700,
+            "primitive_ood_rmse": 0.1374344169997791,
+            "baseline_ood_rmse": 0.15477087754369837,
+            "primitive_parameter_l1_error": 0.18783049204518862,
+            "primitive_training_seconds": 1.1450307000195608,
+            "baseline_training_seconds": 0.35732770001050085,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          },
+          {
+            "seed": 55701,
+            "primitive_ood_rmse": 0.17009335218994143,
+            "baseline_ood_rmse": 0.1545848098434326,
+            "primitive_parameter_l1_error": 0.19926909392480185,
+            "primitive_training_seconds": 1.1367904000217095,
+            "baseline_training_seconds": 0.37196679995395243,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          },
+          {
+            "seed": 55702,
+            "primitive_ood_rmse": 0.1898623144530353,
+            "baseline_ood_rmse": 0.15938415600586356,
+            "primitive_parameter_l1_error": 0.20643543574100745,
+            "primitive_training_seconds": 1.132198299979791,
+            "baseline_training_seconds": 0.3520595000591129,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          }
+        ]
+      },
+      "logistic": {
+        "backend": "logistic",
+        "noise_sigma": 0.01,
+        "target_time": 1.0,
+        "summary": {
+          "primitive_ood_rmse": {
+            "mean": 0.14935754930137077,
+            "std": 0.022004659285820433
+          },
+          "baseline_ood_rmse": {
+            "mean": 0.16687217096089804,
+            "std": 0.007893196508532036
+          },
+          "primitive_parameter_l1_error": {
+            "mean": 0.44091063039928224,
+            "std": 0.04104916200214213
+          },
+          "primitive_training_seconds": {
+            "mean": 9.703326366647767,
+            "std": 0.05928831662620381
+          },
+          "baseline_training_seconds": {
+            "mean": 0.3735624333688368,
+            "std": 0.0031862374759314646
+          }
+        },
+        "all_gradients_finite": true,
+        "rows": [
+          {
+            "seed": 55700,
+            "primitive_ood_rmse": 0.17470227929839793,
+            "baseline_ood_rmse": 0.17463810657325443,
+            "primitive_parameter_l1_error": 0.48812313767102067,
+            "primitive_training_seconds": 9.682839400018565,
+            "baseline_training_seconds": 0.37720440002158284,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          },
+          {
+            "seed": 55701,
+            "primitive_ood_rmse": 0.1382467624528026,
+            "baseline_ood_rmse": 0.15885758916369244,
+            "primitive_parameter_l1_error": 0.42094691281884755,
+            "primitive_training_seconds": 9.656998499995098,
+            "baseline_training_seconds": 0.371289600036107,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          },
+          {
+            "seed": 55702,
+            "primitive_ood_rmse": 0.13512360615291177,
+            "baseline_ood_rmse": 0.1671208171457473,
+            "primitive_parameter_l1_error": 0.4136618407079784,
+            "primitive_training_seconds": 9.77014119992964,
+            "baseline_training_seconds": 0.3721933000488207,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          }
+        ]
+      }
+    },
+    "t1.5_noise0.003": {
+      "matrix": {
+        "backend": "matrix",
+        "noise_sigma": 0.003,
+        "target_time": 1.5,
+        "summary": {
+          "primitive_ood_rmse": {
+            "mean": 0.1997745159928178,
+            "std": 0.027152674155343136
+          },
+          "baseline_ood_rmse": {
+            "mean": 0.16380577754240236,
+            "std": 0.009749211929193764
+          },
+          "primitive_parameter_l1_error": {
+            "mean": 0.20790187537068086,
+            "std": 0.011922199979503306
+          },
+          "primitive_training_seconds": {
+            "mean": 1.1462267333408818,
+            "std": 0.009681016099518753
+          },
+          "baseline_training_seconds": {
+            "mean": 0.3599430000176653,
+            "std": 0.002707422378326206
+          }
+        },
+        "all_gradients_finite": true,
+        "rows": [
+          {
+            "seed": 55700,
+            "primitive_ood_rmse": 0.1706347059582453,
+            "baseline_ood_rmse": 0.17267740770006088,
+            "primitive_parameter_l1_error": 0.19588441143469407,
+            "primitive_training_seconds": 1.1557765000034124,
+            "baseline_training_seconds": 0.362705200095661,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          },
+          {
+            "seed": 55701,
+            "primitive_ood_rmse": 0.20432337729460182,
+            "baseline_ood_rmse": 0.15336848206290304,
+            "primitive_parameter_l1_error": 0.20809474345084888,
+            "primitive_training_seconds": 1.136419599992223,
+            "baseline_training_seconds": 0.3572938999859616,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          },
+          {
+            "seed": 55702,
+            "primitive_ood_rmse": 0.2243654647256064,
+            "baseline_ood_rmse": 0.16537144286424324,
+            "primitive_parameter_l1_error": 0.21972647122649963,
+            "primitive_training_seconds": 1.1464841000270098,
+            "baseline_training_seconds": 0.3598298999713734,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          }
+        ]
+      },
+      "logistic": {
+        "backend": "logistic",
+        "noise_sigma": 0.003,
+        "target_time": 1.5,
+        "summary": {
+          "primitive_ood_rmse": {
+            "mean": 0.23400705256287213,
+            "std": 0.03228787170254418
+          },
+          "baseline_ood_rmse": {
+            "mean": 0.27130402948474047,
+            "std": 0.009621928486579525
+          },
+          "primitive_parameter_l1_error": {
+            "mean": 0.4343633685765131,
+            "std": 0.03751928737858957
+          },
+          "primitive_training_seconds": {
+            "mean": 9.873006166657433,
+            "std": 0.13954217645264286
+          },
+          "baseline_training_seconds": {
+            "mean": 0.3820559333156173,
+            "std": 0.011068853234857894
+          }
+        },
+        "all_gradients_finite": true,
+        "rows": [
+          {
+            "seed": 55700,
+            "primitive_ood_rmse": 0.270608336591761,
+            "baseline_ood_rmse": 0.28086279789757707,
+            "primitive_parameter_l1_error": 0.47720793015483104,
+            "primitive_training_seconds": 9.746650199987926,
+            "baseline_training_seconds": 0.3760143999243155,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          },
+          {
+            "seed": 55701,
+            "primitive_ood_rmse": 0.2218518287325228,
+            "baseline_ood_rmse": 0.26162016083822365,
+            "primitive_parameter_l1_error": 0.41850477206744047,
+            "primitive_training_seconds": 10.022773100063205,
+            "baseline_training_seconds": 0.37532250001095235,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          },
+          {
+            "seed": 55702,
+            "primitive_ood_rmse": 0.20956099236433257,
+            "baseline_ood_rmse": 0.27142912971842087,
+            "primitive_parameter_l1_error": 0.4073774035072677,
+            "primitive_training_seconds": 9.849595199921168,
+            "baseline_training_seconds": 0.39483090001158416,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          }
+        ]
+      }
+    },
+    "t1.5_noise0.01": {
+      "matrix": {
+        "backend": "matrix",
+        "noise_sigma": 0.01,
+        "target_time": 1.5,
+        "summary": {
+          "primitive_ood_rmse": {
+            "mean": 0.19881546737681302,
+            "std": 0.03074280759393546
+          },
+          "baseline_ood_rmse": {
+            "mean": 0.16820550618997251,
+            "std": 0.008081446174672343
+          },
+          "primitive_parameter_l1_error": {
+            "mean": 0.20584055493169365,
+            "std": 0.013399385833513055
+          },
+          "primitive_training_seconds": {
+            "mean": 1.3134962666857366,
+            "std": 0.11496089279551518
+          },
+          "baseline_training_seconds": {
+            "mean": 0.4374210333141188,
+            "std": 0.060921207711041474
+          }
+        },
+        "all_gradients_finite": true,
+        "rows": [
+          {
+            "seed": 55700,
+            "primitive_ood_rmse": 0.16506604421766416,
+            "baseline_ood_rmse": 0.17403407371741733,
+            "primitive_parameter_l1_error": 0.1919900833094369,
+            "primitive_training_seconds": 1.2316308999434114,
+            "baseline_training_seconds": 0.36767690000124276,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          },
+          {
+            "seed": 55701,
+            "primitive_ood_rmse": 0.20615851876121347,
+            "baseline_ood_rmse": 0.1589800717619387,
+            "primitive_parameter_l1_error": 0.20679361629827134,
+            "primitive_training_seconds": 1.263932800036855,
+            "baseline_training_seconds": 0.480243599973619,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          },
+          {
+            "seed": 55702,
+            "primitive_ood_rmse": 0.2252218391515615,
+            "baseline_ood_rmse": 0.17160237309056148,
+            "primitive_parameter_l1_error": 0.21873796518737282,
+            "primitive_training_seconds": 1.4449251000769436,
+            "baseline_training_seconds": 0.4643425999674946,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          }
+        ]
+      },
+      "logistic": {
+        "backend": "logistic",
+        "noise_sigma": 0.01,
+        "target_time": 1.5,
+        "summary": {
+          "primitive_ood_rmse": {
+            "mean": 0.24182005015659347,
+            "std": 0.02971207692344701
+          },
+          "baseline_ood_rmse": {
+            "mean": 0.27143490489284255,
+            "std": 0.009562729158821778
+          },
+          "primitive_parameter_l1_error": {
+            "mean": 0.4371382941974365,
+            "std": 0.036073188896737586
+          },
+          "primitive_training_seconds": {
+            "mean": 10.367896466671178,
+            "std": 0.036342431947542705
+          },
+          "baseline_training_seconds": {
+            "mean": 0.38252496665033203,
+            "std": 0.014755306548483425
+          }
+        },
+        "all_gradients_finite": true,
+        "rows": [
+          {
+            "seed": 55700,
+            "primitive_ood_rmse": 0.27612859174416915,
+            "baseline_ood_rmse": 0.2809085929903252,
+            "primitive_parameter_l1_error": 0.4779414750747222,
+            "primitive_training_seconds": 10.407102399971336,
+            "baseline_training_seconds": 0.36561340000480413,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          },
+          {
+            "seed": 55701,
+            "primitive_ood_rmse": 0.22468804379690813,
+            "baseline_ood_rmse": 0.26178555493176975,
+            "primitive_parameter_l1_error": 0.40948409871637304,
+            "primitive_training_seconds": 10.335334200062789,
+            "baseline_training_seconds": 0.392774699954316,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          },
+          {
+            "seed": 55702,
+            "primitive_ood_rmse": 0.2246435149287032,
+            "baseline_ood_rmse": 0.27161056675643264,
+            "primitive_parameter_l1_error": 0.42398930880121444,
+            "primitive_training_seconds": 10.361252799979411,
+            "baseline_training_seconds": 0.3891867999918759,
+            "primitive_gradients_finite": true,
+            "baseline_gradients_finite": true
+          }
+        ]
+      }
+    }
+  },
+  "interpretation": "same module-level OOD template across two observation-noise regimes; backend metrics are reported separately"
+}

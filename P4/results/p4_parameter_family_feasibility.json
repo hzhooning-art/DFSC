@@ -1,0 +1,23 @@
+{
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "train_steps": 120,
+  "id_relative_l2": {
+    "mlsl_only": 0.36300935358873127,
+    "pure_conditional_mlp": 0.20863940696125013,
+    "hybrid_residual": 0.01661483277561269
+  },
+  "ood_relative_l2": {
+    "mlsl_only": 0.23130538288815616,
+    "pure_conditional_mlp": 0.5464119355117086,
+    "hybrid_residual": 0.027385015214661607
+  },
+  "gradient_abs": {
+    "alpha": 1.496685918535686,
+    "beta": 3.2521657740580365,
+    "lambda": 2.761547212410832
+  },
+  "gradient_finite": true,
+  "evaluator_terms_40_vs_80_relative_l2": 0.0,
+  "interpretation": "basic feasibility gate; not evidence of broad P4 generalization"
+}

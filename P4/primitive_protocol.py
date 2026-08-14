@@ -45,7 +45,9 @@ class PrimitiveAudit:
 
     @property
     def status(self) -> str:
-        return "pass_with_scope_limits" if all(self.gates.values()) else "incomplete"
+        if not self.gates:
+            return "incomplete"
+        return "conformant" if all(self.gates.values()) else "nonconformant"
 
     def to_dict(self) -> dict:
         return {

@@ -4,11 +4,14 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dfsc-primitive-protocol"
-version = "0.1.0"
-description = "Backend-independent reliability protocol for differentiable scientific-computing primitives"
+version = "0.2.0"
+description = "Auditable reliability qualification for differentiable engineering-computing components"
 readme = "dfsc_protocol/README.md"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = ["torch>=2.1"]
+
+[project.scripts]
+dfsc-conformance = "dfsc_protocol.cli:main"
 license = { text = "MIT" }
 
 [tool.setuptools.packages.find]

@@ -1,0 +1,109 @@
+{
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "candidate_count": 64,
+  "budget": 8,
+  "nominal": {
+    "alpha": 0.78,
+    "rate": 0.65,
+    "sigma": 0.01
+  },
+  "selected_times": {
+    "uniform": [
+      0.05,
+      0.32857142857142857,
+      0.6071428571428571,
+      0.8857142857142857,
+      1.1642857142857144,
+      1.4428571428571428,
+      1.7214285714285715,
+      2.0
+    ],
+    "standard_d_opt": [
+      2.0,
+      0.3595238095238095,
+      0.32857142857142857,
+      1.9690476190476192,
+      0.3904761904761905,
+      1.938095238095238,
+      0.2976190476190476,
+      1.9071428571428573
+    ],
+    "error_aware_d_opt": [
+      1.319047619047619,
+      0.26666666666666666,
+      1.4428571428571428,
+      0.2976190476190476,
+      1.411904761904762,
+      0.2357142857142857,
+      1.473809523809524,
+      0.32857142857142857
+    ]
+  },
+  "design_diagnostics": {
+    "value_error_max": 0.0017066656102402433,
+    "gradient_error_max": 0.02590357172362893,
+    "standard_logdet": -0.1672744094841493,
+    "error_aware_logdet": 17.71664895656851
+  },
+  "results": [
+    {
+      "strategy": "uniform",
+      "indices": [
+        0,
+        9,
+        18,
+        27,
+        36,
+        45,
+        54,
+        63
+      ],
+      "alpha_abs_error_mean": 0.015724999999999996,
+      "rate_abs_error_mean": 0.005850000000000036,
+      "joint_error_mean": 0.018051581182723455,
+      "profile_coverage": 1.0,
+      "profile_area_fraction_mean": 0.05462522273883223,
+      "replicates": 40
+    },
+    {
+      "strategy": "standard_d_opt",
+      "indices": [
+        63,
+        10,
+        9,
+        62,
+        11,
+        61,
+        8,
+        60
+      ],
+      "alpha_abs_error_mean": 0.01057500000000001,
+      "rate_abs_error_mean": 0.007075000000000031,
+      "joint_error_mean": 0.014466541511983982,
+      "profile_coverage": 1.0,
+      "profile_area_fraction_mean": 0.040615704655647275,
+      "replicates": 40
+    },
+    {
+      "strategy": "error_aware_d_opt",
+      "indices": [
+        41,
+        7,
+        45,
+        8,
+        44,
+        6,
+        46,
+        9
+      ],
+      "alpha_abs_error_mean": 0.014599999999999998,
+      "rate_abs_error_mean": 0.00738750000000003,
+      "joint_error_mean": 0.017688328141174693,
+      "profile_coverage": 1.0,
+      "profile_area_fraction_mean": 0.049509219080209735,
+      "replicates": 40
+    }
+  ],
+  "interpretation": "controlled feasibility result; design objective and hyperparameters are not yet frozen for publication"
+}

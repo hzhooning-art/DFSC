@@ -1,0 +1,15 @@
+{
+  "device": "cuda",
+  "modes": 12,
+  "target_alpha": 0.62,
+  "target_tempering": 0.045,
+  "kernel_relative_l2_full": 0.021447474136948586,
+  "kernel_relative_l2_holdout": 0.25599148869514465,
+  "convolution_relative_l2_full": 0.0105754928663373,
+  "convolution_relative_l2_holdout": 0.013514230027794838,
+  "learned_kernel_min": 0.0016116248443722725,
+  "learned_kernel_mass": 0.9735925793647766,
+  "finite_endpoint_gradients": true,
+  "feasibility": true,
+  "interpretation": "Route-feasibility evidence only; not a complete P4 validation."
+}

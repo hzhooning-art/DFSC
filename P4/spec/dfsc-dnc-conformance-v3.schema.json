@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/hzhooning-art/DFSC/P4/spec/dfsc-dnc-conformance-v3.schema.json",
+  "title": "DFSC differentiable numerical component conformance record",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schema", "component", "profile", "operating_domain", "coverage",
+    "requested_execution", "observed_execution", "evidence", "provenance"
+  ],
+  "properties": {
+    "schema": {"const": "DFSC-DNC-Conformance-v3"},
+    "profile": {"enum": ["core", "extended", "application"]},
+    "component": {
+      "type": "object",
+      "required": ["name", "version"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "version": {"type": "string", "minLength": 1}
+      }
+    },
+    "operating_domain": {
+      "type": "object",
+      "required": ["identifier"],
+      "properties": {"identifier": {"type": "string", "minLength": 1}}
+    },
+    "coverage": {
+      "type": "object",
+      "required": ["scope_frozen", "sample_count", "anchors"],
+      "properties": {
+        "scope_frozen": {"const": true},
+        "sample_count": {"type": "integer", "minimum": 0},
+        "anchors": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "migration_requires_requalification": {"type": "boolean"}
+      }
+    },
+    "requested_execution": {"$ref": "#/$defs/execution"},
+    "observed_execution": {"$ref": "#/$defs/execution"},
+    "evidence": {"type": "object", "additionalProperties": {"type": "boolean"}},
+    "provenance": {
+      "type": "object",
+      "required": ["implementation", "run_id"],
+      "properties": {
+        "implementation": {"type": "string", "minLength": 1},
+        "run_id": {"type": "string", "minLength": 1},
+        "migrated_from": {"type": "string"}
+      }
+    }
+  },
+  "$defs": {
+    "execution": {
+      "type": "object",
+      "required": ["dtype", "device"],
+      "properties": {
+        "dtype": {"type": "string", "minLength": 1},
+        "device": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

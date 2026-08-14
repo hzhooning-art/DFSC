@@ -23,6 +23,18 @@ class PrimitiveDomain:
     supports_autograd: bool
 
 
+@dataclass(frozen=True)
+class QualificationCriteria:
+    """Predeclared numerical gates for one implementation and test domain."""
+
+    value_max_abs_error: float
+    gradient_directional_relative_error: float
+
+    def __post_init__(self) -> None:
+        if self.value_max_abs_error < 0 or self.gradient_directional_relative_error < 0:
+            raise ValueError("qualification tolerances must be non-negative")
+
+
 @dataclass
 class PrimitiveAudit:
     backend: str
@@ -33,7 +45,9 @@ class PrimitiveAudit:
 
     @property
     def status(self) -> str:
-        return "pass_with_scope_limits" if all(self.gates.values()) else "incomplete"
+        if not self.gates:
+            return "incomplete"
+        return "conformant" if all(self.gates.values()) else "nonconformant"
 
     def to_dict(self) -> dict:
         return {"backend": self.backend, "domain": self.domain.__dict__, "status": self.status, "gates": self.gates, "metrics": self.metrics, "warnings": self.warnings}
@@ -62,3 +76,19 @@ def make_audit(backend_name: str, domain: PrimitiveDomain, value_gradient: Mappi
     gates = {"value_finite": bool(value_gradient["values_finite"]), "gradient_finite": bool(value_gradient["gradient_finite"]), "batch_shape": bool(batch_device["batch_shape_preserved"]), "device_local": bool(batch_device["device_local"])}
     metrics = {"value_max_abs_error": float(value_gradient["value_max_abs_error"]), "gradient_directional_relative_error": float(value_gradient["gradient_directional_relative_error"])}
     return PrimitiveAudit(backend_name, domain, gates, metrics, list(warnings))
+
+
+def qualify_audit(audit: PrimitiveAudit, criteria: QualificationCriteria) -> PrimitiveAudit:
+    """Apply predeclared error gates without discarding software-contract gates."""
+
+    gates = dict(audit.gates)
+    gates["value_accuracy"] = audit.metrics["value_max_abs_error"] <= criteria.value_max_abs_error
+    gates["gradient_accuracy"] = (
+        audit.metrics["gradient_directional_relative_error"]
+        <= criteria.gradient_directional_relative_error
+    )
+    warnings = list(audit.warnings)
+    for gate in ("value_accuracy", "gradient_accuracy"):
+        if not gates[gate]:
+            warnings.append(f"qualification gate failed: {gate}")
+    return PrimitiveAudit(audit.backend, audit.domain, gates, dict(audit.metrics), warnings)

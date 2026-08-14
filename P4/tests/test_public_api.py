@@ -15,7 +15,7 @@ class PublicApiTests(unittest.TestCase):
         mlsl = next(row for row in record["records"] if row["backend"] == "MLSL")
         self.assertEqual(mlsl["validation_artifact"], "p4_mlsl_protocol_validation.json")
         self.assertTrue(all(mlsl[key] == "pass" for key in record["required_dimensions"]))
-        self.assertEqual(record["real_data_evidence"]["status"], "pass_with_scope_limits")
+        self.assertEqual(record["real_data_evidence"]["status"], "conformant")
         self.assertGreaterEqual(len(record["real_data_evidence"]["datasets"]), 3)
 
 

@@ -1,135 +1,377 @@
 \documentclass[preprint,12pt]{elsarticle}
-\usepackage{amsmath,amssymb,booktabs,graphicx}
+\usepackage{amsmath,amssymb,booktabs,graphicx,array}
 \usepackage{hyperref}
+\usepackage{placeins}
 \hypersetup{hidelinks}
 \usepackage{microtype}
 \emergencystretch=2em
-\journal{Journal of Computational Science}
+\renewcommand{\topfraction}{0.90}
+\renewcommand{\bottomfraction}{0.80}
+\renewcommand{\textfraction}{0.08}
+\renewcommand{\floatpagefraction}{0.75}
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{1}
+\journal{Computer Standards \& Interfaces}
 
 \newcommand{\mlsl}{\textnormal{MLSL}}
 \newcommand{\dfsc}{\textnormal{DFSC}}
 
 \begin{document}
 \begin{frontmatter}
-\title{A Reliability Protocol for Differentiable Scientific-Computing Primitives in Scientific Machine Learning}
+\title{An Executable Conformance Specification for Reliability Assessment of Differentiable Numerical Components}
 \author[mech]{Ning Hu\corref{cor1}}
 \ead{huning@hdu.edu.cn}
 \author[cs]{Haitao Duan}
-\ead{25050509@hdu.edu.cn}
+\ead{duanhaitao@hdu.edu.cn}
 \author[math]{Shuqun Li}
 \ead{Shuqun.Li24@student.xjtlu.edu.cn}
 \author[ucsc]{Chuyang Hu}
 \ead{chu207@ucsc.edu}
-\address[mech]{School of Mechanical Engineering, Hangzhou Dianzi University, Hangzhou, China}
-\address[cs]{School of Computer Science, Hangzhou Dianzi University, Hangzhou, China}
-\address[math]{School of Mathematics and Physics, Xi'an Jiaotong--Liverpool University, Suzhou, China}
-\address[ucsc]{Department of Computer Science and Engineering, University of California, Santa Cruz, CA 95064, USA}
-\cortext[cor1]{Corresponding author. ORCID: Ning Hu 0000-0002-2718-0385; Haitao Duan 0009-0006-4611-8639; Shuqun Li 0009-0007-1787-685X; Chuyang Hu 0009-0007-9255-018X.}
+\address[mech]{School of Mechanical Engineering, Hangzhou Dianzi University, No. 1158, 2nd Street, Qiantang District, Hangzhou 310018, Zhejiang, China}
+\address[cs]{School of Computer Science, Hangzhou Dianzi University, No. 1158, 2nd Street, Qiantang District, Hangzhou 310018, Zhejiang, China}
+\address[math]{School of Mathematics and Physics, Xi'an Jiaotong--Liverpool University, 111 Ren'ai Road, Suzhou Industrial Park, Suzhou 215123, Jiangsu, China}
+\address[ucsc]{Department of Computer Science and Engineering, University of California, 1156 High Street, Santa Cruz, CA 95064, USA}
+\cortext[cor1]{Corresponding author. ORCID: Ning Hu 0000-0002-2718-0385; Haitao Duan 0009-0006-4611-8639; Shuqun Li 0009-0007-9255-018X; Chuyang Hu 0009-0007-1787-685X.}
 
 \begin{abstract}
-Differentiable scientific-computing primitives are increasingly used as structured components in scientific machine learning (SciML), but their numerical value accuracy, parameter gradients, calibration behavior, and module-level reuse are rarely evaluated under one reproducible contract. We present a backend-independent reliability protocol for a batched differentiable map $y=P(x;\theta)$. The protocol requires a declared domain, reference evaluator, value and gradient checks, parameter calibration, module reuse, out-of-distribution (OOD) and long-horizon tests, and device-aware profiling. We instantiate the protocol with four backends: a Mittag--Leffler spectral layer (\mlsl), a matrix-exponential action, a fixed-step linear RK4 step, and a nonlinear Logistic-equation RK4 step. The evidence is intentionally backend-specific. The matrix-exponential and RK4 backends pass value, gradient, calibration, module-reuse, OOD, and long-horizon gates on their declared low-dimensional domains. A common neural OOD task shows that primitive composition can improve the Logistic backend but does not uniformly improve the matrix backend. This negative result is part of the protocol's purpose: it separates reliable differentiability from task-level predictive benefit. The resulting open implementation provides a registry and auditable JSON reports for reusable SciML components, while its current scope remains controlled benchmark domains rather than a universal solver library.
+Differentiable numerical components cross software and hardware interfaces in simulation and learning systems, yet their numerical behavior is rarely represented by a portable conformance record. We propose an executable conformance specification for a batched component $y=P(x;\theta)$. It declares the operating domain, independent value and directional-derivative references, dtype and device policies, units, provenance, tolerances, and scope-coverage anchors fixed before evaluation. Three cumulative profiles separate core numerical checks from stress tests and application evidence. A Python implementation validates the schema, executes the checks, and emits canonical JSON. Legacy evidence is retained during migration, but a migrated record must be requalified under the current coverage rules. Across 40 randomized trials, API and command-line reports were identical and key reordering did not change the digest. Mutation tests detected all 200 injected faults, including unfrozen or inadequately sampled scopes; no clean record was rejected. The corresponding Wilson 95\% intervals were $[0.981,1.000]$ for pooled detection and $[0,0.088]$ for false rejection. Tests of a Mittag--Leffler spectral layer, matrix-exponential action, Runge--Kutta steps, and a $256^2$ periodic heat propagator supply profile evidence. The heat test reached a maximum field error of $6.99\times10^{-15}$ and a relative parameter-gradient error of $4.75\times10^{-16}$. The record is intended for exchange at software-integration and continuous-integration boundaries. Its fields and processes are mapped to established software-quality, measurement, testing, and V\&V standards without claiming status as an ISO or IEEE standard.
 \end{abstract}
 
 \begin{keyword}
-scientific machine learning \sep differentiable primitive \sep automatic differentiation \sep numerical reliability \sep parameter calibration \sep reproducibility
+conformance specification \sep software quality \sep numerical reliability \sep interoperability \sep differentiable programming \sep verification and validation
 \end{keyword}
 \end{frontmatter}
 
 \section{Introduction}
-SciML models increasingly combine learned modules with numerical maps such as propagators, matrix-function actions, integration steps, and structured residual blocks. Automatic differentiation supplies derivatives of numerical programs, but the existence of an autodiff trace is not a numerical error guarantee \citep{baydin2018autodiff}. A primitive can therefore be differentiable in a software sense while still producing inaccurate values, unstable parameter sensitivities, or unreliable calibration.
+Engineering software now couples learned modules to propagators, matrix-function actions, integration steps, and structured residual blocks. These components move between APIs, command-line tools, devices, dtypes, and continuous-integration jobs. Automatic differentiation follows the executed graph \citep{baydin2018autodiff}, but does not remove discretization, truncation, or floating-point error. A component can satisfy a callable interface while violating numerical, unit, batch-isolation, or execution-policy requirements.
 
-This paper studies the missing evaluation contract rather than proposing a new universal solver. We define a portable protocol that makes four questions explicit: (i) is the value accurate on a declared domain, (ii) are parameter gradients numerically credible, (iii) can parameters be calibrated from observations, and (iv) can the primitive be reused inside neural and physics-informed modules? OOD, long-horizon, batch/device, and finite-gradient checks are treated as additional reliability gates.
+Such defects are often discovered after integration, when diagnosis, retraining, and repeated system tests are expensive. The missing interface is not another solver API. It is a portable statement of what was tested, on which operating domain, under which execution policy, and with what decision.
 
-Our contributions are: (1) a backend-independent primitive contract and normalized audit schema; (2) a public Python implementation with registry, profile, and audit APIs; (3) cross-backend evidence covering a fractional propagator case study and three non-fractional controls; and (4) a matched module-level OOD test that records both positive and negative task outcomes. The contribution is methodological and reproducibility-oriented: the protocol is a way to compare and qualify primitives, not a claim that one backend dominates all others.
+We address this need with an executable conformance specification. Its schema binds an operating domain and execution request to value, gradient, batch, repeatability, OOD, horizon, dtype/device, unit, provenance, calibration, and composition evidence. A stable record interface carries identity, version, provenance, execution, and decision fields; backend plugins supply the numerical controls required by a component class. Core, extended, and application profiles let a consumer request only the evidence needed at a particular integration boundary.
+
+The work contributes (i) a versioned component-level schema and three cumulative conformance profiles, (ii) a reference implementation with canonical JSON, explicit requested-versus-observed execution fields, and legacy-record migration, and (iii) interoperability and mutation tests tied to numerical experiments on several backends. The specification is proposed for research and engineering use; it has not been adopted by a standards body and does not claim formal compliance with ISO or IEEE standards.
 
 \section{Related Work and Positioning}
-The protocol is complementary to differentiable programming systems such as DiffTaichi \citep{hu2020difftaichi}, scientific machine learning formulations such as universal differential equations \citep{rackauckas2020universal}, and neural operators that learn maps between function spaces \citep{kovachki2023neuraloperator}. Fractional propagation also has a mature numerical literature, including discretized fractional calculus \citep{lubich1986discretized}, Mittag--Leffler evaluation \citep{garrappa2015mittag,gorenflo2014mittag}, and fractional Laplacian definitions \citep{lischke2020fractional}. Those areas provide algorithms and model classes; the present work specifies evidence required before a numerical component is treated as a reusable SciML primitive.
+Differentiable programming has made numerical simulators and differential-equation solvers trainable components. Representative directions include automatic differentiation as a general computational technique \citep{baydin2018autodiff}, differentiable physical simulation \citep{hu2020difftaichi,holl2020control}, neural ordinary differential equations \citep{chen2018neuralode}, universal differential equations \citep{rackauckas2020universal}, physics-informed neural networks and their software ecosystems \citep{raissi2019pinn,lu2021deepxde}, and neural operators that learn maps between function spaces \citep{kovachki2023neuraloperator}. These methods demonstrate the utility of differentiating through scientific computation, but they do not by themselves define a common acceptance test for the value, parameter derivative, calibration, and reuse behavior of an individual numerical component.
 
-\section{Primitive Contract}
+Existing ecosystems operate at complementary levels. DeepXDE and TorchPhysics organize differential-equation models, training objectives, geometry, and parameter-identification workflows \citep{lu2021deepxde,tanyu2023deeppde}; the SciML/DifferentialEquations ecosystem exposes common solver interfaces and work--precision benchmarking across algorithms and applications \citep{rackauckas2019confederated}. Our unit of qualification is one executed primitive. Before integration into a model or solver, the protocol checks independent value and derivative references, dtype-specific gates, and selected compositions, then writes the evidence and any operating restrictions to a machine-readable record.
+
+Engineering verification and validation (V\&V) evaluates a model or simulation against its requirements, intended use, referent data, uncertainty, and life-cycle evidence \citep{nasa2024std7009}. The present workflow addresses a smaller unit: an executed differentiable component. It checks the forward map, parameter-derivative path, batched and device behavior, and selected compositions under a declared protocol. A component-level \texttt{CONFORMANT} decision concerns the numerical software layer. Model form, uncertainty, and agreement with experiments remain end-to-end V\&V questions.
+
+The standards literature supplies adjacent concepts but no ready-made record for differentiable numerical kernels. ISO/IEC 25010 defines software-product quality characteristics, while ISO/IEC 25023 defines measures used to evaluate product quality \citep{iso25010_2023,iso25023_2016}. ISO/IEC/IEEE 29119-2 specifies organizational and project test processes, and IEEE 1012 addresses system, software, and hardware V\&V \citep{iso29119_2_2021,ieee1012_2024}. Table~\ref{tab:standards-map} maps our component-level fields to these sources. The mapping explains design provenance; it is neither certification nor a claim that the proposed schema is part of those standards.
+
+Numerical analysis supplies the diagnostics used by the software gates. Forward error, backward error, conditioning, and floating-point stability describe different failure mechanisms \citep{higham2002accuracy}. Stable algorithms exist for matrix-exponential actions and Frechet derivatives \citep{almohy2011action,almohy2009frechet}, and derivative condition estimates quantify perturbation amplification \citep{higham2008functions,higham2014frechet}. Discretized fractional calculus \citep{lubich1986discretized}, Mittag--Leffler evaluation \citep{garrappa2015mittag,gorenflo2014mittag}, and fractional Laplacian definitions \citep{lischke2020fractional} provide corresponding references for fractional propagation. We use these established results to select independent evaluators, perturbation probes, and acceptance tolerances. Agreement between two autodiff traces is insufficient when both traces pass through the same inaccurate evaluator.
+
+Our preceding DFSC study introduced an error-controlled differentiable Mittag--Leffler propagation component and its SciML interfaces \citep{hu2026dfsc}. That work asks how a particular fractional propagator can be evaluated and differentiated reliably. The present paper asks what evidence must accompany a differentiable component before exchange or admission into a workflow. MLSL supplies one of four test backends, but no MLSL algorithm or numerical result is claimed here as a new contribution. Table~\ref{tab:p1-p4-boundary} makes this boundary explicit. The reporting design follows reproducible-computing practice \citep{wilson2017goodenough}; SciPy and other standard software provide independent controls \citep{virtanen2020scipy}.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Boundary between the preceding component paper and the present conformance study.}
+\label{tab:p1-p4-boundary}
+\begin{tabular}{p{0.16\linewidth}p{0.31\linewidth}p{0.43\linewidth}}
+\toprule
+Work & Primary object & Contribution used in the present paper\\
+\midrule
+DFSC/MLSL \citep{hu2026dfsc} & Error-controlled Mittag--Leffler propagation and differentiable SciML interfaces & One implemented backend and its independent numerical controls\\
+This study & Versioned evidence record, cumulative profiles, migration rules, and executable conformance decision & Component-exchange specification, standards traceability, coverage guards, and mutation validation\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Executable Conformance Specification}
+In this paper, \emph{conformance} is the agreement of a component record with the selected profile and its declared gates. A \emph{specification} is the versioned record schema together with its validation rules; a \emph{profile} is a cumulative set of required evidence; a \emph{gate} is a predeclared Boolean criterion; and an \emph{evidence plugin} produces backend-specific measurements. A \emph{test action} executes one or more such measurements, whereas \emph{qualification} denotes the resulting profile-level decision. These terms describe the research implementation and do not denote regulatory certification or conformance to an external standard.
+
 Each backend exposes a batched map
 \begin{equation}
     y=P(x;\theta),
 \end{equation}
 with an explicit input and parameter domain, output shape, dtype policy, device policy, and reference evaluator. The protocol does not require every primitive to share the same mathematics. It requires the evaluation record to preserve the domain on which each claim is valid.
 
-\subsection{Reliability dimensions}
-Value fidelity is measured against a declared reference using absolute and relative errors and finite-value rates. Differentiability is assessed using finite-gradient rates and directional derivative discrepancies. Calibration uses noisy observations and reports parameter error, convergence behavior, seed variation, and a matched non-gradient baseline where available. Module reuse evaluates at least two compositions, including a neural module and a batched operator or physics objective. OOD, long-horizon, and batch/device tests expose boundary behavior rather than collapsing it into one score.
-
-\section{Implementation}
-The implementation is provided in the \texttt{P4/dfsc\_protocol} package. \texttt{audit\_value\_and\_gradient} checks finite outputs and gradients; \texttt{audit\_batch\_and\_device} checks batched execution and device locality; the registry records dimension-level gate states and scope limits; and the profile schema stores latency, throughput, memory, dtype, and device metadata. Reports are JSON and are generated from experiment outputs rather than manually transcribed tables.
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=0.98\linewidth]{figures/fig_protocol.pdf}
-\caption{The proposed primitive reliability workflow. Each gate is evaluated on a declared domain and recorded with implementation metadata and scope limits.}
-\label{fig:protocol}
-\end{figure}
-
-\section{Experimental Design}
-The current evaluation uses controlled low-dimensional problems so that reference values and directional derivatives are auditable. The four backends are \mlsl, matrix-exponential action, fixed-step linear RK4, and Logistic RK4. The non-\mlsl backends are substantive controls for testing whether the protocol survives different numerical structures. All reported multi-seed experiments use five seeds unless otherwise stated. The common neural OOD task uses three seeds, 512 training tasks, 256 test tasks, two target times ($1.0$ and $1.5$), and two observation-noise levels ($0.003$ and $0.01$) on an RTX 5070 Laptop GPU.
-
-\section{Results}
-\subsection{Cross-primitive gate coverage}
-The registry contains four backend records and six required dimensions: value, gradient, calibration, module reuse, OOD, and long horizon. We additionally reran the MLSL backend through the P1 public factory API using the stable hybrid configuration. On the declared one-dimensional Dirichlet, negative-real spectral regime, the maximum relative value error against an 80-digit reference series was $1.32\times10^{-12}$; alpha and beta gradient errors against central differences were $2.22\times10^{-9}$ and $5.00\times10^{-10}$. Joint calibration recovered $(\alpha,\beta)=(0.78003,1.80007)$ from $(0.90,2.10)$ initialization. The MLSL row therefore passes all six protocol gates, while retaining its stated scope limits. All four records have status \texttt{pass\_with\_scope\_limits}.
+The executable specification stored with a submitted primitive is
+\begin{equation}
+  \mathcal{C}=\bigl(\mathcal{D}_{x},\mathcal{D}_{\theta},R,
+  \boldsymbol{\tau},\mathcal{M},\mathcal{S},\mathcal{Q},\mathcal{E}\bigr),
+\end{equation}
+where $\mathcal{D}_{x}$ and $\mathcal{D}_{\theta}$ are the declared state and parameter domains, $R$ is an independent reference evaluator, $\boldsymbol{\tau}$ contains gate tolerances, $\mathcal{M}$ records dtype/device and implementation metadata, $\mathcal{S}$ states known scope limits, $\mathcal{Q}$ records the frozen scope and required coverage anchors, and $\mathcal{E}$ contains the requested and observed execution properties, units, and provenance. A result without these fields can be retained for diagnosis but is nonconformant to the selected profile.
 
 \begin{table}[t]
 \centering
-\caption{Representative multi-seed reliability results. Values are backend-specific and are not pooled into an accuracy ranking.}
-\resizebox{\linewidth}{!}{%
-\begin{tabular}{lccc}
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{Relationship between the proposed component record and established standards. The final column states the narrower implementation in this work.}
+\label{tab:standards-map}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.22\linewidth}>{\raggedright\arraybackslash}p{0.30\linewidth}>{\raggedright\arraybackslash}p{0.38\linewidth}}
 \toprule
-Backend & OOD value error & Directional gradient error & Calibration L1 error\\
+Source & Relevant concern & Component-level realization\\
 \midrule
-Matrix exponential action & $4.27\times10^{-15}$ long-horizon max & $3.79\times10^{-11}$ & $3.11\times10^{-4}$\\
-Linear RK4 step & $1.67\times10^{-3}$ OOD max & $2.48\times10^{-10}$ & $6.71\times10^{-4}$\\
-Logistic RK4 step & $7.52\times10^{-6}$ OOD max & $4.41\times10^{-11}$ & $2.60\times10^{-2}\pm2.46\times10^{-2}$\\
+ISO/IEC 25010 & Functional suitability, reliability, performance efficiency, compatibility & Numerical gates, repeatability, resource records, and interface equivalence\\
+ISO/IEC 25023 & Product-quality measurement & Explicit metrics, units, thresholds, samples, and observed values\\
+ISO/IEC/IEEE 29119-2 & Test planning, monitoring, execution, completion & Frozen profile, executable checks, canonical report, and completion decision\\
+IEEE 1012 & Requirements-based V\&V and traceable evidence & Declared domain, independent reference, provenance, and requirement--evidence links\\
 \bottomrule
-\end{tabular}%
-}
+\end{tabular}
 \end{table}
 
-The matrix action maintains a mean long-horizon maximum absolute error of $4.27\times10^{-15}$ over five seeds and time points from $0.02$ to $12$. Linear RK4 has mean OOD maximum absolute error $1.67\times10^{-3}$ over step sizes $0.41$--$0.80$; its long-horizon errors at $t=5$ are $1.48\times10^{-9}$ for step size $0.05$ and $4.23\times10^{-7}$ for $0.20$. Logistic RK4 has mean OOD maximum absolute error $7.52\times10^{-6}$ over step sizes $0.26$--$0.50$, but its calibration error is materially larger. These results demonstrate why a protocol must preserve backend-specific error budgets.
+The mapping is implemented through requirement identifiers CQ-01--CQ-10. Supplementary Table~S5 traces each identifier from a standards concern to a schema field, test action, output artifact, and decision rule. The identifiers are project requirements rather than clauses of the cited standards.
 
-\subsection{Public-data transfer}
-We additionally evaluated the structured primitive on two provenance-aware public datasets. For the GeoTES pilot-scale thermocouple histories (Zenodo DOI \href{https://doi.org/10.5281/zenodo.18979098}{10.5281/zenodo.18979098}), the first measured heating/cooling cycle was used for identification and the second cycle for transfer. Across three seeds, the DFSC-plus-residual model obtained a cycle-2 relative error of $0.3619\pm0.0085$, compared with $0.3632\pm0.0071$ for a pure MLP, using 750 rather than 1251 parameters. For the heated-steam temperature profiles (Zenodo DOI \href{https://doi.org/10.5281/zenodo.15064388}{10.5281/zenodo.15064388}), held-out-condition RMSE was $43.33\pm0.56$ K for direct DFSC, $16.03\pm0.14$ K for the hybrid, and $13.25\pm1.45$ K for the pure MLP. The latter result is retained as a negative task-level finding: a reliable primitive does not imply unconditional predictive superiority. These experiments support real-data transfer and scope diagnosis rather than universal physical identification.
+\subsection{Conformance profiles and versioning}
+The \texttt{Core} profile requires value and directional-gradient accuracy, batch shape and independence, repeatability, at least eight cases, and nominal, boundary, and heterogeneous-batch anchors. \texttt{Extended} requires at least 16 cases and adds perturbation, execution-policy, long-horizon, OOD, dtype/device, unit, and resource evidence. \texttt{Application} requires at least 24 cases and adds an application-composition anchor, calibration, and composition evidence. The scope and sampling plan are frozen before candidate execution. Missing mandatory evidence, an unfrozen scope, or insufficient coverage is a nonconformance rather than an omitted score. The current schema is \texttt{DFSC-DNC-Conformance-v3}. Migration from v1 or v2 preserves the original evidence in provenance but marks the record for requalification; it cannot inherit a conformant decision without satisfying the v3 coverage rules.
+
+Interoperability is defined at the record boundary. A consumer selects a profile and submits a record carrying an exact schema identifier. The reference validator accepts v3, explicitly migrates v1 or v2 evidence into a requalification record, and rejects unknown identifiers. Canonical JSON sorts object keys, uses compact separators and ASCII escapes, and is encoded as UTF-8 before a SHA-256 digest is computed. Array order remains significant. The demonstrated claim is limited to the Python API, command-line path, canonical JSON, and the tested PyTorch evidence plugins; JAX, Julia, and independent validators were not evaluated. Semantic changes require a new schema identifier and a declared migration rather than silent interpretation.
+
+\subsection{Reliability dimensions}
+Value fidelity is measured against a declared reference using absolute and relative errors and finite-value rates. For prediction $\hat y$ and reference $y^{\star}$, we use $e_{\mathrm{rel}}=\|\hat y-y^{\star}\|_2/(\|y^{\star}\|_2+\epsilon)$. Acceptance is based on the mixed criterion
+\begin{equation}
+  \|\hat y-y^{\star}\|_2 \leq
+  \tau_{\mathrm{abs}}+\tau_{\mathrm{rel}}\|y^{\star}\|_2,
+  \label{eq:mixed-gate}
+\end{equation}
+which remains meaningful near zero. For a normalized parameter direction $v$, the gradient check compares the autodiff directional derivative $g_{\mathrm{AD}}=\nabla_{\theta}P(x;\theta)^{\mathsf T}v$ with a central-difference estimate $g_{\mathrm{FD}}$ and reports $e_{\mathrm{grad}}=|g_{\mathrm{AD}}-g_{\mathrm{FD}}|/(|g_{\mathrm{FD}}|+\epsilon)$. The finite-difference step is swept around a dtype-scaled nominal value rather than selected from one favorable perturbation; a gradient gate passes only when an agreement region is observed. Differentiability is additionally assessed using finite-gradient rates. Calibration uses noisy observations and reports parameter error, convergence behavior, seed variation, and a matched classical baseline where available. Module reuse evaluates at least two compositions, including a neural module and a batched operator or physics objective. OOD, long-horizon, and batch/device tests expose boundary behavior rather than collapsing it into one score.
+
+The tolerances in Eq.~\eqref{eq:mixed-gate} are declared before the audit and are tied to the reference accuracy, dtype, conditioning, and downstream task resolution. A practical calibration starts with reference-only and perturbation runs. The relative tolerance must exceed the combined reference uncertainty and dtype-dependent roundoff after the observed conditioning is taken into account. The absolute tolerance covers the near-zero regime and should not be smaller than the output resolution that matters to the downstream task. Float32 and float64 receive separate tolerance records. The selected pair is frozen before the candidate implementation is evaluated, and a sensitivity table reports whether modest threshold changes alter the status. For ill-conditioned maps, a condition estimate or perturbation study is recorded so that forward sensitivity is not misclassified as an implementation defect.
+
+Each test dimension retains its measured status. The machine-readable profile decision is binary: \texttt{CONFORMANT} means that every mandatory item is present, the scope was frozen, profile coverage requirements are met, and all gates pass on that scope. \texttt{NONCONFORMANT} records a failed gate, execution mismatch, coverage failure, migration requiring requalification, or missing evidence. Scope restrictions remain explicit fields and cannot be hidden by an aggregate score. In prose, a conformant record with nonempty restrictions is reported as \emph{conformant with declared scope limits}; this phrase does not introduce a third machine state.
+
+The protocol separates differentiation from numerical accuracy. Automatic differentiation differentiates the executed computational graph, whereas approximation and floating-point errors enter through the evaluator and its dtype. In schematic form,
+\begin{equation}
+ e_{\mathrm{grad}} \lesssim
+ \kappa_{P'}\bigl(e_{\mathrm{eval}}+e_{\mathrm{AD}}+e_{\mathrm{ref}}\bigr),
+ \label{eq:gradient-decomposition}
+\end{equation}
+where $e_{\mathrm{eval}}$ denotes the approximation error in the executed primitive, $e_{\mathrm{AD}}$ the differentiation-path error, and $e_{\mathrm{ref}}$ the error of the independent derivative check. Let $z=(x,\theta)$ and $G(z)=P'(z)$. We interpret the local derivative sensitivity as
+\begin{equation}
+ \kappa_{P'}(z;s_z)=\lim_{\delta\to0^+}\sup_{\|\Delta z\|\leq\delta s_z}
+ \frac{\|G(z+\Delta z)-G(z)\|}{\delta\bigl(\|G(z)\|+\epsilon_0\bigr)},
+ \label{eq:derivative-condition}
+\end{equation}
+with a declared perturbation scale $s_z>0$ and a fixed output-scale guard $\epsilon_0>0$. The inputs and derivative outputs are nondimensionalized, or scaled by recorded physical units, before this diagnostic is evaluated. Accordingly, $\epsilon_0$ has the same normalized units as $\|G(z)\|$; it is fixed from the independent reference resolution before the candidate implementation is run and is stored in the record. This quantity measures the conditioning of the derivative map. For matrix functions it can be evaluated or estimated through Fr\'echet derivatives \citep{higham2008functions,higham2014frechet}. Equation~\eqref{eq:gradient-decomposition} is a diagnostic decomposition, not a global error bound.
+
+Two mechanisms require separate checks. Products of step Jacobians can amplify reverse sensitivities in a stiff system even when the forward trajectory is bounded. Nonnormal operators can exhibit transient growth that is not visible from their eigenvalues. We therefore pair perturbation probes with horizon-dependent tests. For a stable $p$th-order stepper with step size $h$ and $N$ steps, the accumulated local truncation contribution scales as $O(Nh^{p+1})$ before problem-dependent stability amplification. Floating-point accumulation is commonly $O(Nu)$ in unit roundoff $u$, although cancellation and conditioning may change this behavior \citep{higham2002accuracy}. The audit record stores dtype, horizon, step size or truncation budget, reference precision, and whether the gradient reference follows the executed path. Float32 and float64 retain separate accuracy records.
+
+\section{Reference Software Architecture}
+The reference implementation is provided in the \texttt{P4/dfsc\_protocol} package. Existing numerical test actions measure finite outputs, value error, directional-gradient agreement, batch behavior, device locality, and resource use. The new \texttt{conformance} module validates the profile, compares requested with observed execution, and checks mandatory evidence. \texttt{canonical\_json} removes serialization-order ambiguity, while \texttt{record\_digest} gives a stable content identifier. The same evaluator is exposed through a Python API and a command-line interface. Reports are generated as canonical JSON suitable for continuous-integration gates and exchange between tools.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth]{figures/fig_protocol.pdf}
+\caption{Component conformance workflow. A versioned specification binds the declared domain and requested execution to measured evidence, unmet requirements, operating restrictions, and a canonical machine-readable report.}
+\label{fig:protocol}
+\end{figure}
+\FloatBarrier
+
+\begin{table}[t]
+\centering
+\setlength{\tabcolsep}{4pt}
+\caption{Required evidence and acceptance logic. Thresholds are declared per backend and domain; the specification standardizes fields and decisions, not a universal numerical value.}
+\label{tab:contract-gates}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.16\linewidth}>{\raggedright\arraybackslash}p{0.39\linewidth}>{\raggedright\arraybackslash}p{0.34\linewidth}}
+\toprule
+Gate & Required observable & Acceptance record\\
+\midrule
+Value & Mixed absolute/relative error; finite-output rate & Threshold, reference, dtype, domain\\
+Gradient & Directional error over a step-size sweep; finite-gradient rate & Stable agreement region and failed directions\\
+Calibration & Parameter error, loss, convergence, seed variation & Optimizer, bounds, initialization, noise\\
+Reuse & At least two differentiable compositions & Shape/device checks and task metric\\
+Stress & OOD and long-horizon error trajectories & Tested extension and first failed regime\\
+Performance & Synchronized latency, throughput, memory & Hardware, dtype, batch, warmup, repeats\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Every experiment follows the same order. The executable specification and metadata are frozen before sampling. In-domain cases are evaluated against an independent reference, followed by value and directional-gradient gates, calibration and composition tests over fixed seeds, and one-factor OOD or long-horizon extensions. Performance is measured only for configurations with finite outputs that satisfy the numerical gates. The record contains aggregate statistics, the worst observed metric, failed cases, execution properties, and the profile decision.
+
+\section{Experimental Setup}
+The standards-facing evaluation has two parts. First, 40 randomized records test API--CLI equivalence, key-order invariance, evidence-preserving legacy migration, and mandatory requalification after migration. Ten mutation operators target truncation evidence, gradient connectivity, dtype, batch isolation, device locality, OOD scope, units, provenance, scope freezing, and minimum profile coverage. Each operator is applied 20 times, and 40 unmodified records estimate false rejection. These tests exercise the specification and report implementation, not the numerical kernels themselves. Second, numerical experiments provide the measured evidence consumed by the profiles. They combine controlled low-dimensional components with a direct two-dimensional periodic heat-equation component. The four initial backends are \mlsl{}, matrix-exponential action, fixed-step linear RK4, and Logistic RK4; the two-dimensional extension uses a differentiable Fourier propagator. Unless otherwise stated, multi-seed experiments use five seeds. The common neural OOD task uses three seeds, 512 training tasks, 256 test tasks, two target times ($1.0$ and $1.5$), and two observation-noise levels ($0.003$ and $0.01$) on an RTX 5070 Laptop GPU. The PDE test uses five grids from $16^2$ to $256^2$, five seeds, and three horizons; a finite trigonometric expansion supplies a closed-form reference independent of the FFT implementation.
+
+\section{Results}
+The reported metrics have backend-specific meanings and scales. Comparative plots are interpreted against each backend's declared test and tolerance; timing values are descriptive when execution stacks differ. Table~\ref{tab:profile-evidence} summarizes how the detailed experiments populate the three cumulative profiles.
+\subsection{Interface interoperability and fault detection}
+All 40 randomized trials produced byte-identical canonical records through the Python API and command-line interface, and key reordering did not change the digest. Legacy migration preserved the submitted evidence in all 40 trials, while every migrated record was correctly marked for requalification rather than inheriting its earlier decision. The mutation study detected 200 of 200 injected faults. The Wilson 95\% interval for pooled detection is $[0.981,1.000]$. Each of the ten mutation categories was detected in 20 of 20 trials, with a category-wise lower bound of $0.839$. None of 40 clean records was rejected; the Wilson interval for false rejection is $[0,0.088]$. These intervals quantify finite repeated tests under the selected mutation model. They neither estimate field-defect prevalence nor establish detection of arbitrary faults.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.98\linewidth]{figures/fig_conformance_validation.pdf}
+\caption{Validation of the reference implementation. Panel (a) reports API--CLI equivalence, key-order invariance, evidence preservation during migration, and mandatory requalification over 40 randomized trials. Panel (b) reports ten mutation categories, 20 trials per category; whiskers show Wilson 95\% intervals. The clean-record test produced 0/40 false rejections.}
+\label{fig:conformance-validation}
+\end{figure}
+\FloatBarrier
+
+\subsection{Numerical gate coverage}
+The registry contains four backend records and six required dimensions: value, gradient, calibration, module reuse, OOD, and long horizon. We additionally reran the MLSL backend through the P1 public factory API using the stable hybrid configuration. On the declared one-dimensional Dirichlet, negative-real spectral regime, the maximum relative value error against an 80-digit reference series was $1.32\times10^{-12}$; alpha and beta gradient errors against central differences were $2.22\times10^{-9}$ and $5.00\times10^{-10}$. Joint calibration recovered $(\alpha,\beta)=(0.78003,1.80007)$ from $(0.90,2.10)$ initialization. MLSL meets all six gates on this regime and retains the stated operating restrictions. All four records are \emph{conformant with declared scope limits}; their machine-readable status is \texttt{CONFORMANT}, and the restrictions remain part of each decision record.
+
+\begin{table}[!htbp]
+\centering
+\setlength{\tabcolsep}{3pt}
+\caption{Profile evidence and retained operating restrictions. Profiles are cumulative; the table points to the evidence classes summarized below rather than replacing the measured results.}
+\label{tab:profile-evidence}
+\scriptsize
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.15\linewidth}>{\raggedright\arraybackslash}p{0.22\linewidth}>{\raggedright\arraybackslash}p{0.22\linewidth}>{\raggedright\arraybackslash}p{0.32\linewidth}}
+\toprule
+Backend & Core evidence & Extended evidence & Application evidence and recorded restriction\\
+\midrule
+MLSL & Value and $\alpha/\beta$ gradient gates & OOD and horizon probes & Joint calibration and hybrid reuse; one-dimensional Dirichlet problems with negative-real spectral arguments\\
+Matrix exponential action & Value and directional-gradient gates & Long-horizon probes & Two-parameter calibration; neural composition gives a negative task result; stable $2\times2$ parameter box\\
+Linear RK4 step & Value and directional-gradient gates & Step-size OOD and horizon probes & Calibration and reuse; stable linear systems at recorded step sizes\\
+Logistic RK4 step & Value and directional-gradient gates & Step-size OOD and horizon probes & Calibration and neural composition; tested scalar parameter and time ranges\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The matrix action remains near reference precision over the tested horizon. Both RK4 implementations exhibit the expected increase in error outside their declared step-size ranges, with the linear system showing the larger OOD error budget. Figure~\ref{fig:reliability-signatures} shows the seed-wise distributions; the exact stress ranges and error values are reported in Supplementary Table~S2.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.98\linewidth]{figures/fig_reliability_signatures.pdf}
+\caption{Backend-specific reliability signatures over five fixed seeds. Each point is one seed and the horizontal segment is the median. The value-error panel uses the declared stress metric for each backend (long-horizon maximum error for the matrix action and OOD maximum error for both RK4 steps); the remaining panels use the same directional-gradient and calibration definitions. All axes are logarithmic.}
+\label{fig:reliability-signatures}
+\end{figure}
+\FloatBarrier
+
+The same records also cover repeated simulation calls. We evaluated one fixed stable linear system $y'(t)=Ay(t)$ over horizons $t=1,2,4,8,12$. The exact matrix exponential action and fixed-step RK4 used the same initial states and final times over five seeds. The matrix action remains at reference precision, while RK4 errors decrease with step size under the declared stable dynamics (Figure~\ref{fig:simulation-benchmark}).
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.98\linewidth]{figures/fig_engineering_simulation.pdf}
+\caption{Trajectory and step-size evidence on a fixed stable $2\times2$ linear system. The left panel reports error over increasing final horizons; the right panel reports RK4 step-size sensitivity at $t=12$. Error bars are standard deviations over five initial-state seeds.}
+\label{fig:simulation-benchmark}
+\end{figure}
+\FloatBarrier
+
+As an optimizer-level check, the same stable $2\times2$ matrix-exponential action was calibrated from noisy observations with Adam and L-BFGS-B \citep{byrd1995lbfgsb} over five fixed seeds. Both methods reached comparable parameter error and final loss under matched bounds and initialization. Figure~\ref{fig:calibration-reproducibility} shows the paired recoveries; per-seed values, work counts, and execution times are reported in Supplementary Table~S1.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.94\linewidth]{figures/fig_calibration_reproducibility.pdf}
+\caption{Seed-wise reproducibility of the matched two-parameter calibration. The left panel pairs parameter errors obtained from the same noisy observation for Adam/autodiff and L-BFGS-B/classical optimization. The right panel shows the recovered parameter pairs relative to the ground truth; connecting segments identify matched seeds.}
+\label{fig:calibration-reproducibility}
+\end{figure}
+\FloatBarrier
+
+\subsection{Task-level transfer and OOD evidence}
+We additionally evaluated the structured primitive on two provenance-aware public datasets. For the GeoTES pilot-scale thermocouple histories (Zenodo DOI \href{https://doi.org/10.5281/zenodo.18979098}{10.5281/zenodo.18979098}), the first measured heating/cooling cycle was used for identification and the second cycle for transfer. Across three seeds, the DFSC-plus-residual model obtained a cycle-2 relative error of $0.3619\pm0.0085$, compared with $0.3632\pm0.0071$ for a pure MLP, using 750 rather than 1251 parameters. For the heated-steam temperature profiles (Zenodo DOI \href{https://doi.org/10.5281/zenodo.15064388}{10.5281/zenodo.15064388}), held-out-condition RMSE was $43.33\pm0.56$ K for direct DFSC, $16.03\pm0.14$ K for the hybrid, and $13.25\pm1.45$ K for the pure MLP. The latter result is retained as a negative task-level finding: a reliable primitive does not imply unconditional predictive superiority. Within the \texttt{Application} profile, these datasets test whether task evidence and operating restrictions are carried into the same record as component-level conformance. The negative result is operationally useful because it prevents a conformant numerical component from being reported as a superior predictive model without matched task evidence.
 
 To separate observation density from extrapolation-horizon effects, we also repeated the GeoTES experiment with
 uniform subsampling over the full first cycle while retaining the second cycle as a fixed holdout. At 40\% coverage,
 the hybrid reached $0.3607\pm0.0082$ versus $0.3657\pm0.0084$ for the pure MLP, again with 750 versus 1251
-parameters. The hybrid did not improve the MLP at 20\%, 60\%, or 100\% coverage. We therefore interpret the result
-as a conditional benefit in a moderate-data regime, rather than as evidence of monotone few-shot superiority.
+parameters. The hybrid did not improve the MLP at 20\%, 60\%, or 100\% coverage. Its benefit is confined to the moderate-data setting observed here; Figure~\ref{fig:real-data-evidence} reports both public-data comparisons.
 
-\subsection{Module-level OOD evidence}
-In the common neural task, the Logistic primitive improves OOD RMSE relative to a pure MLP at both target times and both noise levels: for example, at $t=1.5$ and noise $0.003$, the primitive gives $0.2340\pm0.0323$ versus $0.2713\pm0.0096$ for the MLP. The matrix primitive does not improve this task: at the same setting it gives $0.1998\pm0.0272$ versus $0.1638\pm0.0097$. Training with a primitive is also slower in this implementation. The result is therefore a task-conditional benefit, not a universal predictive advantage.
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.98\linewidth]{figures/fig_real_data_evidence.pdf}
+\caption{Public-data transfer evidence. The GeoTES panel reports cross-cycle error under uniform first-cycle coverage; the heated-steam panel reports held-out-condition RMSE. Error bars are standard deviations over three seeds. The negative heated-steam comparison is retained to show that primitive reliability does not imply universal task-level superiority.}
+\label{fig:real-data-evidence}
+\end{figure}
+\FloatBarrier
 
-\begin{figure}[t]
+\paragraph{Module-level OOD evidence.}
+In the common neural task, the Logistic primitive improves OOD RMSE relative to a pure MLP at both target times and both noise levels: for example, at $t=1.5$ and noise $0.003$, the primitive gives $0.2340\pm0.0323$ versus $0.2713\pm0.0096$ for the MLP. The matrix primitive does not improve this task: at the same setting it gives $0.1998\pm0.0272$ versus $0.1638\pm0.0097$. Figure~\ref{fig:common-ood} shows the full matched comparison. Training with a primitive is also slower in this implementation. The matched outcomes show that composition benefit depends on the task and the identifiable latent structure.
+
+The negative matrix result does not originate from failure of the matrix exponential evaluator. In this task, the structured model must infer a sample-dependent $2\times2$ generator $A$ from sparse trajectory snapshots and then predict through $\exp(tA)y_0$. The MLP predicts the target state directly. The structured route adds a latent-parameter identification problem to state prediction. For a diagonalizable generator $A=V\Lambda V^{-1}$,
+\begin{equation}
+ \|\exp(tA)\|\leq \kappa(V)\exp\!\left(t\max_i\operatorname{Re}\lambda_i\right),
+ \label{eq:matrix-sensitivity}
+\end{equation}
+so weakly damped modes and an ill-conditioned eigenvector basis can amplify errors in an inferred generator; nonnormal transient growth can make eigenvalues alone insufficient. We tested this explanation over 12 seed--time--noise configurations and correlated sample-wise OOD error with inferred-generator diagnostics. The mean Pearson correlation between log eigenvector condition number and log state error was $-0.044$, and the mean Spearman correlation was $-0.050$. Eigenvector conditioning alone does not explain the failure. Nonnormality and latent-parameter error had modest positive mean correlations of $0.305$ and $0.290$, respectively.
+
+We also tested a prospective local-observability screen. For the three observed states, we formed the Jacobian of $[exp(t_1A)y_0;exp(t_2A)y_0;exp(t_3A)y_0]$ with respect to the four entries of $A$. Neither its smallest singular value nor its condition number supplied the expected monotone warning: the mean Pearson and Spearman correlations between log smallest singular value and log state error were $0.46$ and $0.50$, while the mean Pearson correlation for the log Jacobian condition number was $-0.19$. A single scalar threshold is therefore unsupported by these data. The audit records local observability, perturbation sensitivity, nonnormality, and parameter-fit diagnostics together; an adverse combination triggers targeted perturbation and matched-baseline tests rather than an automatic rejection. Passing value and gradient gates establishes evaluator reliability on the declared domain, but it does not resolve a poorly identified latent inverse problem.
+
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.98\linewidth]{figures/fig_common_ood.pdf}
-\caption{Common module-level OOD task. The Logistic primitive improves OOD RMSE in the tested settings, whereas the matrix primitive does not uniformly improve the pure MLP control. Numerical means and standard deviations are reported in the source JSON.}
+\caption{Matched module-level OOD task. The two panels separate the matrix and Logistic backends; bars show means and whiskers show standard deviations over three seeds. Lower RMSE is better. The Logistic primitive improves the pure MLP control in the tested settings, whereas the matrix primitive does not uniformly improve it.}
 \label{fig:common-ood}
 \end{figure}
+\FloatBarrier
 
-\subsection{Batch and GPU profile}
-On the RTX 5070 Laptop GPU, all tested backends produced finite outputs for batch sizes 1, 64, 256, and 1024 in float64. Throughput increased with batch size, but the measurements are implementation profiles rather than a cross-domain speed ranking. The profile records warmup count, synchronized timing, peak memory, dtype, and output shape so that future backends can be compared under the same reporting contract.
+\subsection{Execution and system-level audit}
+On the RTX 5070 Laptop GPU, all tested backends produced finite outputs for batch sizes 1, 64, 256, and 1024 in float64. Throughput increased with batch size (Figure~\ref{fig:gpu-profile}). The profile records warmup count, synchronized timing, peak memory, dtype, and output shape so that future backends can be evaluated with the same reporting fields.
 
-\begin{figure}[t]
+\begin{figure}[!htbp]
 \centering
 \includegraphics[width=0.86\linewidth]{figures/fig_gpu_profile.pdf}
-\caption{Batch throughput profile on the RTX 5070 Laptop GPU. The curves are implementation profiles for the declared low-dimensional backends, not a cross-domain speed ranking.}
+\caption{Batch/device profile on the RTX 5070 Laptop GPU. The left panel reports throughput and the right panel reports mean latency for float64 execution over 50 iterations.}
 \label{fig:gpu-profile}
 \end{figure}
+We also repeated a batch-1024 matrix-exponential action and a $256^2$ periodic heat propagation in float32 and float64. Float32 value errors were of order $10^{-7}$, whereas float64 reduced them to order $10^{-15}$. Incremental CUDA memory was approximately halved in float32, but synchronized latency changed by only about 3\% for these launch-dominated workloads. Figure~\ref{fig:precision-tradeoff} summarizes the trade-off; exact value and gradient errors, latency, and memory measurements are listed in Supplementary Tables~S3--S4. Gate tolerances are calibrated separately for each dtype and reference accuracy.
 
-\section{Discussion and Scope}
-The main evidence supports protocol reuse, not universal solver superiority. The current study combines controlled low-dimensional domains with two public-data transfer tests and PyTorch execution. It does not validate variable-order or distributed-order fractional operators, complex geometries, unstructured meshes, JAX or Julia backends, or universal physical identification. These limitations define the next validation targets and prevent the protocol from being described as a complete fractional solver library.
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.90\linewidth]{figures/fig_precision_tradeoff.pdf}
+\caption{Dtype-specific accuracy and resource trade-off on the RTX 5070 Laptop GPU. Panel (a) compares value and parameter-gradient errors against independent references; panel (b) reports float32-to-float64 latency and incremental-memory ratios.}
+\label{fig:precision-tradeoff}
+\end{figure}
+\FloatBarrier
 
-\section{Reproducibility and Availability}
-Experiment scripts, JSON results, registry/profile schemas, package tests, and the paper-data builder are kept under \texttt{P4} in the public repository \href{https://github.com/hzhooning-art/DFSC}{github.com/hzhooning-art/DFSC}. The manuscript tables should be regenerated with \texttt{python paper/build\_paper\_data.py}. The hosted CPU workflow passed on GitHub Actions for the tested software commit \texttt{20fab75} (workflow run \href{https://github.com/hzhooning-art/DFSC/actions/runs/31581391771}{31581391771}). The current local test suite also passes. The repository records the implementation and audit artifacts; external reproduction remains a recommended independent check rather than a claimed completed result.
+\paragraph{Direct two-dimensional PDE audit.}
+We next applied the same protocol to the periodic heat equation
+$u_t=\kappa\Delta u$ on $[0,2\pi]^2$. The primitive evaluates the Fourier
+multiplier $\exp[-\kappa(k_x^2+k_y^2)t]$, while a finite analytic mode expansion
+provides an implementation-independent reference for both the field and its
+$\kappa$ derivative. Across 75 grid--seed--horizon configurations, from $16^2$
+to $256^2$ states and from $t=0.1$ to $1.0$, the worst maximum absolute field
+error was $6.99\times10^{-15}$ and the worst relative energy-gradient error was
+$4.75\times10^{-16}$. All outputs and gradients were finite. On the RTX 5070
+Laptop GPU, median forward latency remained between $0.369$ and $0.397$ ms for
+the tested single-field calls, while peak incremental memory increased from
+$0.011$ to $2.50$ MiB. The nearly flat timing at these sizes is launch-dominated
+and must not be extrapolated as asymptotic FFT scaling; the memory trend follows
+the increasing number of spatial degrees of freedom (Figure~\ref{fig:periodic-heat-2d}).
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=0.98\linewidth]{figures/fig_periodic_heat_2d.pdf}
+\caption{Direct two-dimensional periodic heat-equation audit. The left panel
+reports worst field and parameter-gradient errors over five seeds and three
+horizons; the center and right panels report synchronized median forward latency
+and peak incremental CUDA memory. The closed-form mode expansion is independent
+of the FFT implementation.}
+\label{fig:periodic-heat-2d}
+\end{figure}
+\FloatBarrier
+
+\section{Discussion}
+The standards mapping gives the proposal a defined role between numerical analysis and software test processes. ISO/IEC 25010 and 25023 motivate the quality characteristics and measurable fields; ISO/IEC/IEEE 29119-2 motivates the frozen test process and completion decision; IEEE 1012 motivates traceability from requirements to independent evidence. The implementation remains a research specification rather than a formal standard.
+
+The mutation results show that the current rules detected all ten fault classes represented in the experiment, including an unfrozen scope and insufficient profile coverage. The Wilson intervals describe repeated tests of this implementation and mutation model; they do not estimate field-defect prevalence or prove completeness. Further mutation operators should cover malformed units, adversarial provenance, partial device fallback, stochastic nondeterminism, and cross-version semantic drift. Independent implementations are also needed to test whether the schema is sufficiently precise without relying on this reference code.
+
+The trajectory experiment connects the component tests to repeated simulation.
+Value and gradient audits characterize one call; repeated application additionally
+depends on the time horizon and step-size error budget. Figure~\ref{fig:simulation-benchmark}
+quantifies this dependence for the controlled propagators studied here. Nonlinear,
+stiff, and complex-geometry systems require corresponding trajectory tests before
+the same qualification state can be assigned.
+The experiments cover controlled low-dimensional components, one structured two-dimensional periodic PDE, two public-data transfer tests, and PyTorch execution. They show that the protocol can be applied to different numerical structures. They do not cover variable- or distributed-order operators, nonlinear or stiff PDEs, complex geometries, or unstructured meshes. Extending the protocol to those cases requires four additions: mesh and geometry metadata in the operating domain; an independent control based on manufactured solutions, mesh refinement, or a distinct discretization; convergence records for nonlinear solves and preconditioners; and horizon-dependent value, gradient, and conservation gates. These additions define new qualification studies rather than extending the present \texttt{CONFORMANT} decisions by assumption. JAX and Julia also require separate device and autodiff validation. The $2\times2$ matrix experiment exposes an interaction between weak identifiability and nonnormality, but does not quantify its growth in larger systems.
+
+For higher-dimensional simulation, the audit budget must scale with the discretization. Let $n$ be the state dimension, $B$ the batch size, $K$ the number of value/reference cases, and $q$ the number of directional-gradient probes. If one primitive and reference evaluation cost $C_P(n)$ and $C_R(n)$, respectively, the leading work is approximately $K[C_P(n)+C_R(n)]+q[C_{P,\mathrm{AD}}(n)+2C_R(n)]$.
+
+Directional probes avoid materializing a full parameter Jacobian. Live-state storage is at least $O(Bn)$, while reverse-mode graph storage depends on the primitive. The executable specification records chunk size, sparse structure, checkpointing, and peak device memory.
+
+The independent reference may dominate the cost. A sparse finite-element primitive can use Krylov actions, while its control may require mesh refinement, a higher-order element, or a distinct discretization. Nonlinear and stiff problems add converged nonlinear solves, Jacobian or preconditioner construction, and trajectory-level references. Mesh-free primitives add dependence on the number of collocation points and residual derivative order.
+
+When no closed form exists, manufactured solutions, conservation balances, and refinement studies can serve as controls. A reference built from the same discretization must be marked as non-independent. The periodic heat experiment applies this design to 65,536 spatial states and records grid size, value error, gradient error, synchronized latency, and peak memory. Navier--Stokes, stiff multiphysics, nonperiodic boundaries, and unstructured finite-element meshes remain separate qualification studies.
+
+\subsection{Transfer to other component classes and standardization path}
+The transferable part of the proposal is the record boundary, not a universal set of numerical gates. Database kernels, simulation modules, and AI inference components could reuse schema identity, version migration, provenance, requested-versus-observed execution fields, canonical serialization, and qualification outcomes. Each class would still need its own evidence plugin, independent control, tolerances, mutation operators, and operating-domain metadata. The experiments in this paper qualify the four studied numerical backends only; they do not establish conformance criteria for those other component classes.
+
+Progress from a research specification to a consensus standard would require normative field definitions, public conformance examples, at least one independent implementation, and round-robin tests across organizations. A standards process would also need governance for controlled vocabularies, version deprecation, security and provenance requirements, and procedures for resolving incompatible interpretations. The present schema and artifact provide testable input to such work, but adoption and certification remain outside the claims of this paper.
+
+\subsection{Component selection in SciML workflows}
+A structured primitive is a reasonable choice when its parameters are identifiable from the available observations, an independent reference exercises the declared domain, and its value and gradient gates remain stable over the intended horizon. Task-level benefit must still be compared with an unstructured control.
+
+Sparse or noisy observations can make the latent inverse problem underdetermined. Nonnormal or stiff dynamics can amplify transient errors and reverse-mode Jacobian products. A same-path reference provides weaker evidence than an independently constructed one. In these cases the qualification record remains \texttt{CONFORMANT} only when every mandatory gate passes on the restricted domain; otherwise it is \texttt{NONCONFORMANT}. Perturbation and identifiability diagnostics, together with a residual hybrid or direct learned baseline, explain the decision. A failed gate is a qualification result, not a software exception.
+
+\section{Reproducibility and Software Availability}
+Experiment scripts, JSON results, schema validators, package tests, and the paper-data builder are available under \texttt{P4} in the public DFSC repository. The archived submission state is identified by the tag \texttt{p4-csi-submission-v1}. The conformance experiment writes \texttt{p4\_csi\_conformance\_validation.json}; its API and CLI paths share only the evaluator, not the serialization route. The repository preserves the implementation, inputs, and evidence artifacts needed for reproduction.
 
 \section{Conclusion}
-We introduced and tested a reliability protocol for differentiable scientific-computing primitives in SciML. By separating value fidelity, gradient credibility, calibration, reuse, OOD behavior, long-horizon stability, and hardware profiling, the protocol makes claims auditable and preserves negative results. The current evidence supports a reusable evaluation and software interface on declared domains, with \mlsl as the motivating fractional case study. Broader numerical domains and independent external validation are required before making stronger ecosystem-wide claims.
+We proposed and implemented an executable conformance specification for differentiable numerical components. Three cumulative profiles bind interface behavior, numerical evidence, a frozen and adequately sampled operating scope, units, provenance, and execution policy to a machine-readable decision. In 40 randomized trials, the API and command-line paths produced identical canonical records, key reordering preserved the digest, and legacy migration preserved evidence while requiring requalification. The reference validator detected all 200 injected specification faults and rejected none of 40 valid records; Wilson intervals report the uncertainty of these finite tests. Numerical studies across four backends and a 65,536-state heat propagator show how independent value, gradient, OOD, horizon, calibration, composition, and resource evidence populate the profiles. The demonstrated interoperability is limited to the tested Python, command-line, JSON, and PyTorch paths. The proposal complements system-level V\&V and remains a research specification rather than a formal standard.
 
-\section*{Data and Code Availability}
-The code and generated JSON reports are organized in the P4 project directory. A public release and DOI should be cited only after the corresponding release has been created and verified.
+\section*{Funding}
+This work was supported by the State Key Laboratory of Ocean Engineering, Shanghai Jiao Tong University (Grant No. GKZD010089), and the State Key Laboratory of Acoustics, Chinese Academy of Sciences (Grant No. SKLA202406). The funders had no role in the study design; collection, analysis, and interpretation of data; writing of the manuscript; or decision to submit the article for publication.
+
+\section*{Data availability}
+The conformance implementation, numerical experiments, generated JSON reports, tests, paper-data builder, and figure-generation workflow are publicly available in the tagged P4 directory of the DFSC repository at \href{https://github.com/hzhooning-art/DFSC/tree/p4-csi-submission-v1/P4}{github.com/hzhooning-art/DFSC/tree/p4-csi-submission-v1/P4}. The standards-facing interoperability and mutation-test data are stored in \texttt{P4/results/p4\_csi\_conformance\_validation.json}. Public source datasets are cited with repository DOIs in the corresponding experiments. No separate archival software DOI has been assigned to P4 at the time of submission.
 
 \section*{CRediT authorship contribution statement}
 Ning Hu: Conceptualization, Methodology, Software, Validation, Formal analysis, Investigation, Data curation, Visualization, Writing - original draft, Writing - review and editing. Haitao Duan: Methodology, Software, Validation, Investigation, Writing - review and editing. Shuqun Li: Validation, Investigation, Writing - review and editing. Chuyang Hu: Validation, Investigation, Writing - review and editing.
@@ -137,10 +379,13 @@ Ning Hu: Conceptualization, Methodology, Software, Validation, Formal analysis, 
 \section*{Declaration of competing interest}
 The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
 
-\section*{Declaration of Generative AI and AI-Assisted Technologies}
-During preparation of this manuscript, the authors used AI-assisted tools for language editing, organization of manuscript drafts, consistency checks, and code/documentation review. The authors reviewed, edited, and verified the resulting text, numerical claims, references, and software statements, and take full responsibility for the final content. AI tools were not used to generate or fabricate experimental data.
+\section*{Declaration of generative AI and AI-assisted technologies in the manuscript preparation process}
+During the preparation of this work, the authors used OpenAI Codex to support language editing, organization of manuscript drafts, consistency checks, and code and documentation review. After using this tool, the authors reviewed and edited the content as needed and take full responsibility for the content of the publication. The tool was not used to generate or fabricate experimental data.
 
-\bibliographystyle{elsarticle-num}
+\section*{Acknowledgements}
+This research used computational resources of Hangzhou Dianzi University.
+
+\bibliographystyle{elsarticle-num-names}
 \bibliography{references}
 
 \end{document}

@@ -1,0 +1,69 @@
+{
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "evaluator_terms": 100,
+  "truth": {
+    "alpha": 0.773,
+    "rate": 0.637,
+    "sigma": 0.01
+  },
+  "null_calibration": {
+    "replicates": 100,
+    "threshold_95": 1.3815428619314634,
+    "null_mean": 1.0267761617627698,
+    "null_reject_rate": 0.05
+  },
+  "mismatch_ladder": [
+    {
+      "contamination_fraction": 0.0,
+      "replicates": 100,
+      "mean_score": 0.9358179345107627,
+      "median_score": 0.9312927524438113,
+      "reject_rate": 0.03
+    },
+    {
+      "contamination_fraction": 0.05,
+      "replicates": 100,
+      "mean_score": 0.8875397356164935,
+      "median_score": 0.8983842889718664,
+      "reject_rate": 0.02
+    },
+    {
+      "contamination_fraction": 0.1,
+      "replicates": 100,
+      "mean_score": 0.8386303925924784,
+      "median_score": 0.8416503389636933,
+      "reject_rate": 0.0
+    },
+    {
+      "contamination_fraction": 0.2,
+      "replicates": 100,
+      "mean_score": 0.7243558759912823,
+      "median_score": 0.732616105519388,
+      "reject_rate": 0.0
+    },
+    {
+      "contamination_fraction": 0.3,
+      "replicates": 100,
+      "mean_score": 0.6378498887196232,
+      "median_score": 0.6457418556290255,
+      "reject_rate": 0.0
+    },
+    {
+      "contamination_fraction": 0.5,
+      "replicates": 100,
+      "mean_score": 0.6445695232914865,
+      "median_score": 0.6457593459873874,
+      "reject_rate": 0.0
+    },
+    {
+      "contamination_fraction": 1.0,
+      "replicates": 100,
+      "mean_score": 24.681212608570892,
+      "median_score": 24.538527091953632,
+      "reject_rate": 1.0
+    }
+  ],
+  "exit_rule": "retain route only if rejection rises above 0.50 by 20% contamination while null rejection remains <= 0.10",
+  "interpretation": "empirical discrepancy screening; threshold is calibrated for this controlled family and is not a universal test"
+}

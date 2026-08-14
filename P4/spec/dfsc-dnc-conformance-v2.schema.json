@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/hzhooning-art/DFSC/P4/spec/dfsc-dnc-conformance-v2.schema.json",
+  "title": "DFSC differentiable numerical component conformance record",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schema", "component", "profile", "operating_domain",
+    "requested_execution", "observed_execution", "evidence", "provenance"
+  ],
+  "properties": {
+    "schema": {"const": "DFSC-DNC-Conformance-v2"},
+    "profile": {"enum": ["core", "extended", "application"]},
+    "component": {
+      "type": "object",
+      "required": ["name", "version"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "version": {"type": "string", "minLength": 1}
+      }
+    },
+    "operating_domain": {
+      "type": "object",
+      "required": ["identifier"],
+      "properties": {"identifier": {"type": "string", "minLength": 1}}
+    },
+    "requested_execution": {"$ref": "#/$defs/execution"},
+    "observed_execution": {"$ref": "#/$defs/execution"},
+    "evidence": {
+      "type": "object",
+      "additionalProperties": {"type": "boolean"}
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["implementation", "run_id"],
+      "properties": {
+        "implementation": {"type": "string", "minLength": 1},
+        "run_id": {"type": "string", "minLength": 1}
+      }
+    }
+  },
+  "$defs": {
+    "execution": {
+      "type": "object",
+      "required": ["dtype", "device"],
+      "properties": {
+        "dtype": {"type": "string", "minLength": 1},
+        "device": {"type": "string", "minLength": 1}
+      }
+    }
+  }
+}

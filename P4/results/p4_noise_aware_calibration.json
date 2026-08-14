@@ -1,0 +1,150 @@
+{
+  "device": "cuda",
+  "target_coverage": 0.5,
+  "summary": {
+    "tempered_power_law|noise=0.0|observed_end=10.0": {
+      "calibrated_threshold": 0.9999997615814209,
+      "fixed_threshold": 0.005,
+      "fixed": {
+        "count": 4,
+        "coverage": 1.0,
+        "accepted_regret_mean": 0.0,
+        "accepted_error_mean": 2.420183363938122e-06
+      },
+      "noise_aware": {
+        "count": 4,
+        "coverage": 1.0,
+        "accepted_regret_mean": 0.0,
+        "accepted_error_mean": 2.420183363938122e-06
+      },
+      "calibration_count": 3,
+      "test_count": 4
+    },
+    "tempered_power_law|noise=0.0|observed_end=14.0": {
+      "calibrated_threshold": 0.999999463558197,
+      "fixed_threshold": 0.005,
+      "fixed": {
+        "count": 4,
+        "coverage": 1.0,
+        "accepted_regret_mean": 0.0,
+        "accepted_error_mean": 3.1468534871237352e-06
+      },
+      "noise_aware": {
+        "count": 4,
+        "coverage": 1.0,
+        "accepted_regret_mean": 0.0,
+        "accepted_error_mean": 3.1468534871237352e-06
+      },
+      "calibration_count": 3,
+      "test_count": 4
+    },
+    "tempered_power_law|noise=0.05|observed_end=10.0": {
+      "calibrated_threshold": 0.002185405930504203,
+      "fixed_threshold": 0.005,
+      "fixed": {
+        "count": 4,
+        "coverage": 1.0,
+        "accepted_regret_mean": 0.03258732706308365,
+        "accepted_error_mean": 0.11636841297149658
+      },
+      "noise_aware": {
+        "count": 4,
+        "coverage": 1.0,
+        "accepted_regret_mean": 0.03258732706308365,
+        "accepted_error_mean": 0.11636841297149658
+      },
+      "calibration_count": 3,
+      "test_count": 4
+    },
+    "tempered_power_law|noise=0.05|observed_end=14.0": {
+      "calibrated_threshold": 0.009532171301543713,
+      "fixed_threshold": 0.005,
+      "fixed": {
+        "count": 3,
+        "coverage": 0.75,
+        "accepted_regret_mean": 0.011155295185744762,
+        "accepted_error_mean": 0.0760517343878746
+      },
+      "noise_aware": {
+        "count": 3,
+        "coverage": 0.75,
+        "accepted_regret_mean": 0.011155295185744762,
+        "accepted_error_mean": 0.0760517343878746
+      },
+      "calibration_count": 3,
+      "test_count": 4
+    },
+    "two_timescale|noise=0.0|observed_end=10.0": {
+      "calibrated_threshold": 0.9388419985771179,
+      "fixed_threshold": 0.005,
+      "fixed": {
+        "count": 4,
+        "coverage": 1.0,
+        "accepted_regret_mean": 0.0,
+        "accepted_error_mean": 0.012020053341984749
+      },
+      "noise_aware": {
+        "count": 0,
+        "coverage": 0.0,
+        "accepted_regret_mean": null,
+        "accepted_error_mean": null
+      },
+      "calibration_count": 3,
+      "test_count": 4
+    },
+    "two_timescale|noise=0.0|observed_end=14.0": {
+      "calibrated_threshold": 0.8476965427398682,
+      "fixed_threshold": 0.005,
+      "fixed": {
+        "count": 4,
+        "coverage": 1.0,
+        "accepted_regret_mean": 0.0,
+        "accepted_error_mean": 0.006841267924755812
+      },
+      "noise_aware": {
+        "count": 4,
+        "coverage": 1.0,
+        "accepted_regret_mean": 0.0,
+        "accepted_error_mean": 0.006841267924755812
+      },
+      "calibration_count": 3,
+      "test_count": 4
+    },
+    "two_timescale|noise=0.05|observed_end=10.0": {
+      "calibrated_threshold": 0.0006358744576573372,
+      "fixed_threshold": 0.005,
+      "fixed": {
+        "count": 3,
+        "coverage": 0.75,
+        "accepted_regret_mean": 0.0038683589082211256,
+        "accepted_error_mean": 0.07824601978063583
+      },
+      "noise_aware": {
+        "count": 4,
+        "coverage": 1.0,
+        "accepted_regret_mean": 0.014865152537822723,
+        "accepted_error_mean": 0.0984647274017334
+      },
+      "calibration_count": 3,
+      "test_count": 4
+    },
+    "two_timescale|noise=0.05|observed_end=14.0": {
+      "calibrated_threshold": 0.030356908217072487,
+      "fixed_threshold": 0.005,
+      "fixed": {
+        "count": 1,
+        "coverage": 0.25,
+        "accepted_regret_mean": 0.0,
+        "accepted_error_mean": 0.07469554990530014
+      },
+      "noise_aware": {
+        "count": 1,
+        "coverage": 0.25,
+        "accepted_regret_mean": 0.0,
+        "accepted_error_mean": 0.07469554990530014
+      },
+      "calibration_count": 3,
+      "test_count": 4
+    }
+  }
+}

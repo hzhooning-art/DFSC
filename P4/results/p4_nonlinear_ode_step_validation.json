@@ -1,0 +1,222 @@
+{
+  "backend": "logistic_rk4_step",
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "seeds": [
+    55600,
+    55601,
+    55602,
+    55603,
+    55604
+  ],
+  "in_domain_step_range": [
+    0.001,
+    0.25
+  ],
+  "ood_step_range": [
+    0.26,
+    0.5
+  ],
+  "rows": [
+    {
+      "seed": 55600,
+      "in_domain_max_abs_error": 3.8648772282545707e-07,
+      "ood_max_abs_error": 9.098024424947226e-06,
+      "ood_values_finite": true,
+      "gradient_directional_relative_error": 4.3801829492637795e-11,
+      "gradient_finite": true,
+      "batch_device": {
+        "batch_shape_preserved": true,
+        "device_local": true,
+        "outputs_finite": true
+      },
+      "long_horizon": {
+        "0.05": {
+          "absolute_error": 8.992842026600556e-10,
+          "state_finite": true
+        },
+        "0.2": {
+          "absolute_error": 2.453583816119931e-07,
+          "state_finite": true
+        }
+      },
+      "calibration": {
+        "parameter_l1_error": 0.03586376141647102,
+        "final_loss": 1.2310103047753854e-06,
+        "gradient_finite": true,
+        "elapsed_seconds": 1.119512000004761
+      },
+      "module_reuse": {
+        "output_shape_preserved": true,
+        "loss_finite": true,
+        "all_gradients_finite": true
+      }
+    },
+    {
+      "seed": 55601,
+      "in_domain_max_abs_error": 1.9357253178142741e-07,
+      "ood_max_abs_error": 4.858670699159351e-06,
+      "ood_values_finite": true,
+      "gradient_directional_relative_error": 4.440782386642855e-11,
+      "gradient_finite": true,
+      "batch_device": {
+        "batch_shape_preserved": true,
+        "device_local": true,
+        "outputs_finite": true
+      },
+      "long_horizon": {
+        "0.05": {
+          "absolute_error": 1.239487623649893e-09,
+          "state_finite": true
+        },
+        "0.2": {
+          "absolute_error": 3.308042502148112e-07,
+          "state_finite": true
+        }
+      },
+      "calibration": {
+        "parameter_l1_error": 0.0016013727835646474,
+        "final_loss": 9.266089239394455e-07,
+        "gradient_finite": true,
+        "elapsed_seconds": 1.0372422001091763
+      },
+      "module_reuse": {
+        "output_shape_preserved": true,
+        "loss_finite": true,
+        "all_gradients_finite": true
+      }
+    },
+    {
+      "seed": 55602,
+      "in_domain_max_abs_error": 1.887349833085139e-07,
+      "ood_max_abs_error": 5.958205616662937e-06,
+      "ood_values_finite": true,
+      "gradient_directional_relative_error": 6.945658135508966e-11,
+      "gradient_finite": true,
+      "batch_device": {
+        "batch_shape_preserved": true,
+        "device_local": true,
+        "outputs_finite": true
+      },
+      "long_horizon": {
+        "0.05": {
+          "absolute_error": 1.1590071125056056e-09,
+          "state_finite": true
+        },
+        "0.2": {
+          "absolute_error": 3.107477843933282e-07,
+          "state_finite": true
+        }
+      },
+      "calibration": {
+        "parameter_l1_error": 0.013771152457357716,
+        "final_loss": 8.246535709141121e-07,
+        "gradient_finite": true,
+        "elapsed_seconds": 1.0319508999818936
+      },
+      "module_reuse": {
+        "output_shape_preserved": true,
+        "loss_finite": true,
+        "all_gradients_finite": true
+      }
+    },
+    {
+      "seed": 55603,
+      "in_domain_max_abs_error": 2.8026220444399286e-07,
+      "ood_max_abs_error": 1.353701808048946e-05,
+      "ood_values_finite": true,
+      "gradient_directional_relative_error": 6.676074023586554e-12,
+      "gradient_finite": true,
+      "batch_device": {
+        "batch_shape_preserved": true,
+        "device_local": true,
+        "outputs_finite": true
+      },
+      "long_horizon": {
+        "0.05": {
+          "absolute_error": 9.882814566708475e-10,
+          "state_finite": true
+        },
+        "0.2": {
+          "absolute_error": 2.6986462220435214e-07,
+          "state_finite": true
+        }
+      },
+      "calibration": {
+        "parameter_l1_error": 0.06408348736848074,
+        "final_loss": 1.0661183862602983e-06,
+        "gradient_finite": true,
+        "elapsed_seconds": 1.0133831000421196
+      },
+      "module_reuse": {
+        "output_shape_preserved": true,
+        "loss_finite": true,
+        "all_gradients_finite": true
+      }
+    },
+    {
+      "seed": 55604,
+      "in_domain_max_abs_error": 1.3121875219734846e-07,
+      "ood_max_abs_error": 4.154877790957245e-06,
+      "ood_values_finite": true,
+      "gradient_directional_relative_error": 5.614050832239481e-11,
+      "gradient_finite": true,
+      "batch_device": {
+        "batch_shape_preserved": true,
+        "device_local": true,
+        "outputs_finite": true
+      },
+      "long_horizon": {
+        "0.05": {
+          "absolute_error": 6.248705997080606e-10,
+          "state_finite": true
+        },
+        "0.2": {
+          "absolute_error": 1.6999179486276716e-07,
+          "state_finite": true
+        }
+      },
+      "calibration": {
+        "parameter_l1_error": 0.014432312759096844,
+        "final_loss": 1.1443232791660545e-06,
+        "gradient_finite": true,
+        "elapsed_seconds": 0.9744065999984741
+      },
+      "module_reuse": {
+        "output_shape_preserved": true,
+        "loss_finite": true,
+        "all_gradients_finite": true
+      }
+    }
+  ],
+  "summary": {
+    "in_domain_max_abs_error": {
+      "mean": 2.3605523891134794e-07,
+      "std": 9.952243963060778e-08
+    },
+    "ood_max_abs_error": {
+      "mean": 7.521359322443244e-06,
+      "std": 3.858127176915262e-06
+    },
+    "gradient_directional_relative_error": {
+      "mean": 4.409656341202747e-11,
+      "std": 2.339157912743671e-11
+    },
+    "calibration_parameter_l1_error": {
+      "mean": 0.025950417356994195,
+      "std": 0.0246286551480434
+    },
+    "long_horizon_step_0.05_error": {
+      "mean": 9.821861990388926e-10,
+      "std": 2.4085991221060503e-10
+    },
+    "long_horizon_step_0.20_error": {
+      "mean": 2.6535336665745036e-07,
+      "std": 6.296517201745068e-08
+    }
+  },
+  "all_ood_values_finite": true,
+  "all_gradients_finite": true,
+  "all_module_reuse_gradients_finite": true,
+  "interpretation": "second ODE family cross-primitive evidence; logistic fixed-step RK4 domain only"
+}

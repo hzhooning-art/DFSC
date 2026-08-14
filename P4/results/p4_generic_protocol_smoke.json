@@ -17,7 +17,7 @@
     "supports_gpu": true,
     "supports_autograd": true
   },
-  "status": "pass_with_scope_limits",
+  "status": "conformant",
   "gates": {
     "value_finite": true,
     "gradient_finite": true,

@@ -1,0 +1,117 @@
+{
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "train_tasks": 512,
+  "test_tasks": 256,
+  "training_domain": {
+    "alpha": [
+      0.68,
+      0.86
+    ],
+    "rate": [
+      0.45,
+      0.8
+    ]
+  },
+  "test_domain": {
+    "alpha": [
+      0.65,
+      0.9
+    ],
+    "rate": [
+      0.4,
+      0.9
+    ]
+  },
+  "rows": [
+    {
+      "seed": 54000,
+      "model": "data_only",
+      "test_rmse": 0.024218427142292585,
+      "alpha_error": 0.06041370229772938,
+      "rate_error": 0.13330303777056754,
+      "physics_residual": 0.06698088704457908,
+      "elapsed_seconds": 2.0611958000808954,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54000,
+      "model": "physics_consistent",
+      "test_rmse": 0.04185263046788729,
+      "alpha_error": 0.05827582255162067,
+      "rate_error": 0.1333056764597357,
+      "physics_residual": 0.03228290442065754,
+      "elapsed_seconds": 1.6034790999256074,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54001,
+      "model": "data_only",
+      "test_rmse": 0.02199126739875825,
+      "alpha_error": 0.06297962331216311,
+      "rate_error": 0.11690805963694827,
+      "physics_residual": 0.06034857223588095,
+      "elapsed_seconds": 1.5889009999809787,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54001,
+      "model": "physics_consistent",
+      "test_rmse": 0.0432818237422381,
+      "alpha_error": 0.06156010752205411,
+      "rate_error": 0.11648277256956888,
+      "physics_residual": 0.025897299923815658,
+      "elapsed_seconds": 1.5854267000686377,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54002,
+      "model": "data_only",
+      "test_rmse": 0.025842380444672085,
+      "alpha_error": 0.06721702269569105,
+      "rate_error": 0.12563804522385477,
+      "physics_residual": 0.06683295767209388,
+      "elapsed_seconds": 1.602978700073436,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54002,
+      "model": "physics_consistent",
+      "test_rmse": 0.042243616425099696,
+      "alpha_error": 0.06397861270693293,
+      "rate_error": 0.12026608951337595,
+      "physics_residual": 0.029195415271665456,
+      "elapsed_seconds": 1.7998000999214128,
+      "gradient_finite": true
+    }
+  ],
+  "summary": {
+    "data_only": {
+      "test_rmse_mean": 0.02401735832857431,
+      "test_rmse_std": 0.0019334139298115885,
+      "alpha_error_mean": 0.06353678276852785,
+      "alpha_error_std": 0.0034357112952331723,
+      "rate_error_mean": 0.1252830475437902,
+      "rate_error_std": 0.008203252069460133,
+      "physics_residual_mean": 0.0647208056508513,
+      "physics_residual_std": 0.0037871875516071888,
+      "elapsed_seconds_mean": 1.75102516671177,
+      "elapsed_seconds_std": 0.2687078557903111,
+      "all_gradients_finite": true
+    },
+    "physics_consistent": {
+      "test_rmse_mean": 0.04245935687840836,
+      "test_rmse_std": 0.0007386178384372855,
+      "alpha_error_mean": 0.061271514260202574,
+      "alpha_error_std": 0.0028623274519123765,
+      "rate_error_mean": 0.12335151284756019,
+      "rate_error_std": 0.008825667209213928,
+      "physics_residual_mean": 0.029125206538712884,
+      "physics_residual_std": 0.0031933811465528063,
+      "elapsed_seconds_mean": 1.6629019666385527,
+      "elapsed_seconds_std": 0.11890036357134398,
+      "all_gradients_finite": true
+    }
+  },
+  "interpretation": "physics-consistency compatibility gate; not a new PINN algorithm claim"
+}

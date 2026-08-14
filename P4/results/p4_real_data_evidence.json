@@ -1,0 +1,246 @@
+{
+  "schema": "DFSC-P4-Real-Data-Evidence-v1",
+  "datasets": [
+    {
+      "name": "GeoTES pilot-scale thermocouple histories",
+      "source": "https://doi.org/10.5281/zenodo.18979098",
+      "license": "CC BY 4.0",
+      "split": "first measured heating/cooling cycle for identification; second cycle for transfer; T1 driver; T2-T4 responses; 56 samples per cycle; three seeds",
+      "result_file": "p4_real_geotes_cross_cycle.json",
+      "models": [
+        {
+          "model": "Integer propagation",
+          "runs": 3,
+          "cycle2_error_mean": 0.89235632959402,
+          "cycle2_error_std": 0.0,
+          "parameter_count": 1,
+          "alpha_mean": 1.0,
+          "beta_mean": 2.0
+        },
+        {
+          "model": "DFSC",
+          "runs": 3,
+          "cycle2_error_mean": 0.666922013962953,
+          "cycle2_error_std": 0.0,
+          "parameter_count": 3,
+          "alpha_mean": 0.37727828454055423,
+          "beta_mean": 1.5625353212127482
+        },
+        {
+          "model": "Pure MLP",
+          "runs": 3,
+          "cycle2_error_mean": 0.3631570001939395,
+          "cycle2_error_std": 0.007081084437535276,
+          "parameter_count": 1251,
+          "alpha_mean": null,
+          "beta_mean": null
+        },
+        {
+          "model": "DFSC + residual MLP",
+          "runs": 3,
+          "cycle2_error_mean": 0.36186455340205903,
+          "cycle2_error_std": 0.008518350879050117,
+          "parameter_count": 750,
+          "alpha_mean": 0.3986067008918887,
+          "beta_mean": 1.6791322319635666
+        }
+      ]
+    },
+    {
+      "name": "Heated steam injection experimental temperature profiles",
+      "source": "https://doi.org/10.5281/zenodo.15064388",
+      "license": "CC BY 4.0",
+      "split": "largest flow, inlet temperature, column height, and water content",
+      "result_file": "p4_real_heated_steam.json",
+      "models": [
+        {
+          "model": "integer",
+          "parameters": 46,
+          "train_rmse_k_mean": 36.189193857312716,
+          "train_rmse_k_std": 0.11015904221850306,
+          "heldout_rmse_k_mean": 43.65842643375297,
+          "heldout_rmse_k_std": 0.4049922749405207,
+          "heldout_mae_k_mean": 31.13514667928007,
+          "heldout_mae_k_std": 0.2810208523699985,
+          "alpha_mean": 1.0
+        },
+        {
+          "model": "dfsc",
+          "parameters": 47,
+          "train_rmse_k_mean": 35.99584710767076,
+          "train_rmse_k_std": 0.16413972662940685,
+          "heldout_rmse_k_mean": 43.33362976306129,
+          "heldout_rmse_k_std": 0.5643192213251341,
+          "heldout_mae_k_mean": 30.95267169620693,
+          "heldout_mae_k_std": 0.3595468626809466,
+          "alpha_mean": 0.6560614189206267
+        },
+        {
+          "model": "mlp",
+          "parameters": 4673,
+          "train_rmse_k_mean": 8.155223256214496,
+          "train_rmse_k_std": 0.6777065953244444,
+          "heldout_rmse_k_mean": 13.251885798370546,
+          "heldout_rmse_k_std": 1.4481171667311505,
+          "heldout_mae_k_mean": 9.463067116959941,
+          "heldout_mae_k_std": 1.1471088664248654
+        },
+        {
+          "model": "hybrid",
+          "parameters": 1360,
+          "train_rmse_k_mean": 11.493891610128363,
+          "train_rmse_k_std": 0.14427167704942181,
+          "heldout_rmse_k_mean": 16.03331312346279,
+          "heldout_rmse_k_std": 0.137199568482171,
+          "heldout_mae_k_mean": 12.027847451912281,
+          "heldout_mae_k_std": 0.3690608166761817,
+          "alpha_mean": 0.7097757838069132
+        }
+      ]
+    },
+    {
+      "name": "GeoTES few-shot cross-cycle transfer",
+      "source": "https://doi.org/10.5281/zenodo.18979098",
+      "license": "CC BY 4.0",
+      "split": "uniform subsampling over the full first cycle; second cycle held out; three seeds",
+      "result_file": "p4_real_geotes_fewshot.json",
+      "models": [
+        {
+          "train_fraction": 0.2,
+          "model": "Integer propagation",
+          "runs": 3,
+          "cycle2_error_mean": 0.8900093788083883,
+          "cycle2_error_std": 0.0,
+          "parameter_count": 1
+        },
+        {
+          "train_fraction": 0.2,
+          "model": "DFSC",
+          "runs": 3,
+          "cycle2_error_mean": 0.6677877473219974,
+          "cycle2_error_std": 1.3597399555105182e-16,
+          "parameter_count": 3
+        },
+        {
+          "train_fraction": 0.2,
+          "model": "Pure MLP",
+          "runs": 3,
+          "cycle2_error_mean": 0.37419318500110627,
+          "cycle2_error_std": 0.004011141912768402,
+          "parameter_count": 1251
+        },
+        {
+          "train_fraction": 0.2,
+          "model": "DFSC + residual MLP",
+          "runs": 3,
+          "cycle2_error_mean": 0.3849529141156968,
+          "cycle2_error_std": 0.02248592027776431,
+          "parameter_count": 750
+        },
+        {
+          "train_fraction": 0.4,
+          "model": "Integer propagation",
+          "runs": 3,
+          "cycle2_error_mean": 0.890554113214942,
+          "cycle2_error_std": 0.0,
+          "parameter_count": 1
+        },
+        {
+          "train_fraction": 0.4,
+          "model": "DFSC",
+          "runs": 3,
+          "cycle2_error_mean": 0.6641090808279999,
+          "cycle2_error_std": 0.0,
+          "parameter_count": 3
+        },
+        {
+          "train_fraction": 0.4,
+          "model": "Pure MLP",
+          "runs": 3,
+          "cycle2_error_mean": 0.36571411206888477,
+          "cycle2_error_std": 0.008420176648184001,
+          "parameter_count": 1251
+        },
+        {
+          "train_fraction": 0.4,
+          "model": "DFSC + residual MLP",
+          "runs": 3,
+          "cycle2_error_mean": 0.3607334447289192,
+          "cycle2_error_std": 0.008244534811825278,
+          "parameter_count": 750
+        },
+        {
+          "train_fraction": 0.6,
+          "model": "Integer propagation",
+          "runs": 3,
+          "cycle2_error_mean": 0.8914334499470905,
+          "cycle2_error_std": 0.0,
+          "parameter_count": 1
+        },
+        {
+          "train_fraction": 0.6,
+          "model": "DFSC",
+          "runs": 3,
+          "cycle2_error_mean": 0.6658939146627286,
+          "cycle2_error_std": 0.0,
+          "parameter_count": 3
+        },
+        {
+          "train_fraction": 0.6,
+          "model": "Pure MLP",
+          "runs": 3,
+          "cycle2_error_mean": 0.3624336598563129,
+          "cycle2_error_std": 0.008353537597153255,
+          "parameter_count": 1251
+        },
+        {
+          "train_fraction": 0.6,
+          "model": "DFSC + residual MLP",
+          "runs": 3,
+          "cycle2_error_mean": 0.37057479974162466,
+          "cycle2_error_std": 0.00585040665458291,
+          "parameter_count": 750
+        },
+        {
+          "train_fraction": 1.0,
+          "model": "Integer propagation",
+          "runs": 3,
+          "cycle2_error_mean": 0.89235632959402,
+          "cycle2_error_std": 0.0,
+          "parameter_count": 1
+        },
+        {
+          "train_fraction": 1.0,
+          "model": "DFSC",
+          "runs": 3,
+          "cycle2_error_mean": 0.666922013962953,
+          "cycle2_error_std": 0.0,
+          "parameter_count": 3
+        },
+        {
+          "train_fraction": 1.0,
+          "model": "Pure MLP",
+          "runs": 3,
+          "cycle2_error_mean": 0.3631570001939395,
+          "cycle2_error_std": 0.007081084437535276,
+          "parameter_count": 1251
+        },
+        {
+          "train_fraction": 1.0,
+          "model": "DFSC + residual MLP",
+          "runs": 3,
+          "cycle2_error_mean": 0.36186455340205903,
+          "cycle2_error_std": 0.008518350879050117,
+          "parameter_count": 750
+        }
+      ]
+    }
+  ],
+  "interpretation": [
+    "These are public-data transfer tests, not claims of universal physical identification.",
+    "Measured channels are used as documented; no undocumented sensor geometry is inferred.",
+    "The evidence supports real-data usefulness and OOD transfer of structured primitives, while task-level gains remain model- and dataset-dependent.",
+    "The GeoTES few-shot sweep shows a conditional advantage at 40% uniform coverage, not a monotone advantage at every sampling density."
+  ],
+  "status": "conformant"
+}

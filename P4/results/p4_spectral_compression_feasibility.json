@@ -1,0 +1,123 @@
+{
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "test_samples": 4096,
+  "reference_terms": 100,
+  "parameter_domain": {
+    "alpha": [
+      0.65,
+      0.91
+    ],
+    "rate": [
+      0.4,
+      0.9
+    ],
+    "time": [
+      0.05,
+      2.0
+    ]
+  },
+  "results": [
+    {
+      "model": "mlsl_series_8",
+      "value_rmse": 0.0017727531934822799,
+      "gradient_rmse": 0.022726398626568667,
+      "mean_batch_seconds": 0.0003035133316492041,
+      "gradient_finite": true
+    },
+    {
+      "model": "mlsl_series_16",
+      "value_rmse": 1.8749162571753668e-07,
+      "gradient_rmse": 6.186981083886991e-06,
+      "mean_batch_seconds": 0.00030114333300540843,
+      "gradient_finite": true
+    },
+    {
+      "model": "chebyshev_4x4x4",
+      "value_rmse": 0.0031153255895321704,
+      "gradient_rmse": 0.013558997154823177,
+      "mean_batch_seconds": 0.0013369400015411277,
+      "gradient_finite": true,
+      "degrees": [
+        4,
+        4,
+        4
+      ],
+      "coefficient_count": 64,
+      "coefficient_bytes": 512
+    },
+    {
+      "model": "chebyshev_6x6x6",
+      "value_rmse": 0.00013790009881684115,
+      "gradient_rmse": 0.0016821466936714595,
+      "mean_batch_seconds": 0.0018047100010638436,
+      "gradient_finite": true,
+      "degrees": [
+        6,
+        6,
+        6
+      ],
+      "coefficient_count": 216,
+      "coefficient_bytes": 1728
+    },
+    {
+      "model": "chebyshev_8x8x6",
+      "value_rmse": 0.00013790019728270451,
+      "gradient_rmse": 0.0016821414573254929,
+      "mean_batch_seconds": 0.0020502733338313797,
+      "gradient_finite": true,
+      "degrees": [
+        8,
+        8,
+        6
+      ],
+      "coefficient_count": 384,
+      "coefficient_bytes": 3072
+    }
+  ],
+  "compression_summary": [
+    {
+      "model": "chebyshev_4x4x4",
+      "value_rmse": 0.0031153255895321704,
+      "gradient_rmse": 0.013558997154823177,
+      "mean_batch_seconds": 0.0013369400015411277,
+      "gradient_finite": true,
+      "degrees": [
+        4,
+        4,
+        4
+      ],
+      "coefficient_count": 64,
+      "coefficient_bytes": 512
+    },
+    {
+      "model": "chebyshev_6x6x6",
+      "value_rmse": 0.00013790009881684115,
+      "gradient_rmse": 0.0016821466936714595,
+      "mean_batch_seconds": 0.0018047100010638436,
+      "gradient_finite": true,
+      "degrees": [
+        6,
+        6,
+        6
+      ],
+      "coefficient_count": 216,
+      "coefficient_bytes": 1728
+    },
+    {
+      "model": "chebyshev_8x8x6",
+      "value_rmse": 0.00013790019728270451,
+      "gradient_rmse": 0.0016821414573254929,
+      "mean_batch_seconds": 0.0020502733338313797,
+      "gradient_finite": true,
+      "degrees": [
+        8,
+        8,
+        6
+      ],
+      "coefficient_count": 384,
+      "coefficient_bytes": 3072
+    }
+  ],
+  "interpretation": "controlled feasibility only; Chebyshev representation is a candidate compression, not a finalized algorithm"
+}

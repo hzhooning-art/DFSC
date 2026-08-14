@@ -1,0 +1,28 @@
+{
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "truth": {
+    "alpha": 0.773,
+    "rate": 0.637,
+    "sigma": 0.01
+  },
+  "evaluator_terms": 8,
+  "floor_mse": 2.4939695636141104e-05,
+  "off_grid": {
+    "replicates": 40,
+    "sigma_hat_mean": 0.0111254697556273,
+    "standard_coverage": 1.0,
+    "aware_coverage": 1.0,
+    "standard_area_mean": 0.08123219283297659,
+    "aware_area_mean": 0.08290598234161735
+  },
+  "near_mismatch": {
+    "contamination_fraction": 0.1,
+    "replicates": 40,
+    "sigma_hat_mean": 0.011315144820174884,
+    "normalized_best_loss_mean": 0.8641031397194625,
+    "ordinary_acceptance_rate": 1.0,
+    "aware_acceptance_rate": 1.0
+  },
+  "interpretation": "stress-test only; sigma estimator and threshold are not frozen publication components"
+}

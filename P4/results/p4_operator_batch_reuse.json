@@ -1,0 +1,30 @@
+{
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "modes": 16,
+  "queries": 16,
+  "train_tasks": 1024,
+  "test_tasks": 256,
+  "test_domain": {
+    "alpha": [
+      0.65,
+      0.9
+    ],
+    "rate": [
+      0.4,
+      0.9
+    ]
+  },
+  "pure_operator_mlp": {
+    "test_rmse": 0.048107635229825974,
+    "training_seconds": 0.9559566000243649,
+    "gradient_finite": true
+  },
+  "direct_mlsl_operator": {
+    "test_rmse": 2.3453297828158393e-08,
+    "loss": 5.5005717901629925e-16,
+    "autograd_seconds": 0.3663001999957487,
+    "gradient_finite": true
+  },
+  "interpretation": "operator-style compatibility gate; direct MLSL is a differentiable module reference, not a new operator-learning architecture"
+}

@@ -1,0 +1,69 @@
+{
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "seeds": [
+    11,
+    23,
+    37,
+    51,
+    73
+  ],
+  "steps_per_seed": 120,
+  "pure_conditional_mlp": {
+    "pure_id": {
+      "mean": 0.22320135856897463,
+      "std": 0.00867726724801129,
+      "values": [
+        0.22508399021870318,
+        0.22555492966718602,
+        0.23392105037317504,
+        0.2100074212025382,
+        0.22143940138327078
+      ]
+    },
+    "pure_ood": {
+      "mean": 0.5023404613091009,
+      "std": 0.04233927491029847,
+      "values": [
+        0.46803465283786744,
+        0.4722618682576526,
+        0.5106899217771601,
+        0.4888297742484907,
+        0.571886089424334
+      ]
+    }
+  },
+  "hybrid_residual": {
+    "hybrid_id": {
+      "mean": 0.01687855091130581,
+      "std": 0.0010837556185106206,
+      "values": [
+        0.01649736104268888,
+        0.01733019455818231,
+        0.015813449021475256,
+        0.018542003775213884,
+        0.01620974615896873
+      ]
+    },
+    "hybrid_ood": {
+      "mean": 0.02431303174201957,
+      "std": 0.0031837418516944293,
+      "values": [
+        0.023603582310336678,
+        0.028216669809544504,
+        0.01979919162949627,
+        0.026306582992450266,
+        0.023639131968270135
+      ]
+    }
+  },
+  "hybrid_ood_mean_improvement_ratio": 20.661366572434453,
+  "p2_style_selection_audit": {
+    "selected": "hybrid_residual",
+    "confidence": 0.9516004908729435,
+    "temporal_agreement": true,
+    "accepted": true,
+    "reason": "confidence and temporal agreement passed"
+  },
+  "interpretation": "statistical feasibility check; controlled synthetic family only"
+}

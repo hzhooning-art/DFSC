@@ -1,0 +1,282 @@
+{
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "weights": [
+    0.0,
+    0.05,
+    0.1,
+    0.25,
+    0.5,
+    1.0
+  ],
+  "seeds": [
+    54100,
+    54101,
+    54102
+  ],
+  "summary": {
+    "0.0": {
+      "test_rmse_mean": 0.022059211377824458,
+      "test_rmse_std": 0.0008487400839319105,
+      "alpha_error_mean": 0.06404135161666234,
+      "alpha_error_std": 0.004721110913407796,
+      "rate_error_mean": 0.1216743165166778,
+      "rate_error_std": 0.004465633329940141,
+      "physics_residual_mean": 0.06310731735816055,
+      "physics_residual_std": 0.0015453794585131768,
+      "elapsed_seconds_mean": 1.7654280666805182,
+      "elapsed_seconds_std": 0.5750981502888873,
+      "all_gradients_finite": true
+    },
+    "0.05": {
+      "test_rmse_mean": 0.023496886039530027,
+      "test_rmse_std": 0.0024937034120861372,
+      "alpha_error_mean": 0.062198983824463094,
+      "alpha_error_std": 0.0010332264856691119,
+      "rate_error_mean": 0.11953801094045895,
+      "rate_error_std": 0.003666606358064326,
+      "physics_residual_mean": 0.05865818878573483,
+      "physics_residual_std": 0.0021904074247559805,
+      "elapsed_seconds_mean": 1.5325635999906808,
+      "elapsed_seconds_std": 0.18553019291730574,
+      "all_gradients_finite": true
+    },
+    "0.1": {
+      "test_rmse_mean": 0.024377043346021348,
+      "test_rmse_std": 0.0005382309326314126,
+      "alpha_error_mean": 0.06161563933813339,
+      "alpha_error_std": 0.0015402017793175297,
+      "rate_error_mean": 0.118082093563937,
+      "rate_error_std": 0.004240896370068244,
+      "physics_residual_mean": 0.055081587450808524,
+      "physics_residual_std": 0.0005751122102322012,
+      "elapsed_seconds_mean": 1.505142266668069,
+      "elapsed_seconds_std": 0.15613716734803446,
+      "all_gradients_finite": true
+    },
+    "0.25": {
+      "test_rmse_mean": 0.025096411754850365,
+      "test_rmse_std": 0.0018758406536262505,
+      "alpha_error_mean": 0.06243425762903502,
+      "alpha_error_std": 0.00037104221326219087,
+      "rate_error_mean": 0.11716961775622482,
+      "rate_error_std": 0.0044411753120076015,
+      "physics_residual_mean": 0.04850686959326675,
+      "physics_residual_std": 0.0006435777785566953,
+      "elapsed_seconds_mean": 1.5387225666781887,
+      "elapsed_seconds_std": 0.1930706303193619,
+      "all_gradients_finite": true
+    },
+    "0.5": {
+      "test_rmse_mean": 0.03143800974331764,
+      "test_rmse_std": 0.0023369710342933253,
+      "alpha_error_mean": 0.061936207695477745,
+      "alpha_error_std": 0.0011029159122308409,
+      "rate_error_mean": 0.11986566888397783,
+      "rate_error_std": 0.0043296271836588945,
+      "physics_residual_mean": 0.040824729499790366,
+      "physics_residual_std": 0.0009305832099577623,
+      "elapsed_seconds_mean": 1.511481066661266,
+      "elapsed_seconds_std": 0.14226230867244433,
+      "all_gradients_finite": true
+    },
+    "1.0": {
+      "test_rmse_mean": 0.042235063735835854,
+      "test_rmse_std": 0.0025827244918431654,
+      "alpha_error_mean": 0.06182416610798936,
+      "alpha_error_std": 0.0009935004901316677,
+      "rate_error_mean": 0.12122232500072407,
+      "rate_error_std": 0.002463886774901956,
+      "physics_residual_mean": 0.027303193397312697,
+      "physics_residual_std": 0.0018046371520175353,
+      "elapsed_seconds_mean": 1.5871316333456587,
+      "elapsed_seconds_std": 0.03076235148960404,
+      "all_gradients_finite": true
+    }
+  },
+  "selection_rule": "minimize OOD RMSE subject to mean physics residual no worse than weight 0.0",
+  "selected_weight": 0.0,
+  "interpretation": "matched-budget sensitivity audit; not a new PINN architecture claim",
+  "rows": [
+    {
+      "seed": 54100,
+      "physics_weight": 0.0,
+      "elapsed_seconds": 2.4282607999630272,
+      "test_rmse": 0.022658624026725176,
+      "alpha_error": 0.06942940174602119,
+      "rate_error": 0.1239023686502347,
+      "physics_residual": 0.06225207519547068,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54100,
+      "physics_weight": 0.05,
+      "elapsed_seconds": 1.7451574000297114,
+      "test_rmse": 0.021992080327271592,
+      "alpha_error": 0.06324911869283308,
+      "rate_error": 0.11963382772244899,
+      "physics_residual": 0.05612997215291217,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54100,
+      "physics_weight": 0.1,
+      "elapsed_seconds": 1.6845224999124184,
+      "test_rmse": 0.02490077140741058,
+      "alpha_error": 0.06318462793349808,
+      "rate_error": 0.12171393022653705,
+      "physics_residual": 0.05454982017512943,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54100,
+      "physics_weight": 0.25,
+      "elapsed_seconds": 1.7615898000076413,
+      "test_rmse": 0.025358533226813685,
+      "alpha_error": 0.0627532238937286,
+      "rate_error": 0.11964270480881653,
+      "physics_residual": 0.04786324954812685,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54100,
+      "physics_weight": 0.5,
+      "elapsed_seconds": 1.6757192000513896,
+      "test_rmse": 0.03410633581177576,
+      "alpha_error": 0.06315681771203394,
+      "rate_error": 0.12473346498775655,
+      "physics_residual": 0.040050556743476684,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54100,
+      "physics_weight": 1.0,
+      "elapsed_seconds": 1.5522362999618053,
+      "test_rmse": 0.04010739271525762,
+      "alpha_error": 0.06286840143156767,
+      "rate_error": 0.12128292445364194,
+      "physics_residual": 0.02937980611223024,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54101,
+      "physics_weight": 0.0,
+      "elapsed_seconds": 1.3989766000304371,
+      "test_rmse": 0.02243098706156651,
+      "alpha_error": 0.06062929096140592,
+      "rate_error": 0.11653304339948306,
+      "physics_residual": 0.0648912637335123,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54101,
+      "physics_weight": 0.05,
+      "elapsed_seconds": 1.4033677999395877,
+      "test_rmse": 0.022123206457531356,
+      "alpha_error": 0.06118353945427549,
+      "rate_error": 0.1158244352782547,
+      "physics_residual": 0.05998534612723965,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54101,
+      "physics_weight": 0.1,
+      "elapsed_seconds": 1.3997721000341699,
+      "test_rmse": 0.02440496238095754,
+      "alpha_error": 0.060105936372739095,
+      "rate_error": 0.11342143906493993,
+      "physics_residual": 0.055691958719406846,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54101,
+      "physics_weight": 0.25,
+      "elapsed_seconds": 1.4321792999980971,
+      "test_rmse": 0.023103296398765207,
+      "alpha_error": 0.06202704941617947,
+      "rate_error": 0.11204245493800213,
+      "physics_residual": 0.049150405096911105,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54101,
+      "physics_weight": 0.5,
+      "elapsed_seconds": 1.426543999928981,
+      "test_rmse": 0.029755334715871502,
+      "alpha_error": 0.061011249068018164,
+      "rate_error": 0.11644480965326445,
+      "physics_residual": 0.0418571665719048,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54101,
+      "physics_weight": 1.0,
+      "elapsed_seconds": 1.6103290000464767,
+      "test_rmse": 0.041489140195336636,
+      "alpha_error": 0.0608906816200762,
+      "rate_error": 0.1187286974805547,
+      "physics_residual": 0.026414803598725996,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54102,
+      "physics_weight": 0.0,
+      "elapsed_seconds": 1.4690468000480905,
+      "test_rmse": 0.021088023045181686,
+      "alpha_error": 0.06206536214255991,
+      "rate_error": 0.12458753750031563,
+      "physics_residual": 0.0621786131454987,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54102,
+      "physics_weight": 0.05,
+      "elapsed_seconds": 1.4491656000027433,
+      "test_rmse": 0.026375371333787135,
+      "alpha_error": 0.062164293326280706,
+      "rate_error": 0.12315576982067317,
+      "physics_residual": 0.05985924807705269,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54102,
+      "physics_weight": 0.1,
+      "elapsed_seconds": 1.4311322000576183,
+      "test_rmse": 0.023825396249695926,
+      "alpha_error": 0.061556353708162995,
+      "rate_error": 0.11911091140033395,
+      "physics_residual": 0.0550029834578893,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54102,
+      "physics_weight": 0.25,
+      "elapsed_seconds": 1.4223986000288278,
+      "test_rmse": 0.02682740563897221,
+      "alpha_error": 0.062522499577197,
+      "rate_error": 0.1198236935218558,
+      "physics_residual": 0.04850695413476229,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54102,
+      "physics_weight": 0.5,
+      "elapsed_seconds": 1.4321800000034273,
+      "test_rmse": 0.030452358702305657,
+      "alpha_error": 0.06164055630638113,
+      "rate_error": 0.11841873201091255,
+      "physics_residual": 0.04056646518398961,
+      "gradient_finite": true
+    },
+    {
+      "seed": 54102,
+      "physics_weight": 1.0,
+      "elapsed_seconds": 1.5988296000286937,
+      "test_rmse": 0.04510865829691328,
+      "alpha_error": 0.06171341527232422,
+      "rate_error": 0.12365535306797557,
+      "physics_residual": 0.026114970480981846,
+      "gradient_finite": true
+    }
+  ]
+}

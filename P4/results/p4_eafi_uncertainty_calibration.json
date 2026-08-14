@@ -1,0 +1,641 @@
+{
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "total_configs": 60,
+  "candidate_count": 60,
+  "recommended_candidates": [
+    {
+      "low_terms": 12,
+      "multiplier": 0.25,
+      "sigma": 0.005,
+      "floor_mse": 3.0129978208153586e-09,
+      "coverage": 1.0,
+      "mean_width": 15.4,
+      "width_std": 0.8207826816681233
+    },
+    {
+      "low_terms": 12,
+      "multiplier": 0.5,
+      "sigma": 0.005,
+      "floor_mse": 3.0129978208153586e-09,
+      "coverage": 1.0,
+      "mean_width": 15.4,
+      "width_std": 0.8207826816681233
+    },
+    {
+      "low_terms": 12,
+      "multiplier": 1.0,
+      "sigma": 0.005,
+      "floor_mse": 3.0129978208153586e-09,
+      "coverage": 1.0,
+      "mean_width": 15.4,
+      "width_std": 0.8207826816681233
+    },
+    {
+      "low_terms": 12,
+      "multiplier": 2.0,
+      "sigma": 0.005,
+      "floor_mse": 3.0129978208153586e-09,
+      "coverage": 1.0,
+      "mean_width": 15.4,
+      "width_std": 0.8207826816681233
+    },
+    {
+      "low_terms": 12,
+      "multiplier": 3.0,
+      "sigma": 0.005,
+      "floor_mse": 3.0129978208153586e-09,
+      "coverage": 1.0,
+      "mean_width": 15.4,
+      "width_std": 0.8207826816681233
+    },
+    {
+      "low_terms": 8,
+      "multiplier": 0.25,
+      "sigma": 0.005,
+      "floor_mse": 2.4939695636141104e-05,
+      "coverage": 1.0,
+      "mean_width": 16.35,
+      "width_std": 1.0894228312566054
+    },
+    {
+      "low_terms": 8,
+      "multiplier": 0.5,
+      "sigma": 0.005,
+      "floor_mse": 2.4939695636141104e-05,
+      "coverage": 1.0,
+      "mean_width": 17.55,
+      "width_std": 0.6048053188292994
+    },
+    {
+      "low_terms": 8,
+      "multiplier": 1.0,
+      "sigma": 0.005,
+      "floor_mse": 2.4939695636141104e-05,
+      "coverage": 1.0,
+      "mean_width": 19.3,
+      "width_std": 0.5712405705774796
+    },
+    {
+      "low_terms": 8,
+      "multiplier": 2.0,
+      "sigma": 0.005,
+      "floor_mse": 2.4939695636141104e-05,
+      "coverage": 1.0,
+      "mean_width": 22.65,
+      "width_std": 0.7451598203705947
+    },
+    {
+      "low_terms": 8,
+      "multiplier": 3.0,
+      "sigma": 0.005,
+      "floor_mse": 2.4939695636141104e-05,
+      "coverage": 1.0,
+      "mean_width": 26.45,
+      "width_std": 1.0990426455975701
+    }
+  ],
+  "all_results": [
+    {
+      "low_terms": 4,
+      "multiplier": 0.25,
+      "sigma": 0.005,
+      "floor_mse": 0.020347698756942895,
+      "coverage": 1.0,
+      "mean_width": 342.3,
+      "width_std": 0.7326950970650465
+    },
+    {
+      "low_terms": 4,
+      "multiplier": 0.25,
+      "sigma": 0.01,
+      "floor_mse": 0.020347698756942895,
+      "coverage": 1.0,
+      "mean_width": 346.0,
+      "width_std": 1.4142135623730951
+    },
+    {
+      "low_terms": 4,
+      "multiplier": 0.25,
+      "sigma": 0.02,
+      "floor_mse": 0.020347698756942895,
+      "coverage": 1.0,
+      "mean_width": 364.85,
+      "width_std": 3.8970299081817616
+    },
+    {
+      "low_terms": 4,
+      "multiplier": 0.5,
+      "sigma": 0.005,
+      "floor_mse": 0.020347698756942895,
+      "coverage": 1.0,
+      "mean_width": 479.15,
+      "width_std": 2.300457620378584
+    },
+    {
+      "low_terms": 4,
+      "multiplier": 0.5,
+      "sigma": 0.01,
+      "floor_mse": 0.020347698756942895,
+      "coverage": 1.0,
+      "mean_width": 483.3,
+      "width_std": 2.696976865033572
+    },
+    {
+      "low_terms": 4,
+      "multiplier": 0.5,
+      "sigma": 0.02,
+      "floor_mse": 0.020347698756942895,
+      "coverage": 1.0,
+      "mean_width": 498.15,
+      "width_std": 2.796143961356707
+    },
+    {
+      "low_terms": 4,
+      "multiplier": 1.0,
+      "sigma": 0.005,
+      "floor_mse": 0.020347698756942895,
+      "coverage": 1.0,
+      "mean_width": 625.35,
+      "width_std": 1.899445902583726
+    },
+    {
+      "low_terms": 4,
+      "multiplier": 1.0,
+      "sigma": 0.01,
+      "floor_mse": 0.020347698756942895,
+      "coverage": 1.0,
+      "mean_width": 627.15,
+      "width_std": 3.360372786337535
+    },
+    {
+      "low_terms": 4,
+      "multiplier": 1.0,
+      "sigma": 0.02,
+      "floor_mse": 0.020347698756942895,
+      "coverage": 1.0,
+      "mean_width": 633.0,
+      "width_std": 7.093362353192187
+    },
+    {
+      "low_terms": 4,
+      "multiplier": 2.0,
+      "sigma": 0.005,
+      "floor_mse": 0.020347698756942895,
+      "coverage": 1.0,
+      "mean_width": 698.65,
+      "width_std": 0.4893604849295929
+    },
+    {
+      "low_terms": 4,
+      "multiplier": 2.0,
+      "sigma": 0.01,
+      "floor_mse": 0.020347698756942895,
+      "coverage": 1.0,
+      "mean_width": 698.75,
+      "width_std": 0.4442616583193193
+    },
+    {
+      "low_terms": 4,
+      "multiplier": 2.0,
+      "sigma": 0.02,
+      "floor_mse": 0.020347698756942895,
+      "coverage": 1.0,
+      "mean_width": 699.3,
+      "width_std": 1.0310954828418375
+    },
+    {
+      "low_terms": 4,
+      "multiplier": 3.0,
+      "sigma": 0.005,
+      "floor_mse": 0.020347698756942895,
+      "coverage": 1.0,
+      "mean_width": 702.0,
+      "width_std": 0.0
+    },
+    {
+      "low_terms": 4,
+      "multiplier": 3.0,
+      "sigma": 0.01,
+      "floor_mse": 0.020347698756942895,
+      "coverage": 1.0,
+      "mean_width": 702.0,
+      "width_std": 0.0
+    },
+    {
+      "low_terms": 4,
+      "multiplier": 3.0,
+      "sigma": 0.02,
+      "floor_mse": 0.020347698756942895,
+      "coverage": 1.0,
+      "mean_width": 702.0,
+      "width_std": 0.0
+    },
+    {
+      "low_terms": 6,
+      "multiplier": 0.25,
+      "sigma": 0.005,
+      "floor_mse": 0.0010224339969038955,
+      "coverage": 1.0,
+      "mean_width": 71.05,
+      "width_std": 1.5381123085406379
+    },
+    {
+      "low_terms": 6,
+      "multiplier": 0.25,
+      "sigma": 0.01,
+      "floor_mse": 0.0010224339969038955,
+      "coverage": 1.0,
+      "mean_width": 101.35,
+      "width_std": 1.725200217213551
+    },
+    {
+      "low_terms": 6,
+      "multiplier": 0.25,
+      "sigma": 0.02,
+      "floor_mse": 0.0010224339969038955,
+      "coverage": 1.0,
+      "mean_width": 185.2,
+      "width_std": 5.356746852531419
+    },
+    {
+      "low_terms": 6,
+      "multiplier": 0.5,
+      "sigma": 0.005,
+      "floor_mse": 0.0010224339969038955,
+      "coverage": 1.0,
+      "mean_width": 127.25,
+      "width_std": 2.863104682168054
+    },
+    {
+      "low_terms": 6,
+      "multiplier": 0.5,
+      "sigma": 0.01,
+      "floor_mse": 0.0010224339969038955,
+      "coverage": 1.0,
+      "mean_width": 145.65,
+      "width_std": 2.2542357790099112
+    },
+    {
+      "low_terms": 6,
+      "multiplier": 0.5,
+      "sigma": 0.02,
+      "floor_mse": 0.0010224339969038955,
+      "coverage": 1.0,
+      "mean_width": 212.8,
+      "width_std": 4.730639213512384
+    },
+    {
+      "low_terms": 6,
+      "multiplier": 1.0,
+      "sigma": 0.005,
+      "floor_mse": 0.0010224339969038955,
+      "coverage": 1.0,
+      "mean_width": 194.55,
+      "width_std": 1.431782106327635
+    },
+    {
+      "low_terms": 6,
+      "multiplier": 1.0,
+      "sigma": 0.01,
+      "floor_mse": 0.0010224339969038955,
+      "coverage": 1.0,
+      "mean_width": 204.45,
+      "width_std": 2.1636956688426445
+    },
+    {
+      "low_terms": 6,
+      "multiplier": 1.0,
+      "sigma": 0.02,
+      "floor_mse": 0.0010224339969038955,
+      "coverage": 1.0,
+      "mean_width": 254.3,
+      "width_std": 3.2134585401827858
+    },
+    {
+      "low_terms": 6,
+      "multiplier": 2.0,
+      "sigma": 0.005,
+      "floor_mse": 0.0010224339969038955,
+      "coverage": 1.0,
+      "mean_width": 271.45,
+      "width_std": 4.501169438689181
+    },
+    {
+      "low_terms": 6,
+      "multiplier": 2.0,
+      "sigma": 0.01,
+      "floor_mse": 0.0010224339969038955,
+      "coverage": 1.0,
+      "mean_width": 285.65,
+      "width_std": 2.719810364906464
+    },
+    {
+      "low_terms": 6,
+      "multiplier": 2.0,
+      "sigma": 0.02,
+      "floor_mse": 0.0010224339969038955,
+      "coverage": 1.0,
+      "mean_width": 327.1,
+      "width_std": 7.510694130091403
+    },
+    {
+      "low_terms": 6,
+      "multiplier": 3.0,
+      "sigma": 0.005,
+      "floor_mse": 0.0010224339969038955,
+      "coverage": 1.0,
+      "mean_width": 340.8,
+      "width_std": 2.5464113034456526
+    },
+    {
+      "low_terms": 6,
+      "multiplier": 3.0,
+      "sigma": 0.01,
+      "floor_mse": 0.0010224339969038955,
+      "coverage": 1.0,
+      "mean_width": 349.2,
+      "width_std": 3.901416746718934
+    },
+    {
+      "low_terms": 6,
+      "multiplier": 3.0,
+      "sigma": 0.02,
+      "floor_mse": 0.0010224339969038955,
+      "coverage": 1.0,
+      "mean_width": 383.7,
+      "width_std": 5.983310120660637
+    },
+    {
+      "low_terms": 8,
+      "multiplier": 0.25,
+      "sigma": 0.005,
+      "floor_mse": 2.4939695636141104e-05,
+      "coverage": 1.0,
+      "mean_width": 16.35,
+      "width_std": 1.0894228312566054
+    },
+    {
+      "low_terms": 8,
+      "multiplier": 0.25,
+      "sigma": 0.01,
+      "floor_mse": 2.4939695636141104e-05,
+      "coverage": 1.0,
+      "mean_width": 48.75,
+      "width_std": 2.807414993792051
+    },
+    {
+      "low_terms": 8,
+      "multiplier": 0.25,
+      "sigma": 0.02,
+      "floor_mse": 2.4939695636141104e-05,
+      "coverage": 1.0,
+      "mean_width": 159.1,
+      "width_std": 4.541040919390502
+    },
+    {
+      "low_terms": 8,
+      "multiplier": 0.5,
+      "sigma": 0.005,
+      "floor_mse": 2.4939695636141104e-05,
+      "coverage": 1.0,
+      "mean_width": 17.55,
+      "width_std": 0.6048053188292994
+    },
+    {
+      "low_terms": 8,
+      "multiplier": 0.5,
+      "sigma": 0.01,
+      "floor_mse": 2.4939695636141104e-05,
+      "coverage": 1.0,
+      "mean_width": 50.2,
+      "width_std": 2.667543715421401
+    },
+    {
+      "low_terms": 8,
+      "multiplier": 0.5,
+      "sigma": 0.02,
+      "floor_mse": 2.4939695636141104e-05,
+      "coverage": 1.0,
+      "mean_width": 160.4,
+      "width_std": 4.558393068661484
+    },
+    {
+      "low_terms": 8,
+      "multiplier": 1.0,
+      "sigma": 0.005,
+      "floor_mse": 2.4939695636141104e-05,
+      "coverage": 1.0,
+      "mean_width": 19.3,
+      "width_std": 0.5712405705774796
+    },
+    {
+      "low_terms": 8,
+      "multiplier": 1.0,
+      "sigma": 0.01,
+      "floor_mse": 2.4939695636141104e-05,
+      "coverage": 1.0,
+      "mean_width": 53.5,
+      "width_std": 2.6852423197524415
+    },
+    {
+      "low_terms": 8,
+      "multiplier": 1.0,
+      "sigma": 0.02,
+      "floor_mse": 2.4939695636141104e-05,
+      "coverage": 1.0,
+      "mean_width": 162.1,
+      "width_std": 4.191470034800628
+    },
+    {
+      "low_terms": 8,
+      "multiplier": 2.0,
+      "sigma": 0.005,
+      "floor_mse": 2.4939695636141104e-05,
+      "coverage": 1.0,
+      "mean_width": 22.65,
+      "width_std": 0.7451598203705947
+    },
+    {
+      "low_terms": 8,
+      "multiplier": 2.0,
+      "sigma": 0.01,
+      "floor_mse": 2.4939695636141104e-05,
+      "coverage": 1.0,
+      "mean_width": 58.6,
+      "width_std": 1.9303667499917427
+    },
+    {
+      "low_terms": 8,
+      "multiplier": 2.0,
+      "sigma": 0.02,
+      "floor_mse": 2.4939695636141104e-05,
+      "coverage": 1.0,
+      "mean_width": 165.0,
+      "width_std": 2.973567766700113
+    },
+    {
+      "low_terms": 8,
+      "multiplier": 3.0,
+      "sigma": 0.005,
+      "floor_mse": 2.4939695636141104e-05,
+      "coverage": 1.0,
+      "mean_width": 26.45,
+      "width_std": 1.0990426455975701
+    },
+    {
+      "low_terms": 8,
+      "multiplier": 3.0,
+      "sigma": 0.01,
+      "floor_mse": 2.4939695636141104e-05,
+      "coverage": 1.0,
+      "mean_width": 63.45,
+      "width_std": 1.571958215595741
+    },
+    {
+      "low_terms": 8,
+      "multiplier": 3.0,
+      "sigma": 0.02,
+      "floor_mse": 2.4939695636141104e-05,
+      "coverage": 1.0,
+      "mean_width": 168.75,
+      "width_std": 3.1933318682925256
+    },
+    {
+      "low_terms": 12,
+      "multiplier": 0.25,
+      "sigma": 0.005,
+      "floor_mse": 3.0129978208153586e-09,
+      "coverage": 1.0,
+      "mean_width": 15.4,
+      "width_std": 0.8207826816681233
+    },
+    {
+      "low_terms": 12,
+      "multiplier": 0.25,
+      "sigma": 0.01,
+      "floor_mse": 3.0129978208153586e-09,
+      "coverage": 1.0,
+      "mean_width": 47.15,
+      "width_std": 3.1165939573093
+    },
+    {
+      "low_terms": 12,
+      "multiplier": 0.25,
+      "sigma": 0.02,
+      "floor_mse": 3.0129978208153586e-09,
+      "coverage": 1.0,
+      "mean_width": 158.4,
+      "width_std": 4.750623227812493
+    },
+    {
+      "low_terms": 12,
+      "multiplier": 0.5,
+      "sigma": 0.005,
+      "floor_mse": 3.0129978208153586e-09,
+      "coverage": 1.0,
+      "mean_width": 15.4,
+      "width_std": 0.8207826816681233
+    },
+    {
+      "low_terms": 12,
+      "multiplier": 0.5,
+      "sigma": 0.01,
+      "floor_mse": 3.0129978208153586e-09,
+      "coverage": 1.0,
+      "mean_width": 47.15,
+      "width_std": 3.1165939573093
+    },
+    {
+      "low_terms": 12,
+      "multiplier": 0.5,
+      "sigma": 0.02,
+      "floor_mse": 3.0129978208153586e-09,
+      "coverage": 1.0,
+      "mean_width": 158.4,
+      "width_std": 4.750623227812493
+    },
+    {
+      "low_terms": 12,
+      "multiplier": 1.0,
+      "sigma": 0.005,
+      "floor_mse": 3.0129978208153586e-09,
+      "coverage": 1.0,
+      "mean_width": 15.4,
+      "width_std": 0.8207826816681233
+    },
+    {
+      "low_terms": 12,
+      "multiplier": 1.0,
+      "sigma": 0.01,
+      "floor_mse": 3.0129978208153586e-09,
+      "coverage": 1.0,
+      "mean_width": 47.15,
+      "width_std": 3.1165939573093
+    },
+    {
+      "low_terms": 12,
+      "multiplier": 1.0,
+      "sigma": 0.02,
+      "floor_mse": 3.0129978208153586e-09,
+      "coverage": 1.0,
+      "mean_width": 158.4,
+      "width_std": 4.750623227812493
+    },
+    {
+      "low_terms": 12,
+      "multiplier": 2.0,
+      "sigma": 0.005,
+      "floor_mse": 3.0129978208153586e-09,
+      "coverage": 1.0,
+      "mean_width": 15.4,
+      "width_std": 0.8207826816681233
+    },
+    {
+      "low_terms": 12,
+      "multiplier": 2.0,
+      "sigma": 0.01,
+      "floor_mse": 3.0129978208153586e-09,
+      "coverage": 1.0,
+      "mean_width": 47.15,
+      "width_std": 3.1165939573093
+    },
+    {
+      "low_terms": 12,
+      "multiplier": 2.0,
+      "sigma": 0.02,
+      "floor_mse": 3.0129978208153586e-09,
+      "coverage": 1.0,
+      "mean_width": 158.4,
+      "width_std": 4.750623227812493
+    },
+    {
+      "low_terms": 12,
+      "multiplier": 3.0,
+      "sigma": 0.005,
+      "floor_mse": 3.0129978208153586e-09,
+      "coverage": 1.0,
+      "mean_width": 15.4,
+      "width_std": 0.8207826816681233
+    },
+    {
+      "low_terms": 12,
+      "multiplier": 3.0,
+      "sigma": 0.01,
+      "floor_mse": 3.0129978208153586e-09,
+      "coverage": 1.0,
+      "mean_width": 47.15,
+      "width_std": 3.1165939573093
+    },
+    {
+      "low_terms": 12,
+      "multiplier": 3.0,
+      "sigma": 0.02,
+      "floor_mse": 3.0129978208153586e-09,
+      "coverage": 1.0,
+      "mean_width": 158.4,
+      "width_std": 4.750623227812493
+    }
+  ],
+  "interpretation": "calibration grid for empirical coverage/width trade-off; no threshold is frozen yet"
+}

@@ -1,0 +1,121 @@
+{
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "train_tasks": 512,
+  "test_tasks": 256,
+  "training_domain": {
+    "alpha": [
+      0.68,
+      0.86
+    ],
+    "rate": [
+      0.45,
+      0.8
+    ]
+  },
+  "test_domain": {
+    "alpha": [
+      0.65,
+      0.9
+    ],
+    "rate": [
+      0.4,
+      0.9
+    ]
+  },
+  "rows": [
+    {
+      "test_rmse": 0.025866786097747004,
+      "train_loss_final": 0.0003334980088787594,
+      "elapsed_seconds": 0.6167873999802396,
+      "gradient_finite": true,
+      "seed": 52000,
+      "model": "pure_mlp"
+    },
+    {
+      "test_rmse": 0.019335393473124574,
+      "train_loss_final": 0.0002783422604935853,
+      "elapsed_seconds": 1.4502502999966964,
+      "gradient_finite": true,
+      "seed": 52000,
+      "model": "mlsl_encoder_decoder"
+    },
+    {
+      "test_rmse": 0.021178673938272975,
+      "train_loss_final": 0.00023287003590811902,
+      "elapsed_seconds": 1.2462652999674901,
+      "gradient_finite": true,
+      "seed": 52000,
+      "model": "mlsl_residual_adapter"
+    },
+    {
+      "test_rmse": 0.03053439614423079,
+      "train_loss_final": 0.00043190511546513464,
+      "elapsed_seconds": 0.5099330000812188,
+      "gradient_finite": true,
+      "seed": 52001,
+      "model": "pure_mlp"
+    },
+    {
+      "test_rmse": 0.020503824687057966,
+      "train_loss_final": 0.00021535113685541347,
+      "elapsed_seconds": 1.0956565999658778,
+      "gradient_finite": true,
+      "seed": 52001,
+      "model": "mlsl_encoder_decoder"
+    },
+    {
+      "test_rmse": 0.021258901913965955,
+      "train_loss_final": 0.00022341009835736815,
+      "elapsed_seconds": 1.2397901000222191,
+      "gradient_finite": true,
+      "seed": 52001,
+      "model": "mlsl_residual_adapter"
+    },
+    {
+      "test_rmse": 0.028844654045108397,
+      "train_loss_final": 0.00043316110483755974,
+      "elapsed_seconds": 0.5170764999929816,
+      "gradient_finite": true,
+      "seed": 52002,
+      "model": "pure_mlp"
+    },
+    {
+      "test_rmse": 0.02077553694054844,
+      "train_loss_final": 0.00023458123091066045,
+      "elapsed_seconds": 1.0614521999377757,
+      "gradient_finite": true,
+      "seed": 52002,
+      "model": "mlsl_encoder_decoder"
+    },
+    {
+      "test_rmse": 0.01868265916404409,
+      "train_loss_final": 0.00020627572234856504,
+      "elapsed_seconds": 1.2416715000290424,
+      "gradient_finite": true,
+      "seed": 52002,
+      "model": "mlsl_residual_adapter"
+    }
+  ],
+  "summary": {
+    "pure_mlp": {
+      "test_rmse_mean": 0.028415278762362065,
+      "test_rmse_std": 0.002363243160697648,
+      "elapsed_mean": 0.5479323000181466,
+      "all_gradients_finite": true
+    },
+    "mlsl_encoder_decoder": {
+      "test_rmse_mean": 0.020204918366910327,
+      "test_rmse_std": 0.0007651875867126053,
+      "elapsed_mean": 1.2024530333001167,
+      "all_gradients_finite": true
+    },
+    "mlsl_residual_adapter": {
+      "test_rmse_mean": 0.020373411672094343,
+      "test_rmse_std": 0.0014647839993082953,
+      "elapsed_mean": 1.2425756333395839,
+      "all_gradients_finite": true
+    }
+  },
+  "interpretation": "cross-module compatibility gate; this is not a new neural architecture claim"
+}

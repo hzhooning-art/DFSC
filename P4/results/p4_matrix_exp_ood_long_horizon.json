@@ -1,0 +1,128 @@
+{
+  "backend": "matrix_exponential_action",
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "seeds": [
+    55300,
+    55301,
+    55302,
+    55303,
+    55304
+  ],
+  "time_domain": [
+    0.02,
+    12.0
+  ],
+  "rows": [
+    {
+      "seed": 55300,
+      "max_abs_error": 1.970645868709653e-15,
+      "max_relative_error": 3.4755678098228856e-14,
+      "long_horizon_max_abs_error": 1.970645868709653e-15,
+      "long_horizon_rms_error": 9.300935287558763e-16,
+      "long_horizon_reference_rms": 0.09280630181233054,
+      "values_finite": true,
+      "gradient_finite": true,
+      "gradient_directional_relative_error": 3.7923798892327366e-11,
+      "calibration": {
+        "parameter_l1_error": 0.00019018270269823348,
+        "final_loss": 1.0380696055579813e-06,
+        "gradient_finite": true,
+        "elapsed_seconds": 1.7384513999568298
+      }
+    },
+    {
+      "seed": 55301,
+      "max_abs_error": 1.0547118733938987e-15,
+      "max_relative_error": 1.0143066744518914e-13,
+      "long_horizon_max_abs_error": 1.0547118733938987e-15,
+      "long_horizon_rms_error": 4.823831914353099e-16,
+      "long_horizon_reference_rms": 0.04181569634751454,
+      "values_finite": true,
+      "gradient_finite": true,
+      "gradient_directional_relative_error": 7.409404084016013e-11,
+      "calibration": {
+        "parameter_l1_error": 0.00043767056934948013,
+        "final_loss": 1.024098279352635e-06,
+        "gradient_finite": true,
+        "elapsed_seconds": 1.598968300037086
+      }
+    },
+    {
+      "seed": 55302,
+      "max_abs_error": 7.216449660063518e-16,
+      "max_relative_error": 3.7075001314071624e-14,
+      "long_horizon_max_abs_error": 7.216449660063518e-16,
+      "long_horizon_rms_error": 3.9751608914253804e-16,
+      "long_horizon_reference_rms": 0.08821713867665541,
+      "values_finite": true,
+      "gradient_finite": true,
+      "gradient_directional_relative_error": 3.573218622294362e-11,
+      "calibration": {
+        "parameter_l1_error": 0.00015074313288328256,
+        "final_loss": 7.323342245938197e-07,
+        "gradient_finite": true,
+        "elapsed_seconds": 1.6558713000267744
+      }
+    },
+    {
+      "seed": 55303,
+      "max_abs_error": 6.186403386093664e-15,
+      "max_relative_error": 2.4017366970518682e-11,
+      "long_horizon_max_abs_error": 6.186403386093664e-15,
+      "long_horizon_rms_error": 2.9859358091101536e-15,
+      "long_horizon_reference_rms": 0.08843284282437171,
+      "values_finite": true,
+      "gradient_finite": true,
+      "gradient_directional_relative_error": 2.9058041845943358e-11,
+      "calibration": {
+        "parameter_l1_error": 0.0004873554232279892,
+        "final_loss": 8.08214099949435e-07,
+        "gradient_finite": true,
+        "elapsed_seconds": 1.6062711999984458
+      }
+    },
+    {
+      "seed": 55304,
+      "max_abs_error": 1.1397133237167623e-14,
+      "max_relative_error": 5.628834377794457e-13,
+      "long_horizon_max_abs_error": 1.1397133237167623e-14,
+      "long_horizon_rms_error": 4.66149365026052e-15,
+      "long_horizon_reference_rms": 0.07363565847428165,
+      "values_finite": true,
+      "gradient_finite": true,
+      "gradient_directional_relative_error": 1.2454552103181366e-11,
+      "calibration": {
+        "parameter_l1_error": 0.00028853202901942335,
+        "final_loss": 1.1570926673407381e-06,
+        "gradient_finite": true,
+        "elapsed_seconds": 1.6166779000777751
+      }
+    }
+  ],
+  "summary": {
+    "max_abs_error": {
+      "mean": 4.266107866274238e-15,
+      "std": 4.546550477573361e-15
+    },
+    "long_horizon_max_abs_error": {
+      "mean": 4.266107866274238e-15,
+      "std": 4.546550477573361e-15
+    },
+    "long_horizon_rms_error": {
+      "mean": 1.8914844537408795e-15,
+      "std": 1.871667376336427e-15
+    },
+    "gradient_directional_relative_error": {
+      "mean": 3.7852523980911166e-11,
+      "std": 2.2585107638133523e-11
+    },
+    "calibration_parameter_l1_error": {
+      "mean": 0.00031089677143568173,
+      "std": 0.00014826539352282692
+    }
+  },
+  "all_values_finite": true,
+  "all_gradients_finite": true,
+  "interpretation": "multi-seed OOD and long-horizon evidence; not a universal matrix-function claim"
+}

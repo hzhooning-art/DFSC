@@ -13,9 +13,22 @@ from .audit import (
     PrimitiveAudit,
     PrimitiveBackend,
     PrimitiveDomain,
+    QualificationCriteria,
     audit_batch_and_device,
     audit_value_and_gradient,
     make_audit,
+    qualify_audit,
+)
+from .conformance import (
+    CONFORMANCE_SCHEMA,
+    EARLIEST_LEGACY_SCHEMA,
+    LEGACY_SCHEMA,
+    PROFILE_COVERAGE_REQUIREMENTS,
+    PROFILE_REQUIREMENTS,
+    canonical_json,
+    evaluate_conformance,
+    migrate_record,
+    record_digest,
 )
 
 __all__ = [
@@ -29,7 +42,18 @@ __all__ = [
     "PrimitiveAudit",
     "PrimitiveBackend",
     "PrimitiveDomain",
+    "QualificationCriteria",
     "audit_batch_and_device",
     "audit_value_and_gradient",
     "make_audit",
+    "qualify_audit",
+    "CONFORMANCE_SCHEMA",
+    "EARLIEST_LEGACY_SCHEMA",
+    "LEGACY_SCHEMA",
+    "PROFILE_COVERAGE_REQUIREMENTS",
+    "PROFILE_REQUIREMENTS",
+    "canonical_json",
+    "evaluate_conformance",
+    "migrate_record",
+    "record_digest",
 ]

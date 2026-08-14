@@ -1,0 +1,29 @@
+{
+  "selected_mainline": "homogeneous_parameter_conditioned_mlsl_hybrid",
+  "secondary_evidence": "controlled_forcing_perturbation",
+  "deferred_extension": "forcing_as_input_operator",
+  "gates": {
+    "homogeneous_parameter_family": {
+      "status": "PASS",
+      "reason": "five-seed ID/OOD result, finite gradients, and P2-style audit passed",
+      "ood_improvement_ratio": 20.661366572434453
+    },
+    "controlled_time_space_forcing": {
+      "status": "PASS_WITH_SCOPE",
+      "reason": "hybrid advantage persists, but only under controlled synthetic forcing",
+      "ood_improvement_ratio": 3.3809702401497446
+    },
+    "forcing_as_input_operator": {
+      "status": "BLOCKED",
+      "reason": "forced MLSL calibration has zero trusted cases in the broad scan",
+      "trusted_case_fraction": 0.0
+    }
+  },
+  "next_required_evidence": [
+    "stronger parameter-conditioned operator baseline",
+    "multi-seed evaluation over wider alpha/beta/lambda regions",
+    "P2-linked gradient and evaluator rejection audit",
+    "one non-synthetic application only after the numerical envelope is certified"
+  ],
+  "claim_boundary": "P4 is a structured parameter-conditioned hybrid for known MLSL families, not a general fractional solver or universal operator learner"
+}

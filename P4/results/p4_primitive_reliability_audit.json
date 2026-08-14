@@ -1,0 +1,25 @@
+{
+  "protocol": "P4_PRIMITIVE_RELIABILITY_PROTOCOL",
+  "status": "conformant",
+  "gates": {
+    "calibration_autograd": true,
+    "neural_module_reuse": true,
+    "operator_batch_reuse": true,
+    "physics_consistency_gradients": true,
+    "matched_weight_sweep_gradients": true
+  },
+  "scope_limits": [
+    "known real stable Mittag-Leffler propagation family",
+    "validated PyTorch CPU/GPU path",
+    "no universal fractional-solver claim",
+    "physics loss is task-dependent and trade-off controlled"
+  ],
+  "selected_physics_weight_by_rule": 0.0,
+  "source_results": [
+    "p4_integrated_calibration.json",
+    "p4_module_reuse_feasibility.json",
+    "p4_operator_batch_reuse.json",
+    "p4_physics_consistency_reuse.json",
+    "p4_physics_weight_sweep.json"
+  ]
+}

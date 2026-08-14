@@ -1,0 +1,60 @@
+{
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "test_batch": 256,
+  "query_horizon": 1000,
+  "query_time_domain": [
+    0.05,
+    10.0
+  ],
+  "reference_terms": 100,
+  "results": [
+    {
+      "state_count": null,
+      "model": "direct_mlsl_reference",
+      "state_bytes": 0,
+      "forward_rmse_all_queries": 0.0,
+      "forward_rmse_final_query": 0.0,
+      "gradient_rmse_final_query": 0.0,
+      "mean_rollout_seconds": 0.0620332999387756,
+      "gradient_finite": true
+    },
+    {
+      "state_count": 4,
+      "state_bytes": 32,
+      "forward_rmse_all_queries": 0.025751849781152147,
+      "forward_rmse_final_query": 0.04330954387957266,
+      "gradient_rmse_final_query": 0.4063474452447992,
+      "mean_rollout_seconds": 0.19900489994324744,
+      "gradient_finite": true
+    },
+    {
+      "state_count": 8,
+      "state_bytes": 64,
+      "forward_rmse_all_queries": 0.016232141117770636,
+      "forward_rmse_final_query": 0.033865383690370204,
+      "gradient_rmse_final_query": 0.22493574475398165,
+      "mean_rollout_seconds": 0.15525179996620864,
+      "gradient_finite": true
+    },
+    {
+      "state_count": 16,
+      "state_bytes": 128,
+      "forward_rmse_all_queries": 3875.9945675550002,
+      "forward_rmse_final_query": 11756.14496780855,
+      "gradient_rmse_final_query": 81526.67936794422,
+      "mean_rollout_seconds": 0.1570088000735268,
+      "gradient_finite": true
+    },
+    {
+      "state_count": 32,
+      "state_bytes": 256,
+      "forward_rmse_all_queries": 17353.880606331033,
+      "forward_rmse_final_query": 51196.425590130726,
+      "gradient_rmse_final_query": 364749.5249654563,
+      "mean_rollout_seconds": 0.17250079999212176,
+      "gradient_finite": true
+    }
+  ],
+  "interpretation": "controlled feasibility only; state coefficients and envelope are not frozen for publication"
+}

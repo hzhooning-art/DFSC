@@ -25,7 +25,7 @@
       ],
       "validation_artifact": "p4_mlsl_protocol_validation.json",
       "coverage": 1.0,
-      "status": "pass_with_scope_limits"
+      "status": "conformant"
     },
     {
       "backend": "matrix_exponential_action",
@@ -41,7 +41,7 @@
         "PyTorch matrix_exp backend"
       ],
       "coverage": 1.0,
-      "status": "pass_with_scope_limits"
+      "status": "conformant"
     },
     {
       "backend": "rk4_linear_ode_step",
@@ -57,7 +57,7 @@
         "fixed-step RK4"
       ],
       "coverage": 1.0,
-      "status": "pass_with_scope_limits"
+      "status": "conformant"
     },
     {
       "backend": "logistic_rk4_step",
@@ -73,7 +73,7 @@
         "fixed-step RK4"
       ],
       "coverage": 1.0,
-      "status": "pass_with_scope_limits"
+      "status": "conformant"
     }
   ],
   "registry_status": "complete_for_current_backends",
@@ -315,7 +315,7 @@
         ]
       }
     ],
-    "status": "pass_with_scope_limits"
+    "status": "conformant"
   },
   "common_module_ood": {
     "schema": "DFSC-Common-Module-OOD-v1",

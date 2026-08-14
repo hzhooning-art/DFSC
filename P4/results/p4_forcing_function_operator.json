@@ -1,0 +1,9 @@
+{
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "forcing_as_input": true,
+  "status": "BLOCKED_NUMERICAL_STABILITY",
+  "max_abs_forced_backbone": 1.5784651152114075e+68,
+  "finite_backbone": true,
+  "interpretation": "P1 forced primitive is outside a validated numerical regime for this forcing-input construction; no learning metrics reported"
+}

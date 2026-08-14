@@ -1,0 +1,46 @@
+{
+  "backend_audit": {
+    "backend": "matrix_exponential_action",
+    "domain": {
+      "input_description": "batched time-vector pairs for a 2x2 stable matrix",
+      "parameter_ranges": {
+        "matrix_entries": [
+          -1.0,
+          0.5
+        ]
+      },
+      "output_description": "batched exp(t A) v vectors",
+      "supports_batch": true,
+      "supports_gpu": true,
+      "supports_autograd": true
+    },
+    "status": "conformant",
+    "gates": {
+      "value_finite": true,
+      "gradient_finite": true,
+      "batch_shape": true,
+      "device_local": true
+    },
+    "metrics": {
+      "value_max_abs_error": 6.661338147750939e-16,
+      "gradient_directional_relative_error": 3.137637387544114e-11
+    },
+    "warnings": [
+      "2x2 stable-matrix domain; not a general matrix-function benchmark"
+    ]
+  },
+  "calibration": {
+    "parameter_l1_error": 0.0033432515566840515,
+    "final_loss": 1.3112979340823775e-06,
+    "gradient_finite": true,
+    "elapsed_seconds": 0.823663100018166
+  },
+  "module_reuse": {
+    "output_shape_preserved": true,
+    "loss_finite": true,
+    "all_gradients_finite": true
+  },
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "interpretation": "second backend validation for cross-primitive protocol; not an MLSL result"
+}

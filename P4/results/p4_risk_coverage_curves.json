@@ -1,0 +1,275 @@
+{
+  "source": "results/p4_joint_stability_proxy.json",
+  "thresholds": [
+    0.5,
+    0.6,
+    0.7,
+    0.75,
+    0.8,
+    0.9,
+    0.95
+  ],
+  "curves": {
+    "noise=0.0|confidence_only": [
+      {
+        "threshold": 0.5,
+        "agreement_required": false,
+        "coverage": 1.0,
+        "accepted_count": 8,
+        "mean_regret": 0.0,
+        "max_regret": 0.0,
+        "q90_regret": 0.0
+      },
+      {
+        "threshold": 0.6,
+        "agreement_required": false,
+        "coverage": 1.0,
+        "accepted_count": 8,
+        "mean_regret": 0.0,
+        "max_regret": 0.0,
+        "q90_regret": 0.0
+      },
+      {
+        "threshold": 0.7,
+        "agreement_required": false,
+        "coverage": 1.0,
+        "accepted_count": 8,
+        "mean_regret": 0.0,
+        "max_regret": 0.0,
+        "q90_regret": 0.0
+      },
+      {
+        "threshold": 0.75,
+        "agreement_required": false,
+        "coverage": 1.0,
+        "accepted_count": 8,
+        "mean_regret": 0.0,
+        "max_regret": 0.0,
+        "q90_regret": 0.0
+      },
+      {
+        "threshold": 0.8,
+        "agreement_required": false,
+        "coverage": 1.0,
+        "accepted_count": 8,
+        "mean_regret": 0.0,
+        "max_regret": 0.0,
+        "q90_regret": 0.0
+      },
+      {
+        "threshold": 0.9,
+        "agreement_required": false,
+        "coverage": 1.0,
+        "accepted_count": 8,
+        "mean_regret": 0.0,
+        "max_regret": 0.0,
+        "q90_regret": 0.0
+      },
+      {
+        "threshold": 0.95,
+        "agreement_required": false,
+        "coverage": 1.0,
+        "accepted_count": 8,
+        "mean_regret": 0.0,
+        "max_regret": 0.0,
+        "q90_regret": 0.0
+      }
+    ],
+    "noise=0.0|confidence_and_agreement": [
+      {
+        "threshold": 0.5,
+        "agreement_required": true,
+        "coverage": 1.0,
+        "accepted_count": 8,
+        "mean_regret": 0.0,
+        "max_regret": 0.0,
+        "q90_regret": 0.0
+      },
+      {
+        "threshold": 0.6,
+        "agreement_required": true,
+        "coverage": 1.0,
+        "accepted_count": 8,
+        "mean_regret": 0.0,
+        "max_regret": 0.0,
+        "q90_regret": 0.0
+      },
+      {
+        "threshold": 0.7,
+        "agreement_required": true,
+        "coverage": 1.0,
+        "accepted_count": 8,
+        "mean_regret": 0.0,
+        "max_regret": 0.0,
+        "q90_regret": 0.0
+      },
+      {
+        "threshold": 0.75,
+        "agreement_required": true,
+        "coverage": 1.0,
+        "accepted_count": 8,
+        "mean_regret": 0.0,
+        "max_regret": 0.0,
+        "q90_regret": 0.0
+      },
+      {
+        "threshold": 0.8,
+        "agreement_required": true,
+        "coverage": 1.0,
+        "accepted_count": 8,
+        "mean_regret": 0.0,
+        "max_regret": 0.0,
+        "q90_regret": 0.0
+      },
+      {
+        "threshold": 0.9,
+        "agreement_required": true,
+        "coverage": 1.0,
+        "accepted_count": 8,
+        "mean_regret": 0.0,
+        "max_regret": 0.0,
+        "q90_regret": 0.0
+      },
+      {
+        "threshold": 0.95,
+        "agreement_required": true,
+        "coverage": 1.0,
+        "accepted_count": 8,
+        "mean_regret": 0.0,
+        "max_regret": 0.0,
+        "q90_regret": 0.0
+      }
+    ],
+    "noise=0.05|confidence_only": [
+      {
+        "threshold": 0.5,
+        "agreement_required": false,
+        "coverage": 0.875,
+        "accepted_count": 7,
+        "mean_regret": 0.01479545421898365,
+        "max_regret": 0.041179582476615906,
+        "q90_regret": 0.03202291578054428
+      },
+      {
+        "threshold": 0.6,
+        "agreement_required": false,
+        "coverage": 0.75,
+        "accepted_count": 6,
+        "mean_regret": 0.012941616587340832,
+        "max_regret": 0.041179582476615906,
+        "q90_regret": 0.03108838200569153
+      },
+      {
+        "threshold": 0.7,
+        "agreement_required": false,
+        "coverage": 0.5,
+        "accepted_count": 4,
+        "mean_regret": 0.003868233412504196,
+        "max_regret": 0.015472933650016785,
+        "q90_regret": 0.01083105057477951
+      },
+      {
+        "threshold": 0.75,
+        "agreement_required": false,
+        "coverage": 0.375,
+        "accepted_count": 3,
+        "mean_regret": 0.0,
+        "max_regret": 0.0,
+        "q90_regret": 0.0
+      },
+      {
+        "threshold": 0.8,
+        "agreement_required": false,
+        "coverage": 0.375,
+        "accepted_count": 3,
+        "mean_regret": 0.0,
+        "max_regret": 0.0,
+        "q90_regret": 0.0
+      },
+      {
+        "threshold": 0.9,
+        "agreement_required": false,
+        "coverage": 0.0,
+        "accepted_count": 0,
+        "mean_regret": null,
+        "max_regret": null,
+        "q90_regret": null
+      },
+      {
+        "threshold": 0.95,
+        "agreement_required": false,
+        "coverage": 0.0,
+        "accepted_count": 0,
+        "mean_regret": null,
+        "max_regret": null,
+        "q90_regret": null
+      }
+    ],
+    "noise=0.05|confidence_and_agreement": [
+      {
+        "threshold": 0.5,
+        "agreement_required": true,
+        "coverage": 0.5,
+        "accepted_count": 4,
+        "mean_regret": 0.005249295383691788,
+        "max_regret": 0.02099718153476715,
+        "q90_regret": 0.014698022976517677
+      },
+      {
+        "threshold": 0.6,
+        "agreement_required": true,
+        "coverage": 0.5,
+        "accepted_count": 4,
+        "mean_regret": 0.005249295383691788,
+        "max_regret": 0.02099718153476715,
+        "q90_regret": 0.014698022976517677
+      },
+      {
+        "threshold": 0.7,
+        "agreement_required": true,
+        "coverage": 0.375,
+        "accepted_count": 3,
+        "mean_regret": 0.0,
+        "max_regret": 0.0,
+        "q90_regret": 0.0
+      },
+      {
+        "threshold": 0.75,
+        "agreement_required": true,
+        "coverage": 0.375,
+        "accepted_count": 3,
+        "mean_regret": 0.0,
+        "max_regret": 0.0,
+        "q90_regret": 0.0
+      },
+      {
+        "threshold": 0.8,
+        "agreement_required": true,
+        "coverage": 0.375,
+        "accepted_count": 3,
+        "mean_regret": 0.0,
+        "max_regret": 0.0,
+        "q90_regret": 0.0
+      },
+      {
+        "threshold": 0.9,
+        "agreement_required": true,
+        "coverage": 0.0,
+        "accepted_count": 0,
+        "mean_regret": null,
+        "max_regret": null,
+        "q90_regret": null
+      },
+      {
+        "threshold": 0.95,
+        "agreement_required": true,
+        "coverage": 0.0,
+        "accepted_count": 0,
+        "mean_regret": null,
+        "max_regret": null,
+        "q90_regret": null
+      }
+    ]
+  },
+  "warning": "Small diagnostic sample inherited from the joint-stability probe; expand seeds before publication."
+}

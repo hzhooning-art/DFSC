@@ -1,0 +1,128 @@
+\documentclass[preprint,12pt]{elsarticle}
+\usepackage{amsmath,amssymb,booktabs,array}
+\usepackage[hidelinks]{hyperref}
+\journal{Computer Standards \& Interfaces}
+
+\begin{document}
+\begin{frontmatter}
+\title{Supplementary Material for ``Executable Conformance Profiles for Differentiable Numerical Components''}
+\author{Ning Hu}
+\author{Haitao Duan}
+\author{Shuqun Li}
+\author{Chuyang Hu}
+\end{frontmatter}
+
+\section{Calibration details}
+Table~S1 reports the matched optimizer-level calibration used in the main text. The two methods used the same noisy observations, parameter bounds, initialization, and five random seeds. Work is reported in the native unit of each optimizer and should not be interpreted as an optimizer ranking.
+
+\begin{table}[htbp]
+\centering
+\caption{Matched two-parameter matrix-action calibration. Values are mean $\pm$ standard deviation over five seeds unless stated otherwise.}
+\label{tab:s1}
+\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Method & Parameter err. & Final loss & Work & Time (s)\\
+\midrule
+Adam/autodiff & $0.002060\pm0.000700$ & $4.116\times10^{-6}$ & 140 updates & 1.368\\
+L-BFGS-B/classical & $0.002076\pm0.000741$ & $4.116\times10^{-6}$ & 27 evaluations & 0.02835\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Backend-specific numerical evidence}
+The entries in Table~S2 retain the measured quantity and the tested range used to support the cross-primitive profile. These values have different backend-specific meanings and are not pooled into a single score.
+
+\begin{table}[htbp]
+\centering
+\caption{Representative value, gradient, OOD, and long-horizon evidence.}
+\label{tab:s2}
+\small
+\begin{tabular}{p{0.24\linewidth}p{0.32\linewidth}p{0.34\linewidth}}
+\toprule
+Backend & Test condition & Observed error\\
+\midrule
+MLSL & 80-digit series reference & value $1.32\times10^{-12}$; $\alpha$ gradient $2.22\times10^{-9}$; $\beta$ gradient $5.00\times10^{-10}$\\
+Matrix action & $t=0.02$--$12$, five seeds & long-horizon maximum absolute error $4.27\times10^{-15}$\\
+Linear RK4 & OOD step size $0.41$--$0.80$ & maximum absolute error $1.67\times10^{-3}$\\
+Linear RK4 & $t=5$, step sizes $0.05$ and $0.20$ & $1.48\times10^{-9}$ and $4.23\times10^{-7}$\\
+Logistic RK4 & OOD step size $0.26$--$0.50$ & maximum absolute error $7.52\times10^{-6}$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Batch, device, and precision measurements}
+All GPU timings use synchronized execution on the RTX 5070 Laptop GPU. Memory is incremental CUDA memory measured by the experimental harness. The results characterize this implementation and hardware configuration.
+
+\begin{table}[htbp]
+\centering
+\caption{Float64 batch profile over 50 timed iterations after warmup.}
+\label{tab:s3}
+\scriptsize
+\begin{tabular}{lrrrr}
+\toprule
+Backend and batch & Latency (ms) & Throughput (samples/s) & Memory (bytes)\\
+\midrule
+Matrix, 1 & 0.510062 & 1,960.55 & 8,525,824\\
+Matrix, 64 & 0.945798 & 67,667.73 & 8,549,376\\
+Matrix, 256 & 0.942034 & 271,752.40 & 8,635,392\\
+Matrix, 1024 & 0.928594 & 1,102,742.43 & 8,979,456\\
+Linear RK4, 1 & 0.333228 & 3,000.95 & 8,525,312\\
+Linear RK4, 64 & 0.340564 & 187,923.56 & 8,530,432\\
+Linear RK4, 256 & 0.357048 & 716,990.43 & 8,561,152\\
+Linear RK4, 1024 & 0.355290 & 2,882,152.61 & 8,684,032\\
+Logistic RK4, 1 & 0.430600 & 2,322.34 & 8,525,312\\
+Logistic RK4, 64 & 0.438784 & 145,857.64 & 8,525,824\\
+Logistic RK4, 256 & 0.444710 & 575,656.04 & 8,542,720\\
+Logistic RK4, 1024 & 0.454500 & 2,253,025.31 & 8,610,304\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\caption{Dtype-specific precision and resource measurements.}
+\label{tab:s4}
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+Workload & Dtype & Value error & Gradient error & Latency (ms) & Memory (bytes)\\
+\midrule
+Matrix action & float32 & $4.3229\times10^{-7}$ & $4.2235\times10^{-8}$ & 1.03765 & 210,432\\
+Matrix action & float64 & $1.7764\times10^{-15}$ & $1.0645\times10^{-10}$ & 1.06621 & 418,304\\
+Periodic heat & float32 & $2.8978\times10^{-7}$ & $1.8410\times10^{-7}$ & 0.298242 & 1,312,256\\
+Periodic heat & float64 & $1.6376\times10^{-15}$ & $1.8773\times10^{-16}$ & 0.306160 & 2,624,000\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Requirement traceability matrix}
+Table~S5 connects the project requirements used by the reference validator to the standards concerns discussed in the main paper. The cited standards motivate the concern; the CQ identifiers and decision rules are defined by this study and are not clauses of those standards.
+
+\begin{table}[htbp]
+\centering
+\caption{Traceability from standards concerns to executable component-level evidence.}
+\label{tab:s5}
+\scriptsize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{>{\raggedright\arraybackslash}p{0.07\linewidth}>{\raggedright\arraybackslash}p{0.16\linewidth}>{\raggedright\arraybackslash}p{0.20\linewidth}>{\raggedright\arraybackslash}p{0.24\linewidth}>{\raggedright\arraybackslash}p{0.23\linewidth}}
+\toprule
+ID & Standards concern & Schema field & Test action & Artifact and decision\\
+\midrule
+CQ-01 & Identity and version control & schema, component, implementation & Validate required identifiers and versions & Validated record; missing or unknown identifier is nonconformant\\
+CQ-02 & Planned test scope and completion & operating domain, coverage & Freeze scope; check case count and required anchors & Coverage diagnostics; unfrozen or insufficient scope is nonconformant\\
+CQ-03 & Functional accuracy measurement & evidence.value, tolerances, units & Compare with an independent value reference under mixed gates & Error record and value-gate decision\\
+CQ-04 & Derivative reliability & evidence.gradient, perturbation scale & Directional finite-difference sweep and finite-gradient check & Gradient error, stable-step region, and gate decision\\
+CQ-05 & Reliability and repeatability & batch, repeatability & Heterogeneous-batch isolation and repeated evaluation & Shape, isolation, and repeatability evidence\\
+CQ-06 & Compatibility and execution policy & requested and observed execution & Compare API/CLI, dtype, device, and fallback behavior & Execution record; mismatch is nonconformant\\
+CQ-07 & Measurement traceability & units, provenance, reference & Check completeness and consistency of units and lineage & Provenance and unit fields bound to evidence\\
+CQ-08 & Stress-test planning & OOD, long horizon & Execute frozen boundary and horizon probes & Error trajectory and first failed regime\\
+CQ-09 & Application evidence & calibration, composition & Run matched calibration and at least two compositions & Application-profile evidence and task decision\\
+CQ-10 & Portable exchange and change control & canonical JSON, digest, migration provenance & Key-order, API--CLI, and legacy-migration tests & Stable digest; migrated records require requalification\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\end{document}

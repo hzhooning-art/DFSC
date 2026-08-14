@@ -1,0 +1,24 @@
+{
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "tasks": 32,
+  "observations": 32,
+  "noise_sigma": 0.01,
+  "optimizer_steps": 120,
+  "differentiable_calibration": {
+    "alpha_abs_error_mean": 0.007673304359582904,
+    "rate_abs_error_mean": 0.003710209260062486,
+    "joint_error_mean": 0.00918544037690281,
+    "elapsed_seconds": 0.6154415999772027,
+    "final_loss": 9.215604565283387e-05,
+    "gradient_finite": true
+  },
+  "grid_search": {
+    "alpha_abs_error_mean": 0.00715956119746141,
+    "rate_abs_error_mean": 0.006388371629276322,
+    "joint_error_mean": 0.01055943458379589,
+    "elapsed_seconds": 0.24380299996118993,
+    "grid_size": 1681
+  },
+  "interpretation": "first integrated workflow gate; calibration budget and baselines are not yet publication-frozen"
+}

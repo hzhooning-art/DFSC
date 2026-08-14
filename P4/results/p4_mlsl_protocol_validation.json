@@ -84,7 +84,7 @@
     "ood": true,
     "long_horizon": true
   },
-  "status": "pass_with_scope_limits",
+  "status": "conformant",
   "limitations": [
     "validated only for the stable real-negative spectral regime",
     "the high-precision reference uses the convergent series and does not validate complex or positive arguments",

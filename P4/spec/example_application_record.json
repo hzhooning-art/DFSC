@@ -1,0 +1,52 @@
+{
+  "schema": "DFSC-DNC-Conformance-v3",
+  "component": {
+    "name": "reference-propagator",
+    "version": "1.0"
+  },
+  "profile": "application",
+  "operating_domain": {
+    "identifier": "stable-negative-spectrum-v1",
+    "units": "dimensionless"
+  },
+  "coverage": {
+    "scope_frozen": true,
+    "sample_count": 24,
+    "anchors": [
+      "nominal",
+      "boundary",
+      "heterogeneous_batch",
+      "perturbation",
+      "execution_policy",
+      "long_horizon",
+      "application_composition"
+    ]
+  },
+  "requested_execution": {
+    "dtype": "float64",
+    "device": "cpu"
+  },
+  "observed_execution": {
+    "dtype": "float64",
+    "device": "cpu"
+  },
+  "evidence": {
+    "value_accuracy": true,
+    "gradient_accuracy": true,
+    "batch_shape": true,
+    "batch_independence": true,
+    "repeatability": true,
+    "ood_control": true,
+    "long_horizon": true,
+    "dtype_conformance": true,
+    "device_local": true,
+    "unit_consistency": true,
+    "resource_reported": true,
+    "calibration": true,
+    "composition": true
+  },
+  "provenance": {
+    "implementation": "python-api",
+    "run_id": "published-example"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "DFSC-P4-Reproducibility-Manifest-v1",
+  "timestamp_utc": "2026-08-12T06:55:07.353198+00:00",
+  "python": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "steps": [
+    {
+      "script": "p4_mlsl_protocol_validation.py",
+      "returncode": 0
+    },
+    {
+      "script": "p4_protocol_registry.py",
+      "returncode": 0
+    },
+    {
+      "script": "p4_public_api_smoke.py",
+      "returncode": 0
+    }
+  ],
+  "registry_schema": "DFSC-Primitive-Protocol-v1",
+  "backend_count": 4,
+  "mlsl_gate_status": {
+    "value": "pass",
+    "gradient": "pass",
+    "calibration": "pass",
+    "module_reuse": "pass",
+    "ood": "pass",
+    "long_horizon": "pass"
+  },
+  "status": "pass",
+  "external_reproduction": "not required for this local evidence run; recommended before publication"
+}

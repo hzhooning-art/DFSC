@@ -1,0 +1,344 @@
+{
+  "device": "cuda",
+  "bootstrap_draws": 256,
+  "rows": [
+    {
+      "kind": "tempered_power_law",
+      "seed": 51,
+      "noise": 0.0,
+      "observed_end": 10.0,
+      "selected": "fractional_tempered",
+      "confidence": 1.0,
+      "entropy": 5.5262041470660606e-11,
+      "raw_margin": 0.9999997615814209,
+      "selected_error": 2.420183363938122e-06,
+      "oracle_error": 2.420183363938122e-06,
+      "regret": 0.0
+    },
+    {
+      "kind": "tempered_power_law",
+      "seed": 59,
+      "noise": 0.0,
+      "observed_end": 10.0,
+      "selected": "fractional_tempered",
+      "confidence": 1.0,
+      "entropy": 5.5262041470660606e-11,
+      "raw_margin": 0.9999997615814209,
+      "selected_error": 2.420183363938122e-06,
+      "oracle_error": 2.420183363938122e-06,
+      "regret": 0.0
+    },
+    {
+      "kind": "tempered_power_law",
+      "seed": 51,
+      "noise": 0.0,
+      "observed_end": 14.0,
+      "selected": "fractional_tempered",
+      "confidence": 1.0,
+      "entropy": 5.5262041470660606e-11,
+      "raw_margin": 0.9999995231628418,
+      "selected_error": 3.1468534871237352e-06,
+      "oracle_error": 3.1468534871237352e-06,
+      "regret": 0.0
+    },
+    {
+      "kind": "tempered_power_law",
+      "seed": 59,
+      "noise": 0.0,
+      "observed_end": 14.0,
+      "selected": "fractional_tempered",
+      "confidence": 1.0,
+      "entropy": 5.5262041470660606e-11,
+      "raw_margin": 0.9999995231628418,
+      "selected_error": 3.1468534871237352e-06,
+      "oracle_error": 3.1468534871237352e-06,
+      "regret": 0.0
+    },
+    {
+      "kind": "tempered_power_law",
+      "seed": 51,
+      "noise": 0.05,
+      "observed_end": 10.0,
+      "selected": "exponential_mixture",
+      "confidence": 0.984375,
+      "entropy": 0.08048483729362488,
+      "raw_margin": 0.035922691226005554,
+      "selected_error": 0.20087161660194397,
+      "oracle_error": 0.08878159523010254,
+      "regret": 0.11209002137184143
+    },
+    {
+      "kind": "tempered_power_law",
+      "seed": 59,
+      "noise": 0.05,
+      "observed_end": 10.0,
+      "selected": "distributed_order",
+      "confidence": 0.67578125,
+      "entropy": 0.84212726354599,
+      "raw_margin": 0.0027435249648988247,
+      "selected_error": 0.22641944885253906,
+      "oracle_error": 0.1719990372657776,
+      "regret": 0.054420411586761475
+    },
+    {
+      "kind": "tempered_power_law",
+      "seed": 51,
+      "noise": 0.05,
+      "observed_end": 14.0,
+      "selected": "distributed_order",
+      "confidence": 0.85546875,
+      "entropy": 0.44349703192710876,
+      "raw_margin": 0.02207033894956112,
+      "selected_error": 0.1383523941040039,
+      "oracle_error": 0.07581917941570282,
+      "regret": 0.06253321468830109
+    },
+    {
+      "kind": "tempered_power_law",
+      "seed": 59,
+      "noise": 0.05,
+      "observed_end": 14.0,
+      "selected": "distributed_order",
+      "confidence": 0.78125,
+      "entropy": 0.5998056530952454,
+      "raw_margin": 0.0048543368466198444,
+      "selected_error": 0.22171175479888916,
+      "oracle_error": 0.18187497556209564,
+      "regret": 0.03983677923679352
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 51,
+      "noise": 0.0,
+      "observed_end": 10.0,
+      "selected": "exponential_mixture",
+      "confidence": 1.0,
+      "entropy": 5.5262041470660606e-11,
+      "raw_margin": 0.9388419389724731,
+      "selected_error": 0.012020053341984749,
+      "oracle_error": 0.012020053341984749,
+      "regret": 0.0
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 59,
+      "noise": 0.0,
+      "observed_end": 10.0,
+      "selected": "exponential_mixture",
+      "confidence": 1.0,
+      "entropy": 5.5262041470660606e-11,
+      "raw_margin": 0.9388419389724731,
+      "selected_error": 0.012020053341984749,
+      "oracle_error": 0.012020053341984749,
+      "regret": 0.0
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 51,
+      "noise": 0.0,
+      "observed_end": 14.0,
+      "selected": "exponential_mixture",
+      "confidence": 1.0,
+      "entropy": 5.5262041470660606e-11,
+      "raw_margin": 0.8476965427398682,
+      "selected_error": 0.006841267924755812,
+      "oracle_error": 0.006841267924755812,
+      "regret": 0.0
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 59,
+      "noise": 0.0,
+      "observed_end": 14.0,
+      "selected": "exponential_mixture",
+      "confidence": 1.0,
+      "entropy": 5.5262041470660606e-11,
+      "raw_margin": 0.8476965427398682,
+      "selected_error": 0.006841267924755812,
+      "oracle_error": 0.006841267924755812,
+      "regret": 0.0
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 51,
+      "noise": 0.05,
+      "observed_end": 10.0,
+      "selected": "exponential_mixture",
+      "confidence": 0.96484375,
+      "entropy": 0.1708548367023468,
+      "raw_margin": 0.10062555223703384,
+      "selected_error": 0.1643534004688263,
+      "oracle_error": 0.15442964434623718,
+      "regret": 0.009923756122589111
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 59,
+      "noise": 0.05,
+      "observed_end": 10.0,
+      "selected": "distributed_order",
+      "confidence": 0.8203125,
+      "entropy": 0.5911891460418701,
+      "raw_margin": 0.008497287519276142,
+      "selected_error": 0.18086594343185425,
+      "oracle_error": 0.18086594343185425,
+      "regret": 0.0
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 51,
+      "noise": 0.05,
+      "observed_end": 14.0,
+      "selected": "exponential_mixture",
+      "confidence": 0.98828125,
+      "entropy": 0.0637580007314682,
+      "raw_margin": 0.023341378197073936,
+      "selected_error": 0.14526285231113434,
+      "oracle_error": 0.12659324705600739,
+      "regret": 0.018669605255126953
+    },
+    {
+      "kind": "two_timescale",
+      "seed": 59,
+      "noise": 0.05,
+      "observed_end": 14.0,
+      "selected": "distributed_order",
+      "confidence": 0.66015625,
+      "entropy": 0.8644752502441406,
+      "raw_margin": 0.0012624087976291776,
+      "selected_error": 0.1884082853794098,
+      "oracle_error": 0.1884082853794098,
+      "regret": 0.0
+    }
+  ],
+  "summary": {
+    "tempered_power_law|noise=0.0|observed_end=10.0|confidence>=0.75": {
+      "count": 2,
+      "coverage": 1.0,
+      "accepted_regret_mean": 0.0,
+      "accepted_error_mean": 2.420183363938122e-06,
+      "mean_confidence": 1.0,
+      "mean_entropy": 5.5262041470660606e-11
+    },
+    "tempered_power_law|noise=0.0|observed_end=10.0|confidence>=0.9": {
+      "count": 2,
+      "coverage": 1.0,
+      "accepted_regret_mean": 0.0,
+      "accepted_error_mean": 2.420183363938122e-06,
+      "mean_confidence": 1.0,
+      "mean_entropy": 5.5262041470660606e-11
+    },
+    "tempered_power_law|noise=0.0|observed_end=14.0|confidence>=0.75": {
+      "count": 2,
+      "coverage": 1.0,
+      "accepted_regret_mean": 0.0,
+      "accepted_error_mean": 3.1468534871237352e-06,
+      "mean_confidence": 1.0,
+      "mean_entropy": 5.5262041470660606e-11
+    },
+    "tempered_power_law|noise=0.0|observed_end=14.0|confidence>=0.9": {
+      "count": 2,
+      "coverage": 1.0,
+      "accepted_regret_mean": 0.0,
+      "accepted_error_mean": 3.1468534871237352e-06,
+      "mean_confidence": 1.0,
+      "mean_entropy": 5.5262041470660606e-11
+    },
+    "tempered_power_law|noise=0.05|observed_end=10.0|confidence>=0.75": {
+      "count": 2,
+      "coverage": 0.5,
+      "accepted_regret_mean": 0.11209002137184143,
+      "accepted_error_mean": 0.20087161660194397,
+      "mean_confidence": 0.830078125,
+      "mean_entropy": 0.46130603551864624
+    },
+    "tempered_power_law|noise=0.05|observed_end=10.0|confidence>=0.9": {
+      "count": 2,
+      "coverage": 0.5,
+      "accepted_regret_mean": 0.11209002137184143,
+      "accepted_error_mean": 0.20087161660194397,
+      "mean_confidence": 0.830078125,
+      "mean_entropy": 0.46130603551864624
+    },
+    "tempered_power_law|noise=0.05|observed_end=14.0|confidence>=0.75": {
+      "count": 2,
+      "coverage": 1.0,
+      "accepted_regret_mean": 0.0511849969625473,
+      "accepted_error_mean": 0.18003207445144653,
+      "mean_confidence": 0.818359375,
+      "mean_entropy": 0.5216513276100159
+    },
+    "tempered_power_law|noise=0.05|observed_end=14.0|confidence>=0.9": {
+      "count": 2,
+      "coverage": 0.0,
+      "accepted_regret_mean": null,
+      "accepted_error_mean": null,
+      "mean_confidence": 0.818359375,
+      "mean_entropy": 0.5216513276100159
+    },
+    "two_timescale|noise=0.0|observed_end=10.0|confidence>=0.75": {
+      "count": 2,
+      "coverage": 1.0,
+      "accepted_regret_mean": 0.0,
+      "accepted_error_mean": 0.012020053341984749,
+      "mean_confidence": 1.0,
+      "mean_entropy": 5.5262041470660606e-11
+    },
+    "two_timescale|noise=0.0|observed_end=10.0|confidence>=0.9": {
+      "count": 2,
+      "coverage": 1.0,
+      "accepted_regret_mean": 0.0,
+      "accepted_error_mean": 0.012020053341984749,
+      "mean_confidence": 1.0,
+      "mean_entropy": 5.5262041470660606e-11
+    },
+    "two_timescale|noise=0.0|observed_end=14.0|confidence>=0.75": {
+      "count": 2,
+      "coverage": 1.0,
+      "accepted_regret_mean": 0.0,
+      "accepted_error_mean": 0.006841267924755812,
+      "mean_confidence": 1.0,
+      "mean_entropy": 5.5262041470660606e-11
+    },
+    "two_timescale|noise=0.0|observed_end=14.0|confidence>=0.9": {
+      "count": 2,
+      "coverage": 1.0,
+      "accepted_regret_mean": 0.0,
+      "accepted_error_mean": 0.006841267924755812,
+      "mean_confidence": 1.0,
+      "mean_entropy": 5.5262041470660606e-11
+    },
+    "two_timescale|noise=0.05|observed_end=10.0|confidence>=0.75": {
+      "count": 2,
+      "coverage": 1.0,
+      "accepted_regret_mean": 0.004961878061294556,
+      "accepted_error_mean": 0.17260967195034027,
+      "mean_confidence": 0.892578125,
+      "mean_entropy": 0.38102197647094727
+    },
+    "two_timescale|noise=0.05|observed_end=10.0|confidence>=0.9": {
+      "count": 2,
+      "coverage": 0.5,
+      "accepted_regret_mean": 0.009923756122589111,
+      "accepted_error_mean": 0.1643534004688263,
+      "mean_confidence": 0.892578125,
+      "mean_entropy": 0.38102197647094727
+    },
+    "two_timescale|noise=0.05|observed_end=14.0|confidence>=0.75": {
+      "count": 2,
+      "coverage": 0.5,
+      "accepted_regret_mean": 0.018669605255126953,
+      "accepted_error_mean": 0.14526285231113434,
+      "mean_confidence": 0.82421875,
+      "mean_entropy": 0.464116632938385
+    },
+    "two_timescale|noise=0.05|observed_end=14.0|confidence>=0.9": {
+      "count": 2,
+      "coverage": 0.5,
+      "accepted_regret_mean": 0.018669605255126953,
+      "accepted_error_mean": 0.14526285231113434,
+      "mean_confidence": 0.82421875,
+      "mean_entropy": 0.464116632938385
+    }
+  }
+}

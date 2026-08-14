@@ -1,0 +1,55 @@
+{
+  "backend_audit": {
+    "backend": "rk4_linear_ode_step",
+    "domain": {
+      "input_description": "batched step-size and two-dimensional states",
+      "parameter_ranges": {
+        "matrix_entries": [
+          -1.0,
+          0.5
+        ],
+        "step_size": [
+          0.001,
+          0.4
+        ]
+      },
+      "output_description": "batched one-step states for y'=Ay",
+      "supports_batch": true,
+      "supports_gpu": true,
+      "supports_autograd": true
+    },
+    "status": "conformant",
+    "gates": {
+      "value_finite": true,
+      "gradient_finite": true,
+      "batch_shape": true,
+      "device_local": true
+    },
+    "metrics": {
+      "value_max_abs_error": 1.248656105068413e-05,
+      "gradient_directional_relative_error": 5.059359598124036e-11
+    },
+    "warnings": [
+      "linear 2D ODE and fixed-step RK4 domain; not a general ODE solver benchmark"
+    ]
+  },
+  "calibration": {
+    "parameter_l1_error": 0.0006524062826164696,
+    "final_loss": 6.820501797034254e-07,
+    "gradient_finite": true,
+    "elapsed_seconds": 0.48697970004286617
+  },
+  "long_horizon": {
+    "final_time": 5.0,
+    "absolute_error": 1.5963489774853401e-09,
+    "state_finite": true
+  },
+  "module_reuse": {
+    "output_shape_preserved": true,
+    "loss_finite": true,
+    "all_gradients_finite": true
+  },
+  "device": "cuda",
+  "cuda_name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "interpretation": "third backend validation for cross-primitive protocol; not an MLSL result"
+}
