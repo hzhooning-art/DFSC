@@ -348,7 +348,7 @@ GPU 上，测试的单场调用中位前向延迟为 $0.369$--$0.397$ ms，峰�
 观测稀疏或噪声过大时，潜在反问题可能欠定。非正规或刚性动力学会放大瞬态误差和反向 Jacobian 乘积。同路径参考提供的证据也弱于独立构造的参考。出现这些情况时，记录保存适用限制；若所选档案的必需门槛不满足，则判为 \texttt{NONCONFORMANT}，并报告扰动与可辨识性诊断。门槛未通过属于符合性结果，不是软件异常。
 
 \section{可复现性与工程软件可用性}
-实验脚本、JSON 结果、模式校验器、软件测试和论文数据构建脚本均位于公开 DFSC 仓库的 \texttt{P4} 目录，投稿归档状态由标签 \texttt{p4-csi-submission-v1} 标识。符合性实验写出 \texttt{p4\_csi\_conformance\_validation.json}；API 与命令行仅共享判定器，不共享序列化路径。仓库保存了复现所需的实现、输入和证据结果。
+实验脚本、JSON 结果、模式校验器、软件测试和论文数据构建脚本均位于公开 DFSC 仓库的 \texttt{P4} 目录，投稿归档状态由标签 \texttt{p4-csi-submission-v1.1} 标识。符合性实验写出 \texttt{p4\_csi\_conformance\_validation.json}；API 与命令行仅共享判定器，不共享序列化路径。仓库保存了复现所需的实现、输入和证据结果。
 
 \section{结论}
 本文提出并实现了一份面向可微数值组件的可执行符合性规范。三个累积档案把接口行为、数值证据、冻结且达到最低覆盖要求的运行范围、单位、来源和执行策略绑定到机器可读判定。40 轮随机试验中，API 与命令行生成相同规范记录，键顺序不影响摘要，旧记录迁移保留证据但必须重新判定。参考校验器识别全部 200 个注入故障，40 个有效记录均未被误拒；Wilson 区间报告有限试验的不确定性。四类后端和一个 65,536 状态热传播组件说明函数值、梯度、OOD、长时域、标定、组合和资源证据如何填充档案。本文的互操作结论仅覆盖所测 Python、命令行、JSON 和 PyTorch 路径。该方案补充系统级 V\&V，仍是一份研究规范而非正式标准。
@@ -357,7 +357,7 @@ GPU 上，测试的单场调用中位前向延迟为 $0.369$--$0.397$ ms，峰�
 本研究得到以下项目资助：上海交通大学海洋工程国家重点实验室，项目编号 GKZD010089；中国科学院声学研究所声学国家重点实验室，项目编号 SKLA202406。资助方未参与研究设计、数据收集与分析、结果解释、稿件撰写或投稿决定。
 
 \section*{数据可用性}
-符合性实现、数值实验、生成的 JSON 报告、测试、论文数据构建器和制图流程均已公开于 DFSC 仓库带标签的 P4 目录：\href{https://github.com/hzhooning-art/DFSC/tree/p4-csi-submission-v1/P4}{github.com/hzhooning-art/DFSC/tree/p4-csi-submission-v1/P4}。面向标准与接口的互操作和变异测试数据保存在 \texttt{P4/results/p4\_csi\_conformance\_validation.json}。公开源数据集的仓库 DOI 已在相应实验中引用。投稿时 P4 尚未分配独立的归档软件 DOI。
+符合性实现、数值实验、生成的 JSON 报告、测试、论文数据构建器和制图流程均已公开于 DFSC 仓库带标签的 P4 目录：\href{https://github.com/hzhooning-art/DFSC/tree/p4-csi-submission-v1.1/P4}{github.com/hzhooning-art/DFSC/tree/p4-csi-submission-v1.1/P4}。面向标准与接口的互操作和变异测试数据保存在 \texttt{P4/results/p4\_csi\_conformance\_validation.json}。公开源数据集的仓库 DOI 已在相应实验中引用。投稿时 P4 尚未分配独立的归档软件 DOI。
 
 \section*{CRediT 作者贡献声明}
 胡宁：概念化、方法学、软件、验证、形式化分析、调查、数据整理、可视化、初稿撰写、审阅与编辑。段海涛：方法学、软件、验证、调查、审阅与编辑。李书群：验证、调查、审阅与编辑。胡初扬：验证、调查、审阅与编辑。
