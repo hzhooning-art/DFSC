@@ -9,10 +9,10 @@ description = "Auditable reliability qualification for differentiable engineerin
 readme = "dfsc_protocol/README.md"
 requires-python = ">=3.10"
 dependencies = ["torch>=2.1"]
+license = { text = "MIT" }
 
 [project.scripts]
 dfsc-conformance = "dfsc_protocol.cli:main"
-license = { text = "MIT" }
 
 [tool.setuptools.packages.find]
 where = ["."]
