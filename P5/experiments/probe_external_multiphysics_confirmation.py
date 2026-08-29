@@ -36,9 +36,8 @@ from probe_real_background_mechanism_audit import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PROJECT_ROOT = ROOT.parent
 RESULTS = ROOT / "results"
-EXTERNAL = PROJECT_ROOT / "P3" / "data" / "external"
+EXTERNAL = ROOT / "data" / "external"
 STAGE57_RESULT = RESULTS / "morphology_calibrated_asymmetric_hierarchy.json"
 PARTIAL_RESULT = RESULTS / "external_multiphysics_confirmation.partial.json"
 SEED_BASE = 251000
@@ -111,8 +110,8 @@ def external_backgrounds() -> tuple[dict[str, np.ndarray], list[dict]]:
     }
     copper_path = EXTERNAL / "c19010" / "discrete_time-stress-curve.csv"
     steel_paths = {
-        "steel_270MPa_repeats": EXTERNAL / "X20 SRT_270 MPa - relaxation R1 to R7.txt",
-        "steel_300MPa_repeats": EXTERNAL / "X20 SRT_300 MPa - relaxation R1 to R8.txt",
+        "steel_270MPa_repeats": EXTERNAL / "martensitic_steel" / "X20 SRT_270 MPa - relaxation R1 to R7.txt",
+        "steel_300MPa_repeats": EXTERNAL / "martensitic_steel" / "X20 SRT_300 MPa - relaxation R1 to R8.txt",
     }
     backgrounds = {name: load_brain(path) for name, path in brain_paths.items()}
     for temperature, residual in zip((20, 100, 150), load_copper(copper_path)):

@@ -25,6 +25,36 @@ class Dataset:
 
 
 DATASETS = {
+    "brain-corona": Dataset(
+        name="Brain-tissue cyclic relaxation: corona radiata (Zenodo 13960486)",
+        url="https://zenodo.org/api/records/13960486/files/cyclic_relaxation_corona_radiata.csv/content",
+        archive=EXTERNAL / "brain_tissue" / "cyclic_relaxation_corona_radiata.csv",
+        sha256="881be97c59d2a212aca19b0c658e692dac2a561296abffaf91b5d934f3607a9a",
+    ),
+    "brain-visual": Dataset(
+        name="Brain-tissue cyclic relaxation: visual cortex (Zenodo 13960486)",
+        url="https://zenodo.org/api/records/13960486/files/cyclic_relaxation_visual_cortex.csv/content",
+        archive=EXTERNAL / "brain_tissue" / "cyclic_relaxation_visual_cortex.csv",
+        sha256="c8e06b910cb3c17d7dde8648d011100027005b5ef9e091a069744d2f8657dc01",
+    ),
+    "copper": Dataset(
+        name="C19010 copper-alloy stress relaxation (Zenodo 10796926)",
+        url="https://zenodo.org/api/records/10796926/files/discrete_time-stress-curve.csv/content",
+        archive=EXTERNAL / "c19010" / "discrete_time-stress-curve.csv",
+        sha256="44ec89de2d263dde3e67b0309e61cb7a4655a509a06d08954e348b704c66c2ed",
+    ),
+    "steel-270": Dataset(
+        name="Martensitic-steel relaxation at 270 MPa (Zenodo 14051050)",
+        url="https://zenodo.org/api/records/14051050/files/X20%20SRT_270%20MPa%20-%20relaxation%20R1%20to%20R7.txt/content",
+        archive=EXTERNAL / "martensitic_steel" / "X20 SRT_270 MPa - relaxation R1 to R7.txt",
+        sha256="d567f75f13e9a5652fcbf7819fedbb2c66346d15a724b99cd9ca11634e45aaa3",
+    ),
+    "steel-300": Dataset(
+        name="Martensitic-steel relaxation at 300 MPa (Zenodo 14051050)",
+        url="https://zenodo.org/api/records/14051050/files/X20%20SRT_300%20MPa%20-%20relaxation%20R1%20to%20R8.txt/content",
+        archive=EXTERNAL / "martensitic_steel" / "X20 SRT_300 MPa - relaxation R1 to R8.txt",
+        sha256="53b1f8b361c155a3964e615150c5901c62981030d412bbe3932b43627b3becc1",
+    ),
     "pva": Dataset(
         name="PVA stress relaxation (Zenodo 21333840)",
         url="https://zenodo.org/api/records/21333840/files/Stress_relaxation_data.xlsx/content",
