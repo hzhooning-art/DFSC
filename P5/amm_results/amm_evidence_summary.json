@@ -1,0 +1,87 @@
+{
+  "source_results": [
+    "public_pva_relaxation.json",
+    "public_kupferdigital_relaxation.json",
+    "mechanism_vs_trajectory_baselines.json"
+  ],
+  "pva_design": {
+    "horizons": [
+      4.0,
+      8.0,
+      15.0,
+      28.0
+    ],
+    "samples": [
+      12,
+      24,
+      48,
+      96
+    ],
+    "decision_matrix": [
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        2,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        3
+      ]
+    ]
+  },
+  "direct_baselines": {
+    "rank1_separated": {
+      "positive_real_memory": 0.00011842781801138172,
+      "regularized_damped_modal": 0.19037031125406179,
+      "trajectory_mlp": 0.2499887241760607
+    },
+    "rank2_separated": {
+      "positive_real_memory": 0.00015215312128439106,
+      "regularized_damped_modal": 0.04339201769211336,
+      "trajectory_mlp": 0.11987588686384948
+    },
+    "rank3_separated": {
+      "positive_real_memory": 0.006619927888756602,
+      "regularized_damped_modal": 0.06213590994648214,
+      "trajectory_mlp": 0.1377031191088485
+    }
+  },
+  "material_evidence": {
+    "pva_held_nrmse": [
+      0.017566295119646837,
+      0.011212189234146411,
+      0.009319964171240326
+    ],
+    "copper_held_nrmse": [
+      0.384453559033819,
+      1.76113983176873,
+      104.24601099625629
+    ],
+    "copper_iid_bic_delta": [
+      1251.1513606007757,
+      124.69826108520829,
+      0.0
+    ],
+    "copper_ar1_bic_delta": [
+      0.0,
+      26.610403148737532,
+      106.88150228109589
+    ]
+  },
+  "claim_boundary": "Ranks are empirical shared finite realizations on declared observation designs; they are not unique microscopic mechanisms."
+}

@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0.0",
+  "experiment": "submission_grouping_and_noise_robustness_audit",
+  "public_task_audit": {
+    "pva": {
+      "independent_unit": "physical specimen",
+      "independent_unit_count": 3,
+      "grouped_measurements": "loading cycles within specimen",
+      "split_unit": "leave one specimen out",
+      "leakage_controls": [
+        "all cycles from a held specimen remain outside calibration",
+        "cycle-level measurements are not counted as independent inferential units"
+      ]
+    },
+    "gas_sensor": {
+      "independent_unit": "non-air exposure experiment",
+      "independent_unit_count": 50,
+      "grouped_measurements": "16 sensor channels within exposure",
+      "split_unit": "held acquisition batch",
+      "leakage_controls": [
+        "sensor channels remain clustered within their exposure",
+        "all exposures from a held acquisition batch remain outside calibration"
+      ]
+    },
+    "hydraulic": {
+      "independent_unit": "load cycle",
+      "independent_unit_count": 30,
+      "grouped_measurements": "four measured channels within cycle",
+      "split_unit": "held cooler-condition group",
+      "leakage_controls": [
+        "channels remain clustered within their load cycle",
+        "all cycles from a held cooler condition remain outside calibration"
+      ]
+    }
+  },
+  "noise_generator_transfer": {
+    "ar1": {
+      "frozen_threshold": 0.4908481278868735,
+      "separated_support": {
+        "n": 40,
+        "rate": 1.0,
+        "successes": 40,
+        "wilson_95": [
+          0.9123783988027135,
+          1.0
+        ],
+        "seed_cluster_bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "coalesced_refusal": {
+        "n": 40,
+        "rate": 1.0,
+        "successes": 40,
+        "wilson_95": [
+          0.9123783988027135,
+          1.0
+        ],
+        "seed_cluster_bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "ar2": {
+      "frozen_threshold": 0.4908481278868735,
+      "separated_support": {
+        "n": 40,
+        "rate": 1.0,
+        "successes": 40,
+        "wilson_95": [
+          0.9123783988027135,
+          1.0
+        ],
+        "seed_cluster_bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "coalesced_refusal": {
+        "n": 40,
+        "rate": 1.0,
+        "successes": 40,
+        "wilson_95": [
+          0.9123783988027135,
+          1.0
+        ],
+        "seed_cluster_bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "heteroscedastic": {
+      "frozen_threshold": 0.4908481278868735,
+      "separated_support": {
+        "n": 40,
+        "rate": 1.0,
+        "successes": 40,
+        "wilson_95": [
+          0.9123783988027135,
+          1.0
+        ],
+        "seed_cluster_bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "coalesced_refusal": {
+        "n": 40,
+        "rate": 1.0,
+        "successes": 40,
+        "wilson_95": [
+          0.9123783988027135,
+          1.0
+        ],
+        "seed_cluster_bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "iid_gaussian": {
+      "frozen_threshold": 0.4908481278868735,
+      "separated_support": {
+        "n": 40,
+        "rate": 1.0,
+        "successes": 40,
+        "wilson_95": [
+          0.9123783988027135,
+          1.0
+        ],
+        "seed_cluster_bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      },
+      "coalesced_refusal": {
+        "n": 40,
+        "rate": 1.0,
+        "successes": 40,
+        "wilson_95": [
+          0.9123783988027135,
+          1.0
+        ],
+        "seed_cluster_bootstrap_95": [
+          1.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "correlated_noise_model_sensitivity": {
+    "hydraulic": {
+      "ordinary_bic_preferred_rank": 2,
+      "ar1_profile_bic_preferred_rank": 1,
+      "criterion_disagreement": true,
+      "ordinary_bic_by_rank": {
+        "1": -8509.645292305746,
+        "2": -9167.871861381602,
+        "3": -9051.191217797283
+      },
+      "ar1_profile_bic_by_rank": {
+        "1": -10208.346091018686,
+        "2": -9936.225212196601,
+        "3": -9532.137123031718
+      },
+      "interpretation": "The disagreement is a residual-correlation sensitivity result; neither criterion overrides the frozen transfer and separation gates."
+    }
+  },
+  "changes_primary_public_decisions": false,
+  "scope_warnings": [
+    "The PVA task contains only three independent specimens.",
+    "Seed-cluster bootstrap intervals quantify repeated simulation uncertainty, not population transfer.",
+    "AR(1)-profile BIC is a sensitivity model and does not cover arbitrary colored or heteroscedastic residuals.",
+    "Sequential acquisition can induce dependence beyond the declared grouping variables."
+  ]
+}

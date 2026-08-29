@@ -1,0 +1,30 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Local TeX caches and scratch output
+.tectonic-cache/
+.tectonic-local/
+tmp/
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+
+# Public datasets are retrieved from their authoritative repositories.
+# Keep provenance metadata and the UCI gas source note under version control.
+data/external/**
+!data/external/*_api.json
+!data/external/uci_gas_flow_308/
+data/external/uci_gas_flow_308/**
+!data/external/uci_gas_flow_308/README.md
+
+# Local submission bundles are generated artifacts, not source material.
+submission/
+submission_amm/
+P5_submission_package*.zip
+P5_AMM_submission_package*.zip

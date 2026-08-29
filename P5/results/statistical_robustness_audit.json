@@ -1,0 +1,1356 @@
+{
+  "experiment": "stage63_joint_statistical_robustness_audit",
+  "independence_units": {
+    "pva": "specimen (3 specimens; cycle-level p-values are not used as primary inference)",
+    "uci_gas": "exposure experiment (50 experiments; 16 channels clustered within experiment)"
+  },
+  "pva_cluster_statistics": {
+    "2": {
+      "median_relative_improvement": 0.5516719796327547,
+      "bootstrap_95pct": [
+        0.2317023736230586,
+        0.6171096987563969
+      ],
+      "wilcoxon_statistic": 38.0,
+      "wilcoxon_p_one_sided": 0.037109375,
+      "n_curves": 9
+    },
+    "3": {
+      "median_relative_improvement": 0.4836394675529945,
+      "bootstrap_95pct": [
+        0.3948696533268076,
+        0.7977231939939498
+      ],
+      "wilcoxon_statistic": 45.0,
+      "wilcoxon_p_one_sided": 0.001953125,
+      "n_curves": 9
+    }
+  },
+  "gas_cluster_statistics": {
+    "2": {
+      "cluster_bootstrap_95pct": [
+        0.2717913322954285,
+        0.41292563900973706
+      ],
+      "independent_unit": "gas exposure experiment",
+      "median_relative_improvement": 0.3076362643969546,
+      "n_units": 50,
+      "wilcoxon_p_one_sided": 9.769962616701378e-14,
+      "wilcoxon_statistic": 1261.0
+    },
+    "3": {
+      "cluster_bootstrap_95pct": [
+        0.5852915321796597,
+        0.6815012274285333
+      ],
+      "independent_unit": "gas exposure experiment",
+      "median_relative_improvement": 0.6592807895233319,
+      "n_units": 50,
+      "wilcoxon_p_one_sided": 8.881784197001252e-16,
+      "wilcoxon_statistic": 1275.0
+    }
+  },
+  "pva_leave_one_specimen": {
+    "1": [
+      {
+        "held_specimen": 1,
+        "rates": [
+          0.0891101128943144
+        ],
+        "median_curve_nrmse": 0.017358537415685254
+      },
+      {
+        "held_specimen": 2,
+        "rates": [
+          0.08871444068753073
+        ],
+        "median_curve_nrmse": 0.015654571747430766
+      },
+      {
+        "held_specimen": 3,
+        "rates": [
+          0.09338508468472566
+        ],
+        "median_curve_nrmse": 0.06427552182853892
+      }
+    ],
+    "2": [
+      {
+        "held_specimen": 1,
+        "rates": [
+          0.04551448680953405,
+          0.42136725902286015
+        ],
+        "median_curve_nrmse": 0.0050091862271319666
+      },
+      {
+        "held_specimen": 2,
+        "rates": [
+          0.04982101825452462,
+          0.5434260709341834
+        ],
+        "median_curve_nrmse": 0.011212189234146411
+      },
+      {
+        "held_specimen": 3,
+        "rates": [
+          0.05643721820741391,
+          0.5561756055087483
+        ],
+        "median_curve_nrmse": 0.0315911771199309
+      }
+    ],
+    "3": [
+      {
+        "held_specimen": 1,
+        "rates": [
+          0.008333333333333342,
+          0.1573740360932982,
+          1.00061710749328
+        ],
+        "median_curve_nrmse": 0.0058355201837882635
+      },
+      {
+        "held_specimen": 2,
+        "rates": [
+          0.017413458727831267,
+          0.1638883818812683,
+          0.9774800858761911
+        ],
+        "median_curve_nrmse": 0.00872788927564932
+      },
+      {
+        "held_specimen": 3,
+        "rates": [
+          0.011936728414956506,
+          0.15747745460748988,
+          1.058755075166237
+        ],
+        "median_curve_nrmse": 0.02017328017977306
+      }
+    ]
+  },
+  "gas_leave_one_batch_groups": [
+    "day-1-morning",
+    "day-2-afternoon",
+    "day-2-morning",
+    "day-3-morning",
+    "day-4-afternoon"
+  ],
+  "pva_threshold_sensitivity": [
+    {
+      "predictive_gain": 0.02,
+      "max_log_rate_std": 0.3,
+      "min_rate_ratio": 1.1,
+      "decision": "INDETERMINATE"
+    },
+    {
+      "predictive_gain": 0.02,
+      "max_log_rate_std": 0.3,
+      "min_rate_ratio": 1.25,
+      "decision": "INDETERMINATE"
+    },
+    {
+      "predictive_gain": 0.02,
+      "max_log_rate_std": 0.3,
+      "min_rate_ratio": 1.5,
+      "decision": "INDETERMINATE"
+    },
+    {
+      "predictive_gain": 0.02,
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.1,
+      "decision": "SUPPORTED_RANK_3"
+    },
+    {
+      "predictive_gain": 0.02,
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.25,
+      "decision": "SUPPORTED_RANK_3"
+    },
+    {
+      "predictive_gain": 0.02,
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.5,
+      "decision": "SUPPORTED_RANK_3"
+    },
+    {
+      "predictive_gain": 0.02,
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.1,
+      "decision": "SUPPORTED_RANK_3"
+    },
+    {
+      "predictive_gain": 0.02,
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.25,
+      "decision": "SUPPORTED_RANK_3"
+    },
+    {
+      "predictive_gain": 0.02,
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.5,
+      "decision": "SUPPORTED_RANK_3"
+    },
+    {
+      "predictive_gain": 0.05,
+      "max_log_rate_std": 0.3,
+      "min_rate_ratio": 1.1,
+      "decision": "INDETERMINATE"
+    },
+    {
+      "predictive_gain": 0.05,
+      "max_log_rate_std": 0.3,
+      "min_rate_ratio": 1.25,
+      "decision": "INDETERMINATE"
+    },
+    {
+      "predictive_gain": 0.05,
+      "max_log_rate_std": 0.3,
+      "min_rate_ratio": 1.5,
+      "decision": "INDETERMINATE"
+    },
+    {
+      "predictive_gain": 0.05,
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.1,
+      "decision": "SUPPORTED_RANK_3"
+    },
+    {
+      "predictive_gain": 0.05,
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.25,
+      "decision": "SUPPORTED_RANK_3"
+    },
+    {
+      "predictive_gain": 0.05,
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.5,
+      "decision": "SUPPORTED_RANK_3"
+    },
+    {
+      "predictive_gain": 0.05,
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.1,
+      "decision": "SUPPORTED_RANK_3"
+    },
+    {
+      "predictive_gain": 0.05,
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.25,
+      "decision": "SUPPORTED_RANK_3"
+    },
+    {
+      "predictive_gain": 0.05,
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.5,
+      "decision": "SUPPORTED_RANK_3"
+    },
+    {
+      "predictive_gain": 0.1,
+      "max_log_rate_std": 0.3,
+      "min_rate_ratio": 1.1,
+      "decision": "INDETERMINATE"
+    },
+    {
+      "predictive_gain": 0.1,
+      "max_log_rate_std": 0.3,
+      "min_rate_ratio": 1.25,
+      "decision": "INDETERMINATE"
+    },
+    {
+      "predictive_gain": 0.1,
+      "max_log_rate_std": 0.3,
+      "min_rate_ratio": 1.5,
+      "decision": "INDETERMINATE"
+    },
+    {
+      "predictive_gain": 0.1,
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.1,
+      "decision": "SUPPORTED_RANK_3"
+    },
+    {
+      "predictive_gain": 0.1,
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.25,
+      "decision": "SUPPORTED_RANK_3"
+    },
+    {
+      "predictive_gain": 0.1,
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.5,
+      "decision": "SUPPORTED_RANK_3"
+    },
+    {
+      "predictive_gain": 0.1,
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.1,
+      "decision": "SUPPORTED_RANK_3"
+    },
+    {
+      "predictive_gain": 0.1,
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.25,
+      "decision": "SUPPORTED_RANK_3"
+    },
+    {
+      "predictive_gain": 0.1,
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.5,
+      "decision": "SUPPORTED_RANK_3"
+    }
+  ],
+  "gas_threshold_sensitivity": [
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.1,
+      "predictive_gain": 0.02
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.02
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.5,
+      "predictive_gain": 0.02
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.1,
+      "predictive_gain": 0.02
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.02
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.5,
+      "predictive_gain": 0.02
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 1.2,
+      "min_rate_ratio": 1.1,
+      "predictive_gain": 0.02
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 1.2,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.02
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 1.2,
+      "min_rate_ratio": 1.5,
+      "predictive_gain": 0.02
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.1,
+      "predictive_gain": 0.05
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.05
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.5,
+      "predictive_gain": 0.05
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.1,
+      "predictive_gain": 0.05
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.05
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.5,
+      "predictive_gain": 0.05
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 1.2,
+      "min_rate_ratio": 1.1,
+      "predictive_gain": 0.05
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 1.2,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.05
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 1.2,
+      "min_rate_ratio": 1.5,
+      "predictive_gain": 0.05
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.1,
+      "predictive_gain": 0.1
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.1
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.5,
+      "predictive_gain": 0.1
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.1,
+      "predictive_gain": 0.1
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.1
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.5,
+      "predictive_gain": 0.1
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 1.2,
+      "min_rate_ratio": 1.1,
+      "predictive_gain": 0.1
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 1.2,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.1
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 1.2,
+      "min_rate_ratio": 1.5,
+      "predictive_gain": 0.1
+    }
+  ],
+  "pva_multistart": [
+    {
+      "starts": 1,
+      "decision": "SUPPORTED_RANK_3",
+      "rank_records": {
+        "1": {
+          "folds": [
+            {
+              "held_sample": 1,
+              "rates": [
+                0.08911011509515972
+              ],
+              "bic": -7056.191779952572,
+              "sse": 0.002387092670590271,
+              "minimum_rate_ratio": Infinity,
+              "errors": [
+                0.017566297896628967,
+                0.017358540953174507,
+                0.01308256450745181
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 2,
+              "rates": [
+                0.08871444916919598
+              ],
+              "bic": -6945.158367681619,
+              "sse": 0.002894587200591394,
+              "minimum_rate_ratio": Infinity,
+              "errors": [
+                0.015654565899367794,
+                0.021134215409592733,
+                0.014593555621021926
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 3,
+              "rates": [
+                0.09338508908297549
+              ],
+              "bic": -6833.0676935596,
+              "sse": 0.0035164233355723046,
+              "minimum_rate_ratio": Infinity,
+              "errors": [
+                0.06427553120364987,
+                0.07046443672336791,
+                0.03693809952755356
+              ],
+              "success": true
+            }
+          ],
+          "mean_bic": -6944.805947064597,
+          "median_prediction_nrmse": 0.017566297896628967,
+          "curve_prediction_nrmse": [
+            0.017566297896628967,
+            0.017358540953174507,
+            0.01308256450745181,
+            0.015654565899367794,
+            0.021134215409592733,
+            0.014593555621021926,
+            0.06427553120364987,
+            0.07046443672336791,
+            0.03693809952755356
+          ],
+          "max_log_rate_std": 0.028425803562730327,
+          "minimum_rate_ratio": Infinity,
+          "all_finite": true
+        },
+        "2": {
+          "folds": [
+            {
+              "held_sample": 1,
+              "rates": [
+                0.04551448680953405,
+                0.42136725902286015
+              ],
+              "bic": -8270.58467808657,
+              "sse": 0.00026834301825790104,
+              "minimum_rate_ratio": 9.257871252864376,
+              "errors": [
+                0.0036081216173685254,
+                0.007156369502186397,
+                0.0050091862271319666
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 2,
+              "rates": [
+                0.04982103258066027,
+                0.5434263240665138
+              ],
+              "bic": -8481.473397479016,
+              "sse": 0.00018607314182609235,
+              "minimum_rate_ratio": 10.907568468933404,
+              "errors": [
+                0.036205630264212134,
+                0.008281565153374955,
+                0.011212190586781735
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 3,
+              "rates": [
+                0.056437231971806535,
+                0.5561758650272
+              ],
+              "bic": -8299.628802416788,
+              "sse": 0.00025514761346909237,
+              "minimum_rate_ratio": 9.854768662379474,
+              "errors": [
+                0.033995408618600384,
+                0.031591187327817426,
+                0.017767714610690193
+              ],
+              "success": true
+            }
+          ],
+          "mean_bic": -8350.562292660792,
+          "median_prediction_nrmse": 0.011212190586781735,
+          "curve_prediction_nrmse": [
+            0.0036081216173685254,
+            0.007156369502186397,
+            0.0050091862271319666,
+            0.036205630264212134,
+            0.008281565153374955,
+            0.011212190586781735,
+            0.033995408618600384,
+            0.031591187327817426,
+            0.017767714610690193
+          ],
+          "max_log_rate_std": 0.15400337915657042,
+          "minimum_rate_ratio": 9.257871252864376,
+          "all_finite": true
+        },
+        "3": {
+          "folds": [
+            {
+              "held_sample": 1,
+              "rates": [
+                0.008333333333333342,
+                0.1573740360932982,
+                1.00061710749328
+              ],
+              "bic": -8640.591864137294,
+              "sse": 0.0001306664809943871,
+              "minimum_rate_ratio": 6.358209602631469,
+              "errors": [
+                0.0032095984355283835,
+                0.0058355201837882635,
+                0.009319964171240326
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 2,
+              "rates": [
+                0.01741364140375307,
+                0.16388891655382132,
+                0.9774812343641933
+              ],
+              "bic": -8698.521003009682,
+              "sse": 0.00011816438030588095,
+              "minimum_rate_ratio": 5.964291270686308,
+              "errors": [
+                0.008083511765359482,
+                0.011075353413981111,
+                0.008727844348803936
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 3,
+              "rates": [
+                0.011936714664516715,
+                0.1574774430787184,
+                1.0587553621984769
+              ],
+              "bic": -8673.096711621782,
+              "sse": 0.00012349690601909266,
+              "minimum_rate_ratio": 6.723219157611265,
+              "errors": [
+                0.02017328332925497,
+                0.014253320102629337,
+                0.022352366393137306
+              ],
+              "success": true
+            }
+          ],
+          "mean_bic": -8670.736526256253,
+          "median_prediction_nrmse": 0.009319964171240326,
+          "curve_prediction_nrmse": [
+            0.0032095984355283835,
+            0.0058355201837882635,
+            0.009319964171240326,
+            0.008083511765359482,
+            0.011075353413981111,
+            0.008727844348803936,
+            0.02017328332925497,
+            0.014253320102629337,
+            0.022352366393137306
+          ],
+          "max_log_rate_std": 0.36853295628700805,
+          "minimum_rate_ratio": 5.964291270686308,
+          "all_finite": true
+        }
+      }
+    },
+    {
+      "starts": 2,
+      "decision": "SUPPORTED_RANK_3",
+      "rank_records": {
+        "1": {
+          "folds": [
+            {
+              "held_sample": 1,
+              "rates": [
+                0.08911011509515972
+              ],
+              "bic": -7056.191779952572,
+              "sse": 0.002387092670590271,
+              "minimum_rate_ratio": Infinity,
+              "errors": [
+                0.017566297896628967,
+                0.017358540953174507,
+                0.01308256450745181
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 2,
+              "rates": [
+                0.08871444916919598
+              ],
+              "bic": -6945.158367681619,
+              "sse": 0.002894587200591394,
+              "minimum_rate_ratio": Infinity,
+              "errors": [
+                0.015654565899367794,
+                0.021134215409592733,
+                0.014593555621021926
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 3,
+              "rates": [
+                0.09338508908297549
+              ],
+              "bic": -6833.0676935596,
+              "sse": 0.0035164233355723046,
+              "minimum_rate_ratio": Infinity,
+              "errors": [
+                0.06427553120364987,
+                0.07046443672336791,
+                0.03693809952755356
+              ],
+              "success": true
+            }
+          ],
+          "mean_bic": -6944.805947064597,
+          "median_prediction_nrmse": 0.017566297896628967,
+          "curve_prediction_nrmse": [
+            0.017566297896628967,
+            0.017358540953174507,
+            0.01308256450745181,
+            0.015654565899367794,
+            0.021134215409592733,
+            0.014593555621021926,
+            0.06427553120364987,
+            0.07046443672336791,
+            0.03693809952755356
+          ],
+          "max_log_rate_std": 0.028425803562730327,
+          "minimum_rate_ratio": Infinity,
+          "all_finite": true
+        },
+        "2": {
+          "folds": [
+            {
+              "held_sample": 1,
+              "rates": [
+                0.04551448680953405,
+                0.42136725902286015
+              ],
+              "bic": -8270.58467808657,
+              "sse": 0.00026834301825790104,
+              "minimum_rate_ratio": 9.257871252864376,
+              "errors": [
+                0.0036081216173685254,
+                0.007156369502186397,
+                0.0050091862271319666
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 2,
+              "rates": [
+                0.049821021445615496,
+                0.5434261355791208
+              ],
+              "bic": -8481.47339747952,
+              "sse": 0.00018607314182592961,
+              "minimum_rate_ratio": 10.907567123494717,
+              "errors": [
+                0.03620563379235892,
+                0.008281565411302929,
+                0.01121219037215294
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 3,
+              "rates": [
+                0.0564372244747855,
+                0.5561757188947534
+              ],
+              "bic": -8299.628802417163,
+              "sse": 0.00025514761346892643,
+              "minimum_rate_ratio": 9.854767382177634,
+              "errors": [
+                0.033995405152806246,
+                0.03159118206483666,
+                0.017767713059451788
+              ],
+              "success": true
+            }
+          ],
+          "mean_bic": -8350.562292661085,
+          "median_prediction_nrmse": 0.01121219037215294,
+          "curve_prediction_nrmse": [
+            0.0036081216173685254,
+            0.007156369502186397,
+            0.0050091862271319666,
+            0.03620563379235892,
+            0.008281565411302929,
+            0.01121219037215294,
+            0.033995405152806246,
+            0.03159118206483666,
+            0.017767713059451788
+          ],
+          "max_log_rate_std": 0.15400320684734706,
+          "minimum_rate_ratio": 9.257871252864376,
+          "all_finite": true
+        },
+        "3": {
+          "folds": [
+            {
+              "held_sample": 1,
+              "rates": [
+                0.008333333333333342,
+                0.1573740360932982,
+                1.00061710749328
+              ],
+              "bic": -8640.591864137294,
+              "sse": 0.0001306664809943871,
+              "minimum_rate_ratio": 6.358209602631469,
+              "errors": [
+                0.0032095984355283835,
+                0.0058355201837882635,
+                0.009319964171240326
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 2,
+              "rates": [
+                0.0174135215221961,
+                0.16388862875922053,
+                0.9774809605869245
+              ],
+              "bic": -8698.521003010106,
+              "sse": 0.00011816438030579405,
+              "minimum_rate_ratio": 5.964300073698252,
+              "errors": [
+                0.008083459654831059,
+                0.01107537661772038,
+                0.008727868145583084
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 3,
+              "rates": [
+                0.011936697557863824,
+                0.15747740086018275,
+                1.0587549709670059
+              ],
+              "bic": -8673.096711621856,
+              "sse": 0.00012349690601907667,
+              "minimum_rate_ratio": 6.723218475691175,
+              "errors": [
+                0.020173274571826938,
+                0.014253313391655234,
+                0.022352362463082767
+              ],
+              "success": true
+            }
+          ],
+          "mean_bic": -8670.736526256418,
+          "median_prediction_nrmse": 0.009319964171240326,
+          "curve_prediction_nrmse": [
+            0.0032095984355283835,
+            0.0058355201837882635,
+            0.009319964171240326,
+            0.008083459654831059,
+            0.01107537661772038,
+            0.008727868145583084,
+            0.020173274571826938,
+            0.014253313391655234,
+            0.022352362463082767
+          ],
+          "max_log_rate_std": 0.36852949784735606,
+          "minimum_rate_ratio": 5.964300073698252,
+          "all_finite": true
+        }
+      }
+    },
+    {
+      "starts": 4,
+      "decision": "SUPPORTED_RANK_3",
+      "rank_records": {
+        "1": {
+          "folds": [
+            {
+              "held_sample": 1,
+              "rates": [
+                0.0891101128943144
+              ],
+              "bic": -7056.19177995258,
+              "sse": 0.0023870926705902348,
+              "minimum_rate_ratio": Infinity,
+              "errors": [
+                0.017566295119646837,
+                0.017358537415685254,
+                0.013082562318404125
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 2,
+              "rates": [
+                0.08871444644066874
+              ],
+              "bic": -6945.158367681634,
+              "sse": 0.0028945872005913193,
+              "minimum_rate_ratio": Infinity,
+              "errors": [
+                0.01565456778067056,
+                0.02113421098480816,
+                0.014593553565181147
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 3,
+              "rates": [
+                0.09338508645023103
+              ],
+              "bic": -6833.067693559617,
+              "sse": 0.003516423335572205,
+              "minimum_rate_ratio": Infinity,
+              "errors": [
+                0.0642755255918103,
+                0.07046443097877962,
+                0.03693809500876505
+              ],
+              "success": true
+            }
+          ],
+          "mean_bic": -6944.80594706461,
+          "median_prediction_nrmse": 0.017566295119646837,
+          "curve_prediction_nrmse": [
+            0.017566295119646837,
+            0.017358537415685254,
+            0.013082562318404125,
+            0.01565456778067056,
+            0.02113421098480816,
+            0.014593553565181147,
+            0.0642755255918103,
+            0.07046443097877962,
+            0.03693809500876505
+          ],
+          "max_log_rate_std": 0.028425803532089584,
+          "minimum_rate_ratio": Infinity,
+          "all_finite": true
+        },
+        "2": {
+          "folds": [
+            {
+              "held_sample": 1,
+              "rates": [
+                0.04551448680953405,
+                0.42136725902286015
+              ],
+              "bic": -8270.58467808657,
+              "sse": 0.00026834301825790104,
+              "minimum_rate_ratio": 9.257871252864376,
+              "errors": [
+                0.0036081216173685254,
+                0.007156369502186397,
+                0.0050091862271319666
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 2,
+              "rates": [
+                0.04982101825452462,
+                0.5434260709341834
+              ],
+              "bic": -8481.473397479596,
+              "sse": 0.00018607314182590503,
+              "minimum_rate_ratio": 10.907566524592877,
+              "errors": [
+                0.036205633794632354,
+                0.008281564658513174,
+                0.011212189234146411
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 3,
+              "rates": [
+                0.056437219343920715,
+                0.5561756210579484
+              ],
+              "bic": -8299.62880241732,
+              "sse": 0.0002551476134688565,
+              "minimum_rate_ratio": 9.854766544550857,
+              "errors": [
+                0.03399540263169981,
+                0.03159117832788741,
+                0.017767711882010324
+              ],
+              "success": true
+            }
+          ],
+          "mean_bic": -8350.562292661161,
+          "median_prediction_nrmse": 0.011212189234146411,
+          "curve_prediction_nrmse": [
+            0.0036081216173685254,
+            0.007156369502186397,
+            0.0050091862271319666,
+            0.036205633794632354,
+            0.008281564658513174,
+            0.011212189234146411,
+            0.03399540263169981,
+            0.03159117832788741,
+            0.017767711882010324
+          ],
+          "max_log_rate_std": 0.1540031198238905,
+          "minimum_rate_ratio": 9.257871252864376,
+          "all_finite": true
+        },
+        "3": {
+          "folds": [
+            {
+              "held_sample": 1,
+              "rates": [
+                0.008333333333333342,
+                0.1573740360932982,
+                1.00061710749328
+              ],
+              "bic": -8640.591864137294,
+              "sse": 0.0001306664809943871,
+              "minimum_rate_ratio": 6.358209602631469,
+              "errors": [
+                0.0032095984355283835,
+                0.0058355201837882635,
+                0.009319964171240326
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 2,
+              "rates": [
+                0.017413458727831267,
+                0.1638883818812683,
+                0.9774800858761911
+              ],
+              "bic": -8698.521003010144,
+              "sse": 0.0001181643803057861,
+              "minimum_rate_ratio": 5.964303720957736,
+              "errors": [
+                0.0080834030027332,
+                0.01107540257534642,
+                0.00872788927564932
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 3,
+              "rates": [
+                0.011936728414956506,
+                0.15747745460748988,
+                1.058755075166237
+              ],
+              "bic": -8673.096711621889,
+              "sse": 0.00012349690601906932,
+              "minimum_rate_ratio": 6.72321684272309,
+              "errors": [
+                0.02017328017977306,
+                0.014253319256192313,
+                0.022352360404387685
+              ],
+              "success": true
+            }
+          ],
+          "mean_bic": -8670.736526256442,
+          "median_prediction_nrmse": 0.009319964171240326,
+          "curve_prediction_nrmse": [
+            0.0032095984355283835,
+            0.0058355201837882635,
+            0.009319964171240326,
+            0.0080834030027332,
+            0.01107540257534642,
+            0.00872788927564932,
+            0.02017328017977306,
+            0.014253319256192313,
+            0.022352360404387685
+          ],
+          "max_log_rate_std": 0.36852765873476445,
+          "minimum_rate_ratio": 5.964303720957736,
+          "all_finite": true
+        }
+      }
+    },
+    {
+      "starts": 8,
+      "decision": "SUPPORTED_RANK_3",
+      "rank_records": {
+        "1": {
+          "folds": [
+            {
+              "held_sample": 1,
+              "rates": [
+                0.0891101128943144
+              ],
+              "bic": -7056.19177995258,
+              "sse": 0.0023870926705902348,
+              "minimum_rate_ratio": Infinity,
+              "errors": [
+                0.017566295119646837,
+                0.017358537415685254,
+                0.013082562318404125
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 2,
+              "rates": [
+                0.08871444068753073
+              ],
+              "bic": -6945.158367681641,
+              "sse": 0.002894587200591289,
+              "minimum_rate_ratio": Infinity,
+              "errors": [
+                0.015654571747430766,
+                0.021134201655090022,
+                0.01459354923041959
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 3,
+              "rates": [
+                0.09338508468472566
+              ],
+              "bic": -6833.067693559621,
+              "sse": 0.00351642333557217,
+              "minimum_rate_ratio": Infinity,
+              "errors": [
+                0.06427552182853892,
+                0.07046442712648915,
+                0.036938091978486305
+              ],
+              "success": true
+            }
+          ],
+          "mean_bic": -6944.805947064614,
+          "median_prediction_nrmse": 0.017566295119646837,
+          "curve_prediction_nrmse": [
+            0.017566295119646837,
+            0.017358537415685254,
+            0.013082562318404125,
+            0.015654571747430766,
+            0.021134201655090022,
+            0.01459354923041959,
+            0.06427552182853892,
+            0.07046442712648915,
+            0.036938091978486305
+          ],
+          "max_log_rate_std": 0.028425813851665396,
+          "minimum_rate_ratio": Infinity,
+          "all_finite": true
+        },
+        "2": {
+          "folds": [
+            {
+              "held_sample": 1,
+              "rates": [
+                0.04551448680953405,
+                0.42136725902286015
+              ],
+              "bic": -8270.58467808657,
+              "sse": 0.00026834301825790104,
+              "minimum_rate_ratio": 9.257871252864376,
+              "errors": [
+                0.0036081216173685254,
+                0.007156369502186397,
+                0.0050091862271319666
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 2,
+              "rates": [
+                0.04982101825452462,
+                0.5434260709341834
+              ],
+              "bic": -8481.473397479596,
+              "sse": 0.00018607314182590503,
+              "minimum_rate_ratio": 10.907566524592877,
+              "errors": [
+                0.036205633794632354,
+                0.008281564658513174,
+                0.011212189234146411
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 3,
+              "rates": [
+                0.05643721820741391,
+                0.5561756055087483
+              ],
+              "bic": -8299.62880241734,
+              "sse": 0.000255147613468848,
+              "minimum_rate_ratio": 9.8547664674884,
+              "errors": [
+                0.033995401653283096,
+                0.0315911771199309,
+                0.017767711295172614
+              ],
+              "success": true
+            }
+          ],
+          "mean_bic": -8350.562292661169,
+          "median_prediction_nrmse": 0.011212189234146411,
+          "curve_prediction_nrmse": [
+            0.0036081216173685254,
+            0.007156369502186397,
+            0.0050091862271319666,
+            0.036205633794632354,
+            0.008281564658513174,
+            0.011212189234146411,
+            0.033995401653283096,
+            0.0315911771199309,
+            0.017767711295172614
+          ],
+          "max_log_rate_std": 0.1540031107237215,
+          "minimum_rate_ratio": 9.257871252864376,
+          "all_finite": true
+        },
+        "3": {
+          "folds": [
+            {
+              "held_sample": 1,
+              "rates": [
+                0.008333333333333342,
+                0.1573740360932982,
+                1.00061710749328
+              ],
+              "bic": -8640.591864137294,
+              "sse": 0.0001306664809943871,
+              "minimum_rate_ratio": 6.358209602631469,
+              "errors": [
+                0.0032095984355283835,
+                0.0058355201837882635,
+                0.009319964171240326
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 2,
+              "rates": [
+                0.017413458727831267,
+                0.1638883818812683,
+                0.9774800858761911
+              ],
+              "bic": -8698.521003010144,
+              "sse": 0.0001181643803057861,
+              "minimum_rate_ratio": 5.964303720957736,
+              "errors": [
+                0.0080834030027332,
+                0.01107540257534642,
+                0.00872788927564932
+              ],
+              "success": true
+            },
+            {
+              "held_sample": 3,
+              "rates": [
+                0.011936728414956506,
+                0.15747745460748988,
+                1.058755075166237
+              ],
+              "bic": -8673.096711621889,
+              "sse": 0.00012349690601906932,
+              "minimum_rate_ratio": 6.72321684272309,
+              "errors": [
+                0.02017328017977306,
+                0.014253319256192313,
+                0.022352360404387685
+              ],
+              "success": true
+            }
+          ],
+          "mean_bic": -8670.736526256442,
+          "median_prediction_nrmse": 0.009319964171240326,
+          "curve_prediction_nrmse": [
+            0.0032095984355283835,
+            0.0058355201837882635,
+            0.009319964171240326,
+            0.0080834030027332,
+            0.01107540257534642,
+            0.00872788927564932,
+            0.02017328017977306,
+            0.014253319256192313,
+            0.022352360404387685
+          ],
+          "max_log_rate_std": 0.36852765873476445,
+          "minimum_rate_ratio": 5.964303720957736,
+          "all_finite": true
+        }
+      }
+    }
+  ],
+  "gas_multistart": [
+    {
+      "rates": [
+        0.02058853058012428,
+        0.03765323726047113,
+        0.03765390175502791
+      ],
+      "sse": 0.18984752164449017,
+      "starts": 2,
+      "success": true
+    },
+    {
+      "rates": [
+        0.02058853058012428,
+        0.03765323726047113,
+        0.03765390175502791
+      ],
+      "sse": 0.18984752164449017,
+      "starts": 4,
+      "success": true
+    },
+    {
+      "rates": [
+        0.02058853058012428,
+        0.03765323726047113,
+        0.03765390175502791
+      ],
+      "sse": 0.18984752164449017,
+      "starts": 8,
+      "success": true
+    }
+  ],
+  "warnings": [
+    "PVA has only three independent specimens; its bootstrap interval is descriptive and cannot support population-level generalization alone.",
+    "Gas-sensor channels are repeated measurements within exposure and are clustered before tests.",
+    "Threshold sensitivity is a robustness audit, not post-hoc threshold selection."
+  ],
+  "decision_counts": {
+    "pva": {
+      "INDETERMINATE": 9,
+      "SUPPORTED_RANK_3": 18
+    },
+    "uci_gas": {
+      "INDETERMINATE": 27
+    }
+  }
+}

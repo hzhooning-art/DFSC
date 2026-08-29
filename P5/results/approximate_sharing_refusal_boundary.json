@@ -1,0 +1,809 @@
+{
+  "experiment": "approximate_sharing_refusal_boundary",
+  "device": "cuda",
+  "dtype": "torch.float64",
+  "protocol": {
+    "channels": 64,
+    "blocks": 4,
+    "log_spectral_drifts": [
+      0.0,
+      0.05,
+      0.15
+    ],
+    "noise_correlations": [
+      0.0,
+      0.6
+    ],
+    "noise_std": 0.0008,
+    "horizon": 4.0,
+    "repeats": 3,
+    "subgroup_dispersion_limit": 0.1
+  },
+  "records": [
+    {
+      "log_spectral_drift": 0.0,
+      "noise_correlation": 0.0,
+      "repeat": 0,
+      "seed": 40000,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "old_gate_pass": true,
+      "shared_bic_support": 5310.841059799528,
+      "shared_val_rmse": 0.0011708746503347727,
+      "independent_val_rmse": 0.006990545788934184,
+      "shared_to_independent_val_ratio": 0.16749402488547185,
+      "central_rate_error": 0.04606564504065413,
+      "channel_mechanism_distortion": 0.046065645040654135,
+      "true_subgroup_dispersion": 0.0,
+      "observed_subgroup_dispersion": 0.10699626477502447,
+      "shared_estimated_rates": [
+        0.23694865926231137,
+        0.9636727659770489
+      ],
+      "subgroup_estimated_rates": [
+        [
+          0.28670238353836935,
+          1.2896777929385295
+        ],
+        [
+          0.2299626201022724,
+          0.9342828075783338
+        ],
+        [
+          0.24035244941822353,
+          0.9726425775938187
+        ],
+        [
+          0.26561167477922826,
+          1.033299137979513
+        ]
+      ],
+      "median_subgroup_val_rmse": 0.0011393614242865573
+    },
+    {
+      "log_spectral_drift": 0.0,
+      "noise_correlation": 0.0,
+      "repeat": 1,
+      "seed": 40001,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "old_gate_pass": true,
+      "shared_bic_support": 5601.595527290468,
+      "shared_val_rmse": 0.0009329744861478827,
+      "independent_val_rmse": 0.0066788668793973886,
+      "shared_to_independent_val_ratio": 0.1396905347860537,
+      "central_rate_error": 0.03165056390409218,
+      "channel_mechanism_distortion": 0.03165056390409218,
+      "true_subgroup_dispersion": 0.0,
+      "observed_subgroup_dispersion": 0.7920785060912251,
+      "shared_estimated_rates": [
+        0.24142030153364533,
+        0.9723882924918973
+      ],
+      "subgroup_estimated_rates": [
+        [
+          0.39324469337391166,
+          12.98508503656573
+        ],
+        [
+          0.24039634588416645,
+          0.9413339653154086
+        ],
+        [
+          0.2619383387786064,
+          1.0341298223608968
+        ],
+        [
+          0.2758316635508602,
+          1.0772970703039328
+        ]
+      ],
+      "median_subgroup_val_rmse": 0.0009975376979511944
+    },
+    {
+      "log_spectral_drift": 0.0,
+      "noise_correlation": 0.0,
+      "repeat": 2,
+      "seed": 40002,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "old_gate_pass": true,
+      "shared_bic_support": 5599.846747879037,
+      "shared_val_rmse": 0.0010486299443949187,
+      "independent_val_rmse": 0.006363103248439473,
+      "shared_to_independent_val_ratio": 0.16479851158349368,
+      "central_rate_error": 0.04157076123464012,
+      "channel_mechanism_distortion": 0.04157076123464012,
+      "true_subgroup_dispersion": 0.0,
+      "observed_subgroup_dispersion": 0.6211060158071637,
+      "shared_estimated_rates": [
+        0.23806132333658878,
+        0.9679390839935483
+      ],
+      "subgroup_estimated_rates": [
+        [
+          0.37580822658965396,
+          7.321498564239025
+        ],
+        [
+          0.22952124302739987,
+          0.9562419117956071
+        ],
+        [
+          0.2605023043932402,
+          1.0259479707203496
+        ],
+        [
+          0.26447851645403825,
+          1.0453361168997906
+        ]
+      ],
+      "median_subgroup_val_rmse": 0.0011061880720995769
+    },
+    {
+      "log_spectral_drift": 0.0,
+      "noise_correlation": 0.6,
+      "repeat": 0,
+      "seed": 40060,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "old_gate_pass": true,
+      "shared_bic_support": 5145.340696516181,
+      "shared_val_rmse": 0.000891542999290929,
+      "independent_val_rmse": 0.00613761622928465,
+      "shared_to_independent_val_ratio": 0.14525883763098038,
+      "central_rate_error": 0.05701518197530363,
+      "channel_mechanism_distortion": 0.057015181975303635,
+      "true_subgroup_dispersion": 0.0,
+      "observed_subgroup_dispersion": 0.045942199408022896,
+      "shared_estimated_rates": [
+        0.23317482789086147,
+        0.9602266565861661
+      ],
+      "subgroup_estimated_rates": [
+        [
+          0.274659097289513,
+          1.1260128195151788
+        ],
+        [
+          0.2674092245003352,
+          1.0742585574755898
+        ],
+        [
+          0.25613315204474363,
+          1.016974127787974
+        ],
+        [
+          0.2456186114801904,
+          0.9919751149196689
+        ]
+      ],
+      "median_subgroup_val_rmse": 0.0009531107120211304
+    },
+    {
+      "log_spectral_drift": 0.0,
+      "noise_correlation": 0.6,
+      "repeat": 1,
+      "seed": 40061,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "old_gate_pass": true,
+      "shared_bic_support": 4970.532675516573,
+      "shared_val_rmse": 0.0010377956303222486,
+      "independent_val_rmse": 0.007328720056377951,
+      "shared_to_independent_val_ratio": 0.14160666833209,
+      "central_rate_error": 0.03101006200175318,
+      "channel_mechanism_distortion": 0.031010062001753186,
+      "true_subgroup_dispersion": 0.0,
+      "observed_subgroup_dispersion": 0.08074763482421632,
+      "shared_estimated_rates": [
+        0.23936446328123315,
+        0.9942463443639772
+      ],
+      "subgroup_estimated_rates": [
+        [
+          0.22104339272719706,
+          0.8669896594317714
+        ],
+        [
+          0.2408824696624689,
+          1.0112911945746024
+        ],
+        [
+          0.2526956885493587,
+          1.057813113306531
+        ],
+        [
+          0.2738377206174526,
+          1.0688583066897432
+        ]
+      ],
+      "median_subgroup_val_rmse": 0.0011574968265120468
+    },
+    {
+      "log_spectral_drift": 0.0,
+      "noise_correlation": 0.6,
+      "repeat": 2,
+      "seed": 40062,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "old_gate_pass": true,
+      "shared_bic_support": 4994.427940516216,
+      "shared_val_rmse": 0.0018320231378170118,
+      "independent_val_rmse": 0.0064114561239329345,
+      "shared_to_independent_val_ratio": 0.2857421313355579,
+      "central_rate_error": 0.051192836966379426,
+      "channel_mechanism_distortion": 0.05119283696637943,
+      "true_subgroup_dispersion": 0.0,
+      "observed_subgroup_dispersion": 0.7219375944020239,
+      "shared_estimated_rates": [
+        0.23729625897325365,
+        1.051498043331996
+      ],
+      "subgroup_estimated_rates": [
+        [
+          0.3646616968518999,
+          11.267961837546853
+        ],
+        [
+          0.25304103551563006,
+          1.1615244189682443
+        ],
+        [
+          0.24100056799409805,
+          1.0547334451185513
+        ],
+        [
+          0.2572855951143092,
+          1.0898648976352927
+        ]
+      ],
+      "median_subgroup_val_rmse": 0.0018751141733297375
+    },
+    {
+      "log_spectral_drift": 0.05,
+      "noise_correlation": 0.0,
+      "repeat": 0,
+      "seed": 40050,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "old_gate_pass": true,
+      "shared_bic_support": 5696.887165797925,
+      "shared_val_rmse": 0.002049365235748533,
+      "independent_val_rmse": 0.006234470236943057,
+      "shared_to_independent_val_ratio": 0.328715216828655,
+      "central_rate_error": 0.04332170556278306,
+      "channel_mechanism_distortion": 0.07072319402337868,
+      "true_subgroup_dispersion": 0.05590169943749473,
+      "observed_subgroup_dispersion": 0.06227622031083889,
+      "shared_estimated_rates": [
+        0.24840058688204242,
+        0.9408900101195116
+      ],
+      "subgroup_estimated_rates": [
+        [
+          0.2177557892422734,
+          1.0421131474782541
+        ],
+        [
+          0.23280276489849913,
+          0.9821661445101655
+        ],
+        [
+          0.25766417898829447,
+          0.9631739948047644
+        ],
+        [
+          0.26043573463585934,
+          0.9121034676782162
+        ]
+      ],
+      "median_subgroup_val_rmse": 0.0011134946841061784
+    },
+    {
+      "log_spectral_drift": 0.05,
+      "noise_correlation": 0.0,
+      "repeat": 1,
+      "seed": 40051,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "old_gate_pass": true,
+      "shared_bic_support": 5607.348009443151,
+      "shared_val_rmse": 0.002527106968844073,
+      "independent_val_rmse": 0.006109730357489879,
+      "shared_to_independent_val_ratio": 0.41362004883670667,
+      "central_rate_error": 0.028552678505334345,
+      "channel_mechanism_distortion": 0.06277145410000456,
+      "true_subgroup_dispersion": 0.05590169943749473,
+      "observed_subgroup_dispersion": 0.31457366617234134,
+      "shared_estimated_rates": [
+        0.2560030119141853,
+        0.9678556757261655
+      ],
+      "subgroup_estimated_rates": [
+        [
+          0.329239815105247,
+          2.5979575174999407
+        ],
+        [
+          0.23583494900029034,
+          0.9964958017430918
+        ],
+        [
+          0.24998561943161407,
+          0.9374902907102929
+        ],
+        [
+          0.2956871645731131,
+          0.9951917601070062
+        ]
+      ],
+      "median_subgroup_val_rmse": 0.0010839925699395285
+    },
+    {
+      "log_spectral_drift": 0.05,
+      "noise_correlation": 0.0,
+      "repeat": 2,
+      "seed": 40052,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "old_gate_pass": true,
+      "shared_bic_support": 5884.978454032513,
+      "shared_val_rmse": 0.0022167441690293245,
+      "independent_val_rmse": 0.0062633163212021566,
+      "shared_to_independent_val_ratio": 0.3539249904280503,
+      "central_rate_error": 0.05059917794478019,
+      "channel_mechanism_distortion": 0.0754007745894399,
+      "true_subgroup_dispersion": 0.05590169943749473,
+      "observed_subgroup_dispersion": 0.12038300951600382,
+      "shared_estimated_rates": [
+        0.2406008895692323,
+        0.9413578104036865
+      ],
+      "subgroup_estimated_rates": [
+        [
+          0.26528570423310793,
+          1.3628331255438064
+        ],
+        [
+          0.22838550637839886,
+          0.9766842814207429
+        ],
+        [
+          0.23771973207569627,
+          0.952614246864986
+        ],
+        [
+          0.27564460892954523,
+          0.9523708270415595
+        ]
+      ],
+      "median_subgroup_val_rmse": 0.0010648394087717137
+    },
+    {
+      "log_spectral_drift": 0.05,
+      "noise_correlation": 0.6,
+      "repeat": 0,
+      "seed": 40110,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "old_gate_pass": true,
+      "shared_bic_support": 5708.978894795382,
+      "shared_val_rmse": 0.0021266410090014917,
+      "independent_val_rmse": 0.00698743503849507,
+      "shared_to_independent_val_ratio": 0.3043521688982343,
+      "central_rate_error": 0.056261031943229976,
+      "channel_mechanism_distortion": 0.0793114349593874,
+      "true_subgroup_dispersion": 0.05590169943749473,
+      "observed_subgroup_dispersion": 0.6844205460827597,
+      "shared_estimated_rates": [
+        0.2435620498392361,
+        0.9275892814035452
+      ],
+      "subgroup_estimated_rates": [
+        [
+          0.37502038381189895,
+          8.67189793229976
+        ],
+        [
+          0.2336438245639997,
+          0.9792174191674979
+        ],
+        [
+          0.2562774683028761,
+          0.9818822975567704
+        ],
+        [
+          0.27930830351482544,
+          0.9312990092714634
+        ]
+      ],
+      "median_subgroup_val_rmse": 0.0010606410731026435
+    },
+    {
+      "log_spectral_drift": 0.05,
+      "noise_correlation": 0.6,
+      "repeat": 1,
+      "seed": 40111,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "old_gate_pass": false,
+      "shared_bic_support": 5732.275683754509,
+      "shared_val_rmse": 0.003627252418070683,
+      "independent_val_rmse": 0.006673501616910073,
+      "shared_to_independent_val_ratio": 0.5435306120072768,
+      "central_rate_error": 0.04890292769238207,
+      "channel_mechanism_distortion": 0.0742731198811949,
+      "true_subgroup_dispersion": 0.05590169943749473,
+      "observed_subgroup_dispersion": 0.12995729098771497,
+      "shared_estimated_rates": [
+        0.234893808038912,
+        1.0304251449226454
+      ],
+      "subgroup_estimated_rates": [
+        [
+          0.2531231832609407,
+          1.498976071210648
+        ],
+        [
+          0.20973698280179798,
+          1.0579873119846332
+        ],
+        [
+          0.23126129884463795,
+          1.0142997857625577
+        ],
+        [
+          0.25063626289713076,
+          0.9937001369908159
+        ]
+      ],
+      "median_subgroup_val_rmse": 0.0034687212991437056
+    },
+    {
+      "log_spectral_drift": 0.05,
+      "noise_correlation": 0.6,
+      "repeat": 2,
+      "seed": 40112,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "old_gate_pass": true,
+      "shared_bic_support": 5185.325158738888,
+      "shared_val_rmse": 0.0027176252260171447,
+      "independent_val_rmse": 0.005876472246197959,
+      "shared_to_independent_val_ratio": 0.46245861669395805,
+      "central_rate_error": 0.013387301156120931,
+      "channel_mechanism_distortion": 0.057482343656506174,
+      "true_subgroup_dispersion": 0.05590169943749473,
+      "observed_subgroup_dispersion": 0.23930402942213927,
+      "shared_estimated_rates": [
+        0.24634602491590143,
+        1.0119728048424965
+      ],
+      "subgroup_estimated_rates": [
+        [
+          0.299255226091558,
+          2.0964884850468724
+        ],
+        [
+          0.21211020264971867,
+          1.0135765561287895
+        ],
+        [
+          0.2604640202959007,
+          1.068441720925071
+        ],
+        [
+          0.2701149749948602,
+          0.974451150898848
+        ]
+      ],
+      "median_subgroup_val_rmse": 0.0012309763737432672
+    },
+    {
+      "log_spectral_drift": 0.15,
+      "noise_correlation": 0.0,
+      "repeat": 0,
+      "seed": 40150,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "old_gate_pass": false,
+      "shared_bic_support": 5935.085269404692,
+      "shared_val_rmse": 0.005754650738326388,
+      "independent_val_rmse": 0.005384745631738467,
+      "shared_to_independent_val_ratio": 1.0686950010057388,
+      "central_rate_error": 0.08766456032164789,
+      "channel_mechanism_distortion": 0.1892355017864984,
+      "true_subgroup_dispersion": 0.16770509831248417,
+      "observed_subgroup_dispersion": 0.18861593186657505,
+      "shared_estimated_rates": [
+        0.2526316058930101,
+        0.8837921256622163
+      ],
+      "subgroup_estimated_rates": [
+        [
+          0.16622427208118928,
+          1.0986778269011102
+        ],
+        [
+          0.2375529740221979,
+          1.1117429785069515
+        ],
+        [
+          0.2531264638789683,
+          0.9029976870362617
+        ],
+        [
+          0.3172957705960324,
+          0.815416099692238
+        ]
+      ],
+      "median_subgroup_val_rmse": 0.0010792988006722703
+    },
+    {
+      "log_spectral_drift": 0.15,
+      "noise_correlation": 0.0,
+      "repeat": 1,
+      "seed": 40151,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "old_gate_pass": false,
+      "shared_bic_support": 6026.026674233122,
+      "shared_val_rmse": 0.005424174331431153,
+      "independent_val_rmse": 0.004844134147039841,
+      "shared_to_independent_val_ratio": 1.1197407352448658,
+      "central_rate_error": 0.11892457693184445,
+      "channel_mechanism_distortion": 0.20559196238768235,
+      "true_subgroup_dispersion": 0.16770509831248417,
+      "observed_subgroup_dispersion": 0.27266909237814235,
+      "shared_estimated_rates": [
+        0.2433339311153445,
+        0.8470470157733978
+      ],
+      "subgroup_estimated_rates": [
+        [
+          0.2692454072876595,
+          2.06183238632092
+        ],
+        [
+          0.21692858896120837,
+          1.0240644240951686
+        ],
+        [
+          0.26777248823296484,
+          0.907236195433218
+        ],
+        [
+          0.31320638704871606,
+          0.814269917052142
+        ]
+      ],
+      "median_subgroup_val_rmse": 0.001216094619154887
+    },
+    {
+      "log_spectral_drift": 0.15,
+      "noise_correlation": 0.0,
+      "repeat": 2,
+      "seed": 40152,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "old_gate_pass": false,
+      "shared_bic_support": 5957.980312688338,
+      "shared_val_rmse": 0.005496212009149824,
+      "independent_val_rmse": 0.00489907903915584,
+      "shared_to_independent_val_ratio": 1.1218867801930534,
+      "central_rate_error": 0.10735352250905728,
+      "channel_mechanism_distortion": 0.19912252206895797,
+      "true_subgroup_dispersion": 0.16770509831248417,
+      "observed_subgroup_dispersion": 0.17467178554652454,
+      "shared_estimated_rates": [
+        0.260862994358532,
+        0.8643817235931612
+      ],
+      "subgroup_estimated_rates": [
+        [
+          0.20017299733021116,
+          1.2458578968035703
+        ],
+        [
+          0.21671403360048647,
+          1.0306949900643
+        ],
+        [
+          0.2790476125353468,
+          0.9278461341963301
+        ],
+        [
+          0.3178893166487994,
+          0.7991442201828612
+        ]
+      ],
+      "median_subgroup_val_rmse": 0.0010628096682973466
+    },
+    {
+      "log_spectral_drift": 0.15,
+      "noise_correlation": 0.6,
+      "repeat": 0,
+      "seed": 40210,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "old_gate_pass": false,
+      "shared_bic_support": 6081.583466960223,
+      "shared_val_rmse": 0.005560118331253306,
+      "independent_val_rmse": 0.005235619954301113,
+      "shared_to_independent_val_ratio": 1.0619789785707447,
+      "central_rate_error": 0.1384675982314724,
+      "channel_mechanism_distortion": 0.21748166764118868,
+      "true_subgroup_dispersion": 0.16770509831248417,
+      "observed_subgroup_dispersion": 0.37274313732004655,
+      "shared_estimated_rates": [
+        0.2649810177086299,
+        0.8294645211761101
+      ],
+      "subgroup_estimated_rates": [
+        [
+          0.31813374792831495,
+          2.8724889652869305
+        ],
+        [
+          0.2411527864045088,
+          1.038364196863083
+        ],
+        [
+          0.2838785806610771,
+          0.9059934165954313
+        ],
+        [
+          0.3306191103711392,
+          0.7763978871947635
+        ]
+      ],
+      "median_subgroup_val_rmse": 0.001362776654108137
+    },
+    {
+      "log_spectral_drift": 0.15,
+      "noise_correlation": 0.6,
+      "repeat": 1,
+      "seed": 40211,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "old_gate_pass": false,
+      "shared_bic_support": 6064.348684192308,
+      "shared_val_rmse": 0.007068826143147779,
+      "independent_val_rmse": 0.0046990456058865595,
+      "shared_to_independent_val_ratio": 1.5043110316470567,
+      "central_rate_error": 0.13887159576613864,
+      "channel_mechanism_distortion": 0.21773911019987613,
+      "true_subgroup_dispersion": 0.16770509831248417,
+      "observed_subgroup_dispersion": 0.6782724257992667,
+      "shared_estimated_rates": [
+        0.27266609210669945,
+        0.838468805439209
+      ],
+      "subgroup_estimated_rates": [
+        [
+          0.33102587182612203,
+          7.8252639215089195
+        ],
+        [
+          0.23833239033549966,
+          1.0009015719962004
+        ],
+        [
+          0.2758077097811469,
+          0.8886854392362498
+        ],
+        [
+          0.33476298594651555,
+          0.7749983938725009
+        ]
+      ],
+      "median_subgroup_val_rmse": 0.00263193114136061
+    },
+    {
+      "log_spectral_drift": 0.15,
+      "noise_correlation": 0.6,
+      "repeat": 2,
+      "seed": 40212,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "old_gate_pass": false,
+      "shared_bic_support": 6183.259188072236,
+      "shared_val_rmse": 0.005778987841488657,
+      "independent_val_rmse": 0.004637283836738057,
+      "shared_to_independent_val_ratio": 1.2462010187311918,
+      "central_rate_error": 0.08568298792057631,
+      "channel_mechanism_distortion": 0.18832571364260808,
+      "true_subgroup_dispersion": 0.16770509831248417,
+      "observed_subgroup_dispersion": 0.2152612357482652,
+      "shared_estimated_rates": [
+        0.2551596361819342,
+        0.8874175728308287
+      ],
+      "subgroup_estimated_rates": [
+        [
+          0.24477237639890223,
+          1.7014731237313638
+        ],
+        [
+          0.23045257981317221,
+          1.096752721371027
+        ],
+        [
+          0.2605808654443462,
+          0.915553835666181
+        ],
+        [
+          0.3170808453457452,
+          0.8150629598493901
+        ]
+      ],
+      "median_subgroup_val_rmse": 0.0009250100087963777
+    }
+  ],
+  "summary": {
+    "rows": [
+      {
+        "log_spectral_drift": 0.0,
+        "noise_correlation": 0.0,
+        "trials": 3,
+        "accept_fraction": 0.0,
+        "old_gate_pass_fraction": 1.0,
+        "median_observed_dispersion": 0.6211060158071637,
+        "median_true_dispersion": 0.0,
+        "median_mechanism_distortion": 0.04157076123464012,
+        "median_validation_ratio": 0.16479851158349368
+      },
+      {
+        "log_spectral_drift": 0.0,
+        "noise_correlation": 0.6,
+        "trials": 3,
+        "accept_fraction": 0.6666666666666666,
+        "old_gate_pass_fraction": 1.0,
+        "median_observed_dispersion": 0.08074763482421632,
+        "median_true_dispersion": 0.0,
+        "median_mechanism_distortion": 0.05119283696637943,
+        "median_validation_ratio": 0.14525883763098038
+      },
+      {
+        "log_spectral_drift": 0.05,
+        "noise_correlation": 0.0,
+        "trials": 3,
+        "accept_fraction": 0.3333333333333333,
+        "old_gate_pass_fraction": 1.0,
+        "median_observed_dispersion": 0.12038300951600382,
+        "median_true_dispersion": 0.05590169943749473,
+        "median_mechanism_distortion": 0.07072319402337868,
+        "median_validation_ratio": 0.3539249904280503
+      },
+      {
+        "log_spectral_drift": 0.05,
+        "noise_correlation": 0.6,
+        "trials": 3,
+        "accept_fraction": 0.0,
+        "old_gate_pass_fraction": 0.6666666666666666,
+        "median_observed_dispersion": 0.23930402942213927,
+        "median_true_dispersion": 0.05590169943749473,
+        "median_mechanism_distortion": 0.0742731198811949,
+        "median_validation_ratio": 0.46245861669395805
+      },
+      {
+        "log_spectral_drift": 0.15,
+        "noise_correlation": 0.0,
+        "trials": 3,
+        "accept_fraction": 0.0,
+        "old_gate_pass_fraction": 0.0,
+        "median_observed_dispersion": 0.18861593186657505,
+        "median_true_dispersion": 0.16770509831248417,
+        "median_mechanism_distortion": 0.19912252206895797,
+        "median_validation_ratio": 1.1197407352448658
+      },
+      {
+        "log_spectral_drift": 0.15,
+        "noise_correlation": 0.6,
+        "trials": 3,
+        "accept_fraction": 0.0,
+        "old_gate_pass_fraction": 0.0,
+        "median_observed_dispersion": 0.37274313732004655,
+        "median_true_dispersion": 0.16770509831248417,
+        "median_mechanism_distortion": 0.21748166764118868,
+        "median_validation_ratio": 1.2462010187311918
+      }
+    ],
+    "route_pass": false,
+    "checks": {
+      "mild_sharing_retained": false,
+      "severe_heterogeneity_refused": true,
+      "old_gate_blind_spot_observed": false
+    },
+    "frozen_rule": {
+      "mild_drift_max": 0.05,
+      "mild_accept_fraction_min": 0.6666666666666666,
+      "severe_drift": 0.15,
+      "severe_accept_fraction_max": 0.3333333333333333,
+      "subgroup_dispersion_limit": 0.1
+    }
+  }
+}

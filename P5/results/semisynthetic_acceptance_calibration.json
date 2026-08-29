@@ -1,0 +1,580 @@
+{
+  "claim_boundary": "Threshold calibration is conditional on this declared simulation design.",
+  "experiment": "stage65_semisynthetic_acceptance_calibration",
+  "predeclared_design": {
+    "coalesced_rates": [
+      0.34,
+      0.37
+    ],
+    "curves_per_group": 3,
+    "groups": 4,
+    "noise": "Gaussian AR(1), rho=0.55",
+    "seeds": [
+      6501,
+      6502,
+      6503,
+      6504,
+      6505,
+      6506,
+      6507,
+      6508
+    ],
+    "separated_rates": [
+      0.12,
+      0.72
+    ],
+    "time_points": 64,
+    "true_rank": 2
+  },
+  "rows": [
+    {
+      "amplitudes": "signed",
+      "ar1_decision": "SUPPORTED_RANK_2",
+      "effective_sample_size": 288.52471361811536,
+      "fitted_rates": [
+        0.12499661352644012,
+        0.7262075338692322
+      ],
+      "local_boundary_index": 87.26331752566219,
+      "normalized_local_boundary_index": 3.1488437414888035,
+      "ordinary_decision": "SUPPORTED_RANK_2",
+      "regime": "separated",
+      "residual_rho_ar1": 0.4538230674603913,
+      "seed": 6501
+    },
+    {
+      "amplitudes": "signed",
+      "ar1_decision": "SUPPORTED_RANK_2",
+      "effective_sample_size": 268.08995871407967,
+      "fitted_rates": [
+        0.12043136218027653,
+        0.7157202683402768
+      ],
+      "local_boundary_index": 74.5597465181621,
+      "normalized_local_boundary_index": 2.690443107685697,
+      "ordinary_decision": "SUPPORTED_RANK_2",
+      "regime": "separated",
+      "residual_rho_ar1": 0.48249675337687153,
+      "seed": 6502
+    },
+    {
+      "amplitudes": "signed",
+      "ar1_decision": "SUPPORTED_RANK_2",
+      "effective_sample_size": 290.7060326944365,
+      "fitted_rates": [
+        0.13090388857994922,
+        0.7435728109858132
+      ],
+      "local_boundary_index": 88.32914413605097,
+      "normalized_local_boundary_index": 3.1873034465148926,
+      "ordinary_decision": "SUPPORTED_RANK_2",
+      "regime": "separated",
+      "residual_rho_ar1": 0.4508276637385705,
+      "seed": 6503
+    },
+    {
+      "amplitudes": "signed",
+      "ar1_decision": "SUPPORTED_RANK_2",
+      "effective_sample_size": 266.30826440667295,
+      "fitted_rates": [
+        0.11482542368285559,
+        0.7115030692952092
+      ],
+      "local_boundary_index": 73.03601181142074,
+      "normalized_local_boundary_index": 2.635460067491278,
+      "ordinary_decision": "SUPPORTED_RANK_2",
+      "regime": "separated",
+      "residual_rho_ar1": 0.48505049496159697,
+      "seed": 6504
+    },
+    {
+      "amplitudes": "signed",
+      "ar1_decision": "SUPPORTED_RANK_2",
+      "effective_sample_size": 305.0514341378431,
+      "fitted_rates": [
+        0.1186662909229551,
+        0.7206216505118304
+      ],
+      "local_boundary_index": 79.38312506851852,
+      "normalized_local_boundary_index": 2.864491789213931,
+      "ordinary_decision": "SUPPORTED_RANK_2",
+      "regime": "separated",
+      "residual_rho_ar1": 0.43143185045376586,
+      "seed": 6505
+    },
+    {
+      "amplitudes": "signed",
+      "ar1_decision": "SUPPORTED_RANK_2",
+      "effective_sample_size": 293.3047263013242,
+      "fitted_rates": [
+        0.11009379056729364,
+        0.7062008255368699
+      ],
+      "local_boundary_index": 80.0701757680248,
+      "normalized_local_boundary_index": 2.8892835958581107,
+      "ordinary_decision": "SUPPORTED_RANK_2",
+      "regime": "separated",
+      "residual_rho_ar1": 0.4472751905600211,
+      "seed": 6506
+    },
+    {
+      "amplitudes": "signed",
+      "ar1_decision": "SUPPORTED_RANK_2",
+      "effective_sample_size": 292.56114243512843,
+      "fitted_rates": [
+        0.12077326682837002,
+        0.7163216786439515
+      ],
+      "local_boundary_index": 76.18799050425108,
+      "normalized_local_boundary_index": 2.749197301665376,
+      "ordinary_decision": "SUPPORTED_RANK_2",
+      "regime": "separated",
+      "residual_rho_ar1": 0.44828990856031936,
+      "seed": 6507
+    },
+    {
+      "amplitudes": "signed",
+      "ar1_decision": "SUPPORTED_RANK_2",
+      "effective_sample_size": 283.1320886371788,
+      "fitted_rates": [
+        0.11278526033618926,
+        0.7060948915721926
+      ],
+      "local_boundary_index": 71.61038060850782,
+      "normalized_local_boundary_index": 2.584017032568347,
+      "ordinary_decision": "SUPPORTED_RANK_2",
+      "regime": "separated",
+      "residual_rho_ar1": 0.46128161874637996,
+      "seed": 6508
+    },
+    {
+      "amplitudes": "nonnegative",
+      "ar1_decision": "SUPPORTED_RANK_2",
+      "effective_sample_size": 288.52471352786944,
+      "fitted_rates": [
+        0.12499661394842224,
+        0.7262075343427009
+      ],
+      "local_boundary_index": 87.2633176915492,
+      "normalized_local_boundary_index": 3.1488437474747357,
+      "ordinary_decision": "SUPPORTED_RANK_2",
+      "regime": "separated",
+      "residual_rho_ar1": 0.4538230675845736,
+      "seed": 6501
+    },
+    {
+      "amplitudes": "nonnegative",
+      "ar1_decision": "SUPPORTED_RANK_2",
+      "effective_sample_size": 268.08995860909823,
+      "fitted_rates": [
+        0.12043136274974782,
+        0.7157202701045094
+      ],
+      "local_boundary_index": 74.55974693217362,
+      "normalized_local_boundary_index": 2.690443122625051,
+      "ordinary_decision": "SUPPORTED_RANK_2",
+      "regime": "separated",
+      "residual_rho_ar1": 0.48249675352708504,
+      "seed": 6502
+    },
+    {
+      "amplitudes": "nonnegative",
+      "ar1_decision": "SUPPORTED_RANK_2",
+      "effective_sample_size": 290.7060328778,
+      "fitted_rates": [
+        0.13090389002921263,
+        0.7435728187125022
+      ],
+      "local_boundary_index": 88.32914603691295,
+      "normalized_local_boundary_index": 3.187303515106341,
+      "ordinary_decision": "SUPPORTED_RANK_2",
+      "regime": "separated",
+      "residual_rho_ar1": 0.45082766348729314,
+      "seed": 6503
+    },
+    {
+      "amplitudes": "nonnegative",
+      "ar1_decision": "SUPPORTED_RANK_2",
+      "effective_sample_size": 266.3082643468597,
+      "fitted_rates": [
+        0.11482542436560558,
+        0.7115030709050367
+      ],
+      "local_boundary_index": 73.0360122312823,
+      "normalized_local_boundary_index": 2.6354600826417274,
+      "ordinary_decision": "SUPPORTED_RANK_2",
+      "regime": "separated",
+      "residual_rho_ar1": 0.48505049504747627,
+      "seed": 6504
+    },
+    {
+      "amplitudes": "nonnegative",
+      "ar1_decision": "SUPPORTED_RANK_2",
+      "effective_sample_size": 305.0514341767829,
+      "fitted_rates": [
+        0.1186662912692645,
+        0.7206216512558814
+      ],
+      "local_boundary_index": 79.38312526444972,
+      "normalized_local_boundary_index": 2.864491796283989,
+      "ordinary_decision": "SUPPORTED_RANK_2",
+      "regime": "separated",
+      "residual_rho_ar1": 0.4314318504018209,
+      "seed": 6505
+    },
+    {
+      "amplitudes": "nonnegative",
+      "ar1_decision": "SUPPORTED_RANK_2",
+      "effective_sample_size": 293.30472578447933,
+      "fitted_rates": [
+        0.1100937884342167,
+        0.7062008203570501
+      ],
+      "local_boundary_index": 80.07017424624972,
+      "normalized_local_boundary_index": 2.8892835409457827,
+      "ordinary_decision": "SUPPORTED_RANK_2",
+      "regime": "separated",
+      "residual_rho_ar1": 0.44727519126482973,
+      "seed": 6506
+    },
+    {
+      "amplitudes": "nonnegative",
+      "ar1_decision": "SUPPORTED_RANK_2",
+      "effective_sample_size": 292.5611432604361,
+      "fitted_rates": [
+        0.12077326279651358,
+        0.716321667736544
+      ],
+      "local_boundary_index": 76.18798761878273,
+      "normalized_local_boundary_index": 2.7491971975450054,
+      "ordinary_decision": "SUPPORTED_RANK_2",
+      "regime": "separated",
+      "residual_rho_ar1": 0.4482899074332889,
+      "seed": 6507
+    },
+    {
+      "amplitudes": "nonnegative",
+      "ar1_decision": "SUPPORTED_RANK_2",
+      "effective_sample_size": 283.1320885363744,
+      "fitted_rates": [
+        0.11278525859076564,
+        0.7060948879330295
+      ],
+      "local_boundary_index": 71.61037957218731,
+      "normalized_local_boundary_index": 2.5840169951733514,
+      "ordinary_decision": "SUPPORTED_RANK_2",
+      "regime": "separated",
+      "residual_rho_ar1": 0.4612816188865181,
+      "seed": 6508
+    },
+    {
+      "amplitudes": "signed",
+      "ar1_decision": "SUPPORTED_RANK_1",
+      "effective_sample_size": 288.74572529998466,
+      "fitted_rates": [
+        0.33193874582110033,
+        0.33194776266067816
+      ],
+      "local_boundary_index": 2.5199330587564775e-08,
+      "normalized_local_boundary_index": 9.093025186330558e-10,
+      "ordinary_decision": "SUPPORTED_RANK_1",
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.453519009564923,
+      "seed": 6501
+    },
+    {
+      "amplitudes": "signed",
+      "ar1_decision": "SUPPORTED_RANK_1",
+      "effective_sample_size": 270.53955967099387,
+      "fitted_rates": [
+        0.12741225594436523,
+        0.352608711733464
+      ],
+      "local_boundary_index": 1.2607763726656307,
+      "normalized_local_boundary_index": 0.04549434863415137,
+      "ordinary_decision": "SUPPORTED_RANK_1",
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.4789999915714333,
+      "seed": 6502
+    },
+    {
+      "amplitudes": "signed",
+      "ar1_decision": "SUPPORTED_RANK_1",
+      "effective_sample_size": 287.6861660087017,
+      "fitted_rates": [
+        0.14369774522593803,
+        0.3492675956154357
+      ],
+      "local_boundary_index": 1.666191818176239,
+      "normalized_local_boundary_index": 0.06012351842160023,
+      "ordinary_decision": "INDETERMINATE",
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.45497786127789336,
+      "seed": 6503
+    },
+    {
+      "amplitudes": "signed",
+      "ar1_decision": "SUPPORTED_RANK_1",
+      "effective_sample_size": 269.45543946586207,
+      "fitted_rates": [
+        0.04000000000000003,
+        0.3570998576252536
+      ],
+      "local_boundary_index": 1.0535474115884456,
+      "normalized_local_boundary_index": 0.038016617605288905,
+      "ordinary_decision": "SUPPORTED_RANK_1",
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.4805455170111359,
+      "seed": 6504
+    },
+    {
+      "amplitudes": "signed",
+      "ar1_decision": "SUPPORTED_RANK_1",
+      "effective_sample_size": 310.0756469949091,
+      "fitted_rates": [
+        0.056059879557439234,
+        0.3547306740235696
+      ],
+      "local_boundary_index": 1.3934160785513658,
+      "normalized_local_boundary_index": 0.05028057175279899,
+      "ordinary_decision": "INDETERMINATE",
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.4247608730255023,
+      "seed": 6505
+    },
+    {
+      "amplitudes": "signed",
+      "ar1_decision": "SUPPORTED_RANK_1",
+      "effective_sample_size": 294.6519444232311,
+      "fitted_rates": [
+        0.22029122409395163,
+        0.3683341244084596
+      ],
+      "local_boundary_index": 1.627407774031613,
+      "normalized_local_boundary_index": 0.058724019776152596,
+      "ordinary_decision": "INDETERMINATE",
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.4454403514348106,
+      "seed": 6506
+    },
+    {
+      "amplitudes": "signed",
+      "ar1_decision": "SUPPORTED_RANK_1",
+      "effective_sample_size": 296.6151093340855,
+      "fitted_rates": [
+        0.040000000000001944,
+        0.3534020447641013
+      ],
+      "local_boundary_index": 1.0754539961804996,
+      "normalized_local_boundary_index": 0.038807103387241894,
+      "ordinary_decision": "SUPPORTED_RANK_1",
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.4427749395373176,
+      "seed": 6507
+    },
+    {
+      "amplitudes": "signed",
+      "ar1_decision": "SUPPORTED_RANK_1",
+      "effective_sample_size": 286.8456577911671,
+      "fitted_rates": [
+        0.04000000000000003,
+        0.3574749173334344
+      ],
+      "local_boundary_index": 1.0793188984661723,
+      "normalized_local_boundary_index": 0.03894656603568094,
+      "ordinary_decision": "SUPPORTED_RANK_1",
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.45613719756534205,
+      "seed": 6508
+    },
+    {
+      "amplitudes": "nonnegative",
+      "ar1_decision": "SUPPORTED_RANK_1",
+      "effective_sample_size": 287.7655129270874,
+      "fitted_rates": [
+        0.34437756793580737,
+        0.360920360018918
+      ],
+      "local_boundary_index": 0.20805570315688388,
+      "normalized_local_boundary_index": 0.007507563514003986,
+      "ordinary_decision": "SUPPORTED_RANK_1",
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.45486851122980204,
+      "seed": 6501
+    },
+    {
+      "amplitudes": "nonnegative",
+      "ar1_decision": "SUPPORTED_RANK_1",
+      "effective_sample_size": 268.3522006760702,
+      "fitted_rates": [
+        0.33807890815186936,
+        0.35982785424951563
+      ],
+      "local_boundary_index": 0.20269824641951673,
+      "normalized_local_boundary_index": 0.007314242945910818,
+      "ordinary_decision": "SUPPORTED_RANK_1",
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.48212161753309507,
+      "seed": 6502
+    },
+    {
+      "amplitudes": "nonnegative",
+      "ar1_decision": "SUPPORTED_RANK_1",
+      "effective_sample_size": 281.2565992834793,
+      "fitted_rates": [
+        0.34903464912178855,
+        0.3618568239444672
+      ],
+      "local_boundary_index": 0.17787488554669462,
+      "normalized_local_boundary_index": 0.006418507065778626,
+      "ordinary_decision": "INDETERMINATE",
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.4638935805111067,
+      "seed": 6503
+    },
+    {
+      "amplitudes": "nonnegative",
+      "ar1_decision": "SUPPORTED_RANK_1",
+      "effective_sample_size": 267.22648715777683,
+      "fitted_rates": [
+        0.2121036959725442,
+        0.3628710112172632
+      ],
+      "local_boundary_index": 1.2665373833920532,
+      "normalized_local_boundary_index": 0.04570223120250789,
+      "ordinary_decision": "SUPPORTED_RANK_1",
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.4837332883716114,
+      "seed": 6504
+    },
+    {
+      "amplitudes": "nonnegative",
+      "ar1_decision": "SUPPORTED_RANK_1",
+      "effective_sample_size": 308.72693786563195,
+      "fitted_rates": [
+        0.14752728881020388,
+        0.3576507424649564
+      ],
+      "local_boundary_index": 1.7107318631280375,
+      "normalized_local_boundary_index": 0.061730718855515156,
+      "ordinary_decision": "INDETERMINATE",
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.42654552977449706,
+      "seed": 6505
+    },
+    {
+      "amplitudes": "nonnegative",
+      "ar1_decision": "SUPPORTED_RANK_1",
+      "effective_sample_size": 294.65191907521233,
+      "fitted_rates": [
+        0.22028478503889876,
+        0.3683335290033288
+      ],
+      "local_boundary_index": 1.6274461805742775,
+      "normalized_local_boundary_index": 0.05872540565288672,
+      "ordinary_decision": "INDETERMINATE",
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.4454403859136917,
+      "seed": 6506
+    },
+    {
+      "amplitudes": "nonnegative",
+      "ar1_decision": "SUPPORTED_RANK_1",
+      "effective_sample_size": 292.0158235812131,
+      "fitted_rates": [
+        0.33704606977779195,
+        0.3597509803963031
+      ],
+      "local_boundary_index": 0.24491296796054607,
+      "normalized_local_boundary_index": 0.008837535498753216,
+      "ordinary_decision": "SUPPORTED_RANK_1",
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.44903497271455534,
+      "seed": 6507
+    },
+    {
+      "amplitudes": "nonnegative",
+      "ar1_decision": "SUPPORTED_RANK_1",
+      "effective_sample_size": 283.7964748615532,
+      "fitted_rates": [
+        0.16381896495668197,
+        0.3612000451207559
+      ],
+      "local_boundary_index": 1.51077933446527,
+      "normalized_local_boundary_index": 0.05451555346497796,
+      "ordinary_decision": "SUPPORTED_RANK_1",
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.4603585738411816,
+      "seed": 6508
+    }
+  ],
+  "schema_version": "1.0.0",
+  "summary": {
+    "boundary_calibration": {
+      "calibration_seeds": [
+        6501,
+        6502,
+        6503,
+        6504
+      ],
+      "coalesced_false_accept_rate": 0.0,
+      "coalesced_refusal_rate": 1.0,
+      "held_evaluation_seeds": [
+        6505,
+        6506,
+        6507,
+        6508
+      ],
+      "rule": "geometric midpoint between calibration maxima for coalesced rates and minima for separated rates",
+      "scope": "this declared semi-synthetic design only",
+      "separated_detection_rate": 1.0,
+      "threshold": 0.3470538949815616
+    },
+    "coalesced_nonnegative": {
+      "ar1_decisions": {
+        "SUPPORTED_RANK_1": 8
+      },
+      "median_normalized_boundary_index": 0.027269883350630554,
+      "median_rho_ar1": 0.4576135425354918,
+      "n": 8,
+      "ordinary_decisions": {
+        "INDETERMINATE": 3,
+        "SUPPORTED_RANK_1": 5
+      }
+    },
+    "coalesced_signed": {
+      "ar1_decisions": {
+        "SUPPORTED_RANK_1": 8
+      },
+      "median_normalized_boundary_index": 0.04222045733491615,
+      "median_rho_ar1": 0.4542484354214082,
+      "n": 8,
+      "ordinary_decisions": {
+        "INDETERMINATE": 3,
+        "SUPPORTED_RANK_1": 5
+      }
+    },
+    "separated_nonnegative": {
+      "ar1_decisions": {
+        "SUPPORTED_RANK_2": 8
+      },
+      "median_normalized_boundary_index": 2.806844496914497,
+      "median_rho_ar1": 0.4523253655359334,
+      "n": 8,
+      "ordinary_decisions": {
+        "SUPPORTED_RANK_2": 8
+      }
+    },
+    "separated_signed": {
+      "ar1_decisions": {
+        "SUPPORTED_RANK_2": 8
+      },
+      "median_normalized_boundary_index": 2.8068445454396533,
+      "median_rho_ar1": 0.4523253655994809,
+      "n": 8,
+      "ordinary_decisions": {
+        "SUPPORTED_RANK_2": 8
+      }
+    }
+  }
+}

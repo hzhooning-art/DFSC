@@ -1,0 +1,675 @@
+{
+  "experiment": "stage59_cross_implementation_confirmation",
+  "numerical_reference": "scipy.linalg.expm plus central finite differences",
+  "decision_reference": "standalone pure-Python rule with no import from the production decision module",
+  "numerical_trials": [
+    {
+      "channels": 2,
+      "rank": 2,
+      "horizon": 1.0,
+      "value_absolute_error": 4.440892098500626e-16,
+      "value_relative_error": 4.440892098500626e-16,
+      "gradient_absolute_error": 7.259747317189813e-11,
+      "gradient_relative_error": 3.142366115042934e-09
+    },
+    {
+      "channels": 5,
+      "rank": 3,
+      "horizon": 2.5,
+      "value_absolute_error": 1.7763568394002505e-15,
+      "value_relative_error": 1.7763568394002505e-15,
+      "gradient_absolute_error": 5.697350369260334e-10,
+      "gradient_relative_error": 4.066855062256009e-09
+    },
+    {
+      "channels": 8,
+      "rank": 2,
+      "horizon": 5.0,
+      "value_absolute_error": 2.6645352591003757e-15,
+      "value_relative_error": 2.6645352591003757e-15,
+      "gradient_absolute_error": 2.0759272079118318e-10,
+      "gradient_relative_error": 1.116057549786902e-10
+    }
+  ],
+  "maxima": {
+    "value_relative_error": 2.6645352591003757e-15,
+    "gradient_relative_error": 4.066855062256009e-09
+  },
+  "decision_replay": {
+    "comparisons": [
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "replayed_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "replayed_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "replayed_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "replayed_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "replayed_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "replayed_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "replayed_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "replayed_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "replayed_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "morphology_calibrated_asymmetric_hierarchy.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "NUMERICAL_AXIS_INELIGIBLE",
+        "replayed_reason": "NUMERICAL_AXIS_INELIGIBLE",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "replayed_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "replayed_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "replayed_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "NUMERICAL_AXIS_INELIGIBLE",
+        "replayed_reason": "NUMERICAL_AXIS_INELIGIBLE",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "replayed_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "replayed_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "replayed_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "NUMERICAL_AXIS_INELIGIBLE",
+        "replayed_reason": "NUMERICAL_AXIS_INELIGIBLE",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "replayed_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "replayed_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "NUMERICAL_AXIS_INELIGIBLE",
+        "replayed_reason": "NUMERICAL_AXIS_INELIGIBLE",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "replayed_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "INDETERMINATE",
+        "replayed_decision": "INDETERMINATE",
+        "expected_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "replayed_reason": "INSUFFICIENT_CONCORDANT_EVIDENCE",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "RETAIN",
+        "replayed_decision": "RETAIN",
+        "expected_reason": "CONCORDANT_RETENTION",
+        "replayed_reason": "CONCORDANT_RETENTION",
+        "match": true
+      },
+      {
+        "source": "external_multiphysics_confirmation.json",
+        "expected_decision": "REFUSE",
+        "replayed_decision": "REFUSE",
+        "expected_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "replayed_reason": "STRONG_STRUCTURAL_REFUSAL",
+        "match": true
+      }
+    ],
+    "count": 78,
+    "concordance": 1.0
+  },
+  "checks": {
+    "scipy_value_relative_error_at_most_1e_10": true,
+    "finite_difference_gradient_relative_error_at_most_1e_6": true,
+    "independent_decision_concordance_equals_one": true,
+    "replayed_at_least_70_decisions": true
+  },
+  "route_pass": true
+}

@@ -1,0 +1,1553 @@
+{
+  "experiment": "exact_design_conditional_power",
+  "device": "cuda",
+  "dtype": "torch.float64",
+  "design": {
+    "primary_cases": [
+      "oscillation_decay_016",
+      "shifted_transient_020",
+      "shifted_transient_055"
+    ],
+    "secondary_boundary_cases": [
+      "oscillation_decay_036"
+    ],
+    "repeats_per_case": 6,
+    "outer_fits": 24,
+    "bootstrap_replicates_per_outer_fit": 19,
+    "total_bootstrap_fits": 456,
+    "monte_carlo_alpha": 0.05,
+    "rule_changed_after_null_experiment": false,
+    "candidate_rank": 1,
+    "starts_per_fit": 2,
+    "legacy_clustered_threshold": 0.22364043884159382,
+    "new_global_clustered_threshold": 0.2234943079233449
+  },
+  "records": [
+    {
+      "case": "oscillation_decay_016",
+      "role": "primary",
+      "repeat": 0,
+      "seed": 311000,
+      "observation_count": 85,
+      "training_count": 41,
+      "geometry": {
+        "maximum_normalized_gap": 0.04729660457919527,
+        "histogram_concentration_cv": 0.27313380626456235,
+        "minimum_window_count": 12
+      },
+      "outer_fit": {
+        "validation_rmse": 0.002329590245372302,
+        "jacobian_condition": 3.1547435512126967,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": 0.2930577961167912,
+          "middle": 0.09649294992912939,
+          "late": 0.3397810700050514
+        },
+        "max_abs_statistic": 0.3397810700050514,
+        "strongest_window": "late"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.22862037458132908,
+        0.19140370965039877,
+        0.30304632250766256,
+        0.2085837171479791,
+        0.22226947897268676,
+        0.25984552239214437,
+        0.07643394758508774,
+        0.11968054036916893,
+        0.10400616326027841,
+        0.18839528786842474,
+        0.19034167682677136,
+        0.10316967116316618,
+        0.1538580736829099,
+        0.11646200396356525,
+        0.06557072583423773,
+        0.20512664944159778,
+        0.1743210943647957,
+        0.14254619627416995,
+        0.0825132552608735
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.30304632250766256,
+      "exceedances": 0,
+      "monte_carlo_p": 0.05,
+      "elapsed_seconds": 43.59874730000047,
+      "decisions": {
+        "legacy_clustered": "REFUSE_CONTRACT",
+        "new_global_clustered": "REFUSE_CONTRACT",
+        "exact_design_bootstrap": "REFUSE_CONTRACT"
+      }
+    },
+    {
+      "case": "oscillation_decay_016",
+      "role": "primary",
+      "repeat": 1,
+      "seed": 311101,
+      "observation_count": 112,
+      "training_count": 42,
+      "geometry": {
+        "maximum_normalized_gap": 0.07559078135090591,
+        "histogram_concentration_cv": 0.487732152990988,
+        "minimum_window_count": 19
+      },
+      "outer_fit": {
+        "validation_rmse": 0.0022096275602061385,
+        "jacobian_condition": 2.735710276505864,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": 0.21045179606817474,
+          "middle": 0.20309219041271506,
+          "late": 0.3847065148087819
+        },
+        "max_abs_statistic": 0.3847065148087819,
+        "strongest_window": "late"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.15157522352827915,
+        0.11917448567930385,
+        0.14519454983754917,
+        0.06124695261495078,
+        0.11135937691068941,
+        0.09611216902804569,
+        0.10096231617682351,
+        0.11323233967209635,
+        0.28984302153905883,
+        0.12244811316757147,
+        0.17883025383859483,
+        0.12102349867013734,
+        0.10521693992788311,
+        0.1559754070088907,
+        0.05546534569819467,
+        0.11820903362484576,
+        0.10407087907645955,
+        0.12856360382835988,
+        0.16359173142773475
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.28984302153905883,
+      "exceedances": 0,
+      "monte_carlo_p": 0.05,
+      "elapsed_seconds": 42.63482739999927,
+      "decisions": {
+        "legacy_clustered": "REFUSE_CONTRACT",
+        "new_global_clustered": "REFUSE_CONTRACT",
+        "exact_design_bootstrap": "REFUSE_CONTRACT"
+      }
+    },
+    {
+      "case": "oscillation_decay_016",
+      "role": "primary",
+      "repeat": 2,
+      "seed": 311202,
+      "observation_count": 86,
+      "training_count": 40,
+      "geometry": {
+        "maximum_normalized_gap": 0.0766795665534673,
+        "histogram_concentration_cv": 0.4691683953914422,
+        "minimum_window_count": 12
+      },
+      "outer_fit": {
+        "validation_rmse": 0.0020648611595148244,
+        "jacobian_condition": 2.8195689863564892,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": 0.24951006865461808,
+          "middle": 0.12202543687475338,
+          "late": 0.2516225652213225
+        },
+        "max_abs_statistic": 0.2516225652213225,
+        "strongest_window": "late"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.20502037964261677,
+        0.09637395220484307,
+        0.04625828452020336,
+        0.2430696761638166,
+        0.0818317711814928,
+        0.17292393769715672,
+        0.21948815401155367,
+        0.19879195149213466,
+        0.15869452232834438,
+        0.08502467621641902,
+        0.16924677776265482,
+        0.18043586783220225,
+        0.17084030070774628,
+        0.0743920248320445,
+        0.12095315887413742,
+        0.09542956017929012,
+        0.1600779774669692,
+        0.15249751823799487,
+        0.11698973346250535
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.2430696761638166,
+      "exceedances": 0,
+      "monte_carlo_p": 0.05,
+      "elapsed_seconds": 42.43897130000005,
+      "decisions": {
+        "legacy_clustered": "REFUSE_CONTRACT",
+        "new_global_clustered": "REFUSE_CONTRACT",
+        "exact_design_bootstrap": "REFUSE_CONTRACT"
+      }
+    },
+    {
+      "case": "oscillation_decay_016",
+      "role": "primary",
+      "repeat": 3,
+      "seed": 311303,
+      "observation_count": 108,
+      "training_count": 28,
+      "geometry": {
+        "maximum_normalized_gap": 0.05565805853664685,
+        "histogram_concentration_cv": 0.6236095644623236,
+        "minimum_window_count": 24
+      },
+      "outer_fit": {
+        "validation_rmse": 0.0022647600155341154,
+        "jacobian_condition": 2.9456169647980617,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": 0.20563337906523219,
+          "middle": 0.12881490389036127,
+          "late": 0.3120223132313975
+        },
+        "max_abs_statistic": 0.3120223132313975,
+        "strongest_window": "late"
+      },
+      "valid_bootstrap_replicates": 18,
+      "bootstrap_statistics": [
+        0.06842473527573735,
+        0.11807280376365825,
+        0.08912166516566876,
+        0.03880408350650933,
+        0.15706633529581926,
+        0.10309727374918716,
+        0.11061605049495538,
+        0.09629209943774623,
+        0.1536860370041576,
+        0.10418328059812498,
+        0.17426786683638282,
+        0.26355024668556826,
+        0.05213342121918895,
+        0.06489794902371669,
+        0.1733973560776747,
+        0.12088488599014924,
+        0.09051241645842682,
+        0.08742165028501907
+      ],
+      "calibration_pass": false,
+      "conditional_threshold": null,
+      "exceedances": null,
+      "monte_carlo_p": null,
+      "elapsed_seconds": 40.21189149999918,
+      "decisions": {
+        "legacy_clustered": "REFUSE_CONTRACT",
+        "new_global_clustered": "REFUSE_CONTRACT",
+        "exact_design_bootstrap": "REFUSE_CALIBRATION"
+      }
+    },
+    {
+      "case": "oscillation_decay_016",
+      "role": "primary",
+      "repeat": 4,
+      "seed": 311404,
+      "observation_count": 117,
+      "training_count": 40,
+      "geometry": {
+        "maximum_normalized_gap": 0.08054500212279458,
+        "histogram_concentration_cv": 0.5130341435370571,
+        "minimum_window_count": 25
+      },
+      "outer_fit": {
+        "validation_rmse": 0.002242371853639214,
+        "jacobian_condition": 3.1582802727919606,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": 0.0689858525853179,
+          "middle": -0.008395235332811548,
+          "late": 0.36669041736461333
+        },
+        "max_abs_statistic": 0.36669041736461333,
+        "strongest_window": "late"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.11234253668491402,
+        0.129750020081386,
+        0.13240885845567796,
+        0.18137235866022935,
+        0.14221828850163856,
+        0.22845222789910272,
+        0.19508650293070748,
+        0.0907800365461879,
+        0.16235892252008166,
+        0.12985520937274622,
+        0.04178319772172623,
+        0.09184285812197275,
+        0.08523692613284327,
+        0.12291305177574795,
+        0.11740730546014731,
+        0.07564431112201951,
+        0.07632259029156171,
+        0.1586385253881094,
+        0.08331775488364405
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.22845222789910272,
+      "exceedances": 0,
+      "monte_carlo_p": 0.05,
+      "elapsed_seconds": 44.27317749999929,
+      "decisions": {
+        "legacy_clustered": "REFUSE_CONTRACT",
+        "new_global_clustered": "REFUSE_CONTRACT",
+        "exact_design_bootstrap": "REFUSE_CONTRACT"
+      }
+    },
+    {
+      "case": "oscillation_decay_016",
+      "role": "primary",
+      "repeat": 5,
+      "seed": 311505,
+      "observation_count": 117,
+      "training_count": 36,
+      "geometry": {
+        "maximum_normalized_gap": 0.055779103585045786,
+        "histogram_concentration_cv": 0.4126532548572072,
+        "minimum_window_count": 24
+      },
+      "outer_fit": {
+        "validation_rmse": 0.0021359527369098374,
+        "jacobian_condition": 2.958330442674577,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": 0.45170963657972313,
+          "middle": 0.12061426924056105,
+          "late": 0.19076427576029817
+        },
+        "max_abs_statistic": 0.45170963657972313,
+        "strongest_window": "early"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.076981701337387,
+        0.11829780288346729,
+        0.07806015906215873,
+        0.1261907702193685,
+        0.08079948404196946,
+        0.14738600162290613,
+        0.11538616862832414,
+        0.1101495303249893,
+        0.07729389162812195,
+        0.14127590713091753,
+        0.08563042747844817,
+        0.16756056311029688,
+        0.14489935444637717,
+        0.05612743037669188,
+        0.06672845267449516,
+        0.08066512799377709,
+        0.09123958038690537,
+        0.08389522386882704,
+        0.058111359014193266
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.16756056311029688,
+      "exceedances": 0,
+      "monte_carlo_p": 0.05,
+      "elapsed_seconds": 42.4629530000002,
+      "decisions": {
+        "legacy_clustered": "REFUSE_CONTRACT",
+        "new_global_clustered": "REFUSE_CONTRACT",
+        "exact_design_bootstrap": "REFUSE_CONTRACT"
+      }
+    },
+    {
+      "case": "shifted_transient_020",
+      "role": "primary",
+      "repeat": 0,
+      "seed": 312009,
+      "observation_count": 100,
+      "training_count": 42,
+      "geometry": {
+        "maximum_normalized_gap": 0.04392387044400348,
+        "histogram_concentration_cv": 0.3149603149604724,
+        "minimum_window_count": 15
+      },
+      "outer_fit": {
+        "validation_rmse": 0.0009810075973761562,
+        "jacobian_condition": 2.457151007405251,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": 0.6123220749218662,
+          "middle": -0.067529492128077,
+          "late": 0.11236344659579767
+        },
+        "max_abs_statistic": 0.6123220749218662,
+        "strongest_window": "early"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.1661522127722503,
+        0.06340458462753147,
+        0.11724758903132339,
+        0.11559979751318887,
+        0.09625276811076726,
+        0.07996478931256375,
+        0.17143966651072237,
+        0.08571921745912953,
+        0.14913809549716994,
+        0.20069939880322052,
+        0.09157467687543512,
+        0.1391941355940817,
+        0.15365972086175636,
+        0.09424086609153283,
+        0.23224911253540806,
+        0.18682875533321738,
+        0.12829002193184721,
+        0.0247825042573503,
+        0.07382337522370602
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.23224911253540806,
+      "exceedances": 0,
+      "monte_carlo_p": 0.05,
+      "elapsed_seconds": 44.26872479999838,
+      "decisions": {
+        "legacy_clustered": "REFUSE_CONTRACT",
+        "new_global_clustered": "REFUSE_CONTRACT",
+        "exact_design_bootstrap": "REFUSE_CONTRACT"
+      }
+    },
+    {
+      "case": "shifted_transient_020",
+      "role": "primary",
+      "repeat": 1,
+      "seed": 312110,
+      "observation_count": 109,
+      "training_count": 39,
+      "geometry": {
+        "maximum_normalized_gap": 0.03835372234193457,
+        "histogram_concentration_cv": 0.3745771681209835,
+        "minimum_window_count": 20
+      },
+      "outer_fit": {
+        "validation_rmse": 0.0009882615545335825,
+        "jacobian_condition": 2.4498824838298274,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": 0.61507626018136,
+          "middle": 0.029038037982055887,
+          "late": -0.1300968448497408
+        },
+        "max_abs_statistic": 0.61507626018136,
+        "strongest_window": "early"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.12813554712284594,
+        0.14537773600564363,
+        0.13139920547159786,
+        0.05427380279402754,
+        0.1139618544294723,
+        0.11666940307563538,
+        0.18391521107391742,
+        0.03276793133749817,
+        0.17106751766535008,
+        0.1110165691743875,
+        0.11267189153803053,
+        0.09335587958134856,
+        0.19991637849837204,
+        0.07484671591962745,
+        0.14108760158506503,
+        0.15323832169576093,
+        0.0744747508233994,
+        0.11175305506343262,
+        0.2307808745174366
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.2307808745174366,
+      "exceedances": 0,
+      "monte_carlo_p": 0.05,
+      "elapsed_seconds": 42.33848299999954,
+      "decisions": {
+        "legacy_clustered": "REFUSE_CONTRACT",
+        "new_global_clustered": "REFUSE_CONTRACT",
+        "exact_design_bootstrap": "REFUSE_CONTRACT"
+      }
+    },
+    {
+      "case": "shifted_transient_020",
+      "role": "primary",
+      "repeat": 2,
+      "seed": 312211,
+      "observation_count": 128,
+      "training_count": 42,
+      "geometry": {
+        "maximum_normalized_gap": 0.025575041902082818,
+        "histogram_concentration_cv": 0.23385358667337133,
+        "minimum_window_count": 23
+      },
+      "outer_fit": {
+        "validation_rmse": 0.0009969017446489294,
+        "jacobian_condition": 2.5941507868819422,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": 0.641388254483877,
+          "middle": -0.017009646195475275,
+          "late": -0.04393718279863538
+        },
+        "max_abs_statistic": 0.641388254483877,
+        "strongest_window": "early"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.12909021045965505,
+        0.10714120824645974,
+        0.07834517967705877,
+        0.05835800888033715,
+        0.16131131778470542,
+        0.12252051178813927,
+        0.17819592470631884,
+        0.061336155535498094,
+        0.04224666615804099,
+        0.056675960085117306,
+        0.1533771581236464,
+        0.185587246494913,
+        0.04174204569913243,
+        0.0993235838661259,
+        0.15137880874992274,
+        0.07719338977942881,
+        0.19122727283829533,
+        0.10063862014213981,
+        0.24368088205935493
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.24368088205935493,
+      "exceedances": 0,
+      "monte_carlo_p": 0.05,
+      "elapsed_seconds": 43.3576434000006,
+      "decisions": {
+        "legacy_clustered": "REFUSE_CONTRACT",
+        "new_global_clustered": "REFUSE_CONTRACT",
+        "exact_design_bootstrap": "REFUSE_CONTRACT"
+      }
+    },
+    {
+      "case": "shifted_transient_020",
+      "role": "primary",
+      "repeat": 3,
+      "seed": 312312,
+      "observation_count": 102,
+      "training_count": 42,
+      "geometry": {
+        "maximum_normalized_gap": 0.05269422379852812,
+        "histogram_concentration_cv": 0.43888292716861554,
+        "minimum_window_count": 13
+      },
+      "outer_fit": {
+        "validation_rmse": 0.0013029281018151569,
+        "jacobian_condition": 2.256521889582348,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": 0.4679880682347461,
+          "middle": 0.030748407829666532,
+          "late": -0.1934961534595149
+        },
+        "max_abs_statistic": 0.4679880682347461,
+        "strongest_window": "early"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.1328418929675323,
+        0.15475295362675076,
+        0.22770917879278682,
+        0.04925347887576584,
+        0.1285625053292606,
+        0.1666711513415241,
+        0.15443698281296894,
+        0.07732488129974384,
+        0.2460019836301555,
+        0.22590332629056295,
+        0.2735607700784027,
+        0.18566211570311875,
+        0.08418414730681277,
+        0.1634652467868051,
+        0.09350073119831798,
+        0.2554151092263674,
+        0.11573383829213878,
+        0.04004198325481981,
+        0.21991464715706455
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.2735607700784027,
+      "exceedances": 0,
+      "monte_carlo_p": 0.05,
+      "elapsed_seconds": 42.95114579999972,
+      "decisions": {
+        "legacy_clustered": "REFUSE_CONTRACT",
+        "new_global_clustered": "REFUSE_CONTRACT",
+        "exact_design_bootstrap": "REFUSE_CONTRACT"
+      }
+    },
+    {
+      "case": "shifted_transient_020",
+      "role": "primary",
+      "repeat": 4,
+      "seed": 312413,
+      "observation_count": 106,
+      "training_count": 40,
+      "geometry": {
+        "maximum_normalized_gap": 0.05665495818009725,
+        "histogram_concentration_cv": 0.3574961381414418,
+        "minimum_window_count": 14
+      },
+      "outer_fit": {
+        "validation_rmse": 0.0007623944002141233,
+        "jacobian_condition": 2.3405785807863433,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": 0.49603109591796063,
+          "middle": 0.08408084023523461,
+          "late": 0.03671238452723272
+        },
+        "max_abs_statistic": 0.49603109591796063,
+        "strongest_window": "early"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.137648569485223,
+        0.1275389104226236,
+        0.1496820549498089,
+        0.10790811403542339,
+        0.10596729587450222,
+        0.23460969354525596,
+        0.1255443811305664,
+        0.20712187157653247,
+        0.17717067866629818,
+        0.13327090094886393,
+        0.22004365613629798,
+        0.11390253995234402,
+        0.14649534899464176,
+        0.3313940681764141,
+        0.05761948602478254,
+        0.1500826141577619,
+        0.12950829470708827,
+        0.08891308219224241,
+        0.11749395347477766
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.3313940681764141,
+      "exceedances": 0,
+      "monte_carlo_p": 0.05,
+      "elapsed_seconds": 42.474106499999834,
+      "decisions": {
+        "legacy_clustered": "REFUSE_CONTRACT",
+        "new_global_clustered": "REFUSE_CONTRACT",
+        "exact_design_bootstrap": "REFUSE_CONTRACT"
+      }
+    },
+    {
+      "case": "shifted_transient_020",
+      "role": "primary",
+      "repeat": 5,
+      "seed": 312514,
+      "observation_count": 107,
+      "training_count": 40,
+      "geometry": {
+        "maximum_normalized_gap": 0.06897973723798845,
+        "histogram_concentration_cv": 0.3924120892563928,
+        "minimum_window_count": 20
+      },
+      "outer_fit": {
+        "validation_rmse": 0.0009479323350060862,
+        "jacobian_condition": 2.7339336817420854,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": 0.5293854679454864,
+          "middle": 0.03184744372008556,
+          "late": 0.11842555044341081
+        },
+        "max_abs_statistic": 0.5293854679454864,
+        "strongest_window": "early"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.16093053865088797,
+        0.06882499700749492,
+        0.1834760626613876,
+        0.09955413088315677,
+        0.09428338760298305,
+        0.1375774684301346,
+        0.1675324445193309,
+        0.19153590342879911,
+        0.07913547390581559,
+        0.10636788490403641,
+        0.16908432367017723,
+        0.13979904925672604,
+        0.2143896870069887,
+        0.05830306970673538,
+        0.07900333846652066,
+        0.13691514226382182,
+        0.11375549888263063,
+        0.08979563639118578,
+        0.1248750337623545
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.2143896870069887,
+      "exceedances": 0,
+      "monte_carlo_p": 0.05,
+      "elapsed_seconds": 42.96944500000063,
+      "decisions": {
+        "legacy_clustered": "REFUSE_CONTRACT",
+        "new_global_clustered": "REFUSE_CONTRACT",
+        "exact_design_bootstrap": "REFUSE_CONTRACT"
+      }
+    },
+    {
+      "case": "shifted_transient_055",
+      "role": "primary",
+      "repeat": 0,
+      "seed": 313018,
+      "observation_count": 110,
+      "training_count": 38,
+      "geometry": {
+        "maximum_normalized_gap": 0.03938315483019894,
+        "histogram_concentration_cv": 0.34736314862805096,
+        "minimum_window_count": 19
+      },
+      "outer_fit": {
+        "validation_rmse": 0.0009324594095068747,
+        "jacobian_condition": 2.461489067541928,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": -0.28163076285832966,
+          "middle": 0.5873100063963907,
+          "late": -0.10895915492969889
+        },
+        "max_abs_statistic": 0.5873100063963907,
+        "strongest_window": "middle"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.0860387284511069,
+        0.1375555031337241,
+        0.11076420492195525,
+        0.12821504468333322,
+        0.23593932712284907,
+        0.16832238965208934,
+        0.06087727293269279,
+        0.17570374841579764,
+        0.11123439318098881,
+        0.22283836371424234,
+        0.045862654887974495,
+        0.05924240652433386,
+        0.09439413079486432,
+        0.13972120963922227,
+        0.13809331166444347,
+        0.06920351511250647,
+        0.05362186574376446,
+        0.13355796259553385,
+        0.2148278462101959
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.23593932712284907,
+      "exceedances": 0,
+      "monte_carlo_p": 0.05,
+      "elapsed_seconds": 42.62537800000064,
+      "decisions": {
+        "legacy_clustered": "REFUSE_CONTRACT",
+        "new_global_clustered": "REFUSE_CONTRACT",
+        "exact_design_bootstrap": "REFUSE_CONTRACT"
+      }
+    },
+    {
+      "case": "shifted_transient_055",
+      "role": "primary",
+      "repeat": 1,
+      "seed": 313119,
+      "observation_count": 114,
+      "training_count": 36,
+      "geometry": {
+        "maximum_normalized_gap": 0.054820273056293556,
+        "histogram_concentration_cv": 0.3926847243087613,
+        "minimum_window_count": 24
+      },
+      "outer_fit": {
+        "validation_rmse": 0.001036810293382299,
+        "jacobian_condition": 2.458764838644095,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": 0.10278691119983134,
+          "middle": 0.5962952706633512,
+          "late": 0.05783007030189288
+        },
+        "max_abs_statistic": 0.5962952706633512,
+        "strongest_window": "middle"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.10101957255455514,
+        0.1822297121839798,
+        0.0663320946291364,
+        0.11208989060104302,
+        0.08114333418140605,
+        0.19044114549768312,
+        0.051049304171165565,
+        0.1680025715290958,
+        0.0990103302554566,
+        0.09326483790184552,
+        0.143542962094004,
+        0.07951178786402856,
+        0.12987207127109188,
+        0.045618315171056335,
+        0.04370360036316179,
+        0.07734408239538403,
+        0.0796624847254568,
+        0.13735796423378935,
+        0.05972901096637184
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.19044114549768312,
+      "exceedances": 0,
+      "monte_carlo_p": 0.05,
+      "elapsed_seconds": 42.22090240000034,
+      "decisions": {
+        "legacy_clustered": "REFUSE_CONTRACT",
+        "new_global_clustered": "REFUSE_CONTRACT",
+        "exact_design_bootstrap": "REFUSE_CONTRACT"
+      }
+    },
+    {
+      "case": "shifted_transient_055",
+      "role": "primary",
+      "repeat": 2,
+      "seed": 313220,
+      "observation_count": 104,
+      "training_count": 42,
+      "geometry": {
+        "maximum_normalized_gap": 0.04961784084706927,
+        "histogram_concentration_cv": 0.2878197989826109,
+        "minimum_window_count": 15
+      },
+      "outer_fit": {
+        "validation_rmse": 0.000960626970522491,
+        "jacobian_condition": 2.3455750928584034,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": 0.03201168680404419,
+          "middle": 0.7409277970383724,
+          "late": 0.09349028943542302
+        },
+        "max_abs_statistic": 0.7409277970383724,
+        "strongest_window": "middle"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.17947458383488923,
+        0.09627736249010392,
+        0.13359385076883165,
+        0.16493018784827904,
+        0.12278121456198554,
+        0.14767612202861677,
+        0.14395947471250675,
+        0.15661846925280962,
+        0.05770136537495171,
+        0.19266502451029988,
+        0.2228577212048659,
+        0.10856139949758715,
+        0.1472119121308792,
+        0.12469984311887139,
+        0.2507661580174619,
+        0.2346429356772329,
+        0.1908684299747173,
+        0.22125356014090183,
+        0.16745859262218174
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.2507661580174619,
+      "exceedances": 0,
+      "monte_carlo_p": 0.05,
+      "elapsed_seconds": 42.9335499000008,
+      "decisions": {
+        "legacy_clustered": "REFUSE_CONTRACT",
+        "new_global_clustered": "REFUSE_CONTRACT",
+        "exact_design_bootstrap": "REFUSE_CONTRACT"
+      }
+    },
+    {
+      "case": "shifted_transient_055",
+      "role": "primary",
+      "repeat": 3,
+      "seed": 313321,
+      "observation_count": 75,
+      "training_count": 28,
+      "geometry": {
+        "maximum_normalized_gap": 0.08436306347058475,
+        "histogram_concentration_cv": 0.3871261637588793,
+        "minimum_window_count": 15
+      },
+      "outer_fit": {
+        "validation_rmse": 0.0008143279098804264,
+        "jacobian_condition": 2.668146388109288,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": -0.10698035171410587,
+          "middle": 0.5225115056585327,
+          "late": -0.10991813979703535
+        },
+        "max_abs_statistic": 0.5225115056585327,
+        "strongest_window": "middle"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.2123379582878826,
+        0.2607936188930323,
+        0.204230299417725,
+        0.0989965335772579,
+        0.11542976674904593,
+        0.054791936901633344,
+        0.05421787262027175,
+        0.10134465956017084,
+        0.09239258484250228,
+        0.12655534528789192,
+        0.17869239699743047,
+        0.15959952693319682,
+        0.21965646877887854,
+        0.08542133657274469,
+        0.10264761348015523,
+        0.1207481240744459,
+        0.16499537141768375,
+        0.31910043488359163,
+        0.2311576182866845
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.31910043488359163,
+      "exceedances": 0,
+      "monte_carlo_p": 0.05,
+      "elapsed_seconds": 40.69643050000013,
+      "decisions": {
+        "legacy_clustered": "REFUSE_CONTRACT",
+        "new_global_clustered": "REFUSE_CONTRACT",
+        "exact_design_bootstrap": "REFUSE_CONTRACT"
+      }
+    },
+    {
+      "case": "shifted_transient_055",
+      "role": "primary",
+      "repeat": 4,
+      "seed": 313422,
+      "observation_count": 91,
+      "training_count": 35,
+      "geometry": {
+        "maximum_normalized_gap": 0.04124972552690642,
+        "histogram_concentration_cv": 0.27691435534844294,
+        "minimum_window_count": 17
+      },
+      "outer_fit": {
+        "validation_rmse": 0.0008038090890099374,
+        "jacobian_condition": 2.548771531215165,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": 0.07220603403838527,
+          "middle": 0.612046428296387,
+          "late": 0.1395100723964724
+        },
+        "max_abs_statistic": 0.612046428296387,
+        "strongest_window": "middle"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.11515339083216992,
+        0.22097132963505253,
+        0.09984663916725207,
+        0.026325202031014173,
+        0.17088300945936064,
+        0.026789292130489816,
+        0.10637449977535181,
+        0.13613981326708077,
+        0.05548934820460705,
+        0.16234603688038993,
+        0.1255049570803467,
+        0.28418838463019874,
+        0.2065382211723201,
+        0.14665304758413064,
+        0.18970556456146445,
+        0.12496694548516889,
+        0.21312951202164196,
+        0.15081324175327038,
+        0.3156062953768251
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.3156062953768251,
+      "exceedances": 0,
+      "monte_carlo_p": 0.05,
+      "elapsed_seconds": 41.56762170000002,
+      "decisions": {
+        "legacy_clustered": "REFUSE_CONTRACT",
+        "new_global_clustered": "REFUSE_CONTRACT",
+        "exact_design_bootstrap": "REFUSE_CONTRACT"
+      }
+    },
+    {
+      "case": "shifted_transient_055",
+      "role": "primary",
+      "repeat": 5,
+      "seed": 313523,
+      "observation_count": 112,
+      "training_count": 42,
+      "geometry": {
+        "maximum_normalized_gap": 0.042632614315448625,
+        "histogram_concentration_cv": 0.33120066055341796,
+        "minimum_window_count": 16
+      },
+      "outer_fit": {
+        "validation_rmse": 0.0010257804648716594,
+        "jacobian_condition": 2.4761098296168633,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": -0.05460343545690316,
+          "middle": 0.5760365130251627,
+          "late": -0.020855430739917774
+        },
+        "max_abs_statistic": 0.5760365130251627,
+        "strongest_window": "middle"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.11989814937705423,
+        0.10097579376804024,
+        0.038327780261534154,
+        0.13164954069865123,
+        0.2113694093000209,
+        0.13247446043505662,
+        0.13918340921765257,
+        0.10227691766308585,
+        0.09711179446386464,
+        0.11387157387231167,
+        0.13847804903131564,
+        0.062010446866388465,
+        0.17541482134141617,
+        0.10471256542481903,
+        0.07824053904864192,
+        0.0868530649627432,
+        0.2156725331979182,
+        0.1498346147914649,
+        0.08332359221902727
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.2156725331979182,
+      "exceedances": 0,
+      "monte_carlo_p": 0.05,
+      "elapsed_seconds": 43.53170599999976,
+      "decisions": {
+        "legacy_clustered": "REFUSE_CONTRACT",
+        "new_global_clustered": "REFUSE_CONTRACT",
+        "exact_design_bootstrap": "REFUSE_CONTRACT"
+      }
+    },
+    {
+      "case": "oscillation_decay_036",
+      "role": "secondary_boundary",
+      "repeat": 0,
+      "seed": 314027,
+      "observation_count": 122,
+      "training_count": 42,
+      "geometry": {
+        "maximum_normalized_gap": 0.03469596053655921,
+        "histogram_concentration_cv": 0.41114544931096575,
+        "minimum_window_count": 21
+      },
+      "outer_fit": {
+        "validation_rmse": 0.0011297376249421412,
+        "jacobian_condition": 2.4397893288534074,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": 0.386684194174772,
+          "middle": 0.04085343217058252,
+          "late": 0.16309589100424562
+        },
+        "max_abs_statistic": 0.386684194174772,
+        "strongest_window": "early"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.19725794409464062,
+        0.10816392294570394,
+        0.05935292975495867,
+        0.09967994994731677,
+        0.08755635458381773,
+        0.08259282083010921,
+        0.09835750528664701,
+        0.20482405591912534,
+        0.03615669551571613,
+        0.1611992589980731,
+        0.05046819712636071,
+        0.05970464043374119,
+        0.15541286301295384,
+        0.14801589343957053,
+        0.1874306707950779,
+        0.09663536469443557,
+        0.2260190678156491,
+        0.11849635520114227,
+        0.11206826304942945
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.2260190678156491,
+      "exceedances": 0,
+      "monte_carlo_p": 0.05,
+      "elapsed_seconds": 43.52702279999903,
+      "decisions": {
+        "legacy_clustered": "REFUSE_CONTRACT",
+        "new_global_clustered": "REFUSE_CONTRACT",
+        "exact_design_bootstrap": "REFUSE_CONTRACT"
+      }
+    },
+    {
+      "case": "oscillation_decay_036",
+      "role": "secondary_boundary",
+      "repeat": 1,
+      "seed": 314128,
+      "observation_count": 103,
+      "training_count": 42,
+      "geometry": {
+        "maximum_normalized_gap": 0.04148054027532733,
+        "histogram_concentration_cv": 0.3411899687535064,
+        "minimum_window_count": 14
+      },
+      "outer_fit": {
+        "validation_rmse": 0.0010474940621924634,
+        "jacobian_condition": 2.8486921168253696,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": 0.19952469269777548,
+          "middle": -0.058195905263985055,
+          "late": 0.06900788519600226
+        },
+        "max_abs_statistic": 0.19952469269777548,
+        "strongest_window": "early"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.1303092609236197,
+        0.07829252915583969,
+        0.10423378124783235,
+        0.20049592189185997,
+        0.06268536210289924,
+        0.09809059766425464,
+        0.14639281162326864,
+        0.27497478968796957,
+        0.16581715942744873,
+        0.06576751973383939,
+        0.17767926043680668,
+        0.14025926629404112,
+        0.09393824850616539,
+        0.13213164404055697,
+        0.2059498786673044,
+        0.1679412280960846,
+        0.08348239201143086,
+        0.2081254456157825,
+        0.23260296163486385
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.27497478968796957,
+      "exceedances": 5,
+      "monte_carlo_p": 0.3,
+      "elapsed_seconds": 43.143383200000244,
+      "decisions": {
+        "legacy_clustered": "ACCEPT_CONTRACT",
+        "new_global_clustered": "ACCEPT_CONTRACT",
+        "exact_design_bootstrap": "ACCEPT_CONTRACT"
+      }
+    },
+    {
+      "case": "oscillation_decay_036",
+      "role": "secondary_boundary",
+      "repeat": 2,
+      "seed": 314229,
+      "observation_count": 123,
+      "training_count": 38,
+      "geometry": {
+        "maximum_normalized_gap": 0.05166975644474814,
+        "histogram_concentration_cv": 0.34521745927743325,
+        "minimum_window_count": 27
+      },
+      "outer_fit": {
+        "validation_rmse": 0.0010954950101521451,
+        "jacobian_condition": 2.6106001418942273,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": 0.2779322125167886,
+          "middle": 0.15133565172600769,
+          "late": 0.20373596678068864
+        },
+        "max_abs_statistic": 0.2779322125167886,
+        "strongest_window": "early"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.07135472381826112,
+        0.1828485586806642,
+        0.08073775090498381,
+        0.10366896101420169,
+        0.14448988392155415,
+        0.07081407472667443,
+        0.02613916416754015,
+        0.14761645298130488,
+        0.07766272527628212,
+        0.21300328131736815,
+        0.09609891384677366,
+        0.11397608884330997,
+        0.17127999825969442,
+        0.03668225561600859,
+        0.047388278724689425,
+        0.19997631716023398,
+        0.16013671854390615,
+        0.07922452067065135,
+        0.08571487600628364
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.21300328131736815,
+      "exceedances": 0,
+      "monte_carlo_p": 0.05,
+      "elapsed_seconds": 41.78979350000009,
+      "decisions": {
+        "legacy_clustered": "REFUSE_CONTRACT",
+        "new_global_clustered": "REFUSE_CONTRACT",
+        "exact_design_bootstrap": "REFUSE_CONTRACT"
+      }
+    },
+    {
+      "case": "oscillation_decay_036",
+      "role": "secondary_boundary",
+      "repeat": 3,
+      "seed": 314330,
+      "observation_count": 78,
+      "training_count": 30,
+      "geometry": {
+        "maximum_normalized_gap": 0.07857047802948658,
+        "histogram_concentration_cv": 0.5160156871153361,
+        "minimum_window_count": 10
+      },
+      "outer_fit": {
+        "validation_rmse": 0.001074804164246664,
+        "jacobian_condition": 2.951077006850537,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": 0.2070492763675643,
+          "middle": -0.17860288167783056,
+          "late": -0.044536982744469024
+        },
+        "max_abs_statistic": 0.2070492763675643,
+        "strongest_window": "early"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.24274884275280628,
+        0.29746546105123145,
+        0.12157233354761639,
+        0.18584141060775905,
+        0.05466417649880368,
+        0.13164261100798225,
+        0.313857917028869,
+        0.15376113460177668,
+        0.10135288979349953,
+        0.09290052981240733,
+        0.0629836591077922,
+        0.17422881487649589,
+        0.1818399043235689,
+        0.1400805555776836,
+        0.19898259170740595,
+        0.24911052632348443,
+        0.1738741616060934,
+        0.12994981215672427,
+        0.3136679631592791
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.313857917028869,
+      "exceedances": 5,
+      "monte_carlo_p": 0.3,
+      "elapsed_seconds": 39.997733700000026,
+      "decisions": {
+        "legacy_clustered": "ACCEPT_CONTRACT",
+        "new_global_clustered": "ACCEPT_CONTRACT",
+        "exact_design_bootstrap": "ACCEPT_CONTRACT"
+      }
+    },
+    {
+      "case": "oscillation_decay_036",
+      "role": "secondary_boundary",
+      "repeat": 4,
+      "seed": 314431,
+      "observation_count": 87,
+      "training_count": 35,
+      "geometry": {
+        "maximum_normalized_gap": 0.06816401001439432,
+        "histogram_concentration_cv": 0.468170387457846,
+        "minimum_window_count": 16
+      },
+      "outer_fit": {
+        "validation_rmse": 0.0010110191151169172,
+        "jacobian_condition": 2.857379993294739,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": 0.08625747236365526,
+          "middle": -0.13110613488685172,
+          "late": 0.15446830784247376
+        },
+        "max_abs_statistic": 0.15446830784247376,
+        "strongest_window": "late"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.14131396798947507,
+        0.1697873017558015,
+        0.1731761294638509,
+        0.13468782703788995,
+        0.21573363943234994,
+        0.11569418559658266,
+        0.17350424970518297,
+        0.26456379306835026,
+        0.1132534696139547,
+        0.10798081101185468,
+        0.1068816040806198,
+        0.17853503406396198,
+        0.1274415875389439,
+        0.21406287457256581,
+        0.1793592458168377,
+        0.2566572840576704,
+        0.08272170050795745,
+        0.20726575838743896,
+        0.14295595517383455
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.26456379306835026,
+      "exceedances": 10,
+      "monte_carlo_p": 0.55,
+      "elapsed_seconds": 41.41078039999957,
+      "decisions": {
+        "legacy_clustered": "ACCEPT_CONTRACT",
+        "new_global_clustered": "ACCEPT_CONTRACT",
+        "exact_design_bootstrap": "ACCEPT_CONTRACT"
+      }
+    },
+    {
+      "case": "oscillation_decay_036",
+      "role": "secondary_boundary",
+      "repeat": 5,
+      "seed": 314532,
+      "observation_count": 90,
+      "training_count": 38,
+      "geometry": {
+        "maximum_normalized_gap": 0.074090971059669,
+        "histogram_concentration_cv": 0.4602736706046217,
+        "minimum_window_count": 11
+      },
+      "outer_fit": {
+        "validation_rmse": 0.0012455209578442117,
+        "jacobian_condition": 2.3419202543774333,
+        "fit_quality_pass": true,
+        "statistics": {
+          "early": 0.1939929524930305,
+          "middle": 0.17690189614533014,
+          "late": 0.2887024725197305
+        },
+        "max_abs_statistic": 0.2887024725197305,
+        "strongest_window": "late"
+      },
+      "valid_bootstrap_replicates": 19,
+      "bootstrap_statistics": [
+        0.10721872469992337,
+        0.31494096457571225,
+        0.15322280650326273,
+        0.22693163875631772,
+        0.1584405266213156,
+        0.05894586093271048,
+        0.22567730336260583,
+        0.060671991042093865,
+        0.11192530747782413,
+        0.21857986449131397,
+        0.11748315105159708,
+        0.16896806716376642,
+        0.20692533440969438,
+        0.23269561416577197,
+        0.15266130341539236,
+        0.1044760849079603,
+        0.11991432248572896,
+        0.0663019458868298,
+        0.2791507998598383
+      ],
+      "calibration_pass": true,
+      "conditional_threshold": 0.31494096457571225,
+      "exceedances": 1,
+      "monte_carlo_p": 0.1,
+      "elapsed_seconds": 41.629458699999304,
+      "decisions": {
+        "legacy_clustered": "REFUSE_CONTRACT",
+        "new_global_clustered": "REFUSE_CONTRACT",
+        "exact_design_bootstrap": "ACCEPT_CONTRACT"
+      }
+    }
+  ],
+  "summary": [
+    {
+      "case": "oscillation_decay_016",
+      "role": "primary",
+      "trials": 6,
+      "outer_invalid_fits": 0,
+      "conditional_calibration_failures": 1,
+      "median_observed_statistic": 0.35323574368483235,
+      "median_conditional_threshold": 0.2430696761638166,
+      "median_elapsed_seconds": 42.54889019999973,
+      "methods": {
+        "legacy_clustered": {
+          "refusals": 6,
+          "fraction": 1.0,
+          "wilson95": [
+            0.6096569663469354,
+            0.9999999999999999
+          ]
+        },
+        "new_global_clustered": {
+          "refusals": 6,
+          "fraction": 1.0,
+          "wilson95": [
+            0.6096569663469354,
+            0.9999999999999999
+          ]
+        },
+        "exact_design_bootstrap": {
+          "refusals": 5,
+          "fraction": 0.8333333333333334,
+          "wilson95": [
+            0.43649056343635395,
+            0.9699474141282697
+          ]
+        }
+      }
+    },
+    {
+      "case": "shifted_transient_020",
+      "role": "primary",
+      "trials": 6,
+      "outer_invalid_fits": 0,
+      "conditional_calibration_failures": 0,
+      "median_observed_statistic": 0.5708537714336763,
+      "median_conditional_threshold": 0.2379649972973815,
+      "median_elapsed_seconds": 42.96029540000018,
+      "methods": {
+        "legacy_clustered": {
+          "refusals": 6,
+          "fraction": 1.0,
+          "wilson95": [
+            0.6096569663469354,
+            0.9999999999999999
+          ]
+        },
+        "new_global_clustered": {
+          "refusals": 6,
+          "fraction": 1.0,
+          "wilson95": [
+            0.6096569663469354,
+            0.9999999999999999
+          ]
+        },
+        "exact_design_bootstrap": {
+          "refusals": 6,
+          "fraction": 1.0,
+          "wilson95": [
+            0.6096569663469354,
+            0.9999999999999999
+          ]
+        }
+      }
+    },
+    {
+      "case": "shifted_transient_055",
+      "role": "primary",
+      "trials": 6,
+      "outer_invalid_fits": 0,
+      "conditional_calibration_failures": 0,
+      "median_observed_statistic": 0.5918026385298709,
+      "median_conditional_threshold": 0.2433527425701555,
+      "median_elapsed_seconds": 42.42314020000049,
+      "methods": {
+        "legacy_clustered": {
+          "refusals": 6,
+          "fraction": 1.0,
+          "wilson95": [
+            0.6096569663469354,
+            0.9999999999999999
+          ]
+        },
+        "new_global_clustered": {
+          "refusals": 6,
+          "fraction": 1.0,
+          "wilson95": [
+            0.6096569663469354,
+            0.9999999999999999
+          ]
+        },
+        "exact_design_bootstrap": {
+          "refusals": 6,
+          "fraction": 1.0,
+          "wilson95": [
+            0.6096569663469354,
+            0.9999999999999999
+          ]
+        }
+      }
+    },
+    {
+      "case": "oscillation_decay_036",
+      "role": "secondary_boundary",
+      "trials": 6,
+      "outer_invalid_fits": 0,
+      "conditional_calibration_failures": 0,
+      "median_observed_statistic": 0.24249074444217644,
+      "median_conditional_threshold": 0.2697692913781599,
+      "median_elapsed_seconds": 41.709626099999696,
+      "methods": {
+        "legacy_clustered": {
+          "refusals": 3,
+          "fraction": 0.5,
+          "wilson95": [
+            0.18761280689940868,
+            0.8123871931005913
+          ]
+        },
+        "new_global_clustered": {
+          "refusals": 3,
+          "fraction": 0.5,
+          "wilson95": [
+            0.18761280689940868,
+            0.8123871931005913
+          ]
+        },
+        "exact_design_bootstrap": {
+          "refusals": 2,
+          "fraction": 0.3333333333333333,
+          "wilson95": [
+            0.09676933255921683,
+            0.7000116786584712
+          ]
+        }
+      }
+    }
+  ],
+  "assessment": {
+    "checks": {
+      "all_24_outer_fits_valid": true,
+      "all_456_bootstrap_fits_valid": false,
+      "each_primary_case_refused_at_least_5_of_6": true,
+      "no_primary_case_loses_more_than_1_detection_vs_global": true
+    },
+    "route_pass": false
+  },
+  "runtime": {
+    "total_elapsed_seconds": 1019.0582677000002,
+    "total_refits": 480
+  }
+}

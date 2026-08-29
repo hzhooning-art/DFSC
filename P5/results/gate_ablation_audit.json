@@ -1,0 +1,166 @@
+{
+  "all_four_gates_decision_relevant": true,
+  "claim_boundary": "The audit establishes logical decision relevance on selected frozen stress records; it does not estimate population-level predictive importance.",
+  "experiment": "leave_one_gate_out_frozen_record_audit",
+  "records": [
+    {
+      "case": "information_control",
+      "decision_changed": true,
+      "frozen_transition": {
+        "from_rank": 1,
+        "gates": {
+          "bic": false,
+          "finite": true,
+          "prediction": true,
+          "separation": true,
+          "stability": true
+        },
+        "to_rank": 2
+      },
+      "full_protocol": {
+        "active_gates": [
+          "information",
+          "separation",
+          "stability",
+          "transfer"
+        ],
+        "decision": "SUPPORTED_RANK_1",
+        "selected_rank": 1
+      },
+      "leave_one_gate_out": {
+        "active_gates": [
+          "separation",
+          "stability",
+          "transfer"
+        ],
+        "decision": "SUPPORTED_RANK_2",
+        "selected_rank": 2
+      },
+      "metadata": {
+        "claim": "logic-unit audit only",
+        "source": "controlled frozen transition"
+      },
+      "omitted_gate": "information"
+    },
+    {
+      "case": "transfer_pva",
+      "decision_changed": true,
+      "frozen_transition": {
+        "from_rank": 1,
+        "gates": {
+          "bic": true,
+          "finite": true,
+          "prediction": false,
+          "separation": true,
+          "stability": true
+        },
+        "to_rank": 2
+      },
+      "full_protocol": {
+        "active_gates": [
+          "information",
+          "separation",
+          "stability",
+          "transfer"
+        ],
+        "decision": "INDETERMINATE",
+        "selected_rank": null
+      },
+      "leave_one_gate_out": {
+        "active_gates": [
+          "information",
+          "separation",
+          "stability"
+        ],
+        "decision": "SUPPORTED_RANK_2",
+        "selected_rank": 2
+      },
+      "metadata": {
+        "horizon_seconds": 4.0,
+        "samples_per_curve": 24,
+        "source": "public PVA boundary"
+      },
+      "omitted_gate": "transfer"
+    },
+    {
+      "case": "stability_pva",
+      "decision_changed": true,
+      "frozen_transition": {
+        "from_rank": 1,
+        "gates": {
+          "bic": true,
+          "finite": true,
+          "prediction": true,
+          "separation": true,
+          "stability": false
+        },
+        "to_rank": 2
+      },
+      "full_protocol": {
+        "active_gates": [
+          "information",
+          "separation",
+          "stability",
+          "transfer"
+        ],
+        "decision": "INDETERMINATE",
+        "selected_rank": null
+      },
+      "leave_one_gate_out": {
+        "active_gates": [
+          "information",
+          "separation",
+          "transfer"
+        ],
+        "decision": "SUPPORTED_RANK_2",
+        "selected_rank": 2
+      },
+      "metadata": {
+        "horizon_seconds": 4.0,
+        "samples_per_curve": 12,
+        "source": "public PVA boundary"
+      },
+      "omitted_gate": "stability"
+    },
+    {
+      "case": "separation_gas",
+      "decision_changed": true,
+      "frozen_transition": {
+        "from_rank": 1,
+        "gates": {
+          "bic": true,
+          "finite": true,
+          "prediction": true,
+          "separation": false,
+          "stability": true
+        },
+        "to_rank": 2
+      },
+      "full_protocol": {
+        "active_gates": [
+          "information",
+          "separation",
+          "stability",
+          "transfer"
+        ],
+        "decision": "INDETERMINATE",
+        "selected_rank": null
+      },
+      "leave_one_gate_out": {
+        "active_gates": [
+          "information",
+          "stability",
+          "transfer"
+        ],
+        "decision": "SUPPORTED_RANK_2",
+        "selected_rank": 2
+      },
+      "metadata": {
+        "doi": "10.24432/C5BG7G",
+        "source": "public UCI gas recovery"
+      },
+      "omitted_gate": "separation"
+    }
+  ],
+  "refitting_performed": false
+}

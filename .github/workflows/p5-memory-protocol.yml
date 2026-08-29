@@ -1,0 +1,33 @@
+name: P5 memory protocol
+
+on:
+  push:
+    paths:
+      - "P5/**"
+      - ".github/workflows/p5-memory-protocol.yml"
+  pull_request:
+    paths:
+      - "P5/**"
+      - ".github/workflows/p5-memory-protocol.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: P5/pyproject.toml
+      - name: Install package and test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install ./P5 torch openpyxl matplotlib
+      - name: Run P5 tests
+        run: python -m unittest discover -s P5/tests -p "test_*.py" -v

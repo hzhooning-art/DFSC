@@ -1,0 +1,690 @@
+{
+  "experiment": "nested_group_sharing_gate",
+  "device": "cuda",
+  "dtype": "torch.float64",
+  "protocol": {
+    "log_spectral_drifts": [
+      0.0,
+      0.05,
+      0.15
+    ],
+    "noise_correlations": [
+      0.0,
+      0.6
+    ],
+    "repeats": 3,
+    "blocks": 4
+  },
+  "records": [
+    {
+      "log_spectral_drift": 0.0,
+      "noise_correlation": 0.0,
+      "repeat": 0,
+      "seed": 41000,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -757.9757244046086,
+      "shared_val_rmse": 0.0012031840212498185,
+      "grouped_val_rmse": 0.005481005827572767,
+      "shared_to_grouped_val_ratio": 0.21951883634151176,
+      "shared_rates": [
+        0.2603986076700725,
+        1.024602992167194
+      ],
+      "grouped_rates": [
+        [
+          0.2168532004204411,
+          1.2158737216476008
+        ],
+        [
+          0.3128148968972004,
+          0.7014669611266029
+        ],
+        [
+          0.27776054684984874,
+          0.8567907923871685
+        ],
+        [
+          0.24468042408933677,
+          1.0577686141739935
+        ]
+      ]
+    },
+    {
+      "log_spectral_drift": 0.0,
+      "noise_correlation": 0.0,
+      "repeat": 1,
+      "seed": 41001,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -496.1378761879023,
+      "shared_val_rmse": 0.001187309784293323,
+      "grouped_val_rmse": 0.0033619249699893593,
+      "shared_to_grouped_val_ratio": 0.35316367702789064,
+      "shared_rates": [
+        0.23229456403998403,
+        0.9558556188946479
+      ],
+      "grouped_rates": [
+        [
+          0.18951679399595261,
+          1.018707924578843
+        ],
+        [
+          0.2502937491795389,
+          0.8581693995548441
+        ],
+        [
+          0.2732733285366161,
+          0.8447971371153136
+        ],
+        [
+          0.2460948338056806,
+          1.0225724231749536
+        ]
+      ]
+    },
+    {
+      "log_spectral_drift": 0.0,
+      "noise_correlation": 0.0,
+      "repeat": 2,
+      "seed": 41002,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -1134.5284699871809,
+      "shared_val_rmse": 0.0012413345815880503,
+      "grouped_val_rmse": 0.010191502881110542,
+      "shared_to_grouped_val_ratio": 0.12180093515832723,
+      "shared_rates": [
+        0.24618513653285992,
+        0.9859186880083707
+      ],
+      "grouped_rates": [
+        [
+          0.17882112448450815,
+          1.6689164517714323
+        ],
+        [
+          0.2915025201296699,
+          0.7416904385213172
+        ],
+        [
+          0.30494577788660926,
+          0.8125462970975549
+        ],
+        [
+          0.2840830857922845,
+          1.0443090982904466
+        ]
+      ]
+    },
+    {
+      "log_spectral_drift": 0.0,
+      "noise_correlation": 0.6,
+      "repeat": 0,
+      "seed": 41060,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -266.32951623261397,
+      "shared_val_rmse": 0.0009368746711032916,
+      "grouped_val_rmse": 0.0025136408957291906,
+      "shared_to_grouped_val_ratio": 0.37271619533843975,
+      "shared_rates": [
+        0.2463554992144416,
+        0.976827538489588
+      ],
+      "grouped_rates": [
+        [
+          0.2072205436045698,
+          1.0077686803918298
+        ],
+        [
+          0.264015184126149,
+          0.8758132852014584
+        ],
+        [
+          0.26623386461867277,
+          0.9757482195354013
+        ],
+        [
+          0.25637868478391096,
+          1.020269769953742
+        ]
+      ]
+    },
+    {
+      "log_spectral_drift": 0.0,
+      "noise_correlation": 0.6,
+      "repeat": 1,
+      "seed": 41061,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -173.60953136309763,
+      "shared_val_rmse": 0.0010585310891772894,
+      "grouped_val_rmse": 0.002291344905220716,
+      "shared_to_grouped_val_ratio": 0.4619693380797796,
+      "shared_rates": [
+        0.23651341010385596,
+        0.9232252688461778
+      ],
+      "grouped_rates": [
+        [
+          0.2066922726882433,
+          0.9430705628182301
+        ],
+        [
+          0.24733255876284638,
+          0.8356362564192671
+        ],
+        [
+          0.25130281598104043,
+          0.8791169520560412
+        ],
+        [
+          0.2551994581566049,
+          0.9868240557980501
+        ]
+      ]
+    },
+    {
+      "log_spectral_drift": 0.0,
+      "noise_correlation": 0.6,
+      "repeat": 2,
+      "seed": 41062,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -1356.9372103151763,
+      "shared_val_rmse": 0.0011616036659165677,
+      "grouped_val_rmse": 0.010338259910212354,
+      "shared_to_grouped_val_ratio": 0.1123596887682337,
+      "shared_rates": [
+        0.24115438652577703,
+        0.9555482300538168
+      ],
+      "grouped_rates": [
+        [
+          0.2454994683998216,
+          1.0232623923520148
+        ],
+        [
+          0.38406932105057245,
+          0.5035060089857256
+        ],
+        [
+          0.40519706715799025,
+          0.5400604743775492
+        ],
+        [
+          0.284434164842393,
+          0.9390009747584304
+        ]
+      ]
+    },
+    {
+      "log_spectral_drift": 0.05,
+      "noise_correlation": 0.0,
+      "repeat": 0,
+      "seed": 41050,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -494.5570400828983,
+      "shared_val_rmse": 0.0022347647567619493,
+      "grouped_val_rmse": 0.003603454220160863,
+      "shared_to_grouped_val_ratio": 0.6201729285913299,
+      "shared_rates": [
+        0.23762540129738632,
+        0.9275075955873182
+      ],
+      "grouped_rates": [
+        [
+          0.20557211005289014,
+          1.188100683842972
+        ],
+        [
+          0.2674066564314545,
+          0.7840789658929296
+        ],
+        [
+          0.27297213748094223,
+          0.9328328242470068
+        ],
+        [
+          0.2746180988494258,
+          0.9439638758322894
+        ]
+      ]
+    },
+    {
+      "log_spectral_drift": 0.05,
+      "noise_correlation": 0.0,
+      "repeat": 1,
+      "seed": 41051,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -203.78892409550463,
+      "shared_val_rmse": 0.002109427898136766,
+      "grouped_val_rmse": 0.002938949942838066,
+      "shared_to_grouped_val_ratio": 0.7177488351842248,
+      "shared_rates": [
+        0.2537492348950251,
+        0.9425892938831308
+      ],
+      "grouped_rates": [
+        [
+          0.1853461424149108,
+          1.055934262299348
+        ],
+        [
+          0.2556476024569101,
+          0.904882569541358
+        ],
+        [
+          0.27124568102021746,
+          0.8736615662864875
+        ],
+        [
+          0.2742003508211342,
+          0.9354195064462615
+        ]
+      ]
+    },
+    {
+      "log_spectral_drift": 0.05,
+      "noise_correlation": 0.0,
+      "repeat": 2,
+      "seed": 41052,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -893.219024423357,
+      "shared_val_rmse": 0.002381360809307754,
+      "grouped_val_rmse": 0.006822813717734292,
+      "shared_to_grouped_val_ratio": 0.34902914073675634,
+      "shared_rates": [
+        0.2488876920212005,
+        0.9574917118046189
+      ],
+      "grouped_rates": [
+        [
+          0.21752386028212417,
+          1.02657464902534
+        ],
+        [
+          0.31466038551111497,
+          0.6344004499729622
+        ],
+        [
+          0.29290551402987897,
+          0.7866922352300088
+        ],
+        [
+          0.27173829810194244,
+          0.9396255487004366
+        ]
+      ]
+    },
+    {
+      "log_spectral_drift": 0.05,
+      "noise_correlation": 0.6,
+      "repeat": 0,
+      "seed": 41110,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -1220.8045953800502,
+      "shared_val_rmse": 0.0021678170916264524,
+      "grouped_val_rmse": 0.006352097283149091,
+      "shared_to_grouped_val_ratio": 0.3412758015179112,
+      "shared_rates": [
+        0.23309944927324727,
+        0.932790698972741
+      ],
+      "grouped_rates": [
+        [
+          0.19081106049834498,
+          2.0382042731860723
+        ],
+        [
+          0.261492855494031,
+          0.8440732947201608
+        ],
+        [
+          0.26145636155739715,
+          0.8972796868450154
+        ],
+        [
+          0.2752775582165079,
+          0.9912753799337525
+        ]
+      ]
+    },
+    {
+      "log_spectral_drift": 0.05,
+      "noise_correlation": 0.6,
+      "repeat": 1,
+      "seed": 41111,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -900.7837348732319,
+      "shared_val_rmse": 0.0023078939163501642,
+      "grouped_val_rmse": 0.0047638869123456115,
+      "shared_to_grouped_val_ratio": 0.48445606682418463,
+      "shared_rates": [
+        0.24273306720869867,
+        0.9505848986296969
+      ],
+      "grouped_rates": [
+        [
+          0.2039884937869309,
+          1.2372821394420417
+        ],
+        [
+          0.2978545159522996,
+          0.7025026496145935
+        ],
+        [
+          0.2466210387334237,
+          0.9119335949651933
+        ],
+        [
+          0.2782893750878218,
+          0.968819023417909
+        ]
+      ]
+    },
+    {
+      "log_spectral_drift": 0.05,
+      "noise_correlation": 0.6,
+      "repeat": 2,
+      "seed": 41112,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -841.4846169932352,
+      "shared_val_rmse": 0.002377428067714506,
+      "grouped_val_rmse": 0.006857026769878896,
+      "shared_to_grouped_val_ratio": 0.3467141295346721,
+      "shared_rates": [
+        0.24509614727850845,
+        0.9127981078454798
+      ],
+      "grouped_rates": [
+        [
+          0.22399263431799216,
+          1.1028854892000872
+        ],
+        [
+          0.33274897827894634,
+          0.5894765637322499
+        ],
+        [
+          0.27838507403501306,
+          0.8357363737017577
+        ],
+        [
+          0.2794102288592948,
+          0.936661643238761
+        ]
+      ]
+    },
+    {
+      "log_spectral_drift": 0.15,
+      "noise_correlation": 0.0,
+      "repeat": 0,
+      "seed": 41150,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 209.4655745856653,
+      "shared_val_rmse": 0.005936618228667466,
+      "grouped_val_rmse": 0.003159671032283619,
+      "shared_to_grouped_val_ratio": 1.878872252209382,
+      "shared_rates": [
+        0.2509503076891459,
+        0.8733281961091979
+      ],
+      "grouped_rates": [
+        [
+          0.16316269046992543,
+          1.314803235675098
+        ],
+        [
+          0.23316873808573882,
+          0.9408396431012718
+        ],
+        [
+          0.28285214872349007,
+          0.8746964592004526
+        ],
+        [
+          0.3165073714898843,
+          0.8136133212183271
+        ]
+      ]
+    },
+    {
+      "log_spectral_drift": 0.15,
+      "noise_correlation": 0.0,
+      "repeat": 1,
+      "seed": 41151,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 113.47096260742182,
+      "shared_val_rmse": 0.006433713003257818,
+      "grouped_val_rmse": 0.005322450264417977,
+      "shared_to_grouped_val_ratio": 1.2087878108075398,
+      "shared_rates": [
+        0.25248551504826183,
+        0.8652780598925227
+      ],
+      "grouped_rates": [
+        [
+          0.1647666083782396,
+          1.4804973273395048
+        ],
+        [
+          0.25081010495801126,
+          0.8702870966948736
+        ],
+        [
+          0.29470022255386796,
+          0.8480760346283867
+        ],
+        [
+          0.3411630355034354,
+          0.7582332805486337
+        ]
+      ]
+    },
+    {
+      "log_spectral_drift": 0.15,
+      "noise_correlation": 0.0,
+      "repeat": 2,
+      "seed": 41152,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": -304.0839536571657,
+      "shared_val_rmse": 0.005973828921162229,
+      "grouped_val_rmse": 0.006581235770398281,
+      "shared_to_grouped_val_ratio": 0.9077062621023083,
+      "shared_rates": [
+        0.25549510865101765,
+        0.8613522708868891
+      ],
+      "grouped_rates": [
+        [
+          0.17389309472666417,
+          1.7969065291830968
+        ],
+        [
+          0.28011196948667516,
+          0.840539230328117
+        ],
+        [
+          0.3239002108487491,
+          0.7640296269775367
+        ],
+        [
+          0.32967326898154176,
+          0.776022326656818
+        ]
+      ]
+    },
+    {
+      "log_spectral_drift": 0.15,
+      "noise_correlation": 0.6,
+      "repeat": 0,
+      "seed": 41210,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": -428.86438854088556,
+      "shared_val_rmse": 0.00702167215279657,
+      "grouped_val_rmse": 0.00701426130755071,
+      "shared_to_grouped_val_ratio": 1.0010565396584075,
+      "shared_rates": [
+        0.250872042183383,
+        0.9088557560373149
+      ],
+      "grouped_rates": [
+        [
+          0.20991872780425785,
+          1.8963949849968371
+        ],
+        [
+          0.2882901329350429,
+          0.6749370456929555
+        ],
+        [
+          0.283546728448235,
+          0.913175919389228
+        ],
+        [
+          0.31524117035852084,
+          0.8106469952237941
+        ]
+      ]
+    },
+    {
+      "log_spectral_drift": 0.15,
+      "noise_correlation": 0.6,
+      "repeat": 1,
+      "seed": 41211,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 639.8426459683797,
+      "shared_val_rmse": 0.0060540643223309515,
+      "grouped_val_rmse": 0.001694539686748776,
+      "shared_to_grouped_val_ratio": 3.572689603951717,
+      "shared_rates": [
+        0.2530764460370768,
+        0.8539115612739883
+      ],
+      "grouped_rates": [
+        [
+          0.168506634132617,
+          1.0901786575689856
+        ],
+        [
+          0.23938486720034718,
+          1.046060778038449
+        ],
+        [
+          0.2642207535303663,
+          0.8576602184978513
+        ],
+        [
+          0.3283405689241255,
+          0.7926315730401777
+        ]
+      ]
+    },
+    {
+      "log_spectral_drift": 0.15,
+      "noise_correlation": 0.6,
+      "repeat": 2,
+      "seed": 41212,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 716.7178281049382,
+      "shared_val_rmse": 0.005946996870769961,
+      "grouped_val_rmse": 0.001682698860686111,
+      "shared_to_grouped_val_ratio": 3.534201519780614,
+      "shared_rates": [
+        0.2377597577602161,
+        0.9119851366047447
+      ],
+      "grouped_rates": [
+        [
+          0.16915767880824387,
+          1.233609679058741
+        ],
+        [
+          0.2234715201097698,
+          1.076181260734975
+        ],
+        [
+          0.2653942474818249,
+          0.96667131662254
+        ],
+        [
+          0.29911048612876695,
+          0.8512033179466698
+        ]
+      ]
+    }
+  ],
+  "summary": {
+    "rows": [
+      {
+        "log_spectral_drift": 0.0,
+        "noise_correlation": 0.0,
+        "trials": 3,
+        "refuse_fraction": 0.0,
+        "scope_limited_fraction": 0.0,
+        "median_group_bic_support": -757.9757244046086,
+        "median_shared_val_rmse": 0.0012031840212498185,
+        "median_validation_ratio": 0.21951883634151176
+      },
+      {
+        "log_spectral_drift": 0.0,
+        "noise_correlation": 0.6,
+        "trials": 3,
+        "refuse_fraction": 0.0,
+        "scope_limited_fraction": 0.0,
+        "median_group_bic_support": -266.32951623261397,
+        "median_shared_val_rmse": 0.0010585310891772894,
+        "median_validation_ratio": 0.37271619533843975
+      },
+      {
+        "log_spectral_drift": 0.05,
+        "noise_correlation": 0.0,
+        "trials": 3,
+        "refuse_fraction": 0.0,
+        "scope_limited_fraction": 0.0,
+        "median_group_bic_support": -494.5570400828983,
+        "median_shared_val_rmse": 0.0022347647567619493,
+        "median_validation_ratio": 0.6201729285913299
+      },
+      {
+        "log_spectral_drift": 0.05,
+        "noise_correlation": 0.6,
+        "trials": 3,
+        "refuse_fraction": 0.0,
+        "scope_limited_fraction": 0.0,
+        "median_group_bic_support": -900.7837348732319,
+        "median_shared_val_rmse": 0.0023078939163501642,
+        "median_validation_ratio": 0.3467141295346721
+      },
+      {
+        "log_spectral_drift": 0.15,
+        "noise_correlation": 0.0,
+        "trials": 3,
+        "refuse_fraction": 1.0,
+        "scope_limited_fraction": 0.0,
+        "median_group_bic_support": 113.47096260742182,
+        "median_shared_val_rmse": 0.005973828921162229,
+        "median_validation_ratio": 1.2087878108075398
+      },
+      {
+        "log_spectral_drift": 0.15,
+        "noise_correlation": 0.6,
+        "trials": 3,
+        "refuse_fraction": 1.0,
+        "scope_limited_fraction": 0.0,
+        "median_group_bic_support": 639.8426459683797,
+        "median_shared_val_rmse": 0.0060540643223309515,
+        "median_validation_ratio": 3.534201519780614
+      }
+    ],
+    "route_pass": true,
+    "checks": {
+      "mild_sharing_retained": true,
+      "severe_heterogeneity_refused": true
+    },
+    "frozen_rule": {
+      "bic_evidence_limit": 6.0,
+      "validation_rmse_limit": 0.003,
+      "relative_degradation_limit": 1.5,
+      "mild_refuse_fraction_max": 0.3333333333333333,
+      "severe_refuse_fraction_min": 0.6666666666666666
+    }
+  }
+}

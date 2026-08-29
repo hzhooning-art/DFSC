@@ -1,0 +1,4901 @@
+{
+  "calibration": {
+    "calibration_gap_ratio": 36.47021925075346,
+    "calibration_overlap": false,
+    "largest_coalesced_index": 0.08127892515805972,
+    "rule": "geometric midpoint between the smallest separated and largest coalesced calibration indices",
+    "smallest_separated_index": 2.964260220980019,
+    "threshold": 0.4908481278868735
+  },
+  "calibration_rows": [
+    {
+      "effective_sample_size": 267.5308354239746,
+      "fit_rmse": 0.005490371770651516,
+      "fitted_rates": [
+        0.12303562266381837,
+        0.7273177527397241
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 3.6597261544851754,
+      "regime": "separated",
+      "residual_rho_ar1": 0.4832972109141681,
+      "seed": 6601
+    },
+    {
+      "effective_sample_size": 270.3416020420938,
+      "fit_rmse": 0.0054177751684988925,
+      "fitted_rates": [
+        0.11994963739854586,
+        0.7223474880281952
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 3.63154013132566,
+      "regime": "separated",
+      "residual_rho_ar1": 0.47928195978969484,
+      "seed": 6602
+    },
+    {
+      "effective_sample_size": 284.182148227003,
+      "fit_rmse": 0.005601456345810435,
+      "fitted_rates": [
+        0.13017815750923362,
+        0.7415170424886945
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 2.964260220980019,
+      "regime": "separated",
+      "residual_rho_ar1": 0.4598232849590372,
+      "seed": 6603
+    },
+    {
+      "effective_sample_size": 306.9204865736555,
+      "fit_rmse": 0.00550261161478868,
+      "fitted_rates": [
+        0.11955232283597164,
+        0.7174762264841201
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 3.3214919634923366,
+      "regime": "separated",
+      "residual_rho_ar1": 0.428942902461605,
+      "seed": 6604
+    },
+    {
+      "effective_sample_size": 242.0083219182914,
+      "fit_rmse": 0.005719915429974141,
+      "fitted_rates": [
+        0.11928294517593226,
+        0.7220870038934137
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 3.1618220908808086,
+      "regime": "separated",
+      "residual_rho_ar1": 0.5207795487097588,
+      "seed": 6605
+    },
+    {
+      "effective_sample_size": 288.3325868264471,
+      "fit_rmse": 0.005396505069281836,
+      "fitted_rates": [
+        0.11417337207960764,
+        0.697031187217398
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 3.17393890079236,
+      "regime": "separated",
+      "residual_rho_ar1": 0.4540874902047883,
+      "seed": 6606
+    },
+    {
+      "effective_sample_size": 285.3478343414997,
+      "fit_rmse": 0.005637815582192975,
+      "fitted_rates": [
+        0.12329312620605339,
+        0.7251890723736548
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 3.030513577350629,
+      "regime": "separated",
+      "residual_rho_ar1": 0.4582077732757956,
+      "seed": 6607
+    },
+    {
+      "effective_sample_size": 274.69041908553044,
+      "fit_rmse": 0.005466251707546138,
+      "fitted_rates": [
+        0.11845534659454776,
+        0.710819384138682
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 3.643261385180964,
+      "regime": "separated",
+      "residual_rho_ar1": 0.4731122218876013,
+      "seed": 6608
+    },
+    {
+      "effective_sample_size": 304.01286170675274,
+      "fit_rmse": 0.00510418396187757,
+      "fitted_rates": [
+        0.11667370458622735,
+        0.7107156005512112
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 3.0812727200146597,
+      "regime": "separated",
+      "residual_rho_ar1": 0.4328186301370795,
+      "seed": 6609
+    },
+    {
+      "effective_sample_size": 277.20491710201867,
+      "fit_rmse": 0.00540503186818513,
+      "fitted_rates": [
+        0.12180782150858599,
+        0.7239179322511611
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 4.645232421530819,
+      "regime": "separated",
+      "residual_rho_ar1": 0.4695682873926593,
+      "seed": 6610
+    },
+    {
+      "effective_sample_size": 278.39259220015333,
+      "fit_rmse": 0.005576398009731708,
+      "fitted_rates": [
+        0.11839922181630348,
+        0.7098808572558576
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 3.5605171361053034,
+      "regime": "separated",
+      "residual_rho_ar1": 0.4679002999919889,
+      "seed": 6611
+    },
+    {
+      "effective_sample_size": 259.4063616358922,
+      "fit_rmse": 0.0052068815155783535,
+      "fitted_rates": [
+        0.1203401949805936,
+        0.7164730689145656
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 3.411619997135717,
+      "regime": "separated",
+      "residual_rho_ar1": 0.4950267560678691,
+      "seed": 6612
+    },
+    {
+      "effective_sample_size": 265.0385598814135,
+      "fit_rmse": 0.005511229997210234,
+      "fitted_rates": [
+        0.12076747664631331,
+        0.7247740665581633
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 3.4368236237087926,
+      "regime": "separated",
+      "residual_rho_ar1": 0.48687576596978466,
+      "seed": 6613
+    },
+    {
+      "effective_sample_size": 271.01824796855647,
+      "fit_rmse": 0.005551712350137918,
+      "fitted_rates": [
+        0.11823904953644583,
+        0.7215862029714478
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 3.4389575554664886,
+      "regime": "separated",
+      "residual_rho_ar1": 0.4783185983529363,
+      "seed": 6614
+    },
+    {
+      "effective_sample_size": 259.520402822507,
+      "fit_rmse": 0.005618445174001792,
+      "fitted_rates": [
+        0.12819739198052846,
+        0.7401544687709107
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 3.502558947190489,
+      "regime": "separated",
+      "residual_rho_ar1": 0.4948608278538751,
+      "seed": 6615
+    },
+    {
+      "effective_sample_size": 248.0641628426427,
+      "fit_rmse": 0.005519253909516685,
+      "fitted_rates": [
+        0.12346659626779352,
+        0.7241784365978285
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 3.3422242597011205,
+      "regime": "separated",
+      "residual_rho_ar1": 0.5117155551503094,
+      "seed": 6616
+    },
+    {
+      "effective_sample_size": 276.9066918085814,
+      "fit_rmse": 0.005590073068227903,
+      "fitted_rates": [
+        0.12320215523659662,
+        0.7197793779133126
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 3.3837285044977183,
+      "regime": "separated",
+      "residual_rho_ar1": 0.4699877147321236,
+      "seed": 6617
+    },
+    {
+      "effective_sample_size": 309.0426595858322,
+      "fit_rmse": 0.00534939796464657,
+      "fitted_rates": [
+        0.12463306971441795,
+        0.7221512582050453
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 3.5667389650608436,
+      "regime": "separated",
+      "residual_rho_ar1": 0.42612735561528825,
+      "seed": 6618
+    },
+    {
+      "effective_sample_size": 263.7150830878371,
+      "fit_rmse": 0.005653915009673378,
+      "fitted_rates": [
+        0.12696196852514943,
+        0.7319311392631973
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 3.511977122742323,
+      "regime": "separated",
+      "residual_rho_ar1": 0.48878311966020715,
+      "seed": 6619
+    },
+    {
+      "effective_sample_size": 268.3792706799975,
+      "fit_rmse": 0.00572749984057994,
+      "fitted_rates": [
+        0.11764957099014148,
+        0.7165146280741617
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 3.160795134274629,
+      "regime": "separated",
+      "residual_rho_ar1": 0.48208290483481725,
+      "seed": 6620
+    },
+    {
+      "effective_sample_size": 265.77444117239037,
+      "fit_rmse": 0.005502196068706329,
+      "fitted_rates": [
+        0.3166858874870957,
+        0.3608186354931318
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 0.012075598121065767,
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.4858173493417404,
+      "seed": 6601
+    },
+    {
+      "effective_sample_size": 275.7559265040442,
+      "fit_rmse": 0.005382962990941622,
+      "fitted_rates": [
+        0.1273313268770137,
+        0.3574883133346442
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 0.048039100024184725,
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.47160841054544034,
+      "seed": 6602
+    },
+    {
+      "effective_sample_size": 278.68956774351886,
+      "fit_rmse": 0.0056321059279262784,
+      "fitted_rates": [
+        0.3527092387316727,
+        0.6853939412116988
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 0.08127892515805972,
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.467483815006726,
+      "seed": 6603
+    },
+    {
+      "effective_sample_size": 305.7694475154072,
+      "fit_rmse": 0.005502780105749266,
+      "fitted_rates": [
+        0.27752196476641133,
+        0.3618227577057408
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 0.03633378391704817,
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.4304746736407402,
+      "seed": 6604
+    },
+    {
+      "effective_sample_size": 245.99713370799893,
+      "fit_rmse": 0.0056847992621683555,
+      "fitted_rates": [
+        0.16995818786346942,
+        0.3604013360022375
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 0.058272627599968714,
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.5147971813126667,
+      "seed": 6605
+    },
+    {
+      "effective_sample_size": 280.59812810435795,
+      "fit_rmse": 0.005440100482253832,
+      "fitted_rates": [
+        0.3490894241051553,
+        0.3581519345887872
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 0.0033680017471907357,
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.46481283804765205,
+      "seed": 6606
+    },
+    {
+      "effective_sample_size": 286.09390045691526,
+      "fit_rmse": 0.005631797685082797,
+      "fitted_rates": [
+        0.3499254063412986,
+        0.35793365993529896
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 0.0022289489895322384,
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.4571756836219185,
+      "seed": 6607
+    },
+    {
+      "effective_sample_size": 273.9752223328708,
+      "fit_rmse": 0.005465256968930889,
+      "fitted_rates": [
+        0.3475710918249546,
+        0.36340291138278374
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 0.008603871248819244,
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.4741233448536911,
+      "seed": 6608
+    },
+    {
+      "effective_sample_size": 302.205199637491,
+      "fit_rmse": 0.005104023452001926,
+      "fitted_rates": [
+        0.31539234244308595,
+        0.3608778423169939
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 0.017337805485089054,
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.43523877525570515,
+      "seed": 6609
+    },
+    {
+      "effective_sample_size": 278.2082130496389,
+      "fit_rmse": 0.005395645275032342,
+      "fitted_rates": [
+        0.34543191189692013,
+        0.3843537383390556
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 0.020561165508469505,
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.46815899630786223,
+      "seed": 6610
+    },
+    {
+      "effective_sample_size": 277.51913062946227,
+      "fit_rmse": 0.005574915096592461,
+      "fitted_rates": [
+        0.3477503756740352,
+        0.35999664516753127
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 0.006707942206741674,
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.469126632886421,
+      "seed": 6611
+    },
+    {
+      "effective_sample_size": 260.2378573745837,
+      "fit_rmse": 0.005202776556579662,
+      "fitted_rates": [
+        0.35098612586182276,
+        0.3638918841181541
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 0.006179066318595261,
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.49381778640391005,
+      "seed": 6612
+    },
+    {
+      "effective_sample_size": 264.9195130715612,
+      "fit_rmse": 0.0055082422100916,
+      "fitted_rates": [
+        0.34787964109030145,
+        0.4375262353631279
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 0.026679808145158586,
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.48704713248416004,
+      "seed": 6613
+    },
+    {
+      "effective_sample_size": 272.2187296773442,
+      "fit_rmse": 0.005541176053860023,
+      "fitted_rates": [
+        0.33093436672554344,
+        0.38711286837450654
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 0.024463772770317707,
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.47661252021143447,
+      "seed": 6614
+    },
+    {
+      "effective_sample_size": 256.0888688236156,
+      "fit_rmse": 0.005642994605781763,
+      "fitted_rates": [
+        0.35012686072323945,
+        0.5131727455620081
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 0.0419257678923797,
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.4998698323558809,
+      "seed": 6615
+    },
+    {
+      "effective_sample_size": 248.15629943145248,
+      "fit_rmse": 0.005513636399121747,
+      "fitted_rates": [
+        0.3483988067448576,
+        0.3623641286665249
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 0.005794903762560354,
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.5115784853761219,
+      "seed": 6616
+    },
+    {
+      "effective_sample_size": 273.84996332408156,
+      "fit_rmse": 0.005610059717852853,
+      "fitted_rates": [
+        0.3463235377062555,
+        0.35967202819118993
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 0.006083609103521265,
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.47430057500727324,
+      "seed": 6617
+    },
+    {
+      "effective_sample_size": 306.43290016483417,
+      "fit_rmse": 0.005364257730051002,
+      "fitted_rates": [
+        0.34567006564626807,
+        0.361460223219111
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 0.008319730708437386,
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.4295913683994175,
+      "seed": 6618
+    },
+    {
+      "effective_sample_size": 261.2364062919637,
+      "fit_rmse": 0.005680468864365133,
+      "fitted_rates": [
+        0.3504746241420732,
+        0.36253820816788873
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 0.0050008565793596155,
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.4923685079638375,
+      "seed": 6619
+    },
+    {
+      "effective_sample_size": 268.1190186095471,
+      "fit_rmse": 0.005725502995538507,
+      "fitted_rates": [
+        0.25428044959761836,
+        0.3611764610845162
+      ],
+      "noise_generator": "ar1",
+      "normalized_local_boundary_index": 0.04110879581237047,
+      "regime": "coalesced",
+      "residual_rho_ar1": 0.48245517398308563,
+      "seed": 6620
+    }
+  ],
+  "claim_boundary": "The frozen threshold is design conditional and is not a universal identifiability boundary.",
+  "experiment": "submission_calibration_and_noise_transfer",
+  "predeclared_design": {
+    "calibration_noise_generator": "ar1",
+    "calibration_seeds": [
+      6601,
+      6602,
+      6603,
+      6604,
+      6605,
+      6606,
+      6607,
+      6608,
+      6609,
+      6610,
+      6611,
+      6612,
+      6613,
+      6614,
+      6615,
+      6616,
+      6617,
+      6618,
+      6619,
+      6620
+    ],
+    "coalesced_rates": [
+      0.34,
+      0.37
+    ],
+    "curves_per_group": 3,
+    "evaluation_seeds": [
+      6701,
+      6702,
+      6703,
+      6704,
+      6705,
+      6706,
+      6707,
+      6708,
+      6709,
+      6710,
+      6711,
+      6712,
+      6713,
+      6714,
+      6715,
+      6716,
+      6717,
+      6718,
+      6719,
+      6720,
+      6721,
+      6722,
+      6723,
+      6724,
+      6725,
+      6726,
+      6727,
+      6728,
+      6729,
+      6730,
+      6731,
+      6732,
+      6733,
+      6734,
+      6735,
+      6736,
+      6737,
+      6738,
+      6739,
+      6740
+    ],
+    "groups": 4,
+    "noise_generators": [
+      "iid_gaussian",
+      "ar1",
+      "ar2",
+      "heteroscedastic"
+    ],
+    "separated_rates": [
+      0.12,
+      0.72
+    ],
+    "threshold_retuning_on_evaluation": false,
+    "time_points": 64,
+    "true_rank": 2
+  },
+  "principal_evaluation": {
+    "coalesced_refusal": {
+      "n": 40,
+      "rate": 1.0,
+      "successes": 40,
+      "wilson_95": [
+        0.9123783988027135,
+        1.0
+      ]
+    },
+    "separated_support": {
+      "n": 40,
+      "rate": 1.0,
+      "successes": 40,
+      "wilson_95": [
+        0.9123783988027135,
+        1.0
+      ]
+    }
+  },
+  "schema_version": "1.0.0",
+  "transfer_evaluation": {
+    "ar1": {
+      "coalesced_refusal": {
+        "n": 40,
+        "rate": 1.0,
+        "successes": 40,
+        "wilson_95": [
+          0.9123783988027135,
+          1.0
+        ]
+      },
+      "frozen_threshold": 0.4908481278868735,
+      "separated_support": {
+        "n": 40,
+        "rate": 1.0,
+        "successes": 40,
+        "wilson_95": [
+          0.9123783988027135,
+          1.0
+        ]
+      },
+      "threshold_source": "AR(1) calibration seeds only"
+    },
+    "ar2": {
+      "coalesced_refusal": {
+        "n": 40,
+        "rate": 1.0,
+        "successes": 40,
+        "wilson_95": [
+          0.9123783988027135,
+          1.0
+        ]
+      },
+      "frozen_threshold": 0.4908481278868735,
+      "separated_support": {
+        "n": 40,
+        "rate": 1.0,
+        "successes": 40,
+        "wilson_95": [
+          0.9123783988027135,
+          1.0
+        ]
+      },
+      "threshold_source": "AR(1) calibration seeds only"
+    },
+    "heteroscedastic": {
+      "coalesced_refusal": {
+        "n": 40,
+        "rate": 1.0,
+        "successes": 40,
+        "wilson_95": [
+          0.9123783988027135,
+          1.0
+        ]
+      },
+      "frozen_threshold": 0.4908481278868735,
+      "separated_support": {
+        "n": 40,
+        "rate": 1.0,
+        "successes": 40,
+        "wilson_95": [
+          0.9123783988027135,
+          1.0
+        ]
+      },
+      "threshold_source": "AR(1) calibration seeds only"
+    },
+    "iid_gaussian": {
+      "coalesced_refusal": {
+        "n": 40,
+        "rate": 1.0,
+        "successes": 40,
+        "wilson_95": [
+          0.9123783988027135,
+          1.0
+        ]
+      },
+      "frozen_threshold": 0.4908481278868735,
+      "separated_support": {
+        "n": 40,
+        "rate": 1.0,
+        "successes": 40,
+        "wilson_95": [
+          0.9123783988027135,
+          1.0
+        ]
+      },
+      "threshold_source": "AR(1) calibration seeds only"
+    }
+  },
+  "transfer_rows": {
+    "ar1": [
+      {
+        "effective_sample_size": 271.5792445811883,
+        "fit_rmse": 0.005689160848789698,
+        "fitted_rates": [
+          0.12523074650011587,
+          0.73460984363025
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.3253388944567477,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4775208412503494,
+        "seed": 6701
+      },
+      {
+        "effective_sample_size": 260.42484046355145,
+        "fit_rmse": 0.005786412811153959,
+        "fitted_rates": [
+          0.12327110993236531,
+          0.7295102528479576
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.2417870855041344,
+        "regime": "separated",
+        "residual_rho_ar1": 0.49354618788443944,
+        "seed": 6702
+      },
+      {
+        "effective_sample_size": 322.71831420780626,
+        "fit_rmse": 0.005419770873143976,
+        "fitted_rates": [
+          0.12076710539176448,
+          0.7159120760603138
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.720270967900254,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4082462721968723,
+        "seed": 6703
+      },
+      {
+        "effective_sample_size": 265.60407015194625,
+        "fit_rmse": 0.005505180285018317,
+        "fitted_rates": [
+          0.11758197915389862,
+          0.7210293338381978
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.6311496069849527,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4860622595789492,
+        "seed": 6704
+      },
+      {
+        "effective_sample_size": 273.625941234589,
+        "fit_rmse": 0.005421353009134705,
+        "fitted_rates": [
+          0.11911357459764171,
+          0.7259184622548444
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.5087156993778574,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4746176522633962,
+        "seed": 6705
+      },
+      {
+        "effective_sample_size": 265.40360406779115,
+        "fit_rmse": 0.005651690663021209,
+        "fitted_rates": [
+          0.12337426766215986,
+          0.7261808416308472
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.4204848825047973,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4863505352157052,
+        "seed": 6706
+      },
+      {
+        "effective_sample_size": 261.9587786858454,
+        "fit_rmse": 0.005454673055339735,
+        "fitted_rates": [
+          0.12067546190389836,
+          0.7262311814662326
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.220208110085985,
+        "regime": "separated",
+        "residual_rho_ar1": 0.49132181965556665,
+        "seed": 6707
+      },
+      {
+        "effective_sample_size": 263.6158748677849,
+        "fit_rmse": 0.005656329415155437,
+        "fitted_rates": [
+          0.12500231438877388,
+          0.7389128528546008
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.174962837097162,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4889262926443998,
+        "seed": 6708
+      },
+      {
+        "effective_sample_size": 262.3801519968528,
+        "fit_rmse": 0.005716789280836824,
+        "fitted_rates": [
+          0.11381547545520072,
+          0.7066863319493855
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 2.717760359965915,
+        "regime": "separated",
+        "residual_rho_ar1": 0.49071194454131095,
+        "seed": 6709
+      },
+      {
+        "effective_sample_size": 273.02678221956893,
+        "fit_rmse": 0.0055840067597348695,
+        "fitted_rates": [
+          0.11475988787422285,
+          0.7208229955921767
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.49936016608811,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4754663628586968,
+        "seed": 6710
+      },
+      {
+        "effective_sample_size": 326.09273272485547,
+        "fit_rmse": 0.005355731970261171,
+        "fitted_rates": [
+          0.12291861010198118,
+          0.725507023045263
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.7508382180296427,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4039029362479791,
+        "seed": 6711
+      },
+      {
+        "effective_sample_size": 305.01909575565423,
+        "fit_rmse": 0.005469330361137201,
+        "fitted_rates": [
+          0.1209655631737014,
+          0.7238795223294799
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.1003903622016447,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4314749905902652,
+        "seed": 6712
+      },
+      {
+        "effective_sample_size": 259.59049696093933,
+        "fit_rmse": 0.00569235973542317,
+        "fitted_rates": [
+          0.12168869218409867,
+          0.7306863596238076
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.6162953988723094,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4947588602100378,
+        "seed": 6713
+      },
+      {
+        "effective_sample_size": 290.35133135020584,
+        "fit_rmse": 0.005363873863989603,
+        "fitted_rates": [
+          0.11949841530897108,
+          0.7129523272717545
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.338326282143587,
+        "regime": "separated",
+        "residual_rho_ar1": 0.45131390163267193,
+        "seed": 6714
+      },
+      {
+        "effective_sample_size": 252.57222357535423,
+        "fit_rmse": 0.005733832049560432,
+        "fitted_rates": [
+          0.11629329767782881,
+          0.712002883205483
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 2.659064461613951,
+        "regime": "separated",
+        "residual_rho_ar1": 0.5050380213356738,
+        "seed": 6715
+      },
+      {
+        "effective_sample_size": 319.24018985328996,
+        "fit_rmse": 0.005420079039409121,
+        "fitted_rates": [
+          0.11907147320647922,
+          0.7188561634270398
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.0633072115244113,
+        "regime": "separated",
+        "residual_rho_ar1": 0.41275130770070667,
+        "seed": 6716
+      },
+      {
+        "effective_sample_size": 283.0748292805959,
+        "fit_rmse": 0.005496085566088023,
+        "fitted_rates": [
+          0.12382214359546842,
+          0.7198987107739709
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.2011905062997363,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4613612249199319,
+        "seed": 6717
+      },
+      {
+        "effective_sample_size": 278.19919318227824,
+        "fit_rmse": 0.005660068735813551,
+        "fitted_rates": [
+          0.12684146347307143,
+          0.7389368155186474
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.421317077040022,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4681716541262752,
+        "seed": 6718
+      },
+      {
+        "effective_sample_size": 288.8795732053067,
+        "fit_rmse": 0.005176794743833877,
+        "fitted_rates": [
+          0.11793191762918247,
+          0.7202892521565067
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.638559676147807,
+        "regime": "separated",
+        "residual_rho_ar1": 0.45333492948644644,
+        "seed": 6719
+      },
+      {
+        "effective_sample_size": 309.00340267107794,
+        "fit_rmse": 0.0054012788702868676,
+        "fitted_rates": [
+          0.12647784027705875,
+          0.7322695611506866
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.7659793719181116,
+        "regime": "separated",
+        "residual_rho_ar1": 0.42617933814374576,
+        "seed": 6720
+      },
+      {
+        "effective_sample_size": 288.0444248449969,
+        "fit_rmse": 0.005590102634492184,
+        "fitted_rates": [
+          0.11374760186780143,
+          0.7069578494777657
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.2243931586038737,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4544842658730474,
+        "seed": 6721
+      },
+      {
+        "effective_sample_size": 269.74613587938376,
+        "fit_rmse": 0.005601093809708411,
+        "fitted_rates": [
+          0.1220558837071406,
+          0.7259223795111055
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 2.9640241356668318,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4801307823694251,
+        "seed": 6722
+      },
+      {
+        "effective_sample_size": 296.874053178242,
+        "fit_rmse": 0.005442624071711582,
+        "fitted_rates": [
+          0.12426478240262076,
+          0.7287293355059374
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.5860403096466635,
+        "regime": "separated",
+        "residual_rho_ar1": 0.44242410209510435,
+        "seed": 6723
+      },
+      {
+        "effective_sample_size": 272.5078241434749,
+        "fit_rmse": 0.005559623609594218,
+        "fitted_rates": [
+          0.11595556741594049,
+          0.709474583140031
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.504741805001915,
+        "regime": "separated",
+        "residual_rho_ar1": 0.47620225851199555,
+        "seed": 6724
+      },
+      {
+        "effective_sample_size": 311.18267754260415,
+        "fit_rmse": 0.005216356438613533,
+        "fitted_rates": [
+          0.11555977448011723,
+          0.7107389237980188
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.712813366930644,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4232993467775168,
+        "seed": 6725
+      },
+      {
+        "effective_sample_size": 225.83912021244524,
+        "fit_rmse": 0.0056584024259674045,
+        "fitted_rates": [
+          0.11602009478253997,
+          0.7263301595910537
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.3177065960068086,
+        "regime": "separated",
+        "residual_rho_ar1": 0.5455217738577862,
+        "seed": 6726
+      },
+      {
+        "effective_sample_size": 261.5000492668753,
+        "fit_rmse": 0.005833972727373783,
+        "fitted_rates": [
+          0.11931345559408758,
+          0.7137095179099756
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.00523741687523,
+        "regime": "separated",
+        "residual_rho_ar1": 0.49198632976638706,
+        "seed": 6727
+      },
+      {
+        "effective_sample_size": 255.81260456596831,
+        "fit_rmse": 0.005416816893280428,
+        "fitted_rates": [
+          0.12092348213635506,
+          0.7258978084063581
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.856991325375477,
+        "regime": "separated",
+        "residual_rho_ar1": 0.5002745552748559,
+        "seed": 6728
+      },
+      {
+        "effective_sample_size": 293.40949644537477,
+        "fit_rmse": 0.005536487770358909,
+        "fitted_rates": [
+          0.11842008191698043,
+          0.7054726809865232
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.240208272234937,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4471323321903686,
+        "seed": 6729
+      },
+      {
+        "effective_sample_size": 264.8158807049715,
+        "fit_rmse": 0.005344417829573404,
+        "fitted_rates": [
+          0.12044203428699127,
+          0.720150636338481
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.612676322154451,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4871963422479222,
+        "seed": 6730
+      },
+      {
+        "effective_sample_size": 285.8075251413832,
+        "fit_rmse": 0.005658907792869679,
+        "fitted_rates": [
+          0.12029936252455826,
+          0.7217123086466518
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.290774376427929,
+        "regime": "separated",
+        "residual_rho_ar1": 0.45757167542898675,
+        "seed": 6731
+      },
+      {
+        "effective_sample_size": 259.08974201632896,
+        "fit_rmse": 0.0056014335915289355,
+        "fitted_rates": [
+          0.1262641001426833,
+          0.7383117291660447
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.5538628978349367,
+        "regime": "separated",
+        "residual_rho_ar1": 0.49548762602243995,
+        "seed": 6732
+      },
+      {
+        "effective_sample_size": 248.17099644482803,
+        "fit_rmse": 0.0057954154527614645,
+        "fitted_rates": [
+          0.11924863823360239,
+          0.7199477042737659
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.60986945228523,
+        "regime": "separated",
+        "residual_rho_ar1": 0.511556623219757,
+        "seed": 6733
+      },
+      {
+        "effective_sample_size": 233.6332599731397,
+        "fit_rmse": 0.005887894219768395,
+        "fitted_rates": [
+          0.12096849730729549,
+          0.719141287089359
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 2.882965494856314,
+        "regime": "separated",
+        "residual_rho_ar1": 0.5334954033387331,
+        "seed": 6734
+      },
+      {
+        "effective_sample_size": 268.56491121653244,
+        "fit_rmse": 0.005248237582971647,
+        "fitted_rates": [
+          0.1232077355073618,
+          0.7232681926898198
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.4507594866811706,
+        "regime": "separated",
+        "residual_rho_ar1": 0.481817475566794,
+        "seed": 6735
+      },
+      {
+        "effective_sample_size": 297.50389311905735,
+        "fit_rmse": 0.005576420815669692,
+        "fitted_rates": [
+          0.12049256136597278,
+          0.7161674763774297
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.208199344816806,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4415714573352294,
+        "seed": 6736
+      },
+      {
+        "effective_sample_size": 234.3266911804141,
+        "fit_rmse": 0.005762791469047948,
+        "fitted_rates": [
+          0.12115965263822215,
+          0.7250551635794101
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.231404007438564,
+        "regime": "separated",
+        "residual_rho_ar1": 0.5324344981685489,
+        "seed": 6737
+      },
+      {
+        "effective_sample_size": 269.5109635439038,
+        "fit_rmse": 0.005602037055434351,
+        "fitted_rates": [
+          0.1216189561844512,
+          0.7358094392255317
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.574402514315085,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4804662832220778,
+        "seed": 6738
+      },
+      {
+        "effective_sample_size": 318.1939688681662,
+        "fit_rmse": 0.005389776744877886,
+        "fitted_rates": [
+          0.1202037335413442,
+          0.7187548782487242
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.316983053364658,
+        "regime": "separated",
+        "residual_rho_ar1": 0.41411206840021386,
+        "seed": 6739
+      },
+      {
+        "effective_sample_size": 293.2439744459241,
+        "fit_rmse": 0.005475571213539679,
+        "fitted_rates": [
+          0.127184990456058,
+          0.7342240284415937
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 3.762964138369891,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4473580411158011,
+        "seed": 6740
+      },
+      {
+        "effective_sample_size": 273.91422327693823,
+        "fit_rmse": 0.00567180797412592,
+        "fitted_rates": [
+          0.351229973201508,
+          0.6613782721744051
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.07031569820575027,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.47420964767052126,
+        "seed": 6701
+      },
+      {
+        "effective_sample_size": 261.37016969814437,
+        "fit_rmse": 0.005776520577487431,
+        "fitted_rates": [
+          0.3529856127622061,
+          0.5090658470927849
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.05259130987450631,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.492174579384228,
+        "seed": 6702
+      },
+      {
+        "effective_sample_size": 320.47875488187884,
+        "fit_rmse": 0.005430448961584487,
+        "fitted_rates": [
+          0.3476643785900178,
+          0.35798645447152305
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.004416036858801485,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.41114375738705716,
+        "seed": 6703
+      },
+      {
+        "effective_sample_size": 266.6393776279639,
+        "fit_rmse": 0.0054961146852018595,
+        "fitted_rates": [
+          0.3460390390010718,
+          0.4993991050993857
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.04436703846836196,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.48457523772337574,
+        "seed": 6704
+      },
+      {
+        "effective_sample_size": 273.7924473052385,
+        "fit_rmse": 0.005403477273306015,
+        "fitted_rates": [
+          0.23266165675308326,
+          0.3631132494772202
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.051198197147307785,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.47438196924263343,
+        "seed": 6705
+      },
+      {
+        "effective_sample_size": 264.120733798104,
+        "fit_rmse": 0.005656142620221893,
+        "fitted_rates": [
+          0.34919971037673897,
+          0.3629351038910588
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.0059385879049193855,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4881979885702608,
+        "seed": 6706
+      },
+      {
+        "effective_sample_size": 264.26060899466444,
+        "fit_rmse": 0.005426837115997737,
+        "fitted_rates": [
+          0.3532719059951733,
+          0.7460602694599084
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.07310293860697216,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4879963321432324,
+        "seed": 6707
+      },
+      {
+        "effective_sample_size": 264.63302814931666,
+        "fit_rmse": 0.005638909678842408,
+        "fitted_rates": [
+          0.35304245326374417,
+          1.091980485331222
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.12513548409538786,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.487459686189601,
+        "seed": 6708
+      },
+      {
+        "effective_sample_size": 262.8428882451846,
+        "fit_rmse": 0.005727049274566932,
+        "fitted_rates": [
+          0.26364904442402465,
+          0.36285786454240343
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.02902254250705689,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.490042777144003,
+        "seed": 6709
+      },
+      {
+        "effective_sample_size": 272.56886160681023,
+        "fit_rmse": 0.00558330121140968,
+        "fitted_rates": [
+          0.2277600571056856,
+          0.37155911631240246
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.05995243180753065,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4761156677590393,
+        "seed": 6710
+      },
+      {
+        "effective_sample_size": 323.93026113052247,
+        "fit_rmse": 0.0053632845547682256,
+        "fitted_rates": [
+          0.34881582994328564,
+          0.4282064572672821
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.02920128830097475,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.40668324221522445,
+        "seed": 6711
+      },
+      {
+        "effective_sample_size": 307.40735484781345,
+        "fit_rmse": 0.005452619585314279,
+        "fitted_rates": [
+          0.35021313173388724,
+          0.4946939978236518
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.042139952073944144,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4282959783340587,
+        "seed": 6712
+      },
+      {
+        "effective_sample_size": 260.7346738391555,
+        "fit_rmse": 0.00566191455956516,
+        "fitted_rates": [
+          0.21507894491878513,
+          0.3619214781408403
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.05446932036669411,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.49309636299880005,
+        "seed": 6713
+      },
+      {
+        "effective_sample_size": 288.1526018451295,
+        "fit_rmse": 0.005370210050719764,
+        "fitted_rates": [
+          0.3274997449523625,
+          0.35995432658245763
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.009237123268752284,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.45433528953729135,
+        "seed": 6714
+      },
+      {
+        "effective_sample_size": 256.90109853900253,
+        "fit_rmse": 0.005704057137355423,
+        "fitted_rates": [
+          0.3488836299993117,
+          0.3953332479823068
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.01914185873942458,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4986811919604432,
+        "seed": 6715
+      },
+      {
+        "effective_sample_size": 324.2107744376258,
+        "fit_rmse": 0.005383959642842873,
+        "fitted_rates": [
+          0.26792251750325713,
+          0.3605761858189333
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.029971336114205823,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4063219627098801,
+        "seed": 6716
+      },
+      {
+        "effective_sample_size": 277.74466387977077,
+        "fit_rmse": 0.005524216169830605,
+        "fitted_rates": [
+          0.3476126503533328,
+          0.359160572643337
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.0044910738579726885,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.46880978985955785,
+        "seed": 6717
+      },
+      {
+        "effective_sample_size": 272.0287342613816,
+        "fit_rmse": 0.005692348688063914,
+        "fitted_rates": [
+          0.3503762364336188,
+          0.48578309416899584
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.029628691714189238,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4768822719988139,
+        "seed": 6718
+      },
+      {
+        "effective_sample_size": 289.308343315758,
+        "fit_rmse": 0.00516684016026766,
+        "fitted_rates": [
+          0.24341044296533887,
+          0.3652206706460588
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.04783651550553302,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.452745558767698,
+        "seed": 6719
+      },
+      {
+        "effective_sample_size": 307.88526090969293,
+        "fit_rmse": 0.005406163394988975,
+        "fitted_rates": [
+          0.35039702778080223,
+          0.4467809851364102
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.03861353367065978,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.427661532142625,
+        "seed": 6720
+      },
+      {
+        "effective_sample_size": 286.35613053820026,
+        "fit_rmse": 0.005589730972078775,
+        "fitted_rates": [
+          0.13659312373395077,
+          0.3597341779351697
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.05807766680688204,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.45681326784332615,
+        "seed": 6721
+      },
+      {
+        "effective_sample_size": 273.39660244801206,
+        "fit_rmse": 0.0055694604873845,
+        "fitted_rates": [
+          0.29949171409563097,
+          0.36356249215435094
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.024965656959824487,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.47494239599910665,
+        "seed": 6722
+      },
+      {
+        "effective_sample_size": 298.3159271772323,
+        "fit_rmse": 0.005430092022213325,
+        "fitted_rates": [
+          0.3502088090621274,
+          0.40063415464883956
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.020896482386747475,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4404736540568445,
+        "seed": 6723
+      },
+      {
+        "effective_sample_size": 273.89522091461373,
+        "fit_rmse": 0.005558195483706783,
+        "fitted_rates": [
+          0.2090325370333719,
+          0.3606615130016367
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.056885914686906534,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4742365346984153,
+        "seed": 6724
+      },
+      {
+        "effective_sample_size": 315.5693035899203,
+        "fit_rmse": 0.005187715929892971,
+        "fitted_rates": [
+          0.14762497880873318,
+          0.3579311141004951
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.048969211437874124,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4175373876974493,
+        "seed": 6725
+      },
+      {
+        "effective_sample_size": 227.60966193024274,
+        "fit_rmse": 0.005638603817807766,
+        "fitted_rates": [
+          0.3423961331647142,
+          0.5430965124827756
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.06504278401587718,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.5427732963359084,
+        "seed": 6726
+      },
+      {
+        "effective_sample_size": 260.94892605124744,
+        "fit_rmse": 0.005832187252886953,
+        "fitted_rates": [
+          0.3500666043203189,
+          0.36012725177968113
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.003255294208479044,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4927854639925039,
+        "seed": 6727
+      },
+      {
+        "effective_sample_size": 258.9022896456806,
+        "fit_rmse": 0.005386039067212507,
+        "fitted_rates": [
+          0.22490690003986907,
+          0.361388468477073
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.054825691044573126,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.49576061470266763,
+        "seed": 6728
+      },
+      {
+        "effective_sample_size": 291.18309164469497,
+        "fit_rmse": 0.005562235920237523,
+        "fitted_rates": [
+          0.35121267984838256,
+          0.35975266807955264
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.0032396321682756435,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4501742070059916,
+        "seed": 6729
+      },
+      {
+        "effective_sample_size": 265.4520031972164,
+        "fit_rmse": 0.005333751253805779,
+        "fitted_rates": [
+          0.27028932796106325,
+          0.3589466402665165
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.030849675453075015,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4862809257208251,
+        "seed": 6730
+      },
+      {
+        "effective_sample_size": 285.0385678708054,
+        "fit_rmse": 0.005659865810573256,
+        "fitted_rates": [
+          0.2614799371616886,
+          0.35947300696921136
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.0234451641363029,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4586360337264,
+        "seed": 6731
+      },
+      {
+        "effective_sample_size": 256.20298619875024,
+        "fit_rmse": 0.00562030522257527,
+        "fitted_rates": [
+          0.2909206984316584,
+          0.3578166684456067
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.01757264246151258,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4997027158656749,
+        "seed": 6732
+      },
+      {
+        "effective_sample_size": 248.0678154542118,
+        "fit_rmse": 0.005791527489193713,
+        "fitted_rates": [
+          0.2740880031624271,
+          0.3606747256421341
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.03123132805844063,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.5117101207593742,
+        "seed": 6733
+      },
+      {
+        "effective_sample_size": 234.26591999737656,
+        "fit_rmse": 0.005878332741254125,
+        "fitted_rates": [
+          0.2752970120710886,
+          0.3621598522805507
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.02794842391159674,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.5325274154827299,
+        "seed": 6734
+      },
+      {
+        "effective_sample_size": 267.301972404421,
+        "fit_rmse": 0.00525205501444037,
+        "fitted_rates": [
+          0.34346561992360186,
+          0.36207492904035055
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.008905812507101256,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.483625107400057,
+        "seed": 6735
+      },
+      {
+        "effective_sample_size": 299.71015382825783,
+        "fit_rmse": 0.00556196008379437,
+        "fitted_rates": [
+          0.35005154066888283,
+          0.3591357640044473
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.0033642110039084835,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.43859266908036454,
+        "seed": 6736
+      },
+      {
+        "effective_sample_size": 235.419967088281,
+        "fit_rmse": 0.005751755490291369,
+        "fitted_rates": [
+          0.2799107056423016,
+          0.3601332888671695
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.022125013576489903,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.5307648346456141,
+        "seed": 6737
+      },
+      {
+        "effective_sample_size": 271.13729672006986,
+        "fit_rmse": 0.005580159349239181,
+        "fitted_rates": [
+          0.3486198534758876,
+          0.6722521413748803
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.09951117185428163,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4781492348010472,
+        "seed": 6738
+      },
+      {
+        "effective_sample_size": 321.3420214839042,
+        "fit_rmse": 0.0053727792068882785,
+        "fitted_rates": [
+          0.2793480689951545,
+          0.35928157487320667
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.015704310927077633,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.41002547382470134,
+        "seed": 6739
+      },
+      {
+        "effective_sample_size": 287.80473114613335,
+        "fit_rmse": 0.005508749319263303,
+        "fitted_rates": [
+          0.34767903562674657,
+          0.36252272472096325
+        ],
+        "noise_generator": "ar1",
+        "normalized_local_boundary_index": 0.008395770904231662,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4548144696534829,
+        "seed": 6740
+      }
+    ],
+    "ar2": [
+      {
+        "effective_sample_size": 257.176190995936,
+        "fit_rmse": 0.0052673667513471675,
+        "fitted_rates": [
+          0.12428972234066221,
+          0.7315586245478327
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.565946571698995,
+        "regime": "separated",
+        "residual_rho_ar1": 0.49827904070597845,
+        "seed": 6701
+      },
+      {
+        "effective_sample_size": 253.86239008459594,
+        "fit_rmse": 0.0053354091650091905,
+        "fitted_rates": [
+          0.12276200380593384,
+          0.728200602211649
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.5056231281859427,
+        "regime": "separated",
+        "residual_rho_ar1": 0.5031378147431775,
+        "seed": 6702
+      },
+      {
+        "effective_sample_size": 295.72269869845417,
+        "fit_rmse": 0.005036580869953032,
+        "fitted_rates": [
+          0.12068792233821736,
+          0.7175633213347047
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 4.025780361457716,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4439853562205763,
+        "seed": 6703
+      },
+      {
+        "effective_sample_size": 252.56997067298795,
+        "fit_rmse": 0.005035357697337959,
+        "fitted_rates": [
+          0.11855863706271369,
+          0.7215465485116493
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.987123197849962,
+        "regime": "separated",
+        "residual_rho_ar1": 0.5050413436984877,
+        "seed": 6704
+      },
+      {
+        "effective_sample_size": 256.4855294130418,
+        "fit_rmse": 0.00498811253897621,
+        "fitted_rates": [
+          0.11952232261066993,
+          0.7255811342357179
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.812687056627185,
+        "regime": "separated",
+        "residual_rho_ar1": 0.49928911234111834,
+        "seed": 6705
+      },
+      {
+        "effective_sample_size": 255.7488049871952,
+        "fit_rmse": 0.005216446306840752,
+        "fitted_rates": [
+          0.12316806322893398,
+          0.7256483596284804
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.6999533567081326,
+        "regime": "separated",
+        "residual_rho_ar1": 0.5003680517304359,
+        "seed": 6706
+      },
+      {
+        "effective_sample_size": 256.2516059185654,
+        "fit_rmse": 0.005022873849194899,
+        "fitted_rates": [
+          0.12060202391796679,
+          0.7258006567741477
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.505890841964457,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4996315271797795,
+        "seed": 6707
+      },
+      {
+        "effective_sample_size": 247.39645526102575,
+        "fit_rmse": 0.005275374281368798,
+        "fitted_rates": [
+          0.12443943167173965,
+          0.7351462556114042
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.3677784516704765,
+        "regime": "separated",
+        "residual_rho_ar1": 0.5127096338002715,
+        "seed": 6708
+      },
+      {
+        "effective_sample_size": 256.25232180125346,
+        "fit_rmse": 0.005243598927244955,
+        "fitted_rates": [
+          0.1155745274188907,
+          0.7114117788248723
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.0140823378097283,
+        "regime": "separated",
+        "residual_rho_ar1": 0.49963047903936936,
+        "seed": 6709
+      },
+      {
+        "effective_sample_size": 258.7884452730161,
+        "fit_rmse": 0.00517550436609597,
+        "fitted_rates": [
+          0.11701452294794584,
+          0.7234464404366195
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.81819585666827,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4959264560009613,
+        "seed": 6710
+      },
+      {
+        "effective_sample_size": 292.12172904417554,
+        "fit_rmse": 0.005010770930676259,
+        "fitted_rates": [
+          0.12210169089161728,
+          0.724026147527648
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.9849969998662127,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4488902150745317,
+        "seed": 6711
+      },
+      {
+        "effective_sample_size": 276.689556112236,
+        "fit_rmse": 0.005146565517855552,
+        "fitted_rates": [
+          0.12101613547925646,
+          0.7240260928773027
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.298471370106134,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4702932474180686,
+        "seed": 6712
+      },
+      {
+        "effective_sample_size": 245.9647031860161,
+        "fit_rmse": 0.005232113778277167,
+        "fitted_rates": [
+          0.12081882007087244,
+          0.7266636039117279
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.887216129433535,
+        "regime": "separated",
+        "residual_rho_ar1": 0.5148456303988467,
+        "seed": 6713
+      },
+      {
+        "effective_sample_size": 267.0347586300691,
+        "fit_rmse": 0.005037380148787174,
+        "fitted_rates": [
+          0.11918701827976728,
+          0.7138925426400025
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.569857321552892,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4840081332466444,
+        "seed": 6714
+      },
+      {
+        "effective_sample_size": 241.42811925618705,
+        "fit_rmse": 0.005288800845801774,
+        "fitted_rates": [
+          0.11743787092909702,
+          0.714754499261068
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 2.903589394268538,
+        "regime": "separated",
+        "residual_rho_ar1": 0.5216536677538027,
+        "seed": 6715
+      },
+      {
+        "effective_sample_size": 296.96319100693967,
+        "fit_rmse": 0.004975992329391792,
+        "fitted_rates": [
+          0.11961295478918031,
+          0.7194854072371493
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.337991820437618,
+        "regime": "separated",
+        "residual_rho_ar1": 0.44230337064296804,
+        "seed": 6716
+      },
+      {
+        "effective_sample_size": 262.96670239334384,
+        "fit_rmse": 0.005142529617108183,
+        "fitted_rates": [
+          0.12280807696788192,
+          0.7194715279385325
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.413690821453051,
+        "regime": "separated",
+        "residual_rho_ar1": 0.489863830164683,
+        "seed": 6717
+      },
+      {
+        "effective_sample_size": 261.4886111155789,
+        "fit_rmse": 0.005191947875069613,
+        "fitted_rates": [
+          0.12549674640419178,
+          0.7345357525008647
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.6855835488334474,
+        "regime": "separated",
+        "residual_rho_ar1": 0.49200290650671014,
+        "seed": 6718
+      },
+      {
+        "effective_sample_size": 271.28300571029274,
+        "fit_rmse": 0.004736159446417226,
+        "fitted_rates": [
+          0.11874894555051832,
+          0.72097616481254
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.986181924042014,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4779419961266744,
+        "seed": 6719
+      },
+      {
+        "effective_sample_size": 288.59401165824875,
+        "fit_rmse": 0.00504836104541626,
+        "fitted_rates": [
+          0.12467423098330377,
+          0.7287223856811917
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.978591478377918,
+        "regime": "separated",
+        "residual_rho_ar1": 0.45372771665566963,
+        "seed": 6720
+      },
+      {
+        "effective_sample_size": 265.65005959083106,
+        "fit_rmse": 0.005226506530672686,
+        "fitted_rates": [
+          0.11506907088816397,
+          0.7096630427394806
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.4902674544404597,
+        "regime": "separated",
+        "residual_rho_ar1": 0.4859961412937212,
+        "seed": 6721
+      },
+      {
+        "effective_sample_size": 261.38946549381745,
+        "fit_rmse": 0.005204920946603284,
+        "fitted_rates": [
+          0.12222833534769911,
+          0.7255869161848825
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.1814394232697447,
+        "regime": "separated",
+        "residual_rho_ar1": 0.49214660873098404,
+        "seed": 6722
+      },
+      {
+        "effective_sample_size": 274.60473302565805,
+        "fit_rmse": 0.00507171249472746,
+        "fitted_rates": [
+          0.12357393449478465,
+          0.7272955577615826
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.8216205823849547,
+        "regime": "separated",
+        "residual_rho_ar1": 0.47323328903610457,
+        "seed": 6723
+      },
+      {
+        "effective_sample_size": 254.0618418095576,
+        "fit_rmse": 0.005189371623937837,
+        "fitted_rates": [
+          0.11728880137761581,
+          0.7125341352026429
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.7903324878900677,
+        "regime": "separated",
+        "residual_rho_ar1": 0.5028444827570476,
+        "seed": 6724
+      },
+      {
+        "effective_sample_size": 289.31520492395714,
+        "fit_rmse": 0.004825458802008875,
+        "fitted_rates": [
+          0.11681193639265525,
+          0.7135488692922096
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 4.069242588061206,
+        "regime": "separated",
+        "residual_rho_ar1": 0.45273613095393833,
+        "seed": 6725
+      },
+      {
+        "effective_sample_size": 217.79947998873567,
+        "fit_rmse": 0.00522209751954098,
+        "fitted_rates": [
+          0.11721489669356003,
+          0.726222525144025
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.6063607910941866,
+        "regime": "separated",
+        "residual_rho_ar1": 0.5581262023160646,
+        "seed": 6726
+      },
+      {
+        "effective_sample_size": 249.27138267940575,
+        "fit_rmse": 0.005328738826647069,
+        "fitted_rates": [
+          0.11867864015455698,
+          0.7135975610243483
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.291334003708005,
+        "regime": "separated",
+        "residual_rho_ar1": 0.5099215668038429,
+        "seed": 6727
+      },
+      {
+        "effective_sample_size": 243.5779543262395,
+        "fit_rmse": 0.005105146721205903,
+        "fitted_rates": [
+          0.1208524360762178,
+          0.724594569871087
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 4.082994236176111,
+        "regime": "separated",
+        "residual_rho_ar1": 0.5184198048513733,
+        "seed": 6728
+      },
+      {
+        "effective_sample_size": 270.02201621917584,
+        "fit_rmse": 0.005175875286531242,
+        "fitted_rates": [
+          0.11881958931445454,
+          0.7092347781111497
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.5212948281183767,
+        "regime": "separated",
+        "residual_rho_ar1": 0.479737400555941,
+        "seed": 6729
+      },
+      {
+        "effective_sample_size": 247.15909430844422,
+        "fit_rmse": 0.004976431338628236,
+        "fitted_rates": [
+          0.12040613919751937,
+          0.720589763512223
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.8795028512521337,
+        "regime": "separated",
+        "residual_rho_ar1": 0.5130633302816123,
+        "seed": 6730
+      },
+      {
+        "effective_sample_size": 267.5351845996747,
+        "fit_rmse": 0.0051904778638955885,
+        "fitted_rates": [
+          0.12011980946828743,
+          0.7208563742401314
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.59059592254622,
+        "regime": "separated",
+        "residual_rho_ar1": 0.48329098116912267,
+        "seed": 6731
+      },
+      {
+        "effective_sample_size": 245.5868158930927,
+        "fit_rmse": 0.005197729463736353,
+        "fitted_rates": [
+          0.12448714908638472,
+          0.7330377820833794
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.7812507014610217,
+        "regime": "separated",
+        "residual_rho_ar1": 0.5154103979209694,
+        "seed": 6732
+      },
+      {
+        "effective_sample_size": 240.79844982471946,
+        "fit_rmse": 0.005376526174729853,
+        "fitted_rates": [
+          0.11931399543622982,
+          0.7196354097643277
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.8863282536816572,
+        "regime": "separated",
+        "residual_rho_ar1": 0.5226034499427341,
+        "seed": 6733
+      },
+      {
+        "effective_sample_size": 227.65760424852903,
+        "fit_rmse": 0.005450048408703284,
+        "fitted_rates": [
+          0.12096730921006842,
+          0.7196786210129267
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.1148364438208542,
+        "regime": "separated",
+        "residual_rho_ar1": 0.5426990096251949,
+        "seed": 6734
+      },
+      {
+        "effective_sample_size": 250.98007247301388,
+        "fit_rmse": 0.004961412920980113,
+        "fitted_rates": [
+          0.12239665134144949,
+          0.7230276623636623
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.643160655338358,
+        "regime": "separated",
+        "residual_rho_ar1": 0.5073896354736404,
+        "seed": 6735
+      },
+      {
+        "effective_sample_size": 279.3422170697884,
+        "fit_rmse": 0.005174503615100319,
+        "fitted_rates": [
+          0.1203400532316237,
+          0.717072014898985
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.4666596537995824,
+        "regime": "separated",
+        "residual_rho_ar1": 0.46656935523649434,
+        "seed": 6736
+      },
+      {
+        "effective_sample_size": 230.5356326670877,
+        "fit_rmse": 0.005283178221815941,
+        "fitted_rates": [
+          0.12145139551997183,
+          0.7245302549712443
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.5285420453198104,
+        "regime": "separated",
+        "residual_rho_ar1": 0.538252566808603,
+        "seed": 6737
+      },
+      {
+        "effective_sample_size": 254.7222295165772,
+        "fit_rmse": 0.005186657162431326,
+        "fitted_rates": [
+          0.12146959361902222,
+          0.7328137410420819
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.822238858110588,
+        "regime": "separated",
+        "residual_rho_ar1": 0.501874072617,
+        "seed": 6738
+      },
+      {
+        "effective_sample_size": 285.5642965826058,
+        "fit_rmse": 0.005104343233543541,
+        "fitted_rates": [
+          0.12017177349698378,
+          0.7192600262238802
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.5128614334805692,
+        "regime": "separated",
+        "residual_rho_ar1": 0.45790817416862634,
+        "seed": 6739
+      },
+      {
+        "effective_sample_size": 261.7639000272887,
+        "fit_rmse": 0.005103494221486632,
+        "fitted_rates": [
+          0.12559555953346566,
+          0.7305344018049427
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 3.9722308381579943,
+        "regime": "separated",
+        "residual_rho_ar1": 0.49160404628604293,
+        "seed": 6740
+      },
+      {
+        "effective_sample_size": 258.47553377514686,
+        "fit_rmse": 0.005256996396324972,
+        "fitted_rates": [
+          0.35081937281797076,
+          0.5654447267631931
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.05038995476826817,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.49638247523634244,
+        "seed": 6701
+      },
+      {
+        "effective_sample_size": 254.08301363300347,
+        "fit_rmse": 0.0053316046638966766,
+        "fitted_rates": [
+          0.3521025300691741,
+          0.4976540681448213
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.05063640843718506,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.5028133522543085,
+        "seed": 6702
+      },
+      {
+        "effective_sample_size": 295.20733427858784,
+        "fit_rmse": 0.005041253183732987,
+        "fitted_rates": [
+          0.3481365142689172,
+          0.3645648213126684
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.007257760302814596,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4446852937129272,
+        "seed": 6703
+      },
+      {
+        "effective_sample_size": 253.7194157443625,
+        "fit_rmse": 0.005024590753218275,
+        "fitted_rates": [
+          0.34992141119111514,
+          0.5665402474747797
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.0583001970805931,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.5033481563829968,
+        "seed": 6704
+      },
+      {
+        "effective_sample_size": 256.2507436384991,
+        "fit_rmse": 0.0049831898762984494,
+        "fitted_rates": [
+          0.27085646788054685,
+          0.3664390757053796
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.03717056760519713,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4996327896659244,
+        "seed": 6705
+      },
+      {
+        "effective_sample_size": 255.23056079815686,
+        "fit_rmse": 0.005218639766175023,
+        "fitted_rates": [
+          0.3504319291406428,
+          0.36201235940468107
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.004626030439017362,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.501127955757952,
+        "seed": 6706
+      },
+      {
+        "effective_sample_size": 258.374010864437,
+        "fit_rmse": 0.005002118744965979,
+        "fitted_rates": [
+          0.3528862261938521,
+          0.7039995727540675
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.07119896648623371,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4965304886338106,
+        "seed": 6707
+      },
+      {
+        "effective_sample_size": 248.05538013912653,
+        "fit_rmse": 0.0052660535955937485,
+        "fitted_rates": [
+          0.3532593957212966,
+          1.068411336397621
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.11322002796773,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.5117286223017474,
+        "seed": 6708
+      },
+      {
+        "effective_sample_size": 257.3052561281576,
+        "fit_rmse": 0.0052479976591512205,
+        "fitted_rates": [
+          0.34562558487140577,
+          0.4193345257993768
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.024100854461425868,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.49809043776910894,
+        "seed": 6709
+      },
+      {
+        "effective_sample_size": 258.49583178524455,
+        "fit_rmse": 0.005176088278366147,
+        "fitted_rates": [
+          0.3129845519365782,
+          0.3939175559620828
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.044446090072480196,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.49635288565044067,
+        "seed": 6710
+      },
+      {
+        "effective_sample_size": 291.8867059243734,
+        "fit_rmse": 0.00501089030549426,
+        "fitted_rates": [
+          0.3485473397894011,
+          0.4150987767535957
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.024553153491020763,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4492114972424221,
+        "seed": 6711
+      },
+      {
+        "effective_sample_size": 278.8447899586768,
+        "fit_rmse": 0.005132399700315373,
+        "fitted_rates": [
+          0.351481664923619,
+          0.529484307512391
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.05076212057587654,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4672662220161902,
+        "seed": 6712
+      },
+      {
+        "effective_sample_size": 248.12366874671545,
+        "fit_rmse": 0.005210924964248945,
+        "fitted_rates": [
+          0.2025578136990876,
+          0.3598521870391716
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.050307475664169335,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.5116270265552408,
+        "seed": 6713
+      },
+      {
+        "effective_sample_size": 266.98505350997016,
+        "fit_rmse": 0.005037720271660717,
+        "fitted_rates": [
+          0.29659406858724363,
+          0.3600963691348238
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.01920705798706132,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.48407940268405386,
+        "seed": 6714
+      },
+      {
+        "effective_sample_size": 244.56114674264705,
+        "fit_rmse": 0.005268901471076495,
+        "fitted_rates": [
+          0.3504414989271035,
+          0.41075018274296055
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.020203320297708285,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.5169454259046248,
+        "seed": 6715
+      },
+      {
+        "effective_sample_size": 299.8711574072158,
+        "fit_rmse": 0.004957479368729526,
+        "fitted_rates": [
+          0.281504589811617,
+          0.35933070211980234
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.022183631290529218,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.43837577159532803,
+        "seed": 6716
+      },
+      {
+        "effective_sample_size": 260.1877594695121,
+        "fit_rmse": 0.005158885614359299,
+        "fitted_rates": [
+          0.34796108998145153,
+          0.3594135591793731
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.00471931733103004,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.49389057188590807,
+        "seed": 6717
+      },
+      {
+        "effective_sample_size": 258.3919910495767,
+        "fit_rmse": 0.005214945617494012,
+        "fitted_rates": [
+          0.35122373299675524,
+          0.46378921135723167
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.023085478270649964,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4965042726310675,
+        "seed": 6718
+      },
+      {
+        "effective_sample_size": 271.9472184036827,
+        "fit_rmse": 0.004730832754590239,
+        "fitted_rates": [
+          0.24500207633935855,
+          0.3631633650817525
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.041593837930756355,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.47699803684052106,
+        "seed": 6719
+      },
+      {
+        "effective_sample_size": 288.5681714959588,
+        "fit_rmse": 0.0050463296019090526,
+        "fitted_rates": [
+          0.35024689153876637,
+          0.42427034726358753
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.028229897284655966,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.45376327002660893,
+        "seed": 6720
+      },
+      {
+        "effective_sample_size": 263.5315494278344,
+        "fit_rmse": 0.005232126521879155,
+        "fitted_rates": [
+          0.16880367873564006,
+          0.3591023506874401
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.050231087229036,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4890480091006252,
+        "seed": 6721
+      },
+      {
+        "effective_sample_size": 263.3552073634189,
+        "fit_rmse": 0.005187393741360186,
+        "fitted_rates": [
+          0.3041453840680955,
+          0.36213926538318075
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.021004280902824638,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4893026079023414,
+        "seed": 6722
+      },
+      {
+        "effective_sample_size": 275.28774917223586,
+        "fit_rmse": 0.005065954029540162,
+        "fitted_rates": [
+          0.3503319342753989,
+          0.4031430579735106
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.020261695015944402,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4722687975764034,
+        "seed": 6723
+      },
+      {
+        "effective_sample_size": 254.02059593305762,
+        "fit_rmse": 0.005188556826214876,
+        "fitted_rates": [
+          0.24676682966904465,
+          0.3600670273320954
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.043213737583181894,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.5029051333331526,
+        "seed": 6724
+      },
+      {
+        "effective_sample_size": 292.1898766030126,
+        "fit_rmse": 0.004806803701033144,
+        "fitted_rates": [
+          0.2029030878583,
+          0.3582378934718899
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.045175387108639026,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.44879708238824684,
+        "seed": 6725
+      },
+      {
+        "effective_sample_size": 219.09684036037902,
+        "fit_rmse": 0.005209735746679464,
+        "fitted_rates": [
+          0.3443268515290845,
+          0.5437137518768502
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.06284508349584758,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.5560783270658854,
+        "seed": 6726
+      },
+      {
+        "effective_sample_size": 249.4960602067721,
+        "fit_rmse": 0.005325637578967085,
+        "fitted_rates": [
+          0.3504944082100393,
+          0.35774905578677757
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.002463672055074769,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.5095881547569425,
+        "seed": 6727
+      },
+      {
+        "effective_sample_size": 245.33586272796518,
+        "fit_rmse": 0.005091964431082758,
+        "fitted_rates": [
+          0.2547452035696672,
+          0.36024505033860643
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.0412140851733392,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.515785690111657,
+        "seed": 6728
+      },
+      {
+        "effective_sample_size": 268.76556054875243,
+        "fit_rmse": 0.005189811983904808,
+        "fitted_rates": [
+          0.3496093377127725,
+          0.3597582945271619
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.004168812220771933,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4815306935803369,
+        "seed": 6729
+      },
+      {
+        "effective_sample_size": 247.78359987754536,
+        "fit_rmse": 0.004970034945655212,
+        "fitted_rates": [
+          0.2831215515244024,
+          0.3590449908183919
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.02611628714250787,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.5121330962472398,
+        "seed": 6730
+      },
+      {
+        "effective_sample_size": 267.7538676085601,
+        "fit_rmse": 0.0051866011299015295,
+        "fitted_rates": [
+          0.2937416786354566,
+          0.36056677419318345
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.019266586792055028,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4829778077937111,
+        "seed": 6731
+      },
+      {
+        "effective_sample_size": 243.85850457806137,
+        "fit_rmse": 0.005209881311445075,
+        "fitted_rates": [
+          0.31934117183578875,
+          0.3575099715186444
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.009133771216071788,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.5179988042305405,
+        "seed": 6732
+      },
+      {
+        "effective_sample_size": 240.64986890325733,
+        "fit_rmse": 0.0053753688207916145,
+        "fitted_rates": [
+          0.30854650839895886,
+          0.3636304963420938
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.022265095322331608,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.5228277396894426,
+        "seed": 6733
+      },
+      {
+        "effective_sample_size": 228.0831836512246,
+        "fit_rmse": 0.005445564937284563,
+        "fitted_rates": [
+          0.305467787436131,
+          0.3613544196495572
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.017538299586894776,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.5420398870400222,
+        "seed": 6734
+      },
+      {
+        "effective_sample_size": 250.26144133107564,
+        "fit_rmse": 0.004964061168562081,
+        "fitted_rates": [
+          0.34625369613366735,
+          0.36426356596643006
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.008503601325939381,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.5084534655384125,
+        "seed": 6735
+      },
+      {
+        "effective_sample_size": 281.0405466750294,
+        "fit_rmse": 0.00516386584593197,
+        "fitted_rates": [
+          0.3502959264670295,
+          0.3584220402283089
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.002666241914595739,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.46419507317272485,
+        "seed": 6736
+      },
+      {
+        "effective_sample_size": 231.29760440468368,
+        "fit_rmse": 0.005276402463500517,
+        "fitted_rates": [
+          0.3187716833113592,
+          0.36254161742941826
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.014513620218681538,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.5370796379673587,
+        "seed": 6737
+      },
+      {
+        "effective_sample_size": 254.81712157625515,
+        "fit_rmse": 0.005178318008129661,
+        "fitted_rates": [
+          0.34587050573497186,
+          0.5195750124898914
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.05302069351539658,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.5017347359544421,
+        "seed": 6738
+      },
+      {
+        "effective_sample_size": 287.27396423339434,
+        "fit_rmse": 0.005095388493881583,
+        "fitted_rates": [
+          0.2816955010164003,
+          0.35891301094531075
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.015033606743981765,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.4555461918515444,
+        "seed": 6739
+      },
+      {
+        "effective_sample_size": 259.0860539518326,
+        "fit_rmse": 0.005122986785840664,
+        "fitted_rates": [
+          0.3485654572255986,
+          0.36150376602603634
+        ],
+        "noise_generator": "ar2",
+        "normalized_local_boundary_index": 0.006716303283417576,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.495492996025077,
+        "seed": 6740
+      }
+    ],
+    "heteroscedastic": [
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.00626062920039131,
+        "fitted_rates": [
+          0.12419926314459138,
+          0.7296834946305354
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 2.986953070521335,
+        "regime": "separated",
+        "residual_rho_ar1": -0.025007114014095316,
+        "seed": 6701
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.00622695667126366,
+        "fitted_rates": [
+          0.12249955579703302,
+          0.7262016425434995
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 2.9858313968821526,
+        "regime": "separated",
+        "residual_rho_ar1": -0.010278879162335082,
+        "seed": 6702
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006185447580545778,
+        "fitted_rates": [
+          0.12001221049314333,
+          0.71627537026781
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.2622397668275345,
+        "regime": "separated",
+        "residual_rho_ar1": -0.11096705822245442,
+        "seed": 6703
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006027715995418081,
+        "fitted_rates": [
+          0.11909115858096016,
+          0.7231798348866755
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.3531843968524226,
+        "regime": "separated",
+        "residual_rho_ar1": -0.04984125388055954,
+        "seed": 6704
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005952541867692135,
+        "fitted_rates": [
+          0.11981465846621876,
+          0.7234292181387815
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.173241895597836,
+        "regime": "separated",
+        "residual_rho_ar1": -0.033111658363734524,
+        "seed": 6705
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006118913560187571,
+        "fitted_rates": [
+          0.12421516986140839,
+          0.7288884208844248
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.182595831228741,
+        "regime": "separated",
+        "residual_rho_ar1": -0.03562536770374334,
+        "seed": 6706
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005861763089326199,
+        "fitted_rates": [
+          0.12136625188883664,
+          0.7254571790349998
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.00600716601207,
+        "regime": "separated",
+        "residual_rho_ar1": -0.04155543781335191,
+        "seed": 6707
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.0061250158290687435,
+        "fitted_rates": [
+          0.12306613017082974,
+          0.7286911239380064
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 2.8437749854591736,
+        "regime": "separated",
+        "residual_rho_ar1": -0.015398505961883182,
+        "seed": 6708
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006240064431704669,
+        "fitted_rates": [
+          0.11807122239574186,
+          0.7192944424941341
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 2.5961389605124268,
+        "regime": "separated",
+        "residual_rho_ar1": -0.049252232641913266,
+        "seed": 6709
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.0063104862807877235,
+        "fitted_rates": [
+          0.1176201702832837,
+          0.721408432479286
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.11863950525349,
+        "regime": "separated",
+        "residual_rho_ar1": -0.0096728905230535,
+        "seed": 6710
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006291632076971096,
+        "fitted_rates": [
+          0.12058154283274801,
+          0.724243379527078
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.164909588272505,
+        "regime": "separated",
+        "residual_rho_ar1": -0.11147617568618406,
+        "seed": 6711
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006123558992767079,
+        "fitted_rates": [
+          0.12177234214726103,
+          0.7251823403431231
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 2.7791934877321243,
+        "regime": "separated",
+        "residual_rho_ar1": -0.09298357054572953,
+        "seed": 6712
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005998935492939752,
+        "fitted_rates": [
+          0.11911785385945983,
+          0.7217033626210969
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.343070636238106,
+        "regime": "separated",
+        "residual_rho_ar1": -0.04422441019976313,
+        "seed": 6713
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005860642882952086,
+        "fitted_rates": [
+          0.11853692084372253,
+          0.7131168573909327
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.0629808648271597,
+        "regime": "separated",
+        "residual_rho_ar1": -0.024319977185017945,
+        "seed": 6714
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006267946718399691,
+        "fitted_rates": [
+          0.11870196747237019,
+          0.7162049091587347
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 2.4629636793839094,
+        "regime": "separated",
+        "residual_rho_ar1": -0.0027534894812475705,
+        "seed": 6715
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006226951950145978,
+        "fitted_rates": [
+          0.11916838024559581,
+          0.71873330125594
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 2.656859198552729,
+        "regime": "separated",
+        "residual_rho_ar1": -0.13878950599702272,
+        "seed": 6716
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006234581918525037,
+        "fitted_rates": [
+          0.12331726849156774,
+          0.722040242664166
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 2.8366568508095265,
+        "regime": "separated",
+        "residual_rho_ar1": -0.062835178062888,
+        "seed": 6717
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006178364580198043,
+        "fitted_rates": [
+          0.12553078573458043,
+          0.733988250980409
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.0982160185991967,
+        "regime": "separated",
+        "residual_rho_ar1": -0.04529654786595226,
+        "seed": 6718
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.0057063072062038984,
+        "fitted_rates": [
+          0.11845148826663074,
+          0.7182143731722055
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.280962643649867,
+        "regime": "separated",
+        "residual_rho_ar1": -0.11748704901286809,
+        "seed": 6719
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006232830093997175,
+        "fitted_rates": [
+          0.12204496286530014,
+          0.7214245155675897
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.144761424006399,
+        "regime": "separated",
+        "residual_rho_ar1": -0.07085336577754979,
+        "seed": 6720
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006169956676787861,
+        "fitted_rates": [
+          0.11624397359294758,
+          0.7131026962479885
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 2.9942147246185176,
+        "regime": "separated",
+        "residual_rho_ar1": -0.06279149478122023,
+        "seed": 6721
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005995903437773648,
+        "fitted_rates": [
+          0.12264238616474339,
+          0.7232707871184598
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 2.741361475491066,
+        "regime": "separated",
+        "residual_rho_ar1": -0.01669825943035242,
+        "seed": 6722
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006062175327278823,
+        "fitted_rates": [
+          0.12371948372963813,
+          0.7271346523887461
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.1998640954642736,
+        "regime": "separated",
+        "residual_rho_ar1": -0.08220305649463748,
+        "seed": 6723
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006050585527129891,
+        "fitted_rates": [
+          0.11747297063771915,
+          0.7133024160210557
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.2536225030465564,
+        "regime": "separated",
+        "residual_rho_ar1": -0.010915486871456137,
+        "seed": 6724
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005891752049533557,
+        "fitted_rates": [
+          0.11817152814142555,
+          0.7180764410451141
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.382912957348892,
+        "regime": "separated",
+        "residual_rho_ar1": -0.09463666827789767,
+        "seed": 6725
+      },
+      {
+        "effective_sample_size": 733.2283298025492,
+        "fit_rmse": 0.005899805147767524,
+        "fitted_rates": [
+          0.11620987538821652,
+          0.7201785197867884
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.1372156055870355,
+        "regime": "separated",
+        "residual_rho_ar1": 0.02316214629524359,
+        "seed": 6726
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006253830196226974,
+        "fitted_rates": [
+          0.11936251292756546,
+          0.7158398300983331
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 2.820541321320017,
+        "regime": "separated",
+        "residual_rho_ar1": -0.040140349012523224,
+        "seed": 6727
+      },
+      {
+        "effective_sample_size": 712.8123531821898,
+        "fit_rmse": 0.005817829461957328,
+        "fitted_rates": [
+          0.11945189165720262,
+          0.7199882649674019
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.529626631776028,
+        "regime": "separated",
+        "residual_rho_ar1": 0.03726849434988497,
+        "seed": 6728
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.00617567814545975,
+        "fitted_rates": [
+          0.1199175858570488,
+          0.7141837436041405
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 2.99339015894042,
+        "regime": "separated",
+        "residual_rho_ar1": -0.05820540566989258,
+        "seed": 6729
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005739575200325573,
+        "fitted_rates": [
+          0.1201449763076569,
+          0.7197314300884782
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.3568566092058925,
+        "regime": "separated",
+        "residual_rho_ar1": -0.02834915938656752,
+        "seed": 6730
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006181253246238589,
+        "fitted_rates": [
+          0.12077523790102111,
+          0.7207748416143341
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.0144887022995333,
+        "regime": "separated",
+        "residual_rho_ar1": -0.08129204434274827,
+        "seed": 6731
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005897099310208186,
+        "fitted_rates": [
+          0.12221320198638369,
+          0.7265703017554596
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.2698688525351383,
+        "regime": "separated",
+        "residual_rho_ar1": -0.03250981148252226,
+        "seed": 6732
+      },
+      {
+        "effective_sample_size": 757.6540620305972,
+        "fit_rmse": 0.006213449913919492,
+        "fitted_rates": [
+          0.1192773836999846,
+          0.7195017775964059
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.3536618612187907,
+        "regime": "separated",
+        "residual_rho_ar1": 0.006781313160620807,
+        "seed": 6733
+      },
+      {
+        "effective_sample_size": 759.3301581592324,
+        "fit_rmse": 0.006120317154350653,
+        "fitted_rates": [
+          0.12118632256588485,
+          0.7218359152508352
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 2.789554966157432,
+        "regime": "separated",
+        "residual_rho_ar1": 0.005676468702233052,
+        "seed": 6734
+      },
+      {
+        "effective_sample_size": 758.5450088355872,
+        "fit_rmse": 0.005732887738394962,
+        "fitted_rates": [
+          0.12265184426190444,
+          0.7234377705447191
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.156388469864175,
+        "regime": "separated",
+        "residual_rho_ar1": 0.006193719221960468,
+        "seed": 6735
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006190663867874537,
+        "fitted_rates": [
+          0.12040646522758598,
+          0.7182981882252009
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 2.902602550864554,
+        "regime": "separated",
+        "residual_rho_ar1": -0.05357466635487684,
+        "seed": 6736
+      },
+      {
+        "effective_sample_size": 761.5444523729359,
+        "fit_rmse": 0.005981419402709271,
+        "fitted_rates": [
+          0.12139952241513499,
+          0.7230340043507807
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.1018104188078257,
+        "regime": "separated",
+        "residual_rho_ar1": 0.004220568821683373,
+        "seed": 6737
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006029875684718098,
+        "fitted_rates": [
+          0.12123828803360868,
+          0.7282718395397477
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.253270236651532,
+        "regime": "separated",
+        "residual_rho_ar1": -0.02207891940541313,
+        "seed": 6738
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006236939839309273,
+        "fitted_rates": [
+          0.12079899463896236,
+          0.720587799194836
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 2.898038266241261,
+        "regime": "separated",
+        "residual_rho_ar1": -0.07647804496224186,
+        "seed": 6739
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.00608203240121906,
+        "fitted_rates": [
+          0.12514472326522205,
+          0.7273908351478677
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 3.3112266330466666,
+        "regime": "separated",
+        "residual_rho_ar1": -0.07229945694772728,
+        "seed": 6740
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006265585092974455,
+        "fitted_rates": [
+          0.3520748677389242,
+          0.5526225984753587
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.034375837703057056,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.024504463138547615,
+        "seed": 6701
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.0062323796730744336,
+        "fitted_rates": [
+          0.35183875410392185,
+          0.4515421304091601
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.028976998113252845,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.009157332544041953,
+        "seed": 6702
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.00619159769097149,
+        "fitted_rates": [
+          0.34783466055442397,
+          0.35726431686700183
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.003245057485281843,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.10946662238795198,
+        "seed": 6703
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006026722512304276,
+        "fitted_rates": [
+          0.3468898576438681,
+          0.4871042732468792
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.03431285102889538,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.05074021299820579,
+        "seed": 6704
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005956828459395971,
+        "fitted_rates": [
+          0.2654348657028372,
+          0.3618256246312486
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.025839230669131796,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.031664287577403534,
+        "seed": 6705
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006132207748629205,
+        "fitted_rates": [
+          0.35170201572373627,
+          0.36177186816858914
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.002978844810319073,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.0313209145386829,
+        "seed": 6706
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005861012561743188,
+        "fitted_rates": [
+          0.3517461480585455,
+          0.5293866798121833
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.0298480040778317,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.04158209115811038,
+        "seed": 6707
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006129866354195506,
+        "fitted_rates": [
+          0.35248062408673325,
+          0.5731875808412962
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.033780512580279524,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.014387566291817208,
+        "seed": 6708
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006241616874204858,
+        "fitted_rates": [
+          0.32876484326219213,
+          0.38670598377143967
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.01620089569873431,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.0488408495320212,
+        "seed": 6709
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.0063147212493485224,
+        "fitted_rates": [
+          0.29865294843812595,
+          0.37570976605045847
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.02798243426476454,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.008563972165821615,
+        "seed": 6710
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006291737009607367,
+        "fitted_rates": [
+          0.3495284268490813,
+          0.49781423900858457
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.03780406554960241,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.11129486378113299,
+        "seed": 6711
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006122867851240963,
+        "fitted_rates": [
+          0.3515924741233483,
+          0.5182207719951673
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.034704795355309265,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.09456097840926313,
+        "seed": 6712
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005987142960000382,
+        "fitted_rates": [
+          0.14698126928517188,
+          0.3586722655086244
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.049527945734319775,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.04643677740376283,
+        "seed": 6713
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005865964292727061,
+        "fitted_rates": [
+          0.2689729779304675,
+          0.35951018341048957
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.02305278592224815,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.022571579558333544,
+        "seed": 6714
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006262737279528193,
+        "fitted_rates": [
+          0.35178916136565586,
+          0.39602543392317435
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.010885357441420876,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.005399469842035282,
+        "seed": 6715
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006223034604988012,
+        "fitted_rates": [
+          0.2677384775799489,
+          0.35819124712342276
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.017882465850303998,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.1405803167804263,
+        "seed": 6716
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.0062481603666720825,
+        "fitted_rates": [
+          0.35010375823270556,
+          0.36004464082259985
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.003474964546624145,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.05841552894765807,
+        "seed": 6717
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006203709030752836,
+        "fitted_rates": [
+          0.352538830148265,
+          0.5573020428375649
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.03485646957013028,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.036334671424833806,
+        "seed": 6718
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005708375440640049,
+        "fitted_rates": [
+          0.2688125758923269,
+          0.36254380367964484
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.02598689297276492,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.11760638237753415,
+        "seed": 6719
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006233374270328005,
+        "fitted_rates": [
+          0.3499147100704272,
+          0.36223294587135096
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.004371826899745983,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.07068803434137542,
+        "seed": 6720
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006172179918402712,
+        "fitted_rates": [
+          0.1849292592977695,
+          0.3592350506683168
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.039753444930713165,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.06214519147879052,
+        "seed": 6721
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005996678775529817,
+        "fitted_rates": [
+          0.3278673071061529,
+          0.3609132997496886
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.0097048607265631,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.017990998571632593,
+        "seed": 6722
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006068877942284353,
+        "fitted_rates": [
+          0.3497826261299308,
+          0.3840407469765594
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.011223936505660724,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.08054703485985909,
+        "seed": 6723
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006051920453532918,
+        "fitted_rates": [
+          0.24869134950579647,
+          0.3603868530878363
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.03434948399686505,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.011137206024101821,
+        "seed": 6724
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005884878309695148,
+        "fitted_rates": [
+          0.20124659613782167,
+          0.35811787830154546
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.034901693842966895,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.09818861921641868,
+        "seed": 6725
+      },
+      {
+        "effective_sample_size": 732.7066485457484,
+        "fit_rmse": 0.005902892634753992,
+        "fitted_rates": [
+          0.25786684472807053,
+          0.36827359809061905
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.026693156179714326,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.02351782174647692,
+        "seed": 6726
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006257740378138032,
+        "fitted_rates": [
+          0.350425241187522,
+          0.3577071311005391
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.0018928477347123923,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.039019362654974306,
+        "seed": 6727
+      },
+      {
+        "effective_sample_size": 716.2125527407075,
+        "fit_rmse": 0.005810189863379882,
+        "fitted_rates": [
+          0.22670467957047127,
+          0.3593208865075291
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.040425057346623036,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.03489220406043812,
+        "seed": 6728
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006181569137679663,
+        "fitted_rates": [
+          0.3500054674907711,
+          0.35932610407559973
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.0029115844750613575,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.057499708107751124,
+        "seed": 6729
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005739069424161096,
+        "fitted_rates": [
+          0.2865857172574854,
+          0.3588668530005585
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.021551773361951385,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.028650703914900984,
+        "seed": 6730
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.0061846464625243906,
+        "fitted_rates": [
+          0.3248051309334665,
+          0.3589721714762725
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.007955818061778707,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.08031226797164336,
+        "seed": 6731
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.00589921253609589,
+        "fitted_rates": [
+          0.31204836956725157,
+          0.3574983092169274
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.008222239251192323,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.031387939800178746,
+        "seed": 6732
+      },
+      {
+        "effective_sample_size": 756.0130648083867,
+        "fit_rmse": 0.006215597806308114,
+        "fitted_rates": [
+          0.27541742895878335,
+          0.3604097734590678
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.024269291018582915,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.00786537561154069,
+        "seed": 6733
+      },
+      {
+        "effective_sample_size": 758.6086919730477,
+        "fit_rmse": 0.0061224150036475865,
+        "fitted_rates": [
+          0.2822819208584731,
+          0.3604081235694932
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.018742318763385217,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.006151745418673468,
+        "seed": 6734
+      },
+      {
+        "effective_sample_size": 754.3608711573031,
+        "fit_rmse": 0.005739796872611706,
+        "fitted_rates": [
+          0.34746643594851334,
+          0.36011108777499
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.004259908246054734,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.008959195615904364,
+        "seed": 6735
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006189375740207961,
+        "fitted_rates": [
+          0.3516438367016354,
+          0.36766589901125374
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.002986689135047778,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.05451081114644729,
+        "seed": 6736
+      },
+      {
+        "effective_sample_size": 761.7208475424223,
+        "fit_rmse": 0.005981563394525844,
+        "fitted_rates": [
+          0.32154741247596325,
+          0.3597397282302
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.009738677207465123,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.004104770140032664,
+        "seed": 6737
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006032711190598279,
+        "fitted_rates": [
+          0.34541739619088446,
+          0.4501725997698333
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.0287585407917771,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.02098505956006531,
+        "seed": 6738
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.0062360386236671545,
+        "fitted_rates": [
+          0.32209817776643984,
+          0.35985365802614167
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.007612828292635424,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.07722051748149918,
+        "seed": 6739
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006105462481388482,
+        "fitted_rates": [
+          0.347859608529316,
+          0.3605020594110435
+        ],
+        "noise_generator": "heteroscedastic",
+        "normalized_local_boundary_index": 0.005847086631546302,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.06659390251608042,
+        "seed": 6740
+      }
+    ],
+    "iid_gaussian": [
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006008961691782621,
+        "fitted_rates": [
+          0.12301999626183363,
+          0.7272108428082246
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.087312264165935,
+        "regime": "separated",
+        "residual_rho_ar1": -0.025451086181796825,
+        "seed": 6701
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006043684662263359,
+        "fitted_rates": [
+          0.12297594347178041,
+          0.7293921438763176
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.1088015810003817,
+        "regime": "separated",
+        "residual_rho_ar1": -0.029865665358056622,
+        "seed": 6702
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005999256579403454,
+        "fitted_rates": [
+          0.119295346172278,
+          0.7125645205706497
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.324516700961099,
+        "regime": "separated",
+        "residual_rho_ar1": -0.09628989177288708,
+        "seed": 6703
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.00578764920970665,
+        "fitted_rates": [
+          0.1191788901079674,
+          0.7233364613778924
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.491851679085777,
+        "regime": "separated",
+        "residual_rho_ar1": -0.07597151133701188,
+        "seed": 6704
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.0057005800242378646,
+        "fitted_rates": [
+          0.11948048623470761,
+          0.7216552774027533
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.2972596348173173,
+        "regime": "separated",
+        "residual_rho_ar1": -0.03293807872271526,
+        "seed": 6705
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005933206273863071,
+        "fitted_rates": [
+          0.12315779284563433,
+          0.7282178520714632
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.2743808062070587,
+        "regime": "separated",
+        "residual_rho_ar1": -0.040004105782419204,
+        "seed": 6706
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005677616406684382,
+        "fitted_rates": [
+          0.12052472504385955,
+          0.725290450923846
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.1032166554969822,
+        "regime": "separated",
+        "residual_rho_ar1": -0.024154951977409876,
+        "seed": 6707
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005937675470154598,
+        "fitted_rates": [
+          0.1231501731197944,
+          0.7301012178755193
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 2.945837545665929,
+        "regime": "separated",
+        "residual_rho_ar1": -0.03488033274502195,
+        "seed": 6708
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.0059594706669157385,
+        "fitted_rates": [
+          0.118106076316732,
+          0.7196474147198195
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 2.723230287721505,
+        "regime": "separated",
+        "residual_rho_ar1": -0.055515675858871884,
+        "seed": 6709
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005925620027981576,
+        "fitted_rates": [
+          0.11808610441787448,
+          0.7231430120762896
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.3415565813012686,
+        "regime": "separated",
+        "residual_rho_ar1": -0.03250547704973024,
+        "seed": 6710
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005976290135489138,
+        "fitted_rates": [
+          0.12172345354534259,
+          0.7272366374630774
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.374331995919349,
+        "regime": "separated",
+        "residual_rho_ar1": -0.1126598858350816,
+        "seed": 6711
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005953428583048254,
+        "fitted_rates": [
+          0.12077826112160484,
+          0.7221408900385741
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 2.833485872544801,
+        "regime": "separated",
+        "residual_rho_ar1": -0.07546798144794489,
+        "seed": 6712
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005860948567491894,
+        "fitted_rates": [
+          0.11998832013325297,
+          0.7228777382395428
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.4331436091976033,
+        "regime": "separated",
+        "residual_rho_ar1": -0.03691671034604832,
+        "seed": 6713
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005772738105779903,
+        "fitted_rates": [
+          0.11782731884566744,
+          0.7117406664537833
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.083301239285819,
+        "regime": "separated",
+        "residual_rho_ar1": -0.042962195710438945,
+        "seed": 6714
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005929311085659072,
+        "fitted_rates": [
+          0.1182507521570987,
+          0.7142924579994759
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 2.5914946033298127,
+        "regime": "separated",
+        "residual_rho_ar1": -0.011243213680243015,
+        "seed": 6715
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005919949185291863,
+        "fitted_rates": [
+          0.11968485727219862,
+          0.7193759961681001
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 2.804057568855283,
+        "regime": "separated",
+        "residual_rho_ar1": -0.1340173434385121,
+        "seed": 6716
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005915536895711976,
+        "fitted_rates": [
+          0.12281093260474844,
+          0.7220346084347053
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 2.9900815124427433,
+        "regime": "separated",
+        "residual_rho_ar1": -0.03821519427882686,
+        "seed": 6717
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.0060016259923971905,
+        "fitted_rates": [
+          0.12478804909232558,
+          0.7348685698137456
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.1997872944441674,
+        "regime": "separated",
+        "residual_rho_ar1": -0.06569258133263714,
+        "seed": 6718
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005570474326371153,
+        "fitted_rates": [
+          0.11859263522660096,
+          0.7184892876697276
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.365593113205736,
+        "regime": "separated",
+        "residual_rho_ar1": -0.0942622003988183,
+        "seed": 6719
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005967084870265138,
+        "fitted_rates": [
+          0.12245343613468071,
+          0.7217316699631544
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.2911993591302857,
+        "regime": "separated",
+        "residual_rho_ar1": -0.07406129238045266,
+        "seed": 6720
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005999779572256623,
+        "fitted_rates": [
+          0.11671665161295668,
+          0.7137406960983669
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.0903059076988404,
+        "regime": "separated",
+        "residual_rho_ar1": -0.06470340487946481,
+        "seed": 6721
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005864436899378981,
+        "fitted_rates": [
+          0.12191670577487763,
+          0.7224401034121124
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 2.7915991497218053,
+        "regime": "separated",
+        "residual_rho_ar1": -0.01865703039055509,
+        "seed": 6722
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005872533370565113,
+        "fitted_rates": [
+          0.12377594317344288,
+          0.727970913291535
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.312817844894452,
+        "regime": "separated",
+        "residual_rho_ar1": -0.07629481700874233,
+        "seed": 6723
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005891947220792349,
+        "fitted_rates": [
+          0.11772116115611866,
+          0.7144344216189468
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.345284209414612,
+        "regime": "separated",
+        "residual_rho_ar1": -0.03248198853463932,
+        "seed": 6724
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005707406921420585,
+        "fitted_rates": [
+          0.11824494871782969,
+          0.7196864493509421
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.5051901607274782,
+        "regime": "separated",
+        "residual_rho_ar1": -0.0992713191847396,
+        "seed": 6725
+      },
+      {
+        "effective_sample_size": 724.7875236649098,
+        "fit_rmse": 0.00565555675262077,
+        "fitted_rates": [
+          0.11767199188501859,
+          0.7245191840564262
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.3190808830107725,
+        "regime": "separated",
+        "residual_rho_ar1": 0.02894750635977993,
+        "seed": 6726
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006096055048970081,
+        "fitted_rates": [
+          0.1187954100979714,
+          0.7126856003193699
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 2.8687596567739484,
+        "regime": "separated",
+        "residual_rho_ar1": -0.058566131695086274,
+        "seed": 6727
+      },
+      {
+        "effective_sample_size": 722.8163091133804,
+        "fit_rmse": 0.005578111997189679,
+        "fitted_rates": [
+          0.12002761344484464,
+          0.722417665480268
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.7040559097056844,
+        "regime": "separated",
+        "residual_rho_ar1": 0.03030802025065813,
+        "seed": 6728
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005963629791485943,
+        "fitted_rates": [
+          0.11888396429658024,
+          0.7113637897396397
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.0741656598598976,
+        "regime": "separated",
+        "residual_rho_ar1": -0.06423483338621416,
+        "seed": 6729
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005630498645911466,
+        "fitted_rates": [
+          0.1204786814326589,
+          0.7204258399704905
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.4284095077282157,
+        "regime": "separated",
+        "residual_rho_ar1": -0.033078114438560666,
+        "seed": 6730
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.00603267282439736,
+        "fitted_rates": [
+          0.11974735144468178,
+          0.7175766857264785
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.0587869881254868,
+        "regime": "separated",
+        "residual_rho_ar1": -0.09221621737477229,
+        "seed": 6731
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005832136845373413,
+        "fitted_rates": [
+          0.1231023385798827,
+          0.7295572829656085
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.336556437401173,
+        "regime": "separated",
+        "residual_rho_ar1": -0.041071264883637666,
+        "seed": 6732
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005968415848429239,
+        "fitted_rates": [
+          0.1190451968666006,
+          0.718734954452597
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.4832967381223865,
+        "regime": "separated",
+        "residual_rho_ar1": -0.0008875961772319888,
+        "seed": 6733
+      },
+      {
+        "effective_sample_size": 732.8696084177765,
+        "fit_rmse": 0.006007779145334847,
+        "fitted_rates": [
+          0.12109476003997938,
+          0.721436038691967
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 2.841686732707679,
+        "regime": "separated",
+        "residual_rho_ar1": 0.023406691284300323,
+        "seed": 6734
+      },
+      {
+        "effective_sample_size": 757.7599134843799,
+        "fit_rmse": 0.0055474881430004576,
+        "fitted_rates": [
+          0.12195377121025008,
+          0.7232426155331191
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.2625032715154463,
+        "regime": "separated",
+        "residual_rho_ar1": 0.006711466479830868,
+        "seed": 6735
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006026452648917107,
+        "fitted_rates": [
+          0.11990124418453736,
+          0.7170463857862756
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 2.9735461030810355,
+        "regime": "separated",
+        "residual_rho_ar1": -0.06911852227380241,
+        "seed": 6736
+      },
+      {
+        "effective_sample_size": 754.275214618117,
+        "fit_rmse": 0.005839563669731728,
+        "fitted_rates": [
+          0.12072752695993226,
+          0.7218941461338411
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.160709882732604,
+        "regime": "separated",
+        "residual_rho_ar1": 0.009015968499050921,
+        "seed": 6737
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.00589354047674519,
+        "fitted_rates": [
+          0.12134405889802553,
+          0.7302240495188813
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.345162586744718,
+        "regime": "separated",
+        "residual_rho_ar1": -0.050439679470797624,
+        "seed": 6738
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005952432621884444,
+        "fitted_rates": [
+          0.12060769620838448,
+          0.721343651410192
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.041901086789695,
+        "regime": "separated",
+        "residual_rho_ar1": -0.07561436263301623,
+        "seed": 6739
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005925607818081114,
+        "fitted_rates": [
+          0.12568250049503152,
+          0.7287040539262495
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 3.4203308020476983,
+        "regime": "separated",
+        "residual_rho_ar1": -0.07942552106953853,
+        "seed": 6740
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006005056499981378,
+        "fitted_rates": [
+          0.3519836613240278,
+          0.5861074900546883
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.04208175767221759,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.027569805684210715,
+        "seed": 6701
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006041495297302171,
+        "fitted_rates": [
+          0.35213647747433896,
+          0.5652748362940013
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.06520276000557823,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.030858400765648827,
+        "seed": 6702
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006012627346345372,
+        "fitted_rates": [
+          0.3478356736944211,
+          0.35643284623334187
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.0028825217258562612,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.09382632331260088,
+        "seed": 6703
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005780882135862127,
+        "fitted_rates": [
+          0.3499742321707318,
+          0.5756856691668739
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.05349679766420205,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.07876112267214086,
+        "seed": 6704
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005704570018245019,
+        "fitted_rates": [
+          0.34178110985631527,
+          0.4119551702003863
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.024077002555214687,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.032404593114806354,
+        "seed": 6705
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.0059416719969674105,
+        "fitted_rates": [
+          0.3510844617991308,
+          0.4365334467388796
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.021406476015448924,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.037336836928224246,
+        "seed": 6706
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005668247296869294,
+        "fitted_rates": [
+          0.3511603799566666,
+          0.5890768292466867
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.04598802484057531,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.02683727137477175,
+        "seed": 6707
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005933672000949317,
+        "fitted_rates": [
+          0.3534634980621061,
+          0.9512450323013537
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.08231804945958948,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.03553633753460948,
+        "seed": 6708
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005957316416608389,
+        "fitted_rates": [
+          0.3467393154556068,
+          0.4583484910639546
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.027442180300208216,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.05646950347900945,
+        "seed": 6709
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.00592503294396559,
+        "fitted_rates": [
+          0.3427946482608918,
+          0.45913246386352113
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.04278322358177968,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.03278638456623863,
+        "seed": 6710
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.0059739309529040835,
+        "fitted_rates": [
+          0.3495293454581475,
+          0.5204352664281102
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.05232721430300192,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.11314994954551859,
+        "seed": 6711
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.00594860471863822,
+        "fitted_rates": [
+          0.35089801335801707,
+          0.48382857036003296
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.031165096662652037,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.07774688153686424,
+        "seed": 6712
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005855246151629877,
+        "fitted_rates": [
+          0.24900796170824596,
+          0.3599147623951528
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.031250257114393463,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.03705954263227967,
+        "seed": 6713
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.00577675389565096,
+        "fitted_rates": [
+          0.21617915263683898,
+          0.35829036886657173
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.02993849425881001,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.04192624662734917,
+        "seed": 6714
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005924222533959565,
+        "fitted_rates": [
+          0.3511567799948784,
+          0.38799279418377514
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.01113571350578347,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.015202649144577036,
+        "seed": 6715
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005912685420093792,
+        "fitted_rates": [
+          0.3086291208427797,
+          0.35989184709522953
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.012725899024372302,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.13677189003319484,
+        "seed": 6716
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005926260614192893,
+        "fitted_rates": [
+          0.34933239388642523,
+          0.3597830099883394
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.0038989201573901454,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.035396513104618436,
+        "seed": 6717
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006011818798018621,
+        "fitted_rates": [
+          0.3532634678026461,
+          0.9607569110458142
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.1027193861929069,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.059869554893569085,
+        "seed": 6718
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005576023849657006,
+        "fitted_rates": [
+          0.29374974153433236,
+          0.3631191885624241
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.021057434019503565,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.0935083679652065,
+        "seed": 6719
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.0059664748911510785,
+        "fitted_rates": [
+          0.3499827632942246,
+          0.3750581140299997
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.008242348749104237,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.0749919335934171,
+        "seed": 6720
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006006029439918578,
+        "fitted_rates": [
+          0.2601197759221416,
+          0.36015042527622115
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.027275096309393457,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.06290846899694826,
+        "seed": 6721
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005858618514909874,
+        "fitted_rates": [
+          0.33751954005644796,
+          0.36198097953670066
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.00789266290341869,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.02136659821203199,
+        "seed": 6722
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005874934560705901,
+        "fitted_rates": [
+          0.3505217872279229,
+          0.42277349951652177
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.022911489071991198,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.0761887548212349,
+        "seed": 6723
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005892441575453022,
+        "fitted_rates": [
+          0.24841772594338427,
+          0.3599447867435379
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.03272048802060498,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.03325367784724611,
+        "seed": 6724
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005702200608585664,
+        "fitted_rates": [
+          0.1958801603545651,
+          0.35818085612416567
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.036848486038141066,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.10337829072639032,
+        "seed": 6725
+      },
+      {
+        "effective_sample_size": 726.3404238373453,
+        "fit_rmse": 0.005654094742842482,
+        "fitted_rates": [
+          0.3340181900846376,
+          0.42625207551582833
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.02933119570660624,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.027878236777986797,
+        "seed": 6726
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006102963533050931,
+        "fitted_rates": [
+          0.35074821063287426,
+          0.3580762893607025
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.0021194406631430325,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.0570809514517633,
+        "seed": 6727
+      },
+      {
+        "effective_sample_size": 725.9950317275167,
+        "fit_rmse": 0.00556960405432728,
+        "fitted_rates": [
+          0.2496240157187867,
+          0.359841556181693
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.03550539826059087,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.028115868781647,
+        "seed": 6728
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.00597138037408604,
+        "fitted_rates": [
+          0.35011705118247205,
+          0.35940920080463007
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.003146792105522767,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.063178903993136,
+        "seed": 6729
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005630923903509207,
+        "fitted_rates": [
+          0.33115866771315505,
+          0.3603504683183865
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.010058376357571664,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.033320982598048575,
+        "seed": 6730
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.006036375745799572,
+        "fitted_rates": [
+          0.3340025821606975,
+          0.3586906783770779
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.0063410434431153285,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.09091139775864454,
+        "seed": 6731
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005836738525739322,
+        "fitted_rates": [
+          0.3508179605404084,
+          0.44583215115298475
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.017471327578107924,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.039085357334074,
+        "seed": 6732
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005969100231082397,
+        "fitted_rates": [
+          0.2894097897388066,
+          0.36081360167800236
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.02198896144992428,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.00045466956284774334,
+        "seed": 6733
+      },
+      {
+        "effective_sample_size": 732.9498725034744,
+        "fit_rmse": 0.006010417672588351,
+        "fitted_rates": [
+          0.3293537862951488,
+          0.36292751957505365
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.010016149729748272,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.023351964071967685,
+        "seed": 6734
+      },
+      {
+        "effective_sample_size": 756.0857670638416,
+        "fit_rmse": 0.005551177017668716,
+        "fitted_rates": [
+          0.34745749036052653,
+          0.3826590867962238
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.013518783351776364,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.007817298208296568,
+        "seed": 6735
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.0060244688095075815,
+        "fitted_rates": [
+          0.3509200400823693,
+          0.38505009530068335
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.0068918003659291585,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.07064151969789266,
+        "seed": 6736
+      },
+      {
+        "effective_sample_size": 755.460401374337,
+        "fit_rmse": 0.005837863702089052,
+        "fitted_rates": [
+          0.3040722727644375,
+          0.35873508398124554
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.013066974013103683,
+        "regime": "coalesced",
+        "residual_rho_ar1": 0.008230997415062969,
+        "seed": 6737
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.0058905276276843485,
+        "fitted_rates": [
+          0.3482298799066401,
+          0.5379618040591351
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.04939700259684143,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.0513029733780607,
+        "seed": 6738
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.005952517038368526,
+        "fitted_rates": [
+          0.31540864828196197,
+          0.35958724933774777
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.00911173754384702,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.07689193954451737,
+        "seed": 6739
+      },
+      {
+        "effective_sample_size": 768.0,
+        "fit_rmse": 0.0059547632672208185,
+        "fitted_rates": [
+          0.34700688916786,
+          0.3607485357605427
+        ],
+        "noise_generator": "iid_gaussian",
+        "normalized_local_boundary_index": 0.00677553133235753,
+        "regime": "coalesced",
+        "residual_rho_ar1": -0.07275727411299496,
+        "seed": 6740
+      }
+    ]
+  }
+}

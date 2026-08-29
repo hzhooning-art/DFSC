@@ -1,0 +1,362 @@
+{
+  "experiment": "unconstrained_spline_baseline",
+  "source_artifact": "D:\\program projects\\st_mlee\\P5\\results\\mechanism_vs_trajectory_baselines.json",
+  "design": {
+    "comparison": "positive-real memory model versus cubic smoothing spline",
+    "fairness_boundary": "Prediction errors are comparable; the spline does not identify memory rank.",
+    "smoothing_rule": "n_train * known_noise_variance per channel"
+  },
+  "records": [
+    {
+      "case": "rank1_separated",
+      "repeat": 0,
+      "seed": 431000,
+      "positive_real_memory": {
+        "selected_rank": 1,
+        "rank_recovered": true,
+        "quality_failure": false,
+        "train_rmse_to_clean": 0.0001441512048890533,
+        "interpolation_rmse_to_clean": 0.00015086855071196203,
+        "extrapolation_rmse_to_clean": 0.00016259651513247675
+      },
+      "smoothing_spline": {
+        "family": "cubic_smoothing_spline",
+        "smoothing_rule": "n_train * known_noise_variance per channel",
+        "uses_validation_or_extrapolation_for_tuning": false,
+        "channel_residual_sums": [
+          3.072042005372877e-05,
+          3.072040761416694e-05,
+          3.071328308436057e-05,
+          3.0718182761736646e-05,
+          3.074834140107442e-05,
+          3.071956413147596e-05,
+          3.071597449139223e-05,
+          3.069073863793469e-05
+        ],
+        "note": "The spline estimates trajectories only and has no memory-rank output.",
+        "train_rmse_to_clean": 0.000570746475751617,
+        "interpolation_rmse_to_clean": 0.000858610195183903,
+        "extrapolation_rmse_to_clean": 1.852348943755807
+      }
+    },
+    {
+      "case": "rank1_separated",
+      "repeat": 1,
+      "seed": 431101,
+      "positive_real_memory": {
+        "selected_rank": 1,
+        "rank_recovered": true,
+        "quality_failure": false,
+        "train_rmse_to_clean": 0.00010873751508800996,
+        "interpolation_rmse_to_clean": 0.00011058945116288287,
+        "extrapolation_rmse_to_clean": 0.0001176405076347348
+      },
+      "smoothing_spline": {
+        "family": "cubic_smoothing_spline",
+        "smoothing_rule": "n_train * known_noise_variance per channel",
+        "uses_validation_or_extrapolation_for_tuning": false,
+        "channel_residual_sums": [
+          3.070756992960275e-05,
+          3.0710521268742494e-05,
+          3.072670472049675e-05,
+          3.0708054842594534e-05,
+          3.0719559584834445e-05,
+          3.0706485067521896e-05,
+          3.0720291065549894e-05,
+          3.071409525031311e-05
+        ],
+        "note": "The spline estimates trajectories only and has no memory-rank output.",
+        "train_rmse_to_clean": 0.0005283377138616456,
+        "interpolation_rmse_to_clean": 0.0006832585484913434,
+        "extrapolation_rmse_to_clean": 1.4390225050039698
+      }
+    },
+    {
+      "case": "rank1_separated",
+      "repeat": 2,
+      "seed": 431202,
+      "positive_real_memory": {
+        "selected_rank": 1,
+        "rank_recovered": true,
+        "quality_failure": false,
+        "train_rmse_to_clean": 0.00011475533289073553,
+        "interpolation_rmse_to_clean": 0.00010975176426213886,
+        "extrapolation_rmse_to_clean": 0.00011842781801138172
+      },
+      "smoothing_spline": {
+        "family": "cubic_smoothing_spline",
+        "smoothing_rule": "n_train * known_noise_variance per channel",
+        "uses_validation_or_extrapolation_for_tuning": false,
+        "channel_residual_sums": [
+          3.070462158121484e-05,
+          3.0708542524900674e-05,
+          3.074731898489884e-05,
+          3.068988733334406e-05,
+          3.0717541886536894e-05,
+          3.0720095059454724e-05,
+          3.0720715339077114e-05,
+          3.0748271754769964e-05
+        ],
+        "note": "The spline estimates trajectories only and has no memory-rank output.",
+        "train_rmse_to_clean": 0.0005780870668619176,
+        "interpolation_rmse_to_clean": 0.0005597872571889811,
+        "extrapolation_rmse_to_clean": 1.2566742432850113
+      }
+    },
+    {
+      "case": "rank2_separated",
+      "repeat": 0,
+      "seed": 432009,
+      "positive_real_memory": {
+        "selected_rank": 2,
+        "rank_recovered": true,
+        "quality_failure": false,
+        "train_rmse_to_clean": 0.00019324527759634824,
+        "interpolation_rmse_to_clean": 0.00019660407742359392,
+        "extrapolation_rmse_to_clean": 0.00014565442802604307
+      },
+      "smoothing_spline": {
+        "family": "cubic_smoothing_spline",
+        "smoothing_rule": "n_train * known_noise_variance per channel",
+        "uses_validation_or_extrapolation_for_tuning": false,
+        "channel_residual_sums": [
+          3.072263433730321e-05,
+          3.0715351034944344e-05,
+          3.070769165419423e-05,
+          3.071767275116042e-05,
+          3.0717397862499176e-05,
+          3.06908325080497e-05,
+          3.071957149810419e-05,
+          3.073149092354407e-05
+        ],
+        "note": "The spline estimates trajectories only and has no memory-rank output.",
+        "train_rmse_to_clean": 0.0005394806724159282,
+        "interpolation_rmse_to_clean": 0.0005789712271162742,
+        "extrapolation_rmse_to_clean": 1.5759290541071989
+      }
+    },
+    {
+      "case": "rank2_separated",
+      "repeat": 1,
+      "seed": 432110,
+      "positive_real_memory": {
+        "selected_rank": 2,
+        "rank_recovered": true,
+        "quality_failure": false,
+        "train_rmse_to_clean": 0.0001770769707113852,
+        "interpolation_rmse_to_clean": 0.0001786860539853584,
+        "extrapolation_rmse_to_clean": 0.0002945280056768481
+      },
+      "smoothing_spline": {
+        "family": "cubic_smoothing_spline",
+        "smoothing_rule": "n_train * known_noise_variance per channel",
+        "uses_validation_or_extrapolation_for_tuning": false,
+        "channel_residual_sums": [
+          3.074138249068546e-05,
+          3.069607145527322e-05,
+          3.073538544380098e-05,
+          3.071867727979353e-05,
+          3.0719718764194276e-05,
+          3.071635869687936e-05,
+          3.072184068939689e-05,
+          3.0704227158574194e-05
+        ],
+        "note": "The spline estimates trajectories only and has no memory-rank output.",
+        "train_rmse_to_clean": 0.0005479025673500061,
+        "interpolation_rmse_to_clean": 0.001750288718720628,
+        "extrapolation_rmse_to_clean": 0.5855527367729754
+      }
+    },
+    {
+      "case": "rank2_separated",
+      "repeat": 2,
+      "seed": 432211,
+      "positive_real_memory": {
+        "selected_rank": 2,
+        "rank_recovered": true,
+        "quality_failure": false,
+        "train_rmse_to_clean": 0.00024351849317516604,
+        "interpolation_rmse_to_clean": 0.00021570030466391322,
+        "extrapolation_rmse_to_clean": 0.00015215312128439106
+      },
+      "smoothing_spline": {
+        "family": "cubic_smoothing_spline",
+        "smoothing_rule": "n_train * known_noise_variance per channel",
+        "uses_validation_or_extrapolation_for_tuning": false,
+        "channel_residual_sums": [
+          3.072465801083763e-05,
+          3.07163392478355e-05,
+          3.069003392707656e-05,
+          3.071936215196103e-05,
+          3.070897314082249e-05,
+          3.072174620828387e-05,
+          3.072049335825676e-05,
+          3.0724404840855425e-05
+        ],
+        "note": "The spline estimates trajectories only and has no memory-rank output.",
+        "train_rmse_to_clean": 0.0005671373918463043,
+        "interpolation_rmse_to_clean": 0.0007472877552918717,
+        "extrapolation_rmse_to_clean": 0.5545336708178358
+      }
+    },
+    {
+      "case": "rank3_separated",
+      "repeat": 0,
+      "seed": 433018,
+      "positive_real_memory": {
+        "selected_rank": 3,
+        "rank_recovered": true,
+        "quality_failure": false,
+        "train_rmse_to_clean": 0.0007819447260533755,
+        "interpolation_rmse_to_clean": 0.0007561372285720054,
+        "extrapolation_rmse_to_clean": 0.005200511738785043
+      },
+      "smoothing_spline": {
+        "family": "cubic_smoothing_spline",
+        "smoothing_rule": "n_train * known_noise_variance per channel",
+        "uses_validation_or_extrapolation_for_tuning": false,
+        "channel_residual_sums": [
+          3.071665840639046e-05,
+          3.072168458321599e-05,
+          3.0718343606731473e-05,
+          3.071301323298217e-05,
+          3.072520851345969e-05,
+          3.072108987971759e-05,
+          3.072474815205754e-05,
+          3.0736982171267885e-05
+        ],
+        "note": "The spline estimates trajectories only and has no memory-rank output.",
+        "train_rmse_to_clean": 0.0005528180457351416,
+        "interpolation_rmse_to_clean": 0.0005819716253304511,
+        "extrapolation_rmse_to_clean": 0.5648812085791836
+      }
+    },
+    {
+      "case": "rank3_separated",
+      "repeat": 1,
+      "seed": 433119,
+      "positive_real_memory": {
+        "selected_rank": 3,
+        "rank_recovered": true,
+        "quality_failure": false,
+        "train_rmse_to_clean": 0.0010043633182811272,
+        "interpolation_rmse_to_clean": 0.0008854116812300331,
+        "extrapolation_rmse_to_clean": 0.009374006201868958
+      },
+      "smoothing_spline": {
+        "family": "cubic_smoothing_spline",
+        "smoothing_rule": "n_train * known_noise_variance per channel",
+        "uses_validation_or_extrapolation_for_tuning": false,
+        "channel_residual_sums": [
+          3.073084683124075e-05,
+          3.0704291383311986e-05,
+          3.0745554772523335e-05,
+          3.074447940152369e-05,
+          3.071956987893866e-05,
+          3.074523753788804e-05,
+          3.0742383127704534e-05,
+          3.072844802877768e-05
+        ],
+        "note": "The spline estimates trajectories only and has no memory-rank output.",
+        "train_rmse_to_clean": 0.0005367157673714193,
+        "interpolation_rmse_to_clean": 0.000521723359578354,
+        "extrapolation_rmse_to_clean": 0.3662769125123177
+      }
+    },
+    {
+      "case": "rank3_separated",
+      "repeat": 2,
+      "seed": 433220,
+      "positive_real_memory": {
+        "selected_rank": 3,
+        "rank_recovered": true,
+        "quality_failure": false,
+        "train_rmse_to_clean": 0.0007623262836942388,
+        "interpolation_rmse_to_clean": 0.0008430694691823184,
+        "extrapolation_rmse_to_clean": 0.006619927888756602
+      },
+      "smoothing_spline": {
+        "family": "cubic_smoothing_spline",
+        "smoothing_rule": "n_train * known_noise_variance per channel",
+        "uses_validation_or_extrapolation_for_tuning": false,
+        "channel_residual_sums": [
+          3.071524972139479e-05,
+          3.0714385566034616e-05,
+          3.071575094475279e-05,
+          3.072127138437199e-05,
+          3.071717612628313e-05,
+          3.072072552817592e-05,
+          3.071863114254941e-05,
+          3.072592180702686e-05
+        ],
+        "note": "The spline estimates trajectories only and has no memory-rank output.",
+        "train_rmse_to_clean": 0.0005484855119705575,
+        "interpolation_rmse_to_clean": 0.0008654811102686272,
+        "extrapolation_rmse_to_clean": 0.8100875425986235
+      }
+    }
+  ],
+  "summary": [
+    {
+      "case": "rank1_separated",
+      "trials": 3,
+      "methods": {
+        "positive_real_memory": {
+          "train_rmse_to_clean": 0.00011475533289073553,
+          "interpolation_rmse_to_clean": 0.00011058945116288287,
+          "extrapolation_rmse_to_clean": 0.00011842781801138172
+        },
+        "smoothing_spline": {
+          "train_rmse_to_clean": 0.000570746475751617,
+          "interpolation_rmse_to_clean": 0.0006832585484913434,
+          "extrapolation_rmse_to_clean": 1.4390225050039698
+        }
+      },
+      "memory_rank_recoveries": 3
+    },
+    {
+      "case": "rank2_separated",
+      "trials": 3,
+      "methods": {
+        "positive_real_memory": {
+          "train_rmse_to_clean": 0.00019324527759634824,
+          "interpolation_rmse_to_clean": 0.00019660407742359392,
+          "extrapolation_rmse_to_clean": 0.00015215312128439106
+        },
+        "smoothing_spline": {
+          "train_rmse_to_clean": 0.0005479025673500061,
+          "interpolation_rmse_to_clean": 0.0007472877552918717,
+          "extrapolation_rmse_to_clean": 0.5855527367729754
+        }
+      },
+      "memory_rank_recoveries": 3
+    },
+    {
+      "case": "rank3_separated",
+      "trials": 3,
+      "methods": {
+        "positive_real_memory": {
+          "train_rmse_to_clean": 0.0007819447260533755,
+          "interpolation_rmse_to_clean": 0.0008430694691823184,
+          "extrapolation_rmse_to_clean": 0.006619927888756602
+        },
+        "smoothing_spline": {
+          "train_rmse_to_clean": 0.0005484855119705575,
+          "interpolation_rmse_to_clean": 0.0005819716253304511,
+          "extrapolation_rmse_to_clean": 0.5648812085791836
+        }
+      },
+      "memory_rank_recoveries": 3
+    }
+  ],
+  "assessment": {
+    "checks": {
+      "spline_training_rmse_reaches_2p5_noise_std_in_each_case": true,
+      "spline_interpolation_rmse_within_5_noise_std_in_each_case": true,
+      "mechanism_extrapolation_at_least_25_percent_better_than_spline_on_median": true,
+      "memory_rank_recovered_in_at_least_7_of_9_trials": true
+    },
+    "route_pass": true,
+    "median_extrapolation_ratio_mechanism_to_spline": 0.0002598452910030243
+  }
+}
