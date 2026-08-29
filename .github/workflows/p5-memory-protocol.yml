@@ -29,5 +29,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install ./P5 torch openpyxl matplotlib
+      - name: Retrieve and verify public datasets
+        run: python P5/scripts/fetch_public_data.py --dataset all
       - name: Run P5 tests
         run: python -m unittest discover -s P5/tests -p "test_*.py" -v
