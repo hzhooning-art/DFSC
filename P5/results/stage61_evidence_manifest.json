@@ -1,0 +1,112 @@
+{
+  "freeze": "stage61_confirmatory_evidence_freeze",
+  "created_utc": "2026-08-24T13:32:12.798116+00:00",
+  "frozen_thresholds": {
+    "validation_threshold": 2.042843214697007,
+    "structural_threshold": 43.15854821637186,
+    "acceptable_validation_max": 2.0428432146970064,
+    "acceptable_structural_max": 43.158548216371855,
+    "acceptable_pairs": 28,
+    "rule": "next representable float above each maximum acceptable morphology score"
+  },
+  "headline_metrics": {
+    "locked_stage57": {
+      "trials": 36,
+      "coverage": 0.75,
+      "selective_accuracy": 0.9629629629629629,
+      "false_refusal_fraction": 0.041666666666666664,
+      "severe_refusal_fraction": 0.9166666666666666,
+      "indeterminate_fraction": 0.25
+    },
+    "external_stage58": {
+      "trials": 42,
+      "coverage": 0.6666666666666666,
+      "selective_accuracy": 1.0,
+      "false_refusal_fraction": 0.0,
+      "severe_refusal_fraction": 0.8571428571428571,
+      "indeterminate_fraction": 0.3333333333333333
+    },
+    "cross_implementation_stage59": {
+      "value_relative_error": 2.6645352591003757e-15,
+      "gradient_relative_error": 4.066855062256009e-09,
+      "decision_concordance": 1.0,
+      "replayed_decisions": 78
+    },
+    "scope_status_stage60": {
+      "external_baseline": "SUPPORTED",
+      "noise_x2": "SCOPE_LIMITED",
+      "sparse_train": "SCOPE_LIMITED",
+      "short_window": "SCOPE_LIMITED"
+    }
+  },
+  "claims": {
+    "supported": [
+      "The morphology-calibrated asymmetric rule passed its locked Stage 54 evaluation.",
+      "The frozen rule passed a 42-pair external confirmation spanning three physical data sources.",
+      "Independent SciPy and finite-difference implementations confirmed values and parameter gradients.",
+      "A standalone decision implementation exactly replayed all Stage 57 and Stage 58 decisions.",
+      "The normal external observation regime is supported under the preregistered checks."
+    ],
+    "scope_limited": [
+      "Doubled residual noise, 18-point training sampling, and a 45% observation window are scope-limited.",
+      "Indeterminate outcomes are deliberate abstentions and must not be counted as mechanism recovery.",
+      "The evidence supports the declared low-dimensional shared-spectrum setting, not arbitrary fractional systems."
+    ],
+    "not_claimed": [
+      "No independent external team has reproduced the artifact.",
+      "No universal mechanism-identification guarantee or global theoretical error bound is claimed.",
+      "Local cross-implementation agreement is not a substitute for a public archival release or DOI."
+    ]
+  },
+  "files": [
+    {
+      "path": "results\\morphology_calibrated_asymmetric_hierarchy.json",
+      "sha256": "db55fdf35394daf0a9e45d9b6e9470dc956ee6ca00316307d8151469ac9faea7",
+      "bytes": 334881
+    },
+    {
+      "path": "results\\external_multiphysics_confirmation.json",
+      "sha256": "e20180b376f79924aa4d8e214b789c2e60e65191b1bbf07be6e4fdf49b4eca4a",
+      "bytes": 309513
+    },
+    {
+      "path": "results\\cross_implementation_confirmation.json",
+      "sha256": "db9256a9cef1a8f1e28610cf639a9b30ecec65cc79acaf44b1f0026942859517",
+      "bytes": 25492
+    },
+    {
+      "path": "results\\external_scope_boundary_map.json",
+      "sha256": "17c992fa625dadfe4f070a7486c39b9dfad76eff24ff135a8f5cde717555d54e",
+      "bytes": 79141
+    },
+    {
+      "path": "experiments\\probe_morphology_calibrated_asymmetric_hierarchy.py",
+      "sha256": "85e0272ada09887cea2b78f4ea9c655226aae240d3d060beea7dd5df4c46c4cd",
+      "bytes": 13147
+    },
+    {
+      "path": "experiments\\probe_external_multiphysics_confirmation.py",
+      "sha256": "e260263e641a64c3768095b10eaaf2ebe4d300df502a76fee1e060a462ca4d7f",
+      "bytes": 11686
+    },
+    {
+      "path": "experiments\\probe_cross_implementation_confirmation.py",
+      "sha256": "77ce9fb7b56aad395baf5da08a4bbbdbf4c606ed78158a9c4c6be2c55351c237",
+      "bytes": 7224
+    },
+    {
+      "path": "experiments\\probe_external_scope_boundary_map.py",
+      "sha256": "67892af916b32fd1ae3a8351a1a9a3d6ae3d9cb3d64c6f6ff3f9661417581e34",
+      "bytes": 7109
+    }
+  ],
+  "checks": {
+    "stage57_passed": true,
+    "stage58_passed": true,
+    "stage59_passed": true,
+    "stage60_passed": true,
+    "no_partial_checkpoint_remains": true,
+    "all_evidence_files_hashed": true
+  },
+  "freeze_pass": true
+}

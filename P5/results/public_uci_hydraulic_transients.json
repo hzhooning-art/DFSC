@@ -1,0 +1,4992 @@
+{
+  "checks": {
+    "certificates_finite": true,
+    "checksum": true,
+    "clustered_inference": true,
+    "four_channels": true,
+    "model_family_controls": true,
+    "thirty_independent_cycles": true,
+    "three_cooler_groups": true,
+    "threshold_grid_complete": true
+  },
+  "claim_boundary": "The task audits a shared empirical cooling-transient realization across controlled hydraulic load cycles; it does not identify a unique component-level mechanism.",
+  "decision": {
+    "decision": "INDETERMINATE",
+    "gates": {
+      "delta_bic": 10.0,
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.05,
+      "use_ar1_bic": false
+    },
+    "selected_rank": null,
+    "transitions": [
+      {
+        "delta_bic": 658.2265690758559,
+        "from_rank": 1,
+        "gates": {
+          "bic": true,
+          "finite": true,
+          "prediction": false,
+          "separation": false,
+          "stability": true
+        },
+        "information_criterion": "mean_bic",
+        "prediction_gain": -1.1500457222730598,
+        "to_rank": 2
+      },
+      {
+        "delta_bic": -116.68064358431911,
+        "from_rank": 2,
+        "gates": {
+          "bic": false,
+          "finite": true,
+          "prediction": true,
+          "separation": false,
+          "stability": true
+        },
+        "information_criterion": "mean_bic",
+        "prediction_gain": 0.16049611680548642,
+        "to_rank": 3
+      }
+    ]
+  },
+  "evaluation": {
+    "groups": [
+      "cooler-003",
+      "cooler-020",
+      "cooler-100"
+    ],
+    "rank_records": {
+      "1": {
+        "all_finite": true,
+        "curve_errors": [
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.5688148266753023,
+            "unit": "cycle-0324"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.48998948406878967,
+            "unit": "cycle-0324"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.24484345235906213,
+            "unit": "cycle-0324"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.2713461452696686,
+            "unit": "cycle-0324"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.556545135740469,
+            "unit": "cycle-0325"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.4785099739026369,
+            "unit": "cycle-0325"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.2965252814897457,
+            "unit": "cycle-0325"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.27714586418722675,
+            "unit": "cycle-0325"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.2791820498580809,
+            "unit": "cycle-0326"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.30046776477340753,
+            "unit": "cycle-0326"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.4347418409402307,
+            "unit": "cycle-0326"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.1923560329843772,
+            "unit": "cycle-0326"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.5758314771310211,
+            "unit": "cycle-0327"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.5912338262048852,
+            "unit": "cycle-0327"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.3562354936318924,
+            "unit": "cycle-0327"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.20536584038487893,
+            "unit": "cycle-0327"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.14989682995493622,
+            "unit": "cycle-0328"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.1976949860027465,
+            "unit": "cycle-0328"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.4951269997596777,
+            "unit": "cycle-0328"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.2525293422953155,
+            "unit": "cycle-0328"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.8533820010428501,
+            "unit": "cycle-0329"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.6355746695886259,
+            "unit": "cycle-0329"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.36370801295122823,
+            "unit": "cycle-0329"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.18494631639872727,
+            "unit": "cycle-0329"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.8173401435908052,
+            "unit": "cycle-0330"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.765804912192201,
+            "unit": "cycle-0330"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.3887198917719852,
+            "unit": "cycle-0330"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.2593988112256381,
+            "unit": "cycle-0330"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.289499967116226,
+            "unit": "cycle-0331"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.2663843137833,
+            "unit": "cycle-0331"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.42776969512398605,
+            "unit": "cycle-0331"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.24334299186747665,
+            "unit": "cycle-0331"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.874901487452348,
+            "unit": "cycle-0332"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.63181438322159,
+            "unit": "cycle-0332"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.4245154011848867,
+            "unit": "cycle-0332"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.2661785634920598,
+            "unit": "cycle-0332"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.5444361226433512,
+            "unit": "cycle-0333"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.44884542691911805,
+            "unit": "cycle-0333"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.28500625670532903,
+            "unit": "cycle-0333"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.23824257289176848,
+            "unit": "cycle-0333"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.2845813311972104,
+            "unit": "cycle-1056"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.13770569304733296,
+            "unit": "cycle-1056"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.315103450181874,
+            "unit": "cycle-1056"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.19340765095792092,
+            "unit": "cycle-1056"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.13380267240650653,
+            "unit": "cycle-1057"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.1744896296751859,
+            "unit": "cycle-1057"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.27796177976564085,
+            "unit": "cycle-1057"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.1544477915518373,
+            "unit": "cycle-1057"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.8123915701072401,
+            "unit": "cycle-1058"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.6353276135798894,
+            "unit": "cycle-1058"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.32342183944332387,
+            "unit": "cycle-1058"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.09374508669677878,
+            "unit": "cycle-1058"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.21864853091935388,
+            "unit": "cycle-1059"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.18645126069769313,
+            "unit": "cycle-1059"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.215014152962429,
+            "unit": "cycle-1059"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.09085347524564871,
+            "unit": "cycle-1059"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.10719145440744872,
+            "unit": "cycle-1060"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.16279898784376787,
+            "unit": "cycle-1060"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.21749859244927838,
+            "unit": "cycle-1060"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.10469527913854428,
+            "unit": "cycle-1060"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.17894856444031015,
+            "unit": "cycle-1061"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.13352904843315078,
+            "unit": "cycle-1061"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.2695786266891669,
+            "unit": "cycle-1061"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.11249449954700243,
+            "unit": "cycle-1061"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.31713876937583035,
+            "unit": "cycle-1062"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.3223496950677909,
+            "unit": "cycle-1062"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.3264507514954628,
+            "unit": "cycle-1062"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.11036576334301197,
+            "unit": "cycle-1062"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.2341772186826548,
+            "unit": "cycle-1063"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.26064847437780336,
+            "unit": "cycle-1063"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.24821399789408702,
+            "unit": "cycle-1063"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.11299747513279747,
+            "unit": "cycle-1063"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.23735445479784667,
+            "unit": "cycle-1064"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.31973809544526166,
+            "unit": "cycle-1064"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.25543250072992413,
+            "unit": "cycle-1064"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.13982858983564628,
+            "unit": "cycle-1064"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.31169233736286045,
+            "unit": "cycle-1065"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.35405656931506246,
+            "unit": "cycle-1065"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.2252337602105778,
+            "unit": "cycle-1065"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.1301112014512974,
+            "unit": "cycle-1065"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.06434633769217386,
+            "unit": "cycle-1788"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.09751437639592737,
+            "unit": "cycle-1788"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.13249469842323236,
+            "unit": "cycle-1788"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.19891314996127168,
+            "unit": "cycle-1788"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.3546631938135417,
+            "unit": "cycle-1789"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.4194548552040931,
+            "unit": "cycle-1789"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.17580762595438812,
+            "unit": "cycle-1789"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.17229004008258397,
+            "unit": "cycle-1789"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.0850350270994549,
+            "unit": "cycle-1790"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.11336081346025771,
+            "unit": "cycle-1790"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.17990559284893237,
+            "unit": "cycle-1790"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.22877415992020778,
+            "unit": "cycle-1790"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.39328329847750093,
+            "unit": "cycle-1791"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.18234879506088672,
+            "unit": "cycle-1791"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.13144933707767079,
+            "unit": "cycle-1791"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.16889379436130605,
+            "unit": "cycle-1791"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 1.1608090767676256,
+            "unit": "cycle-1792"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.8560603230016519,
+            "unit": "cycle-1792"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.1546162621408431,
+            "unit": "cycle-1792"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.20767055104348198,
+            "unit": "cycle-1792"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.09244772795790453,
+            "unit": "cycle-1793"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.18615899887504117,
+            "unit": "cycle-1793"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.1963402934191585,
+            "unit": "cycle-1793"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.17134469810044556,
+            "unit": "cycle-1793"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.22379359620629322,
+            "unit": "cycle-1794"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.16513948904700476,
+            "unit": "cycle-1794"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.25713275677323505,
+            "unit": "cycle-1794"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.18158286685643424,
+            "unit": "cycle-1794"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.2112376067962383,
+            "unit": "cycle-1795"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.31907410120131885,
+            "unit": "cycle-1795"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.17685466765391808,
+            "unit": "cycle-1795"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.13867605617094353,
+            "unit": "cycle-1795"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.20826768462419135,
+            "unit": "cycle-1796"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.26858780170815155,
+            "unit": "cycle-1796"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.18739422681084472,
+            "unit": "cycle-1796"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.15438164742853727,
+            "unit": "cycle-1796"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.2527134928790031,
+            "unit": "cycle-1797"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.1997551090809559,
+            "unit": "cycle-1797"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.1808898240411552,
+            "unit": "cycle-1797"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.11856120105300842,
+            "unit": "cycle-1797"
+          }
+        ],
+        "folds": [
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -9942.694860045107,
+            "bic": -8746.289452903588,
+            "effective_sample_size": 726.139349019692,
+            "errors": [
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.5688148266753023,
+                "unit": "cycle-0324"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.48998948406878967,
+                "unit": "cycle-0324"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.24484345235906213,
+                "unit": "cycle-0324"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.2713461452696686,
+                "unit": "cycle-0324"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.556545135740469,
+                "unit": "cycle-0325"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.4785099739026369,
+                "unit": "cycle-0325"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.2965252814897457,
+                "unit": "cycle-0325"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.27714586418722675,
+                "unit": "cycle-0325"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.2791820498580809,
+                "unit": "cycle-0326"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.30046776477340753,
+                "unit": "cycle-0326"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.4347418409402307,
+                "unit": "cycle-0326"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.1923560329843772,
+                "unit": "cycle-0326"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.5758314771310211,
+                "unit": "cycle-0327"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.5912338262048852,
+                "unit": "cycle-0327"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.3562354936318924,
+                "unit": "cycle-0327"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.20536584038487893,
+                "unit": "cycle-0327"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.14989682995493622,
+                "unit": "cycle-0328"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.1976949860027465,
+                "unit": "cycle-0328"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.4951269997596777,
+                "unit": "cycle-0328"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.2525293422953155,
+                "unit": "cycle-0328"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.8533820010428501,
+                "unit": "cycle-0329"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.6355746695886259,
+                "unit": "cycle-0329"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.36370801295122823,
+                "unit": "cycle-0329"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.18494631639872727,
+                "unit": "cycle-0329"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.8173401435908052,
+                "unit": "cycle-0330"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.765804912192201,
+                "unit": "cycle-0330"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.3887198917719852,
+                "unit": "cycle-0330"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.2593988112256381,
+                "unit": "cycle-0330"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.289499967116226,
+                "unit": "cycle-0331"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.2663843137833,
+                "unit": "cycle-0331"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.42776969512398605,
+                "unit": "cycle-0331"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.24334299186747665,
+                "unit": "cycle-0331"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.874901487452348,
+                "unit": "cycle-0332"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.63181438322159,
+                "unit": "cycle-0332"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.4245154011848867,
+                "unit": "cycle-0332"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.2661785634920598,
+                "unit": "cycle-0332"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.5444361226433512,
+                "unit": "cycle-0333"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.44884542691911805,
+                "unit": "cycle-0333"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.28500625670532903,
+                "unit": "cycle-0333"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.23824257289176848,
+                "unit": "cycle-0333"
+              }
+            ],
+            "held_group": "cooler-003",
+            "innovation_sse": 89.73612272387122,
+            "minimum_rate_ratio": Infinity,
+            "n_curves": 80,
+            "n_observations": 2880,
+            "rates": [
+              0.05760345302671232
+            ],
+            "rho_ar1": 0.5972760457983474,
+            "sse": 88.53016921796348,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -10365.63339591744,
+            "bic": -8296.779679277726,
+            "effective_sample_size": 441.2511062981172,
+            "errors": [
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.2845813311972104,
+                "unit": "cycle-1056"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.13770569304733296,
+                "unit": "cycle-1056"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.315103450181874,
+                "unit": "cycle-1056"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.19340765095792092,
+                "unit": "cycle-1056"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.13380267240650653,
+                "unit": "cycle-1057"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.1744896296751859,
+                "unit": "cycle-1057"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.27796177976564085,
+                "unit": "cycle-1057"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.1544477915518373,
+                "unit": "cycle-1057"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.8123915701072401,
+                "unit": "cycle-1058"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.6353276135798894,
+                "unit": "cycle-1058"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.32342183944332387,
+                "unit": "cycle-1058"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.09374508669677878,
+                "unit": "cycle-1058"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.21864853091935388,
+                "unit": "cycle-1059"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.18645126069769313,
+                "unit": "cycle-1059"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.215014152962429,
+                "unit": "cycle-1059"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.09085347524564871,
+                "unit": "cycle-1059"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.10719145440744872,
+                "unit": "cycle-1060"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.16279898784376787,
+                "unit": "cycle-1060"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.21749859244927838,
+                "unit": "cycle-1060"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.10469527913854428,
+                "unit": "cycle-1060"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.17894856444031015,
+                "unit": "cycle-1061"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.13352904843315078,
+                "unit": "cycle-1061"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.2695786266891669,
+                "unit": "cycle-1061"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.11249449954700243,
+                "unit": "cycle-1061"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.31713876937583035,
+                "unit": "cycle-1062"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.3223496950677909,
+                "unit": "cycle-1062"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.3264507514954628,
+                "unit": "cycle-1062"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.11036576334301197,
+                "unit": "cycle-1062"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.2341772186826548,
+                "unit": "cycle-1063"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.26064847437780336,
+                "unit": "cycle-1063"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.24821399789408702,
+                "unit": "cycle-1063"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.11299747513279747,
+                "unit": "cycle-1063"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.23735445479784667,
+                "unit": "cycle-1064"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.31973809544526166,
+                "unit": "cycle-1064"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.25543250072992413,
+                "unit": "cycle-1064"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.13982858983564628,
+                "unit": "cycle-1064"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.31169233736286045,
+                "unit": "cycle-1065"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.35405656931506246,
+                "unit": "cycle-1065"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.2252337602105778,
+                "unit": "cycle-1065"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.1301112014512974,
+                "unit": "cycle-1065"
+              }
+            ],
+            "held_group": "cooler-020",
+            "innovation_sse": 107.15648605024921,
+            "minimum_rate_ratio": Infinity,
+            "n_curves": 80,
+            "n_observations": 2880,
+            "rates": [
+              0.07839027316293615
+            ],
+            "rho_ar1": 0.734286211926964,
+            "sse": 103.48463748061101,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -10316.710017093512,
+            "bic": -8485.866744735926,
+            "effective_sample_size": 502.47114975123066,
+            "errors": [
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.06434633769217386,
+                "unit": "cycle-1788"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.09751437639592737,
+                "unit": "cycle-1788"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.13249469842323236,
+                "unit": "cycle-1788"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.19891314996127168,
+                "unit": "cycle-1788"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.3546631938135417,
+                "unit": "cycle-1789"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.4194548552040931,
+                "unit": "cycle-1789"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.17580762595438812,
+                "unit": "cycle-1789"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.17229004008258397,
+                "unit": "cycle-1789"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.0850350270994549,
+                "unit": "cycle-1790"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.11336081346025771,
+                "unit": "cycle-1790"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.17990559284893237,
+                "unit": "cycle-1790"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.22877415992020778,
+                "unit": "cycle-1790"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.39328329847750093,
+                "unit": "cycle-1791"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.18234879506088672,
+                "unit": "cycle-1791"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.13144933707767079,
+                "unit": "cycle-1791"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.16889379436130605,
+                "unit": "cycle-1791"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 1.1608090767676256,
+                "unit": "cycle-1792"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.8560603230016519,
+                "unit": "cycle-1792"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.1546162621408431,
+                "unit": "cycle-1792"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.20767055104348198,
+                "unit": "cycle-1792"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.09244772795790453,
+                "unit": "cycle-1793"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.18615899887504117,
+                "unit": "cycle-1793"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.1963402934191585,
+                "unit": "cycle-1793"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.17134469810044556,
+                "unit": "cycle-1793"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.22379359620629322,
+                "unit": "cycle-1794"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.16513948904700476,
+                "unit": "cycle-1794"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.25713275677323505,
+                "unit": "cycle-1794"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.18158286685643424,
+                "unit": "cycle-1794"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.2112376067962383,
+                "unit": "cycle-1795"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.31907410120131885,
+                "unit": "cycle-1795"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.17685466765391808,
+                "unit": "cycle-1795"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.13867605617094353,
+                "unit": "cycle-1795"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.20826768462419135,
+                "unit": "cycle-1796"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.26858780170815155,
+                "unit": "cycle-1796"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.18739422681084472,
+                "unit": "cycle-1796"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.15438164742853727,
+                "unit": "cycle-1796"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.2527134928790031,
+                "unit": "cycle-1797"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.1997551090809559,
+                "unit": "cycle-1797"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.1808898240411552,
+                "unit": "cycle-1797"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.11856120105300842,
+                "unit": "cycle-1797"
+              }
+            ],
+            "held_group": "cooler-100",
+            "innovation_sse": 99.53185158206941,
+            "minimum_rate_ratio": Infinity,
+            "n_curves": 80,
+            "n_observations": 2880,
+            "rates": [
+              0.08278333342121838
+            ],
+            "rho_ar1": 0.7028970078351233,
+            "sse": 96.90856843097562,
+            "success": true
+          }
+        ],
+        "max_log_rate_std": 0.19554211900598956,
+        "mean_ar1_bic": -10208.346091018686,
+        "mean_bic": -8509.645292305746,
+        "mean_effective_sample_size": 556.6205350230133,
+        "mean_residual_rho_ar1": 0.6781530885201449,
+        "median_prediction_nrmse": 0.23779851384480757,
+        "minimum_rate_ratio": Infinity
+      },
+      "2": {
+        "all_finite": true,
+        "curve_errors": [
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.6770481139553286,
+            "unit": "cycle-0324"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.8369347206428476,
+            "unit": "cycle-0324"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.1401826134388487,
+            "unit": "cycle-0324"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.3319172058391649,
+            "unit": "cycle-0324"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.3799016941864753,
+            "unit": "cycle-0325"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.31203291277769857,
+            "unit": "cycle-0325"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.6295925990181832,
+            "unit": "cycle-0325"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.4246060383887512,
+            "unit": "cycle-0325"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.21886410556994992,
+            "unit": "cycle-0326"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.20529504421552777,
+            "unit": "cycle-0326"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 1.0786847105732624,
+            "unit": "cycle-0326"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.6991279317745309,
+            "unit": "cycle-0326"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 2.079974338514832,
+            "unit": "cycle-0327"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 2.0390047790753467,
+            "unit": "cycle-0327"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.5839856488352767,
+            "unit": "cycle-0327"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.8522611049702147,
+            "unit": "cycle-0327"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.5964959046717703,
+            "unit": "cycle-0328"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.544745631648648,
+            "unit": "cycle-0328"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.506482963724696,
+            "unit": "cycle-0328"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 1.5423114579454194,
+            "unit": "cycle-0328"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.15157076274974782,
+            "unit": "cycle-0329"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.36047799310631906,
+            "unit": "cycle-0329"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 1.1023861786285143,
+            "unit": "cycle-0329"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 1.3177554027600165,
+            "unit": "cycle-0329"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.5010236399664963,
+            "unit": "cycle-0330"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.5314991311065455,
+            "unit": "cycle-0330"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 1.085150612799072,
+            "unit": "cycle-0330"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 1.2396881900066623,
+            "unit": "cycle-0330"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.2702307462496371,
+            "unit": "cycle-0331"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.3468948934378237,
+            "unit": "cycle-0331"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.26012013387286737,
+            "unit": "cycle-0331"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.7835817932993323,
+            "unit": "cycle-0331"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.8299214431308107,
+            "unit": "cycle-0332"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 1.0987354139622187,
+            "unit": "cycle-0332"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 1.1302111477640517,
+            "unit": "cycle-0332"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.7324803943320852,
+            "unit": "cycle-0332"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.6581118326705406,
+            "unit": "cycle-0333"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.6116905613037825,
+            "unit": "cycle-0333"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 1.1461570943898607,
+            "unit": "cycle-0333"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.6348058327872028,
+            "unit": "cycle-0333"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.18078332000122896,
+            "unit": "cycle-1056"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.1317575500656796,
+            "unit": "cycle-1056"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.29826013984419913,
+            "unit": "cycle-1056"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.20499752495454052,
+            "unit": "cycle-1056"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.796388312341697,
+            "unit": "cycle-1057"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.699570961097226,
+            "unit": "cycle-1057"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.5580182154833216,
+            "unit": "cycle-1057"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.11735014565132282,
+            "unit": "cycle-1057"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.4448603485396778,
+            "unit": "cycle-1058"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.32818648054283,
+            "unit": "cycle-1058"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.1768545252498245,
+            "unit": "cycle-1058"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.5114015278165879,
+            "unit": "cycle-1058"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.45807521778419613,
+            "unit": "cycle-1059"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.33249700515217895,
+            "unit": "cycle-1059"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.48345703673748186,
+            "unit": "cycle-1059"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.7135795586572665,
+            "unit": "cycle-1059"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.24670423249548093,
+            "unit": "cycle-1060"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.5554273936445572,
+            "unit": "cycle-1060"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.15164951285508238,
+            "unit": "cycle-1060"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.5329477408288095,
+            "unit": "cycle-1060"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.23617265505325263,
+            "unit": "cycle-1061"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.15118922782357294,
+            "unit": "cycle-1061"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.3935709262094038,
+            "unit": "cycle-1061"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.5822350075121921,
+            "unit": "cycle-1061"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.41401298280225873,
+            "unit": "cycle-1062"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.2584115960537062,
+            "unit": "cycle-1062"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.29292473173065303,
+            "unit": "cycle-1062"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.580066312025828,
+            "unit": "cycle-1062"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.40260863725283735,
+            "unit": "cycle-1063"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.2653672300349058,
+            "unit": "cycle-1063"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.4217590356691272,
+            "unit": "cycle-1063"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.4994360793118358,
+            "unit": "cycle-1063"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.3097583822145952,
+            "unit": "cycle-1064"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.3045946080575845,
+            "unit": "cycle-1064"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.5107976884656519,
+            "unit": "cycle-1064"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.6297909707293148,
+            "unit": "cycle-1064"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.24339390910984904,
+            "unit": "cycle-1065"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.2937763115167433,
+            "unit": "cycle-1065"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.41546349374812175,
+            "unit": "cycle-1065"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 1.0240246854397266,
+            "unit": "cycle-1065"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.0625718158762495,
+            "unit": "cycle-1788"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.1511804570343191,
+            "unit": "cycle-1788"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.6591948483445212,
+            "unit": "cycle-1788"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.09172125799565338,
+            "unit": "cycle-1788"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.17060471858338513,
+            "unit": "cycle-1789"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.23671881683645055,
+            "unit": "cycle-1789"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.9917540787877668,
+            "unit": "cycle-1789"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.11872080147286149,
+            "unit": "cycle-1789"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.0772964425560001,
+            "unit": "cycle-1790"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.16412149227991496,
+            "unit": "cycle-1790"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.7291759771221975,
+            "unit": "cycle-1790"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.23701704750991323,
+            "unit": "cycle-1790"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.9721683283277106,
+            "unit": "cycle-1791"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.6356707251878169,
+            "unit": "cycle-1791"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 1.1070703803474722,
+            "unit": "cycle-1791"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.14548167741814408,
+            "unit": "cycle-1791"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 1.5887205342299113,
+            "unit": "cycle-1792"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 1.590241431686574,
+            "unit": "cycle-1792"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.458481223850913,
+            "unit": "cycle-1792"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.5111538270932512,
+            "unit": "cycle-1792"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 1.3492731172446106,
+            "unit": "cycle-1793"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 1.1826748414916992,
+            "unit": "cycle-1793"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.6264574967200331,
+            "unit": "cycle-1793"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.24059609405925458,
+            "unit": "cycle-1793"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.6730021567065163,
+            "unit": "cycle-1794"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.9026180137070091,
+            "unit": "cycle-1794"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 1.0208881385696051,
+            "unit": "cycle-1794"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.7824986470969674,
+            "unit": "cycle-1794"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 1.6515720708243917,
+            "unit": "cycle-1795"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 1.252260972514165,
+            "unit": "cycle-1795"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 1.1449029335980714,
+            "unit": "cycle-1795"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.35056324295326635,
+            "unit": "cycle-1795"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.45618874433092954,
+            "unit": "cycle-1796"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.8042685533411457,
+            "unit": "cycle-1796"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.904571511958848,
+            "unit": "cycle-1796"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.38382156085265,
+            "unit": "cycle-1796"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 1.2639495927293078,
+            "unit": "cycle-1797"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 1.0012505602996056,
+            "unit": "cycle-1797"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.40599185728510545,
+            "unit": "cycle-1797"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.9931191287184942,
+            "unit": "cycle-1797"
+          }
+        ],
+        "folds": [
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -9613.937715267093,
+            "bic": -9011.522717915306,
+            "effective_sample_size": 1102.6422082188071,
+            "errors": [
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.6770481139553286,
+                "unit": "cycle-0324"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.8369347206428476,
+                "unit": "cycle-0324"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.1401826134388487,
+                "unit": "cycle-0324"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.3319172058391649,
+                "unit": "cycle-0324"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.3799016941864753,
+                "unit": "cycle-0325"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.31203291277769857,
+                "unit": "cycle-0325"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.6295925990181832,
+                "unit": "cycle-0325"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.4246060383887512,
+                "unit": "cycle-0325"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.21886410556994992,
+                "unit": "cycle-0326"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.20529504421552777,
+                "unit": "cycle-0326"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 1.0786847105732624,
+                "unit": "cycle-0326"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.6991279317745309,
+                "unit": "cycle-0326"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 2.079974338514832,
+                "unit": "cycle-0327"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 2.0390047790753467,
+                "unit": "cycle-0327"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.5839856488352767,
+                "unit": "cycle-0327"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.8522611049702147,
+                "unit": "cycle-0327"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.5964959046717703,
+                "unit": "cycle-0328"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.544745631648648,
+                "unit": "cycle-0328"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.506482963724696,
+                "unit": "cycle-0328"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 1.5423114579454194,
+                "unit": "cycle-0328"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.15157076274974782,
+                "unit": "cycle-0329"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.36047799310631906,
+                "unit": "cycle-0329"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 1.1023861786285143,
+                "unit": "cycle-0329"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 1.3177554027600165,
+                "unit": "cycle-0329"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.5010236399664963,
+                "unit": "cycle-0330"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.5314991311065455,
+                "unit": "cycle-0330"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 1.085150612799072,
+                "unit": "cycle-0330"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 1.2396881900066623,
+                "unit": "cycle-0330"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.2702307462496371,
+                "unit": "cycle-0331"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.3468948934378237,
+                "unit": "cycle-0331"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.26012013387286737,
+                "unit": "cycle-0331"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.7835817932993323,
+                "unit": "cycle-0331"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.8299214431308107,
+                "unit": "cycle-0332"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 1.0987354139622187,
+                "unit": "cycle-0332"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 1.1302111477640517,
+                "unit": "cycle-0332"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.7324803943320852,
+                "unit": "cycle-0332"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.6581118326705406,
+                "unit": "cycle-0333"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.6116905613037825,
+                "unit": "cycle-0333"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 1.1461570943898607,
+                "unit": "cycle-0333"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.6348058327872028,
+                "unit": "cycle-0333"
+              }
+            ],
+            "held_group": "cooler-003",
+            "innovation_sse": 64.97309623045177,
+            "minimum_rate_ratio": 1.0000000132682765,
+            "n_curves": 80,
+            "n_observations": 2880,
+            "rates": [
+              0.0016666666764015908,
+              0.0016666666985153849
+            ],
+            "rho_ar1": 0.4462760395883257,
+            "sse": 64.53563398362942,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -10121.415615720716,
+            "bic": -9212.956893086644,
+            "effective_sample_size": 911.9881333666817,
+            "errors": [
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.18078332000122896,
+                "unit": "cycle-1056"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.1317575500656796,
+                "unit": "cycle-1056"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.29826013984419913,
+                "unit": "cycle-1056"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.20499752495454052,
+                "unit": "cycle-1056"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.796388312341697,
+                "unit": "cycle-1057"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.699570961097226,
+                "unit": "cycle-1057"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.5580182154833216,
+                "unit": "cycle-1057"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.11735014565132282,
+                "unit": "cycle-1057"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.4448603485396778,
+                "unit": "cycle-1058"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.32818648054283,
+                "unit": "cycle-1058"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.1768545252498245,
+                "unit": "cycle-1058"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.5114015278165879,
+                "unit": "cycle-1058"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.45807521778419613,
+                "unit": "cycle-1059"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.33249700515217895,
+                "unit": "cycle-1059"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.48345703673748186,
+                "unit": "cycle-1059"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.7135795586572665,
+                "unit": "cycle-1059"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.24670423249548093,
+                "unit": "cycle-1060"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.5554273936445572,
+                "unit": "cycle-1060"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.15164951285508238,
+                "unit": "cycle-1060"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.5329477408288095,
+                "unit": "cycle-1060"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.23617265505325263,
+                "unit": "cycle-1061"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.15118922782357294,
+                "unit": "cycle-1061"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.3935709262094038,
+                "unit": "cycle-1061"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.5822350075121921,
+                "unit": "cycle-1061"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.41401298280225873,
+                "unit": "cycle-1062"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.2584115960537062,
+                "unit": "cycle-1062"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.29292473173065303,
+                "unit": "cycle-1062"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.580066312025828,
+                "unit": "cycle-1062"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.40260863725283735,
+                "unit": "cycle-1063"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.2653672300349058,
+                "unit": "cycle-1063"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.4217590356691272,
+                "unit": "cycle-1063"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.4994360793118358,
+                "unit": "cycle-1063"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.3097583822145952,
+                "unit": "cycle-1064"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.3045946080575845,
+                "unit": "cycle-1064"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.5107976884656519,
+                "unit": "cycle-1064"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.6297909707293148,
+                "unit": "cycle-1064"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.24339390910984904,
+                "unit": "cycle-1065"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.2937763115167433,
+                "unit": "cycle-1065"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.41546349374812175,
+                "unit": "cycle-1065"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 1.0240246854397266,
+                "unit": "cycle-1065"
+              }
+            ],
+            "held_group": "cooler-020",
+            "innovation_sse": 59.557680571341216,
+            "minimum_rate_ratio": 1.0000003377639894,
+            "n_curves": 80,
+            "n_observations": 2880,
+            "rates": [
+              0.0016666869679203338,
+              0.0016666875308671734
+            ],
+            "rho_ar1": 0.5189920952853925,
+            "sse": 60.17609101321176,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -10073.322305601994,
+            "bic": -9279.135973142853,
+            "effective_sample_size": 963.5235106653931,
+            "errors": [
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.0625718158762495,
+                "unit": "cycle-1788"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.1511804570343191,
+                "unit": "cycle-1788"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.6591948483445212,
+                "unit": "cycle-1788"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.09172125799565338,
+                "unit": "cycle-1788"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.17060471858338513,
+                "unit": "cycle-1789"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.23671881683645055,
+                "unit": "cycle-1789"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.9917540787877668,
+                "unit": "cycle-1789"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.11872080147286149,
+                "unit": "cycle-1789"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.0772964425560001,
+                "unit": "cycle-1790"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.16412149227991496,
+                "unit": "cycle-1790"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.7291759771221975,
+                "unit": "cycle-1790"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.23701704750991323,
+                "unit": "cycle-1790"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.9721683283277106,
+                "unit": "cycle-1791"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.6356707251878169,
+                "unit": "cycle-1791"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 1.1070703803474722,
+                "unit": "cycle-1791"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.14548167741814408,
+                "unit": "cycle-1791"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 1.5887205342299113,
+                "unit": "cycle-1792"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 1.590241431686574,
+                "unit": "cycle-1792"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.458481223850913,
+                "unit": "cycle-1792"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.5111538270932512,
+                "unit": "cycle-1792"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 1.3492731172446106,
+                "unit": "cycle-1793"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 1.1826748414916992,
+                "unit": "cycle-1793"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.6264574967200331,
+                "unit": "cycle-1793"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.24059609405925458,
+                "unit": "cycle-1793"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.6730021567065163,
+                "unit": "cycle-1794"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.9026180137070091,
+                "unit": "cycle-1794"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 1.0208881385696051,
+                "unit": "cycle-1794"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.7824986470969674,
+                "unit": "cycle-1794"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 1.6515720708243917,
+                "unit": "cycle-1795"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 1.252260972514165,
+                "unit": "cycle-1795"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 1.1449029335980714,
+                "unit": "cycle-1795"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.35056324295326635,
+                "unit": "cycle-1795"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.45618874433092954,
+                "unit": "cycle-1796"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.8042685533411457,
+                "unit": "cycle-1796"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.904571511958848,
+                "unit": "cycle-1796"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.38382156085265,
+                "unit": "cycle-1796"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 1.2639495927293078,
+                "unit": "cycle-1797"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 1.0012505602996056,
+                "unit": "cycle-1797"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.40599185728510545,
+                "unit": "cycle-1797"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.9931191287184942,
+                "unit": "cycle-1797"
+              }
+            ],
+            "held_group": "cooler-100",
+            "innovation_sse": 58.935849566928006,
+            "minimum_rate_ratio": 1.000002164611885,
+            "n_curves": 80,
+            "n_observations": 2880,
+            "rates": [
+              0.0016666666666752096,
+              0.0016666702743616847
+            ],
+            "rho_ar1": 0.4986248904206197,
+            "sse": 58.809080128436946,
+            "success": true
+          }
+        ],
+        "max_log_rate_std": 7.03083071873884e-06,
+        "mean_ar1_bic": -9936.225212196601,
+        "mean_bic": -9167.871861381602,
+        "mean_effective_sample_size": 992.7179507502939,
+        "mean_residual_rho_ar1": 0.48796434176477926,
+        "median_prediction_nrmse": 0.5112776774549195,
+        "minimum_rate_ratio": 1.0000000132682765
+      },
+      "3": {
+        "all_finite": true,
+        "curve_errors": [
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.5887088714531574,
+            "unit": "cycle-0324"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.2425675708628331,
+            "unit": "cycle-0324"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 1.2154299151882046,
+            "unit": "cycle-0324"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.6061553866660728,
+            "unit": "cycle-0324"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.415075824296938,
+            "unit": "cycle-0325"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.3409149681838563,
+            "unit": "cycle-0325"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.2806064276857066,
+            "unit": "cycle-0325"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.6097233293683342,
+            "unit": "cycle-0325"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.5399399450139651,
+            "unit": "cycle-0326"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.5042344961466626,
+            "unit": "cycle-0326"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.43048366856672043,
+            "unit": "cycle-0326"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.0928216609356285,
+            "unit": "cycle-0326"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 1.171205892925836,
+            "unit": "cycle-0327"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 1.2402992642721744,
+            "unit": "cycle-0327"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.6849280900052246,
+            "unit": "cycle-0327"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.11277322684264697,
+            "unit": "cycle-0327"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.41535431168323894,
+            "unit": "cycle-0328"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.5311611211894841,
+            "unit": "cycle-0328"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.8981387676806089,
+            "unit": "cycle-0328"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 0.8770134618871719,
+            "unit": "cycle-0328"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.16444036727713468,
+            "unit": "cycle-0329"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.14211413918826352,
+            "unit": "cycle-0329"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.8054932856684788,
+            "unit": "cycle-0329"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 1.4026953472204418,
+            "unit": "cycle-0329"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.24066828478476315,
+            "unit": "cycle-0330"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.2712982679209403,
+            "unit": "cycle-0330"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.9179810116522816,
+            "unit": "cycle-0330"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 1.719905162982982,
+            "unit": "cycle-0330"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.22289674442652815,
+            "unit": "cycle-0331"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.08480550366115899,
+            "unit": "cycle-0331"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.3644829662202516,
+            "unit": "cycle-0331"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 1.1766604694469005,
+            "unit": "cycle-0331"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.4542811646194151,
+            "unit": "cycle-0332"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.20613704421778972,
+            "unit": "cycle-0332"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.23936500247729975,
+            "unit": "cycle-0332"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 1.3711399695405122,
+            "unit": "cycle-0332"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-003",
+            "nrmse": 0.932795695270085,
+            "unit": "cycle-0333"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-003",
+            "nrmse": 0.7729211237810392,
+            "unit": "cycle-0333"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-003",
+            "nrmse": 0.8376637155416309,
+            "unit": "cycle-0333"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-003",
+            "nrmse": 1.0011049907526837,
+            "unit": "cycle-0333"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.18084035491955291,
+            "unit": "cycle-1056"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.5324265549022015,
+            "unit": "cycle-1056"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.48685722712712026,
+            "unit": "cycle-1056"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.10870382468468695,
+            "unit": "cycle-1056"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.7354165675173807,
+            "unit": "cycle-1057"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.5287317290256193,
+            "unit": "cycle-1057"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.4201629381873803,
+            "unit": "cycle-1057"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.12945264495091774,
+            "unit": "cycle-1057"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.42061781702237316,
+            "unit": "cycle-1058"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.9682821597937858,
+            "unit": "cycle-1058"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.09318544159067621,
+            "unit": "cycle-1058"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.22892528311581062,
+            "unit": "cycle-1058"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.6153345919558536,
+            "unit": "cycle-1059"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.5387135452858481,
+            "unit": "cycle-1059"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.11124277348090802,
+            "unit": "cycle-1059"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.3120126030701803,
+            "unit": "cycle-1059"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.19633621846042468,
+            "unit": "cycle-1060"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.3344444765611984,
+            "unit": "cycle-1060"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.3603686323824552,
+            "unit": "cycle-1060"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.14410806798764578,
+            "unit": "cycle-1060"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.16167398914760048,
+            "unit": "cycle-1061"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.16372417649933693,
+            "unit": "cycle-1061"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.23224218570535152,
+            "unit": "cycle-1061"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.1688184349437428,
+            "unit": "cycle-1061"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.5849411666260593,
+            "unit": "cycle-1062"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.3940604525669264,
+            "unit": "cycle-1062"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.3986986502051818,
+            "unit": "cycle-1062"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.1075610989534346,
+            "unit": "cycle-1062"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.25299319784084456,
+            "unit": "cycle-1063"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.2578679610281274,
+            "unit": "cycle-1063"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.1615863935143771,
+            "unit": "cycle-1063"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.08319115959160095,
+            "unit": "cycle-1063"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.46047824779574426,
+            "unit": "cycle-1064"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 1.0018053193120517,
+            "unit": "cycle-1064"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.4279555226614334,
+            "unit": "cycle-1064"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.6377656357657343,
+            "unit": "cycle-1064"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-020",
+            "nrmse": 0.15876587871638154,
+            "unit": "cycle-1065"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-020",
+            "nrmse": 0.11366295193931844,
+            "unit": "cycle-1065"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-020",
+            "nrmse": 0.539179164957749,
+            "unit": "cycle-1065"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-020",
+            "nrmse": 0.8826889899905423,
+            "unit": "cycle-1065"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.4221860495547095,
+            "unit": "cycle-1788"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.20868146599265333,
+            "unit": "cycle-1788"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.5794284739208222,
+            "unit": "cycle-1788"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.40771443241295624,
+            "unit": "cycle-1788"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.813164016713542,
+            "unit": "cycle-1789"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.8555170404284603,
+            "unit": "cycle-1789"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.38991722705700915,
+            "unit": "cycle-1789"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.42398374589463755,
+            "unit": "cycle-1789"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.1343477682961523,
+            "unit": "cycle-1790"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.3081578410509745,
+            "unit": "cycle-1790"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.4242428210171458,
+            "unit": "cycle-1790"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.12923946460294217,
+            "unit": "cycle-1790"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.7809003315390594,
+            "unit": "cycle-1791"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.8687491406764886,
+            "unit": "cycle-1791"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.5262405865908107,
+            "unit": "cycle-1791"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.451552010825672,
+            "unit": "cycle-1791"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 1.8408904018614263,
+            "unit": "cycle-1792"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 1.8252311729964334,
+            "unit": "cycle-1792"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.1854852398145561,
+            "unit": "cycle-1792"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.6897824082331567,
+            "unit": "cycle-1792"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 2.021617053145491,
+            "unit": "cycle-1793"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 2.084135263823068,
+            "unit": "cycle-1793"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.41186479503248635,
+            "unit": "cycle-1793"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.35089950339125286,
+            "unit": "cycle-1793"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.31175897175915845,
+            "unit": "cycle-1794"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.6854237457270383,
+            "unit": "cycle-1794"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.412426912409089,
+            "unit": "cycle-1794"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 1.0089787530436256,
+            "unit": "cycle-1794"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.5893760845484916,
+            "unit": "cycle-1795"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.3993150054903564,
+            "unit": "cycle-1795"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.6114168584113154,
+            "unit": "cycle-1795"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.7932936613212214,
+            "unit": "cycle-1795"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.8375398259760239,
+            "unit": "cycle-1796"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.9729686125810507,
+            "unit": "cycle-1796"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.25804227324918816,
+            "unit": "cycle-1796"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.5482044623573515,
+            "unit": "cycle-1796"
+          },
+          {
+            "channel": "CE",
+            "group": "cooler-100",
+            "nrmse": 0.6865205059824849,
+            "unit": "cycle-1797"
+          },
+          {
+            "channel": "CP",
+            "group": "cooler-100",
+            "nrmse": 0.48600833759209366,
+            "unit": "cycle-1797"
+          },
+          {
+            "channel": "TS1",
+            "group": "cooler-100",
+            "nrmse": 0.0840796042278674,
+            "unit": "cycle-1797"
+          },
+          {
+            "channel": "TS2",
+            "group": "cooler-100",
+            "nrmse": 0.9372142313541941,
+            "unit": "cycle-1797"
+          }
+        ],
+        "folds": [
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -9149.344402022105,
+            "bic": -8759.915119665822,
+            "effective_sample_size": 1330.8658917252062,
+            "errors": [
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.5887088714531574,
+                "unit": "cycle-0324"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.2425675708628331,
+                "unit": "cycle-0324"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 1.2154299151882046,
+                "unit": "cycle-0324"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.6061553866660728,
+                "unit": "cycle-0324"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.415075824296938,
+                "unit": "cycle-0325"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.3409149681838563,
+                "unit": "cycle-0325"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.2806064276857066,
+                "unit": "cycle-0325"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.6097233293683342,
+                "unit": "cycle-0325"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.5399399450139651,
+                "unit": "cycle-0326"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.5042344961466626,
+                "unit": "cycle-0326"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.43048366856672043,
+                "unit": "cycle-0326"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.0928216609356285,
+                "unit": "cycle-0326"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 1.171205892925836,
+                "unit": "cycle-0327"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 1.2402992642721744,
+                "unit": "cycle-0327"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.6849280900052246,
+                "unit": "cycle-0327"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.11277322684264697,
+                "unit": "cycle-0327"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.41535431168323894,
+                "unit": "cycle-0328"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.5311611211894841,
+                "unit": "cycle-0328"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.8981387676806089,
+                "unit": "cycle-0328"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 0.8770134618871719,
+                "unit": "cycle-0328"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.16444036727713468,
+                "unit": "cycle-0329"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.14211413918826352,
+                "unit": "cycle-0329"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.8054932856684788,
+                "unit": "cycle-0329"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 1.4026953472204418,
+                "unit": "cycle-0329"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.24066828478476315,
+                "unit": "cycle-0330"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.2712982679209403,
+                "unit": "cycle-0330"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.9179810116522816,
+                "unit": "cycle-0330"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 1.719905162982982,
+                "unit": "cycle-0330"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.22289674442652815,
+                "unit": "cycle-0331"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.08480550366115899,
+                "unit": "cycle-0331"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.3644829662202516,
+                "unit": "cycle-0331"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 1.1766604694469005,
+                "unit": "cycle-0331"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.4542811646194151,
+                "unit": "cycle-0332"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.20613704421778972,
+                "unit": "cycle-0332"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.23936500247729975,
+                "unit": "cycle-0332"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 1.3711399695405122,
+                "unit": "cycle-0332"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-003",
+                "nrmse": 0.932795695270085,
+                "unit": "cycle-0333"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-003",
+                "nrmse": 0.7729211237810392,
+                "unit": "cycle-0333"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-003",
+                "nrmse": 0.8376637155416309,
+                "unit": "cycle-0333"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-003",
+                "nrmse": 1.0011049907526837,
+                "unit": "cycle-0333"
+              }
+            ],
+            "held_group": "cooler-003",
+            "innovation_sse": 56.639945190267156,
+            "minimum_rate_ratio": 1.0039622006976725,
+            "n_curves": 80,
+            "n_observations": 2880,
+            "rates": [
+              0.05392806556255691,
+              0.05416334562828026,
+              0.054377951674116916
+            ],
+            "rho_ar1": 0.36788968067565503,
+            "sse": 56.291881062180224,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -9775.013100825478,
+            "bic": -9235.793119718244,
+            "effective_sample_size": 1178.6963027999593,
+            "errors": [
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.18084035491955291,
+                "unit": "cycle-1056"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.5324265549022015,
+                "unit": "cycle-1056"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.48685722712712026,
+                "unit": "cycle-1056"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.10870382468468695,
+                "unit": "cycle-1056"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.7354165675173807,
+                "unit": "cycle-1057"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.5287317290256193,
+                "unit": "cycle-1057"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.4201629381873803,
+                "unit": "cycle-1057"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.12945264495091774,
+                "unit": "cycle-1057"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.42061781702237316,
+                "unit": "cycle-1058"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.9682821597937858,
+                "unit": "cycle-1058"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.09318544159067621,
+                "unit": "cycle-1058"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.22892528311581062,
+                "unit": "cycle-1058"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.6153345919558536,
+                "unit": "cycle-1059"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.5387135452858481,
+                "unit": "cycle-1059"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.11124277348090802,
+                "unit": "cycle-1059"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.3120126030701803,
+                "unit": "cycle-1059"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.19633621846042468,
+                "unit": "cycle-1060"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.3344444765611984,
+                "unit": "cycle-1060"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.3603686323824552,
+                "unit": "cycle-1060"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.14410806798764578,
+                "unit": "cycle-1060"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.16167398914760048,
+                "unit": "cycle-1061"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.16372417649933693,
+                "unit": "cycle-1061"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.23224218570535152,
+                "unit": "cycle-1061"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.1688184349437428,
+                "unit": "cycle-1061"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.5849411666260593,
+                "unit": "cycle-1062"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.3940604525669264,
+                "unit": "cycle-1062"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.3986986502051818,
+                "unit": "cycle-1062"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.1075610989534346,
+                "unit": "cycle-1062"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.25299319784084456,
+                "unit": "cycle-1063"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.2578679610281274,
+                "unit": "cycle-1063"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.1615863935143771,
+                "unit": "cycle-1063"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.08319115959160095,
+                "unit": "cycle-1063"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.46047824779574426,
+                "unit": "cycle-1064"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 1.0018053193120517,
+                "unit": "cycle-1064"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.4279555226614334,
+                "unit": "cycle-1064"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.6377656357657343,
+                "unit": "cycle-1064"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-020",
+                "nrmse": 0.15876587871638154,
+                "unit": "cycle-1065"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-020",
+                "nrmse": 0.11366295193931844,
+                "unit": "cycle-1065"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-020",
+                "nrmse": 0.539179164957749,
+                "unit": "cycle-1065"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-020",
+                "nrmse": 0.8826889899905423,
+                "unit": "cycle-1065"
+              }
+            ],
+            "held_group": "cooler-020",
+            "innovation_sse": 47.74852679937803,
+            "minimum_rate_ratio": 1.0011491249009905,
+            "n_curves": 80,
+            "n_observations": 2880,
+            "rates": [
+              0.06958094265077791,
+              0.06992837114424487,
+              0.07000872757681242
+            ],
+            "rho_ar1": 0.4191749197953953,
+            "sse": 47.71829653830779,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -9672.053866247574,
+            "bic": -9157.86541400778,
+            "effective_sample_size": 1188.3074021528048,
+            "errors": [
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.4221860495547095,
+                "unit": "cycle-1788"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.20868146599265333,
+                "unit": "cycle-1788"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.5794284739208222,
+                "unit": "cycle-1788"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.40771443241295624,
+                "unit": "cycle-1788"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.813164016713542,
+                "unit": "cycle-1789"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.8555170404284603,
+                "unit": "cycle-1789"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.38991722705700915,
+                "unit": "cycle-1789"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.42398374589463755,
+                "unit": "cycle-1789"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.1343477682961523,
+                "unit": "cycle-1790"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.3081578410509745,
+                "unit": "cycle-1790"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.4242428210171458,
+                "unit": "cycle-1790"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.12923946460294217,
+                "unit": "cycle-1790"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.7809003315390594,
+                "unit": "cycle-1791"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.8687491406764886,
+                "unit": "cycle-1791"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.5262405865908107,
+                "unit": "cycle-1791"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.451552010825672,
+                "unit": "cycle-1791"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 1.8408904018614263,
+                "unit": "cycle-1792"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 1.8252311729964334,
+                "unit": "cycle-1792"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.1854852398145561,
+                "unit": "cycle-1792"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.6897824082331567,
+                "unit": "cycle-1792"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 2.021617053145491,
+                "unit": "cycle-1793"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 2.084135263823068,
+                "unit": "cycle-1793"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.41186479503248635,
+                "unit": "cycle-1793"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.35089950339125286,
+                "unit": "cycle-1793"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.31175897175915845,
+                "unit": "cycle-1794"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.6854237457270383,
+                "unit": "cycle-1794"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.412426912409089,
+                "unit": "cycle-1794"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 1.0089787530436256,
+                "unit": "cycle-1794"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.5893760845484916,
+                "unit": "cycle-1795"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.3993150054903564,
+                "unit": "cycle-1795"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.6114168584113154,
+                "unit": "cycle-1795"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.7932936613212214,
+                "unit": "cycle-1795"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.8375398259760239,
+                "unit": "cycle-1796"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.9729686125810507,
+                "unit": "cycle-1796"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.25804227324918816,
+                "unit": "cycle-1796"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.5482044623573515,
+                "unit": "cycle-1796"
+              },
+              {
+                "channel": "CE",
+                "group": "cooler-100",
+                "nrmse": 0.6865205059824849,
+                "unit": "cycle-1797"
+              },
+              {
+                "channel": "CP",
+                "group": "cooler-100",
+                "nrmse": 0.48600833759209366,
+                "unit": "cycle-1797"
+              },
+              {
+                "channel": "TS1",
+                "group": "cooler-100",
+                "nrmse": 0.0840796042278674,
+                "unit": "cycle-1797"
+              },
+              {
+                "channel": "TS2",
+                "group": "cooler-100",
+                "nrmse": 0.9372142313541941,
+                "unit": "cycle-1797"
+              }
+            ],
+            "held_group": "cooler-100",
+            "innovation_sse": 49.32354920219491,
+            "minimum_rate_ratio": 1.0008249454122111,
+            "n_curves": 80,
+            "n_observations": 2880,
+            "rates": [
+              0.07965481779046085,
+              0.0797205286669576,
+              0.07980080628494414
+            ],
+            "rho_ar1": 0.41582221563493726,
+            "sse": 49.02709628722914,
+            "success": true
+          }
+        ],
+        "max_log_rate_std": 0.19805960900189523,
+        "mean_ar1_bic": -9532.137123031718,
+        "mean_bic": -9051.191217797283,
+        "mean_effective_sample_size": 1232.6231988926568,
+        "mean_residual_rho_ar1": 0.4009622720353292,
+        "median_prediction_nrmse": 0.4292195956140769,
+        "minimum_rate_ratio": 1.0008249454122111
+      }
+    },
+    "ranks": [
+      1,
+      2,
+      3
+    ]
+  },
+  "experiment": "stage64_public_uci_hydraulic_transients",
+  "full_fit_certificates": {
+    "1": {
+      "fit": {
+        "amplitude_constraint": "signed",
+        "ar1_bic": -15181.92248863495,
+        "bic": -12637.735208660812,
+        "effective_sample_size": 811.100506384136,
+        "innovation_sse": 148.8031276882416,
+        "minimum_rate_ratio": Infinity,
+        "n_curves": 120,
+        "n_observations": 4320,
+        "rates": [
+          0.07156524055510544
+        ],
+        "rho_ar1": 0.6838493007981576,
+        "sse": 145.27305793230323,
+        "success": true
+      },
+      "identifiability": {
+        "comparability": "The normalized index removes leading square-root sample-size scaling, but both indices remain task-internal diagnostics until calibrated by simulation.",
+        "interpretation": "Local information after curve-specific offsets and amplitudes are projected out; small values indicate an unresolved rate direction.",
+        "local_boundary_index": Infinity,
+        "minimum_log_rate_gap": Infinity,
+        "minimum_projected_information_eigenvalue": 818.9949856975064,
+        "noise_std": 0.1887190260283013,
+        "noise_std_source": "residual",
+        "normalized_local_boundary_index": Infinity,
+        "projected_condition_number": 1.0,
+        "projected_log_rate_singular_values": [
+          5.400777776324211
+        ],
+        "rates": [
+          0.07156524055510544
+        ]
+      }
+    },
+    "2": {
+      "fit": {
+        "amplitude_constraint": "signed",
+        "ar1_bic": -14744.194949785744,
+        "bic": -13609.659739734941,
+        "effective_sample_size": 1489.6800311255356,
+        "innovation_sse": 91.83161886218707,
+        "minimum_rate_ratio": 1.000000000889834,
+        "n_curves": 120,
+        "n_observations": 4320,
+        "rates": [
+          0.0016666666675157905,
+          0.0016666666689988472
+        ],
+        "rho_ar1": 0.48717312377117844,
+        "sse": 91.75911158947073,
+        "success": true
+      },
+      "identifiability": {
+        "comparability": "The normalized index removes leading square-root sample-size scaling, but both indices remain task-internal diagnostics until calibrated by simulation.",
+        "interpretation": "Local information after curve-specific offsets and amplitudes are projected out; small values indicate an unresolved rate direction.",
+        "local_boundary_index": 0.057112123435801146,
+        "minimum_log_rate_gap": 8.898339842744463e-10,
+        "minimum_projected_information_eigenvalue": 4119444335981608.0,
+        "noise_std": 0.15226030839735247,
+        "noise_std_source": "residual",
+        "normalized_local_boundary_index": 0.0008689332864668817,
+        "projected_condition_number": 2.055218418949708,
+        "projected_log_rate_singular_values": [
+          20084637.973385207,
+          9772507.772506826
+        ],
+        "rates": [
+          0.0016666666675157905,
+          0.0016666666689988472
+        ]
+      }
+    },
+    "3": {
+      "fit": {
+        "amplitude_constraint": "signed",
+        "ar1_bic": -14085.312932997365,
+        "bic": -13374.961048017822,
+        "effective_sample_size": 1853.6444293389654,
+        "innovation_sse": 76.98737504901636,
+        "minimum_rate_ratio": 1.000675572516384,
+        "n_curves": 120,
+        "n_observations": 4320,
+        "rates": [
+          0.06883854255793086,
+          0.06888504798535093,
+          0.06911396847816591
+        ],
+        "rho_ar1": 0.39949750894952596,
+        "sse": 76.63312184152926,
+        "success": true
+      },
+      "identifiability": {
+        "comparability": "The normalized index removes leading square-root sample-size scaling, but both indices remain task-internal diagnostics until calibrated by simulation.",
+        "interpretation": "Local information after curve-specific offsets and amplitudes are projected out; small values indicate an unresolved rate direction.",
+        "local_boundary_index": 1.8486516941915707e-07,
+        "minimum_log_rate_gap": 0.0006753444199962821,
+        "minimum_projected_information_eigenvalue": 7.493065940670044e-08,
+        "noise_std": 0.14132284098762474,
+        "noise_std_source": "residual",
+        "normalized_local_boundary_index": 2.8126339829968485e-09,
+        "projected_condition_number": 38415.2302653463,
+        "projected_log_rate_singular_values": [
+          1.48609159320235,
+          0.0005425205876442177,
+          3.868495862025138e-05
+        ],
+        "rates": [
+          0.06883854255793086,
+          0.06888504798535093,
+          0.06911396847816591
+        ]
+      }
+    }
+  },
+  "model_family_baselines": {
+    "ar2_recurrence": {
+      "baseline_minus_shared_bootstrap_95pct": [
+        -0.018846595213899142,
+        0.1089696937039807
+      ],
+      "independent_units": 30,
+      "median_cycle_nrmse": 0.31644948531265776,
+      "shared_minus_baseline_median_nrmse": -0.061018852436069665,
+      "wilcoxon_p_baseline_greater": 0.024855060502886772
+    },
+    "fixed_grid_nnls": {
+      "baseline_minus_shared_bootstrap_95pct": [
+        0.282604694447245,
+        0.47900878708580585
+      ],
+      "independent_units": 30,
+      "median_cycle_nrmse": 0.6249417787536145,
+      "shared_minus_baseline_median_nrmse": -0.3875097232276484,
+      "wilcoxon_p_baseline_greater": 3.997236490249634e-06
+    },
+    "interpretation": "These are matched early-to-late predictive controls, not claims that one model family identifies the physical cooling mechanism.",
+    "prony_recurrence": {
+      "baseline_minus_shared_bootstrap_95pct": [
+        0.07669104569471534,
+        0.27286225693376603
+      ],
+      "independent_units": 30,
+      "median_cycle_nrmse": 0.4905240646268967,
+      "shared_minus_baseline_median_nrmse": -0.15921816909757766,
+      "wilcoxon_p_baseline_greater": 1.6195699572563171e-06
+    },
+    "shared_rank_1": {
+      "median_cycle_nrmse": 0.24379454302612813
+    },
+    "stretched_exponential": {
+      "baseline_minus_shared_bootstrap_95pct": [
+        0.034893346806889144,
+        0.14217423937684665
+      ],
+      "independent_units": 30,
+      "median_cycle_nrmse": 0.3292041020706551,
+      "shared_minus_baseline_median_nrmse": -0.06728470042230751,
+      "wilcoxon_p_baseline_greater": 0.0003989487886428833
+    }
+  },
+  "preprocessing": {
+    "cycle_window_seconds": [
+      20,
+      55
+    ],
+    "fixed_conditions": "valve=100, pump leakage=0, accumulator=130 bar, stable flag=0",
+    "normalization": "subtract first window value and divide by early-calibration range",
+    "smoothing": "none",
+    "tail_leakage": false,
+    "varied_condition": "cooler efficiency in {3, 20, 100} percent"
+  },
+  "protocol_frozen_before_fit": true,
+  "route_pass": true,
+  "schema_version": "1.0.0",
+  "source": {
+    "archive_sha256": "24128aad2ee45eea7e6b63ebbd9992cdf25d0483a2cebefbfc13bc69079af1f2",
+    "channels": [
+      "CE",
+      "CP",
+      "TS1",
+      "TS2"
+    ],
+    "doi": "10.24432/C5CW21",
+    "held_groups": [
+      "cooler-003",
+      "cooler-020",
+      "cooler-100"
+    ],
+    "independent_cycles": 30,
+    "license": "CC-BY-4.0",
+    "title": "Condition monitoring of hydraulic systems",
+    "url": "https://archive.ics.uci.edu/dataset/447/condition+monitoring+of+hydraulic+systems"
+  },
+  "statistics": {
+    "2": {
+      "cluster_bootstrap_95pct": [
+        -1.440033723114233,
+        -0.3840513445932831
+      ],
+      "independent_unit": "hydraulic load cycle",
+      "median_relative_improvement": -0.7353717700682789,
+      "n_units": 30,
+      "wilcoxon_p_one_sided": 0.9999996544793248
+    },
+    "3": {
+      "cluster_bootstrap_95pct": [
+        -1.412557537604232,
+        -0.34838969857879853
+      ],
+      "independent_unit": "hydraulic load cycle",
+      "median_relative_improvement": -0.9786704940386548,
+      "n_units": 30,
+      "wilcoxon_p_one_sided": 0.9999960027635098
+    }
+  },
+  "threshold_sensitivity": [
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.1,
+      "predictive_gain": 0.02
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.02
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.5,
+      "predictive_gain": 0.02
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.1,
+      "predictive_gain": 0.02
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.02
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.5,
+      "predictive_gain": 0.02
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 1.2,
+      "min_rate_ratio": 1.1,
+      "predictive_gain": 0.02
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 1.2,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.02
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 1.2,
+      "min_rate_ratio": 1.5,
+      "predictive_gain": 0.02
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.1,
+      "predictive_gain": 0.05
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.05
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.5,
+      "predictive_gain": 0.05
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.1,
+      "predictive_gain": 0.05
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.05
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.5,
+      "predictive_gain": 0.05
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 1.2,
+      "min_rate_ratio": 1.1,
+      "predictive_gain": 0.05
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 1.2,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.05
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 1.2,
+      "min_rate_ratio": 1.5,
+      "predictive_gain": 0.05
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.1,
+      "predictive_gain": 0.1
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.1
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.5,
+      "min_rate_ratio": 1.5,
+      "predictive_gain": 0.1
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.1,
+      "predictive_gain": 0.1
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.1
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.5,
+      "predictive_gain": 0.1
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 1.2,
+      "min_rate_ratio": 1.1,
+      "predictive_gain": 0.1
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 1.2,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.1
+    },
+    {
+      "decision": "INDETERMINATE",
+      "max_log_rate_std": 1.2,
+      "min_rate_ratio": 1.5,
+      "predictive_gain": 0.1
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "claim_boundary": "Adjusted p-values address multiplicity among matched baseline tests within each task; they do not correct across exploratory analyses elsewhere in the project.",
+  "experiment": "within_task_holm_familywise_audit",
+  "families": {
+    "uci_gas_recovery": {
+      "family_size": 3,
+      "holm_adjusted_p": {
+        "fixed_grid_nnls": 2.6645352591003757e-15,
+        "independent_nls_rank3": 0.0021981232450851707,
+        "prony_rank3": 0.009279111295354525
+      },
+      "raw_p": {
+        "fixed_grid_nnls": 8.881784197001252e-16,
+        "independent_nls_rank3": 0.0010990616225425853,
+        "prony_rank3": 0.009279111295354525
+      }
+    },
+    "uci_hydraulic_transients": {
+      "family_size": 4,
+      "holm_adjusted_p": {
+        "ar2_recurrence": 0.024855060502886772,
+        "fixed_grid_nnls": 1.1991709470748901e-05,
+        "prony_recurrence": 6.4782798290252686e-06,
+        "stretched_exponential": 0.0007978975772857666
+      },
+      "raw_p": {
+        "ar2_recurrence": 0.024855060502886772,
+        "fixed_grid_nnls": 3.997236490249634e-06,
+        "prony_recurrence": 1.6195699572563171e-06,
+        "stretched_exponential": 0.0003989487886428833
+      }
+    }
+  },
+  "method": "Holm step-down correction, applied separately within each public-task baseline family"
+}

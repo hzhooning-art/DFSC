@@ -1,0 +1,1398 @@
+{
+  "checks": {
+    "archive_checksum": true,
+    "common_registered_grid": true,
+    "finite_normalized_curves": true,
+    "nine_material_groups": true,
+    "seventeen_independent_experiments": true
+  },
+  "claim_boundary": "The decision concerns a shared empirical relaxation realization on the declared 24-hour copper-alloy tests; it is not evidence for a unique microscopic mechanism.",
+  "decision": {
+    "decision": "SUPPORTED_RANK_1",
+    "gates": {
+      "delta_bic": 10.0,
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.05,
+      "use_ar1_bic": true
+    },
+    "selected_rank": 1,
+    "transitions": [
+      {
+        "delta_bic": -26.610403148737532,
+        "from_rank": 1,
+        "gates": {
+          "bic": false,
+          "finite": true,
+          "prediction": false,
+          "separation": true,
+          "stability": true
+        },
+        "information_criterion": "mean_ar1_bic",
+        "prediction_gain": -3.580890956490817,
+        "to_rank": 2
+      },
+      {
+        "delta_bic": -80.27109913235836,
+        "from_rank": 2,
+        "gates": {
+          "bic": false,
+          "finite": true,
+          "prediction": false,
+          "separation": false,
+          "stability": false
+        },
+        "information_criterion": "mean_ar1_bic",
+        "prediction_gain": -58.19235322249285,
+        "to_rank": 3
+      }
+    ]
+  },
+  "decision_ar1_profile_bic": {
+    "decision": "SUPPORTED_RANK_1",
+    "gates": {
+      "delta_bic": 10.0,
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.05,
+      "use_ar1_bic": true
+    },
+    "selected_rank": 1,
+    "transitions": [
+      {
+        "delta_bic": -26.610403148737532,
+        "from_rank": 1,
+        "gates": {
+          "bic": false,
+          "finite": true,
+          "prediction": false,
+          "separation": true,
+          "stability": true
+        },
+        "information_criterion": "mean_ar1_bic",
+        "prediction_gain": -3.580890956490817,
+        "to_rank": 2
+      },
+      {
+        "delta_bic": -80.27109913235836,
+        "from_rank": 2,
+        "gates": {
+          "bic": false,
+          "finite": true,
+          "prediction": false,
+          "separation": false,
+          "stability": false
+        },
+        "information_criterion": "mean_ar1_bic",
+        "prediction_gain": -58.19235322249285,
+        "to_rank": 3
+      }
+    ]
+  },
+  "decision_iid_bic": {
+    "decision": "INDETERMINATE",
+    "gates": {
+      "delta_bic": 10.0,
+      "max_log_rate_std": 0.8,
+      "min_rate_ratio": 1.2,
+      "predictive_gain": 0.05,
+      "use_ar1_bic": false
+    },
+    "selected_rank": null,
+    "transitions": [
+      {
+        "delta_bic": 1126.4530995155674,
+        "from_rank": 1,
+        "gates": {
+          "bic": true,
+          "finite": true,
+          "prediction": false,
+          "separation": true,
+          "stability": true
+        },
+        "information_criterion": "mean_bic",
+        "prediction_gain": -3.580890956490817,
+        "to_rank": 2
+      },
+      {
+        "delta_bic": 124.69826108520829,
+        "from_rank": 2,
+        "gates": {
+          "bic": true,
+          "finite": true,
+          "prediction": false,
+          "separation": false,
+          "stability": false
+        },
+        "information_criterion": "mean_bic",
+        "prediction_gain": -58.19235322249285,
+        "to_rank": 3
+      }
+    ]
+  },
+  "evaluation": {
+    "groups": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I"
+    ],
+    "rank_records": {
+      "1": {
+        "all_finite": true,
+        "curve_errors": [
+          {
+            "channel": "normalized_stress",
+            "group": "A",
+            "nrmse": 0.48891965522230313,
+            "unit": "A_04"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "B",
+            "nrmse": 0.4010084414727977,
+            "unit": "B_03"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "B",
+            "nrmse": 0.36632457268472723,
+            "unit": "B_04"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "C",
+            "nrmse": 0.5536219673462771,
+            "unit": "C_10"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "C",
+            "nrmse": 0.40053326866754013,
+            "unit": "C_11"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "D",
+            "nrmse": 0.7568294310117408,
+            "unit": "D_03"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "E",
+            "nrmse": 0.384453559033819,
+            "unit": "E_03"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "F",
+            "nrmse": 0.03506445280900456,
+            "unit": "F_03"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "G",
+            "nrmse": 0.1571547032706682,
+            "unit": "G_07"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "G",
+            "nrmse": 0.1455960649421005,
+            "unit": "G_09"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "G",
+            "nrmse": 0.22517926225231108,
+            "unit": "G_15"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "H",
+            "nrmse": 0.6512600824522766,
+            "unit": "H_07"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "H",
+            "nrmse": 0.5299600538509306,
+            "unit": "H_09"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "H",
+            "nrmse": 0.6851421158552907,
+            "unit": "H_15"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "I",
+            "nrmse": 0.07990970326245614,
+            "unit": "I_07"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "I",
+            "nrmse": 0.06912751263921144,
+            "unit": "I_14"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "I",
+            "nrmse": 0.1491161713229071,
+            "unit": "I_15"
+          }
+        ],
+        "folds": [
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -17477.21829530781,
+            "bic": -14272.15061949613,
+            "effective_sample_size": 61.88198296941415,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "A",
+                "nrmse": 0.48891965522230313,
+                "unit": "A_04"
+              }
+            ],
+            "held_group": "A",
+            "innovation_sse": 0.09881367157973307,
+            "minimum_rate_ratio": Infinity,
+            "n_curves": 16,
+            "n_observations": 1536,
+            "rates": [
+              10.370291239647823
+            ],
+            "rho_ar1": 0.9225449893935018,
+            "sse": 0.12094041211642573,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -16298.936437470134,
+            "bic": -13187.774536992587,
+            "effective_sample_size": 37.08409197094539,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "B",
+                "nrmse": 0.4010084414727977,
+                "unit": "B_03"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "B",
+                "nrmse": 0.36632457268472723,
+                "unit": "B_04"
+              }
+            ],
+            "held_group": "B",
+            "innovation_sse": 0.14907550006057246,
+            "minimum_rate_ratio": Infinity,
+            "n_curves": 15,
+            "n_observations": 1440,
+            "rates": [
+              19.999999998843386
+            ],
+            "rho_ar1": 0.9497874329937949,
+            "sse": 0.12972519562431317,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -16517.677115123057,
+            "bic": -13078.21518712488,
+            "effective_sample_size": 43.34408408926425,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "C",
+                "nrmse": 0.5536219673462771,
+                "unit": "C_10"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "C",
+                "nrmse": 0.40053326866754013,
+                "unit": "C_11"
+              }
+            ],
+            "held_group": "C",
+            "innovation_sse": 0.11067106801193377,
+            "minimum_rate_ratio": Infinity,
+            "n_curves": 15,
+            "n_observations": 1440,
+            "rates": [
+              2.6271263271506116
+            ],
+            "rho_ar1": 0.9415589618697587,
+            "sse": 0.13998023234406953,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -17916.28077144444,
+            "bic": -14077.862208090824,
+            "effective_sample_size": 41.99168308118595,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "D",
+                "nrmse": 0.7568294310117408,
+                "unit": "D_03"
+              }
+            ],
+            "held_group": "D",
+            "innovation_sse": 0.10630531010736351,
+            "minimum_rate_ratio": Infinity,
+            "n_curves": 16,
+            "n_observations": 1536,
+            "rates": [
+              2.653352141777398
+            ],
+            "rho_ar1": 0.9467783214177745,
+            "sse": 0.13724776740473743,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -17577.997053160587,
+            "bic": -13976.596421750779,
+            "effective_sample_size": 42.84497420929287,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "E",
+                "nrmse": 0.384453559033819,
+                "unit": "E_03"
+              }
+            ],
+            "held_group": "E",
+            "innovation_sse": 0.13002344045946715,
+            "minimum_rate_ratio": Infinity,
+            "n_curves": 16,
+            "n_observations": 1536,
+            "rates": [
+              3.727167617252574
+            ],
+            "rho_ar1": 0.9457261796956978,
+            "sse": 0.14660121245852062,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -17429.00468276558,
+            "bic": -13869.328271679049,
+            "effective_sample_size": 46.14971992736011,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "F",
+                "nrmse": 0.03506445280900456,
+                "unit": "F_03"
+              }
+            ],
+            "held_group": "F",
+            "innovation_sse": 0.13366341015537905,
+            "minimum_rate_ratio": Infinity,
+            "n_curves": 16,
+            "n_observations": 1536,
+            "rates": [
+              3.8986159971536978
+            ],
+            "rho_ar1": 0.9416620066405865,
+            "sse": 0.15720522150800748,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -15134.910565990946,
+            "bic": -12049.349232011022,
+            "effective_sample_size": 40.41207488707404,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "G",
+                "nrmse": 0.1571547032706682,
+                "unit": "G_07"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "G",
+                "nrmse": 0.1455960649421005,
+                "unit": "G_09"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "G",
+                "nrmse": 0.22517926225231108,
+                "unit": "G_15"
+              }
+            ],
+            "held_group": "G",
+            "innovation_sse": 0.1276369178059657,
+            "minimum_rate_ratio": Infinity,
+            "n_curves": 14,
+            "n_observations": 1344,
+            "rates": [
+              3.450474640011544
+            ],
+            "rho_ar1": 0.9416184304945904,
+            "sse": 0.14700117321940584,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -15224.864354477757,
+            "bic": -12408.271911633849,
+            "effective_sample_size": 46.33589764082365,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "H",
+                "nrmse": 0.6512600824522766,
+                "unit": "H_07"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "H",
+                "nrmse": 0.5299600538509306,
+                "unit": "H_09"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "H",
+                "nrmse": 0.6851421158552907,
+                "unit": "H_15"
+              }
+            ],
+            "held_group": "H",
+            "innovation_sse": 0.10514569331984798,
+            "minimum_rate_ratio": Infinity,
+            "n_curves": 14,
+            "n_observations": 1344,
+            "rates": [
+              2.2771840432349406
+            ],
+            "rho_ar1": 0.9333457508801316,
+            "sse": 0.11254858584998406,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -15278.88049326307,
+            "bic": -12037.033588575934,
+            "effective_sample_size": 35.61297817377514,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "I",
+                "nrmse": 0.07990970326245614,
+                "unit": "I_07"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "I",
+                "nrmse": 0.06912751263921144,
+                "unit": "I_14"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "I",
+                "nrmse": 0.1491161713229071,
+                "unit": "I_15"
+              }
+            ],
+            "held_group": "I",
+            "innovation_sse": 0.12906266516474194,
+            "minimum_rate_ratio": Infinity,
+            "n_curves": 14,
+            "n_observations": 1344,
+            "rates": [
+              4.883687750578927
+            ],
+            "rho_ar1": 0.9483725091932422,
+            "sse": 0.14835439808925355,
+            "success": true
+          }
+        ],
+        "max_log_rate_std": 0.7148027339274794,
+        "mean_ar1_bic": -16539.52997433371,
+        "mean_bic": -13217.397997483895,
+        "mean_effective_sample_size": 43.9619429943484,
+        "mean_residual_rho_ar1": 0.9412660647310089,
+        "median_prediction_nrmse": 0.384453559033819,
+        "minimum_rate_ratio": Infinity
+      },
+      "2": {
+        "all_finite": true,
+        "curve_errors": [
+          {
+            "channel": "normalized_stress",
+            "group": "A",
+            "nrmse": 0.14529661862057397,
+            "unit": "A_04"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "B",
+            "nrmse": 0.36407960185984556,
+            "unit": "B_03"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "B",
+            "nrmse": 0.8475155980243299,
+            "unit": "B_04"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "C",
+            "nrmse": 3.9999591386478066,
+            "unit": "C_10"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "C",
+            "nrmse": 2.334417829817096,
+            "unit": "C_11"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "D",
+            "nrmse": 4.342140161914425,
+            "unit": "D_03"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "E",
+            "nrmse": 5.410804492098715,
+            "unit": "E_03"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "F",
+            "nrmse": 1.496912335805738,
+            "unit": "F_03"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "G",
+            "nrmse": 1.7226207598395116,
+            "unit": "G_07"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "G",
+            "nrmse": 1.76113983176873,
+            "unit": "G_09"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "G",
+            "nrmse": 2.6565062942679343,
+            "unit": "G_15"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "H",
+            "nrmse": 4.7573276376149805,
+            "unit": "H_07"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "H",
+            "nrmse": 3.413070516075285,
+            "unit": "H_09"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "H",
+            "nrmse": 5.4566456293990155,
+            "unit": "H_15"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "I",
+            "nrmse": 1.0652343398011443,
+            "unit": "I_07"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "I",
+            "nrmse": 0.8186929872084103,
+            "unit": "I_14"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "I",
+            "nrmse": 0.7836282966497611,
+            "unit": "I_15"
+          }
+        ],
+        "folds": [
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -17411.215288475574,
+            "bic": -15147.327453326277,
+            "effective_sample_size": 130.08521238590933,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "A",
+                "nrmse": 0.14529661862057397,
+                "unit": "A_04"
+              }
+            ],
+            "held_group": "A",
+            "innovation_sse": 0.04952644362417359,
+            "minimum_rate_ratio": 56.964981758188884,
+            "n_curves": 16,
+            "n_observations": 1536,
+            "rates": [
+              0.35109288869604405,
+              19.99999999999999
+            ],
+            "rho_ar1": 0.843843266336154,
+            "sse": 0.06307460928797422,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -16245.873303687064,
+            "bic": -14128.320772689343,
+            "effective_sample_size": 122.41269097157323,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "B",
+                "nrmse": 0.36407960185984556,
+                "unit": "B_03"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "B",
+                "nrmse": 0.8475155980243299,
+                "unit": "B_04"
+              }
+            ],
+            "held_group": "B",
+            "innovation_sse": 0.04890502423884037,
+            "minimum_rate_ratio": 133.35024803329162,
+            "n_curves": 15,
+            "n_observations": 1440,
+            "rates": [
+              0.1499809733762691,
+              19.99999999999999
+            ],
+            "rho_ar1": 0.8433029996761586,
+            "sse": 0.06226856965297252,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -16495.678749396782,
+            "bic": -14221.738791016742,
+            "effective_sample_size": 110.04231693314686,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "C",
+                "nrmse": 3.9999591386478066,
+                "unit": "C_10"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "C",
+                "nrmse": 2.334417829817096,
+                "unit": "C_11"
+              }
+            ],
+            "held_group": "C",
+            "innovation_sse": 0.04497447434183854,
+            "minimum_rate_ratio": 88.61528397776617,
+            "n_curves": 15,
+            "n_observations": 1440,
+            "rates": [
+              0.22569470075859654,
+              19.99999999999999
+            ],
+            "rho_ar1": 0.8580137900352652,
+            "sse": 0.05835722510896674,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -17894.35228811176,
+            "bic": -15322.2076256112,
+            "effective_sample_size": 107.77739337308924,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "D",
+                "nrmse": 4.342140161914425,
+                "unit": "D_03"
+              }
+            ],
+            "held_group": "D",
+            "innovation_sse": 0.04241269903206821,
+            "minimum_rate_ratio": 87.75224294717928,
+            "n_curves": 16,
+            "n_observations": 1536,
+            "rates": [
+              0.22791440227959292,
+              19.99999999999999
+            ],
+            "rho_ar1": 0.8688661934303328,
+            "sse": 0.05628702356463547,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -17558.918611076875,
+            "bic": -15281.209048154742,
+            "effective_sample_size": 124.51232723289584,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "E",
+                "nrmse": 5.410804492098715,
+                "unit": "E_03"
+              }
+            ],
+            "held_group": "E",
+            "innovation_sse": 0.04666728640871193,
+            "minimum_rate_ratio": 89.64923035328391,
+            "n_curves": 16,
+            "n_observations": 1536,
+            "rates": [
+              0.22309170888790988,
+              19.99999999999999
+            ],
+            "rho_ar1": 0.8500314328405075,
+            "sse": 0.05780965501271719,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -17402.819218803234,
+            "bic": -15089.814553344471,
+            "effective_sample_size": 123.67185518299665,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "F",
+                "nrmse": 1.496912335805738,
+                "unit": "F_03"
+              }
+            ],
+            "held_group": "F",
+            "innovation_sse": 0.051954641207296814,
+            "minimum_rate_ratio": 88.84708250719403,
+            "n_curves": 16,
+            "n_observations": 1536,
+            "rates": [
+              0.22510587219766692,
+              19.99999999999999
+            ],
+            "rho_ar1": 0.8509683046118047,
+            "sse": 0.06548110281428562,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -15115.069662677108,
+            "bic": -13126.452655179493,
+            "effective_sample_size": 108.36335844313521,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "G",
+                "nrmse": 1.7226207598395116,
+                "unit": "G_07"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "G",
+                "nrmse": 1.76113983176873,
+                "unit": "G_09"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "G",
+                "nrmse": 2.6565062942679343,
+                "unit": "G_15"
+              }
+            ],
+            "held_group": "G",
+            "innovation_sse": 0.04951646215282247,
+            "minimum_rate_ratio": 86.66002577186903,
+            "n_curves": 14,
+            "n_observations": 1344,
+            "rates": [
+              0.23078691498026588,
+              19.99999999999999
+            ],
+            "rho_ar1": 0.8507765184061162,
+            "sse": 0.06086322779453404,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -15232.950858093087,
+            "bic": -13658.379252183775,
+            "effective_sample_size": 142.866008097506,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "H",
+                "nrmse": 4.7573276376149805,
+                "unit": "H_07"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "H",
+                "nrmse": 3.413070516075285,
+                "unit": "H_09"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "H",
+                "nrmse": 5.4566456293990155,
+                "unit": "H_15"
+              }
+            ],
+            "held_group": "H",
+            "innovation_sse": 0.03614453793115444,
+            "minimum_rate_ratio": 88.65598139525265,
+            "n_curves": 14,
+            "n_observations": 1344,
+            "rates": [
+              0.2255910958882121,
+              19.99999999999999
+            ],
+            "rho_ar1": 0.8078293439765863,
+            "sse": 0.04097042485626336,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -15259.398160343255,
+            "bic": -13119.20972148912,
+            "effective_sample_size": 100.79912351692482,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "I",
+                "nrmse": 1.0652343398011443,
+                "unit": "I_07"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "I",
+                "nrmse": 0.8186929872084103,
+                "unit": "I_14"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "I",
+                "nrmse": 0.7836282966497611,
+                "unit": "I_15"
+              }
+            ],
+            "held_group": "I",
+            "innovation_sse": 0.04728483459921432,
+            "minimum_rate_ratio": 92.59062415178362,
+            "n_curves": 14,
+            "n_observations": 1344,
+            "rates": [
+              0.21600459207634276,
+              19.99999999999999
+            ],
+            "rho_ar1": 0.8604662449246786,
+            "sse": 0.06119211045150488,
+            "success": true
+          }
+        ],
+        "max_log_rate_std": 0.2135760919604825,
+        "mean_ar1_bic": -16512.91957118497,
+        "mean_bic": -14343.851096999462,
+        "mean_effective_sample_size": 118.94780957079746,
+        "mean_residual_rho_ar1": 0.8482331215819561,
+        "median_prediction_nrmse": 1.76113983176873,
+        "minimum_rate_ratio": 56.964981758188884
+      },
+      "3": {
+        "all_finite": true,
+        "curve_errors": [
+          {
+            "channel": "normalized_stress",
+            "group": "A",
+            "nrmse": 1.2773370278661045,
+            "unit": "A_04"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "B",
+            "nrmse": 6.616497696167418,
+            "unit": "B_03"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "B",
+            "nrmse": 4.750010439709819,
+            "unit": "B_04"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "C",
+            "nrmse": 123.31785768067665,
+            "unit": "C_10"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "C",
+            "nrmse": 136.2066087642103,
+            "unit": "C_11"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "D",
+            "nrmse": 218.31318129677604,
+            "unit": "D_03"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "E",
+            "nrmse": 356.99361368413753,
+            "unit": "E_03"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "F",
+            "nrmse": 50.896799652028584,
+            "unit": "F_03"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "G",
+            "nrmse": 104.24601099625629,
+            "unit": "G_07"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "G",
+            "nrmse": 95.8174385831292,
+            "unit": "G_09"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "G",
+            "nrmse": 146.9733274227571,
+            "unit": "G_15"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "H",
+            "nrmse": 299.04120089482217,
+            "unit": "H_07"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "H",
+            "nrmse": 202.4200346385353,
+            "unit": "H_09"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "H",
+            "nrmse": 315.9848228653365,
+            "unit": "H_15"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "I",
+            "nrmse": 2.30936773847234,
+            "unit": "I_07"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "I",
+            "nrmse": 1.9964584427901406,
+            "unit": "I_14"
+          },
+          {
+            "channel": "normalized_stress",
+            "group": "I",
+            "nrmse": 2.674281123346494,
+            "unit": "I_15"
+          }
+        ],
+        "folds": [
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -17324.249566440787,
+            "bic": -15393.263827395785,
+            "effective_sample_size": 156.10840108667438,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "A",
+                "nrmse": 1.2773370278661045,
+                "unit": "A_04"
+              }
+            ],
+            "held_group": "A",
+            "innovation_sse": 0.04160144987100148,
+            "minimum_rate_ratio": 1.0000000019250375,
+            "n_curves": 16,
+            "n_observations": 1536,
+            "rates": [
+              0.4370389485242442,
+              19.999999485739263,
+              19.99999952424001
+            ],
+            "rho_ar1": 0.8154865244018393,
+            "sse": 0.04955089857950466,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -16164.284673043128,
+            "bic": -14340.512208608001,
+            "effective_sample_size": 146.0599502399378,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "B",
+                "nrmse": 6.616497696167418,
+                "unit": "B_03"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "B",
+                "nrmse": 4.750010439709819,
+                "unit": "B_04"
+              }
+            ],
+            "held_group": "B",
+            "innovation_sse": 0.04129269478832711,
+            "minimum_rate_ratio": 1.0000000006687575,
+            "n_curves": 15,
+            "n_observations": 1440,
+            "rates": [
+              0.15472529110277927,
+              19.99999998662484,
+              19.99999999999999
+            ],
+            "rho_ar1": 0.8158203916341977,
+            "sse": 0.04956560809871457,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -16412.727497414347,
+            "bic": -14295.267639789705,
+            "effective_sample_size": 130.00085770885363,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "C",
+                "nrmse": 123.31785768067665,
+                "unit": "C_10"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "C",
+                "nrmse": 136.2066087642103,
+                "unit": "C_11"
+              }
+            ],
+            "held_group": "C",
+            "innovation_sse": 0.038216875339553785,
+            "minimum_rate_ratio": 13.460166194312158,
+            "n_curves": 15,
+            "n_observations": 1440,
+            "rates": [
+              0.09291448912685478,
+              1.4858657546480636,
+              19.99999999999999
+            ],
+            "rho_ar1": 0.8343939023083496,
+            "sse": 0.05114767555033596,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -17809.509699949023,
+            "bic": -15399.082210869637,
+            "effective_sample_size": 127.5789004915216,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "D",
+                "nrmse": 218.31318129677604,
+                "unit": "D_03"
+              }
+            ],
+            "held_group": "D",
+            "innovation_sse": 0.03581153120775174,
+            "minimum_rate_ratio": 16.347098042605545,
+            "n_curves": 16,
+            "n_observations": 1536,
+            "rates": [
+              0.07363709523579895,
+              1.223458741598898,
+              19.99999999999999
+            ],
+            "rho_ar1": 0.8466211606148322,
+            "sse": 0.049363554331470355,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -17472.34404816683,
+            "bic": -15310.012942055188,
+            "effective_sample_size": 142.76049902818727,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "E",
+                "nrmse": 356.99361368413753,
+                "unit": "E_03"
+              }
+            ],
+            "held_group": "E",
+            "innovation_sse": 0.0406295775367978,
+            "minimum_rate_ratio": 30.40697978347251,
+            "n_curves": 16,
+            "n_observations": 1536,
+            "rates": [
+              0.021098856385143173,
+              0.6577437201070144,
+              19.99999999999999
+            ],
+            "rho_ar1": 0.8299215413862436,
+            "sse": 0.05231066084561012,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -17311.414255844145,
+            "bic": -15144.665026849369,
+            "effective_sample_size": 143.32543069212883,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "F",
+                "nrmse": 50.896799652028584,
+                "unit": "F_03"
+              }
+            ],
+            "held_group": "F",
+            "innovation_sse": 0.04497136588899403,
+            "minimum_rate_ratio": 15.056714027487367,
+            "n_curves": 16,
+            "n_observations": 1536,
+            "rates": [
+              0.08333366533200694,
+              1.3283110752776612,
+              19.99999999999999
+            ],
+            "rho_ar1": 0.8293059485997807,
+            "sse": 0.05825608630171896,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -15040.479766360404,
+            "bic": -13188.678049161057,
+            "effective_sample_size": 127.48523460245937,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "G",
+                "nrmse": 104.24601099625629,
+                "unit": "G_07"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "G",
+                "nrmse": 95.8174385831292,
+                "unit": "G_09"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "G",
+                "nrmse": 146.9733274227571,
+                "unit": "G_15"
+              }
+            ],
+            "held_group": "G",
+            "innovation_sse": 0.04220245887830351,
+            "minimum_rate_ratio": 15.597864433031777,
+            "n_curves": 14,
+            "n_observations": 1344,
+            "rates": [
+              0.0772218980298046,
+              1.2822268128991914,
+              19.99999999999999
+            ],
+            "rho_ar1": 0.8267257712077537,
+            "sse": 0.05362070990672965,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -15174.282970380067,
+            "bic": -13813.191741734418,
+            "effective_sample_size": 182.27224084461022,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "H",
+                "nrmse": 299.04120089482217,
+                "unit": "H_07"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "H",
+                "nrmse": 202.4200346385353,
+                "unit": "H_09"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "H",
+                "nrmse": 315.9848228653365,
+                "unit": "H_15"
+              }
+            ],
+            "held_group": "H",
+            "innovation_sse": 0.02883229735211416,
+            "minimum_rate_ratio": 15.87087829609482,
+            "n_curves": 14,
+            "n_observations": 1344,
+            "rates": [
+              0.07765544261653327,
+              1.2324600787963746,
+              19.99999999999999
+            ],
+            "rho_ar1": 0.7611536972673444,
+            "sse": 0.03369223671521729,
+            "success": true
+          },
+          {
+            "amplitude_constraint": "signed",
+            "ar1_bic": -15184.543770874803,
+            "bic": -13332.270576298875,
+            "effective_sample_size": 120.02165790086765,
+            "errors": [
+              {
+                "channel": "normalized_stress",
+                "group": "I",
+                "nrmse": 2.30936773847234,
+                "unit": "I_07"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "I",
+                "nrmse": 1.9964584427901406,
+                "unit": "I_14"
+              },
+              {
+                "channel": "normalized_stress",
+                "group": "I",
+                "nrmse": 2.674281123346494,
+                "unit": "I_15"
+              }
+            ],
+            "held_group": "I",
+            "innovation_sse": 0.039842085430527384,
+            "minimum_rate_ratio": 1.0000000000015925,
+            "n_curves": 14,
+            "n_observations": 1344,
+            "rates": [
+              0.22070568642872807,
+              19.99999999996814,
+              19.99999999999999
+            ],
+            "rho_ar1": 0.8360384120642639,
+            "sse": 0.04818730932509448,
+            "success": true
+          }
+        ],
+        "max_log_rate_std": 1.4394408362984168,
+        "mean_ar1_bic": -16432.648472052613,
+        "mean_bic": -14468.54935808467,
+        "mean_effective_sample_size": 141.73479695502678,
+        "mean_residual_rho_ar1": 0.8217185943871783,
+        "median_prediction_nrmse": 104.24601099625629,
+        "minimum_rate_ratio": 1.0000000000015925
+      }
+    },
+    "ranks": [
+      1,
+      2,
+      3
+    ]
+  },
+  "experiment": "public_kupferdigital_relaxation",
+  "grouping": "leave one material-code group out; repeated specimens from one material never cross a fold",
+  "identifiability_certificate": {
+    "comparability": "The normalized index removes leading square-root sample-size scaling, but both indices remain task-internal diagnostics until calibrated by simulation.",
+    "interpretation": "Local information after curve-specific offsets and amplitudes are projected out; small values indicate an unresolved rate direction.",
+    "local_boundary_index": Infinity,
+    "minimum_log_rate_gap": Infinity,
+    "minimum_projected_information_eigenvalue": 373.0445027149318,
+    "noise_std": 0.009935206712082709,
+    "noise_std_source": "residual",
+    "normalized_local_boundary_index": Infinity,
+    "projected_condition_number": 1.0,
+    "projected_log_rate_singular_values": [
+      0.1918921592415518
+    ],
+    "rates": [
+      3.8988602163983592
+    ]
+  },
+  "independent_unit": "one physical stress-relaxation test file / specimen identifier",
+  "preprocessing": {
+    "grid": "0 plus geometric spacing from 1 second to the shortest complete endpoint",
+    "registered_samples": 96,
+    "smoothing": "none",
+    "time_unit": "hours",
+    "value": "measured engineering stress divided by the first registered stress"
+  },
+  "protocol_frozen_before_fit": true,
+  "route_pass": true,
+  "source": {
+    "access": "open",
+    "archive": "D:\\program projects\\st_mlee\\P5\\data\\external\\zenodo_10820438\\Files.zip",
+    "archive_md5": "11e68a094a0189a6706d6566d1f78d73",
+    "doi": "10.5281/zenodo.10820438",
+    "independent_experiments": 17,
+    "license": "CC-BY-4.0",
+    "license_metadata_field": "metadata.license.id",
+    "material_groups": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I"
+    ],
+    "record_url": "https://zenodo.org/records/10820438",
+    "title": "KupferDigital mechanical testing datasets: Stress relaxation and low-cycle fatigue (LCF) tests"
+  }
+}

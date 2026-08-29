@@ -1,0 +1,5089 @@
+{
+  "experiment": "extended_refinement_transfer",
+  "device": "cuda",
+  "dtype": "torch.float64",
+  "protocol": {
+    "project_seed_base": 111000,
+    "adam_steps": 280,
+    "baseline_lbfgs_steps": 80,
+    "extended_lbfgs_steps": 240,
+    "shared_starts": 4,
+    "grouped_starts": 2,
+    "project_records": 72,
+    "frozen_stage48_artifact": "results\\cross_start_consistency_transfer.json"
+  },
+  "frozen_noise_calibration": {
+    "scale_correction_intercept": -0.003525643458075131,
+    "scale_correction_slope": 1.9941726891668798,
+    "scale_correction_one_sided_residual": 0.0008432785388164427,
+    "optimizer_train_to_noise_threshold": 0.0,
+    "coverage_target": 0.9,
+    "noise_proxy_min": 0.00021190520083756538,
+    "noise_proxy_max": 0.0015466864702178634,
+    "noise_proxy_padding": 2.5893118200807494e-05
+  },
+  "frozen_consistency_calibration": {
+    "objective_gap_threshold": 3.143842814684351e-05,
+    "prediction_gap_threshold": 0.0006466995081206015,
+    "calibration_rule": "maximum second-best gap over disjoint exact controls",
+    "minimum_consistent_starts": 2,
+    "calibration_records": 16
+  },
+  "project_records": [
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 111720,
+      "noise_scale_proxy": 0.0003421694624502116,
+      "correlation_proxy": 0.5812741400362552,
+      "signal_scale": 0.5805361554815133,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.00039402599538346597,
+          "val_rmse": 0.0007280468580183817,
+          "rates": [
+            0.24945322903928666,
+            0.9751371810152055
+          ]
+        },
+        {
+          "train_objective_gap": 6.117286395304541e-08,
+          "prediction_gap": 7.368208802334e-05,
+          "train_rmse": 0.00039406150844272506,
+          "val_rmse": 0.0007098268105142488,
+          "rates": [
+            0.24984168321610267,
+            0.9775007874941098
+          ]
+        },
+        {
+          "train_objective_gap": 6.786020904667275e-08,
+          "prediction_gap": 0.0002143368380402752,
+          "train_rmse": 0.0003940653906883361,
+          "val_rmse": 0.0008146044425062937,
+          "rates": [
+            0.2566523781726371,
+            0.9971025795254397
+          ]
+        },
+        {
+          "train_objective_gap": 2.69979201560835e-06,
+          "prediction_gap": 0.00024855034363763104,
+          "train_rmse": 0.0003955933222608069,
+          "val_rmse": 0.0006418695948194583,
+          "rates": [
+            0.2376437974636665,
+            0.9454507337221137
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003623195584736376,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.003623195584736376,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -27.508938556104113,
+      "shared_bic": -16596.38946761225,
+      "shared_train_rmse": 0.00039402599538346597,
+      "shared_val_rmse": 0.0007280468580183817,
+      "grouped_val_rmse": 0.0010855910856241077
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 111721,
+      "noise_scale_proxy": 0.0003359142549913218,
+      "correlation_proxy": 0.5469812926054791,
+      "signal_scale": 0.5804613325092193,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 2,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.00037985541258503576,
+          "val_rmse": 0.001023021954554338,
+          "rates": [
+            0.2323912020204794,
+            0.9641306899160255
+          ]
+        },
+        {
+          "train_objective_gap": 1.0848327812783043e-06,
+          "prediction_gap": 0.00033834514917933706,
+          "train_rmse": 0.00038048511606680624,
+          "val_rmse": 0.0007419851742042393,
+          "rates": [
+            0.24805208668223247,
+            1.0054913179361566
+          ]
+        },
+        {
+          "train_objective_gap": 2.0153685584005906e-06,
+          "prediction_gap": 0.0006470246363916018,
+          "train_rmse": 0.00038102525610394215,
+          "val_rmse": 0.0005530970204919659,
+          "rates": [
+            0.26120847677714054,
+            1.0448740479696883
+          ]
+        },
+        {
+          "train_objective_gap": 3.320287775096545e-06,
+          "prediction_gap": 0.0008123881159111757,
+          "train_rmse": 0.00038178271125128237,
+          "val_rmse": 0.0005303045720964303,
+          "rates": [
+            0.26820020456363786,
+            1.068609770530555
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036188654773090653,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036188654773090653,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -39.92429899569106,
+      "shared_bic": -16676.08807475367,
+      "shared_train_rmse": 0.00037985541258503576,
+      "shared_val_rmse": 0.001023021954554338,
+      "grouped_val_rmse": 0.000685314341199568
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 111722,
+      "noise_scale_proxy": 0.0003392923232713604,
+      "correlation_proxy": 0.5617533891150052,
+      "signal_scale": 0.5805185303711297,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0003518945695863808,
+          "val_rmse": 0.0007145604061034478,
+          "rates": [
+            0.24494763277026813,
+            0.9961684129769739
+          ]
+        },
+        {
+          "train_objective_gap": 6.25411622534183e-07,
+          "prediction_gap": 0.0001287088399084539,
+          "train_rmse": 0.00035225763262237134,
+          "val_rmse": 0.0006796675357970441,
+          "rates": [
+            0.2498682738848375,
+            1.0118840783672356
+          ]
+        },
+        {
+          "train_objective_gap": 1.7737213517179518e-06,
+          "prediction_gap": 0.00041280970357745464,
+          "train_rmse": 0.000352924247698768,
+          "val_rmse": 0.0005664060387980298,
+          "rates": [
+            0.26273209177077234,
+            1.0506568257652702
+          ]
+        },
+        {
+          "train_objective_gap": 2.21865712067462e-06,
+          "prediction_gap": 0.00032546586612237476,
+          "train_rmse": 0.00035318254115747225,
+          "val_rmse": 0.0005773644717382441,
+          "rates": [
+            0.2590608410885476,
+            1.0385887005589634
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003620730728217202,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.003620730728217202,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -37.20111962896772,
+      "shared_bic": -16842.463021092422,
+      "shared_train_rmse": 0.0003518945695863808,
+      "shared_val_rmse": 0.0007145604061034478,
+      "grouped_val_rmse": 0.0007690615581637067
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 111770,
+      "noise_scale_proxy": 0.0003161055882761154,
+      "correlation_proxy": 0.6113027039046895,
+      "signal_scale": 0.5802738792711368,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 3,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0004258931805567721,
+          "val_rmse": 0.0020181315502634627,
+          "rates": [
+            0.24280920598438602,
+            0.9443558898484393
+          ]
+        },
+        {
+          "train_objective_gap": 5.829087728200704e-06,
+          "prediction_gap": 0.0001922832860645353,
+          "train_rmse": 0.0004292756479054269,
+          "val_rmse": 0.0020939051247293432,
+          "rates": [
+            0.2503586372448839,
+            0.9618255516267921
+          ]
+        },
+        {
+          "train_objective_gap": 1.4907278380458042e-05,
+          "prediction_gap": 0.0003661529376762883,
+          "train_rmse": 0.00043454348481197525,
+          "val_rmse": 0.00220888815100231,
+          "rates": [
+            0.2590921277820065,
+            0.9860914689692879
+          ]
+        },
+        {
+          "train_objective_gap": 3.2988069408160036e-05,
+          "prediction_gap": 0.0007638599170007663,
+          "train_rmse": 0.00044503529556191065,
+          "val_rmse": 0.0024791619895140468,
+          "rates": [
+            0.2746565073519545,
+            1.0328353693114127
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003626987247347673,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.003626987247347673,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 110.73175622358394,
+      "shared_bic": -16427.15829256865,
+      "shared_train_rmse": 0.0004258931805567721,
+      "shared_val_rmse": 0.0020181315502634627,
+      "grouped_val_rmse": 0.0005788663927160686
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 111771,
+      "noise_scale_proxy": 0.0003423091087183882,
+      "correlation_proxy": 0.5598405205686403,
+      "signal_scale": 0.5803331549215852,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.00041710920610633033,
+          "val_rmse": 0.0019859765743719827,
+          "rates": [
+            0.24886658811857162,
+            0.946394089721229
+          ]
+        },
+        {
+          "train_objective_gap": 3.430784486474028e-06,
+          "prediction_gap": 0.00014744975784923456,
+          "train_rmse": 0.00041910020409122184,
+          "val_rmse": 0.00205031246922163,
+          "rates": [
+            0.253008044000941,
+            0.9562920672787261
+          ]
+        },
+        {
+          "train_objective_gap": 8.386553767930118e-06,
+          "prediction_gap": 0.0002698477761288147,
+          "train_rmse": 0.00042197620131339273,
+          "val_rmse": 0.0021631532885575764,
+          "rates": [
+            0.2590178705817771,
+            0.9730839565584836
+          ]
+        },
+        {
+          "train_objective_gap": 8.755129964398015e-06,
+          "prediction_gap": 0.0002541665206651968,
+          "train_rmse": 0.00042219009830031794,
+          "val_rmse": 0.002170376444843725,
+          "rates": [
+            0.2595529357539723,
+            0.9749727209060918
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036204891931181757,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036204891931181757,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 97.33424049028326,
+      "shared_bic": -16472.50720381277,
+      "shared_train_rmse": 0.00041710920610633033,
+      "shared_val_rmse": 0.0019859765743719827,
+      "grouped_val_rmse": 0.0006331207068266418
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 111772,
+      "noise_scale_proxy": 0.0003358440978125206,
+      "correlation_proxy": 0.6095172933366166,
+      "signal_scale": 0.580258307489756,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0004270440413220243,
+          "val_rmse": 0.0019368618177197153,
+          "rates": [
+            0.25163392356143927,
+            0.9520013426629905
+          ]
+        },
+        {
+          "train_objective_gap": 1.1421951268095023e-06,
+          "prediction_gap": 0.00020488578931365415,
+          "train_rmse": 0.00042770680953312985,
+          "val_rmse": 0.0019246999516068517,
+          "rates": [
+            0.2515921934921189,
+            0.9525302527000761
+          ]
+        },
+        {
+          "train_objective_gap": 1.4527226644929197e-06,
+          "prediction_gap": 0.0001348733184967537,
+          "train_rmse": 0.000427886995716575,
+          "val_rmse": 0.001987045044704695,
+          "rates": [
+            0.254740384722941,
+            0.9605614230669313
+          ]
+        },
+        {
+          "train_objective_gap": 1.9468472505109275e-06,
+          "prediction_gap": 0.0001790956138685937,
+          "train_rmse": 0.0004281737156125469,
+          "val_rmse": 0.001988723057014102,
+          "rates": [
+            0.2555473716035922,
+            0.962062943421751
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003626761806180176,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.003626761806180176,
+      "decision": "ACCEPT_WITH_SCOPE_LIMITS",
+      "group_bic_support": 95.04708911439593,
+      "shared_bic": -16421.28617330664,
+      "shared_train_rmse": 0.0004270440413220243,
+      "shared_val_rmse": 0.0019368618177197153,
+      "grouped_val_rmse": 0.0014490361391263451
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 111870,
+      "noise_scale_proxy": 0.00033523870932291715,
+      "correlation_proxy": 0.5866025424185762,
+      "signal_scale": 0.5799952422546228,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.000552014550228617,
+          "val_rmse": 0.0057627484982802415,
+          "rates": [
+            0.25170286896371225,
+            0.8460654730073315
+          ]
+        },
+        {
+          "train_objective_gap": 1.0449548470226128e-05,
+          "prediction_gap": 0.0002568192382678604,
+          "train_rmse": 0.0005580752386250572,
+          "val_rmse": 0.0059184209265754455,
+          "rates": [
+            0.25950360658235394,
+            0.8602341354419274
+          ]
+        },
+        {
+          "train_objective_gap": 1.1653780532984125e-05,
+          "prediction_gap": 0.00033050313735763883,
+          "train_rmse": 0.0005587736874920273,
+          "val_rmse": 0.005934989413671957,
+          "rates": [
+            0.26098861864950046,
+            0.8627371324283751
+          ]
+        },
+        {
+          "train_objective_gap": 1.1742343526761677e-05,
+          "prediction_gap": 0.00025657515049923177,
+          "train_rmse": 0.0005588250536070581,
+          "val_rmse": 0.005906932739329361,
+          "rates": [
+            0.259240103351568,
+            0.8595082507453937
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036238683942713085,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036238683942713085,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 740.4761821769498,
+      "shared_bic": -15862.73470455483,
+      "shared_train_rmse": 0.000552014550228617,
+      "shared_val_rmse": 0.0057627484982802415,
+      "grouped_val_rmse": 0.0010198921895703107
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 111871,
+      "noise_scale_proxy": 0.00032195347673243623,
+      "correlation_proxy": 0.5844172030808338,
+      "signal_scale": 0.5799832529181999,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 2,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0005888891067253666,
+          "val_rmse": 0.0051186254069211,
+          "rates": [
+            0.24272495473653552,
+            0.8352391506349585
+          ]
+        },
+        {
+          "train_objective_gap": 2.2526152052681668e-05,
+          "prediction_gap": 0.00029265068849951357,
+          "train_rmse": 0.0006019538976686109,
+          "val_rmse": 0.005378537562037831,
+          "rates": [
+            0.2559172284549928,
+            0.8597133755351117
+          ]
+        },
+        {
+          "train_objective_gap": 3.990781130147197e-05,
+          "prediction_gap": 0.00047879046904054733,
+          "train_rmse": 0.00061203496894084,
+          "val_rmse": 0.005554971940245296,
+          "rates": [
+            0.26490702038510006,
+            0.8788590854603466
+          ]
+        },
+        {
+          "train_objective_gap": 4.573275133441901e-05,
+          "prediction_gap": 0.0005515874969683129,
+          "train_rmse": 0.0006154133366092021,
+          "val_rmse": 0.005613031183946598,
+          "rates": [
+            0.26728970235135097,
+            0.8835483896819535
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036235924546860446,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036235924546860446,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 907.7143425415452,
+      "shared_bic": -15722.026956678736,
+      "shared_train_rmse": 0.0005888891067253666,
+      "shared_val_rmse": 0.0051186254069211,
+      "grouped_val_rmse": 0.0005563994401070434
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 111872,
+      "noise_scale_proxy": 0.00032840784219344466,
+      "correlation_proxy": 0.5667872428373202,
+      "signal_scale": 0.5799957606455899,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0005357112321023369,
+          "val_rmse": 0.005889744198209483,
+          "rates": [
+            0.2601597064615034,
+            0.832540864409631
+          ]
+        },
+        {
+          "train_objective_gap": 4.733268260362329e-06,
+          "prediction_gap": 0.0002454113620570443,
+          "train_rmse": 0.0005384565076273454,
+          "val_rmse": 0.0059920636178407835,
+          "rates": [
+            0.26464261958669333,
+            0.8439311971527
+          ]
+        },
+        {
+          "train_objective_gap": 5.205682398414703e-06,
+          "prediction_gap": 0.00016691183528345617,
+          "train_rmse": 0.0005387305058246848,
+          "val_rmse": 0.005999149396525529,
+          "rates": [
+            0.2647928013566692,
+            0.8423720892707477
+          ]
+        },
+        {
+          "train_objective_gap": 6.342477013187882e-06,
+          "prediction_gap": 0.0001914671864170065,
+          "train_rmse": 0.000539389841881978,
+          "val_rmse": 0.005993717522882463,
+          "rates": [
+            0.26481103492340163,
+            0.8443480305102576
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036213663455258844,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036213663455258844,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 716.6730135595317,
+      "shared_bic": -15927.969302798454,
+      "shared_train_rmse": 0.0005357112321023369,
+      "shared_val_rmse": 0.005889744198209483,
+      "grouped_val_rmse": 0.0013593771231859156
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 112720,
+      "noise_scale_proxy": 0.0003276320801773053,
+      "correlation_proxy": 0.5559967423957624,
+      "signal_scale": 0.5804534294338479,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0003721121358620839,
+          "val_rmse": 0.0005536524266044,
+          "rates": [
+            0.23951696648867746,
+            0.9839631883046155
+          ]
+        },
+        {
+          "train_objective_gap": 2.768442960616524e-07,
+          "prediction_gap": 0.0001474114096624016,
+          "train_rmse": 0.0003722728310831521,
+          "val_rmse": 0.0004866344303683979,
+          "rates": [
+            0.24600954235449213,
+            1.0015692446303917
+          ]
+        },
+        {
+          "train_objective_gap": 2.925653431072146e-07,
+          "prediction_gap": 0.0002689860819098429,
+          "train_rmse": 0.000372281956418824,
+          "val_rmse": 0.00044815994241620546,
+          "rates": [
+            0.25161150199607674,
+            1.0171428228590957
+          ]
+        },
+        {
+          "train_objective_gap": 3.5946253964685173e-06,
+          "prediction_gap": 0.0005009872553145387,
+          "train_rmse": 0.00037419864850099407,
+          "val_rmse": 0.0005347720631070566,
+          "rates": [
+            0.2611136893155061,
+            1.0458617974009146
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036200038448994574,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036200038448994574,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -41.884396623787325,
+      "shared_bic": -16720.9037473601,
+      "shared_train_rmse": 0.0003721121358620839,
+      "shared_val_rmse": 0.0005536524266044,
+      "grouped_val_rmse": 0.0006319931399774717
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 112721,
+      "noise_scale_proxy": 0.00032524003860295424,
+      "correlation_proxy": 0.6004665877707297,
+      "signal_scale": 0.5804610954023519,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0004004826762982889,
+          "val_rmse": 0.00109147944420571,
+          "rates": [
+            0.23431917084401518,
+            0.9839258922338683
+          ]
+        },
+        {
+          "train_objective_gap": 5.153265146594876e-07,
+          "prediction_gap": 0.0004061917916530376,
+          "train_rmse": 0.000400781803291478,
+          "val_rmse": 0.0007785511050247383,
+          "rates": [
+            0.24965268583781325,
+            1.0244138411852437
+          ]
+        },
+        {
+          "train_objective_gap": 5.724685130276949e-07,
+          "prediction_gap": 0.00022057527931435957,
+          "train_rmse": 0.0004008149719984443,
+          "val_rmse": 0.0009464434754245235,
+          "rates": [
+            0.24130768878243936,
+            1.0020395672105482
+          ]
+        },
+        {
+          "train_objective_gap": 9.119927554329147e-07,
+          "prediction_gap": 0.0005006388830800665,
+          "train_rmse": 0.0004010120526121065,
+          "val_rmse": 0.0007186925431634303,
+          "rates": [
+            0.2529176661847602,
+            1.0334329814396068
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036256189868948316,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036256189868948316,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -39.00970235564091,
+      "shared_bic": -16561.021579317425,
+      "shared_train_rmse": 0.0004004826762982889,
+      "shared_val_rmse": 0.00109147944420571,
+      "grouped_val_rmse": 0.0010929109732110912
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 112722,
+      "noise_scale_proxy": 0.00033923303151143065,
+      "correlation_proxy": 0.5982686844937671,
+      "signal_scale": 0.580506426807872,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.00039633971914661433,
+          "val_rmse": 0.0006974503595499532,
+          "rates": [
+            0.24552795715322334,
+            0.9859484126682985
+          ]
+        },
+        {
+          "train_objective_gap": 4.7344571907134646e-07,
+          "prediction_gap": 0.00018743004696322927,
+          "train_rmse": 0.0003966145574292799,
+          "val_rmse": 0.0005905571703735408,
+          "rates": [
+            0.25332764643800937,
+            1.0075171574342936
+          ]
+        },
+        {
+          "train_objective_gap": 1.2504161780473972e-06,
+          "prediction_gap": 0.00027169055957226753,
+          "train_rmse": 0.0003970655937741554,
+          "val_rmse": 0.0005568332059753777,
+          "rates": [
+            0.25751287753235674,
+            1.0207097046255647
+          ]
+        },
+        {
+          "train_objective_gap": 1.4248421656082906e-06,
+          "prediction_gap": 0.00011742616679251415,
+          "train_rmse": 0.0003971668491809368,
+          "val_rmse": 0.0006731737172865639,
+          "rates": [
+            0.24872389282023363,
+            0.9945584547179633
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036253414608794347,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036253414608794347,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -40.60280309557493,
+      "shared_bic": -16583.64934693642,
+      "shared_train_rmse": 0.00039633971914661433,
+      "shared_val_rmse": 0.0006974503595499532,
+      "grouped_val_rmse": 0.0007549953310649042
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 112770,
+      "noise_scale_proxy": 0.0003384488859566538,
+      "correlation_proxy": 0.5587861315590984,
+      "signal_scale": 0.5795657932964194,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.00040021922812935877,
+          "val_rmse": 0.0017729894134097663,
+          "rates": [
+            0.23582096729947596,
+            0.9774720626166207
+          ]
+        },
+        {
+          "train_objective_gap": 8.361731229876949e-08,
+          "prediction_gap": 0.00012769406756466496,
+          "train_rmse": 0.0004002676898632945,
+          "val_rmse": 0.001752613248838408,
+          "rates": [
+            0.23668023067032773,
+            0.9792621464790215
+          ]
+        },
+        {
+          "train_objective_gap": 9.204552634203841e-07,
+          "prediction_gap": 0.00021156544168902857,
+          "train_rmse": 0.00040075269251429687,
+          "val_rmse": 0.0016770966669982354,
+          "rates": [
+            0.24315893763494958,
+            0.9953223217560169
+          ]
+        },
+        {
+          "train_objective_gap": 2.7130307244092107e-06,
+          "prediction_gap": 0.00039319233568660904,
+          "train_rmse": 0.00040179160793338856,
+          "val_rmse": 0.001623496195985909,
+          "rates": [
+            0.24979027437754953,
+            1.0124466638314429
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003620356056968117,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.003620356056968117,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 35.20401105111523,
+      "shared_bic": -16562.453481085384,
+      "shared_train_rmse": 0.00040021922812935877,
+      "shared_val_rmse": 0.0017729894134097663,
+      "grouped_val_rmse": 0.0010129215617759955
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 112771,
+      "noise_scale_proxy": 0.00032539825946146844,
+      "correlation_proxy": 0.5683032816308395,
+      "signal_scale": 0.5795610161222017,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.00036724873626950373,
+          "val_rmse": 0.0013810386066680591,
+          "rates": [
+            0.24905613074530636,
+            0.9736359290768001
+          ]
+        },
+        {
+          "train_objective_gap": 4.815798286059665e-07,
+          "prediction_gap": 0.0002270545240015208,
+          "train_rmse": 0.00036752784116431456,
+          "val_rmse": 0.0012784957948717205,
+          "rates": [
+            0.24172680150168627,
+            0.957548926349462
+          ]
+        },
+        {
+          "train_objective_gap": 7.376691439398447e-07,
+          "prediction_gap": 0.00011743195324199723,
+          "train_rmse": 0.0003676762605481275,
+          "val_rmse": 0.00134599496134159,
+          "rates": [
+            0.2490663966896148,
+            0.976042902356741
+          ]
+        },
+        {
+          "train_objective_gap": 3.193014572468462e-06,
+          "prediction_gap": 0.0003795927377114941,
+          "train_rmse": 0.00036909928303961655,
+          "val_rmse": 0.0012566942017634612,
+          "rates": [
+            0.2342414144966456,
+            0.9398428601507718
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036215577735154427,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036215577735154427,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 61.36678316469988,
+      "shared_bic": -16749.530932129957,
+      "shared_train_rmse": 0.00036724873626950373,
+      "shared_val_rmse": 0.0013810386066680591,
+      "grouped_val_rmse": 0.0008962756925597101
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 112772,
+      "noise_scale_proxy": 0.0003196559517574009,
+      "correlation_proxy": 0.5853348294432956,
+      "signal_scale": 0.5796205282371822,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.00039879831968150106,
+          "val_rmse": 0.0014085943786675572,
+          "rates": [
+            0.24156734071445632,
+            0.961890813745487
+          ]
+        },
+        {
+          "train_objective_gap": 3.258314621609414e-07,
+          "prediction_gap": 0.00010512302851694848,
+          "train_rmse": 0.0003989871782857151,
+          "val_rmse": 0.001398223799726354,
+          "rates": [
+            0.2403444200264934,
+            0.9578824803932005
+          ]
+        },
+        {
+          "train_objective_gap": 4.809917782042842e-07,
+          "prediction_gap": 0.00014037916077679332,
+          "train_rmse": 0.0003990771123900616,
+          "val_rmse": 0.0014236379255078296,
+          "rates": [
+            0.2381578565798431,
+            0.9522484092631133
+          ]
+        },
+        {
+          "train_objective_gap": 2.9753599004559237e-06,
+          "prediction_gap": 0.00048774859044856773,
+          "train_rmse": 0.00040052289935869906,
+          "val_rmse": 0.0015850948584736062,
+          "rates": [
+            0.2574585707076286,
+            1.0024722744778891
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003623708322017727,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.003623708322017727,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 35.68879686582295,
+      "shared_bic": -16570.192735499277,
+      "shared_train_rmse": 0.00039879831968150106,
+      "shared_val_rmse": 0.0014085943786675572,
+      "grouped_val_rmse": 0.00066759392896414
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 112870,
+      "noise_scale_proxy": 0.00031778068758602873,
+      "correlation_proxy": 0.5749861644335876,
+      "signal_scale": 0.578354935874099,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0004986634239685844,
+          "val_rmse": 0.003965448555638769,
+          "rates": [
+            0.23934592955426096,
+            0.9572533391652279
+          ]
+        },
+        {
+          "train_objective_gap": 1.1124856563756153e-06,
+          "prediction_gap": 0.0001521389747387994,
+          "train_rmse": 0.0004993068355390384,
+          "val_rmse": 0.003962609764010546,
+          "rates": [
+            0.23720095837204141,
+            0.953575415461019
+          ]
+        },
+        {
+          "train_objective_gap": 1.4924484907068897e-06,
+          "prediction_gap": 0.00018251143417220036,
+          "train_rmse": 0.0004995265889197226,
+          "val_rmse": 0.003962504909510366,
+          "rates": [
+            0.2405618941768874,
+            0.9593080337245175
+          ]
+        },
+        {
+          "train_objective_gap": 3.259455391346474e-06,
+          "prediction_gap": 0.0002411483082761497,
+          "train_rmse": 0.0005005485460824311,
+          "val_rmse": 0.003953725519244481,
+          "rates": [
+            0.23405321863371406,
+            0.9471924666860883
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036224016113016876,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036224016113016876,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 464.74382202489505,
+      "shared_bic": -16083.90995509299,
+      "shared_train_rmse": 0.0004986634239685844,
+      "shared_val_rmse": 0.003965448555638769,
+      "grouped_val_rmse": 0.0005734167259217574
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 112871,
+      "noise_scale_proxy": 0.0003478517303518389,
+      "correlation_proxy": 0.6010129936925083,
+      "signal_scale": 0.5783260483973551,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 3,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0004867812579778125,
+          "val_rmse": 0.0038116995639889857,
+          "rates": [
+            0.251976603336325,
+            0.993994912027495
+          ]
+        },
+        {
+          "train_objective_gap": 2.0024924648476103e-06,
+          "prediction_gap": 0.00035285961112212466,
+          "train_rmse": 0.0004879393515319533,
+          "val_rmse": 0.003779870320298326,
+          "rates": [
+            0.24244853077082396,
+            0.9725880898541234
+          ]
+        },
+        {
+          "train_objective_gap": 6.2112340275337085e-06,
+          "prediction_gap": 0.0006251527414993865,
+          "train_rmse": 0.0004903733764086273,
+          "val_rmse": 0.0037838179659516924,
+          "rates": [
+            0.23405217525486724,
+            0.9543622130475152
+          ]
+        },
+        {
+          "train_objective_gap": 1.4095545188906744e-05,
+          "prediction_gap": 0.0010261260664459345,
+          "train_rmse": 0.0004949330789269193,
+          "val_rmse": 0.0038170432582392408,
+          "rates": [
+            0.2215249400958512,
+            0.9283432660574373
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003625687980767242,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.003625687980767242,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 371.3742563926571,
+      "shared_bic": -16136.387474744064,
+      "shared_train_rmse": 0.0004867812579778125,
+      "shared_val_rmse": 0.0038116995639889857,
+      "grouped_val_rmse": 0.001171403496242995
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 112872,
+      "noise_scale_proxy": 0.00032875736826023144,
+      "correlation_proxy": 0.5766539505059752,
+      "signal_scale": 0.5782835755985487,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0004920850255870587,
+          "val_rmse": 0.00365432133809037,
+          "rates": [
+            0.24316517587422312,
+            0.9798418628739932
+          ]
+        },
+        {
+          "train_objective_gap": 7.348437475892586e-07,
+          "prediction_gap": 9.097072383992889e-05,
+          "train_rmse": 0.0004925099736569208,
+          "val_rmse": 0.00366570167515043,
+          "rates": [
+            0.24125810856143337,
+            0.9753664944242598
+          ]
+        },
+        {
+          "train_objective_gap": 6.65049228878707e-06,
+          "prediction_gap": 0.00038824247888937056,
+          "train_rmse": 0.0004959308960473091,
+          "val_rmse": 0.0036828470813258254,
+          "rates": [
+            0.23159496666280294,
+            0.9537014525877308
+          ]
+        },
+        {
+          "train_objective_gap": 9.254368327671228e-06,
+          "prediction_gap": 0.0004955082142391142,
+          "train_rmse": 0.0004974366747934904,
+          "val_rmse": 0.0036732329247976666,
+          "rates": [
+            0.22834939534521717,
+            0.9468236251075578
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036226122001970485,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036226122001970485,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 629.1924807145188,
+      "shared_bic": -16112.806907198541,
+      "shared_train_rmse": 0.0004920850255870587,
+      "shared_val_rmse": 0.00365432133809037,
+      "grouped_val_rmse": 0.0007209102098273737
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 112920,
+      "noise_scale_proxy": 0.001382419564987412,
+      "correlation_proxy": 0.3230378047670405,
+      "signal_scale": 0.5804293459538855,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0015735116740182534,
+          "val_rmse": 0.0017680660288427689,
+          "rates": [
+            0.26337018364850723,
+            1.0978274173099998
+          ]
+        },
+        {
+          "train_objective_gap": 2.6802015233690767e-06,
+          "prediction_gap": 0.0005097001774155441,
+          "train_rmse": 0.0015750673416354871,
+          "val_rmse": 0.0017582489646273153,
+          "rates": [
+            0.24113756238518272,
+            1.0247343679241454
+          ]
+        },
+        {
+          "train_objective_gap": 3.5543595085427028e-06,
+          "prediction_gap": 0.0006332805448667679,
+          "train_rmse": 0.0015755747285830818,
+          "val_rmse": 0.001782466616163581,
+          "rates": [
+            0.23533130846663558,
+            1.0081109809477071
+          ]
+        },
+        {
+          "train_objective_gap": 3.569896712350714e-06,
+          "prediction_gap": 0.0006394646743480374,
+          "train_rmse": 0.001575583746832126,
+          "val_rmse": 0.0017736388541241942,
+          "rates": [
+            0.23525375977471255,
+            1.0082309211633178
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003590588462344222,
+      "noise_scale_correction": 7.441842220916751e-05,
+      "augmented_total_tolerance": 0.0036650068845533895,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -42.43374457435675,
+      "shared_bic": -13583.394874816328,
+      "shared_train_rmse": 0.0015735116740182534,
+      "shared_val_rmse": 0.0017680660288427689,
+      "grouped_val_rmse": 0.001928791129632148
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 112921,
+      "noise_scale_proxy": 0.0012614147945550773,
+      "correlation_proxy": 0.3111725767161057,
+      "signal_scale": 0.5803177398351148,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0014346441541427763,
+          "val_rmse": 0.0035645447962126433,
+          "rates": [
+            0.22524875728712287,
+            1.0250457743681416
+          ]
+        },
+        {
+          "train_objective_gap": 4.791613038528322e-07,
+          "prediction_gap": 0.0001286052959438483,
+          "train_rmse": 0.0014349222199476447,
+          "val_rmse": 0.0034873696648015894,
+          "rates": [
+            0.2294072255736025,
+            1.036605373112635
+          ]
+        },
+        {
+          "train_objective_gap": 1.7889732481167238e-06,
+          "prediction_gap": 0.00037975370831782565,
+          "train_rmse": 0.001435682327054749,
+          "val_rmse": 0.0032713945390019958,
+          "rates": [
+            0.2397269170255735,
+            1.0660281557832234
+          ]
+        },
+        {
+          "train_objective_gap": 3.189658001380554e-06,
+          "prediction_gap": 0.0006096701050838819,
+          "train_rmse": 0.0014364951692649845,
+          "val_rmse": 0.0031085911729866133,
+          "rates": [
+            0.24821085996581832,
+            1.0925007794902108
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003589090257442637,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.003589090257442637,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -41.88432243287207,
+      "shared_bic": -13784.442074112552,
+      "shared_train_rmse": 0.0014346441541427763,
+      "shared_val_rmse": 0.0035645447962126433,
+      "grouped_val_rmse": 0.0036031889845473952
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 112922,
+      "noise_scale_proxy": 0.0013903760004464192,
+      "correlation_proxy": 0.31586650489415335,
+      "signal_scale": 0.5806099033924941,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0015511134863264247,
+          "val_rmse": 0.002853702535707226,
+          "rates": [
+            0.26084705742399494,
+            0.9222737828526338
+          ]
+        },
+        {
+          "train_objective_gap": 7.610477857535565e-08,
+          "prediction_gap": 9.521285409059353e-05,
+          "train_rmse": 0.001551157673514561,
+          "val_rmse": 0.0028907126244282345,
+          "rates": [
+            0.2643327924076073,
+            0.930850383810043
+          ]
+        },
+        {
+          "train_objective_gap": 1.0513469721689674e-07,
+          "prediction_gap": 0.00015073698658888513,
+          "train_rmse": 0.001551174528572819,
+          "val_rmse": 0.0027954329785518763,
+          "rates": [
+            0.2533586233336383,
+            0.9031133820160568
+          ]
+        },
+        {
+          "train_objective_gap": 4.758372720225207e-07,
+          "prediction_gap": 0.0001817631073724921,
+          "train_rmse": 0.0015513897621589642,
+          "val_rmse": 0.0028100973147898063,
+          "rates": [
+            0.2553949615576718,
+            0.9081242410592718
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035896829528526074,
+      "noise_scale_correction": 9.028492850463856e-05,
+      "augmented_total_tolerance": 0.003679967881357246,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -41.59030731380517,
+      "shared_bic": -13614.591763235358,
+      "shared_train_rmse": 0.0015511134863264247,
+      "shared_val_rmse": 0.002853702535707226,
+      "grouped_val_rmse": 0.0030349385597312124
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 112970,
+      "noise_scale_proxy": 0.0013202376540899605,
+      "correlation_proxy": 0.28103241462200484,
+      "signal_scale": 0.5802410740855812,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.00150673193881635,
+          "val_rmse": 0.002395312715362847,
+          "rates": [
+            0.242505608099969,
+            0.8983905870327167
+          ]
+        },
+        {
+          "train_objective_gap": 1.4926594299722511e-06,
+          "prediction_gap": 0.0001790691545960537,
+          "train_rmse": 0.0015075980411272411,
+          "val_rmse": 0.0024337046347106188,
+          "rates": [
+            0.2478770775621973,
+            0.9077725028775774
+          ]
+        },
+        {
+          "train_objective_gap": 2.5231693497899746e-06,
+          "prediction_gap": 0.0002293618570408974,
+          "train_rmse": 0.001508195985309972,
+          "val_rmse": 0.0024831056313105618,
+          "rates": [
+            0.2520897133249004,
+            0.9184458881205417
+          ]
+        },
+        {
+          "train_objective_gap": 3.14060989488323e-06,
+          "prediction_gap": 0.00025678239689028837,
+          "train_rmse": 0.001508554249675041,
+          "val_rmse": 0.002512293667646425,
+          "rates": [
+            0.2544304102907205,
+            0.9245784084056637
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003585284503487458,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.003585284503487458,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -34.33844596072049,
+      "shared_bic": -13677.761097276783,
+      "shared_train_rmse": 0.00150673193881635,
+      "shared_val_rmse": 0.002395312715362847,
+      "grouped_val_rmse": 0.0022725021684615377
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 112971,
+      "noise_scale_proxy": 0.0013828678114265304,
+      "correlation_proxy": 0.2951785038973708,
+      "signal_scale": 0.580409712449319,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0015010158620050744,
+          "val_rmse": 0.0033659450800367866,
+          "rates": [
+            0.2544916102051994,
+            0.8816920511432853
+          ]
+        },
+        {
+          "train_objective_gap": 3.4876833756556456e-07,
+          "prediction_gap": 9.391450101079056e-05,
+          "train_rmse": 0.0015012182905355922,
+          "val_rmse": 0.00339997449194741,
+          "rates": [
+            0.25650903764147975,
+            0.8854757191204882
+          ]
+        },
+        {
+          "train_objective_gap": 1.4285100062337202e-06,
+          "prediction_gap": 0.0001849161983304336,
+          "train_rmse": 0.0015018449830870235,
+          "val_rmse": 0.0034399995387295454,
+          "rates": [
+            0.25926094532665417,
+            0.8921435223904238
+          ]
+        },
+        {
+          "train_objective_gap": 1.8103971950390018e-06,
+          "prediction_gap": 0.00030524169607005526,
+          "train_rmse": 0.001502066634120466,
+          "val_rmse": 0.003614887879929539,
+          "rates": [
+            0.2686337955747784,
+            0.913360561183939
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035870707093825015,
+      "noise_scale_correction": 7.531230301607373e-05,
+      "augmented_total_tolerance": 0.003662383012398575,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -38.61160367123193,
+      "shared_bic": -13686.031869255974,
+      "shared_train_rmse": 0.0015010158620050744,
+      "shared_val_rmse": 0.0033659450800367866,
+      "grouped_val_rmse": 0.003110506045799663
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 112972,
+      "noise_scale_proxy": 0.0013571944116350428,
+      "correlation_proxy": 0.27900359204446834,
+      "signal_scale": 0.580195815026801,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 3,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0014037303252186,
+          "val_rmse": 0.003025458201910196,
+          "rates": [
+            0.21799183990566817,
+            0.9370000522968625
+          ]
+        },
+        {
+          "train_objective_gap": 2.6296513514887573e-06,
+          "prediction_gap": 0.00032563981603695233,
+          "train_rmse": 0.0014052560379277134,
+          "val_rmse": 0.003013851066337333,
+          "rates": [
+            0.2330678150928866,
+            0.9720080129754967
+          ]
+        },
+        {
+          "train_objective_gap": 5.299112936034067e-06,
+          "prediction_gap": 0.0006035807133614454,
+          "train_rmse": 0.0014068048483674414,
+          "val_rmse": 0.003043259576739395,
+          "rates": [
+            0.24581426137459322,
+            1.0053943612472798
+          ]
+        },
+        {
+          "train_objective_gap": 6.516011828317138e-06,
+          "prediction_gap": 0.0007090621689567291,
+          "train_rmse": 0.0014075108880120548,
+          "val_rmse": 0.00303660383579273,
+          "rates": [
+            0.25047786541225836,
+            1.01846280778472
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035850283270433933,
+      "noise_scale_correction": 2.411511031382655e-05,
+      "augmented_total_tolerance": 0.00360914343735722,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -21.400121607541223,
+      "shared_bic": -13831.84325550312,
+      "shared_train_rmse": 0.0014037303252186,
+      "shared_val_rmse": 0.003025458201910196,
+      "grouped_val_rmse": 0.002575199359362063
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 113070,
+      "noise_scale_proxy": 0.001353898859768947,
+      "correlation_proxy": 0.27219525879739437,
+      "signal_scale": 0.5800275356531798,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 3,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0015610151573758958,
+          "val_rmse": 0.006999068115521302,
+          "rates": [
+            0.23308042765235554,
+            0.9231597661792765
+          ]
+        },
+        {
+          "train_objective_gap": 4.84089267468299e-07,
+          "prediction_gap": 7.512862905842101e-05,
+          "train_rmse": 0.0015612959424807415,
+          "val_rmse": 0.006992300426939291,
+          "rates": [
+            0.23373422727636228,
+            0.924154231781241
+          ]
+        },
+        {
+          "train_objective_gap": 1.4621220826859734e-06,
+          "prediction_gap": 0.00015990493252746298,
+          "train_rmse": 0.0015618632284443402,
+          "val_rmse": 0.006998635759845235,
+          "rates": [
+            0.23481501814346814,
+            0.9261095957995068
+          ]
+        },
+        {
+          "train_objective_gap": 1.724432214642154e-05,
+          "prediction_gap": 0.0006543171699402962,
+          "train_rmse": 0.0015710173390544942,
+          "val_rmse": 0.007117701124793585,
+          "rates": [
+            0.2567124931997239,
+            0.9788074697517097
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035841686488139817,
+      "noise_scale_correction": 1.7543210786725386e-05,
+      "augmented_total_tolerance": 0.003601711859600707,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 64.1969613934616,
+      "shared_bic": -13600.745221929956,
+      "shared_train_rmse": 0.0015610151573758958,
+      "shared_val_rmse": 0.006999068115521302,
+      "grouped_val_rmse": 0.0046051570019938915
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 113071,
+      "noise_scale_proxy": 0.0013734934068563808,
+      "correlation_proxy": 0.2806805166796558,
+      "signal_scale": 0.5800611169411086,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.001557727931587783,
+          "val_rmse": 0.006067174059118942,
+          "rates": [
+            0.24541558085220294,
+            0.8599746641657559
+          ]
+        },
+        {
+          "train_objective_gap": 6.849399475067241e-06,
+          "prediction_gap": 0.0002478785446175702,
+          "train_rmse": 0.0015617010018976662,
+          "val_rmse": 0.006234829521280433,
+          "rates": [
+            0.25559685079993083,
+            0.8787642318533303
+          ]
+        },
+        {
+          "train_objective_gap": 1.0354271127491277e-05,
+          "prediction_gap": 0.0003451615987116392,
+          "train_rmse": 0.0015637340416631066,
+          "val_rmse": 0.006323605814930683,
+          "rates": [
+            0.2605689989289136,
+            0.8896855702042372
+          ]
+        },
+        {
+          "train_objective_gap": 1.0456089946952775e-05,
+          "prediction_gap": 0.0003711590805512252,
+          "train_rmse": 0.001563793102801249,
+          "val_rmse": 0.0063419929070305915,
+          "rates": [
+            0.26040414129802203,
+            0.8900562682940819
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035852400698516427,
+      "noise_scale_correction": 5.6618121445080154e-05,
+      "augmented_total_tolerance": 0.003641858191296723,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 44.71982570064392,
+      "shared_bic": -13605.332330107707,
+      "shared_train_rmse": 0.001557727931587783,
+      "shared_val_rmse": 0.006067174059118942,
+      "grouped_val_rmse": 0.002123080841596258
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 113072,
+      "noise_scale_proxy": 0.0013866131300200421,
+      "correlation_proxy": 0.43881204573324994,
+      "signal_scale": 0.5799739860882129,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0017286159051532893,
+          "val_rmse": 0.005683301065337678,
+          "rates": [
+            0.24990603103760367,
+            0.8768488422900216
+          ]
+        },
+        {
+          "train_objective_gap": 4.687672656912904e-06,
+          "prediction_gap": 0.00018666589727461908,
+          "train_rmse": 0.0017313346333495958,
+          "val_rmse": 0.00579992832464956,
+          "rates": [
+            0.2559929233087111,
+            0.8900881668481228
+          ]
+        },
+        {
+          "train_objective_gap": 8.10937432662992e-06,
+          "prediction_gap": 0.0002896209940405808,
+          "train_rmse": 0.0017333191313061863,
+          "val_rmse": 0.0058632766178876245,
+          "rates": [
+            0.26146709418382647,
+            0.9008924212438628
+          ]
+        },
+        {
+          "train_objective_gap": 1.3810221498528982e-05,
+          "prediction_gap": 0.00046189534952505504,
+          "train_rmse": 0.0017366254743645523,
+          "val_rmse": 0.005979596969953031,
+          "rates": [
+            0.26900167323764784,
+            0.9182709081761858
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036052071055382886,
+      "noise_scale_correction": 8.27811150674834e-05,
+      "augmented_total_tolerance": 0.003687988220605772,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 44.5755222177977,
+      "shared_bic": -13378.826554024236,
+      "shared_train_rmse": 0.0017286159051532893,
+      "shared_val_rmse": 0.005683301065337678,
+      "grouped_val_rmse": 0.0021579108638931726
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 113920,
+      "noise_scale_proxy": 0.0012423750497186227,
+      "correlation_proxy": 0.295389087673075,
+      "signal_scale": 0.5805901344669352,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0015489400514034717,
+          "val_rmse": 0.0022167609243704416,
+          "rates": [
+            0.25601403831647884,
+            0.9771354293797737
+          ]
+        },
+        {
+          "train_objective_gap": 3.3483911975627335e-07,
+          "prediction_gap": 0.00017567227458191825,
+          "train_rmse": 0.0015491344556930358,
+          "val_rmse": 0.002165291327391917,
+          "rates": [
+            0.24857680499518098,
+            0.9569126085798966
+          ]
+        },
+        {
+          "train_objective_gap": 3.7109165809391293e-07,
+          "prediction_gap": 0.00014719397804162298,
+          "train_rmse": 0.001549155503559144,
+          "val_rmse": 0.0021800432394952804,
+          "rates": [
+            0.2508364716961517,
+            0.962342690398424
+          ]
+        },
+        {
+          "train_objective_gap": 6.770758678716357e-07,
+          "prediction_gap": 0.0002707465583310225,
+          "train_rmse": 0.0015493331549726436,
+          "val_rmse": 0.0021076259079222917,
+          "rates": [
+            0.2433140515674824,
+            0.9440817526462514
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035870972994862566,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0035870972994862566,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -39.85806756385864,
+      "shared_bic": -13617.64293322947,
+      "shared_train_rmse": 0.0015489400514034717,
+      "shared_val_rmse": 0.0022167609243704416,
+      "grouped_val_rmse": 0.002605335772337749
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 113921,
+      "noise_scale_proxy": 0.0014852253005202337,
+      "correlation_proxy": 0.38562813792377215,
+      "signal_scale": 0.5806046548346618,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 1,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.001611275523773341,
+          "val_rmse": 0.00393938174723149,
+          "rates": [
+            0.2125217560463821,
+            1.0110490753837515
+          ]
+        },
+        {
+          "train_objective_gap": 4.464207094980044e-06,
+          "prediction_gap": 0.0007735812588069489,
+          "train_rmse": 0.0016138674631928323,
+          "val_rmse": 0.003318447587015732,
+          "rates": [
+            0.24396200999288561,
+            1.101227854275528
+          ]
+        },
+        {
+          "train_objective_gap": 4.7036825429115455e-06,
+          "prediction_gap": 0.0008105135753176804,
+          "train_rmse": 0.00161400650375262,
+          "val_rmse": 0.003277791345431202,
+          "rates": [
+            0.2448652889118881,
+            1.1038689774980293
+          ]
+        },
+        {
+          "train_objective_gap": 4.9334825246400155e-06,
+          "prediction_gap": 0.0008214813264319053,
+          "train_rmse": 0.0016141399266916925,
+          "val_rmse": 0.003282881120131146,
+          "rates": [
+            0.2451533178872774,
+            1.1041799013819067
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003598491651690832,
+      "noise_scale_correction": 0.00027943081229843316,
+      "augmented_total_tolerance": 0.003877922463989265,
+      "decision": "INDETERMINATE_OPTIMIZATION",
+      "group_bic_support": null,
+      "shared_bic": null,
+      "shared_train_rmse": null,
+      "shared_val_rmse": null,
+      "grouped_val_rmse": 0.003333159722376576
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 113922,
+      "noise_scale_proxy": 0.001334940633358651,
+      "correlation_proxy": 0.3053726975143018,
+      "signal_scale": 0.5804565749665076,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0015901335509352623,
+          "val_rmse": 0.002081950841123699,
+          "rates": [
+            0.24070779176108525,
+            1.016118154015656
+          ]
+        },
+        {
+          "train_objective_gap": 3.6958790765697616e-07,
+          "prediction_gap": 0.00011111685250180047,
+          "train_rmse": 0.00159034808066629,
+          "val_rmse": 0.0020504976272469207,
+          "rates": [
+            0.24186477460729433,
+            1.0186240574322092
+          ]
+        },
+        {
+          "train_objective_gap": 4.7012368478988723e-07,
+          "prediction_gap": 0.00020453686649138736,
+          "train_rmse": 0.0015904064373191461,
+          "val_rmse": 0.0019897776432024838,
+          "rates": [
+            0.24822331445741136,
+            1.036993508099634
+          ]
+        },
+        {
+          "train_objective_gap": 1.2132601502698077e-06,
+          "prediction_gap": 0.0004684568935728189,
+          "train_rmse": 0.0015908377957666313,
+          "val_rmse": 0.0018777172157991133,
+          "rates": [
+            0.25976793610654236,
+            1.073520846404623
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035883579152228805,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0035883579152228805,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -41.54429926713783,
+      "shared_bic": -13560.529139615579,
+      "shared_train_rmse": 0.0015901335509352623,
+      "shared_val_rmse": 0.002081950841123699,
+      "grouped_val_rmse": 0.002096410132107949
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 113970,
+      "noise_scale_proxy": 0.0013911449303274587,
+      "correlation_proxy": 0.35359797006637583,
+      "signal_scale": 0.5796690782302679,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0016447186166862007,
+          "val_rmse": 0.002406368720300697,
+          "rates": [
+            0.23785537338304047,
+            0.9727877637176483
+          ]
+        },
+        {
+          "train_objective_gap": 2.8324442095761844e-08,
+          "prediction_gap": 8.75740421097048e-05,
+          "train_rmse": 0.0016447350354894417,
+          "val_rmse": 0.0024012255681032284,
+          "rates": [
+            0.2402870305819945,
+            0.9784167873631651
+          ]
+        },
+        {
+          "train_objective_gap": 4.101089692718922e-08,
+          "prediction_gap": 0.00015304219942538893,
+          "train_rmse": 0.0016447423894350199,
+          "val_rmse": 0.002432430670313461,
+          "rates": [
+            0.2327027353254115,
+            0.9623396422028639
+          ]
+        },
+        {
+          "train_objective_gap": 1.3336901937309596e-07,
+          "prediction_gap": 0.00016664640997271932,
+          "train_rmse": 0.0016447959265827252,
+          "val_rmse": 0.002439261160681017,
+          "rates": [
+            0.23167764820446182,
+            0.95891505404328
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003594447249486632,
+      "noise_scale_correction": 9.181830747329164e-05,
+      "augmented_total_tolerance": 0.0036862655569599237,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -32.40570534991457,
+      "shared_bic": -13487.08629145775,
+      "shared_train_rmse": 0.0016447186166862007,
+      "shared_val_rmse": 0.002406368720300697,
+      "grouped_val_rmse": 0.002017225804208688
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 113971,
+      "noise_scale_proxy": 0.001294155757777624,
+      "correlation_proxy": 0.2741060707287848,
+      "signal_scale": 0.5794449692412776,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0014883894721668001,
+          "val_rmse": 0.002583797421171572,
+          "rates": [
+            0.24465080709339299,
+            0.9942631599550376
+          ]
+        },
+        {
+          "train_objective_gap": 4.941570143933745e-09,
+          "prediction_gap": 0.00021179833602483938,
+          "train_rmse": 0.0014883923355347602,
+          "val_rmse": 0.0026065694068386595,
+          "rates": [
+            0.24049738819878594,
+            0.9853887706522719
+          ]
+        },
+        {
+          "train_objective_gap": 2.1918743493315476e-07,
+          "prediction_gap": 0.00023427533983588308,
+          "train_rmse": 0.001488516479223293,
+          "val_rmse": 0.0025832749194392326,
+          "rates": [
+            0.24767761113280018,
+            1.0021020195665964
+          ]
+        },
+        {
+          "train_objective_gap": 3.9080756565230706e-07,
+          "prediction_gap": 0.00026101536019828496,
+          "train_rmse": 0.0014886159236446588,
+          "val_rmse": 0.002648563951172474,
+          "rates": [
+            0.2378372752631199,
+            0.9758550610916414
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035844099242272587,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0035844099242272587,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -33.35733442675155,
+      "shared_bic": -13704.413577054707,
+      "shared_train_rmse": 0.0014883894721668001,
+      "shared_val_rmse": 0.002583797421171572,
+      "grouped_val_rmse": 0.0029543561936320266
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 113972,
+      "noise_scale_proxy": 0.0014143454156767944,
+      "correlation_proxy": 0.21480094553520396,
+      "signal_scale": 0.5793171740379325,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0016042263248569311,
+          "val_rmse": 0.0031946952590323134,
+          "rates": [
+            0.2306405373784424,
+            1.039766607527019
+          ]
+        },
+        {
+          "train_objective_gap": 9.894147530664648e-11,
+          "prediction_gap": 0.00014184146242543234,
+          "train_rmse": 0.001604226382175427,
+          "val_rmse": 0.003148084868709533,
+          "rates": [
+            0.23477714686982873,
+            1.0520113853046549
+          ]
+        },
+        {
+          "train_objective_gap": 1.9719147138806144e-07,
+          "prediction_gap": 0.00026126241579002546,
+          "train_rmse": 0.00160434056126288,
+          "val_rmse": 0.0030672561294971317,
+          "rates": [
+            0.2396829296870999,
+            1.0656524164786894
+          ]
+        },
+        {
+          "train_objective_gap": 3.9808897784763686e-07,
+          "prediction_gap": 0.00019488663507357963,
+          "train_rmse": 0.0016044569446385935,
+          "val_rmse": 0.0031350558076368544,
+          "rates": [
+            0.23472175529459738,
+            1.0502019752906515
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035769215532602022,
+      "noise_scale_correction": 0.00013808408173235321,
+      "augmented_total_tolerance": 0.0037150056349925555,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -30.790728106479946,
+      "shared_bic": -13541.329001744229,
+      "shared_train_rmse": 0.0016042263248569311,
+      "shared_val_rmse": 0.0031946952590323134,
+      "grouped_val_rmse": 0.0028773633340574496
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 114070,
+      "noise_scale_proxy": 0.0013569141006080233,
+      "correlation_proxy": 0.2452600024652182,
+      "signal_scale": 0.5782338302462755,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.001544379588466726,
+          "val_rmse": 0.004217269626263396,
+          "rates": [
+            0.23516134908604924,
+            0.9633303946519909
+          ]
+        },
+        {
+          "train_objective_gap": 3.223690029569437e-07,
+          "prediction_gap": 0.00011791387030025788,
+          "train_rmse": 0.0015445659931300586,
+          "val_rmse": 0.004237600828922455,
+          "rates": [
+            0.23488012571329261,
+            0.9629082559556923
+          ]
+        },
+        {
+          "train_objective_gap": 6.663077329876841e-07,
+          "prediction_gap": 0.0003631455526198354,
+          "train_rmse": 0.0015447648701392943,
+          "val_rmse": 0.004249040413199896,
+          "rates": [
+            0.22410584204320794,
+            0.9407688651419919
+          ]
+        },
+        {
+          "train_objective_gap": 8.91023913450947e-07,
+          "prediction_gap": 0.000445281960473538,
+          "train_rmse": 0.0015448948086370419,
+          "val_rmse": 0.004247404492026784,
+          "rates": [
+            0.24774931524253618,
+            0.9910916273184855
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003580767573597469,
+      "noise_scale_correction": 2.355612171927148e-05,
+      "augmented_total_tolerance": 0.0036043236953167404,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 23.635115253839103,
+      "shared_bic": -13624.059065860725,
+      "shared_train_rmse": 0.001544379588466726,
+      "shared_val_rmse": 0.004217269626263396,
+      "grouped_val_rmse": 0.002159509527847036
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 114071,
+      "noise_scale_proxy": 0.0013220307204726074,
+      "correlation_proxy": 0.21551009261348295,
+      "signal_scale": 0.5782986786603006,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 3,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.001413443437586898,
+          "val_rmse": 0.0062190450610177285,
+          "rates": [
+            0.23523898879712513,
+            1.0432950570393975
+          ]
+        },
+        {
+          "train_objective_gap": 3.7206102743414535e-08,
+          "prediction_gap": 0.0004091043894177717,
+          "train_rmse": 0.0014134649538269527,
+          "val_rmse": 0.006260414195066779,
+          "rates": [
+            0.2280233716002948,
+            1.0255743452597692
+          ]
+        },
+        {
+          "train_objective_gap": 6.430681382001488e-08,
+          "prediction_gap": 0.00043400585802151343,
+          "train_rmse": 0.001413480626132359,
+          "val_rmse": 0.006235106620960861,
+          "rates": [
+            0.22893781876540756,
+            1.0272555633613099
+          ]
+        },
+        {
+          "train_objective_gap": 1.0779298174250008e-06,
+          "prediction_gap": 0.0007170918427814523,
+          "train_rmse": 0.0014140668029760035,
+          "val_rmse": 0.0063588758467373295,
+          "rates": [
+            0.22013250932092154,
+            1.007698170743571
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035770110962191795,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0035770110962191795,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": -29.81352395574504,
+      "shared_bic": -13816.838276723878,
+      "shared_train_rmse": 0.001413443437586898,
+      "shared_val_rmse": 0.0062190450610177285,
+      "grouped_val_rmse": 0.004475962575941836
+    },
+    {
+      "channels": 32,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 114072,
+      "noise_scale_proxy": 0.0013068590729080818,
+      "correlation_proxy": 0.3502699928351626,
+      "signal_scale": 0.5782861616493981,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0015257128414667936,
+          "val_rmse": 0.003977366775430964,
+          "rates": [
+            0.24266659420400358,
+            0.9393069758912568
+          ]
+        },
+        {
+          "train_objective_gap": 1.0815240263059654e-07,
+          "prediction_gap": 0.00016081507008115548,
+          "train_rmse": 0.001525775384504584,
+          "val_rmse": 0.003977747450261606,
+          "rates": [
+            0.24035235531925536,
+            0.9331857773782547
+          ]
+        },
+        {
+          "train_objective_gap": 8.363601859997883e-07,
+          "prediction_gap": 0.00031855141616620277,
+          "train_rmse": 0.0015261964969885118,
+          "val_rmse": 0.004029926895088932,
+          "rates": [
+            0.23320928716984812,
+            0.9190922131642137
+          ]
+        },
+        {
+          "train_objective_gap": 1.0481234654525054e-06,
+          "prediction_gap": 0.0003920113171688075,
+          "train_rmse": 0.0015263189567625648,
+          "val_rmse": 0.004043813350185726,
+          "rates": [
+            0.23077326707547577,
+            0.9135902827515756
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035940270306944804,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0035940270306944804,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": -5.668212427293838,
+      "shared_bic": -13650.520381245937,
+      "shared_train_rmse": 0.0015257128414667936,
+      "shared_val_rmse": 0.003977366775430964,
+      "grouped_val_rmse": 0.002267453101424456
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 112680,
+      "noise_scale_proxy": 0.0003361850127942598,
+      "correlation_proxy": 0.5768854995335801,
+      "signal_scale": 0.5800330950304071,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0003835353733713738,
+          "val_rmse": 0.0005405057590275552,
+          "rates": [
+            0.2527152474491439,
+            1.0070093504880373
+          ]
+        },
+        {
+          "train_objective_gap": 2.1219718038172373e-07,
+          "prediction_gap": 0.00015463082352390022,
+          "train_rmse": 0.00038365845475866735,
+          "val_rmse": 0.0005479784180558399,
+          "rates": [
+            0.24700369503233743,
+            0.9907831645041518
+          ]
+        },
+        {
+          "train_objective_gap": 4.945094589099935e-07,
+          "prediction_gap": 0.00020538478210556973,
+          "train_rmse": 0.0003838222052233472,
+          "val_rmse": 0.0005681728205998866,
+          "rates": [
+            0.24420533298528257,
+            0.9827928583911912
+          ]
+        },
+        {
+          "train_objective_gap": 4.463236810140721e-06,
+          "prediction_gap": 0.0002610596599247841,
+          "train_rmse": 0.0003861241984322134,
+          "val_rmse": 0.0005939838425036542,
+          "rates": [
+            0.24441230102531644,
+            0.9820515804940071
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003622641437552338,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.003622641437552338,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -1476.7623917609308,
+      "shared_bic": -66304.72420881136,
+      "shared_train_rmse": 0.0003835353733713738,
+      "shared_val_rmse": 0.0005405057590275552,
+      "grouped_val_rmse": 0.0019928635996100674
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 112681,
+      "noise_scale_proxy": 0.0003295552156359063,
+      "correlation_proxy": 0.5952823190811766,
+      "signal_scale": 0.5799927256672232,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0003800192831470997,
+          "val_rmse": 0.0006393479617517723,
+          "rates": [
+            0.23487590355832866,
+            0.9745717462662896
+          ]
+        },
+        {
+          "train_objective_gap": 5.348825805945657e-07,
+          "prediction_gap": 0.00035497386647248487,
+          "train_rmse": 0.00038032951115293063,
+          "val_rmse": 0.0004992442363959096,
+          "rates": [
+            0.24996435789041452,
+            1.014849898188533
+          ]
+        },
+        {
+          "train_objective_gap": 9.581010619425068e-07,
+          "prediction_gap": 0.00033935773161437833,
+          "train_rmse": 0.00038057497479348037,
+          "val_rmse": 0.0005097739129126105,
+          "rates": [
+            0.2493463575099179,
+            1.013201329249073
+          ]
+        },
+        {
+          "train_objective_gap": 1.5918318402133806e-06,
+          "prediction_gap": 0.0004947128408256028,
+          "train_rmse": 0.0003809425340349089,
+          "val_rmse": 0.000527207482747496,
+          "rates": [
+            0.2549557987025793,
+            1.0287030357726308
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036249643769093788,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036249643769093788,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -48.281664187292336,
+      "shared_bic": -66384.88681504765,
+      "shared_train_rmse": 0.0003800192831470997,
+      "shared_val_rmse": 0.0006393479617517723,
+      "grouped_val_rmse": 0.0006800526196543634
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 112682,
+      "noise_scale_proxy": 0.00034490200316365815,
+      "correlation_proxy": 0.5835591704315388,
+      "signal_scale": 0.5800206281071177,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.00040090256908416425,
+          "val_rmse": 0.0005251789124028536,
+          "rates": [
+            0.248966901120311,
+            0.9868040903454673
+          ]
+        },
+        {
+          "train_objective_gap": 8.207685094227484e-09,
+          "prediction_gap": 0.0001374861612969697,
+          "train_rmse": 0.0004009073297108279,
+          "val_rmse": 0.0005313395551356714,
+          "rates": [
+            0.24530745687119887,
+            0.9773419424208839
+          ]
+        },
+        {
+          "train_objective_gap": 2.7118943471825953e-07,
+          "prediction_gap": 0.00012891378228047936,
+          "train_rmse": 0.00040105986455042555,
+          "val_rmse": 0.0005276073421543241,
+          "rates": [
+            0.24765194803259505,
+            0.9831290329408771
+          ]
+        },
+        {
+          "train_objective_gap": 8.151962597656604e-07,
+          "prediction_gap": 0.0001715174174447286,
+          "train_rmse": 0.0004013753997307841,
+          "val_rmse": 0.0005370653137533557,
+          "rates": [
+            0.2537563560123512,
+            1.0008737097551725
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036234841121649086,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036234841121649086,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -31.98477717669448,
+      "shared_bic": -65919.2538764659,
+      "shared_train_rmse": 0.00040090256908416425,
+      "shared_val_rmse": 0.0005251789124028536,
+      "grouped_val_rmse": 0.0005427170410120034
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 112730,
+      "noise_scale_proxy": 0.00032908419689768744,
+      "correlation_proxy": 0.5981572329788374,
+      "signal_scale": 0.5797498565090918,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0004332996482905299,
+          "val_rmse": 0.0023586597190547167,
+          "rates": [
+            0.24223187867237445,
+            0.9716564106521087
+          ]
+        },
+        {
+          "train_objective_gap": 5.428186764402327e-08,
+          "prediction_gap": 0.00015994465272792656,
+          "train_rmse": 0.00043333111819550754,
+          "val_rmse": 0.0023643852033246233,
+          "rates": [
+            0.24228224246804564,
+            0.9719620433232871
+          ]
+        },
+        {
+          "train_objective_gap": 9.094140554909659e-07,
+          "prediction_gap": 0.00010262745609867397,
+          "train_rmse": 0.0004338268809587081,
+          "val_rmse": 0.002371589699394651,
+          "rates": [
+            0.24446496046112445,
+            0.9770145492231461
+          ]
+        },
+        {
+          "train_objective_gap": 5.100102938073084e-06,
+          "prediction_gap": 0.00024055646932995793,
+          "train_rmse": 0.00043625643223705934,
+          "val_rmse": 0.0024473188787994945,
+          "rates": [
+            0.2511437152324722,
+            0.9943925169709071
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003625327388060502,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.003625327388060502,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 656.8737426687367,
+      "shared_bic": -65242.85655671167,
+      "shared_train_rmse": 0.0004332996482905299,
+      "shared_val_rmse": 0.0023586597190547167,
+      "grouped_val_rmse": 0.0011985371659459056
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 112731,
+      "noise_scale_proxy": 0.000334936271657165,
+      "correlation_proxy": 0.6020222985478342,
+      "signal_scale": 0.5797696401502039,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.00041734014509007134,
+          "val_rmse": 0.001892695321546624,
+          "rates": [
+            0.23870286249020853,
+            0.9270701400000994
+          ]
+        },
+        {
+          "train_objective_gap": 2.451802356185085e-06,
+          "prediction_gap": 0.00011710776559774979,
+          "train_rmse": 0.0004187616256598362,
+          "val_rmse": 0.0019265902443067378,
+          "rates": [
+            0.24093456407054006,
+            0.9322585110730659
+          ]
+        },
+        {
+          "train_objective_gap": 5.946291573500765e-06,
+          "prediction_gap": 0.00018685493346792847,
+          "train_rmse": 0.0004207876244158681,
+          "val_rmse": 0.0019942997090158167,
+          "rates": [
+            0.24630271223067077,
+            0.944530780463862
+          ]
+        },
+        {
+          "train_objective_gap": 1.1651223104000868e-05,
+          "prediction_gap": 0.0003110928814924097,
+          "train_rmse": 0.00042409517051638767,
+          "val_rmse": 0.0020757216680572306,
+          "rates": [
+            0.2515661865976291,
+            0.9579221997846645
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003625815424207431,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.003625815424207431,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -526.1198400060239,
+      "shared_bic": -65569.49967759097,
+      "shared_train_rmse": 0.00041734014509007134,
+      "shared_val_rmse": 0.001892695321546624,
+      "grouped_val_rmse": 0.002661686932822878
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 112732,
+      "noise_scale_proxy": 0.0003459755883153413,
+      "correlation_proxy": 0.5669692894419494,
+      "signal_scale": 0.5798038181751209,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.00042545132377520546,
+          "val_rmse": 0.0017000857813418337,
+          "rates": [
+            0.23957391857211244,
+            0.905738338239827
+          ]
+        },
+        {
+          "train_objective_gap": 1.96097495898895e-06,
+          "prediction_gap": 0.00010607370516963278,
+          "train_rmse": 0.00042658830454377306,
+          "val_rmse": 0.0017475044701669754,
+          "rates": [
+            0.24246734897505487,
+            0.9118647501111882
+          ]
+        },
+        {
+          "train_objective_gap": 2.3057700468504613e-06,
+          "prediction_gap": 9.53753008494477e-05,
+          "train_rmse": 0.0004267882180522032,
+          "val_rmse": 0.0017513832232351526,
+          "rates": [
+            0.24280546220001367,
+            0.912863720732148
+          ]
+        },
+        {
+          "train_objective_gap": 1.1058982454871746e-05,
+          "prediction_gap": 0.0003012258019151435,
+          "train_rmse": 0.00043186336402767177,
+          "val_rmse": 0.0019149045715659355,
+          "rates": [
+            0.2532367444548982,
+            0.9371603127593863
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036213893322830037,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036213893322830037,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 382.87342422514484,
+      "shared_bic": -65401.95674017944,
+      "shared_train_rmse": 0.00042545132377520546,
+      "shared_val_rmse": 0.0017000857813418337,
+      "grouped_val_rmse": 0.0004983495414966454
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 112830,
+      "noise_scale_proxy": 0.00034654485890981334,
+      "correlation_proxy": 0.597454948481643,
+      "signal_scale": 0.5795191916334249,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0006154987995081043,
+          "val_rmse": 0.005565633259721196,
+          "rates": [
+            0.2477413897980446,
+            0.8571197137696825
+          ]
+        },
+        {
+          "train_objective_gap": 9.136455657092277e-06,
+          "prediction_gap": 0.00014918644944209754,
+          "train_rmse": 0.000620793550904897,
+          "val_rmse": 0.005656494216940863,
+          "rates": [
+            0.2527169505692759,
+            0.8673089405700461
+          ]
+        },
+        {
+          "train_objective_gap": 1.0085020804397387e-05,
+          "prediction_gap": 0.0001513218297781963,
+          "train_rmse": 0.0006213432626122749,
+          "val_rmse": 0.005677089200685104,
+          "rates": [
+            0.2533765950419547,
+            0.8687070297739289
+          ]
+        },
+        {
+          "train_objective_gap": 2.1770702730129807e-05,
+          "prediction_gap": 0.000302061778466408,
+          "train_rmse": 0.0006281153395555607,
+          "val_rmse": 0.00579515797277513,
+          "rates": [
+            0.25965303393998795,
+            0.8812954344700145
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036252387116295485,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036252387116295485,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 3655.8637753501826,
+      "shared_bic": -62187.72228295391,
+      "shared_train_rmse": 0.0006154987995081043,
+      "shared_val_rmse": 0.005565633259721196,
+      "grouped_val_rmse": 0.0005557956413798499
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 112831,
+      "noise_scale_proxy": 0.0003296984614957782,
+      "correlation_proxy": 0.6235329741383421,
+      "signal_scale": 0.5795300692860614,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0006210361939133769,
+          "val_rmse": 0.005479032800388895,
+          "rates": [
+            0.2515854355556179,
+            0.874303139547529
+          ]
+        },
+        {
+          "train_objective_gap": 3.2891511293547745e-06,
+          "prediction_gap": 0.00014491890206014775,
+          "train_rmse": 0.0006229423558952642,
+          "val_rmse": 0.005525113967373797,
+          "rates": [
+            0.2540378464280055,
+            0.8787771582486209
+          ]
+        },
+        {
+          "train_objective_gap": 9.072549508540529e-06,
+          "prediction_gap": 0.0002441617912274477,
+          "train_rmse": 0.0006262940091586627,
+          "val_rmse": 0.0055501545034968135,
+          "rates": [
+            0.25632354887963577,
+            0.8827782986343555
+          ]
+        },
+        {
+          "train_objective_gap": 1.023663794976017e-05,
+          "prediction_gap": 0.0001786102444651608,
+          "train_rmse": 0.0006269686334136578,
+          "val_rmse": 0.005589883564296954,
+          "rates": [
+            0.257602254835299,
+            0.8872029989254723
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036285315455889806,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036285315455889806,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 3861.1370945865056,
+      "shared_bic": -62109.766053092695,
+      "shared_train_rmse": 0.0006210361939133769,
+      "shared_val_rmse": 0.005479032800388895,
+      "grouped_val_rmse": 0.0008962729512681783
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 112832,
+      "noise_scale_proxy": 0.0003259798706631743,
+      "correlation_proxy": 0.5906273452506855,
+      "signal_scale": 0.5795527750834699,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0005678226712931515,
+          "val_rmse": 0.005833965801877138,
+          "rates": [
+            0.25055394396535463,
+            0.8635331848372165
+          ]
+        },
+        {
+          "train_objective_gap": 4.7502903391578854e-07,
+          "prediction_gap": 0.00013843571490966306,
+          "train_rmse": 0.0005680979756880027,
+          "val_rmse": 0.005832316988701878,
+          "rates": [
+            0.25028150919634634,
+            0.8632498160454436
+          ]
+        },
+        {
+          "train_objective_gap": 2.524696643387706e-06,
+          "prediction_gap": 9.925910944005158e-05,
+          "train_rmse": 0.0005692858662390708,
+          "val_rmse": 0.005864357214944788,
+          "rates": [
+            0.2520918347855574,
+            0.8669960559501735
+          ]
+        },
+        {
+          "train_objective_gap": 4.544118155671584e-06,
+          "prediction_gap": 0.00017225009057864898,
+          "train_rmse": 0.0005704562275805782,
+          "val_rmse": 0.005882221080702384,
+          "rates": [
+            0.25293215549574916,
+            0.8683785099194334
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003624376600207603,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.003624376600207603,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 2854.6191276609243,
+      "shared_bic": -62889.47204391173,
+      "shared_train_rmse": 0.0005678226712931515,
+      "shared_val_rmse": 0.005833965801877138,
+      "grouped_val_rmse": 0.003004726233967384
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 113680,
+      "noise_scale_proxy": 0.00032622656383044185,
+      "correlation_proxy": 0.5839866239432467,
+      "signal_scale": 0.5800531151026606,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0003830438055492609,
+          "val_rmse": 0.0005667684513768125,
+          "rates": [
+            0.23593558210885823,
+            0.9585919502664018
+          ]
+        },
+        {
+          "train_objective_gap": 2.802040877865364e-07,
+          "prediction_gap": 7.898319906176314e-05,
+          "train_rmse": 0.00038320633880324596,
+          "val_rmse": 0.000549337307447974,
+          "rates": [
+            0.2381497468155995,
+            0.96412679721685
+          ]
+        },
+        {
+          "train_objective_gap": 4.802837737471216e-07,
+          "prediction_gap": 0.00018928937385783064,
+          "train_rmse": 0.00038332239564835616,
+          "val_rmse": 0.0005077078857862223,
+          "rates": [
+            0.24465906883870273,
+            0.9811468414454573
+          ]
+        },
+        {
+          "train_objective_gap": 1.5641974927741115e-06,
+          "prediction_gap": 0.00024267961917479698,
+          "train_rmse": 0.0003839511231775803,
+          "val_rmse": 0.0005186282565836169,
+          "rates": [
+            0.2463724920237923,
+            0.9854731970665805
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036235380860913844,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036235380860913844,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -70.18846691072395,
+      "shared_bic": -66315.88706589845,
+      "shared_train_rmse": 0.0003830438055492609,
+      "shared_val_rmse": 0.0005667684513768125,
+      "grouped_val_rmse": 0.0006250466718456042
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 113681,
+      "noise_scale_proxy": 0.00031649106925096934,
+      "correlation_proxy": 0.5997423636765884,
+      "signal_scale": 0.5800000462172487,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.000390705971271326,
+          "val_rmse": 0.0009072486590564814,
+          "rates": [
+            0.24235844032424245,
+            0.998788460475276
+          ]
+        },
+        {
+          "train_objective_gap": 1.5706460252968752e-07,
+          "prediction_gap": 0.00017187938307297343,
+          "train_rmse": 0.0003907970687480523,
+          "val_rmse": 0.0010140413246464638,
+          "rates": [
+            0.2363043638610591,
+            0.9821104875759545
+          ]
+        },
+        {
+          "train_objective_gap": 5.982175971756973e-07,
+          "prediction_gap": 0.00014573683668048817,
+          "train_rmse": 0.00039105293750533586,
+          "val_rmse": 0.0009230979347796382,
+          "rates": [
+            0.2414193528331738,
+            0.9954281784119117
+          ]
+        },
+        {
+          "train_objective_gap": 3.709183744639602e-06,
+          "prediction_gap": 0.000310979450839161,
+          "train_rmse": 0.0003928572980146452,
+          "val_rmse": 0.0007565482155595814,
+          "rates": [
+            0.25188973783589225,
+            1.024111160941314
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036255275401832275,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036255275401832275,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -95.3079567552777,
+      "shared_bic": -66143.49626839673,
+      "shared_train_rmse": 0.000390705971271326,
+      "shared_val_rmse": 0.0009072486590564814,
+      "grouped_val_rmse": 0.0008292664222606906
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 113682,
+      "noise_scale_proxy": 0.0003372321363758935,
+      "correlation_proxy": 0.6107638270301224,
+      "signal_scale": 0.5800887991747236,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0004185841134061645,
+          "val_rmse": 0.0005205894926195957,
+          "rates": [
+            0.2478139293288387,
+            0.981946651360473
+          ]
+        },
+        {
+          "train_objective_gap": 8.920635150872594e-08,
+          "prediction_gap": 7.115783079688431e-05,
+          "train_rmse": 0.00041863586101148996,
+          "val_rmse": 0.0005339894736811228,
+          "rates": [
+            0.2494353638166667,
+            0.9861008309218556
+          ]
+        },
+        {
+          "train_objective_gap": 9.897333680331424e-08,
+          "prediction_gap": 6.713700499871104e-05,
+          "train_rmse": 0.00041864152673026106,
+          "val_rmse": 0.0005231767152018107,
+          "rates": [
+            0.24637528967909111,
+            0.9775858425430833
+          ]
+        },
+        {
+          "train_objective_gap": 5.657274061408463e-07,
+          "prediction_gap": 0.0001142765916869673,
+          "train_rmse": 0.000418912285537853,
+          "val_rmse": 0.0005213477939402342,
+          "rates": [
+            0.2442226985368634,
+            0.9724913042802104
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036269192041569853,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036269192041569853,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -48.45110111287795,
+      "shared_bic": -65543.59420085454,
+      "shared_train_rmse": 0.0004185841134061645,
+      "shared_val_rmse": 0.0005205894926195957,
+      "grouped_val_rmse": 0.00055983159434217
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 113730,
+      "noise_scale_proxy": 0.0003413757803006656,
+      "correlation_proxy": 0.5774056362632908,
+      "signal_scale": 0.579093176947829,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.00039333882788456724,
+          "val_rmse": 0.001440800990642596,
+          "rates": [
+            0.23792947065939138,
+            0.9765705955613438
+          ]
+        },
+        {
+          "train_objective_gap": 3.344688408892139e-07,
+          "prediction_gap": 8.244031155864058e-05,
+          "train_rmse": 0.00039353251650822783,
+          "val_rmse": 0.0014268067570483375,
+          "rates": [
+            0.2397637940057872,
+            0.981429265250967
+          ]
+        },
+        {
+          "train_objective_gap": 3.579771692861676e-07,
+          "prediction_gap": 7.117266846955062e-05,
+          "train_rmse": 0.00039354613002080395,
+          "val_rmse": 0.0014390885380024601,
+          "rates": [
+            0.23804663831832365,
+            0.9769387364428141
+          ]
+        },
+        {
+          "train_objective_gap": 2.471624705521894e-06,
+          "prediction_gap": 0.0004244871510934143,
+          "train_rmse": 0.00039477012888751065,
+          "val_rmse": 0.0014767374346562306,
+          "rates": [
+            0.25396921226656877,
+            1.018628856895829
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036227071144524867,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036227071144524867,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 274.49469275849697,
+      "shared_bic": -66085.0392258261,
+      "shared_train_rmse": 0.00039333882788456724,
+      "shared_val_rmse": 0.001440800990642596,
+      "grouped_val_rmse": 0.0005863611556139239
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 113731,
+      "noise_scale_proxy": 0.0003476250570356913,
+      "correlation_proxy": 0.5705686813768368,
+      "signal_scale": 0.5791287960370235,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.000381973552970223,
+          "val_rmse": 0.0013411580375939187,
+          "rates": [
+            0.2453415046654099,
+            0.9596524042445552
+          ]
+        },
+        {
+          "train_objective_gap": 1.2534950225805146e-07,
+          "prediction_gap": 0.00013231266970649687,
+          "train_rmse": 0.00038204614647654957,
+          "val_rmse": 0.001299569955950257,
+          "rates": [
+            0.2414973599655515,
+            0.9504162519069865
+          ]
+        },
+        {
+          "train_objective_gap": 3.381869905987933e-07,
+          "prediction_gap": 0.0002620780809027303,
+          "train_rmse": 0.0003821694067949239,
+          "val_rmse": 0.0012859324817809574,
+          "rates": [
+            0.23520828800799015,
+            0.9363643187349184
+          ]
+        },
+        {
+          "train_objective_gap": 9.79471244073741e-07,
+          "prediction_gap": 0.00021295895183042068,
+          "train_rmse": 0.00038254079297255633,
+          "val_rmse": 0.001389420754425044,
+          "rates": [
+            0.25097277255766803,
+            0.9739470583943342
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003621843822210751,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.003621843822210751,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 214.56734221914667,
+      "shared_bic": -66340.24072120199,
+      "shared_train_rmse": 0.000381973552970223,
+      "shared_val_rmse": 0.0013411580375939187,
+      "grouped_val_rmse": 0.0006242526292009811
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 113732,
+      "noise_scale_proxy": 0.0003332048197300726,
+      "correlation_proxy": 0.5761572872726823,
+      "signal_scale": 0.5790988009776981,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.00040259718486057843,
+          "val_rmse": 0.001333863860594073,
+          "rates": [
+            0.23779962276974942,
+            0.9562095965910035
+          ]
+        },
+        {
+          "train_objective_gap": 2.0383424977016293e-07,
+          "prediction_gap": 0.00011580516112528649,
+          "train_rmse": 0.0004027152250302185,
+          "val_rmse": 0.0013458962441340134,
+          "rates": [
+            0.24099511935517903,
+            0.9634841418998394
+          ]
+        },
+        {
+          "train_objective_gap": 5.189189916952884e-07,
+          "prediction_gap": 0.00013186472493633344,
+          "train_rmse": 0.00040289769022647373,
+          "val_rmse": 0.0013440405552744674,
+          "rates": [
+            0.24049879283893733,
+            0.9620218780351786
+          ]
+        },
+        {
+          "train_objective_gap": 3.258156648015124e-06,
+          "prediction_gap": 0.0003034900508320129,
+          "train_rmse": 0.0004044839794688415,
+          "val_rmse": 0.001378799164552818,
+          "rates": [
+            0.24698715396345727,
+            0.977219991688978
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003622549487260781,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.003622549487260781,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 218.3688244332734,
+      "shared_bic": -65882.53959618116,
+      "shared_train_rmse": 0.00040259718486057843,
+      "shared_val_rmse": 0.001333863860594073,
+      "grouped_val_rmse": 0.0006359490123447473
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 113830,
+      "noise_scale_proxy": 0.00034350813200880956,
+      "correlation_proxy": 0.5975687023800506,
+      "signal_scale": 0.5779202024311577,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 3,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.000488923905368882,
+          "val_rmse": 0.003828871771472622,
+          "rates": [
+            0.2447874967895993,
+            0.986714854557115
+          ]
+        },
+        {
+          "train_objective_gap": 3.2625455859194536e-06,
+          "prediction_gap": 0.0004144540480621686,
+          "train_rmse": 0.0004908093963743375,
+          "val_rmse": 0.003845594620279219,
+          "rates": [
+            0.2334987992625823,
+            0.9610350453693405
+          ]
+        },
+        {
+          "train_objective_gap": 5.468700103376008e-06,
+          "prediction_gap": 0.0006802526091345378,
+          "train_rmse": 0.0004920843776396604,
+          "val_rmse": 0.003857671690244906,
+          "rates": [
+            0.22583236916100174,
+            0.9468526839923507
+          ]
+        },
+        {
+          "train_objective_gap": 9.837984025212463e-06,
+          "prediction_gap": 0.00048653869472579757,
+          "train_rmse": 0.0004946094750882473,
+          "val_rmse": 0.003847852389442284,
+          "rates": [
+            0.23370400513270637,
+            0.9618125273701238
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003625253075167058,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.003625253075167058,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 2415.937954250454,
+      "shared_bic": -64191.61052339691,
+      "shared_train_rmse": 0.000488923905368882,
+      "shared_val_rmse": 0.003828871771472622,
+      "grouped_val_rmse": 0.0009377838865999096
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 113831,
+      "noise_scale_proxy": 0.0003402331991252893,
+      "correlation_proxy": 0.5670053592968223,
+      "signal_scale": 0.5778830336533344,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0004706849298120039,
+          "val_rmse": 0.00418145876159033,
+          "rates": [
+            0.2445860466482682,
+            0.9558145511240432
+          ]
+        },
+        {
+          "train_objective_gap": 1.1030857978763025e-06,
+          "prediction_gap": 0.0003265896351711615,
+          "train_rmse": 0.00047132238437926056,
+          "val_rmse": 0.004188376902468745,
+          "rates": [
+            0.2416587801724342,
+            0.9476151381951888
+          ]
+        },
+        {
+          "train_objective_gap": 2.4265658381933316e-06,
+          "prediction_gap": 0.00036612091172759283,
+          "train_rmse": 0.0004720872010399386,
+          "val_rmse": 0.004174459225482688,
+          "rates": [
+            0.23788100671174903,
+            0.9408070905133692
+          ]
+        },
+        {
+          "train_objective_gap": 4.0675955863987066e-06,
+          "prediction_gap": 0.0003605825111692631,
+          "train_rmse": 0.0004730355242891469,
+          "val_rmse": 0.004177963088448439,
+          "rates": [
+            0.24375322098442878,
+            0.953430730147211
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036213938867705477,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036213938867705477,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": -281.20481754735374,
+      "shared_bic": -64522.51861461717,
+      "shared_train_rmse": 0.0004706849298120039,
+      "shared_val_rmse": 0.00418145876159033,
+      "grouped_val_rmse": 0.005662751450997452
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0004,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 113832,
+      "noise_scale_proxy": 0.0003294653517177363,
+      "correlation_proxy": 0.5738582613036253,
+      "signal_scale": 0.577877432198238,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.000492045542779818,
+          "val_rmse": 0.003889833926785768,
+          "rates": [
+            0.22907129761683448,
+            0.972519234716472
+          ]
+        },
+        {
+          "train_objective_gap": 8.424565208868958e-08,
+          "prediction_gap": 0.00016781427075435165,
+          "train_rmse": 0.0004920942264409209,
+          "val_rmse": 0.0038885129505333957,
+          "rates": [
+            0.2296026115587147,
+            0.9743324245256598
+          ]
+        },
+        {
+          "train_objective_gap": 9.353276356712608e-07,
+          "prediction_gap": 0.00019562725111870762,
+          "train_rmse": 0.0004925860475121838,
+          "val_rmse": 0.003881664602211894,
+          "rates": [
+            0.2316791932883006,
+            0.9774212995762934
+          ]
+        },
+        {
+          "train_objective_gap": 1.2272229799378553e-06,
+          "prediction_gap": 0.00019432781515584262,
+          "train_rmse": 0.0004927547272441992,
+          "val_rmse": 0.003867847194913575,
+          "rates": [
+            0.2316143074014892,
+            0.9783526326227433
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036222591926317244,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036222591926317244,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 2269.9214139334144,
+      "shared_bic": -64136.21466210829,
+      "shared_train_rmse": 0.000492045542779818,
+      "shared_val_rmse": 0.003889833926785768,
+      "grouped_val_rmse": 0.001547721106376767
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 113880,
+      "noise_scale_proxy": 0.0013572520475367538,
+      "correlation_proxy": 0.31617507007052403,
+      "signal_scale": 0.5801038098155811,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.001623734596509458,
+          "val_rmse": 0.0023527029635034766,
+          "rates": [
+            0.24334409782721303,
+            1.0130778143465184
+          ]
+        },
+        {
+          "train_objective_gap": 5.086292879750609e-08,
+          "prediction_gap": 0.0002802587008758436,
+          "train_rmse": 0.001623764102288232,
+          "val_rmse": 0.0024911909029401635,
+          "rates": [
+            0.23119019187025222,
+            0.9804923883193247
+          ]
+        },
+        {
+          "train_objective_gap": 1.3172739627360703e-07,
+          "prediction_gap": 0.00010452368850283374,
+          "train_rmse": 0.0016238110120738935,
+          "val_rmse": 0.0023233814703902166,
+          "rates": [
+            0.2453984943321985,
+            1.0178423263861798
+          ]
+        },
+        {
+          "train_objective_gap": 7.241004656977188e-07,
+          "prediction_gap": 0.00034756489890016336,
+          "train_rmse": 0.0016241546499482986,
+          "val_rmse": 0.002241268462584771,
+          "rates": [
+            0.2557395843712686,
+            1.0494668390625945
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035897219149237714,
+      "noise_scale_correction": 2.4230046254933996e-05,
+      "augmented_total_tolerance": 0.0036139519611787054,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -47.843093571857025,
+      "shared_bic": -53744.397627080434,
+      "shared_train_rmse": 0.001623734596509458,
+      "shared_val_rmse": 0.0023527029635034766,
+      "grouped_val_rmse": 0.0024128294627579244
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 113881,
+      "noise_scale_proxy": 0.0013317416930041495,
+      "correlation_proxy": 0.34062353927782524,
+      "signal_scale": 0.5800555827825385,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0015322718422412652,
+          "val_rmse": 0.002503934927899208,
+          "rates": [
+            0.2333635781098858,
+            1.00924809537401
+          ]
+        },
+        {
+          "train_objective_gap": 2.5819479302673065e-07,
+          "prediction_gap": 0.00010861377326026784,
+          "train_rmse": 0.0015324216095724057,
+          "val_rmse": 0.002473163603185047,
+          "rates": [
+            0.23612280741662375,
+            1.016771778954238
+          ]
+        },
+        {
+          "train_objective_gap": 5.25994779603141e-07,
+          "prediction_gap": 0.0003216501954838369,
+          "train_rmse": 0.0015325769484496885,
+          "val_rmse": 0.0023555560299898947,
+          "rates": [
+            0.24583236669913888,
+            1.0440564179133804
+          ]
+        },
+        {
+          "train_objective_gap": 1.5417371737396235e-06,
+          "prediction_gap": 0.0004619690915354253,
+          "train_rmse": 0.0015331661354960763,
+          "val_rmse": 0.002305816001763815,
+          "rates": [
+            0.2503227836955953,
+            1.0574787838773734
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003592808987186132,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.003592808987186132,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -45.84353538302821,
+      "shared_bic": -54249.03208367138,
+      "shared_train_rmse": 0.0015322718422412652,
+      "shared_val_rmse": 0.002503934927899208,
+      "grouped_val_rmse": 0.0024384764252698625
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 113882,
+      "noise_scale_proxy": 0.0013577231608495935,
+      "correlation_proxy": 0.3291779091893732,
+      "signal_scale": 0.5798002331085617,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0015012280514272109,
+          "val_rmse": 0.0026798930396388066,
+          "rates": [
+            0.2385942239957363,
+            1.0270884941071852
+          ]
+        },
+        {
+          "train_objective_gap": 6.963404589008024e-08,
+          "prediction_gap": 9.488730578141981e-05,
+          "train_rmse": 0.0015012684252632502,
+          "val_rmse": 0.0026511561826503658,
+          "rates": [
+            0.23969114492885932,
+            1.0291191478615531
+          ]
+        },
+        {
+          "train_objective_gap": 1.0472649102270079e-06,
+          "prediction_gap": 0.0002653073020036265,
+          "train_rmse": 0.001501835255866287,
+          "val_rmse": 0.002514233577903304,
+          "rates": [
+            0.24837160941232553,
+            1.0548805279567306
+          ]
+        },
+        {
+          "train_objective_gap": 1.655743445754934e-06,
+          "prediction_gap": 0.0004097541547113236,
+          "train_rmse": 0.0015021880518630275,
+          "val_rmse": 0.0024222637734332845,
+          "rates": [
+            0.2541611988515638,
+            1.0732042934671282
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003591363764302372,
+      "noise_scale_correction": 2.516952755690161e-05,
+      "augmented_total_tolerance": 0.0036165332918592736,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -43.46720260143047,
+      "shared_bic": -54427.18576619254,
+      "shared_train_rmse": 0.0015012280514272109,
+      "shared_val_rmse": 0.0026798930396388066,
+      "grouped_val_rmse": 0.0030502047081865918
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 113930,
+      "noise_scale_proxy": 0.0013624550152090313,
+      "correlation_proxy": 0.3456794337086119,
+      "signal_scale": 0.5798257827015596,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0015887281489560018,
+          "val_rmse": 0.0036589120036986658,
+          "rates": [
+            0.2571341747844346,
+            0.887737647018495
+          ]
+        },
+        {
+          "train_objective_gap": 1.1314956910925628e-07,
+          "prediction_gap": 9.312009350361402e-05,
+          "train_rmse": 0.001588793755993473,
+          "val_rmse": 0.0036900428453691446,
+          "rates": [
+            0.25857725798883097,
+            0.890558046352293
+          ]
+        },
+        {
+          "train_objective_gap": 8.487417527651879e-07,
+          "prediction_gap": 0.00018323069025790855,
+          "train_rmse": 0.0015892202713071104,
+          "val_rmse": 0.003748640774256135,
+          "rates": [
+            0.26074872431182294,
+            0.8935902716823461
+          ]
+        },
+        {
+          "train_objective_gap": 3.511508783473346e-06,
+          "prediction_gap": 0.00032199235492463363,
+          "train_rmse": 0.0015907642122848426,
+          "val_rmse": 0.0039087240381206895,
+          "rates": [
+            0.2698149542362407,
+            0.9156240589674174
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003593447387542668,
+      "noise_scale_correction": 3.460566228960776e-05,
+      "augmented_total_tolerance": 0.003628053049832276,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": -33.53334208053275,
+      "shared_bic": -53934.1014182303,
+      "shared_train_rmse": 0.0015887281489560018,
+      "shared_val_rmse": 0.0036589120036986658,
+      "grouped_val_rmse": 0.0030545507387014464
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 113931,
+      "noise_scale_proxy": 0.0013324990153922335,
+      "correlation_proxy": 0.39181393503713735,
+      "signal_scale": 0.5798600851349677,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0016029227365492171,
+          "val_rmse": 0.003039281920443109,
+          "rates": [
+            0.2452493347559484,
+            0.906359114964225
+          ]
+        },
+        {
+          "train_objective_gap": 5.214198557293503e-07,
+          "prediction_gap": 0.00021727950345597132,
+          "train_rmse": 0.0016032250871111514,
+          "val_rmse": 0.0031732429243603462,
+          "rates": [
+            0.25311344916543455,
+            0.923578127439792
+          ]
+        },
+        {
+          "train_objective_gap": 7.157737916159365e-07,
+          "prediction_gap": 0.00022090124483226028,
+          "train_rmse": 0.001603337785200961,
+          "val_rmse": 0.0031705257010074934,
+          "rates": [
+            0.2534238436914231,
+            0.9243837913155192
+          ]
+        },
+        {
+          "train_objective_gap": 1.0051900848165367e-06,
+          "prediction_gap": 0.00024235274917977647,
+          "train_rmse": 0.0016035056061573757,
+          "val_rmse": 0.0031723271112922475,
+          "rates": [
+            0.2542295038356066,
+            0.9262798479491365
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035992727231979,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0035992727231979,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -6.993881715665339,
+      "shared_bic": -53856.680353435986,
+      "shared_train_rmse": 0.0016029227365492171,
+      "shared_val_rmse": 0.003039281920443109,
+      "grouped_val_rmse": 0.0022727558399455966
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 113932,
+      "noise_scale_proxy": 0.0013250430916145772,
+      "correlation_proxy": 0.3136099705000571,
+      "signal_scale": 0.5798162058149293,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0015079196560259603,
+          "val_rmse": 0.0033611208021467466,
+          "rates": [
+            0.2247210876157324,
+            0.9718515686521113
+          ]
+        },
+        {
+          "train_objective_gap": 1.0961158516072396e-06,
+          "prediction_gap": 0.00010909768800309733,
+          "train_rmse": 0.0015085552017601728,
+          "val_rmse": 0.003329219602422486,
+          "rates": [
+            0.228266116415021,
+            0.9797047724822558
+          ]
+        },
+        {
+          "train_objective_gap": 4.19003937957148e-06,
+          "prediction_gap": 0.00030401796364574096,
+          "train_rmse": 0.0015103491087612385,
+          "val_rmse": 0.0032849954232617522,
+          "rates": [
+            0.2371015354593154,
+            1.0020493957290293
+          ]
+        },
+        {
+          "train_objective_gap": 5.152763604184044e-06,
+          "prediction_gap": 0.0003563508108387834,
+          "train_rmse": 0.0015109073118683995,
+          "val_rmse": 0.00327590685590888,
+          "rates": [
+            0.23944083604099395,
+            1.008205600207669
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.00358939802357225,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.00358939802357225,
+      "decision": "ACCEPT_WITH_SCOPE_LIMITS",
+      "group_bic_support": 39.73657559596904,
+      "shared_bic": -54388.47459073895,
+      "shared_train_rmse": 0.0015079196560259603,
+      "shared_val_rmse": 0.0033611208021467466,
+      "grouped_val_rmse": 0.003009788051489047
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 114030,
+      "noise_scale_proxy": 0.001321800265662804,
+      "correlation_proxy": 0.3379556978910697,
+      "signal_scale": 0.5795610500483642,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0015736423152375605,
+          "val_rmse": 0.005996887221537143,
+          "rates": [
+            0.24324427695745202,
+            0.8640532809345559
+          ]
+        },
+        {
+          "train_objective_gap": 2.5754686864248297e-06,
+          "prediction_gap": 0.00021077488671390876,
+          "train_rmse": 0.0015751349565738316,
+          "val_rmse": 0.006056113129700936,
+          "rates": [
+            0.24943312141826188,
+            0.8735402906317157
+          ]
+        },
+        {
+          "train_objective_gap": 7.1661002657647194e-06,
+          "prediction_gap": 0.0004099540687455179,
+          "train_rmse": 0.001577795507832339,
+          "val_rmse": 0.0061975159847004364,
+          "rates": [
+            0.2578501789596434,
+            0.8918472995733274
+          ]
+        },
+        {
+          "train_objective_gap": 8.866968805164758e-06,
+          "prediction_gap": 0.0005052892820620655,
+          "train_rmse": 0.001578781264989028,
+          "val_rmse": 0.006221639852743494,
+          "rates": [
+            0.2596340452173142,
+            0.8940934781218423
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035924721227765205,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0035924721227765205,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 249.16017241922964,
+      "shared_bic": -54017.14551077622,
+      "shared_train_rmse": 0.0015736423152375605,
+      "shared_val_rmse": 0.005996887221537143,
+      "grouped_val_rmse": 0.0024072176139813537
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 114031,
+      "noise_scale_proxy": 0.0013303826708453569,
+      "correlation_proxy": 0.3149147801017754,
+      "signal_scale": 0.5795295002295093,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0016055171669784299,
+          "val_rmse": 0.006427653192546939,
+          "rates": [
+            0.24797623552375653,
+            0.8799045062001769
+          ]
+        },
+        {
+          "train_objective_gap": 3.0003529493674677e-07,
+          "prediction_gap": 0.00016479979369296994,
+          "train_rmse": 0.0016056910462829558,
+          "val_rmse": 0.006451182515200438,
+          "rates": [
+            0.2498043965067429,
+            0.8831755247853755
+          ]
+        },
+        {
+          "train_objective_gap": 4.702252131055013e-06,
+          "prediction_gap": 0.0003563935788687839,
+          "train_rmse": 0.0016082422608058933,
+          "val_rmse": 0.006588802510092876,
+          "rates": [
+            0.25694351681751776,
+            0.8985499337765757
+          ]
+        },
+        {
+          "train_objective_gap": 5.97065494866332e-06,
+          "prediction_gap": 0.00031566536977980006,
+          "train_rmse": 0.0016089773376568716,
+          "val_rmse": 0.00662576972940964,
+          "rates": [
+            0.259492817406487,
+            0.9049711080736283
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035895627799623115,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0035895627799623115,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 310.679935886008,
+      "shared_bic": -53842.603775375115,
+      "shared_train_rmse": 0.0016055171669784299,
+      "shared_val_rmse": 0.006427653192546939,
+      "grouped_val_rmse": 0.0026023411943568225
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "antisymmetric",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 114032,
+      "noise_scale_proxy": 0.0013184163142237648,
+      "correlation_proxy": 0.3479121350377526,
+      "signal_scale": 0.5795095858494912,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0015853341638510823,
+          "val_rmse": 0.005542056395948127,
+          "rates": [
+            0.2477142120677784,
+            0.8642641420079253
+          ]
+        },
+        {
+          "train_objective_gap": 6.51536236341889e-07,
+          "prediction_gap": 0.00011342307497693681,
+          "train_rmse": 0.0015857117353455707,
+          "val_rmse": 0.005564823722992914,
+          "rates": [
+            0.24832635809562353,
+            0.8678012822298964
+          ]
+        },
+        {
+          "train_objective_gap": 6.121854660319158e-06,
+          "prediction_gap": 0.00024941555456199123,
+          "train_rmse": 0.0015888818373099146,
+          "val_rmse": 0.005683166330767526,
+          "rates": [
+            0.25604954231293575,
+            0.8825180347549966
+          ]
+        },
+        {
+          "train_objective_gap": 7.743227565167819e-06,
+          "prediction_gap": 0.0002899647962185215,
+          "train_rmse": 0.001589821438450511,
+          "val_rmse": 0.005739321419491011,
+          "rates": [
+            0.2589790823958601,
+            0.887902284877508
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035937293074569535,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0035937293074569535,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 316.37356835603714,
+      "shared_bic": -53952.71558184828,
+      "shared_train_rmse": 0.0015853341638510823,
+      "shared_val_rmse": 0.005542056395948127,
+      "grouped_val_rmse": 0.0020173025693105214
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 114880,
+      "noise_scale_proxy": 0.0013462817560101572,
+      "correlation_proxy": 0.39765200570983955,
+      "signal_scale": 0.5799292826368818,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0015299021721387255,
+          "val_rmse": 0.003166217880130077,
+          "rates": [
+            0.24286891964384227,
+            0.9177635679116474
+          ]
+        },
+        {
+          "train_objective_gap": 8.275567700506522e-07,
+          "prediction_gap": 0.0003173858586370227,
+          "train_rmse": 0.0015303820965427222,
+          "val_rmse": 0.003398251989080336,
+          "rates": [
+            0.2585124670956299,
+            0.9543889277159178
+          ]
+        },
+        {
+          "train_objective_gap": 9.665231185570552e-07,
+          "prediction_gap": 0.00029707066880230675,
+          "train_rmse": 0.0015304626871975222,
+          "val_rmse": 0.0033646491909150042,
+          "rates": [
+            0.2560703401060846,
+            0.9483082691461743
+          ]
+        },
+        {
+          "train_objective_gap": 1.3380458857646495e-06,
+          "prediction_gap": 0.0004732140126808374,
+          "train_rmse": 0.0015306781441293922,
+          "val_rmse": 0.00350907019900209,
+          "rates": [
+            0.26586480600672935,
+            0.9740831894537527
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036000098877985377,
+      "noise_scale_correction": 2.3533905003959854e-06,
+      "augmented_total_tolerance": 0.0036023632782989337,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -51.52549567887763,
+      "shared_bic": -54262.50330548493,
+      "shared_train_rmse": 0.0015299021721387255,
+      "shared_val_rmse": 0.003166217880130077,
+      "grouped_val_rmse": 0.00360235687947982
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 114881,
+      "noise_scale_proxy": 0.001350948763283574,
+      "correlation_proxy": 0.2702405282784794,
+      "signal_scale": 0.5800991606608732,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0015056822650006628,
+          "val_rmse": 0.002047761357038274,
+          "rates": [
+            0.2512739530760501,
+            0.9771257349253706
+          ]
+        },
+        {
+          "train_objective_gap": 3.648619769219444e-07,
+          "prediction_gap": 0.00012229786226289097,
+          "train_rmse": 0.0015058939211272323,
+          "val_rmse": 0.0020698211890747124,
+          "rates": [
+            0.24771487704492165,
+            0.9670243882645482
+          ]
+        },
+        {
+          "train_objective_gap": 7.483138887574209e-07,
+          "prediction_gap": 0.0002006124925015753,
+          "train_rmse": 0.001506116361259442,
+          "val_rmse": 0.002103108206981589,
+          "rates": [
+            0.24218808529271646,
+            0.9524037518682881
+          ]
+        },
+        {
+          "train_objective_gap": 1.1717606379298507e-06,
+          "prediction_gap": 0.00027943654290264893,
+          "train_rmse": 0.0015063620023632214,
+          "val_rmse": 0.0021178862641616325,
+          "rates": [
+            0.2397560711789189,
+            0.9463737901974364
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035839218278652277,
+      "noise_scale_correction": 1.1660208945186816e-05,
+      "augmented_total_tolerance": 0.0035955820368104145,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -47.65247447689035,
+      "shared_bic": -54401.39882928978,
+      "shared_train_rmse": 0.0015056822650006628,
+      "shared_val_rmse": 0.002047761357038274,
+      "grouped_val_rmse": 0.0020289026937503145
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.0,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 114882,
+      "noise_scale_proxy": 0.001317711856933197,
+      "correlation_proxy": 0.307960178609979,
+      "signal_scale": 0.5799948052226598,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0015200016050512931,
+          "val_rmse": 0.0031321744375245974,
+          "rates": [
+            0.23512104429644384,
+            1.0156763514120803
+          ]
+        },
+        {
+          "train_objective_gap": 1.1993798265380833e-07,
+          "prediction_gap": 0.00014864022374957162,
+          "train_rmse": 0.0015200711684581812,
+          "val_rmse": 0.003065999446426743,
+          "rates": [
+            0.2392451477438321,
+            1.0279803864384423
+          ]
+        },
+        {
+          "train_objective_gap": 2.3925234015960096e-07,
+          "prediction_gap": 0.0001348963229625131,
+          "train_rmse": 0.001520140370165723,
+          "val_rmse": 0.003073149859942248,
+          "rates": [
+            0.23843397258002372,
+            1.0252404276818943
+          ]
+        },
+        {
+          "train_objective_gap": 1.3271869148024694e-06,
+          "prediction_gap": 0.00033629187421556307,
+          "train_rmse": 0.001520771366567438,
+          "val_rmse": 0.0028867945769258593,
+          "rates": [
+            0.24787830796791796,
+            1.053004179138285
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035886846326566844,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0035886846326566844,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -36.72917989207053,
+      "shared_bic": -54319.01317918694,
+      "shared_train_rmse": 0.0015200016050512931,
+      "shared_val_rmse": 0.0031321744375245974,
+      "grouped_val_rmse": 0.003446852388435481
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 114930,
+      "noise_scale_proxy": 0.0013625117350241026,
+      "correlation_proxy": 0.34025781456911025,
+      "signal_scale": 0.5791825103211968,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0014483667616317579,
+          "val_rmse": 0.003172633061827023,
+          "rates": [
+            0.26181448592919293,
+            0.9389557257567643
+          ]
+        },
+        {
+          "train_objective_gap": 3.973484918808219e-07,
+          "prediction_gap": 0.00023573042642365498,
+          "train_rmse": 0.0014485968989287577,
+          "val_rmse": 0.0030981929324308643,
+          "rates": [
+            0.2545425223341992,
+            0.9198198249774892
+          ]
+        },
+        {
+          "train_objective_gap": 6.168016953330741e-07,
+          "prediction_gap": 0.0002187860625529916,
+          "train_rmse": 0.0014487240023860312,
+          "val_rmse": 0.003097618902701527,
+          "rates": [
+            0.2557821264298092,
+            0.9238840029474907
+          ]
+        },
+        {
+          "train_objective_gap": 8.036290379848024e-07,
+          "prediction_gap": 0.0003674082693251615,
+          "train_rmse": 0.001448832209515345,
+          "val_rmse": 0.0030104010921131854,
+          "rates": [
+            0.24821899933818828,
+            0.9073454028004035
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035927628076648558,
+      "noise_scale_correction": 3.471877139575759e-05,
+      "augmented_total_tolerance": 0.0036274815790606134,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -26.983564897112956,
+      "shared_bic": -54739.197390910034,
+      "shared_train_rmse": 0.0014483667616317579,
+      "shared_val_rmse": 0.003172633061827023,
+      "grouped_val_rmse": 0.0029917824873065355
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 114931,
+      "noise_scale_proxy": 0.0013355361488758643,
+      "correlation_proxy": 0.337216804322801,
+      "signal_scale": 0.5791548328380435,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0016244432969831897,
+          "val_rmse": 0.0025841754853757,
+          "rates": [
+            0.2505004638641276,
+            0.986136554736081
+          ]
+        },
+        {
+          "train_objective_gap": 2.499513821201074e-07,
+          "prediction_gap": 0.00016037996237972378,
+          "train_rmse": 0.0016245880575341191,
+          "val_rmse": 0.002590486275063775,
+          "rates": [
+            0.25059364408327606,
+            0.9866715775723919
+          ]
+        },
+        {
+          "train_objective_gap": 4.172491268554297e-07,
+          "prediction_gap": 0.00016710882941208113,
+          "train_rmse": 0.0016246849488315055,
+          "val_rmse": 0.0026057456203841486,
+          "rates": [
+            0.24768720413622877,
+            0.9779635740603965
+          ]
+        },
+        {
+          "train_objective_gap": 2.323399523370132e-06,
+          "prediction_gap": 0.00039482404973298715,
+          "train_rmse": 0.0016257889050457631,
+          "val_rmse": 0.0026879491184005045,
+          "rates": [
+            0.23633377221122742,
+            0.9502962538291033
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035923788237719853,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0035923788237719853,
+      "decision": "ACCEPT_SHARED_MECHANISM",
+      "group_bic_support": -48.03770378482295,
+      "shared_bic": -53740.59947979694,
+      "shared_train_rmse": 0.0016244432969831897,
+      "shared_val_rmse": 0.0025841754853757,
+      "grouped_val_rmse": 0.0023791950460066284
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.05,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 114932,
+      "noise_scale_proxy": 0.0013648592736077631,
+      "correlation_proxy": 0.29939968196489536,
+      "signal_scale": 0.5789672207091813,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0014903303409148196,
+          "val_rmse": 0.003701881173039397,
+          "rates": [
+            0.2636892434998773,
+            0.9580603242300078
+          ]
+        },
+        {
+          "train_objective_gap": 3.8223886100863705e-07,
+          "prediction_gap": 0.00011481805840789392,
+          "train_rmse": 0.0014905516446858248,
+          "val_rmse": 0.003713449699719367,
+          "rates": [
+            0.26447332101239923,
+            0.9604856809894925
+          ]
+        },
+        {
+          "train_objective_gap": 1.0692627526043219e-06,
+          "prediction_gap": 0.00036778402759734164,
+          "train_rmse": 0.0014909494089989028,
+          "val_rmse": 0.003460099346745216,
+          "rates": [
+            0.2478919265995018,
+            0.9211735901855111
+          ]
+        },
+        {
+          "train_objective_gap": 2.014037456429577e-06,
+          "prediction_gap": 0.00045308470237275325,
+          "train_rmse": 0.0014914964025833728,
+          "val_rmse": 0.0034272022982496896,
+          "rates": [
+            0.24451606748189794,
+            0.9142556721213105
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035876037113310587,
+      "noise_scale_correction": 3.940016872605893e-05,
+      "augmented_total_tolerance": 0.0036270038800571176,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": -33.902418971767474,
+      "shared_bic": -54490.600267557376,
+      "shared_train_rmse": 0.0014903303409148196,
+      "shared_val_rmse": 0.003701881173039397,
+      "grouped_val_rmse": 0.0035252081297798797
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 0,
+      "seed": 115030,
+      "noise_scale_proxy": 0.0013412217803488338,
+      "correlation_proxy": 0.42191997387865904,
+      "signal_scale": 0.5778123908126948,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0016316425125800721,
+          "val_rmse": 0.004241071300406075,
+          "rates": [
+            0.25067356678071084,
+            0.9256454643436705
+          ]
+        },
+        {
+          "train_objective_gap": 3.1796388960567906e-07,
+          "prediction_gap": 0.0004048637669220723,
+          "train_rmse": 0.0016318262360553173,
+          "val_rmse": 0.004261136079196849,
+          "rates": [
+            0.2542715543979186,
+            0.9343696599843622
+          ]
+        },
+        {
+          "train_objective_gap": 1.8577193168729244e-06,
+          "prediction_gap": 0.0003432070231753522,
+          "train_rmse": 0.0016327159258200134,
+          "val_rmse": 0.004221699521008611,
+          "rates": [
+            0.24568238009775809,
+            0.9131356756346829
+          ]
+        },
+        {
+          "train_objective_gap": 2.429930788273175e-06,
+          "prediction_gap": 0.00038116851354790514,
+          "train_rmse": 0.0016330465566983536,
+          "val_rmse": 0.004298744589554444,
+          "rates": [
+            0.24585607923509656,
+            0.9137177412426789
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0036030741684601447,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0036030741684601447,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 97.39745300699724,
+      "shared_bic": -53702.11027629996,
+      "shared_train_rmse": 0.0016316425125800721,
+      "shared_val_rmse": 0.004241071300406075,
+      "grouped_val_rmse": 0.002423177043237696
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 1,
+      "seed": 115031,
+      "noise_scale_proxy": 0.0013070332378870319,
+      "correlation_proxy": 0.33226481782883405,
+      "signal_scale": 0.5777354633121959,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.0015963444237752946,
+          "val_rmse": 0.004585723670665147,
+          "rates": [
+            0.2408472935671719,
+            0.9814256070817226
+          ]
+        },
+        {
+          "train_objective_gap": 3.183311404981438e-07,
+          "prediction_gap": 0.00015469531700627021,
+          "train_rmse": 0.001596528334964237,
+          "val_rmse": 0.004587359473044129,
+          "rates": [
+            0.24273286157165294,
+            0.9840530607578967
+          ]
+        },
+        {
+          "train_objective_gap": 4.0048593133443287e-07,
+          "prediction_gap": 0.0002233358440593158,
+          "train_rmse": 0.001596575798700384,
+          "val_rmse": 0.0045999746578049595,
+          "rates": [
+            0.23484290319915507,
+            0.9677934498562177
+          ]
+        },
+        {
+          "train_objective_gap": 7.75894353855013e-07,
+          "prediction_gap": 0.0002799272947848638,
+          "train_rmse": 0.0015967926854593003,
+          "val_rmse": 0.0045955556402234475,
+          "rates": [
+            0.23363540508435213,
+            0.9647497545268662
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.003591753543717865,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.003591753543717865,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": 138.9019634376964,
+      "shared_bic": -53892.474622691334,
+      "shared_train_rmse": 0.0015963444237752946,
+      "shared_val_rmse": 0.004585723670665147,
+      "grouped_val_rmse": 0.00232802666618971
+    },
+    {
+      "channels": 128,
+      "noise_std_diagnostic": 0.0016,
+      "heterogeneity_construction": "curved",
+      "log_spectral_drift": 0.15,
+      "noise_correlation_diagnostic": 0.3,
+      "repeat": 2,
+      "seed": 115032,
+      "noise_scale_proxy": 0.0013445926988685708,
+      "correlation_proxy": 0.35476397724633774,
+      "signal_scale": 0.57795286184935,
+      "diagnostics_in_calibration_scope": true,
+      "adequate_shared_starts": 4,
+      "cross_start_diagnostics": [
+        {
+          "train_objective_gap": 0.0,
+          "prediction_gap": 0.0,
+          "train_rmse": 0.001535768618800863,
+          "val_rmse": 0.004595084360323018,
+          "rates": [
+            0.2312051001033188,
+            0.944200436157127
+          ]
+        },
+        {
+          "train_objective_gap": 1.479467693588212e-07,
+          "prediction_gap": 0.0001442264156522242,
+          "train_rmse": 0.0015358541250596153,
+          "val_rmse": 0.004603726934592982,
+          "rates": [
+            0.22998313458282643,
+            0.9428584278859752
+          ]
+        },
+        {
+          "train_objective_gap": 5.356219147454234e-07,
+          "prediction_gap": 0.00013547116315753337,
+          "train_rmse": 0.0015360781830193594,
+          "val_rmse": 0.004604971162050521,
+          "rates": [
+            0.22887181577038956,
+            0.9389395683432371
+          ]
+        },
+        {
+          "train_objective_gap": 8.495744108233496e-07,
+          "prediction_gap": 0.00018421548554545768,
+          "train_rmse": 0.0015362596327629524,
+          "val_rmse": 0.004624198381148441,
+          "rates": [
+            0.22856003623822568,
+            0.9385768299926285
+          ]
+        }
+      ],
+      "stage45_total_tolerance": 0.0035945944794989674,
+      "noise_scale_correction": 0.0,
+      "augmented_total_tolerance": 0.0035945944794989674,
+      "decision": "REFUSE_SHARED_MECHANISM",
+      "group_bic_support": -81.87282585018693,
+      "shared_bic": -54229.19143506186,
+      "shared_train_rmse": 0.001535768618800863,
+      "shared_val_rmse": 0.004595084360323018,
+      "grouped_val_rmse": 0.005731740249346364
+    }
+  ],
+  "summary": {
+    "rows": [
+      {
+        "channels": 32,
+        "noise_std": 0.0004,
+        "heterogeneity_construction": "antisymmetric",
+        "log_spectral_drift": 0.0,
+        "trials": 3,
+        "refuse_fraction": 0.0,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 0.0,
+        "median_noise_scale_proxy": 0.0003392923232713604,
+        "median_augmented_tolerance": 0.003620730728217202,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 32,
+        "noise_std": 0.0004,
+        "heterogeneity_construction": "antisymmetric",
+        "log_spectral_drift": 0.05,
+        "trials": 3,
+        "refuse_fraction": 0.6666666666666666,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 0.6666666666666666,
+        "median_noise_scale_proxy": 0.0003358440978125206,
+        "median_augmented_tolerance": 0.003626761806180176,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 32,
+        "noise_std": 0.0004,
+        "heterogeneity_construction": "antisymmetric",
+        "log_spectral_drift": 0.15,
+        "trials": 3,
+        "refuse_fraction": 1.0,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 1.0,
+        "median_noise_scale_proxy": 0.00032840784219344466,
+        "median_augmented_tolerance": 0.0036235924546860446,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 32,
+        "noise_std": 0.0004,
+        "heterogeneity_construction": "curved",
+        "log_spectral_drift": 0.0,
+        "trials": 3,
+        "refuse_fraction": 0.0,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 0.0,
+        "median_noise_scale_proxy": 0.0003276320801773053,
+        "median_augmented_tolerance": 0.0036253414608794347,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 32,
+        "noise_std": 0.0004,
+        "heterogeneity_construction": "curved",
+        "log_spectral_drift": 0.05,
+        "trials": 3,
+        "refuse_fraction": 1.0,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 1.0,
+        "median_noise_scale_proxy": 0.00032539825946146844,
+        "median_augmented_tolerance": 0.0036215577735154427,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 32,
+        "noise_std": 0.0004,
+        "heterogeneity_construction": "curved",
+        "log_spectral_drift": 0.15,
+        "trials": 3,
+        "refuse_fraction": 1.0,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 1.0,
+        "median_noise_scale_proxy": 0.00032875736826023144,
+        "median_augmented_tolerance": 0.0036226122001970485,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 32,
+        "noise_std": 0.0016,
+        "heterogeneity_construction": "antisymmetric",
+        "log_spectral_drift": 0.0,
+        "trials": 3,
+        "refuse_fraction": 0.0,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 0.0,
+        "median_noise_scale_proxy": 0.001382419564987412,
+        "median_augmented_tolerance": 0.0036650068845533895,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 32,
+        "noise_std": 0.0016,
+        "heterogeneity_construction": "antisymmetric",
+        "log_spectral_drift": 0.05,
+        "trials": 3,
+        "refuse_fraction": 0.0,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 0.0,
+        "median_noise_scale_proxy": 0.0013571944116350428,
+        "median_augmented_tolerance": 0.00360914343735722,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 32,
+        "noise_std": 0.0016,
+        "heterogeneity_construction": "antisymmetric",
+        "log_spectral_drift": 0.15,
+        "trials": 3,
+        "refuse_fraction": 1.0,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 1.0,
+        "median_noise_scale_proxy": 0.0013734934068563808,
+        "median_augmented_tolerance": 0.003641858191296723,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 32,
+        "noise_std": 0.0016,
+        "heterogeneity_construction": "curved",
+        "log_spectral_drift": 0.0,
+        "trials": 3,
+        "refuse_fraction": 0.0,
+        "indeterminate_fraction": 0.3333333333333333,
+        "adverse_fraction": 0.3333333333333333,
+        "median_noise_scale_proxy": 0.001334940633358651,
+        "median_augmented_tolerance": 0.0035883579152228805,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 32,
+        "noise_std": 0.0016,
+        "heterogeneity_construction": "curved",
+        "log_spectral_drift": 0.05,
+        "trials": 3,
+        "refuse_fraction": 0.0,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 0.0,
+        "median_noise_scale_proxy": 0.0013911449303274587,
+        "median_augmented_tolerance": 0.0036862655569599237,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 32,
+        "noise_std": 0.0016,
+        "heterogeneity_construction": "curved",
+        "log_spectral_drift": 0.15,
+        "trials": 3,
+        "refuse_fraction": 1.0,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 1.0,
+        "median_noise_scale_proxy": 0.0013220307204726074,
+        "median_augmented_tolerance": 0.0035940270306944804,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 128,
+        "noise_std": 0.0004,
+        "heterogeneity_construction": "antisymmetric",
+        "log_spectral_drift": 0.0,
+        "trials": 3,
+        "refuse_fraction": 0.0,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 0.0,
+        "median_noise_scale_proxy": 0.0003361850127942598,
+        "median_augmented_tolerance": 0.0036234841121649086,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 128,
+        "noise_std": 0.0004,
+        "heterogeneity_construction": "antisymmetric",
+        "log_spectral_drift": 0.05,
+        "trials": 3,
+        "refuse_fraction": 0.6666666666666666,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 0.6666666666666666,
+        "median_noise_scale_proxy": 0.000334936271657165,
+        "median_augmented_tolerance": 0.003625327388060502,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 128,
+        "noise_std": 0.0004,
+        "heterogeneity_construction": "antisymmetric",
+        "log_spectral_drift": 0.15,
+        "trials": 3,
+        "refuse_fraction": 1.0,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 1.0,
+        "median_noise_scale_proxy": 0.0003296984614957782,
+        "median_augmented_tolerance": 0.0036252387116295485,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 128,
+        "noise_std": 0.0004,
+        "heterogeneity_construction": "curved",
+        "log_spectral_drift": 0.0,
+        "trials": 3,
+        "refuse_fraction": 0.0,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 0.0,
+        "median_noise_scale_proxy": 0.00032622656383044185,
+        "median_augmented_tolerance": 0.0036255275401832275,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 128,
+        "noise_std": 0.0004,
+        "heterogeneity_construction": "curved",
+        "log_spectral_drift": 0.05,
+        "trials": 3,
+        "refuse_fraction": 1.0,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 1.0,
+        "median_noise_scale_proxy": 0.0003413757803006656,
+        "median_augmented_tolerance": 0.003622549487260781,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 128,
+        "noise_std": 0.0004,
+        "heterogeneity_construction": "curved",
+        "log_spectral_drift": 0.15,
+        "trials": 3,
+        "refuse_fraction": 1.0,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 1.0,
+        "median_noise_scale_proxy": 0.0003402331991252893,
+        "median_augmented_tolerance": 0.0036222591926317244,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 128,
+        "noise_std": 0.0016,
+        "heterogeneity_construction": "antisymmetric",
+        "log_spectral_drift": 0.0,
+        "trials": 3,
+        "refuse_fraction": 0.0,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 0.0,
+        "median_noise_scale_proxy": 0.0013572520475367538,
+        "median_augmented_tolerance": 0.0036139519611787054,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 128,
+        "noise_std": 0.0016,
+        "heterogeneity_construction": "antisymmetric",
+        "log_spectral_drift": 0.05,
+        "trials": 3,
+        "refuse_fraction": 0.3333333333333333,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 0.3333333333333333,
+        "median_noise_scale_proxy": 0.0013324990153922335,
+        "median_augmented_tolerance": 0.0035992727231979,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 128,
+        "noise_std": 0.0016,
+        "heterogeneity_construction": "antisymmetric",
+        "log_spectral_drift": 0.15,
+        "trials": 3,
+        "refuse_fraction": 1.0,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 1.0,
+        "median_noise_scale_proxy": 0.001321800265662804,
+        "median_augmented_tolerance": 0.0035924721227765205,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 128,
+        "noise_std": 0.0016,
+        "heterogeneity_construction": "curved",
+        "log_spectral_drift": 0.0,
+        "trials": 3,
+        "refuse_fraction": 0.0,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 0.0,
+        "median_noise_scale_proxy": 0.0013462817560101572,
+        "median_augmented_tolerance": 0.0035955820368104145,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 128,
+        "noise_std": 0.0016,
+        "heterogeneity_construction": "curved",
+        "log_spectral_drift": 0.05,
+        "trials": 3,
+        "refuse_fraction": 0.3333333333333333,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 0.3333333333333333,
+        "median_noise_scale_proxy": 0.0013625117350241026,
+        "median_augmented_tolerance": 0.0036270038800571176,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      },
+      {
+        "channels": 128,
+        "noise_std": 0.0016,
+        "heterogeneity_construction": "curved",
+        "log_spectral_drift": 0.15,
+        "trials": 3,
+        "refuse_fraction": 1.0,
+        "indeterminate_fraction": 0.0,
+        "adverse_fraction": 1.0,
+        "median_noise_scale_proxy": 0.0013412217803488338,
+        "median_augmented_tolerance": 0.0035945944794989674,
+        "median_adequate_shared_starts": 4.0,
+        "in_scope_fraction": 1.0
+      }
+    ],
+    "checks": {
+      "complete_project_matrix": true,
+      "exact_and_mild_adverse_fraction_at_most_one_third": false,
+      "severe_refuse_fraction_at_least_two_thirds": true,
+      "all_diagnostics_in_calibration_scope": true
+    },
+    "route_pass": false,
+    "frozen_rule": {
+      "minimum_adequate_shared_starts": 2,
+      "mild_adverse_fraction_max": 0.3333333333333333,
+      "severe_refuse_fraction_min": 0.6666666666666666,
+      "indeterminate_counts_as_adverse_for_exact_and_mild": true,
+      "indeterminate_does_not_count_as_refusal_for_severe": true,
+      "out_of_diagnostic_scope_action": "route failure"
+    }
+  },
+  "comparison": {
+    "stage48": {
+      "mean_refuse_fraction": 0.4583333333333333,
+      "mean_indeterminate_fraction": 0.5416666666666666,
+      "cells_meeting_explicit_refusal_rule": 3,
+      "severe_cells": 8
+    },
+    "stage49": {
+      "mean_refuse_fraction": 1.0,
+      "mean_indeterminate_fraction": 0.0,
+      "cells_meeting_explicit_refusal_rule": 8,
+      "severe_cells": 8
+    },
+    "indeterminate_fraction_reduction": 0.5416666666666666,
+    "refuse_fraction_change": 0.5416666666666667
+  },
+  "exit_rule": {
+    "continue_binary_refusal_route_only_if_route_passes": true,
+    "otherwise_retain_tri_state_decision": true
+  }
+}
