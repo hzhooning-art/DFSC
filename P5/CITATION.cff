@@ -1,13 +1,11 @@
 cff-version: 1.2.0
-message: "If you use this software or its reproducibility artifacts, please cite this archived release."
-title: "P5 Identifiable Memory-Rank Protocol: Code and Reproducibility Artifacts"
+message: "If you use this software or its reproducibility artifacts, please cite the latest Zenodo release."
+title: "Power-Certified Model-Order Selection with Abstention: Reproducibility Artifacts"
 type: software
-version: 0.1.0
-date-released: 2026-08-30
-doi: 10.5281/zenodo.22168774
+version: 0.2.0
+date-released: 2026-09-04
 license: MIT
 repository-code: "https://github.com/hzhooning-art/DFSC"
-commit: "1300187"
 authors:
   - family-names: Duan
     given-names: Haitao
