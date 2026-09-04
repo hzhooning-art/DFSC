@@ -1,0 +1,314 @@
+{
+  "schema": "P5-Power-Certificate-Risk-Coverage-v1",
+  "frozen_stage69_operating_point": 0.7,
+  "specificity_wilson_lower_threshold": 0.9,
+  "power_threshold_grid": [
+    0.0,
+    0.3,
+    0.5,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "evaluation_trials": 1152,
+  "curve": [
+    {
+      "power_wilson_lower_threshold": 0.0,
+      "qualified_designs": 24,
+      "coverage": 0.8315972222222222,
+      "overall_accuracy_abstention_as_error": 0.4756944444444444,
+      "selective_accuracy": 0.5720250521920668,
+      "selective_risk": 0.4279749478079332,
+      "false_order_elevation_rate": 0.0,
+      "false_order_reduction_rate": 0.5338541666666666,
+      "rank_two_detection_rate": 0.21354166666666666,
+      "abstention_rate": 0.1684027777777778
+    },
+    {
+      "power_wilson_lower_threshold": 0.3,
+      "qualified_designs": 10,
+      "coverage": 0.3472222222222222,
+      "overall_accuracy_abstention_as_error": 0.28125,
+      "selective_accuracy": 0.81,
+      "selective_risk": 0.18999999999999995,
+      "false_order_elevation_rate": 0.0,
+      "false_order_reduction_rate": 0.09895833333333333,
+      "rank_two_detection_rate": 0.21354166666666666,
+      "abstention_rate": 0.6527777777777778
+    },
+    {
+      "power_wilson_lower_threshold": 0.5,
+      "qualified_designs": 10,
+      "coverage": 0.3472222222222222,
+      "overall_accuracy_abstention_as_error": 0.28125,
+      "selective_accuracy": 0.81,
+      "selective_risk": 0.18999999999999995,
+      "false_order_elevation_rate": 0.0,
+      "false_order_reduction_rate": 0.09895833333333333,
+      "rank_two_detection_rate": 0.21354166666666666,
+      "abstention_rate": 0.6527777777777778
+    },
+    {
+      "power_wilson_lower_threshold": 0.7,
+      "qualified_designs": 8,
+      "coverage": 0.2942708333333333,
+      "overall_accuracy_abstention_as_error": 0.2534722222222222,
+      "selective_accuracy": 0.8613569321533924,
+      "selective_risk": 0.13864306784660763,
+      "false_order_elevation_rate": 0.0,
+      "false_order_reduction_rate": 0.061197916666666664,
+      "rank_two_detection_rate": 0.21354166666666666,
+      "abstention_rate": 0.7057291666666666
+    },
+    {
+      "power_wilson_lower_threshold": 0.8,
+      "qualified_designs": 8,
+      "coverage": 0.2942708333333333,
+      "overall_accuracy_abstention_as_error": 0.2534722222222222,
+      "selective_accuracy": 0.8613569321533924,
+      "selective_risk": 0.13864306784660763,
+      "false_order_elevation_rate": 0.0,
+      "false_order_reduction_rate": 0.061197916666666664,
+      "rank_two_detection_rate": 0.21354166666666666,
+      "abstention_rate": 0.7057291666666666
+    },
+    {
+      "power_wilson_lower_threshold": 0.9,
+      "qualified_designs": 8,
+      "coverage": 0.2942708333333333,
+      "overall_accuracy_abstention_as_error": 0.2534722222222222,
+      "selective_accuracy": 0.8613569321533924,
+      "selective_risk": 0.13864306784660763,
+      "false_order_elevation_rate": 0.0,
+      "false_order_reduction_rate": 0.061197916666666664,
+      "rank_two_detection_rate": 0.21354166666666666,
+      "abstention_rate": 0.7057291666666666
+    }
+  ],
+  "pareto_frontier": [
+    {
+      "power_wilson_lower_threshold": 0.0,
+      "qualified_designs": 24,
+      "coverage": 0.8315972222222222,
+      "overall_accuracy_abstention_as_error": 0.4756944444444444,
+      "selective_accuracy": 0.5720250521920668,
+      "selective_risk": 0.4279749478079332,
+      "false_order_elevation_rate": 0.0,
+      "false_order_reduction_rate": 0.5338541666666666,
+      "rank_two_detection_rate": 0.21354166666666666,
+      "abstention_rate": 0.1684027777777778
+    },
+    {
+      "power_wilson_lower_threshold": 0.3,
+      "qualified_designs": 10,
+      "coverage": 0.3472222222222222,
+      "overall_accuracy_abstention_as_error": 0.28125,
+      "selective_accuracy": 0.81,
+      "selective_risk": 0.18999999999999995,
+      "false_order_elevation_rate": 0.0,
+      "false_order_reduction_rate": 0.09895833333333333,
+      "rank_two_detection_rate": 0.21354166666666666,
+      "abstention_rate": 0.6527777777777778
+    },
+    {
+      "power_wilson_lower_threshold": 0.5,
+      "qualified_designs": 10,
+      "coverage": 0.3472222222222222,
+      "overall_accuracy_abstention_as_error": 0.28125,
+      "selective_accuracy": 0.81,
+      "selective_risk": 0.18999999999999995,
+      "false_order_elevation_rate": 0.0,
+      "false_order_reduction_rate": 0.09895833333333333,
+      "rank_two_detection_rate": 0.21354166666666666,
+      "abstention_rate": 0.6527777777777778
+    },
+    {
+      "power_wilson_lower_threshold": 0.7,
+      "qualified_designs": 8,
+      "coverage": 0.2942708333333333,
+      "overall_accuracy_abstention_as_error": 0.2534722222222222,
+      "selective_accuracy": 0.8613569321533924,
+      "selective_risk": 0.13864306784660763,
+      "false_order_elevation_rate": 0.0,
+      "false_order_reduction_rate": 0.061197916666666664,
+      "rank_two_detection_rate": 0.21354166666666666,
+      "abstention_rate": 0.7057291666666666
+    },
+    {
+      "power_wilson_lower_threshold": 0.8,
+      "qualified_designs": 8,
+      "coverage": 0.2942708333333333,
+      "overall_accuracy_abstention_as_error": 0.2534722222222222,
+      "selective_accuracy": 0.8613569321533924,
+      "selective_risk": 0.13864306784660763,
+      "false_order_elevation_rate": 0.0,
+      "false_order_reduction_rate": 0.061197916666666664,
+      "rank_two_detection_rate": 0.21354166666666666,
+      "abstention_rate": 0.7057291666666666
+    },
+    {
+      "power_wilson_lower_threshold": 0.9,
+      "qualified_designs": 8,
+      "coverage": 0.2942708333333333,
+      "overall_accuracy_abstention_as_error": 0.2534722222222222,
+      "selective_accuracy": 0.8613569321533924,
+      "selective_risk": 0.13864306784660763,
+      "false_order_elevation_rate": 0.0,
+      "false_order_reduction_rate": 0.061197916666666664,
+      "rank_two_detection_rate": 0.21354166666666666,
+      "abstention_rate": 0.7057291666666666
+    }
+  ],
+  "curve_by_noise_model": {
+    "white": [
+      {
+        "power_wilson_lower_threshold": 0.0,
+        "qualified_designs": 24,
+        "coverage": 0.8975694444444444,
+        "overall_accuracy_abstention_as_error": 0.4357638888888889,
+        "selective_accuracy": 0.48549323017408125,
+        "selective_risk": 0.5145067698259187,
+        "false_order_elevation_rate": 0.0,
+        "false_order_reduction_rate": 0.6927083333333334,
+        "rank_two_detection_rate": 0.15364583333333334,
+        "abstention_rate": 0.10243055555555555
+      },
+      {
+        "power_wilson_lower_threshold": 0.3,
+        "qualified_designs": 10,
+        "coverage": 0.2881944444444444,
+        "overall_accuracy_abstention_as_error": 0.21354166666666666,
+        "selective_accuracy": 0.7409638554216867,
+        "selective_risk": 0.25903614457831325,
+        "false_order_elevation_rate": 0.0,
+        "false_order_reduction_rate": 0.11197916666666667,
+        "rank_two_detection_rate": 0.15364583333333334,
+        "abstention_rate": 0.7118055555555556
+      },
+      {
+        "power_wilson_lower_threshold": 0.5,
+        "qualified_designs": 10,
+        "coverage": 0.2881944444444444,
+        "overall_accuracy_abstention_as_error": 0.21354166666666666,
+        "selective_accuracy": 0.7409638554216867,
+        "selective_risk": 0.25903614457831325,
+        "false_order_elevation_rate": 0.0,
+        "false_order_reduction_rate": 0.11197916666666667,
+        "rank_two_detection_rate": 0.15364583333333334,
+        "abstention_rate": 0.7118055555555556
+      },
+      {
+        "power_wilson_lower_threshold": 0.7,
+        "qualified_designs": 8,
+        "coverage": 0.2326388888888889,
+        "overall_accuracy_abstention_as_error": 0.1857638888888889,
+        "selective_accuracy": 0.7985074626865671,
+        "selective_risk": 0.20149253731343286,
+        "false_order_elevation_rate": 0.0,
+        "false_order_reduction_rate": 0.0703125,
+        "rank_two_detection_rate": 0.15364583333333334,
+        "abstention_rate": 0.7673611111111112
+      },
+      {
+        "power_wilson_lower_threshold": 0.8,
+        "qualified_designs": 8,
+        "coverage": 0.2326388888888889,
+        "overall_accuracy_abstention_as_error": 0.1857638888888889,
+        "selective_accuracy": 0.7985074626865671,
+        "selective_risk": 0.20149253731343286,
+        "false_order_elevation_rate": 0.0,
+        "false_order_reduction_rate": 0.0703125,
+        "rank_two_detection_rate": 0.15364583333333334,
+        "abstention_rate": 0.7673611111111112
+      },
+      {
+        "power_wilson_lower_threshold": 0.9,
+        "qualified_designs": 8,
+        "coverage": 0.2326388888888889,
+        "overall_accuracy_abstention_as_error": 0.1857638888888889,
+        "selective_accuracy": 0.7985074626865671,
+        "selective_risk": 0.20149253731343286,
+        "false_order_elevation_rate": 0.0,
+        "false_order_reduction_rate": 0.0703125,
+        "rank_two_detection_rate": 0.15364583333333334,
+        "abstention_rate": 0.7673611111111112
+      }
+    ],
+    "ar1": [
+      {
+        "power_wilson_lower_threshold": 0.0,
+        "qualified_designs": 24,
+        "coverage": 0.765625,
+        "overall_accuracy_abstention_as_error": 0.515625,
+        "selective_accuracy": 0.673469387755102,
+        "selective_risk": 0.326530612244898,
+        "false_order_elevation_rate": 0.0,
+        "false_order_reduction_rate": 0.375,
+        "rank_two_detection_rate": 0.2734375,
+        "abstention_rate": 0.234375
+      },
+      {
+        "power_wilson_lower_threshold": 0.3,
+        "qualified_designs": 10,
+        "coverage": 0.40625,
+        "overall_accuracy_abstention_as_error": 0.3489583333333333,
+        "selective_accuracy": 0.8589743589743589,
+        "selective_risk": 0.14102564102564108,
+        "false_order_elevation_rate": 0.0,
+        "false_order_reduction_rate": 0.0859375,
+        "rank_two_detection_rate": 0.2734375,
+        "abstention_rate": 0.59375
+      },
+      {
+        "power_wilson_lower_threshold": 0.5,
+        "qualified_designs": 10,
+        "coverage": 0.40625,
+        "overall_accuracy_abstention_as_error": 0.3489583333333333,
+        "selective_accuracy": 0.8589743589743589,
+        "selective_risk": 0.14102564102564108,
+        "false_order_elevation_rate": 0.0,
+        "false_order_reduction_rate": 0.0859375,
+        "rank_two_detection_rate": 0.2734375,
+        "abstention_rate": 0.59375
+      },
+      {
+        "power_wilson_lower_threshold": 0.7,
+        "qualified_designs": 8,
+        "coverage": 0.3559027777777778,
+        "overall_accuracy_abstention_as_error": 0.3211805555555556,
+        "selective_accuracy": 0.9024390243902439,
+        "selective_risk": 0.09756097560975607,
+        "false_order_elevation_rate": 0.0,
+        "false_order_reduction_rate": 0.052083333333333336,
+        "rank_two_detection_rate": 0.2734375,
+        "abstention_rate": 0.6440972222222222
+      },
+      {
+        "power_wilson_lower_threshold": 0.8,
+        "qualified_designs": 8,
+        "coverage": 0.3559027777777778,
+        "overall_accuracy_abstention_as_error": 0.3211805555555556,
+        "selective_accuracy": 0.9024390243902439,
+        "selective_risk": 0.09756097560975607,
+        "false_order_elevation_rate": 0.0,
+        "false_order_reduction_rate": 0.052083333333333336,
+        "rank_two_detection_rate": 0.2734375,
+        "abstention_rate": 0.6440972222222222
+      },
+      {
+        "power_wilson_lower_threshold": 0.9,
+        "qualified_designs": 8,
+        "coverage": 0.3559027777777778,
+        "overall_accuracy_abstention_as_error": 0.3211805555555556,
+        "selective_accuracy": 0.9024390243902439,
+        "selective_risk": 0.09756097560975607,
+        "false_order_elevation_rate": 0.0,
+        "false_order_reduction_rate": 0.052083333333333336,
+        "rank_two_detection_rate": 0.2734375,
+        "abstention_rate": 0.6440972222222222
+      }
+    ]
+  },
+  "interpretation_rule": "This grid audits sensitivity on the already frozen Stage 69 evaluation set. It must not be used to replace the 0.70 confirmatory operating point.",
+  "record_storage": "Aggregate-only; Stage 69 decisions are regenerated deterministically while runtime is ignored."
+}

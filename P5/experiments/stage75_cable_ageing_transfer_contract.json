@@ -1,0 +1,35 @@
+{
+  "schema": "P5-Stage75-Cable-Ageing-Transfer-Contract-v1",
+  "frozen_on": "2026-09-03",
+  "source": {
+    "title": "Accelerated ageing of silicone rubber and XLPE used in HV cable accessories: a thermomechanical analysis",
+    "doi": "10.5281/zenodo.18507412",
+    "license": "CC-BY-4.0",
+    "path": "P3/data/external/stage52_cable_ageing/stress_relaxation_csr.xlsx",
+    "sha256": "80640dfce1efe73888fb60f1e7c5624fa35b8eb1b5e63ff16db1bffe888e6bfc",
+    "worksheet_member": "xl/worksheets/sheet1.xml",
+    "shared_strings_member": "xl/sharedStrings.xml"
+  },
+  "extraction": {
+    "first_data_row": 4,
+    "minimum_raw_points_per_curve": 2500,
+    "curves": [
+      {"unit": "hard_sir_unaged", "time_column": "D", "response_column": "E", "expected_label": "Unaged Hard SiR"},
+      {"unit": "hard_sir_aged_compression", "time_column": "F", "response_column": "G", "expected_label": "Aged Hard SiR under compression"},
+      {"unit": "soft_sir_unaged", "time_column": "H", "response_column": "I", "expected_label": "Unaged Soft SiR"},
+      {"unit": "soft_sir_aged_compression", "time_column": "J", "response_column": "K", "expected_label": "Aged Soft SiR under compression"},
+      {"unit": "semicon_sir_unaged", "time_column": "L", "response_column": "M", "expected_label": "Unaged Semicon. SiR"},
+      {"unit": "semicon_sir_aged_compression", "time_column": "N", "response_column": "O", "expected_label": "Aged Semicon. SiR under compression"}
+    ]
+  },
+  "frozen_stage72_adapter": {
+    "target_channels": 6,
+    "target_samples": 24,
+    "dimensionless_horizon": 16.0,
+    "maximum_calibrated_noise": 0.005,
+    "ar1_classification_threshold": 0.30,
+    "maximum_monotonicity_violation_fraction": 0.25
+  },
+  "decision_rule": "Apply the unchanged Stage 69 certificate and Stage 72 scope gate. Preserve scope refusal or evidence abstention as an outcome.",
+  "claim_boundary": "This is a preregistered first application of the frozen P5 rule to a dataset not previously used in P5. The data were previously analysed in P3, so this is new-to-P5 external transfer, not prospective acquisition or investigator-blind confirmation."
+}

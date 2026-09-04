@@ -1,0 +1,11 @@
+{
+  "schema": "P5-Stage76-Cable-Window-Sensitivity-Contract-v1",
+  "frozen_on": "2026-09-03",
+  "parent_result": "results/preregistered_cable_ageing_transfer.json",
+  "start_fractions": [0.0, 0.01, 0.05],
+  "end_fractions": [0.8, 0.9, 0.95, 1.0],
+  "minimum_retained_raw_points": 2000,
+  "adapter": "unchanged Stage 72 six-channel, 24-sample scope and decision rule",
+  "success_rule": "All 12 windows remain scope eligible and return the same decision as the preregistered full-window result.",
+  "claim_boundary": "Post-result window sensitivity only. The overlapping windows are not independent datasets, trials, or prospective confirmation."
+}

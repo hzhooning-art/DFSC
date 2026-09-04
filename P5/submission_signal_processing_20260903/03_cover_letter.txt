@@ -1,0 +1,38 @@
+Dear Editors of Signal Processing,
+
+Please consider our manuscript, "Power-Certified Model-Order Selection with
+Abstention for Sparse Multichannel Transient Signals," as a Research Paper.
+
+The paper asks when finite, noisy, grouped transients support a shared spectral
+order and when an estimator should abstain because adjacent rates cannot be
+resolved. The method combines information improvement, held-unit prediction,
+local information, rate separation, cross-pencil stability, and a design-power
+certificate. It returns selective evidence about the minimum supported finite
+realization rather than a forced full-coverage classification.
+
+A 1,080-trial atlas shows that matrix-pencil BIC selects 60 inaccurate rank-two
+recoveries among 157 rank-two selections; the complete gate retains 74 accurate
+supports and no inaccurate support under the declared design. On a separate
+1,152-trial evaluation, power certification achieves 0.2943 coverage and 0.1386
+selective risk with zero observed false order elevation. Five matrix-pencil,
+block-Hankel, and shared-Prony criteria quantify full-coverage error tradeoffs.
+Public PVA, copper-alloy, gas-sensor, hydraulic, and cable-ageing data provide
+support, refusal, transfer, and sensitivity cases. The cable decision is stable
+across 12 post-result windows, explicitly not independent replications.
+
+The paper fits Signal Processing through grouped spectral estimation,
+model-order selection, finite-resolution analysis, detection with abstention,
+and comparisons with established spectral criteria. Claims are conditional on
+calibrated observation designs; we do not claim unconditional classifier
+superiority or prospective validation.
+
+The manuscript is original, is not under consideration elsewhere, and has
+been approved by all authors. It uses public non-human datasets and synthetic
+experiments; no human participants or animal experiments are involved. The
+authors declare no competing interests.
+
+Sincerely,
+
+Ning Hu, Corresponding author
+School of Mechanical Engineering, Hangzhou Dianzi University
+Email: huning@hdu.edu.cn

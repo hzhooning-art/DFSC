@@ -1,0 +1,13 @@
+DATA AND CODE AVAILABILITY
+
+Public datasets are identified by DOI in the manuscript references. Derived
+results, protocol definitions, tests, and figure-generation scripts are in:
+https://github.com/hzhooning-art/DFSC
+
+Existing frozen software and reproducibility archive:
+https://doi.org/10.5281/zenodo.22168774
+
+Before submission, audit that archive against the active paper. If it does not
+contain Stages 67--76, including power certification, public transfer, cable
+contract, window sensitivity, the 190-test suite, and all 85 JSON result files,
+deposit a new immutable release/DOI and update the manuscript and portal.

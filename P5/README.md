@@ -2,6 +2,8 @@
 
 [![P5 memory protocol](https://github.com/hzhooning-art/DFSC/actions/workflows/p5-memory-protocol.yml/badge.svg)](https://github.com/hzhooning-art/DFSC/actions/workflows/p5-memory-protocol.yml)
 
+Archived software and reproducibility release: [Zenodo DOI 10.5281/zenodo.22168774](https://doi.org/10.5281/zenodo.22168774).
+
 ## Reproducible setup
 
 From the repository root, install the package and test dependencies, verify the
@@ -944,3 +946,100 @@ for mechanism-level memory-rank identification.
 The stable software surface is `fit/evaluate/decide/report`, documented in
 `API_CONTRACT.md`. Evidence, limitations, and verification are summarized in
 `STAGE63_EVIDENCE_REPORT.md`.
+
+## Stage 67: finite-budget spectral resolution
+
+A multichannel block matrix-pencil comparator now maps when a two-rate
+interpretation is supportable under finite horizon, sampling, noise, and rate
+separation. Across 54 design cells and 1,080 trials, BIC selected rank two 157
+times, including 60 inaccurate rate recoveries. Requiring local information,
+rate separation, and agreement across three Hankel aspect ratios retained 74
+supports with no inaccurate recovery in the declared atlas. The result defines
+a conditional resolution region rather than a universal threshold. See
+`STAGE67_FINITE_BUDGET_RESOLUTION_REPORT.md` and
+`results/finite_budget_resolution_atlas.json`.
+
+## Stage 68: common-budget order detection
+
+A common-budget comparison now evaluates AIC, AICc, BIC, strong BIC, cross-
+pencil stability, and the complete selective detector on 864 rank-one/rank-two
+trials under white and AR(1) noise.  The frozen selective route eliminates
+observed false order elevation but fails to improve the risk--coverage tradeoff:
+coverage is 0.8356, selective accuracy 0.5720, and rank-two detection 0.2188.
+The route is closed as a positive result.  A rank-one mechanism claim requires
+a separate design-power certificate; see
+`STAGE68_COMMON_BUDGET_ORDER_DETECTION_REPORT.md`.
+
+## Stage 69: power-certified rank-one decisions
+
+Stage 69 used disjoint calibration and evaluation seeds to require an
+observation-design power certificate before reporting rank one. Eight of 24
+designs qualified. On 1,152 confirmatory trials, the power-certified detector
+had 0.2943 coverage, 0.8614 selective accuracy, 0.1386 selective risk, zero
+false order elevation, and 0.0612 false order reduction. It passed the frozen
+risk--coverage checks separately under white and AR(1) noise, while explicitly
+abstaining on 70.57% of cases. The result is relative to a declared 0.32 rate
+gap and is not unconditional order-classification superiority. See
+`STAGE69_POWER_CERTIFIED_ORDER_DETECTION_REPORT.md` and
+`results/power_certified_order_detection.json`.
+
+## Stage 70: risk--coverage sensitivity
+
+The frozen Stage 69 evaluation set now supplies a six-point power-confidence
+sensitivity curve. The 0.70 operating point is on the non-dominated frontier,
+and thresholds from 0.70 through 0.90 give the same 0.2943 coverage and 0.1386
+selective risk. Relaxing the lower bound to 0.30 raises coverage to 0.3472 but
+also raises risk to 0.1900; removing the power condition returns to the Stage
+68 high-risk regime. The audit supports a stable reliability--coverage tradeoff
+but is not post hoc threshold selection. See
+`STAGE70_POWER_CERTIFICATE_RISK_COVERAGE_REPORT.md`.
+
+## Stage 71: same-budget order-selection baselines
+
+Four explicit order comparators now join matrix-pencil AICc on all 1,152 frozen
+evaluation records: block-Hankel AIC/MDL and shared-Prony AICc/BIC. Block-Hankel
+AIC has the best full-coverage accuracy (0.6658) but a 0.6771 false-elevation
+rate; matrix-pencil AICc has zero false elevation but 0.5339 false reduction.
+The power-certified method occupies a different regime with 0.2943 coverage,
+0.1386 selective risk, zero false elevation, and 0.0612 false reduction. The
+result supports selective reliability, not unconditional accuracy superiority.
+See `STAGE71_COMMON_BUDGET_SUBSPACE_BASELINES_REPORT.md`.
+
+## Stage 72: retrospective public-data transfer
+
+The frozen Stage 69 rule is now scope-tested on 56 groups from four public
+tasks after a fixed six-curve, 24-point, dimensionless adapter. Only one PVA
+group enters the calibrated scope and supplies evidence against rank-one
+sufficiency. Fifty gas groups are refused because ten observed samples cannot
+be interpolated into a 24-sample evidence budget; two KupferDigital and three
+hydraulic groups are refused as outside the calibrated monotone-decay
+morphology. The 1/56 eligibility rate rules out a broad transfer claim. See
+`STAGE72_EXTERNAL_POWER_CERTIFICATE_TRANSFER_REPORT.md`.
+
+## Stage 73: PVA group-composition sensitivity
+
+All 84 six-of-nine subsets of the public PVA curves were replayed through the
+unchanged Stage 72 adapter and frozen Stage 69 certificate. All 84 entered the
+same calibrated noise cell, passed all five rank-two checks, and supplied
+evidence against rank-one sufficiency; the criterion improvement ranged from
+491.2603 to 596.2218. This removes dependence on the original first-six choice,
+but the overlapping subsets remain one retrospective dataset rather than 84
+independent confirmations. See
+`STAGE73_PVA_GROUP_COMPOSITION_SENSITIVITY_REPORT.md`.
+
+## Stage 75: preregistered cable-ageing transfer
+
+A pre-outcome P5 contract freezes six cable-ageing curves and the unchanged
+Stage 69/72 adapter and thresholds. All six curves enter scope; criterion
+improvement is 647.951, all five rank-two checks pass, and the rule supplies
+evidence against rank-one sufficiency. Prior use in P3 prevents describing the
+result as investigator-blind prospective confirmation. See
+`STAGE75_PREREGISTERED_CABLE_AGEING_TRANSFER_REPORT.md`.
+
+## Stage 76: cable-window sensitivity
+
+Twelve post-result start/end-window settings retain at least 2,177 raw points
+per curve. All remain eligible and return the Stage 75 decision, with criterion
+improvement from 399.989 to 714.271. The overlapping windows are sensitivity
+checks rather than independent replications. See
+`STAGE76_CABLE_WINDOW_SENSITIVITY_REPORT.md`.

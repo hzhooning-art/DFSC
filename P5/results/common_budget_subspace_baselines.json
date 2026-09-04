@@ -1,0 +1,255 @@
+{
+  "schema": "P5-Common-Budget-Subspace-Baselines-v1",
+  "design": {
+    "relevant_rate_gap": 0.32,
+    "calibration_repeats_per_rank_and_design": 64,
+    "evaluation_repeats_per_truth_and_design": 16,
+    "calibration_seed_offset": 3000000,
+    "evaluation_seed_offset": 4000000,
+    "seeds_are_disjoint": true,
+    "power_wilson_lower_threshold": 0.7,
+    "specificity_wilson_lower_threshold": 0.9,
+    "discarded_dry_run": {
+      "calibration_seed_offset": 1000000,
+      "evaluation_seed_offset": 2000000,
+      "calibration_repeats": 32,
+      "reason": "The maximum attainable 95% Wilson specificity lower bound was 0.8928, below the frozen 0.90 qualification threshold. All dry-run seeds were retired."
+    },
+    "evaluation_trials": 1152,
+    "same_observations_for_all_methods": true,
+    "full_coverage_comparators": [
+      "matrix_pencil_aicc",
+      "block_hankel_aic",
+      "block_hankel_mdl",
+      "shared_prony_aicc",
+      "shared_prony_bic"
+    ],
+    "frozen_selective_method": "power_certified_selective"
+  },
+  "summary": {
+    "matrix_pencil_aicc": {
+      "trials": 1152,
+      "coverage": 1.0,
+      "overall_accuracy_abstention_as_error": 0.6440972222222222,
+      "selective_accuracy": 0.6440972222222222,
+      "selective_risk": 0.3559027777777778,
+      "false_order_elevation_rate": 0.0,
+      "false_order_reduction_rate": 0.5338541666666666,
+      "rank_two_detection_rate": 0.4661458333333333,
+      "abstention_rate": 0.0,
+      "median_runtime_seconds": 0.0008273499988717958
+    },
+    "block_hankel_aic": {
+      "trials": 1152,
+      "coverage": 1.0,
+      "overall_accuracy_abstention_as_error": 0.6657986111111112,
+      "selective_accuracy": 0.6657986111111112,
+      "selective_risk": 0.33420138888888884,
+      "false_order_elevation_rate": 0.6770833333333334,
+      "false_order_reduction_rate": 0.16276041666666666,
+      "rank_two_detection_rate": 0.8372395833333334,
+      "abstention_rate": 0.0,
+      "median_runtime_seconds": 0.00017260000458918512
+    },
+    "block_hankel_mdl": {
+      "trials": 1152,
+      "coverage": 1.0,
+      "overall_accuracy_abstention_as_error": 0.6145833333333334,
+      "selective_accuracy": 0.6145833333333334,
+      "selective_risk": 0.38541666666666663,
+      "false_order_elevation_rate": 0.2838541666666667,
+      "false_order_reduction_rate": 0.4361979166666667,
+      "rank_two_detection_rate": 0.5638020833333334,
+      "abstention_rate": 0.0,
+      "median_runtime_seconds": 0.00016055000014603138
+    },
+    "shared_prony_aicc": {
+      "trials": 1152,
+      "coverage": 1.0,
+      "overall_accuracy_abstention_as_error": 0.5034722222222222,
+      "selective_accuracy": 0.5034722222222222,
+      "selective_risk": 0.4965277777777778,
+      "false_order_elevation_rate": 0.6223958333333334,
+      "false_order_reduction_rate": 0.43359375,
+      "rank_two_detection_rate": 0.56640625,
+      "abstention_rate": 0.0,
+      "median_runtime_seconds": 7.779999577905983e-05
+    },
+    "shared_prony_bic": {
+      "trials": 1152,
+      "coverage": 1.0,
+      "overall_accuracy_abstention_as_error": 0.5017361111111112,
+      "selective_accuracy": 0.5017361111111112,
+      "selective_risk": 0.49826388888888884,
+      "false_order_elevation_rate": 0.5911458333333334,
+      "false_order_reduction_rate": 0.4518229166666667,
+      "rank_two_detection_rate": 0.5481770833333334,
+      "abstention_rate": 0.0,
+      "median_runtime_seconds": 6.849999772384763e-05
+    },
+    "power_certified_selective": {
+      "trials": 1152,
+      "coverage": 0.2942708333333333,
+      "overall_accuracy_abstention_as_error": 0.2534722222222222,
+      "selective_accuracy": 0.8613569321533924,
+      "selective_risk": 0.13864306784660763,
+      "false_order_elevation_rate": 0.0,
+      "false_order_reduction_rate": 0.061197916666666664,
+      "rank_two_detection_rate": 0.21354166666666666,
+      "abstention_rate": 0.7057291666666666,
+      "median_runtime_seconds": 0.003312600005301647
+    }
+  },
+  "by_noise_model": {
+    "ar1": {
+      "matrix_pencil_aicc": {
+        "trials": 576,
+        "coverage": 1.0,
+        "overall_accuracy_abstention_as_error": 0.75,
+        "selective_accuracy": 0.75,
+        "selective_risk": 0.25,
+        "false_order_elevation_rate": 0.0,
+        "false_order_reduction_rate": 0.375,
+        "rank_two_detection_rate": 0.625,
+        "abstention_rate": 0.0,
+        "median_runtime_seconds": 0.0008273499988717958
+      },
+      "block_hankel_aic": {
+        "trials": 576,
+        "coverage": 1.0,
+        "overall_accuracy_abstention_as_error": 0.6822916666666666,
+        "selective_accuracy": 0.6822916666666666,
+        "selective_risk": 0.31770833333333337,
+        "false_order_elevation_rate": 0.3645833333333333,
+        "false_order_reduction_rate": 0.2942708333333333,
+        "rank_two_detection_rate": 0.7057291666666666,
+        "abstention_rate": 0.0,
+        "median_runtime_seconds": 0.0001749500006553717
+      },
+      "block_hankel_mdl": {
+        "trials": 576,
+        "coverage": 1.0,
+        "overall_accuracy_abstention_as_error": 0.6649305555555556,
+        "selective_accuracy": 0.6649305555555556,
+        "selective_risk": 0.3350694444444444,
+        "false_order_elevation_rate": 0.015625,
+        "false_order_reduction_rate": 0.4947916666666667,
+        "rank_two_detection_rate": 0.5052083333333334,
+        "abstention_rate": 0.0,
+        "median_runtime_seconds": 0.00015785000869072974
+      },
+      "shared_prony_aicc": {
+        "trials": 576,
+        "coverage": 1.0,
+        "overall_accuracy_abstention_as_error": 0.4392361111111111,
+        "selective_accuracy": 0.4392361111111111,
+        "selective_risk": 0.5607638888888888,
+        "false_order_elevation_rate": 0.4166666666666667,
+        "false_order_reduction_rate": 0.6328125,
+        "rank_two_detection_rate": 0.3671875,
+        "abstention_rate": 0.0,
+        "median_runtime_seconds": 7.810000533936545e-05
+      },
+      "shared_prony_bic": {
+        "trials": 576,
+        "coverage": 1.0,
+        "overall_accuracy_abstention_as_error": 0.4375,
+        "selective_accuracy": 0.4375,
+        "selective_risk": 0.5625,
+        "false_order_elevation_rate": 0.375,
+        "false_order_reduction_rate": 0.65625,
+        "rank_two_detection_rate": 0.34375,
+        "abstention_rate": 0.0,
+        "median_runtime_seconds": 6.859999848529696e-05
+      },
+      "power_certified_selective": {
+        "trials": 576,
+        "coverage": 0.3559027777777778,
+        "overall_accuracy_abstention_as_error": 0.3211805555555556,
+        "selective_accuracy": 0.9024390243902439,
+        "selective_risk": 0.09756097560975607,
+        "false_order_elevation_rate": 0.0,
+        "false_order_reduction_rate": 0.052083333333333336,
+        "rank_two_detection_rate": 0.2734375,
+        "abstention_rate": 0.6440972222222222,
+        "median_runtime_seconds": 0.0033216500014532357
+      }
+    },
+    "white": {
+      "matrix_pencil_aicc": {
+        "trials": 576,
+        "coverage": 1.0,
+        "overall_accuracy_abstention_as_error": 0.5381944444444444,
+        "selective_accuracy": 0.5381944444444444,
+        "selective_risk": 0.4618055555555556,
+        "false_order_elevation_rate": 0.0,
+        "false_order_reduction_rate": 0.6927083333333334,
+        "rank_two_detection_rate": 0.3072916666666667,
+        "abstention_rate": 0.0,
+        "median_runtime_seconds": 0.0007841499973437749
+      },
+      "block_hankel_aic": {
+        "trials": 576,
+        "coverage": 1.0,
+        "overall_accuracy_abstention_as_error": 0.6493055555555556,
+        "selective_accuracy": 0.6493055555555556,
+        "selective_risk": 0.3506944444444444,
+        "false_order_elevation_rate": 0.9895833333333334,
+        "false_order_reduction_rate": 0.03125,
+        "rank_two_detection_rate": 0.96875,
+        "abstention_rate": 0.0,
+        "median_runtime_seconds": 0.00017255000420846045
+      },
+      "block_hankel_mdl": {
+        "trials": 576,
+        "coverage": 1.0,
+        "overall_accuracy_abstention_as_error": 0.5642361111111112,
+        "selective_accuracy": 0.5642361111111112,
+        "selective_risk": 0.43576388888888884,
+        "false_order_elevation_rate": 0.5520833333333334,
+        "false_order_reduction_rate": 0.3776041666666667,
+        "rank_two_detection_rate": 0.6223958333333334,
+        "abstention_rate": 0.0,
+        "median_runtime_seconds": 0.00016055000014603138
+      },
+      "shared_prony_aicc": {
+        "trials": 576,
+        "coverage": 1.0,
+        "overall_accuracy_abstention_as_error": 0.5677083333333334,
+        "selective_accuracy": 0.5677083333333334,
+        "selective_risk": 0.43229166666666663,
+        "false_order_elevation_rate": 0.828125,
+        "false_order_reduction_rate": 0.234375,
+        "rank_two_detection_rate": 0.765625,
+        "abstention_rate": 0.0,
+        "median_runtime_seconds": 7.749999349471182e-05
+      },
+      "shared_prony_bic": {
+        "trials": 576,
+        "coverage": 1.0,
+        "overall_accuracy_abstention_as_error": 0.5659722222222222,
+        "selective_accuracy": 0.5659722222222222,
+        "selective_risk": 0.4340277777777778,
+        "false_order_elevation_rate": 0.8072916666666666,
+        "false_order_reduction_rate": 0.24739583333333334,
+        "rank_two_detection_rate": 0.7526041666666666,
+        "abstention_rate": 0.0,
+        "median_runtime_seconds": 6.849999772384763e-05
+      },
+      "power_certified_selective": {
+        "trials": 576,
+        "coverage": 0.2326388888888889,
+        "overall_accuracy_abstention_as_error": 0.1857638888888889,
+        "selective_accuracy": 0.7985074626865671,
+        "selective_risk": 0.20149253731343286,
+        "false_order_elevation_rate": 0.0,
+        "false_order_reduction_rate": 0.0703125,
+        "rank_two_detection_rate": 0.15364583333333334,
+        "abstention_rate": 0.7673611111111112,
+        "median_runtime_seconds": 0.003192550007952377
+      }
+    }
+  },
+  "claim_boundary": "Block-Hankel AIC/MDL treat overlapping columns as effective snapshots and are classical-style comparators, not exact independent-snapshot likelihoods. Selective accuracy is always reported with coverage and abstention.",
+  "record_storage": "Aggregate-only; decisions are deterministically regenerated while runtime is remeasured."
+}

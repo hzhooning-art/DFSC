@@ -1,0 +1,351 @@
+{
+  "schema": "P5-Cable-Window-Sensitivity-v1",
+  "window_count": 12,
+  "scope_eligible_count": 12,
+  "parent_decision": "EVIDENCE_AGAINST_RANK_1",
+  "matching_parent_decision_count": 12,
+  "success_rule_passes": true,
+  "criterion_improvement_range": [
+    399.98918658397724,
+    714.2711210026446
+  ],
+  "records": [
+    {
+      "start_fraction": 0.0,
+      "end_fraction": 0.8,
+      "minimum_raw_points": 2205,
+      "result": {
+        "task": "cable_ageing_window",
+        "group": "start-0.0-end-0.8",
+        "source_curves": 6,
+        "scope": {
+          "eligible": true,
+          "noise_proxy": 0.0013947158321708016,
+          "declared_noise_bin": 0.005,
+          "residual_lag1": -0.32252281626945223,
+          "declared_noise_model": "white",
+          "monotonicity_violation_fraction": 0.0
+        },
+        "decision": "EVIDENCE_AGAINST_RANK_1",
+        "certificate_qualified_for_rank_one": false,
+        "criterion_improvement_rank1_to_rank2": 714.2711210026446,
+        "rank_two_checks": {
+          "strong_bic": true,
+          "admissible_rank_two": true,
+          "separation": true,
+          "local_information": true,
+          "cross_pencil_stability": true
+        }
+      }
+    },
+    {
+      "start_fraction": 0.0,
+      "end_fraction": 0.9,
+      "minimum_raw_points": 2481,
+      "result": {
+        "task": "cable_ageing_window",
+        "group": "start-0.0-end-0.9",
+        "source_curves": 6,
+        "scope": {
+          "eligible": true,
+          "noise_proxy": 0.0017758448899161438,
+          "declared_noise_bin": 0.005,
+          "residual_lag1": -0.34244137600924734,
+          "declared_noise_model": "white",
+          "monotonicity_violation_fraction": 0.0
+        },
+        "decision": "EVIDENCE_AGAINST_RANK_1",
+        "certificate_qualified_for_rank_one": false,
+        "criterion_improvement_rank1_to_rank2": 659.1167026980437,
+        "rank_two_checks": {
+          "strong_bic": true,
+          "admissible_rank_two": true,
+          "separation": true,
+          "local_information": true,
+          "cross_pencil_stability": true
+        }
+      }
+    },
+    {
+      "start_fraction": 0.0,
+      "end_fraction": 0.95,
+      "minimum_raw_points": 2619,
+      "result": {
+        "task": "cable_ageing_window",
+        "group": "start-0.0-end-0.95",
+        "source_curves": 6,
+        "scope": {
+          "eligible": true,
+          "noise_proxy": 0.00154370316233942,
+          "declared_noise_bin": 0.005,
+          "residual_lag1": -0.34817730841210665,
+          "declared_noise_model": "white",
+          "monotonicity_violation_fraction": 0.0
+        },
+        "decision": "EVIDENCE_AGAINST_RANK_1",
+        "certificate_qualified_for_rank_one": false,
+        "criterion_improvement_rank1_to_rank2": 651.0545309149035,
+        "rank_two_checks": {
+          "strong_bic": true,
+          "admissible_rank_two": true,
+          "separation": true,
+          "local_information": true,
+          "cross_pencil_stability": true
+        }
+      }
+    },
+    {
+      "start_fraction": 0.0,
+      "end_fraction": 1.0,
+      "minimum_raw_points": 2757,
+      "result": {
+        "task": "cable_ageing_window",
+        "group": "start-0.0-end-1.0",
+        "source_curves": 6,
+        "scope": {
+          "eligible": true,
+          "noise_proxy": 0.0018101776497295643,
+          "declared_noise_bin": 0.005,
+          "residual_lag1": -0.3556922807085368,
+          "declared_noise_model": "white",
+          "monotonicity_violation_fraction": 0.0
+        },
+        "decision": "EVIDENCE_AGAINST_RANK_1",
+        "certificate_qualified_for_rank_one": false,
+        "criterion_improvement_rank1_to_rank2": 647.9508228778911,
+        "rank_two_checks": {
+          "strong_bic": true,
+          "admissible_rank_two": true,
+          "separation": true,
+          "local_information": true,
+          "cross_pencil_stability": true
+        }
+      }
+    },
+    {
+      "start_fraction": 0.01,
+      "end_fraction": 0.8,
+      "minimum_raw_points": 2177,
+      "result": {
+        "task": "cable_ageing_window",
+        "group": "start-0.01-end-0.8",
+        "source_curves": 6,
+        "scope": {
+          "eligible": true,
+          "noise_proxy": 0.0016019407802718454,
+          "declared_noise_bin": 0.005,
+          "residual_lag1": -0.337487370726389,
+          "declared_noise_model": "white",
+          "monotonicity_violation_fraction": 0.0
+        },
+        "decision": "EVIDENCE_AGAINST_RANK_1",
+        "certificate_qualified_for_rank_one": false,
+        "criterion_improvement_rank1_to_rank2": 626.2538935201204,
+        "rank_two_checks": {
+          "strong_bic": true,
+          "admissible_rank_two": true,
+          "separation": true,
+          "local_information": true,
+          "cross_pencil_stability": true
+        }
+      }
+    },
+    {
+      "start_fraction": 0.01,
+      "end_fraction": 0.9,
+      "minimum_raw_points": 2453,
+      "result": {
+        "task": "cable_ageing_window",
+        "group": "start-0.01-end-0.9",
+        "source_curves": 6,
+        "scope": {
+          "eligible": true,
+          "noise_proxy": 0.0021701009086690214,
+          "declared_noise_bin": 0.005,
+          "residual_lag1": -0.33354150301848245,
+          "declared_noise_model": "white",
+          "monotonicity_violation_fraction": 0.0
+        },
+        "decision": "EVIDENCE_AGAINST_RANK_1",
+        "certificate_qualified_for_rank_one": false,
+        "criterion_improvement_rank1_to_rank2": 597.412640534579,
+        "rank_two_checks": {
+          "strong_bic": true,
+          "admissible_rank_two": true,
+          "separation": true,
+          "local_information": true,
+          "cross_pencil_stability": true
+        }
+      }
+    },
+    {
+      "start_fraction": 0.01,
+      "end_fraction": 0.95,
+      "minimum_raw_points": 2591,
+      "result": {
+        "task": "cable_ageing_window",
+        "group": "start-0.01-end-0.95",
+        "source_curves": 6,
+        "scope": {
+          "eligible": true,
+          "noise_proxy": 0.0018302498419936956,
+          "declared_noise_bin": 0.005,
+          "residual_lag1": -0.3436395530275223,
+          "declared_noise_model": "white",
+          "monotonicity_violation_fraction": 0.0
+        },
+        "decision": "EVIDENCE_AGAINST_RANK_1",
+        "certificate_qualified_for_rank_one": false,
+        "criterion_improvement_rank1_to_rank2": 591.5324323202267,
+        "rank_two_checks": {
+          "strong_bic": true,
+          "admissible_rank_two": true,
+          "separation": true,
+          "local_information": true,
+          "cross_pencil_stability": true
+        }
+      }
+    },
+    {
+      "start_fraction": 0.01,
+      "end_fraction": 1.0,
+      "minimum_raw_points": 2729,
+      "result": {
+        "task": "cable_ageing_window",
+        "group": "start-0.01-end-1.0",
+        "source_curves": 6,
+        "scope": {
+          "eligible": true,
+          "noise_proxy": 0.002086331467606762,
+          "declared_noise_bin": 0.005,
+          "residual_lag1": -0.34966365519113823,
+          "declared_noise_model": "white",
+          "monotonicity_violation_fraction": 0.0
+        },
+        "decision": "EVIDENCE_AGAINST_RANK_1",
+        "certificate_qualified_for_rank_one": false,
+        "criterion_improvement_rank1_to_rank2": 611.1425540854132,
+        "rank_two_checks": {
+          "strong_bic": true,
+          "admissible_rank_two": true,
+          "separation": true,
+          "local_information": true,
+          "cross_pencil_stability": true
+        }
+      }
+    },
+    {
+      "start_fraction": 0.05,
+      "end_fraction": 0.8,
+      "minimum_raw_points": 2067,
+      "result": {
+        "task": "cable_ageing_window",
+        "group": "start-0.05-end-0.8",
+        "source_curves": 6,
+        "scope": {
+          "eligible": true,
+          "noise_proxy": 0.002563590397905898,
+          "declared_noise_bin": 0.005,
+          "residual_lag1": -0.3805201769891031,
+          "declared_noise_model": "white",
+          "monotonicity_violation_fraction": 0.0
+        },
+        "decision": "EVIDENCE_AGAINST_RANK_1",
+        "certificate_qualified_for_rank_one": false,
+        "criterion_improvement_rank1_to_rank2": 399.98918658397724,
+        "rank_two_checks": {
+          "strong_bic": true,
+          "admissible_rank_two": true,
+          "separation": true,
+          "local_information": true,
+          "cross_pencil_stability": true
+        }
+      }
+    },
+    {
+      "start_fraction": 0.05,
+      "end_fraction": 0.9,
+      "minimum_raw_points": 2343,
+      "result": {
+        "task": "cable_ageing_window",
+        "group": "start-0.05-end-0.9",
+        "source_curves": 6,
+        "scope": {
+          "eligible": true,
+          "noise_proxy": 0.002675272442093016,
+          "declared_noise_bin": 0.005,
+          "residual_lag1": -0.40131649554721244,
+          "declared_noise_model": "white",
+          "monotonicity_violation_fraction": 0.007246376811594203
+        },
+        "decision": "EVIDENCE_AGAINST_RANK_1",
+        "certificate_qualified_for_rank_one": false,
+        "criterion_improvement_rank1_to_rank2": 412.2837932106447,
+        "rank_two_checks": {
+          "strong_bic": true,
+          "admissible_rank_two": true,
+          "separation": true,
+          "local_information": true,
+          "cross_pencil_stability": true
+        }
+      }
+    },
+    {
+      "start_fraction": 0.05,
+      "end_fraction": 0.95,
+      "minimum_raw_points": 2481,
+      "result": {
+        "task": "cable_ageing_window",
+        "group": "start-0.05-end-0.95",
+        "source_curves": 6,
+        "scope": {
+          "eligible": true,
+          "noise_proxy": 0.0027507181623243854,
+          "declared_noise_bin": 0.005,
+          "residual_lag1": -0.37678811126636225,
+          "declared_noise_model": "white",
+          "monotonicity_violation_fraction": 0.0
+        },
+        "decision": "EVIDENCE_AGAINST_RANK_1",
+        "certificate_qualified_for_rank_one": false,
+        "criterion_improvement_rank1_to_rank2": 445.9092339747839,
+        "rank_two_checks": {
+          "strong_bic": true,
+          "admissible_rank_two": true,
+          "separation": true,
+          "local_information": true,
+          "cross_pencil_stability": true
+        }
+      }
+    },
+    {
+      "start_fraction": 0.05,
+      "end_fraction": 1.0,
+      "minimum_raw_points": 2619,
+      "result": {
+        "task": "cable_ageing_window",
+        "group": "start-0.05-end-1.0",
+        "source_curves": 6,
+        "scope": {
+          "eligible": true,
+          "noise_proxy": 0.0025213697628968506,
+          "declared_noise_bin": 0.005,
+          "residual_lag1": -0.47726090631829493,
+          "declared_noise_model": "white",
+          "monotonicity_violation_fraction": 0.007246376811594203
+        },
+        "decision": "EVIDENCE_AGAINST_RANK_1",
+        "certificate_qualified_for_rank_one": false,
+        "criterion_improvement_rank1_to_rank2": 477.93764168353755,
+        "rank_two_checks": {
+          "strong_bic": true,
+          "admissible_rank_two": true,
+          "separation": true,
+          "local_information": true,
+          "cross_pencil_stability": true
+        }
+      }
+    }
+  ],
+  "claim_boundary": "Post-result window sensitivity only. The overlapping windows are not independent datasets, trials, or prospective confirmation."
+}

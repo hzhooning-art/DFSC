@@ -229,6 +229,194 @@ def identifiability_certificate(
     }
 
 
+def shared_matrix_pencil(
+    curves: Iterable[CurveRecord],
+    rank: int,
+    *,
+    pencil_rows: int | None = None,
+) -> dict:
+    """Estimate shared real decay rates with a block matrix pencil.
+
+    First differences remove curve-specific offsets.  Hankel blocks from all
+    channels are concatenated before the reduced shift operator is formed, so
+    every curve contributes to one shared-pole estimate.  Invalid or unstable
+    poles are reported explicitly rather than projected into the admissible
+    interval.
+    """
+    rows = list(curves)
+    time, values = _stack(rows)
+    if rank < 1:
+        raise ValueError("rank must be positive")
+    steps = np.diff(time)
+    if len(steps) < 2 or not np.allclose(steps, steps[0], rtol=1e-7, atol=1e-12):
+        raise ValueError("matrix-pencil estimation requires a uniform time grid")
+    differenced = np.diff(values, axis=1)
+    sample_count = differenced.shape[1]
+    rows_count = pencil_rows or sample_count // 2
+    rows_count = int(np.clip(rows_count, rank + 1, sample_count - rank))
+    columns = sample_count - rows_count
+    if columns < rank:
+        raise ValueError("insufficient samples for the requested pencil rank")
+
+    h0_blocks = []
+    h1_blocks = []
+    for signal in differenced:
+        h0_blocks.append(np.column_stack([signal[j : j + rows_count] for j in range(columns)]))
+        h1_blocks.append(np.column_stack([signal[j + 1 : j + rows_count + 1] for j in range(columns)]))
+    h0 = np.concatenate(h0_blocks, axis=1)
+    h1 = np.concatenate(h1_blocks, axis=1)
+    u, singular, vh = np.linalg.svd(h0, full_matrices=False)
+    if len(singular) < rank or singular[rank - 1] <= np.finfo(float).eps * singular[0]:
+        return {"success": False, "reason": "rank_deficient_hankel", "rates": []}
+    ur = u[:, :rank]
+    vr = vh[:rank, :].T
+    reduced_shift = ur.T @ h1 @ vr @ np.diag(1.0 / singular[:rank])
+    poles = np.linalg.eigvals(reduced_shift)
+    admissible = np.isreal(poles) & (np.real(poles) > 0.0) & (np.real(poles) < 1.0)
+    if int(np.sum(admissible)) != rank:
+        return {
+            "success": False,
+            "reason": "nondecaying_or_complex_poles",
+            "poles": [[float(value.real), float(value.imag)] for value in poles],
+            "rates": [],
+        }
+    rates = np.sort(-np.log(np.real(poles)) / float(steps[0]))
+    _, prediction = _conditional_fit(time, values, rates)
+    residual = prediction - values
+    sse = float(np.sum(residual**2))
+    observations = int(values.size)
+    parameters = rank + len(rows) * (rank + 1)
+    likelihood_term = observations * np.log(max(sse / observations, 1e-300))
+    aic = likelihood_term + 2.0 * parameters
+    denominator = observations - parameters - 1
+    aicc = aic + (2.0 * parameters * (parameters + 1) / denominator) if denominator > 0 else math.inf
+    bic = likelihood_term + parameters * np.log(observations)
+    return {
+        "success": True,
+        "reason": "admissible_shared_real_poles",
+        "rates": rates.tolist(),
+        "poles": np.exp(-rates * float(steps[0])).tolist(),
+        "sse": sse,
+        "parameter_count": parameters,
+        "aic": float(aic),
+        "aicc": float(aicc),
+        "bic": float(bic),
+        "minimum_rate_ratio": float(np.min(rates[1:] / rates[:-1])) if rank > 1 else math.inf,
+        "hankel_singular_values": singular.tolist(),
+        "pencil_rows": rows_count,
+        "n_curves": len(rows),
+        "n_observations": observations,
+    }
+
+
+def matrix_pencil_order_selection(
+    curves: Iterable[CurveRecord],
+    ranks: Iterable[int] = (1, 2, 3),
+    *,
+    delta_bic: float = 10.0,
+    pencil_rows: int | None = None,
+    criterion: str = "bic",
+    minimum_improvement: float | None = None,
+) -> dict:
+    """Select a matrix-pencil rank by sequential information-criterion improvement.
+
+    ``criterion`` may be ``aic``, ``aicc``, or ``bic``.  The historical
+    ``delta_bic`` argument remains the default threshold for backward
+    compatibility; new callers can use ``minimum_improvement`` explicitly.
+    """
+    criterion = str(criterion).lower()
+    if criterion not in {"aic", "aicc", "bic"}:
+        raise ValueError("criterion must be one of: aic, aicc, bic")
+    threshold = float(delta_bic if minimum_improvement is None else minimum_improvement)
+    rows = list(curves)
+    records = {
+        str(rank): shared_matrix_pencil(rows, int(rank), pencil_rows=pencil_rows)
+        for rank in ranks
+    }
+    ordered = sorted(int(rank) for rank in records)
+    selected = ordered[0] if records[str(ordered[0])]["success"] else None
+    transitions = []
+    for lower, higher in zip(ordered[:-1], ordered[1:]):
+        low = records[str(lower)]
+        high = records[str(higher)]
+        improvement = float(low[criterion] - high[criterion]) if low["success"] and high["success"] else -math.inf
+        accepted = bool(selected == lower and improvement >= threshold)
+        if accepted:
+            selected = higher
+        transitions.append({
+            "from_rank": lower,
+            "to_rank": higher,
+            "criterion": criterion,
+            "criterion_improvement": improvement,
+            "delta_bic": improvement if criterion == "bic" else None,
+            "accepted": accepted,
+        })
+    return {
+        "selected_rank": selected,
+        "delta_bic": float(delta_bic),
+        "criterion": criterion,
+        "minimum_improvement": threshold,
+        "rank_records": records,
+        "transitions": transitions,
+    }
+
+
+def matrix_pencil_consensus(
+    curves: Iterable[CurveRecord],
+    rank: int = 2,
+    *,
+    delta_bic: float = 10.0,
+    max_log_rate_std: float = 0.15,
+) -> dict:
+    """Audit pole stability across three admissible Hankel aspect ratios."""
+    rows = list(curves)
+    time, _ = _stack(rows)
+    differenced_samples = len(time) - 1
+    candidates = sorted({
+        max(rank + 1, differenced_samples // 3),
+        max(rank + 1, differenced_samples // 2),
+        min(differenced_samples - rank, max(rank + 1, (2 * differenced_samples) // 3)),
+    })
+    records = [
+        {
+            "pencil_rows": pencil_rows,
+            **matrix_pencil_order_selection(
+                rows,
+                ranks=(1, rank),
+                delta_bic=delta_bic,
+                pencil_rows=pencil_rows,
+            ),
+        }
+        for pencil_rows in candidates
+    ]
+    valid = [record for record in records if record["rank_records"][str(rank)]["success"]]
+    selected = [record for record in valid if record["selected_rank"] == rank]
+    if len(valid) >= 2:
+        rate_matrix = np.asarray([record["rank_records"][str(rank)]["rates"] for record in valid])
+        log_rate_std = np.std(np.log(rate_matrix), axis=0, ddof=1)
+        maximum_std = float(np.max(log_rate_std))
+        consensus_rates = np.exp(np.median(np.log(rate_matrix), axis=0)).tolist()
+    else:
+        maximum_std = math.inf
+        consensus_rates = []
+    passes = bool(
+        len(valid) == len(candidates)
+        and len(selected) == len(candidates)
+        and maximum_std <= max_log_rate_std
+    )
+    return {
+        "rank": rank,
+        "candidate_pencil_rows": candidates,
+        "valid_estimators": len(valid),
+        "rank_selected_estimators": len(selected),
+        "maximum_cross_pencil_log_rate_std": maximum_std,
+        "max_log_rate_std": max_log_rate_std,
+        "consensus_rates": consensus_rates,
+        "passes_consensus": passes,
+        "records": records,
+    }
+
+
 def _held_errors(curves: list[CurveRecord], rates: np.ndarray, calibration_fraction: float) -> list[dict]:
     time, values = _stack(curves)
     split = max(4, min(len(time) - 2, int(math.ceil(calibration_fraction * len(time)))))

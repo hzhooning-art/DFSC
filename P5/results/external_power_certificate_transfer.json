@@ -1,0 +1,634 @@
+{
+  "schema": "P5-External-Power-Certificate-Transfer-v1",
+  "design": {
+    "target_channels": 6,
+    "target_samples": 24,
+    "dimensionless_horizon": 16.0,
+    "maximum_calibrated_noise": 0.005,
+    "ar1_classification_threshold": 0.3,
+    "maximum_monotonicity_violation_fraction": 0.25,
+    "thresholds_retuned_on_external_outcomes": false
+  },
+  "summary_by_task": {
+    "pva": {
+      "groups": 1,
+      "scope_eligible": 1,
+      "decisions": {
+        "EVIDENCE_AGAINST_RANK_1": 1
+      }
+    },
+    "kupferdigital": {
+      "groups": 2,
+      "scope_eligible": 0,
+      "decisions": {
+        "INDETERMINATE_SCOPE": 2
+      }
+    },
+    "uci_gas": {
+      "groups": 50,
+      "scope_eligible": 0,
+      "decisions": {
+        "INDETERMINATE_SCOPE": 50
+      }
+    },
+    "uci_hydraulic": {
+      "groups": 3,
+      "scope_eligible": 0,
+      "decisions": {
+        "INDETERMINATE_SCOPE": 3
+      }
+    }
+  },
+  "records": [
+    {
+      "task": "pva",
+      "group": "pva-first-six",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0029723945352606563,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.323738612014163,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 573.1548596664585,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "kupferdigital",
+      "group": "kupfer-block-1",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "outside_monotone_decay_morphology",
+        "noise_proxy": 0.011803852422525083,
+        "residual_lag1": -0.32126793170185414,
+        "monotonicity_violation_fraction": 0.2753623188405797
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "kupferdigital",
+      "group": "kupfer-block-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "outside_monotone_decay_morphology",
+        "noise_proxy": 0.01915136568777117,
+        "residual_lag1": -0.2693219859260106,
+        "monotonicity_violation_fraction": 0.41304347826086957
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-002",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-003",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-004",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-005",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-006",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-007",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-008",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-009",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-010",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-012",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-013",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-014",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-015",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-016",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-017",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-018",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-021",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-022",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-023",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-024",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-025",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-026",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-027",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-028",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-032",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-033",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-034",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-035",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-036",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-037",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-038",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-039",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-041",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-042",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-043",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-044",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-045",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-046",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-047",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-048",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-049",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-050",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-051",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-052",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-053",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-054",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-055",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-056",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-057",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_gas",
+      "group": "sample-058",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "fewer_than_24_observed_samples"
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_hydraulic",
+      "group": "cooler-003",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "outside_monotone_decay_morphology",
+        "noise_proxy": 0.11694602679078012,
+        "residual_lag1": -0.2536143592506886,
+        "monotonicity_violation_fraction": 0.42028985507246375
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_hydraulic",
+      "group": "cooler-020",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "outside_monotone_decay_morphology",
+        "noise_proxy": 0.08138468155121564,
+        "residual_lag1": -0.33946044563174604,
+        "monotonicity_violation_fraction": 0.463768115942029
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    },
+    {
+      "task": "uci_hydraulic",
+      "group": "cooler-100",
+      "source_curves": 6,
+      "scope": {
+        "eligible": false,
+        "reason": "outside_monotone_decay_morphology",
+        "noise_proxy": 0.052978075936870324,
+        "residual_lag1": -0.4501377426863787,
+        "monotonicity_violation_fraction": 0.3695652173913043
+      },
+      "decision": "INDETERMINATE_SCOPE"
+    }
+  ],
+  "claim_boundary": "This is retrospective frozen-rule transfer because all four public tasks predate Stage 69. Resampling standardizes representation but does not create new observations. Scope refusal is a result and must not be removed from the denominator.",
+  "record_storage": "Complete group-level transfer records included."
+}

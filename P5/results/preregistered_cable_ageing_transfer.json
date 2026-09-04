@@ -1,0 +1,65 @@
+{
+  "schema": "P5-Preregistered-Cable-Ageing-Transfer-v1",
+  "contract_sha256": "4a72cd0480a2cf67a5915327a77aaa77818e531a7356078b7281f1aee7d18c33",
+  "runner_sha256": "71dcff162d2fce0b708a8864d2fd049dd747c4448abe940b427e28cc877f6e05",
+  "source_sha256": "80640dfce1efe73888fb60f1e7c5624fa35b8eb1b5e63ff16db1bffe888e6bfc",
+  "thresholds_retuned_after_observing_outcome": false,
+  "source_curve_count": 6,
+  "standardized_curve_count": 6,
+  "extraction_audit": [
+    {
+      "unit": "hard_sir_unaged",
+      "raw_points": 2758,
+      "finite_unique_points": 2758
+    },
+    {
+      "unit": "hard_sir_aged_compression",
+      "raw_points": 2757,
+      "finite_unique_points": 2757
+    },
+    {
+      "unit": "soft_sir_unaged",
+      "raw_points": 2757,
+      "finite_unique_points": 2757
+    },
+    {
+      "unit": "soft_sir_aged_compression",
+      "raw_points": 2757,
+      "finite_unique_points": 2757
+    },
+    {
+      "unit": "semicon_sir_unaged",
+      "raw_points": 2757,
+      "finite_unique_points": 2757
+    },
+    {
+      "unit": "semicon_sir_aged_compression",
+      "raw_points": 2757,
+      "finite_unique_points": 2757
+    }
+  ],
+  "record": {
+    "task": "cable_ageing",
+    "group": "cable-ageing-all-six",
+    "source_curves": 6,
+    "scope": {
+      "eligible": true,
+      "noise_proxy": 0.0018101776497295643,
+      "declared_noise_bin": 0.005,
+      "residual_lag1": -0.3556922807085368,
+      "declared_noise_model": "white",
+      "monotonicity_violation_fraction": 0.0
+    },
+    "decision": "EVIDENCE_AGAINST_RANK_1",
+    "certificate_qualified_for_rank_one": false,
+    "criterion_improvement_rank1_to_rank2": 647.9508228778911,
+    "rank_two_checks": {
+      "strong_bic": true,
+      "admissible_rank_two": true,
+      "separation": true,
+      "local_information": true,
+      "cross_pencil_stability": true
+    }
+  },
+  "claim_boundary": "This is a preregistered first application of the frozen P5 rule to a dataset not previously used in P5. The data were previously analysed in P3, so this is new-to-P5 external transfer, not prospective acquisition or investigator-blind confirmation."
+}

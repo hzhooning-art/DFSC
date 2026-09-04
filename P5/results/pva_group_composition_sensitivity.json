@@ -1,0 +1,1964 @@
+{
+  "schema": "P5-PVA-Group-Composition-Sensitivity-v1",
+  "design": {
+    "available_curves": 9,
+    "curves_per_group": 6,
+    "enumeration": "all_six_curve_subsets_without_replacement",
+    "adapter_or_certificate_retuned": false
+  },
+  "summary": {
+    "groups": 84,
+    "scope_eligible": 84,
+    "decisions": {
+      "EVIDENCE_AGAINST_RANK_1": 84
+    },
+    "declared_noise_bins": {
+      "0.005": 84
+    },
+    "declared_noise_models": {
+      "white": 84
+    },
+    "all_five_rank_two_checks_passed": 84,
+    "criterion_improvement_rank1_to_rank2": {
+      "minimum": 491.2602641296039,
+      "median": 534.2859078606701,
+      "maximum": 596.221801811564
+    }
+  },
+  "records": [
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-2__sample-2-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0029723945352606563,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.323738612014163,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 573.1548596664585,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-2__sample-3-cycle-1",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003100876644060751,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.32166330657091474,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 533.6956098429456,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-2__sample-3-cycle-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003056711522065436,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.34356726779431934,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 525.403194372411,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0030425876880257477,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3489751333729518,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 542.7107707097142,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-3__sample-3-cycle-1",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.002838896417617542,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3129334254218745,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 557.3255005588563,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-3__sample-3-cycle-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0028820900326430045,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3367049306178854,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 547.9009582908149,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-3__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.002845642265279608,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.34188453183863626,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 567.0242277021342,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-1__sample-3-cycle-1__sample-3-cycle-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0031011502935918453,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.33332053285791946,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 518.2208705265864,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-1__sample-3-cycle-1__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003151413359742521,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3375785276451789,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 533.4950010358386,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-1__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0030814607471283733,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3604775361187856,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 525.7884115429075,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-1",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003035113620542968,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3267776247003875,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 590.2267129048415,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0029804572500986624,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3494731179147282,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 581.2385371434244,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.002938702680027728,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.35569795309708063,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 596.221801811564,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-2__sample-3-cycle-1__sample-3-cycle-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0033101366224480354,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3448974882446832,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 556.5836464115526,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-2__sample-3-cycle-1__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003302758899088384,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3500145177886258,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 568.7474739933809,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-2__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0033101366224480354,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3719124723668463,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 561.2403319362011,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003047832318314903,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3386504955431021,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 578.4652983440886,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0030814607471283733,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.34359307041423076,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 591.1261141764081,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-3__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0030170509363537474,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.36735821505070304,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 582.8129430156183,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-1-cycle-3__sample-3-cycle-1__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003336190695992967,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.36063936356740656,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 562.5401518911497,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-2-cycle-1__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-1",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0031155388773350624,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3232214693524772,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 533.0362249172006,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-2-cycle-1__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0031112359501723466,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.34541193450367824,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 524.5887245427622,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-2-cycle-1__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0030422233234294813,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.35108061554016956,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 541.5480191081864,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-2-cycle-1__sample-2-cycle-2__sample-3-cycle-1__sample-3-cycle-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003190244084151983,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3413421019961142,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 499.1634571977917,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-2-cycle-1__sample-2-cycle-2__sample-3-cycle-1__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0031010155502771736,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.346033271592355,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 513.7006324249771,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-2-cycle-1__sample-2-cycle-2__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003148489514081049,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3674609804927028,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 506.40773540150064,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-2-cycle-1__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0030352497958045185,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.33496911832118986,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 518.2352797802599,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-2-cycle-1__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0030007824676344715,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.33944336955703647,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 533.2385901627257,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-2-cycle-1__sample-2-cycle-3__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0029824991547754186,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.36265558179121954,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 525.5046235042997,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-2-cycle-1__sample-3-cycle-1__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0032825172425955283,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3565798998330598,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 503.42770276067563,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003243634711161396,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3466290102071765,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 556.8762283424577,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0031010155502771736,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.35197262658588413,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 568.9472567684758,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003145694743988818,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.37415674805681803,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 561.2485903723092,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-2-cycle-2__sample-3-cycle-1__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0034436691845345824,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.36713488167831615,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 544.0869134190268,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-2__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0032461941735850825,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.36265903146156037,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 563.3636551931189,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-1",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0030194377870530185,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.27005525879870984,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 543.3185573954443,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0030403754798397644,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.29642330394621047,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 535.9113995693803,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003065011928331799,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.2974620652785832,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 553.0796000176613,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-2__sample-3-cycle-1__sample-3-cycle-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003251758655968398,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.2974375193612614,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 506.94383413195226,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-2__sample-3-cycle-1__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003148489514081049,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.2984462630230607,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 521.8494467864463,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-2__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0032054115293829928,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3237489889015721,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 515.7289967699504,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0031113678925097413,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.28618963669433795,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 526.3787754367581,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0030609858844295327,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.28604128841563176,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 541.6741729442563,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-3__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003056711522065436,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.31386851327512594,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 534.8762058783947,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-3__sample-2-cycle-1__sample-3-cycle-1__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0033820338738314608,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3127993457059986,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 510.0420991530917,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-3__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0031805273367447526,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3018234053698359,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 567.7784253535041,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-3__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0032387216731509186,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3033417691426875,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 580.0964120970136,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-3__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0031577150190951466,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3297071820975598,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 573.6827754901356,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-3__sample-2-cycle-2__sample-3-cycle-1__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003445060096288708,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3268259782960612,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 553.280376624343,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-1-cycle-3__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003336190695992967,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.31806491684382077,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 572.6013992472275,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-2-cycle-1__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003200448379441334,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.2987200067340971,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 507.45766920588517,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-2-cycle-1__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003128797995308796,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.2998770096242093,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 522.1432919705505,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-2-cycle-1__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0031569027405823572,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3255629737287429,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 515.96363267097,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-2-cycle-1__sample-2-cycle-2__sample-3-cycle-1__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003332060172195438,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3232243548414481,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 493.7602243876611,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-2-cycle-1__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003145013353253258,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.31437961285091465,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 510.9419873905341,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-1__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0033612066211097494,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.32853859898122045,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 554.6654418234698,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-1",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0032053003716785377,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.33984090002440004,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 540.0012652264935,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003232156308297318,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3632516886164165,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 532.1585565451836,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003055009679723094,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.37115648614125935,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 549.386477356398,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-2__sample-3-cycle-1__sample-3-cycle-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0034388263237137857,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.35706551677685927,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 504.37536205853553,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-2__sample-3-cycle-1__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0033222202040560944,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3634805930979905,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 519.4069768153701,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-2__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0033400621179951497,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.386042671230033,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 512.7204961933774,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0031972875845759905,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3515693571629292,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 523.9373682496906,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0030923400682830913,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3579917503309577,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 539.3464790523125,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-3__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003145694743988818,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.38254141009131387,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 532.0979539447416,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-1__sample-3-cycle-1__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0034041802593212864,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.37390773660636706,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 508.14072541857036,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0033960563145142846,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.363210885248482,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 564.5494358368102,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0033400621179951497,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3704682762435794,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 577.1683660527905,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0033991198443714173,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3938700813616046,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 570.0339261555129,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-2__sample-3-cycle-1__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0035755293806571348,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.38435719808582447,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 550.5893445205733,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-2__sample-1-cycle-3__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0033991198443714173,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3809945569227563,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 570.3206553564168,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-2__sample-2-cycle-1__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003271053637923992,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.35900979600033756,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 504.5942087332119,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-2__sample-2-cycle-1__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0031054307223807413,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.36569763951613266,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 519.5148128058354,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-2__sample-2-cycle-1__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003192589615557542,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.38856351759703145,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 512.6081694340294,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-2__sample-2-cycle-1__sample-2-cycle-2__sample-3-cycle-1__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0033379523717296934,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.37981308328372937,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 491.2602641296039,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-2__sample-2-cycle-1__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0032773697235208127,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3761750391525369,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 508.79288124862023,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-2__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0033379523717296934,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3866716380045734,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 551.5400302265758,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-2",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003339529951960768,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.31456689709505226,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 515.3176377756449,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0031806821529052273,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.31755605238349016,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 530.1355717080099,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0032141537158938503,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.34489304034176743,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 524.4401735631188,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-2__sample-3-cycle-1__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003480209140795298,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.34006373578586685,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 500.5447425664354,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-3__sample-2-cycle-1__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.003296576181665291,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3321684623585742,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 517.8692298797677,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-1-cycle-3__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0036087649865620018,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3464104533949903,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 564.1321765130045,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    },
+    {
+      "task": "pva",
+      "group": "sample-2-cycle-1__sample-2-cycle-2__sample-2-cycle-3__sample-3-cycle-1__sample-3-cycle-2__sample-3-cycle-3",
+      "source_curves": 6,
+      "scope": {
+        "eligible": true,
+        "noise_proxy": 0.0033632056758380736,
+        "declared_noise_bin": 0.005,
+        "residual_lag1": -0.3420347505694891,
+        "declared_noise_model": "white",
+        "monotonicity_violation_fraction": 0.0
+      },
+      "decision": "EVIDENCE_AGAINST_RANK_1",
+      "certificate_qualified_for_rank_one": false,
+      "criterion_improvement_rank1_to_rank2": 501.6467219725979,
+      "rank_two_checks": {
+        "strong_bic": true,
+        "admissible_rank_two": true,
+        "separation": true,
+        "local_information": true,
+        "cross_pencil_stability": true
+      }
+    }
+  ],
+  "claim_boundary": "The 84 groups are strongly overlapping subsets of one nine-curve PVA dataset. They measure composition sensitivity of a retrospective result and are not independent replications or prospective confirmation.",
+  "record_storage": "Complete subset-level records included."
+}

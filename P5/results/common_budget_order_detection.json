@@ -1,0 +1,1160 @@
+{
+  "schema": "P5-Common-Budget-Order-Detection-v1",
+  "design": {
+    "true_ranks": [
+      1,
+      2
+    ],
+    "horizons": [
+      4.0,
+      8.0,
+      16.0
+    ],
+    "samples_per_channel": [
+      24,
+      48
+    ],
+    "noise_std": [
+      0.001,
+      0.005
+    ],
+    "noise_models": [
+      "white",
+      "ar1"
+    ],
+    "ar1_rho": 0.65,
+    "rank_two_log_rate_gaps": [
+      0.08,
+      0.32
+    ],
+    "channels": 6,
+    "seeds_per_cell": 12,
+    "same_observations_for_every_method": true
+  },
+  "summary": {
+    "matrix_pencil_aic": {
+      "trials": 864,
+      "coverage": 1.0,
+      "overall_accuracy_abstention_as_error": 0.6458333333333334,
+      "selective_accuracy": 0.6458333333333334,
+      "selective_risk": 0.35416666666666663,
+      "false_order_elevation_rate": 0.017361111111111112,
+      "false_order_reduction_rate": 0.5225694444444444,
+      "rank_two_detection_rate": 0.4774305555555556,
+      "abstention_rate": 0.0,
+      "median_runtime_seconds": 0.0009233499949914403
+    },
+    "matrix_pencil_aicc": {
+      "trials": 864,
+      "coverage": 1.0,
+      "overall_accuracy_abstention_as_error": 0.6458333333333334,
+      "selective_accuracy": 0.6458333333333334,
+      "selective_risk": 0.35416666666666663,
+      "false_order_elevation_rate": 0.013888888888888888,
+      "false_order_reduction_rate": 0.5243055555555556,
+      "rank_two_detection_rate": 0.4756944444444444,
+      "abstention_rate": 0.0,
+      "median_runtime_seconds": 0.0008121499995468184
+    },
+    "matrix_pencil_bic": {
+      "trials": 864,
+      "coverage": 1.0,
+      "overall_accuracy_abstention_as_error": 0.6412037037037037,
+      "selective_accuracy": 0.6412037037037037,
+      "selective_risk": 0.3587962962962963,
+      "false_order_elevation_rate": 0.0,
+      "false_order_reduction_rate": 0.5381944444444444,
+      "rank_two_detection_rate": 0.4618055555555556,
+      "abstention_rate": 0.0,
+      "median_runtime_seconds": 0.000800199995865114
+    },
+    "matrix_pencil_strong_bic": {
+      "trials": 864,
+      "coverage": 1.0,
+      "overall_accuracy_abstention_as_error": 0.6365740740740741,
+      "selective_accuracy": 0.6365740740740741,
+      "selective_risk": 0.36342592592592593,
+      "false_order_elevation_rate": 0.0,
+      "false_order_reduction_rate": 0.5451388888888888,
+      "rank_two_detection_rate": 0.4548611111111111,
+      "abstention_rate": 0.0,
+      "median_runtime_seconds": 0.0007696000029682182
+    },
+    "cross_pencil_stability": {
+      "trials": 864,
+      "coverage": 0.8425925925925926,
+      "overall_accuracy_abstention_as_error": 0.4791666666666667,
+      "selective_accuracy": 0.5686813186813187,
+      "selective_risk": 0.43131868131868134,
+      "false_order_elevation_rate": 0.0,
+      "false_order_reduction_rate": 0.5451388888888888,
+      "rank_two_detection_rate": 0.21875,
+      "abstention_rate": 0.1574074074074074,
+      "median_runtime_seconds": 0.0032907499989960343
+    },
+    "selective_detector": {
+      "trials": 864,
+      "coverage": 0.8356481481481481,
+      "overall_accuracy_abstention_as_error": 0.47800925925925924,
+      "selective_accuracy": 0.5720221606648199,
+      "selective_risk": 0.4279778393351801,
+      "false_order_elevation_rate": 0.0,
+      "false_order_reduction_rate": 0.5364583333333334,
+      "rank_two_detection_rate": 0.21875,
+      "abstention_rate": 0.16435185185185186,
+      "median_runtime_seconds": 0.0032907499989960343
+    }
+  },
+  "factor_summary": {
+    "true_rank": {
+      "1": {
+        "matrix_pencil_aic": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.9826388888888888,
+          "selective_accuracy": 0.9826388888888888,
+          "selective_risk": 0.01736111111111116,
+          "false_order_elevation_rate": 0.017361111111111112,
+          "false_order_reduction_rate": null,
+          "rank_two_detection_rate": null,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0009266999986721203
+        },
+        "matrix_pencil_aicc": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.9861111111111112,
+          "selective_accuracy": 0.9861111111111112,
+          "selective_risk": 0.01388888888888884,
+          "false_order_elevation_rate": 0.013888888888888888,
+          "false_order_reduction_rate": null,
+          "rank_two_detection_rate": null,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007760499938740395
+        },
+        "matrix_pencil_bic": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 1.0,
+          "selective_accuracy": 1.0,
+          "selective_risk": 0.0,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": null,
+          "rank_two_detection_rate": null,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.000752199994167313
+        },
+        "matrix_pencil_strong_bic": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 1.0,
+          "selective_accuracy": 1.0,
+          "selective_risk": 0.0,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": null,
+          "rank_two_detection_rate": null,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007626500082551502
+        },
+        "cross_pencil_stability": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 1.0,
+          "selective_accuracy": 1.0,
+          "selective_risk": 0.0,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": null,
+          "rank_two_detection_rate": null,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.003317750000860542
+        },
+        "selective_detector": {
+          "trials": 288,
+          "coverage": 0.9965277777777778,
+          "overall_accuracy_abstention_as_error": 0.9965277777777778,
+          "selective_accuracy": 1.0,
+          "selective_risk": 0.0,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": null,
+          "rank_two_detection_rate": null,
+          "abstention_rate": 0.003472222222222222,
+          "median_runtime_seconds": 0.003317750000860542
+        }
+      },
+      "2": {
+        "matrix_pencil_aic": {
+          "trials": 576,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.4774305555555556,
+          "selective_accuracy": 0.4774305555555556,
+          "selective_risk": 0.5225694444444444,
+          "false_order_elevation_rate": null,
+          "false_order_reduction_rate": 0.5225694444444444,
+          "rank_two_detection_rate": 0.4774305555555556,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0008191000015358441
+        },
+        "matrix_pencil_aicc": {
+          "trials": 576,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.4756944444444444,
+          "selective_accuracy": 0.4756944444444444,
+          "selective_risk": 0.5243055555555556,
+          "false_order_elevation_rate": null,
+          "false_order_reduction_rate": 0.5243055555555556,
+          "rank_two_detection_rate": 0.4756944444444444,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0008121499995468184
+        },
+        "matrix_pencil_bic": {
+          "trials": 576,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.4618055555555556,
+          "selective_accuracy": 0.4618055555555556,
+          "selective_risk": 0.5381944444444444,
+          "false_order_elevation_rate": null,
+          "false_order_reduction_rate": 0.5381944444444444,
+          "rank_two_detection_rate": 0.4618055555555556,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.000800199995865114
+        },
+        "matrix_pencil_strong_bic": {
+          "trials": 576,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.4548611111111111,
+          "selective_accuracy": 0.4548611111111111,
+          "selective_risk": 0.5451388888888888,
+          "false_order_elevation_rate": null,
+          "false_order_reduction_rate": 0.5451388888888888,
+          "rank_two_detection_rate": 0.4548611111111111,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007718499982729554
+        },
+        "cross_pencil_stability": {
+          "trials": 576,
+          "coverage": 0.7638888888888888,
+          "overall_accuracy_abstention_as_error": 0.21875,
+          "selective_accuracy": 0.2863636363636364,
+          "selective_risk": 0.7136363636363636,
+          "false_order_elevation_rate": null,
+          "false_order_reduction_rate": 0.5451388888888888,
+          "rank_two_detection_rate": 0.21875,
+          "abstention_rate": 0.2361111111111111,
+          "median_runtime_seconds": 0.0032578000027569942
+        },
+        "selective_detector": {
+          "trials": 576,
+          "coverage": 0.7552083333333334,
+          "overall_accuracy_abstention_as_error": 0.21875,
+          "selective_accuracy": 0.2896551724137931,
+          "selective_risk": 0.7103448275862069,
+          "false_order_elevation_rate": null,
+          "false_order_reduction_rate": 0.5364583333333334,
+          "rank_two_detection_rate": 0.21875,
+          "abstention_rate": 0.24479166666666666,
+          "median_runtime_seconds": 0.0032578000027569942
+        }
+      }
+    },
+    "noise_model": {
+      "ar1": {
+        "matrix_pencil_aic": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.7430555555555556,
+          "selective_accuracy": 0.7430555555555556,
+          "selective_risk": 0.2569444444444444,
+          "false_order_elevation_rate": 0.034722222222222224,
+          "false_order_reduction_rate": 0.3680555555555556,
+          "rank_two_detection_rate": 0.6319444444444444,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0008193499961635098
+        },
+        "matrix_pencil_aicc": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.7430555555555556,
+          "selective_accuracy": 0.7430555555555556,
+          "selective_risk": 0.2569444444444444,
+          "false_order_elevation_rate": 0.027777777777777776,
+          "false_order_reduction_rate": 0.3715277777777778,
+          "rank_two_detection_rate": 0.6284722222222222,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0008130499991239049
+        },
+        "matrix_pencil_bic": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.7337962962962963,
+          "selective_accuracy": 0.7337962962962963,
+          "selective_risk": 0.2662037037037037,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.3993055555555556,
+          "rank_two_detection_rate": 0.6006944444444444,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0008087000023806468
+        },
+        "matrix_pencil_strong_bic": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.7245370370370371,
+          "selective_accuracy": 0.7245370370370371,
+          "selective_risk": 0.2754629629629629,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.4131944444444444,
+          "rank_two_detection_rate": 0.5868055555555556,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.000774199994339142
+        },
+        "cross_pencil_stability": {
+          "trials": 432,
+          "coverage": 0.7916666666666666,
+          "overall_accuracy_abstention_as_error": 0.5162037037037037,
+          "selective_accuracy": 0.652046783625731,
+          "selective_risk": 0.347953216374269,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.4131944444444444,
+          "rank_two_detection_rate": 0.2743055555555556,
+          "abstention_rate": 0.20833333333333334,
+          "median_runtime_seconds": 0.003315049994853325
+        },
+        "selective_detector": {
+          "trials": 432,
+          "coverage": 0.7777777777777778,
+          "overall_accuracy_abstention_as_error": 0.5138888888888888,
+          "selective_accuracy": 0.6607142857142857,
+          "selective_risk": 0.3392857142857143,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.3958333333333333,
+          "rank_two_detection_rate": 0.2743055555555556,
+          "abstention_rate": 0.2222222222222222,
+          "median_runtime_seconds": 0.003315049994853325
+        }
+      },
+      "white": {
+        "matrix_pencil_aic": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.5486111111111112,
+          "selective_accuracy": 0.5486111111111112,
+          "selective_risk": 0.45138888888888884,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.6770833333333334,
+          "rank_two_detection_rate": 0.3229166666666667,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0009238999991794117
+        },
+        "matrix_pencil_aicc": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.5486111111111112,
+          "selective_accuracy": 0.5486111111111112,
+          "selective_risk": 0.45138888888888884,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.6770833333333334,
+          "rank_two_detection_rate": 0.3229166666666667,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007789999945089221
+        },
+        "matrix_pencil_bic": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.5486111111111112,
+          "selective_accuracy": 0.5486111111111112,
+          "selective_risk": 0.45138888888888884,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.6770833333333334,
+          "rank_two_detection_rate": 0.3229166666666667,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007721999936620705
+        },
+        "matrix_pencil_strong_bic": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.5486111111111112,
+          "selective_accuracy": 0.5486111111111112,
+          "selective_risk": 0.45138888888888884,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.6770833333333334,
+          "rank_two_detection_rate": 0.3229166666666667,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007559000077890232
+        },
+        "cross_pencil_stability": {
+          "trials": 432,
+          "coverage": 0.8935185185185185,
+          "overall_accuracy_abstention_as_error": 0.44212962962962965,
+          "selective_accuracy": 0.4948186528497409,
+          "selective_risk": 0.5051813471502591,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.6770833333333334,
+          "rank_two_detection_rate": 0.16319444444444445,
+          "abstention_rate": 0.10648148148148148,
+          "median_runtime_seconds": 0.0032564499997533858
+        },
+        "selective_detector": {
+          "trials": 432,
+          "coverage": 0.8935185185185185,
+          "overall_accuracy_abstention_as_error": 0.44212962962962965,
+          "selective_accuracy": 0.4948186528497409,
+          "selective_risk": 0.5051813471502591,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.6770833333333334,
+          "rank_two_detection_rate": 0.16319444444444445,
+          "abstention_rate": 0.10648148148148148,
+          "median_runtime_seconds": 0.0032564499997533858
+        }
+      }
+    },
+    "noise_std": {
+      "0.001": {
+        "matrix_pencil_aic": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.8078703703703703,
+          "selective_accuracy": 0.8078703703703703,
+          "selective_risk": 0.19212962962962965,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.2881944444444444,
+          "rank_two_detection_rate": 0.7118055555555556,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0009266499982913956
+        },
+        "matrix_pencil_aicc": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.8078703703703703,
+          "selective_accuracy": 0.8078703703703703,
+          "selective_risk": 0.19212962962962965,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.2881944444444444,
+          "rank_two_detection_rate": 0.7118055555555556,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007789999945089221
+        },
+        "matrix_pencil_bic": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.8032407407407407,
+          "selective_accuracy": 0.8032407407407407,
+          "selective_risk": 0.1967592592592593,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.2951388888888889,
+          "rank_two_detection_rate": 0.7048611111111112,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007679499976802617
+        },
+        "matrix_pencil_strong_bic": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.7962962962962963,
+          "selective_accuracy": 0.7962962962962963,
+          "selective_risk": 0.20370370370370372,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.3055555555555556,
+          "rank_two_detection_rate": 0.6944444444444444,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007725999967078678
+        },
+        "cross_pencil_stability": {
+          "trials": 432,
+          "coverage": 0.7777777777777778,
+          "overall_accuracy_abstention_as_error": 0.5740740740740741,
+          "selective_accuracy": 0.7380952380952381,
+          "selective_risk": 0.26190476190476186,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.3055555555555556,
+          "rank_two_detection_rate": 0.3611111111111111,
+          "abstention_rate": 0.2222222222222222,
+          "median_runtime_seconds": 0.003308700004708953
+        },
+        "selective_detector": {
+          "trials": 432,
+          "coverage": 0.7685185185185185,
+          "overall_accuracy_abstention_as_error": 0.5740740740740741,
+          "selective_accuracy": 0.7469879518072289,
+          "selective_risk": 0.2530120481927711,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.2916666666666667,
+          "rank_two_detection_rate": 0.3611111111111111,
+          "abstention_rate": 0.23148148148148148,
+          "median_runtime_seconds": 0.003308700004708953
+        }
+      },
+      "0.005": {
+        "matrix_pencil_aic": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.4837962962962963,
+          "selective_accuracy": 0.4837962962962963,
+          "selective_risk": 0.5162037037037037,
+          "false_order_elevation_rate": 0.034722222222222224,
+          "false_order_reduction_rate": 0.7569444444444444,
+          "rank_two_detection_rate": 0.24305555555555555,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.000811099998827558
+        },
+        "matrix_pencil_aicc": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.4837962962962963,
+          "selective_accuracy": 0.4837962962962963,
+          "selective_risk": 0.5162037037037037,
+          "false_order_elevation_rate": 0.027777777777777776,
+          "false_order_reduction_rate": 0.7604166666666666,
+          "rank_two_detection_rate": 0.23958333333333334,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0008126499960781075
+        },
+        "matrix_pencil_bic": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.4791666666666667,
+          "selective_accuracy": 0.4791666666666667,
+          "selective_risk": 0.5208333333333333,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.78125,
+          "rank_two_detection_rate": 0.21875,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.000800199995865114
+        },
+        "matrix_pencil_strong_bic": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.47685185185185186,
+          "selective_accuracy": 0.47685185185185186,
+          "selective_risk": 0.5231481481481481,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.7847222222222222,
+          "rank_two_detection_rate": 0.2152777777777778,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007696000029682182
+        },
+        "cross_pencil_stability": {
+          "trials": 432,
+          "coverage": 0.9074074074074074,
+          "overall_accuracy_abstention_as_error": 0.38425925925925924,
+          "selective_accuracy": 0.42346938775510207,
+          "selective_risk": 0.5765306122448979,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.7847222222222222,
+          "rank_two_detection_rate": 0.0763888888888889,
+          "abstention_rate": 0.09259259259259259,
+          "median_runtime_seconds": 0.0032564499997533858
+        },
+        "selective_detector": {
+          "trials": 432,
+          "coverage": 0.9027777777777778,
+          "overall_accuracy_abstention_as_error": 0.3819444444444444,
+          "selective_accuracy": 0.4230769230769231,
+          "selective_risk": 0.5769230769230769,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.78125,
+          "rank_two_detection_rate": 0.0763888888888889,
+          "abstention_rate": 0.09722222222222222,
+          "median_runtime_seconds": 0.0032564499997533858
+        }
+      }
+    },
+    "horizon": {
+      "16.0": {
+        "matrix_pencil_aic": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.7604166666666666,
+          "selective_accuracy": 0.7604166666666666,
+          "selective_risk": 0.23958333333333337,
+          "false_order_elevation_rate": 0.020833333333333332,
+          "false_order_reduction_rate": 0.3489583333333333,
+          "rank_two_detection_rate": 0.6510416666666666,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.000817599990114104
+        },
+        "matrix_pencil_aicc": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.7604166666666666,
+          "selective_accuracy": 0.7604166666666666,
+          "selective_risk": 0.23958333333333337,
+          "false_order_elevation_rate": 0.020833333333333332,
+          "false_order_reduction_rate": 0.3489583333333333,
+          "rank_two_detection_rate": 0.6510416666666666,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0008121499995468184
+        },
+        "matrix_pencil_bic": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.7638888888888888,
+          "selective_accuracy": 0.7638888888888888,
+          "selective_risk": 0.23611111111111116,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.3541666666666667,
+          "rank_two_detection_rate": 0.6458333333333334,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007721999936620705
+        },
+        "matrix_pencil_strong_bic": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.7638888888888888,
+          "selective_accuracy": 0.7638888888888888,
+          "selective_risk": 0.23611111111111116,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.3541666666666667,
+          "rank_two_detection_rate": 0.6458333333333334,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007724999959464185
+        },
+        "cross_pencil_stability": {
+          "trials": 288,
+          "coverage": 0.8472222222222222,
+          "overall_accuracy_abstention_as_error": 0.6111111111111112,
+          "selective_accuracy": 0.7213114754098361,
+          "selective_risk": 0.2786885245901639,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.3541666666666667,
+          "rank_two_detection_rate": 0.4166666666666667,
+          "abstention_rate": 0.1527777777777778,
+          "median_runtime_seconds": 0.0032564499997533858
+        },
+        "selective_detector": {
+          "trials": 288,
+          "coverage": 0.84375,
+          "overall_accuracy_abstention_as_error": 0.6076388888888888,
+          "selective_accuracy": 0.720164609053498,
+          "selective_risk": 0.279835390946502,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.3541666666666667,
+          "rank_two_detection_rate": 0.4166666666666667,
+          "abstention_rate": 0.15625,
+          "median_runtime_seconds": 0.0032564499997533858
+        }
+      },
+      "4.0": {
+        "matrix_pencil_aic": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.5381944444444444,
+          "selective_accuracy": 0.5381944444444444,
+          "selective_risk": 0.4618055555555556,
+          "false_order_elevation_rate": 0.020833333333333332,
+          "false_order_reduction_rate": 0.6822916666666666,
+          "rank_two_detection_rate": 0.3177083333333333,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0009253999960492365
+        },
+        "matrix_pencil_aicc": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.5347222222222222,
+          "selective_accuracy": 0.5347222222222222,
+          "selective_risk": 0.4652777777777778,
+          "false_order_elevation_rate": 0.020833333333333332,
+          "false_order_reduction_rate": 0.6875,
+          "rank_two_detection_rate": 0.3125,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007721999936620705
+        },
+        "matrix_pencil_bic": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.5208333333333334,
+          "selective_accuracy": 0.5208333333333334,
+          "selective_risk": 0.47916666666666663,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.71875,
+          "rank_two_detection_rate": 0.28125,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007745499970042147
+        },
+        "matrix_pencil_strong_bic": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.5104166666666666,
+          "selective_accuracy": 0.5104166666666666,
+          "selective_risk": 0.48958333333333337,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.734375,
+          "rank_two_detection_rate": 0.265625,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007698499975958839
+        },
+        "cross_pencil_stability": {
+          "trials": 288,
+          "coverage": 0.8263888888888888,
+          "overall_accuracy_abstention_as_error": 0.3368055555555556,
+          "selective_accuracy": 0.40756302521008403,
+          "selective_risk": 0.592436974789916,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.734375,
+          "rank_two_detection_rate": 0.005208333333333333,
+          "abstention_rate": 0.1736111111111111,
+          "median_runtime_seconds": 0.0033012999992934056
+        },
+        "selective_detector": {
+          "trials": 288,
+          "coverage": 0.8125,
+          "overall_accuracy_abstention_as_error": 0.3368055555555556,
+          "selective_accuracy": 0.41452991452991456,
+          "selective_risk": 0.5854700854700854,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.7135416666666666,
+          "rank_two_detection_rate": 0.005208333333333333,
+          "abstention_rate": 0.1875,
+          "median_runtime_seconds": 0.0033012999992934056
+        }
+      },
+      "8.0": {
+        "matrix_pencil_aic": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.6388888888888888,
+          "selective_accuracy": 0.6388888888888888,
+          "selective_risk": 0.36111111111111116,
+          "false_order_elevation_rate": 0.010416666666666666,
+          "false_order_reduction_rate": 0.5364583333333334,
+          "rank_two_detection_rate": 0.4635416666666667,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0008100499981082976
+        },
+        "matrix_pencil_aicc": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.6423611111111112,
+          "selective_accuracy": 0.6423611111111112,
+          "selective_risk": 0.35763888888888884,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.5364583333333334,
+          "rank_two_detection_rate": 0.4635416666666667,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007756499908282422
+        },
+        "matrix_pencil_bic": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.6388888888888888,
+          "selective_accuracy": 0.6388888888888888,
+          "selective_risk": 0.36111111111111116,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.5416666666666666,
+          "rank_two_detection_rate": 0.4583333333333333,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0008029000018723309
+        },
+        "matrix_pencil_strong_bic": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.6354166666666666,
+          "selective_accuracy": 0.6354166666666666,
+          "selective_risk": 0.36458333333333337,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.546875,
+          "rank_two_detection_rate": 0.453125,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007626500082551502
+        },
+        "cross_pencil_stability": {
+          "trials": 288,
+          "coverage": 0.8541666666666666,
+          "overall_accuracy_abstention_as_error": 0.4895833333333333,
+          "selective_accuracy": 0.573170731707317,
+          "selective_risk": 0.426829268292683,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.546875,
+          "rank_two_detection_rate": 0.234375,
+          "abstention_rate": 0.14583333333333334,
+          "median_runtime_seconds": 0.0032480000008945353
+        },
+        "selective_detector": {
+          "trials": 288,
+          "coverage": 0.8506944444444444,
+          "overall_accuracy_abstention_as_error": 0.4895833333333333,
+          "selective_accuracy": 0.5755102040816327,
+          "selective_risk": 0.42448979591836733,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.5416666666666666,
+          "rank_two_detection_rate": 0.234375,
+          "abstention_rate": 0.14930555555555555,
+          "median_runtime_seconds": 0.0032480000008945353
+        }
+      }
+    },
+    "samples_per_channel": {
+      "24": {
+        "matrix_pencil_aic": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.6990740740740741,
+          "selective_accuracy": 0.6990740740740741,
+          "selective_risk": 0.30092592592592593,
+          "false_order_elevation_rate": 0.013888888888888888,
+          "false_order_reduction_rate": 0.4444444444444444,
+          "rank_two_detection_rate": 0.5555555555555556,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0006144500002847053
+        },
+        "matrix_pencil_aicc": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.6990740740740741,
+          "selective_accuracy": 0.6990740740740741,
+          "selective_risk": 0.30092592592592593,
+          "false_order_elevation_rate": 0.006944444444444444,
+          "false_order_reduction_rate": 0.4479166666666667,
+          "rank_two_detection_rate": 0.5520833333333334,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0005815000040456653
+        },
+        "matrix_pencil_bic": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.6921296296296297,
+          "selective_accuracy": 0.6921296296296297,
+          "selective_risk": 0.30787037037037035,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.4618055555555556,
+          "rank_two_detection_rate": 0.5381944444444444,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.000574999998207204
+        },
+        "matrix_pencil_strong_bic": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.6875,
+          "selective_accuracy": 0.6875,
+          "selective_risk": 0.3125,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.46875,
+          "rank_two_detection_rate": 0.53125,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0005699999965145253
+        },
+        "cross_pencil_stability": {
+          "trials": 432,
+          "coverage": 0.8148148148148148,
+          "overall_accuracy_abstention_as_error": 0.5023148148148148,
+          "selective_accuracy": 0.6164772727272727,
+          "selective_risk": 0.3835227272727273,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.46875,
+          "rank_two_detection_rate": 0.2534722222222222,
+          "abstention_rate": 0.18518518518518517,
+          "median_runtime_seconds": 0.002368850000493694
+        },
+        "selective_detector": {
+          "trials": 432,
+          "coverage": 0.8055555555555556,
+          "overall_accuracy_abstention_as_error": 0.5,
+          "selective_accuracy": 0.6206896551724138,
+          "selective_risk": 0.3793103448275862,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.4583333333333333,
+          "rank_two_detection_rate": 0.2534722222222222,
+          "abstention_rate": 0.19444444444444445,
+          "median_runtime_seconds": 0.002368850000493694
+        }
+      },
+      "48": {
+        "matrix_pencil_aic": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.5925925925925926,
+          "selective_accuracy": 0.5925925925925926,
+          "selective_risk": 0.40740740740740744,
+          "false_order_elevation_rate": 0.020833333333333332,
+          "false_order_reduction_rate": 0.6006944444444444,
+          "rank_two_detection_rate": 0.3993055555555556,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0009576500015100464
+        },
+        "matrix_pencil_aicc": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.5925925925925926,
+          "selective_accuracy": 0.5925925925925926,
+          "selective_risk": 0.40740740740740744,
+          "false_order_elevation_rate": 0.020833333333333332,
+          "false_order_reduction_rate": 0.6006944444444444,
+          "rank_two_detection_rate": 0.3993055555555556,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0009231000003637746
+        },
+        "matrix_pencil_bic": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.5902777777777778,
+          "selective_accuracy": 0.5902777777777778,
+          "selective_risk": 0.4097222222222222,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.6145833333333334,
+          "rank_two_detection_rate": 0.3854166666666667,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0009145500007434748
+        },
+        "matrix_pencil_strong_bic": {
+          "trials": 432,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.5856481481481481,
+          "selective_accuracy": 0.5856481481481481,
+          "selective_risk": 0.41435185185185186,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.6215277777777778,
+          "rank_two_detection_rate": 0.3784722222222222,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0009108500016736798
+        },
+        "cross_pencil_stability": {
+          "trials": 432,
+          "coverage": 0.8703703703703703,
+          "overall_accuracy_abstention_as_error": 0.45601851851851855,
+          "selective_accuracy": 0.523936170212766,
+          "selective_risk": 0.47606382978723405,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.6215277777777778,
+          "rank_two_detection_rate": 0.1840277777777778,
+          "abstention_rate": 0.12962962962962962,
+          "median_runtime_seconds": 0.003720900000189431
+        },
+        "selective_detector": {
+          "trials": 432,
+          "coverage": 0.8657407407407407,
+          "overall_accuracy_abstention_as_error": 0.45601851851851855,
+          "selective_accuracy": 0.5267379679144385,
+          "selective_risk": 0.4732620320855615,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": 0.6145833333333334,
+          "rank_two_detection_rate": 0.1840277777777778,
+          "abstention_rate": 0.13425925925925927,
+          "median_runtime_seconds": 0.003720900000189431
+        }
+      }
+    },
+    "rate_gap": {
+      "0.08": {
+        "matrix_pencil_aic": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.2569444444444444,
+          "selective_accuracy": 0.2569444444444444,
+          "selective_risk": 0.7430555555555556,
+          "false_order_elevation_rate": null,
+          "false_order_reduction_rate": 0.7430555555555556,
+          "rank_two_detection_rate": 0.2569444444444444,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0008153499948093668
+        },
+        "matrix_pencil_aicc": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.2534722222222222,
+          "selective_accuracy": 0.2534722222222222,
+          "selective_risk": 0.7465277777777778,
+          "false_order_elevation_rate": null,
+          "false_order_reduction_rate": 0.7465277777777778,
+          "rank_two_detection_rate": 0.2534722222222222,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007789999945089221
+        },
+        "matrix_pencil_bic": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.23958333333333334,
+          "selective_accuracy": 0.23958333333333334,
+          "selective_risk": 0.7604166666666666,
+          "false_order_elevation_rate": null,
+          "false_order_reduction_rate": 0.7604166666666666,
+          "rank_two_detection_rate": 0.23958333333333334,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007611000037286431
+        },
+        "matrix_pencil_strong_bic": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.22916666666666666,
+          "selective_accuracy": 0.22916666666666666,
+          "selective_risk": 0.7708333333333334,
+          "false_order_elevation_rate": null,
+          "false_order_reduction_rate": 0.7708333333333334,
+          "rank_two_detection_rate": 0.22916666666666666,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007706999967922457
+        },
+        "cross_pencil_stability": {
+          "trials": 288,
+          "coverage": 0.8055555555555556,
+          "overall_accuracy_abstention_as_error": 0.034722222222222224,
+          "selective_accuracy": 0.04310344827586207,
+          "selective_risk": 0.9568965517241379,
+          "false_order_elevation_rate": null,
+          "false_order_reduction_rate": 0.7708333333333334,
+          "rank_two_detection_rate": 0.034722222222222224,
+          "abstention_rate": 0.19444444444444445,
+          "median_runtime_seconds": 0.003249000001233071
+        },
+        "selective_detector": {
+          "trials": 288,
+          "coverage": 0.7916666666666666,
+          "overall_accuracy_abstention_as_error": 0.034722222222222224,
+          "selective_accuracy": 0.043859649122807015,
+          "selective_risk": 0.956140350877193,
+          "false_order_elevation_rate": null,
+          "false_order_reduction_rate": 0.7569444444444444,
+          "rank_two_detection_rate": 0.034722222222222224,
+          "abstention_rate": 0.20833333333333334,
+          "median_runtime_seconds": 0.003249000001233071
+        }
+      },
+      "0.32": {
+        "matrix_pencil_aic": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.6979166666666666,
+          "selective_accuracy": 0.6979166666666666,
+          "selective_risk": 0.30208333333333337,
+          "false_order_elevation_rate": null,
+          "false_order_reduction_rate": 0.3020833333333333,
+          "rank_two_detection_rate": 0.6979166666666666,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0008191000015358441
+        },
+        "matrix_pencil_aicc": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.6979166666666666,
+          "selective_accuracy": 0.6979166666666666,
+          "selective_risk": 0.30208333333333337,
+          "false_order_elevation_rate": null,
+          "false_order_reduction_rate": 0.3020833333333333,
+          "rank_two_detection_rate": 0.6979166666666666,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0008134000017889775
+        },
+        "matrix_pencil_bic": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.6840277777777778,
+          "selective_accuracy": 0.6840277777777778,
+          "selective_risk": 0.3159722222222222,
+          "false_order_elevation_rate": null,
+          "false_order_reduction_rate": 0.3159722222222222,
+          "rank_two_detection_rate": 0.6840277777777778,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.000800199995865114
+        },
+        "matrix_pencil_strong_bic": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.6805555555555556,
+          "selective_accuracy": 0.6805555555555556,
+          "selective_risk": 0.3194444444444444,
+          "false_order_elevation_rate": null,
+          "false_order_reduction_rate": 0.3194444444444444,
+          "rank_two_detection_rate": 0.6805555555555556,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007718499982729554
+        },
+        "cross_pencil_stability": {
+          "trials": 288,
+          "coverage": 0.7222222222222222,
+          "overall_accuracy_abstention_as_error": 0.4027777777777778,
+          "selective_accuracy": 0.5576923076923077,
+          "selective_risk": 0.4423076923076923,
+          "false_order_elevation_rate": null,
+          "false_order_reduction_rate": 0.3194444444444444,
+          "rank_two_detection_rate": 0.4027777777777778,
+          "abstention_rate": 0.2777777777777778,
+          "median_runtime_seconds": 0.0032578000027569942
+        },
+        "selective_detector": {
+          "trials": 288,
+          "coverage": 0.71875,
+          "overall_accuracy_abstention_as_error": 0.4027777777777778,
+          "selective_accuracy": 0.5603864734299517,
+          "selective_risk": 0.43961352657004826,
+          "false_order_elevation_rate": null,
+          "false_order_reduction_rate": 0.3159722222222222,
+          "rank_two_detection_rate": 0.4027777777777778,
+          "abstention_rate": 0.28125,
+          "median_runtime_seconds": 0.0032578000027569942
+        }
+      },
+      "rank1_not_applicable": {
+        "matrix_pencil_aic": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.9826388888888888,
+          "selective_accuracy": 0.9826388888888888,
+          "selective_risk": 0.01736111111111116,
+          "false_order_elevation_rate": 0.017361111111111112,
+          "false_order_reduction_rate": null,
+          "rank_two_detection_rate": null,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0009266999986721203
+        },
+        "matrix_pencil_aicc": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 0.9861111111111112,
+          "selective_accuracy": 0.9861111111111112,
+          "selective_risk": 0.01388888888888884,
+          "false_order_elevation_rate": 0.013888888888888888,
+          "false_order_reduction_rate": null,
+          "rank_two_detection_rate": null,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007760499938740395
+        },
+        "matrix_pencil_bic": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 1.0,
+          "selective_accuracy": 1.0,
+          "selective_risk": 0.0,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": null,
+          "rank_two_detection_rate": null,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.000752199994167313
+        },
+        "matrix_pencil_strong_bic": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 1.0,
+          "selective_accuracy": 1.0,
+          "selective_risk": 0.0,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": null,
+          "rank_two_detection_rate": null,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.0007626500082551502
+        },
+        "cross_pencil_stability": {
+          "trials": 288,
+          "coverage": 1.0,
+          "overall_accuracy_abstention_as_error": 1.0,
+          "selective_accuracy": 1.0,
+          "selective_risk": 0.0,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": null,
+          "rank_two_detection_rate": null,
+          "abstention_rate": 0.0,
+          "median_runtime_seconds": 0.003317750000860542
+        },
+        "selective_detector": {
+          "trials": 288,
+          "coverage": 0.9965277777777778,
+          "overall_accuracy_abstention_as_error": 0.9965277777777778,
+          "selective_accuracy": 1.0,
+          "selective_risk": 0.0,
+          "false_order_elevation_rate": 0.0,
+          "false_order_reduction_rate": null,
+          "rank_two_detection_rate": null,
+          "abstention_rate": 0.003472222222222222,
+          "median_runtime_seconds": 0.003317750000860542
+        }
+      }
+    }
+  },
+  "claim_boundary": "This is a controlled common-budget benchmark for one grouped exponential generator. Abstention is reported explicitly and is not removed from overall accuracy.",
+  "record_storage": "Aggregate-only artifact; decisions are deterministically regenerated, while runtime is remeasured."
+}

@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software or its reproducibility artifacts, please cite this archived release."
+title: "P5 Identifiable Memory-Rank Protocol: Code and Reproducibility Artifacts"
+type: software
+version: 0.1.0
+date-released: 2026-08-30
+doi: 10.5281/zenodo.22168774
+license: MIT
+repository-code: "https://github.com/hzhooning-art/DFSC"
+commit: "1300187"
+authors:
+  - family-names: Duan
+    given-names: Haitao
+    orcid: "https://orcid.org/0009-0006-4611-8639"
+    affiliation: "School of Computer Science, Hangzhou Dianzi University, Hangzhou, China"
+  - family-names: Hu
+    given-names: Ning
+    orcid: "https://orcid.org/0000-0002-2718-0385"
+    affiliation: "School of Mechanical Engineering, Hangzhou Dianzi University, Hangzhou, China"
+  - family-names: Li
+    given-names: Shuqun
+    orcid: "https://orcid.org/0009-0007-1787-685X"
+    affiliation: "School of Mathematics and Physics, Xi'an Jiaotong-Liverpool University, Suzhou, China"
+  - family-names: Hu
+    given-names: Chuyang
+    orcid: "https://orcid.org/0009-0007-9255-018X"
+    affiliation: "Department of Computer Science and Engineering, University of California, Santa Cruz, CA 95064, USA"
+keywords:
+  - system identification
+  - finite-memory models
+  - identifiability
+  - model-order selection
+  - relaxation dynamics
+  - refusal-aware inference

@@ -11,9 +11,12 @@ from .core import (
     fixed_grid_nnls_error,
     holm_adjust,
     identifiability_certificate,
+    matrix_pencil_order_selection,
+    matrix_pencil_consensus,
     prony_error,
     report,
     residual_ar1_diagnostics,
+    shared_matrix_pencil,
 )
 from .extensions import (
     OscillatoryBounds,
@@ -38,6 +41,9 @@ __all__ = [
     "decide_transitions",
     "holm_adjust",
     "identifiability_certificate",
+    "shared_matrix_pencil",
+    "matrix_pencil_order_selection",
+    "matrix_pencil_consensus",
     "report",
     "residual_ar1_diagnostics",
     "OscillatoryBounds",
