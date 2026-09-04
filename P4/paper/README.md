@@ -9,8 +9,9 @@ intentionally excluded from version control.
 
 - `dfsc_primitive_protocol_en.tex`: current English source.
 - `dfsc_primitive_protocol_zh.tex`: synchronized Chinese source.
-- `dfsc_primitive_protocol_en_CSI.pdf`: current English manuscript PDF.
-- `dfsc_primitive_protocol_zh_CSI.pdf`: synchronized Chinese manuscript PDF.
+- `dfsc_primitive_protocol_en.pdf`: current journal-neutral English manuscript PDF.
+- `dfsc_primitive_protocol_zh.pdf`: synchronized journal-neutral Chinese manuscript PDF.
+- `dfsc_primitive_protocol_supplement.pdf`: current supplementary PDF.
 - `references.bib`: verified bibliography shared by both sources.
 - `figures/`: publication figures included by both sources.
 - `make_figures.py`: regenerates the publication figures.
@@ -32,3 +33,6 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\compile_paper.ps1
 The script uses the bundled Tectonic executable under `P1/tools/tectonic`,
 keeps intermediate files outside the project, and leaves only the current
 English and Chinese PDFs in this folder.
+
+The 2026-09-04 Stage-11 audit build with Tectonic 0.17.0 produced a 34-page
+English manuscript, a 28-page Chinese manuscript, and a 3-page supplement.

@@ -1,0 +1,14 @@
+SHA-256 LOCAL INTEGRITY MANIFEST
+Generated: 2026-09-04
+
+7cfd723acd62c83af3d892b7bafae1c8813fb25ccf01e3781135e668606e78d2  P4/paper/dfsc_primitive_protocol_en.pdf
+e49d8eb610f6f8fb803779ac791b8b0f10f38190132307e0817d853190222eca  P4/paper/dfsc_primitive_protocol_en.tex
+56f142c6e187b091d876bc2a307205aed8e913f9aaad90d2babfcded3a55f3af  P4/paper/references.bib
+b2084d054ffe0e9a43863d2252b466731341026dbeab644f4876fa25c46ab07d  P4/paper/dfsc_primitive_protocol_supplement.pdf
+2033bf2923d907f89f40cce0b63228423a9fd442b2bfd82bef7e70ae9cab0cdf  P4/results/p4_complete_historical_pair.json
+61419075fe45641b89deb98b2cbff7996528f6df70f7a048ac00e55d55016053  P4/results/p4_scipy_complete_pair.json
+0a7a72bb1fb803e4c60a4531d4376e1b04659d3fb0eae3c5fea16f9ad01cdf79  P4/experiments/scipy_resample_poly_historical_pair_runner.py
+d6ad78c8d44c09cfd9f0d027db02dfd823aea4bdbe94c65f0e73d23903464cc8  P4/results/p4_scipy_resample_poly_pair.json
+
+This manifest identifies the locally QA-approved files. Regenerate it after any
+source, PDF, bibliography, or evidence-record change and before archiving.

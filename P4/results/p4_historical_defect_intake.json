@@ -1,0 +1,105 @@
+{
+  "schema": "P4-Historical-Defect-Intake-v1",
+  "environment": {
+    "python": "3.12.13",
+    "torch": "2.11.0+cu128",
+    "cuda_available": true,
+    "cuda_device": "NVIDIA GeForce RTX 5070 Laptop GPU"
+  },
+  "admission_rule": "A completed historical defect requires an upstream issue or pull request, an executable failure on the reported buggy revision, and an executable pass on the fixed revision.",
+  "cases": [
+    {
+      "case_id": "pytorch_80770_xlogy_zero_gradient",
+      "project": "PyTorch",
+      "upstream_issue": "https://github.com/pytorch/pytorch/issues/80770",
+      "reported_version": "1.11.0",
+      "upstream_state": "closed",
+      "defect_class": "silent_wrong_gradient",
+      "reported_environment": "CPU float64",
+      "current_fixed_replay": {
+        "executed": true,
+        "passes_fixed_expectation": true,
+        "observed_gradient": 0.6931471805599453,
+        "expected_gradient": 0.6931471805599453,
+        "maximum_absolute_error": 0.0,
+        "device": "cpu"
+      },
+      "buggy_revision_replay": {
+        "executed": false,
+        "reason": "PyTorch 1.11.0 is not installed."
+      }
+    },
+    {
+      "case_id": "pytorch_30303_noncontiguous_einsum_cuda_gradient",
+      "project": "PyTorch",
+      "upstream_issue": "https://github.com/pytorch/pytorch/issues/30303",
+      "reported_version": "1.3.1",
+      "upstream_state": "closed",
+      "defect_class": "silent_wrong_gradient",
+      "reported_environment": "CUDA, non-contiguous expanded input",
+      "current_fixed_replay": {
+        "executed": true,
+        "passes_fixed_expectation": true,
+        "maximum_absolute_gradient_disagreement": 0.0,
+        "input_is_contiguous": false,
+        "device": "cuda"
+      },
+      "buggy_revision_replay": {
+        "executed": false,
+        "reason": "PyTorch 1.3.1 is not installed."
+      }
+    },
+    {
+      "case_id": "jax_15400_complex_conjugate_jit_vjp",
+      "project": "JAX",
+      "upstream_issue": "https://github.com/jax-ml/jax/issues/15400",
+      "reported_version": "0.4.1",
+      "upstream_state": "closed",
+      "defect_class": "backward_exception",
+      "reported_environment": "CPU complex128 with jit/value_and_grad",
+      "current_fixed_replay": {
+        "executed": false,
+        "reason": "JAX is not installed in the frozen environment.",
+        "dependency_present": false
+      },
+      "buggy_revision_replay": {
+        "executed": false,
+        "reason": "JAX 0.4.1 is not installed."
+      }
+    },
+    {
+      "case_id": "pybnf_538_species_condition_gradient_route",
+      "project": "PyBNF",
+      "upstream_issue": "https://github.com/lanl/PyBNF/issues/538",
+      "reported_version": "upstream issue snapshot 2026-08-03",
+      "upstream_state": "closed by pull request 540",
+      "defect_class": "missing_gradient_route",
+      "reported_environment": "project integration test",
+      "current_fixed_replay": {
+        "executed": false,
+        "reason": "PyBNF and its simulator dependencies are not installed.",
+        "dependency_present": false
+      },
+      "buggy_revision_replay": {
+        "executed": false,
+        "reason": "Upstream buggy revision is not checked out."
+      }
+    }
+  ],
+  "summary": {
+    "candidate_cases": 4,
+    "current_fixed_replays_passed": 2,
+    "complete_buggy_fixed_pairs": 0,
+    "projects_with_complete_pairs": [],
+    "projects_with_fixed_only_replay": [
+      "PyTorch"
+    ]
+  },
+  "jss_readiness_gate": {
+    "required_projects_with_complete_pairs": 3,
+    "observed_projects_with_complete_pairs": 0,
+    "passes": false
+  },
+  "claim_boundary": "Upstream provenance and a current fixed-version pass do not reconstruct the historical failure. No case is counted until the buggy revision is executed.",
+  "record_storage": "Complete case-level intake records included."
+}

@@ -1,0 +1,524 @@
+{
+  "schema": "P4-External-Subject-Heterogeneity-v1",
+  "design": {
+    "interfaces": [
+      "torch_matrix_exp_action",
+      "torch_linalg_solve",
+      "torch_lgamma_shift"
+    ],
+    "fault_families": [
+      "parameter_scaling",
+      "output_quantization",
+      "late_batch_corruption",
+      "detached_gradient",
+      "batch_crosstalk",
+      "order_sensitive_batch",
+      "nondeterministic_replay",
+      "silent_dtype_downgrade"
+    ],
+    "seeds_per_subject_fault": 10,
+    "primary_unit": "subject-fault combination",
+    "bootstrap_repeats": 10000,
+    "bootstrap_seed": 420069
+  },
+  "by_subject": {
+    "torch_lgamma_shift": {
+      "single_point_unit_test": {
+        "trials": 80,
+        "detected": 20,
+        "detection_rate": 0.25
+      },
+      "full_batch_value_test": {
+        "trials": 80,
+        "detected": 30,
+        "detection_rate": 0.375
+      },
+      "value_gradient_test": {
+        "trials": 80,
+        "detected": 58,
+        "detection_rate": 0.725
+      },
+      "numerical_property_suite": {
+        "trials": 80,
+        "detected": 78,
+        "detection_rate": 0.975
+      },
+      "execution_evidence_suite": {
+        "trials": 80,
+        "detected": 80,
+        "detection_rate": 1.0
+      }
+    },
+    "torch_linalg_solve": {
+      "single_point_unit_test": {
+        "trials": 80,
+        "detected": 20,
+        "detection_rate": 0.25
+      },
+      "full_batch_value_test": {
+        "trials": 80,
+        "detected": 30,
+        "detection_rate": 0.375
+      },
+      "value_gradient_test": {
+        "trials": 80,
+        "detected": 60,
+        "detection_rate": 0.75
+      },
+      "numerical_property_suite": {
+        "trials": 80,
+        "detected": 80,
+        "detection_rate": 1.0
+      },
+      "execution_evidence_suite": {
+        "trials": 80,
+        "detected": 80,
+        "detection_rate": 1.0
+      }
+    },
+    "torch_matrix_exp_action": {
+      "single_point_unit_test": {
+        "trials": 80,
+        "detected": 20,
+        "detection_rate": 0.25
+      },
+      "full_batch_value_test": {
+        "trials": 80,
+        "detected": 30,
+        "detection_rate": 0.375
+      },
+      "value_gradient_test": {
+        "trials": 80,
+        "detected": 59,
+        "detection_rate": 0.7375
+      },
+      "numerical_property_suite": {
+        "trials": 80,
+        "detected": 80,
+        "detection_rate": 1.0
+      },
+      "execution_evidence_suite": {
+        "trials": 80,
+        "detected": 80,
+        "detection_rate": 1.0
+      }
+    }
+  },
+  "by_fault": {
+    "batch_crosstalk": {
+      "single_point_unit_test": {
+        "trials": 30,
+        "detected": 0,
+        "detection_rate": 0.0
+      },
+      "full_batch_value_test": {
+        "trials": 30,
+        "detected": 0,
+        "detection_rate": 0.0
+      },
+      "value_gradient_test": {
+        "trials": 30,
+        "detected": 0,
+        "detection_rate": 0.0
+      },
+      "numerical_property_suite": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      },
+      "execution_evidence_suite": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      }
+    },
+    "detached_gradient": {
+      "single_point_unit_test": {
+        "trials": 30,
+        "detected": 0,
+        "detection_rate": 0.0
+      },
+      "full_batch_value_test": {
+        "trials": 30,
+        "detected": 0,
+        "detection_rate": 0.0
+      },
+      "value_gradient_test": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      },
+      "numerical_property_suite": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      },
+      "execution_evidence_suite": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      }
+    },
+    "late_batch_corruption": {
+      "single_point_unit_test": {
+        "trials": 30,
+        "detected": 0,
+        "detection_rate": 0.0
+      },
+      "full_batch_value_test": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      },
+      "value_gradient_test": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      },
+      "numerical_property_suite": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      },
+      "execution_evidence_suite": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      }
+    },
+    "nondeterministic_replay": {
+      "single_point_unit_test": {
+        "trials": 30,
+        "detected": 0,
+        "detection_rate": 0.0
+      },
+      "full_batch_value_test": {
+        "trials": 30,
+        "detected": 0,
+        "detection_rate": 0.0
+      },
+      "value_gradient_test": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      },
+      "numerical_property_suite": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      },
+      "execution_evidence_suite": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      }
+    },
+    "order_sensitive_batch": {
+      "single_point_unit_test": {
+        "trials": 30,
+        "detected": 0,
+        "detection_rate": 0.0
+      },
+      "full_batch_value_test": {
+        "trials": 30,
+        "detected": 0,
+        "detection_rate": 0.0
+      },
+      "value_gradient_test": {
+        "trials": 30,
+        "detected": 0,
+        "detection_rate": 0.0
+      },
+      "numerical_property_suite": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      },
+      "execution_evidence_suite": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      }
+    },
+    "output_quantization": {
+      "single_point_unit_test": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      },
+      "full_batch_value_test": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      },
+      "value_gradient_test": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      },
+      "numerical_property_suite": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      },
+      "execution_evidence_suite": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      }
+    },
+    "parameter_scaling": {
+      "single_point_unit_test": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      },
+      "full_batch_value_test": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      },
+      "value_gradient_test": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      },
+      "numerical_property_suite": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      },
+      "execution_evidence_suite": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      }
+    },
+    "silent_dtype_downgrade": {
+      "single_point_unit_test": {
+        "trials": 30,
+        "detected": 0,
+        "detection_rate": 0.0
+      },
+      "full_batch_value_test": {
+        "trials": 30,
+        "detected": 0,
+        "detection_rate": 0.0
+      },
+      "value_gradient_test": {
+        "trials": 30,
+        "detected": 27,
+        "detection_rate": 0.9
+      },
+      "numerical_property_suite": {
+        "trials": 30,
+        "detected": 28,
+        "detection_rate": 0.9333333333333333
+      },
+      "execution_evidence_suite": {
+        "trials": 30,
+        "detected": 30,
+        "detection_rate": 1.0
+      }
+    }
+  },
+  "cluster_summary": {
+    "single_point_unit_test": {
+      "subject_fault_clusters": 24,
+      "mean_cluster_detection_rate": 0.25,
+      "percentile_95_interval": [
+        0.08333333333333333,
+        0.4166666666666667
+      ],
+      "fully_detected_clusters": 6,
+      "undetected_clusters": 18
+    },
+    "full_batch_value_test": {
+      "subject_fault_clusters": 24,
+      "mean_cluster_detection_rate": 0.375,
+      "percentile_95_interval": [
+        0.20833333333333334,
+        0.5833333333333334
+      ],
+      "fully_detected_clusters": 9,
+      "undetected_clusters": 15
+    },
+    "value_gradient_test": {
+      "subject_fault_clusters": 24,
+      "mean_cluster_detection_rate": 0.7374999999999999,
+      "percentile_95_interval": [
+        0.5625,
+        0.9041666666666667
+      ],
+      "fully_detected_clusters": 16,
+      "undetected_clusters": 6
+    },
+    "numerical_property_suite": {
+      "subject_fault_clusters": 24,
+      "mean_cluster_detection_rate": 0.9916666666666667,
+      "percentile_95_interval": [
+        0.975,
+        1.0
+      ],
+      "fully_detected_clusters": 23,
+      "undetected_clusters": 0
+    },
+    "execution_evidence_suite": {
+      "subject_fault_clusters": 24,
+      "mean_cluster_detection_rate": 1.0,
+      "percentile_95_interval": [
+        1.0,
+        1.0
+      ],
+      "fully_detected_clusters": 24,
+      "undetected_clusters": 0
+    }
+  },
+  "paired_strategy_increments": [
+    {
+      "earlier": "single_point_unit_test",
+      "later": "full_batch_value_test",
+      "newly_fully_detected_clusters": 3,
+      "regressed_clusters": 0,
+      "gained_subject_faults": [
+        [
+          "torch_lgamma_shift",
+          "late_batch_corruption"
+        ],
+        [
+          "torch_linalg_solve",
+          "late_batch_corruption"
+        ],
+        [
+          "torch_matrix_exp_action",
+          "late_batch_corruption"
+        ]
+      ]
+    },
+    {
+      "earlier": "full_batch_value_test",
+      "later": "value_gradient_test",
+      "newly_fully_detected_clusters": 7,
+      "regressed_clusters": 0,
+      "gained_subject_faults": [
+        [
+          "torch_lgamma_shift",
+          "detached_gradient"
+        ],
+        [
+          "torch_lgamma_shift",
+          "nondeterministic_replay"
+        ],
+        [
+          "torch_linalg_solve",
+          "detached_gradient"
+        ],
+        [
+          "torch_linalg_solve",
+          "nondeterministic_replay"
+        ],
+        [
+          "torch_linalg_solve",
+          "silent_dtype_downgrade"
+        ],
+        [
+          "torch_matrix_exp_action",
+          "detached_gradient"
+        ],
+        [
+          "torch_matrix_exp_action",
+          "nondeterministic_replay"
+        ]
+      ]
+    },
+    {
+      "earlier": "value_gradient_test",
+      "later": "numerical_property_suite",
+      "newly_fully_detected_clusters": 7,
+      "regressed_clusters": 0,
+      "gained_subject_faults": [
+        [
+          "torch_lgamma_shift",
+          "batch_crosstalk"
+        ],
+        [
+          "torch_lgamma_shift",
+          "order_sensitive_batch"
+        ],
+        [
+          "torch_linalg_solve",
+          "batch_crosstalk"
+        ],
+        [
+          "torch_linalg_solve",
+          "order_sensitive_batch"
+        ],
+        [
+          "torch_matrix_exp_action",
+          "batch_crosstalk"
+        ],
+        [
+          "torch_matrix_exp_action",
+          "order_sensitive_batch"
+        ],
+        [
+          "torch_matrix_exp_action",
+          "silent_dtype_downgrade"
+        ]
+      ]
+    },
+    {
+      "earlier": "numerical_property_suite",
+      "later": "execution_evidence_suite",
+      "newly_fully_detected_clusters": 1,
+      "regressed_clusters": 0,
+      "gained_subject_faults": [
+        [
+          "torch_lgamma_shift",
+          "silent_dtype_downgrade"
+        ]
+      ]
+    }
+  ],
+  "leave_one_subject_out_detection_rate": {
+    "torch_lgamma_shift": {
+      "single_point_unit_test": 0.25,
+      "full_batch_value_test": 0.375,
+      "value_gradient_test": 0.74375,
+      "numerical_property_suite": 1.0,
+      "execution_evidence_suite": 1.0
+    },
+    "torch_linalg_solve": {
+      "single_point_unit_test": 0.25,
+      "full_batch_value_test": 0.375,
+      "value_gradient_test": 0.73125,
+      "numerical_property_suite": 0.9875,
+      "execution_evidence_suite": 1.0
+    },
+    "torch_matrix_exp_action": {
+      "single_point_unit_test": 0.25,
+      "full_batch_value_test": 0.375,
+      "value_gradient_test": 0.7375,
+      "numerical_property_suite": 0.9875,
+      "execution_evidence_suite": 1.0
+    }
+  },
+  "clean_control_complete_suite": {
+    "trials": 30,
+    "false_rejections": 0,
+    "false_rejection_rate": 0.0,
+    "wilson_95_interval": [
+      0.0,
+      0.113517091390478
+    ]
+  },
+  "jss_readiness_gate": {
+    "minimum_independent_sut_projects": 3,
+    "observed_independent_sut_projects": 1,
+    "historical_defect_families_required": true,
+    "historical_defect_families_observed": 0,
+    "passes": false
+  },
+  "claim_boundary": "This is a cluster-aware reanalysis of one PyTorch-vendor pilot. It tests interface and fault-family heterogeneity but supplies no new independent project or historical defect.",
+  "record_storage": "Aggregate-only; source trial decisions are deterministically regenerated."
+}

@@ -1,0 +1,84 @@
+{
+  "schema": "P4-Cross-Project-Fixed-Regressions-v1",
+  "provenance": {
+    "pytorch_capture": "results\\p4_historical_fixed_replays.json",
+    "pytorch_runner_sha256": "fdb828ccad16c301981a9334352ae47a337b3a00ca8913e40f4b028334ee4014",
+    "scipy_regression_source": "..\\P1\\.venv\\Lib\\site-packages\\scipy\\linalg\\tests\\test_basic.py",
+    "scipy_regression_source_sha256": "d40ba24f428b409d9dc8787b33a14927268ebc6e94209560f0cd696484636eee",
+    "scipy_issue_url": "https://github.com/scipy/scipy/issues/8906"
+  },
+  "records": [
+    {
+      "schema": "P4-Historical-Pair-Runner-v1",
+      "case_id": "pytorch_30303",
+      "expected_role": "fixed",
+      "role_confirmed": true,
+      "python": "3.12.13",
+      "torch": "2.11.0+cu128",
+      "upstream_issue": "https://github.com/pytorch/pytorch/issues/30303",
+      "reported_buggy_version": "1.3.1",
+      "observation": {
+        "executed": true,
+        "maximum_absolute_gradient_disagreement": 0.0,
+        "matches_fixed_expectation": true,
+        "matches_reported_bug": false,
+        "input_is_contiguous": false,
+        "device": "cuda"
+      },
+      "project": "pytorch/pytorch"
+    },
+    {
+      "schema": "P4-Historical-Pair-Runner-v1",
+      "case_id": "pytorch_80770",
+      "expected_role": "fixed",
+      "role_confirmed": true,
+      "python": "3.12.13",
+      "torch": "2.11.0+cu128",
+      "upstream_issue": "https://github.com/pytorch/pytorch/issues/80770",
+      "reported_buggy_version": "1.11.0",
+      "observation": {
+        "executed": true,
+        "observed_gradient": 0.6931471805599453,
+        "expected_gradient": 0.6931471805599453,
+        "maximum_absolute_error": 0.0,
+        "matches_fixed_expectation": true,
+        "matches_reported_bug": false,
+        "device": "cpu"
+      },
+      "project": "pytorch/pytorch"
+    },
+    {
+      "case_id": "scipy-8906",
+      "project": "scipy/scipy",
+      "issue_url": "https://github.com/scipy/scipy/issues/8906",
+      "reported_defect": "solve_banded selected the wrong band row for a 1x1 system",
+      "role": "fixed",
+      "environment": {
+        "python": "3.12.13",
+        "scipy": "1.18.0",
+        "numpy": "2.5.0"
+      },
+      "observation": {
+        "executed": true,
+        "conventional_max_abs_error": 0.0,
+        "padded_band_max_abs_error": 0.0,
+        "right_hand_side_unchanged": true,
+        "tolerance": 1e-14
+      },
+      "role_confirmed": true
+    }
+  ],
+  "summary": {
+    "projects": [
+      "pytorch/pytorch",
+      "scipy/scipy"
+    ],
+    "project_count": 2,
+    "attempted": 3,
+    "executed": 3,
+    "fixed_roles_confirmed": 3,
+    "buggy_roles_confirmed": 0,
+    "complete_pairs": 0
+  },
+  "claim_boundary": "This stage broadens only current fixed-side project coverage. The SciPy replay is derived from an installed upstream regression test; without execution in a reported buggy release, it is not a complete historical buggy/fixed pair or a detection result."
+}

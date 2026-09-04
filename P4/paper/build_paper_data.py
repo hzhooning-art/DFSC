@@ -33,6 +33,8 @@ def main() -> None:
     periodic_heat = read("p4_periodic_heat_2d_audit.json")
     matrix_conditioning = read("p4_matrix_ood_conditioning.json")
     precision_tradeoff = read("p4_precision_tradeoff.json")
+    conformance_validation = read("p4_csi_conformance_validation.json")
+    strategy_comparison = read("p4_testing_strategy_comparison.json")
 
     bundle = {
         "schema": "DFSC-P4-Paper-Data-v1",
@@ -48,6 +50,8 @@ def main() -> None:
             "results/p4_periodic_heat_2d_audit.json",
             "results/p4_matrix_ood_conditioning.json",
             "results/p4_precision_tradeoff.json",
+            "results/p4_csi_conformance_validation.json",
+            "results/p4_testing_strategy_comparison.json",
         ],
         "registry": registry,
         "profile": profile,
@@ -62,6 +66,8 @@ def main() -> None:
         "periodic_heat_2d": periodic_heat,
         "matrix_ood_conditioning": matrix_conditioning,
         "precision_tradeoff": precision_tradeoff,
+        "conformance_validation": conformance_validation,
+        "testing_strategy_comparison": strategy_comparison,
         "interpretation": (
             "The bundle supports protocol reuse and backend-specific reliability "
             "claims. It must not be used to claim a universal accuracy ranking."

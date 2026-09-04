@@ -1,0 +1,122 @@
+{
+  "schema": "P4-External-Subject-Pilot-v1",
+  "environment": {
+    "python": "3.12.13",
+    "torch": "2.11.0+cu128",
+    "scipy": "1.18.0",
+    "device": "cpu"
+  },
+  "design": {
+    "sut_vendor_codebases": [
+      "PyTorch"
+    ],
+    "independent_reference_codebases": [
+      "SciPy"
+    ],
+    "subjects": [
+      "torch_matrix_exp_action",
+      "torch_linalg_solve",
+      "torch_lgamma_shift"
+    ],
+    "faults": [
+      "parameter_scaling",
+      "output_quantization",
+      "late_batch_corruption",
+      "detached_gradient",
+      "batch_crosstalk",
+      "order_sensitive_batch",
+      "nondeterministic_replay",
+      "silent_dtype_downgrade"
+    ],
+    "seeds_per_subject_fault": 10,
+    "primary_unit": "subject-fault combination"
+  },
+  "summary": {
+    "single_point_unit_test": {
+      "declared_checks": [
+        "point_value",
+        "finite"
+      ],
+      "injected_trials": 240,
+      "detected_injected_trials": 60,
+      "instance_detection_rate": 0.25,
+      "subject_fault_combinations": 24,
+      "fully_detected_subject_fault_combinations": 6,
+      "clean_trials": 30,
+      "false_rejections": 0,
+      "false_rejection_rate": 0.0
+    },
+    "full_batch_value_test": {
+      "declared_checks": [
+        "point_value",
+        "full_batch_value",
+        "finite"
+      ],
+      "injected_trials": 240,
+      "detected_injected_trials": 90,
+      "instance_detection_rate": 0.375,
+      "subject_fault_combinations": 24,
+      "fully_detected_subject_fault_combinations": 9,
+      "clean_trials": 30,
+      "false_rejections": 0,
+      "false_rejection_rate": 0.0
+    },
+    "value_gradient_test": {
+      "declared_checks": [
+        "point_value",
+        "full_batch_value",
+        "directional_gradient",
+        "finite"
+      ],
+      "injected_trials": 240,
+      "detected_injected_trials": 177,
+      "instance_detection_rate": 0.7375,
+      "subject_fault_combinations": 24,
+      "fully_detected_subject_fault_combinations": 16,
+      "clean_trials": 30,
+      "false_rejections": 0,
+      "false_rejection_rate": 0.0
+    },
+    "numerical_property_suite": {
+      "declared_checks": [
+        "point_value",
+        "full_batch_value",
+        "directional_gradient",
+        "batch_independence",
+        "permutation_equivariance",
+        "repeatability",
+        "finite"
+      ],
+      "injected_trials": 240,
+      "detected_injected_trials": 238,
+      "instance_detection_rate": 0.9916666666666667,
+      "subject_fault_combinations": 24,
+      "fully_detected_subject_fault_combinations": 23,
+      "clean_trials": 30,
+      "false_rejections": 0,
+      "false_rejection_rate": 0.0
+    },
+    "execution_evidence_suite": {
+      "declared_checks": [
+        "point_value",
+        "full_batch_value",
+        "directional_gradient",
+        "batch_independence",
+        "permutation_equivariance",
+        "repeatability",
+        "finite",
+        "dtype_conformance"
+      ],
+      "injected_trials": 240,
+      "detected_injected_trials": 240,
+      "instance_detection_rate": 1.0,
+      "subject_fault_combinations": 24,
+      "fully_detected_subject_fault_combinations": 24,
+      "clean_trials": 30,
+      "false_rejections": 0,
+      "false_rejection_rate": 0.0
+    }
+  },
+  "claim_boundary": "This pilot establishes executable adapters and independent value references for three external component interfaces from one vendor codebase. It is not a multi-project or field-defect study, and injected trials within one subject-fault combination are not independent fault families.",
+  "record_storage": "Aggregate-only artifact; the script deterministically regenerates trial records."
+}

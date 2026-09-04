@@ -29,7 +29,7 @@ $projectCache = (Resolve-Path -LiteralPath $projectCache).Path
 $env:TECTONIC_CACHE_DIR = $projectCache
 $tectonicArgs = @()
 
-$workRoot = Join-Path ([System.IO.Path]::GetTempPath()) ("p4_csi_" + [guid]::NewGuid().ToString("N"))
+$workRoot = Join-Path ([System.IO.Path]::GetTempPath()) ("p4_manuscript_" + [guid]::NewGuid().ToString("N"))
 $enOut = Join-Path $workRoot "en"
 $zhOut = Join-Path $workRoot "zh"
 $suppOut = Join-Path $workRoot "supp"
@@ -52,13 +52,13 @@ try {
     }
 
     Copy-Item -LiteralPath (Join-Path $enOut "dfsc_primitive_protocol_en.pdf") `
-        -Destination (Join-Path $paperRoot "dfsc_primitive_protocol_en_CSI.pdf") -Force
+        -Destination (Join-Path $paperRoot "dfsc_primitive_protocol_en.pdf") -Force
     Copy-Item -LiteralPath (Join-Path $zhOut "dfsc_primitive_protocol_zh.pdf") `
-        -Destination (Join-Path $paperRoot "dfsc_primitive_protocol_zh_CSI.pdf") -Force
+        -Destination (Join-Path $paperRoot "dfsc_primitive_protocol_zh.pdf") -Force
     Copy-Item -LiteralPath (Join-Path $suppOut "dfsc_primitive_protocol_supplement.pdf") `
-        -Destination (Join-Path $paperRoot "dfsc_primitive_protocol_supplement_CSI.pdf") -Force
+        -Destination (Join-Path $paperRoot "dfsc_primitive_protocol_supplement.pdf") -Force
 
-    Write-Output "Compiled current Computer Standards & Interfaces main and supplementary PDFs successfully."
+    Write-Output "Compiled the current journal-neutral main and supplementary PDFs successfully."
 }
 finally {
     if (Test-Path -LiteralPath $workRoot) {

@@ -1,0 +1,358 @@
+{
+  "schema": "DFSC-P4-Testing-Strategy-Comparison-v1",
+  "design": "paired frozen fault catalogue with 20 implementation trials per class",
+  "primary_unit": "fault class",
+  "strategies": [
+    {
+      "strategy": "envelope_value_gradient",
+      "declared_check_count": 3,
+      "fault_instances": 200,
+      "detected_instances": 60,
+      "instance_detection_rate": 0.3,
+      "instance_detection_wilson_95": [
+        0.24074644243406385,
+        0.3667919599332645
+      ],
+      "fault_classes": 10,
+      "fully_detected_fault_classes": 3,
+      "fault_class_coverage": 0.3,
+      "clean_records": 40,
+      "false_rejections": 0,
+      "false_rejection_rate": 0.0,
+      "false_rejection_wilson_95": [
+        -6.938893903907228e-18,
+        0.08762453925039232
+      ],
+      "catalogue": [
+        {
+          "fault": "inadequate_truncation",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "detached_gradient",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "silent_dtype_downgrade",
+          "detected": 0,
+          "injections": 20,
+          "detected_class": false
+        },
+        {
+          "fault": "batch_crosstalk",
+          "detected": 0,
+          "injections": 20,
+          "detected_class": false
+        },
+        {
+          "fault": "silent_cpu_fallback",
+          "detected": 0,
+          "injections": 20,
+          "detected_class": false
+        },
+        {
+          "fault": "ood_scope_misuse",
+          "detected": 0,
+          "injections": 20,
+          "detected_class": false
+        },
+        {
+          "fault": "unit_mismatch",
+          "detected": 0,
+          "injections": 20,
+          "detected_class": false
+        },
+        {
+          "fault": "missing_provenance",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "unfrozen_scope",
+          "detected": 0,
+          "injections": 20,
+          "detected_class": false
+        },
+        {
+          "fault": "insufficient_scope_coverage",
+          "detected": 0,
+          "injections": 20,
+          "detected_class": false
+        }
+      ]
+    },
+    {
+      "strategy": "numerical_property_suite",
+      "declared_check_count": 8,
+      "fault_instances": 200,
+      "detected_instances": 100,
+      "instance_detection_rate": 0.5,
+      "instance_detection_wilson_95": [
+        0.43135962209034523,
+        0.5686403779096547
+      ],
+      "fault_classes": 10,
+      "fully_detected_fault_classes": 5,
+      "fault_class_coverage": 0.5,
+      "clean_records": 40,
+      "false_rejections": 0,
+      "false_rejection_rate": 0.0,
+      "false_rejection_wilson_95": [
+        -6.938893903907228e-18,
+        0.08762453925039232
+      ],
+      "catalogue": [
+        {
+          "fault": "inadequate_truncation",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "detached_gradient",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "silent_dtype_downgrade",
+          "detected": 0,
+          "injections": 20,
+          "detected_class": false
+        },
+        {
+          "fault": "batch_crosstalk",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "silent_cpu_fallback",
+          "detected": 0,
+          "injections": 20,
+          "detected_class": false
+        },
+        {
+          "fault": "ood_scope_misuse",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "unit_mismatch",
+          "detected": 0,
+          "injections": 20,
+          "detected_class": false
+        },
+        {
+          "fault": "missing_provenance",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "unfrozen_scope",
+          "detected": 0,
+          "injections": 20,
+          "detected_class": false
+        },
+        {
+          "fault": "insufficient_scope_coverage",
+          "detected": 0,
+          "injections": 20,
+          "detected_class": false
+        }
+      ],
+      "increment_over_previous": {
+        "previous_strategy": "envelope_value_gradient",
+        "additional_checks": 5,
+        "additional_fault_classes": 2,
+        "additional_detected_instances": 40
+      }
+    },
+    {
+      "strategy": "execution_aware_suite",
+      "declared_check_count": 13,
+      "fault_instances": 200,
+      "detected_instances": 160,
+      "instance_detection_rate": 0.8,
+      "instance_detection_wilson_95": [
+        0.7391436038882958,
+        0.8495487925607118
+      ],
+      "fault_classes": 10,
+      "fully_detected_fault_classes": 8,
+      "fault_class_coverage": 0.8,
+      "clean_records": 40,
+      "false_rejections": 0,
+      "false_rejection_rate": 0.0,
+      "false_rejection_wilson_95": [
+        -6.938893903907228e-18,
+        0.08762453925039232
+      ],
+      "catalogue": [
+        {
+          "fault": "inadequate_truncation",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "detached_gradient",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "silent_dtype_downgrade",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "batch_crosstalk",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "silent_cpu_fallback",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "ood_scope_misuse",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "unit_mismatch",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "missing_provenance",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "unfrozen_scope",
+          "detected": 0,
+          "injections": 20,
+          "detected_class": false
+        },
+        {
+          "fault": "insufficient_scope_coverage",
+          "detected": 0,
+          "injections": 20,
+          "detected_class": false
+        }
+      ],
+      "increment_over_previous": {
+        "previous_strategy": "numerical_property_suite",
+        "additional_checks": 5,
+        "additional_fault_classes": 3,
+        "additional_detected_instances": 60
+      }
+    },
+    {
+      "strategy": "executable_evidence_record",
+      "declared_check_count": 17,
+      "fault_instances": 200,
+      "detected_instances": 200,
+      "instance_detection_rate": 1.0,
+      "instance_detection_wilson_95": [
+        0.9811539940816791,
+        1.0
+      ],
+      "fault_classes": 10,
+      "fully_detected_fault_classes": 10,
+      "fault_class_coverage": 1.0,
+      "clean_records": 40,
+      "false_rejections": 0,
+      "false_rejection_rate": 0.0,
+      "false_rejection_wilson_95": [
+        -6.938893903907228e-18,
+        0.08762453925039232
+      ],
+      "catalogue": [
+        {
+          "fault": "inadequate_truncation",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "detached_gradient",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "silent_dtype_downgrade",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "batch_crosstalk",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "silent_cpu_fallback",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "ood_scope_misuse",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "unit_mismatch",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "missing_provenance",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "unfrozen_scope",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        },
+        {
+          "fault": "insufficient_scope_coverage",
+          "detected": 20,
+          "injections": 20,
+          "detected_class": true
+        }
+      ],
+      "increment_over_previous": {
+        "previous_strategy": "execution_aware_suite",
+        "additional_checks": 4,
+        "additional_fault_classes": 2,
+        "additional_detected_instances": 40
+      }
+    }
+  ],
+  "claim_boundary": "The comparison measures incremental coverage of the declared ten-class catalogue. It is not an estimate of field-defect prevalence or proof that the baselines exhaust unit, property-based, or metamorphic testing practice."
+}

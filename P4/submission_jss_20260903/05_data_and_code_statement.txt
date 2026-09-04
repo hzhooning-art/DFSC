@@ -1,0 +1,13 @@
+DATA AND CODE AVAILABILITY
+
+Implementation, experiments, results, tests, and figure generation are in:
+https://github.com/hzhooning-art/DFSC/tree/p4-csi-submission-v1.1/P4
+
+Complete historical-pair records are stored in
+P4/results/p4_complete_historical_pair.json and
+P4/results/p4_scipy_complete_pair.json and
+P4/results/p4_scipy_resample_poly_pair.json.
+
+Before submission, refresh the public tag or create an immutable archive that
+contains the Stage-11 SciPy runner, capture, result, tests, and current paper.
+Replace or supplement the link above with the final tag/DOI.

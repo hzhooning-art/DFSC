@@ -1,0 +1,84 @@
+{
+  "schema": "P4-Complete-Historical-Pair-v1",
+  "case_id": "pytorch_80770",
+  "upstream_issue": "https://github.com/pytorch/pytorch/issues/80770",
+  "runner_sha256": "fdb828ccad16c301981a9334352ae47a337b3a00ca8913e40f4b028334ee4014",
+  "runner_unchanged_between_sides": true,
+  "legacy_environment": {
+    "python_archive": {
+      "name": "python-3.10.11-embed-amd64.zip",
+      "sha256": "608619f8619075629c9c69f361352a0da6ed7e62f83a0e19c63e0ea32eb7629d"
+    },
+    "torch_wheel": {
+      "name": "torch-1.11.0+cpu-cp310-cp310-win_amd64.bits.whl",
+      "sha256": "bd984fa8676b2f7c9611b40af3a7c168fb90be3e29028219f822696bb357f472"
+    },
+    "typing_extensions_sha256": "4040ca1a1ecbee00d1385c12a93084d1c5bd46f0b774f07e5ae7e91c4f55e696",
+    "numpy_absent_and_not_required_by_runner": true
+  },
+  "buggy_side": {
+    "command": [
+      "D:\\program projects\\st_mlee\\.codex_tmp\\p4_torch111_replay\\python310\\python.exe",
+      "D:\\program projects\\st_mlee\\P4\\experiments\\pytorch_historical_pair_runner.py",
+      "--case",
+      "pytorch_80770",
+      "--expected-role",
+      "buggy"
+    ],
+    "exit_code": 0,
+    "stderr": "D:\\program projects\\st_mlee\\.codex_tmp\\p4_torch111_replay\\python310\\Lib\\site-packages\\torch\\_masked\\__init__.py:223: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at  ..\\torch\\csrc\\utils\\tensor_numpy.cpp:68.)\n  example_input = torch.tensor([[-3, -2, -1], [0, 1, 2]])",
+    "result": {
+      "schema": "P4-Historical-Pair-Runner-v1",
+      "case_id": "pytorch_80770",
+      "expected_role": "buggy",
+      "role_confirmed": true,
+      "python": "3.10.11",
+      "torch": "1.11.0+cpu",
+      "upstream_issue": "https://github.com/pytorch/pytorch/issues/80770",
+      "reported_buggy_version": "1.11.0",
+      "observation": {
+        "executed": true,
+        "observed_gradient": 0.0,
+        "expected_gradient": 0.6931471805599453,
+        "maximum_absolute_error": 0.6931471805599453,
+        "matches_fixed_expectation": false,
+        "matches_reported_bug": true,
+        "device": "cpu"
+      }
+    }
+  },
+  "fixed_side": {
+    "command": [
+      "D:\\program projects\\st_mlee\\P1\\.venv\\Scripts\\python.exe",
+      "D:\\program projects\\st_mlee\\P4\\experiments\\pytorch_historical_pair_runner.py",
+      "--case",
+      "pytorch_80770",
+      "--expected-role",
+      "fixed"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "result": {
+      "schema": "P4-Historical-Pair-Runner-v1",
+      "case_id": "pytorch_80770",
+      "expected_role": "fixed",
+      "role_confirmed": true,
+      "python": "3.12.13",
+      "torch": "2.11.0+cu128",
+      "upstream_issue": "https://github.com/pytorch/pytorch/issues/80770",
+      "reported_buggy_version": "1.11.0",
+      "observation": {
+        "executed": true,
+        "observed_gradient": 0.6931471805599453,
+        "expected_gradient": 0.6931471805599453,
+        "maximum_absolute_error": 0.0,
+        "matches_fixed_expectation": true,
+        "matches_reported_bug": false,
+        "device": "cpu"
+      }
+    }
+  },
+  "complete_pair": true,
+  "complete_pair_count": 1,
+  "claim_boundary": "One upstream-reported CPU defect is reproduced in the official PyTorch 1.11.0 CPU wheel and rejected by the unchanged runner in the current fixed environment. This is one defect family and does not estimate field prevalence or establish broad external effectiveness."
+}
