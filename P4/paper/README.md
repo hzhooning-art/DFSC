@@ -34,5 +34,5 @@ The script uses the bundled Tectonic executable under `P1/tools/tectonic`,
 keeps intermediate files outside the project, and leaves only the current
 English and Chinese PDFs in this folder.
 
-The 2026-09-04 Stage-11 audit build with Tectonic 0.17.0 produced a 34-page
+The 2026-09-05 JSS author-guide build with Tectonic 0.17.0 produced a 34-page
 English manuscript, a 28-page Chinese manuscript, and a 3-page supplement.

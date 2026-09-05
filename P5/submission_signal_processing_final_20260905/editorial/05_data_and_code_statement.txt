@@ -1,0 +1,15 @@
+DATA AND CODE AVAILABILITY
+
+Public datasets are identified by DOI in the manuscript references. Derived
+results, protocol definitions, tests, and figure-generation scripts are in the
+tagged P5 directory:
+https://github.com/hzhooning-art/DFSC/tree/p5-signal-processing-submission-v1.2/P5
+
+Preceding frozen software and reproducibility archive:
+https://doi.org/10.5281/zenodo.22168774
+
+The prepared version 0.2.0 archive contains Stages 67--76, including power
+certification, public transfer, the cable contract, window sensitivity, the
+190-test suite, and all 85 JSON result files. Publish it as a new version of the
+existing Zenodo record, then insert the new version-specific DOI in the
+manuscript, this statement, and the submission portal.

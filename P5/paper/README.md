@@ -2,7 +2,7 @@
 
 ## Canonical files
 
-- `manuscript_en.tex` / `manuscript_en.pdf`: English manuscript (29 pages in the current single-column, double-spaced Stage-77 build).
+- `manuscript_en.tex` / `manuscript_en.pdf`: English manuscript (30 pages in the current single-column, double-spaced author-guide build).
 - `manuscript_zh.tex` / `manuscript_zh.pdf`: Chinese manuscript (24 pages in the corresponding build) with the same structure, evidence, figures, tables, declarations, and references.
 - `references.bib`: shared verified bibliography.
 
@@ -19,7 +19,7 @@ Affiliations, e-mail addresses, and ORCID identifiers follow the project author 
 
 ## Build
 
-Both manuscripts were compiled with Tectonic 0.17.0 on 2026-09-03. The
+Both manuscripts were compiled with Tectonic 0.17.0 on 2026-09-05. The
 sources implement double spacing with LaTeX's built-in baseline-stretch
 setting, avoiding a non-cached package dependency. The audit builds complete
 without TeX overfull-box, undefined-reference, or BibTeX warnings. The

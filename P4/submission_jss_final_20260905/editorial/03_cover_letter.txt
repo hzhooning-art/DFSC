@@ -1,0 +1,37 @@
+Dear Editors of the Journal of Systems and Software,
+
+Please consider our manuscript, "Executable Evidence for Testing
+Differentiable Numerical Components: Strategy Increments and External Defect
+Cases," as a Research Paper.
+
+Numerical components increasingly cross solver, learning, device, dtype, and
+deployment boundaries, yet a successful call or automatic-differentiation
+trace does not establish numerical or execution reliability. We present an
+executable testing and qualification method that binds operating domain,
+independent reference, tolerances, execution policy, provenance, and decision
+scope in one machine-readable evidence record.
+
+Four evidence levels detect 3, 5, 8, and 10 of 10 declared fault classes. On
+240 PyTorch external-interface trials, detection rises from 25.00% to 100%. A
+matched NumPy/SciPy/PyTorch benchmark reaches 100% detection on 252 injected
+faults while all 36 clean controls pass. Representation equivalence derived
+from SciPy #8906 detects 32/32 variants missed by a weak padded example.
+Unchanged runners reproduce official buggy and fixed behavior for PyTorch
+#80770 and SciPy #8906/#15620, yielding three complete release-level pairs
+across two independently maintained projects and three failure modes.
+
+The work fits JSS as an empirical software-testing study: it compares testing
+strategies, evaluates production interfaces and historical defects, and
+reports explicit threats to validity. It does not claim universal defect
+coverage or field prevalence; seeds and variants are within-family trials.
+
+The manuscript is original, is not under consideration elsewhere, and has
+been approved by all authors. The study uses public non-human datasets and
+software experiments; no human participants or animal experiments are
+involved. The authors declare no competing interests.
+
+Sincerely,
+
+Ning Hu, Corresponding author
+School of Mechanical Engineering, Hangzhou Dianzi University
+Email: huning@hdu.edu.cn

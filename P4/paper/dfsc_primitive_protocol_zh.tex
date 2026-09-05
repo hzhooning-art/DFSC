@@ -1,4 +1,4 @@
-\documentclass[preprint,12pt]{elsarticle}
+\documentclass[preprint,12pt,authoryear]{elsarticle}
 \usepackage{amsmath,amssymb,booktabs,graphicx,array}
 \usepackage{xeCJK}
 \usepackage{hyperref}
@@ -10,7 +10,7 @@
 \renewcommand{\floatpagefraction}{0.75}
 \setcounter{topnumber}{2}
 \setcounter{bottomnumber}{1}
-\journal{}
+\journal{Journal of Systems and Software}
 
 \begin{document}
 \begin{frontmatter}
@@ -27,7 +27,7 @@
 \address[cs]{School of Computer Science, Hangzhou Dianzi University, No. 1158, 2nd Street, Qiantang District, Hangzhou 310018, Zhejiang, China}
 \address[math]{School of Mathematics and Physics, Xi'an Jiaotong--Liverpool University, 111 Ren'ai Road, Suzhou Industrial Park, Suzhou 215123, Jiangsu, China}
 \address[ucsc]{Department of Computer Science and Engineering, University of California, 1156 High Street, Santa Cruz, CA 95064, USA}
-\cortext[cor1]{通讯作者。ORCID：胡宁 0000-0002-2718-0385；段海涛 0009-0006-4611-8639；李书群 0009-0007-9255-018X；胡初扬 0009-0007-1787-685X。}
+\cortext[cor1]{通讯作者。ORCID：胡宁 0000-0002-2718-0385；段海涛 0009-0006-4611-8639；李书群 0009-0007-1787-685X；胡初扬 0009-0007-9255-018X。}
 
 \begin{abstract}
 可微数值组件需要跨越仿真与学习系统中的软件和硬件接口，但成功调用或存在自动微分路径并不能证明函数值、参数导数和执行策略可靠。本文提出一种可执行测试与资格判定方法。在同一组合成 10 类故障上，四级累积策略分别检出 3、5、8 和 10 类，完整记录检出 200/200 个故障且误拒 0/40 个对照。PyTorch 外部受试对象试验把 240 个注入故障的检出率从 25.00\% 提高到 100\%。跨 NumPy、SciPy 和 PyTorch 的匹配函数值/性质子集在 252 个注入试验上把检出率从 28.57\% 提高到 100\%，36/36 个对照均通过。由 SciPy \#8906 导出的表示等价性质检出弱样例漏掉的 32/32 个变体。未改动 runner 在官方发布 wheel 中复现 PyTorch \#80770 与 SciPy \#8906、\#15620，并通过当前修复版，形成跨两个项目和三种失效模式的三组完整历史 buggy/fixed 对。结果支持跨受控项目与真实发布版本缺陷的递增可执行证据，但不推断广泛现场发生率。
@@ -263,7 +263,7 @@ Logistic RK4 步进 & 函数值与方向梯度门槛 & 步长 OOD 和长时域�
 
 \begin{figure}[!htbp]
 \centering
-\includegraphics[width=0.94\linewidth]{figures/fig_calibration_reproducibility.pdf}
+\includegraphics[width=0.82\linewidth]{figures/fig_calibration_reproducibility.pdf}
 \caption{匹配双参数标定的逐种子可复现性。左图配对显示 Adam/自动微分与 L-BFGS-B/经典优化在相同噪声观测下的参数误差；右图显示恢复参数相对于真实值的位置，连线标识相同种子。}
 \label{fig:calibration-reproducibility-zh}
 \end{figure}
@@ -386,7 +386,7 @@ GPU 上，测试的单场调用中位前向延迟为 $0.369$--$0.397$ ms，峰�
 本研究得到以下项目资助：上海交通大学海洋工程国家重点实验室，项目编号 GKZD010089；中国科学院声学研究所声学国家重点实验室，项目编号 SKLA202406。资助方未参与研究设计、数据收集与分析、结果解释、稿件撰写或投稿决定。
 
 \section*{数据可用性}
-符合性实现、数值实验、生成的 JSON 报告、测试、论文数据构建器和制图流程均已公开于 DFSC 仓库带标签的 P4 目录：\href{https://github.com/hzhooning-art/DFSC/tree/p4-jss-submission-v1.1/P4}{github.com/hzhooning-art/DFSC/tree/p4-jss-submission-v1.1/P4}。面向标准与接口的互操作和变异测试数据保存在 \texttt{P4/results/p4\_csi\_conformance\_validation.json}。公开源数据集的仓库 DOI 已在相应实验中引用；配套 Zenodo 记录发布后将补入软件归档 DOI。
+符合性实现、数值实验、生成的 JSON 报告、测试、论文数据构建器和制图流程均已公开于 DFSC 仓库带标签的 P4 目录：\href{https://github.com/hzhooning-art/DFSC/tree/p4-jss-submission-v1.2/P4}{github.com/hzhooning-art/DFSC/tree/p4-jss-submission-v1.2/P4}。面向标准与接口的互操作和变异测试数据保存在 \texttt{P4/results/p4\_csi\_conformance\_validation.json}。公开源数据集的仓库 DOI 已在相应实验中引用；配套 Zenodo 记录发布后将补入软件归档 DOI。
 
 \section*{CRediT 作者贡献声明}
 胡宁：概念化、方法学、软件、验证、形式化分析、调查、数据整理、可视化、初稿撰写、审阅与编辑。段海涛：方法学、软件、验证、调查、审阅与编辑。李书群：验证、调查、审阅与编辑。胡初扬：验证、调查、审阅与编辑。
@@ -400,7 +400,7 @@ GPU 上，测试的单场调用中位前向延迟为 $0.369$--$0.397$ ms，峰�
 \section*{致谢}
 本研究使用了杭州电子科技大学的计算资源。
 
-\bibliographystyle{elsarticle-num-names}
+\bibliographystyle{elsarticle-harv}
 \bibliography{references}
 
 \end{document}

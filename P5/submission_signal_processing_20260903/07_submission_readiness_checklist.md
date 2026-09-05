@@ -3,7 +3,7 @@
 ## Passed locally
 
 - [x] English source compiles single-column and double-spaced.
-- [x] English paper is 29 pages, one below the 30-page gate.
+- [x] English paper is 30 pages, at the journal's 30-page gate.
 - [x] Full P5 suite passes: 190 tests.
 - [x] All 85 machine-readable result files parse.
 - [x] Highlights contain 3--5 items, each at most 85 characters.

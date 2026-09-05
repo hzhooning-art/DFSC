@@ -1,0 +1,5 @@
+Four strategies detect 3, 5, 8, and 10 of 10 declared fault classes.
+Cross-project tests reach 100% detection on 252 injected faults.
+All 36 NumPy, SciPy, and PyTorch controls pass the complete suite.
+Three release-level defect pairs are completed across PyTorch and SciPy.
+Evidence records bind scope, provenance, numerical oracles, and execution.
