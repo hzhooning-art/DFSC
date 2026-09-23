@@ -1,0 +1,74 @@
+{
+  "C": 6,
+  "n": 24,
+  "alpha": 0.05,
+  "target_power": 0.7,
+  "profile_residual_df": 131,
+  "finite_union_reference_df": 132,
+  "profile_critical": 158.71193003013374,
+  "finite_union_asymptotic_critical": 159.8135468509978,
+  "rho_for_target_profile": 6.243479118082993,
+  "rho_for_target_exact_union_local_limit": 6.33592048398539,
+  "old_triangle_sufficient_rho_limit": 25.100754200780784,
+  "rows": [
+    {
+      "rho": 0.0,
+      "profile_power": 0.04999999999999999,
+      "exact_union_local_power": 0.0441309192257749,
+      "pinsker_upper_bound": 0.05
+    },
+    {
+      "rho": 1.3,
+      "profile_power": 0.06244570652941796,
+      "exact_union_local_power": 0.05545790444523344,
+      "pinsker_upper_bound": 0.7000000000000001
+    },
+    {
+      "rho": 2.0,
+      "profile_power": 0.08270168945305381,
+      "exact_union_local_power": 0.07404259655536753,
+      "pinsker_upper_bound": 1.0
+    },
+    {
+      "rho": 3.0,
+      "profile_power": 0.14012292437207613,
+      "exact_union_local_power": 0.12748793451400997,
+      "pinsker_upper_bound": 1.0
+    },
+    {
+      "rho": 4.0,
+      "profile_power": 0.25059882973865427,
+      "exact_union_local_power": 0.23255518055520133,
+      "pinsker_upper_bound": 1.0
+    },
+    {
+      "rho": 6.0,
+      "profile_power": 0.6476124599381134,
+      "exact_union_local_power": 0.6264781351876123,
+      "pinsker_upper_bound": 1.0
+    },
+    {
+      "rho": 6.243479118082993,
+      "profile_power": 0.6999999999999998,
+      "exact_union_local_power": 0.680191603753372,
+      "pinsker_upper_bound": 1.0
+    },
+    {
+      "rho": 6.33592048398539,
+      "profile_power": 0.7192112244627203,
+      "exact_union_local_power": 0.7000000000000002,
+      "pinsker_upper_bound": 1.0
+    },
+    {
+      "rho": 10.0,
+      "profile_power": 0.9990338102903751,
+      "exact_union_local_power": 0.9988428408490483,
+      "pinsker_upper_bound": 1.0
+    }
+  ],
+  "hashes": {
+    "LOCAL_LIMIT_POWER_THEORY.md": "5b2b0f6673209abe21f20febd6de7a7a0515707056eee2e605b450cf68373475",
+    "local_limit_power.py": "675a30af20fd1a0da2608f0ec5696f80cdf675dc656d06d70cd55a357c06b80b",
+    "MATCHED_DETECTION_BOUNDARY_THEORY.md": "b9bd89940ab7ae044b072a95fa1760475419e0ab89d55935fd263c13fd86c033"
+  }
+}

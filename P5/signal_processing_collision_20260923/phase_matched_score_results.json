@@ -1,0 +1,529 @@
+{
+  "settings": {
+    "C": 6,
+    "n": 24,
+    "m_values": [
+      256,
+      1024,
+      4096,
+      16384
+    ],
+    "alternative_trials": 1024,
+    "null_trials": 2048
+  },
+  "rows": [
+    {
+      "path": "diversity",
+      "m": 256,
+      "trials": 1024,
+      "distance_noncentrality": 35.496537235565484,
+      "score_noncentrality": 35.49653721851823,
+      "retention": 0.9999999995197487,
+      "empirical_rejection": 1.0,
+      "noncentral_f_prediction": 0.99842150492336,
+      "absolute_prediction_error": 0.0015784950766399852,
+      "replay": [
+        {
+          "seed": 6091030000000,
+          "energy": 0.14271659964145225,
+          "rate": 0.4073309423362761,
+          "amplitude_norm": 100.0018974295977,
+          "s2": 1.00097846179209,
+          "statistic": 6.083289318533548,
+          "reject": true
+        },
+        {
+          "seed": 6091030001023,
+          "energy": 0.1377465255124962,
+          "rate": 0.40917761624985927,
+          "amplitude_norm": 99.90141595767678,
+          "s2": 1.015766216572934,
+          "statistic": 5.78596235299304,
+          "reject": true
+        }
+      ]
+    },
+    {
+      "path": "diversity",
+      "m": 1024,
+      "trials": 1024,
+      "distance_noncentrality": 35.750296995043755,
+      "score_noncentrality": 35.75029699945314,
+      "retention": 1.0000000001233385,
+      "empirical_rejection": 1.0,
+      "noncentral_f_prediction": 0.9985234888989653,
+      "absolute_prediction_error": 0.0014765111010347498,
+      "replay": [
+        {
+          "seed": 6091030100000,
+          "energy": 0.051788723384203504,
+          "rate": 0.4042816026815471,
+          "amplitude_norm": 100.00198705369085,
+          "s2": 1.0016570783507124,
+          "statistic": 8.823986753487887,
+          "reject": true
+        },
+        {
+          "seed": 6091030101023,
+          "energy": 0.037811961889207185,
+          "rate": 0.40393932414274764,
+          "amplitude_norm": 99.95647122244254,
+          "s2": 0.9962439189451783,
+          "statistic": 6.477571780403649,
+          "reject": true
+        }
+      ]
+    },
+    {
+      "path": "diversity",
+      "m": 4096,
+      "trials": 1024,
+      "distance_noncentrality": 35.8756964802742,
+      "score_noncentrality": 35.87569649231858,
+      "retention": 1.0000000003357254,
+      "empirical_rejection": 1.0,
+      "noncentral_f_prediction": 0.9985711044748391,
+      "absolute_prediction_error": 0.0014288955251609003,
+      "replay": [
+        {
+          "seed": 6091030200000,
+          "energy": 0.011728393593044407,
+          "rate": 0.40201156173173297,
+          "amplitude_norm": 99.99378505750389,
+          "s2": 0.9987129550866028,
+          "statistic": 8.016901471778775,
+          "reject": true
+        },
+        {
+          "seed": 6091030201023,
+          "energy": 0.009472132824773362,
+          "rate": 0.40211525598239367,
+          "amplitude_norm": 100.00103534302933,
+          "s2": 0.999428340267361,
+          "statistic": 6.4700079847466805,
+          "reject": true
+        }
+      ]
+    },
+    {
+      "path": "diversity",
+      "m": 16384,
+      "trials": 1024,
+      "distance_noncentrality": 35.93799042701721,
+      "score_noncentrality": 35.93799054286339,
+      "retention": 1.000000003223502,
+      "empirical_rejection": 0.9990234375,
+      "noncentral_f_prediction": 0.998594102466331,
+      "absolute_prediction_error": 0.0004293350336690427,
+      "replay": [
+        {
+          "seed": 6091030300000,
+          "energy": 0.0022047673826847834,
+          "rate": 0.4011144335100722,
+          "amplitude_norm": 100.00642789160419,
+          "s2": 1.0002589701856934,
+          "statistic": 6.0189260772473485,
+          "reject": true
+        },
+        {
+          "seed": 6091030301023,
+          "energy": 0.0015071969273307989,
+          "rate": 0.40093202696491764,
+          "amplitude_norm": 99.99603302676745,
+          "s2": 0.9987457051200764,
+          "statistic": 4.120821134414612,
+          "reject": true
+        }
+      ]
+    },
+    {
+      "path": "crossover",
+      "m": 256,
+      "trials": 1024,
+      "distance_noncentrality": 33.83959983289242,
+      "score_noncentrality": 33.83959603996013,
+      "retention": 0.999999887914387,
+      "empirical_rejection": 0.998046875,
+      "noncentral_f_prediction": 0.9975873110294661,
+      "absolute_prediction_error": 0.00045956397053392717,
+      "replay": [
+        {
+          "seed": 6091030400000,
+          "energy": 0.1481343532433781,
+          "rate": 0.4306218134836291,
+          "amplitude_norm": 99.85333583959277,
+          "s2": 0.997602891982423,
+          "statistic": 6.335586156088274,
+          "reject": true
+        },
+        {
+          "seed": 6091030401023,
+          "energy": 0.13676575215580655,
+          "rate": 0.43170741233912824,
+          "amplitude_norm": 99.76764971735335,
+          "s2": 1.0026290093687242,
+          "statistic": 5.820037824680332,
+          "reject": true
+        }
+      ]
+    },
+    {
+      "path": "crossover",
+      "m": 1024,
+      "trials": 1024,
+      "distance_noncentrality": 34.50336305052042,
+      "score_noncentrality": 34.503362102388735,
+      "retention": 0.9999999725206008,
+      "empirical_rejection": 1.0,
+      "noncentral_f_prediction": 0.9979649868159568,
+      "absolute_prediction_error": 0.0020350131840431995,
+      "replay": [
+        {
+          "seed": 6091030500000,
+          "energy": 0.02604388298447835,
+          "rate": 0.4222566767162084,
+          "amplitude_norm": 99.8877774923401,
+          "s2": 0.9935352905283893,
+          "statistic": 4.4737441522120065,
+          "reject": true
+        },
+        {
+          "seed": 6091030501023,
+          "energy": 0.04267628603226252,
+          "rate": 0.42272062811376215,
+          "amplitude_norm": 99.9189031540984,
+          "s2": 1.0009719655889373,
+          "statistic": 7.276347123821953,
+          "reject": true
+        }
+      ]
+    },
+    {
+      "path": "crossover",
+      "m": 4096,
+      "trials": 1024,
+      "distance_noncentrality": 34.959716096520424,
+      "score_noncentrality": 34.95971585242492,
+      "retention": 0.9999999930178065,
+      "empirical_rejection": 0.99609375,
+      "noncentral_f_prediction": 0.9981901161332732,
+      "absolute_prediction_error": 0.002096366133273242,
+      "replay": [
+        {
+          "seed": 6091030600000,
+          "energy": 0.00675527457470791,
+          "rate": 0.41564118723567184,
+          "amplitude_norm": 99.9574957672538,
+          "s2": 1.0026327437341338,
+          "statistic": 4.5994914939231055,
+          "reject": true
+        },
+        {
+          "seed": 6091030601023,
+          "energy": 0.009323552372210926,
+          "rate": 0.4155581653041061,
+          "amplitude_norm": 99.95956061968981,
+          "s2": 1.0013966604066216,
+          "statistic": 6.356001244147188,
+          "reject": true
+        }
+      ]
+    },
+    {
+      "path": "crossover",
+      "m": 16384,
+      "trials": 1024,
+      "distance_noncentrality": 35.27436739206314,
+      "score_noncentrality": 35.27436743320052,
+      "retention": 1.0000000011662116,
+      "empirical_rejection": 0.9990234375,
+      "noncentral_f_prediction": 0.9983309795774286,
+      "absolute_prediction_error": 0.0006924579225714433,
+      "replay": [
+        {
+          "seed": 6091030700000,
+          "energy": 0.0019009267939433762,
+          "rate": 0.4111994646191008,
+          "amplitude_norm": 99.98174023992733,
+          "s2": 0.9980369268354085,
+          "statistic": 5.201007390030925,
+          "reject": true
+        },
+        {
+          "seed": 6091030701023,
+          "energy": 0.002526339706444948,
+          "rate": 0.411277988327263,
+          "amplitude_norm": 99.97755871581381,
+          "s2": 0.9998552442221548,
+          "statistic": 6.899590380638034,
+          "reject": true
+        }
+      ]
+    },
+    {
+      "path": "proportional",
+      "m": 256,
+      "trials": 1024,
+      "distance_noncentrality": 29.20317712146789,
+      "score_noncentrality": 29.20309569933718,
+      "retention": 0.9999972118742296,
+      "empirical_rejection": 0.9951171875,
+      "noncentral_f_prediction": 0.9924037861578442,
+      "absolute_prediction_error": 0.002713401342155808,
+      "replay": [
+        {
+          "seed": 6091030800000,
+          "energy": 0.19375683122931533,
+          "rate": 0.46804465926801264,
+          "amplitude_norm": 99.3856619181071,
+          "s2": 1.0037236971018213,
+          "statistic": 8.236288688133024,
+          "reject": true
+        },
+        {
+          "seed": 6091030801023,
+          "energy": 0.129360173827655,
+          "rate": 0.4689037856412577,
+          "amplitude_norm": 99.36638970760124,
+          "s2": 0.9928370189391235,
+          "statistic": 5.559187773381199,
+          "reject": true
+        }
+      ]
+    },
+    {
+      "path": "proportional",
+      "m": 1024,
+      "trials": 1024,
+      "distance_noncentrality": 31.24033760279417,
+      "score_noncentrality": 31.240318643090284,
+      "retention": 0.9999993931018247,
+      "empirical_rejection": 0.99609375,
+      "noncentral_f_prediction": 0.9953800129896376,
+      "absolute_prediction_error": 0.0007137370103623697,
+      "replay": [
+        {
+          "seed": 6091030900000,
+          "energy": 0.0341472598677609,
+          "rate": 0.44882555400339413,
+          "amplitude_norm": 99.65815939928285,
+          "s2": 0.9985051162281919,
+          "statistic": 5.836523942356392,
+          "reject": true
+        },
+        {
+          "seed": 6091030901023,
+          "energy": 0.02890462980489939,
+          "rate": 0.4488973292594156,
+          "amplitude_norm": 99.62518211563699,
+          "s2": 0.9937024797248526,
+          "statistic": 4.96431972415132,
+          "reject": true
+        }
+      ]
+    },
+    {
+      "path": "proportional",
+      "m": 4096,
+      "trials": 1024,
+      "distance_noncentrality": 32.680076405406,
+      "score_noncentrality": 32.68007204711413,
+      "retention": 0.9999998666376475,
+      "empirical_rejection": 0.998046875,
+      "noncentral_f_prediction": 0.9967715737804566,
+      "absolute_prediction_error": 0.0012753012195434454,
+      "replay": [
+        {
+          "seed": 6091031000000,
+          "energy": 0.0058814656217271825,
+          "rate": 0.43466620730015176,
+          "amplitude_norm": 99.80455558441344,
+          "s2": 0.9996875809868898,
+          "statistic": 4.016335310613152,
+          "reject": true
+        },
+        {
+          "seed": 6091031001023,
+          "energy": 0.0065036571343193355,
+          "rate": 0.43455410175027787,
+          "amplitude_norm": 99.82787102838192,
+          "s2": 0.9980240707440893,
+          "statistic": 4.448620095624042,
+          "reject": true
+        }
+      ]
+    },
+    {
+      "path": "proportional",
+      "m": 16384,
+      "trials": 1024,
+      "distance_noncentrality": 33.68478208780289,
+      "score_noncentrality": 33.68478112219504,
+      "retention": 0.9999999713340035,
+      "empirical_rejection": 0.9970703125,
+      "noncentral_f_prediction": 0.9974942855564967,
+      "absolute_prediction_error": 0.0004239730564966626,
+      "replay": [
+        {
+          "seed": 6091031100000,
+          "energy": 0.002285073442947741,
+          "rate": 0.4247313814306391,
+          "amplitude_norm": 99.90293694886677,
+          "s2": 1.0018721318260584,
+          "statistic": 6.228114031048784,
+          "reject": true
+        },
+        {
+          "seed": 6091031101023,
+          "energy": 0.0018194552871174429,
+          "rate": 0.42464574895409846,
+          "amplitude_norm": 99.91212821593945,
+          "s2": 0.9988935496097576,
+          "statistic": 4.973829199280574,
+          "reject": true
+        }
+      ]
+    },
+    {
+      "path": "null",
+      "m": 256,
+      "trials": 2048,
+      "distance_noncentrality": 0.0,
+      "score_noncentrality": 5.292784619667306e-23,
+      "retention": 1.0,
+      "empirical_rejection": 0.0390625,
+      "noncentral_f_prediction": 0.05000000000003735,
+      "absolute_prediction_error": 0.010937500000037348,
+      "replay": [
+        {
+          "seed": 6091031200000,
+          "energy": 0.04304121870228394,
+          "rate": 0.40014689141418075,
+          "amplitude_norm": 100.06734635469634,
+          "s2": 1.0061166567714772,
+          "statistic": 1.8252608372376462,
+          "reject": false
+        },
+        {
+          "seed": 6091031202047,
+          "energy": 0.00887517961550715,
+          "rate": 0.3990691236059759,
+          "amplitude_norm": 100.10530018314402,
+          "s2": 1.0126316653004692,
+          "statistic": 0.37395071005337144,
+          "reject": false
+        }
+      ]
+    },
+    {
+      "path": "null",
+      "m": 1024,
+      "trials": 2048,
+      "distance_noncentrality": 0.0,
+      "score_noncentrality": 2.1171138478669225e-22,
+      "retention": 1.0,
+      "empirical_rejection": 0.0556640625,
+      "noncentral_f_prediction": 0.05000000000015581,
+      "absolute_prediction_error": 0.005664062499844191,
+      "replay": [
+        {
+          "seed": 6091031300000,
+          "energy": 0.014312618328989809,
+          "rate": 0.3994816429247262,
+          "amplitude_norm": 100.00422153761792,
+          "s2": 0.9996973936108804,
+          "statistic": 2.4434262578779036,
+          "reject": true
+        },
+        {
+          "seed": 6091031302047,
+          "energy": 0.0044132238874572596,
+          "rate": 0.40023608625581747,
+          "amplitude_norm": 99.98694133282272,
+          "s2": 1.0036153703115518,
+          "statistic": 0.7504769580125368,
+          "reject": false
+        }
+      ]
+    },
+    {
+      "path": "null",
+      "m": 4096,
+      "trials": 2048,
+      "distance_noncentrality": 0.0,
+      "score_noncentrality": 8.46845539146769e-22,
+      "retention": 1.0,
+      "empirical_rejection": 0.05517578125,
+      "noncentral_f_prediction": 0.04999999999958438,
+      "absolute_prediction_error": 0.005175781250415623,
+      "replay": [
+        {
+          "seed": 6091031400000,
+          "energy": 0.0015213773002099116,
+          "rate": 0.40015341991578024,
+          "amplitude_norm": 99.99299057027585,
+          "s2": 0.9979189142933244,
+          "statistic": 1.0407594799544535,
+          "reject": false
+        },
+        {
+          "seed": 6091031402047,
+          "energy": 0.0016546749887472784,
+          "rate": 0.40009377191277523,
+          "amplitude_norm": 100.01508974249934,
+          "s2": 1.0010870995036818,
+          "statistic": 1.1283648141553684,
+          "reject": false
+        }
+      ]
+    },
+    {
+      "path": "null",
+      "m": 16384,
+      "trials": 2048,
+      "distance_noncentrality": 0.0,
+      "score_noncentrality": 3.387382156587076e-21,
+      "retention": 1.0,
+      "empirical_rejection": 0.0498046875,
+      "noncentral_f_prediction": 0.05000000000215332,
+      "absolute_prediction_error": 0.00019531250215332197,
+      "replay": [
+        {
+          "seed": 6091031500000,
+          "energy": 0.0004183561452950781,
+          "rate": 0.39996135045489106,
+          "amplitude_norm": 99.99567320814366,
+          "s2": 1.001418732450765,
+          "statistic": 1.1407727294621908,
+          "reject": false
+        },
+        {
+          "seed": 6091031502047,
+          "energy": 0.0001960491775218804,
+          "rate": 0.40006925751846395,
+          "amplitude_norm": 99.99931033104035,
+          "s2": 0.9998631348070417,
+          "statistic": 0.5354182342063527,
+          "reject": false
+        }
+      ]
+    }
+  ],
+  "union_power_at_largest_m": {
+    "diversity": 0.626953125,
+    "crossover": 0.603515625,
+    "proportional": 0.5869140625
+  },
+  "gates": {
+    "null_rejection_at_most_007": true,
+    "largest_prediction_error_at_most_005": true,
+    "largest_power_gain_at_least_015": true,
+    "largest_noncentrality_retention_within_8pct": true,
+    "all_finite": true
+  },
+  "hashes": {
+    "PHASE_MATCHED_SCORE_PROTOCOL.md": "f1c619794023cbc4c79f2946461d8beff9b3b8e5aadc8d87c1bc45b02ea8fdf8",
+    "PHASE_MATCHED_SCORE_THEORY.md": "fc2e26a7443a039c14bcb5aa31faad303eb13ae8832fd3c22ff1e259db0e65c6",
+    "phase_matched_score.py": "3e5d4637cd79090165f09addba5a326c48cda293887dad9601975db06cd505fd"
+  }
+}

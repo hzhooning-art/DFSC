@@ -1,0 +1,52 @@
+{
+  "critical": 11.911318757070218,
+  "rows": [
+    {
+      "rho2": 2.0,
+      "phase_power": 0.14621241569691906,
+      "cone_min_power": 0.14956790418628246,
+      "worst_angle": 4.8097203347672905e-12,
+      "pure_diversity_power": 0.1495679041859898,
+      "pure_curvature_power": 0.17358615065962113
+    },
+    {
+      "rho2": 4.0,
+      "phase_power": 0.2697961784400884,
+      "cone_min_power": 0.2768267178076721,
+      "worst_angle": 4.8097203347672905e-12,
+      "pure_diversity_power": 0.2768267178071724,
+      "pure_curvature_power": 0.3079276466554633
+    },
+    {
+      "rho2": 8.0,
+      "phase_power": 0.5306518279473045,
+      "cone_min_power": 0.5419623360199237,
+      "worst_angle": 4.8097203347672905e-12,
+      "pure_diversity_power": 0.5419623360192439,
+      "pure_curvature_power": 0.5738093067601393
+    },
+    {
+      "rho2": 12.0,
+      "phase_power": 0.738025234590884,
+      "cone_min_power": 0.7486275755219589,
+      "worst_angle": 4.8097203347672905e-12,
+      "pure_diversity_power": 0.7486275755213737,
+      "pure_curvature_power": 0.7718508945273254
+    },
+    {
+      "rho2": 18.0,
+      "phase_power": 0.910696038163623,
+      "cone_min_power": 0.9165778723902471,
+      "worst_angle": 4.8097203347672905e-12,
+      "pure_diversity_power": 0.9165778723899473,
+      "pure_curvature_power": 0.9266617708795032
+    }
+  ],
+  "checks": {
+    "null_critical_finite": true,
+    "minimum_at_diversity_face_numerically": true,
+    "cone_min_exceeds_phase_in_checked_cases": true,
+    "curvature_power_exceeds_diversity_power": true
+  },
+  "interpretation": "deterministic limit-experiment diagnostic, not proof of exact cone maximinity"
+}

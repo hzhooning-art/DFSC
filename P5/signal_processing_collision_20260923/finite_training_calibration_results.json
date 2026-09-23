@@ -1,0 +1,190 @@
+{
+  "settings": {
+    "d": 48,
+    "fixed_null_dimension": 9,
+    "added_dimension": 4,
+    "tangent_complement_dimension": 39,
+    "K_values": [
+      64,
+      128,
+      512
+    ],
+    "trials_per_cell": 1500,
+    "alpha": 0.05
+  },
+  "rows": [
+    {
+      "K": 64,
+      "nu": 63,
+      "exact_F_df": [
+        4,
+        25
+      ],
+      "old_scalar_correction": 0.2222222222222222,
+      "exact_F_rejection_rate": 0.03933333333333333,
+      "old_chi_square_rejection_rate": 0.134,
+      "exact_F_quantiles": [
+        0.8422360041667394,
+        2.103866019735832,
+        2.5372720780970037,
+        4.208717988249224
+      ],
+      "theoretical_F_95": 2.758710469717633,
+      "old_corrected_quantiles": [
+        4.3042440415490635,
+        10.85598949207365,
+        13.596321696124695,
+        21.034535315399392
+      ],
+      "median_Q_L": 77.34395878683208,
+      "all_finite": true,
+      "covariance": "identity"
+    },
+    {
+      "K": 128,
+      "nu": 127,
+      "exact_F_df": [
+        4,
+        89
+      ],
+      "old_scalar_correction": 0.6141732283464567,
+      "exact_F_rejection_rate": 0.04466666666666667,
+      "old_chi_square_rejection_rate": 0.10933333333333334,
+      "exact_F_quantiles": [
+        0.8282829616223801,
+        1.9772500499190167,
+        2.343161409987137,
+        3.556848080737886
+      ],
+      "theoretical_F_95": 2.4740887085195125,
+      "old_corrected_quantiles": [
+        4.016204236394187,
+        9.642330846960885,
+        11.752962362555255,
+        17.367181467421123
+      ],
+      "median_Q_L": 47.14561232111086,
+      "all_finite": true,
+      "covariance": "identity"
+    },
+    {
+      "K": 512,
+      "nu": 511,
+      "exact_F_df": [
+        4,
+        473
+      ],
+      "old_scalar_correction": 0.9041095890410958,
+      "exact_F_rejection_rate": 0.056666666666666664,
+      "old_chi_square_rejection_rate": 0.06266666666666666,
+      "exact_F_quantiles": [
+        0.8528629559884683,
+        1.9699860115526835,
+        2.4673628333929587,
+        3.5168176923538628
+      ],
+      "theoretical_F_95": 2.3907894804847367,
+      "old_corrected_quantiles": [
+        3.550745618207639,
+        8.260486914410276,
+        10.351370992868317,
+        14.933278706017823
+      ],
+      "median_Q_L": 35.943843347958946,
+      "all_finite": true,
+      "covariance": "identity"
+    },
+    {
+      "K": 64,
+      "nu": 63,
+      "exact_F_df": [
+        4,
+        25
+      ],
+      "old_scalar_correction": 0.2222222222222222,
+      "exact_F_rejection_rate": 0.046,
+      "old_chi_square_rejection_rate": 0.14666666666666667,
+      "exact_F_quantiles": [
+        0.8518289136065198,
+        2.1553403344336113,
+        2.6582253588553515,
+        4.204376906309887
+      ],
+      "theoretical_F_95": 2.758710469717633,
+      "old_corrected_quantiles": [
+        4.2105996825864995,
+        11.196847650242615,
+        14.256488601912203,
+        22.143368519438997
+      ],
+      "median_Q_L": 77.30041949059583,
+      "all_finite": true,
+      "covariance": "colored"
+    },
+    {
+      "K": 128,
+      "nu": 127,
+      "exact_F_df": [
+        4,
+        89
+      ],
+      "old_scalar_correction": 0.6141732283464567,
+      "exact_F_rejection_rate": 0.046,
+      "old_chi_square_rejection_rate": 0.094,
+      "exact_F_quantiles": [
+        0.8198201805288188,
+        1.9310491088270572,
+        2.4155318930101406,
+        3.5033174747088127
+      ],
+      "theoretical_F_95": 2.4740887085195125,
+      "old_corrected_quantiles": [
+        3.989820497354107,
+        9.241197272200283,
+        11.624875722514844,
+        16.43074259250361
+      ],
+      "median_Q_L": 46.51914818098938,
+      "all_finite": true,
+      "covariance": "colored"
+    },
+    {
+      "K": 512,
+      "nu": 511,
+      "exact_F_df": [
+        4,
+        473
+      ],
+      "old_scalar_correction": 0.9041095890410958,
+      "exact_F_rejection_rate": 0.044,
+      "old_chi_square_rejection_rate": 0.05266666666666667,
+      "exact_F_quantiles": [
+        0.8744734612381161,
+        1.9537048391239051,
+        2.30208463616628,
+        3.2547777828154474
+      ],
+      "theoretical_F_95": 2.3907894804847367,
+      "old_corrected_quantiles": [
+        3.6507649772620936,
+        8.121287310831109,
+        9.708097675601506,
+        13.830076458266271
+      ],
+      "median_Q_L": 36.5679038010574,
+      "all_finite": true,
+      "covariance": "colored"
+    }
+  ],
+  "gates": {
+    "all_finite": true,
+    "all_exact_sizes_between_003_and_007": true,
+    "max_exact_size_error_at_most_002": true,
+    "old_scalar_is_liberal_at_K64_for_both_covariances": true,
+    "invariance_rate_gap_at_most_0025": true
+  },
+  "hashes": {
+    "FINITE_TRAINING_CALIBRATION_THEORY.tex": "d2c5eaebce32f8c7d61498f454e041dfdfa49426662a558a2e70f7c979396b83",
+    "finite_training_calibration.py": "8feb00ef38a10011ace2175bdc3bb73ddd40adb20b892f83deb1e45d40c75258"
+  }
+}

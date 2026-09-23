@@ -1,0 +1,778 @@
+{
+  "settings": {
+    "m": 16384,
+    "target_nc": 8.0,
+    "alt_trials": 512,
+    "null_trials": 1024
+  },
+  "designs": [
+    {
+      "name": "baseline",
+      "C": 6,
+      "n": 24,
+      "lambda": 0.4,
+      "S": 10000.0,
+      "irregular": false,
+      "nu": 2359152,
+      "paths": {
+        "null": {
+          "delta": 0.0,
+          "minimum_amplitude": 20.412414523193153,
+          "trials": 1024,
+          "distance_nc": 0.0,
+          "score_nc": 8.88279963840668e-22,
+          "retention": 1.0,
+          "prediction": 0.05000000000215332,
+          "union": 0.03515625,
+          "phase": 0.0498046875,
+          "cone": 0.0546875,
+          "prediction_error": 0.00019531250215332197
+        },
+        "diversity": {
+          "delta": 0.0009594031340688278,
+          "minimum_amplitude": 6.270278899462204,
+          "trials": 512,
+          "distance_nc": 7.9935120940208435,
+          "score_nc": 7.993512134316044,
+          "retention": 1.0000000050409883,
+          "prediction": 0.5302558987147004,
+          "union": 0.0859375,
+          "phase": 0.49609375,
+          "cone": 0.5,
+          "prediction_error": 0.03416214871470036
+        },
+        "crossover": {
+          "delta": 0.010800619974546533,
+          "minimum_amplitude": 19.162414523193153,
+          "trials": 512,
+          "distance_nc": 7.925238847732544,
+          "score_nc": 7.925238957037802,
+          "retention": 1.000000013792046,
+          "prediction": 0.5260935680634491,
+          "union": 0.115234375,
+          "phase": 0.56640625,
+          "cone": 0.58984375,
+          "prediction_error": 0.04031268193655091
+        },
+        "proportional": {
+          "delta": 0.03425246941409308,
+          "minimum_amplitude": 20.412414523193153,
+          "trials": 512,
+          "distance_nc": 7.651391685009003,
+          "score_nc": 7.651391706970086,
+          "retention": 1.0000000028702076,
+          "prediction": 0.5092277354215198,
+          "union": 0.109375,
+          "phase": 0.529296875,
+          "cone": 0.5625,
+          "prediction_error": 0.020069139578480222
+        }
+      }
+    },
+    {
+      "name": "channels_2",
+      "C": 2,
+      "n": 24,
+      "lambda": 0.4,
+      "S": 10000.0,
+      "irregular": false,
+      "nu": 786384,
+      "paths": {
+        "null": {
+          "delta": 0.0,
+          "minimum_amplitude": 35.35533905932738,
+          "trials": 1024,
+          "distance_nc": 0.0,
+          "score_nc": 4.17736549096936e-21,
+          "retention": 1.0,
+          "prediction": 0.050000000000000044,
+          "union": 0.041015625,
+          "phase": 0.0615234375,
+          "cone": 0.052734375,
+          "prediction_error": 0.011523437499999956
+        },
+        "diversity": {
+          "delta": 0.0009594031340688278,
+          "minimum_amplitude": 21.213203435596427,
+          "trials": 512,
+          "distance_nc": 7.993512034416199,
+          "score_nc": 7.993512134314108,
+          "retention": 1.000000012497374,
+          "prediction": 0.7171890723983776,
+          "union": 0.166015625,
+          "phase": 0.728515625,
+          "cone": 0.755859375,
+          "prediction_error": 0.011326552601622408
+        },
+        "crossover": {
+          "delta": 0.010800619974546533,
+          "minimum_amplitude": 34.10533905932738,
+          "trials": 512,
+          "distance_nc": 7.925238847732544,
+          "score_nc": 7.92523895702384,
+          "retention": 1.0000000137902842,
+          "prediction": 0.7132354070714784,
+          "union": 0.17578125,
+          "phase": 0.732421875,
+          "cone": 0.771484375,
+          "prediction_error": 0.019186467928521633
+        },
+        "proportional": {
+          "delta": 0.03425246941409308,
+          "minimum_amplitude": 35.35533905932738,
+          "trials": 512,
+          "distance_nc": 7.6513917446136475,
+          "score_nc": 7.651391706983191,
+          "retention": 0.9999999950818809,
+          "prediction": 0.696950671376158,
+          "union": 0.181640625,
+          "phase": 0.701171875,
+          "cone": 0.74609375,
+          "prediction_error": 0.00422120362384204
+        }
+      }
+    },
+    {
+      "name": "channels_12",
+      "C": 12,
+      "n": 24,
+      "lambda": 0.4,
+      "S": 10000.0,
+      "irregular": false,
+      "nu": 4718304,
+      "paths": {
+        "null": {
+          "delta": 0.0,
+          "minimum_amplitude": 14.433756729740644,
+          "trials": 1024,
+          "distance_nc": 0.0,
+          "score_nc": 1.8090439996534723e-21,
+          "retention": 1.0,
+          "prediction": 0.04999999999576188,
+          "union": 0.0615234375,
+          "phase": 0.0478515625,
+          "cone": 0.0498046875,
+          "prediction_error": 0.002148437495761879
+        },
+        "diversity": {
+          "delta": 0.0009594031340688278,
+          "minimum_amplitude": 0.2916211060096927,
+          "trials": 512,
+          "distance_nc": 7.9935120940208435,
+          "score_nc": 7.993512134316619,
+          "retention": 1.0000000050410602,
+          "prediction": 0.40117286419667364,
+          "union": 0.12109375,
+          "phase": 0.392578125,
+          "cone": 0.400390625,
+          "prediction_error": 0.00859473919667364
+        },
+        "crossover": {
+          "delta": 0.010800619974546533,
+          "minimum_amplitude": 13.183756729740644,
+          "trials": 512,
+          "distance_nc": 7.925238907337189,
+          "score_nc": 7.9252389569962975,
+          "retention": 1.0000000062659447,
+          "prediction": 0.3975797640115206,
+          "union": 0.08984375,
+          "phase": 0.3828125,
+          "cone": 0.392578125,
+          "prediction_error": 0.01476726401152062
+        },
+        "proportional": {
+          "delta": 0.03425246941409308,
+          "minimum_amplitude": 14.433756729740644,
+          "trials": 512,
+          "distance_nc": 7.651391565799713,
+          "score_nc": 7.651391706887533,
+          "retention": 1.000000018439498,
+          "prediction": 0.38315459825926046,
+          "union": 0.080078125,
+          "phase": 0.392578125,
+          "cone": 0.427734375,
+          "prediction_error": 0.00942352674073954
+        }
+      }
+    },
+    {
+      "name": "times_12",
+      "C": 6,
+      "n": 12,
+      "lambda": 0.4,
+      "S": 10000.0,
+      "irregular": false,
+      "nu": 1179576,
+      "paths": {
+        "null": {
+          "delta": 0.0,
+          "minimum_amplitude": 20.412414523193153,
+          "trials": 1024,
+          "distance_nc": 0.0,
+          "score_nc": 1.3108400098886628e-21,
+          "retention": 1.0,
+          "prediction": 0.0500000000007631,
+          "union": 0.04296875,
+          "phase": 0.0546875,
+          "cone": 0.05859375,
+          "prediction_error": 0.004687499999236899
+        },
+        "diversity": {
+          "delta": 0.001259964291910955,
+          "minimum_amplitude": 6.270278899462204,
+          "trials": 512,
+          "distance_nc": 7.991465389728546,
+          "score_nc": 7.991465383825783,
+          "retention": 0.9999999992613666,
+          "prediction": 0.530130072617035,
+          "union": 0.18359375,
+          "phase": 0.498046875,
+          "cone": 0.53125,
+          "prediction_error": 0.03208319761703504
+        },
+        "crossover": {
+          "delta": 0.0141332663846296,
+          "minimum_amplitude": 19.162414523193153,
+          "trials": 512,
+          "distance_nc": 7.901086926460266,
+          "score_nc": 7.901086899189632,
+          "retention": 0.9999999965484959,
+          "prediction": 0.5246156839468543,
+          "union": 0.1640625,
+          "phase": 0.537109375,
+          "cone": 0.5703125,
+          "prediction_error": 0.012493691053145684
+        },
+        "proportional": {
+          "delta": 0.039147538763652935,
+          "minimum_amplitude": 20.412414523193153,
+          "trials": 512,
+          "distance_nc": 7.576395869255066,
+          "score_nc": 7.576395810685442,
+          "retention": 0.999999992269461,
+          "prediction": 0.504561620455511,
+          "union": 0.173828125,
+          "phase": 0.521484375,
+          "cone": 0.572265625,
+          "prediction_error": 0.016922754544488994
+        }
+      }
+    },
+    {
+      "name": "times_48",
+      "C": 6,
+      "n": 48,
+      "lambda": 0.4,
+      "S": 10000.0,
+      "irregular": false,
+      "nu": 4718304,
+      "paths": {
+        "null": {
+          "delta": 0.0,
+          "minimum_amplitude": 20.412414523193153,
+          "trials": 1024,
+          "distance_nc": 0.0,
+          "score_nc": 1.1875935452000384e-20,
+          "retention": 1.0,
+          "prediction": 0.050000000003175615,
+          "union": 0.0458984375,
+          "phase": 0.0546875,
+          "cone": 0.04296875,
+          "prediction_error": 0.004687499996824385
+        },
+        "diversity": {
+          "delta": 0.0007076439856115248,
+          "minimum_amplitude": 6.270278899462204,
+          "trials": 512,
+          "distance_nc": 7.995125889778137,
+          "score_nc": 7.995125820361434,
+          "retention": 0.9999999913176222,
+          "prediction": 0.5303547165659537,
+          "union": 0.099609375,
+          "phase": 0.51953125,
+          "cone": 0.513671875,
+          "prediction_error": 0.010823466565953677
+        },
+        "crossover": {
+          "delta": 0.007984781509083307,
+          "minimum_amplitude": 19.162414523193153,
+          "trials": 512,
+          "distance_nc": 7.944099545478821,
+          "score_nc": 7.944099566192927,
+          "retention": 1.0000000026074831,
+          "prediction": 0.5272458033059505,
+          "union": 0.076171875,
+          "phase": 0.541015625,
+          "cone": 0.5703125,
+          "prediction_error": 0.0137698216940495
+        },
+        "proportional": {
+          "delta": 0.029575297865631962,
+          "minimum_amplitude": 20.412414523193153,
+          "trials": 512,
+          "distance_nc": 7.702581524848938,
+          "score_nc": 7.702581616162465,
+          "retention": 1.000000011854925,
+          "prediction": 0.5124013303134372,
+          "union": 0.083984375,
+          "phase": 0.57421875,
+          "cone": 0.611328125,
+          "prediction_error": 0.06181741968656285
+        }
+      }
+    },
+    {
+      "name": "rate_025",
+      "C": 6,
+      "n": 24,
+      "lambda": 0.25,
+      "S": 10000.0,
+      "irregular": false,
+      "nu": 2359152,
+      "paths": {
+        "null": {
+          "delta": 0.0,
+          "minimum_amplitude": 20.412414523193153,
+          "trials": 1024,
+          "distance_nc": 0.0,
+          "score_nc": 7.389032082678892e-21,
+          "retention": 1.0,
+          "prediction": 0.05000000000215332,
+          "union": 0.0400390625,
+          "phase": 0.046875,
+          "cone": 0.05078125,
+          "prediction_error": 0.003125000002153322
+        },
+        "diversity": {
+          "delta": 0.0009086597139200561,
+          "minimum_amplitude": 6.270278899462204,
+          "trials": 512,
+          "distance_nc": 8.002593457698822,
+          "score_nc": 8.00259343930804,
+          "retention": 0.9999999977018972,
+          "prediction": 0.5308082338513586,
+          "union": 0.091796875,
+          "phase": 0.509765625,
+          "cone": 0.533203125,
+          "prediction_error": 0.021042608851358557
+        },
+        "crossover": {
+          "delta": 0.010230422606446634,
+          "minimum_amplitude": 19.162414523193153,
+          "trials": 512,
+          "distance_nc": 8.023683041334152,
+          "score_nc": 8.023682988221395,
+          "retention": 0.9999999933805016,
+          "prediction": 0.5320897247613368,
+          "union": 0.1328125,
+          "phase": 0.541015625,
+          "cone": 0.55078125,
+          "prediction_error": 0.008925900238663242
+        },
+        "proportional": {
+          "delta": 0.03261378814578475,
+          "minimum_amplitude": 20.412414523193153,
+          "trials": 512,
+          "distance_nc": 7.982294350862503,
+          "score_nc": 7.982294076249023,
+          "retention": 0.9999999655971744,
+          "prediction": 0.529573176059063,
+          "union": 0.130859375,
+          "phase": 0.55859375,
+          "cone": 0.59765625,
+          "prediction_error": 0.029020573940937044
+        }
+      }
+    },
+    {
+      "name": "rate_065",
+      "C": 6,
+      "n": 24,
+      "lambda": 0.65,
+      "S": 10000.0,
+      "irregular": false,
+      "nu": 2359152,
+      "paths": {
+        "null": {
+          "delta": 0.0,
+          "minimum_amplitude": 20.412414523193153,
+          "trials": 1024,
+          "distance_nc": -5.960464477539063e-08,
+          "score_nc": 2.261994316743967e-22,
+          "retention": 1.0,
+          "prediction": 0.05000000000215332,
+          "union": 0.0458984375,
+          "phase": 0.0458984375,
+          "cone": 0.0419921875,
+          "prediction_error": 0.004101562502153322
+        },
+        "diversity": {
+          "delta": 0.0012708875624398064,
+          "minimum_amplitude": 6.270278899462204,
+          "trials": 512,
+          "distance_nc": 7.987338602542877,
+          "score_nc": 7.987338626663685,
+          "retention": 1.0000000030198803,
+          "prediction": 0.5298802420799645,
+          "union": 0.12109375,
+          "phase": 0.53125,
+          "cone": 0.517578125,
+          "prediction_error": 0.0013697579200354637
+        },
+        "crossover": {
+          "delta": 0.014282638703716165,
+          "minimum_amplitude": 19.162414523193153,
+          "trials": 512,
+          "distance_nc": 7.857604205608368,
+          "score_nc": 7.857604216499724,
+          "retention": 1.0000000013860912,
+          "prediction": 0.5219531533932775,
+          "union": 0.107421875,
+          "phase": 0.4921875,
+          "cone": 0.51953125,
+          "prediction_error": 0.029765653393277525
+        },
+        "proportional": {
+          "delta": 0.04207126273665422,
+          "minimum_amplitude": 20.412414523193153,
+          "trials": 512,
+          "distance_nc": 7.383691668510437,
+          "score_nc": 7.3836914362934,
+          "retention": 0.9999999685500089,
+          "prediction": 0.4924901722258179,
+          "union": 0.109375,
+          "phase": 0.5,
+          "cone": 0.55078125,
+          "prediction_error": 0.007509827774182076
+        }
+      }
+    },
+    {
+      "name": "irregular_24",
+      "C": 6,
+      "n": 24,
+      "lambda": 0.4,
+      "S": 10000.0,
+      "irregular": true,
+      "nu": 2359152,
+      "paths": {
+        "null": {
+          "delta": 0.0,
+          "minimum_amplitude": 20.412414523193153,
+          "trials": 1024,
+          "distance_nc": 0.0,
+          "score_nc": 5.89366184800572e-24,
+          "retention": 1.0,
+          "prediction": 0.05000000000215332,
+          "union": 0.0341796875,
+          "phase": 0.0458984375,
+          "cone": 0.0498046875,
+          "prediction_error": 0.004101562502153322
+        },
+        "diversity": {
+          "delta": 0.0009670952106629057,
+          "minimum_amplitude": 6.270278899462204,
+          "trials": 512,
+          "distance_nc": 7.993422627449036,
+          "score_nc": 7.993422640411835,
+          "retention": 1.0000000016216832,
+          "prediction": 0.5302504540521639,
+          "union": 0.109375,
+          "phase": 0.525390625,
+          "cone": 0.546875,
+          "prediction_error": 0.0048598290521638665
+        },
+        "crossover": {
+          "delta": 0.010886211338286813,
+          "minimum_amplitude": 19.162414523193153,
+          "trials": 512,
+          "distance_nc": 7.9242430329322815,
+          "score_nc": 7.9242430652398745,
+          "retention": 1.0000000040770574,
+          "prediction": 0.5260327244086869,
+          "union": 0.099609375,
+          "phase": 0.51953125,
+          "cone": 0.548828125,
+          "prediction_error": 0.006501474408686869
+        },
+        "proportional": {
+          "delta": 0.03436641144406942,
+          "minimum_amplitude": 20.412414523193153,
+          "trials": 512,
+          "distance_nc": 7.657907724380493,
+          "score_nc": 7.657907731606339,
+          "retention": 1.0000000009435797,
+          "prediction": 0.5096321303923498,
+          "union": 0.1171875,
+          "phase": 0.513671875,
+          "cone": 0.55859375,
+          "prediction_error": 0.00403974460765022
+        }
+      }
+    },
+    {
+      "name": "energy_100",
+      "C": 6,
+      "n": 24,
+      "lambda": 0.4,
+      "S": 100.0,
+      "irregular": false,
+      "nu": 2359152,
+      "paths": {
+        "null": {
+          "delta": 0.0,
+          "minimum_amplitude": 2.041241452319315,
+          "trials": 1024,
+          "distance_nc": 0.0,
+          "score_nc": 1.6027028264998387e-23,
+          "retention": 1.0,
+          "prediction": 0.05000000000215332,
+          "union": 0.0419921875,
+          "phase": 0.04296875,
+          "cone": 0.044921875,
+          "prediction_error": 0.007031250002153322
+        },
+        "diversity": {
+          "delta": 0.009594031340688279,
+          "minimum_amplitude": 0.6270278899462203,
+          "trials": 512,
+          "distance_nc": 7.934505973011255,
+          "score_nc": 7.93450597334581,
+          "retention": 1.0000000000421645,
+          "prediction": 0.5266595570531152,
+          "union": 0.12109375,
+          "phase": 0.54296875,
+          "cone": 0.54296875,
+          "prediction_error": 0.01630919294688482
+        },
+        "crossover": {
+          "delta": 0.08523269783562659,
+          "minimum_amplitude": 1.9162414523193152,
+          "trials": 512,
+          "distance_nc": 7.2589031821116805,
+          "score_nc": 7.25890067042169,
+          "retention": 0.9999996539849165,
+          "prediction": 0.48460857375981636,
+          "union": 0.095703125,
+          "phase": 0.48828125,
+          "cone": 0.544921875,
+          "prediction_error": 0.0036726762401836366
+        },
+        "proportional": {
+          "delta": 0.10831581883378724,
+          "minimum_amplitude": 2.041241452319315,
+          "trials": 512,
+          "distance_nc": 6.848488727584481,
+          "score_nc": 6.848482766332651,
+          "retention": 0.999999129552217,
+          "prediction": 0.4583633062424626,
+          "union": 0.099609375,
+          "phase": 0.48046875,
+          "cone": 0.509765625,
+          "prediction_error": 0.022105443757537424
+        }
+      }
+    },
+    {
+      "name": "scale_nu_144",
+      "C": 6,
+      "n": 24,
+      "lambda": 0.4,
+      "S": 10000.0,
+      "irregular": false,
+      "nu": 144,
+      "paths": {
+        "null": {
+          "delta": 0.0,
+          "minimum_amplitude": 20.412414523193153,
+          "trials": 1024,
+          "distance_nc": 0.0,
+          "score_nc": 8.88279963840668e-22,
+          "retention": 1.0,
+          "prediction": 0.04999999999999993,
+          "union": 0.052734375,
+          "phase": 0.0556640625,
+          "cone": 0.056640625,
+          "prediction_error": 0.005664062500000067
+        },
+        "diversity": {
+          "delta": 0.0009594031340688278,
+          "minimum_amplitude": 6.270278899462204,
+          "trials": 512,
+          "distance_nc": 7.9935120940208435,
+          "score_nc": 7.993512134316044,
+          "retention": 1.0000000050409883,
+          "prediction": 0.509461961350824,
+          "union": 0.10546875,
+          "phase": 0.54296875,
+          "cone": 0.54296875,
+          "prediction_error": 0.033506788649176
+        },
+        "crossover": {
+          "delta": 0.010800619974546533,
+          "minimum_amplitude": 19.162414523193153,
+          "trials": 512,
+          "distance_nc": 7.925238847732544,
+          "score_nc": 7.925238957037802,
+          "retention": 1.000000013792046,
+          "prediction": 0.5053978646348358,
+          "union": 0.083984375,
+          "phase": 0.505859375,
+          "cone": 0.5078125,
+          "prediction_error": 0.000461510365164175
+        },
+        "proportional": {
+          "delta": 0.03425246941409308,
+          "minimum_amplitude": 20.412414523193153,
+          "trials": 512,
+          "distance_nc": 7.651391685009003,
+          "score_nc": 7.651391706970086,
+          "retention": 1.0000000028702076,
+          "prediction": 0.4889534627331942,
+          "union": 0.078125,
+          "phase": 0.482421875,
+          "cone": 0.53515625,
+          "prediction_error": 0.006531587733194177
+        }
+      }
+    },
+    {
+      "name": "combined_small",
+      "C": 4,
+      "n": 16,
+      "lambda": 0.3,
+      "S": 1000.0,
+      "irregular": true,
+      "nu": 144,
+      "paths": {
+        "null": {
+          "delta": 0.0,
+          "minimum_amplitude": 7.905694150420948,
+          "trials": 1024,
+          "distance_nc": 0.0,
+          "score_nc": 1.5294569526105482e-21,
+          "retention": 1.0,
+          "prediction": 0.04999999999999993,
+          "union": 0.04296875,
+          "phase": 0.0517578125,
+          "cone": 0.0517578125,
+          "prediction_error": 0.0017578125000000666
+        },
+        "diversity": {
+          "delta": 0.0034169675458520206,
+          "minimum_amplitude": 3.4335581954213676,
+          "trials": 512,
+          "distance_nc": 7.994260437786579,
+          "score_nc": 7.994260440948609,
+          "retention": 1.0000000003955376,
+          "prediction": 0.58821031022745,
+          "union": 0.14453125,
+          "phase": 0.583984375,
+          "cone": 0.60546875,
+          "prediction_error": 0.004225935227449962
+        },
+        "crossover": {
+          "delta": 0.03644177125562083,
+          "minimum_amplitude": 7.510409442899901,
+          "trials": 512,
+          "distance_nc": 7.892165206372738,
+          "score_nc": 7.892164839164966,
+          "retention": 0.9999999534718594,
+          "prediction": 0.5819215591958431,
+          "union": 0.10546875,
+          "phase": 0.560546875,
+          "cone": 0.6015625,
+          "prediction_error": 0.021374684195843097
+        },
+        "proportional": {
+          "delta": 0.06307831921080148,
+          "minimum_amplitude": 7.905694150420948,
+          "trials": 512,
+          "distance_nc": 7.66186048835516,
+          "score_nc": 7.661859796898928,
+          "retention": 0.9999999097534819,
+          "prediction": 0.5675298061242381,
+          "union": 0.140625,
+          "phase": 0.572265625,
+          "cone": 0.640625,
+          "prediction_error": 0.00473581887576191
+        }
+      }
+    },
+    {
+      "name": "combined_large",
+      "C": 8,
+      "n": 36,
+      "lambda": 0.6,
+      "S": 1000.0,
+      "irregular": true,
+      "nu": 4718304,
+      "paths": {
+        "null": {
+          "delta": 0.0,
+          "minimum_amplitude": 5.5901699437494745,
+          "trials": 1024,
+          "distance_nc": 7.450580596923828e-09,
+          "score_nc": 7.8194417280403535e-25,
+          "retention": 1.0495077029659701e-16,
+          "prediction": 0.04999999999597704,
+          "union": 0.04296875,
+          "phase": 0.0576171875,
+          "cone": 0.05859375,
+          "prediction_error": 0.00761718750402296
+        },
+        "diversity": {
+          "delta": 0.0031980816886261303,
+          "minimum_amplitude": 1.118033988749895,
+          "trials": 512,
+          "distance_nc": 7.967952571809292,
+          "score_nc": 7.967952587324205,
+          "retention": 1.0000000019471642,
+          "prediction": 0.47471414200935214,
+          "union": 0.09765625,
+          "phase": 0.48828125,
+          "cone": 0.490234375,
+          "prediction_error": 0.013567107990647864
+        },
+        "crossover": {
+          "delta": 0.03474216105484785,
+          "minimum_amplitude": 5.194885236228427,
+          "trials": 512,
+          "distance_nc": 7.643910296261311,
+          "score_nc": 7.643910154726107,
+          "retention": 0.9999999814839267,
+          "prediction": 0.45567620799266806,
+          "union": 0.08984375,
+          "phase": 0.443359375,
+          "cone": 0.490234375,
+          "prediction_error": 0.012316832992668059
+        },
+        "proportional": {
+          "delta": 0.0657376918822284,
+          "minimum_amplitude": 5.5901699437494745,
+          "trials": 512,
+          "distance_nc": 7.082791157066822,
+          "score_nc": 7.082789341759615,
+          "retention": 0.9999997437017178,
+          "prediction": 0.42226114556269145,
+          "union": 0.111328125,
+          "phase": 0.39453125,
+          "cone": 0.451171875,
+          "prediction_error": 0.027729895562691453
+        }
+      }
+    }
+  ],
+  "gates": {
+    "null_phase_and_cone_between_002_008": true,
+    "phase_prediction_error_at_most_007": true,
+    "retention_at_least_085": true,
+    "phase_gain_over_union_at_least_008": true,
+    "cone_loss_at_most_005": true,
+    "finite_and_positive": true
+  },
+  "hashes": {
+    "SCORE_DESIGN_STRESS_PROTOCOL.md": "4ebbaca8c12a87ee247084488bab323e56c7106e40a2d16b5a0ad20191da4564",
+    "score_design_stress.py": "a6bf61c177b8cd9244a4484fde0e0e4b5edc1c76dd3445b0c165ed8407555c17"
+  }
+}

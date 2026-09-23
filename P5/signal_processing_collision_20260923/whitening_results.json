@@ -1,0 +1,166 @@
+{
+  "settings": {
+    "C": 4,
+    "n": 12,
+    "d": 48,
+    "m": 4096,
+    "K_values": [
+      64,
+      128,
+      512
+    ],
+    "trials_per_cell": 512,
+    "target_nc": 8.0,
+    "delta": 0.08790219193517144,
+    "chi_square_power_prediction": 0.6047246656926256
+  },
+  "rows": [
+    {
+      "K": 64,
+      "null": {
+        "K": 64,
+        "trials": 512,
+        "correction": 0.2222222222222222,
+        "whitened_rate": 0.16796875,
+        "unwhitened_rate": 0.13671875,
+        "whitened_quantiles": [
+          4.317119958452398,
+          11.372906029290212,
+          14.843894224581335,
+          24.281811871858782
+        ],
+        "unwhitened_quantiles": [
+          4.546187942244891,
+          11.267670419430162,
+          13.802907968684742,
+          16.919169676077153
+        ],
+        "minimum_rank": 4,
+        "all_finite": true
+      },
+      "alternative": {
+        "K": 64,
+        "trials": 512,
+        "correction": 0.2222222222222222,
+        "whitened_rate": 0.419921875,
+        "unwhitened_rate": 0.8203125,
+        "whitened_quantiles": [
+          8.345159384518047,
+          20.412370165567197,
+          25.404531404297526,
+          34.46029224566228
+        ],
+        "unwhitened_quantiles": [
+          18.376683800500437,
+          36.65389517175099,
+          41.30050846443047,
+          50.249781051397
+        ],
+        "minimum_rank": 4,
+        "all_finite": true
+      }
+    },
+    {
+      "K": 128,
+      "null": {
+        "K": 128,
+        "trials": 512,
+        "correction": 0.6141732283464567,
+        "whitened_rate": 0.12109375,
+        "unwhitened_rate": 0.169921875,
+        "whitened_quantiles": [
+          4.402962993799994,
+          10.279803946780838,
+          12.788674348528547,
+          16.750120195911098
+        ],
+        "unwhitened_quantiles": [
+          4.61258459042148,
+          11.514490820512878,
+          13.685917816015188,
+          18.31111745112426
+        ],
+        "minimum_rank": 4,
+        "all_finite": true
+      },
+      "alternative": {
+        "K": 128,
+        "trials": 512,
+        "correction": 0.6141732283464567,
+        "whitened_rate": 0.591796875,
+        "unwhitened_rate": 0.83203125,
+        "whitened_quantiles": [
+          11.16920485253576,
+          21.507588712095167,
+          25.505948390495405,
+          33.21353620378029
+        ],
+        "unwhitened_quantiles": [
+          18.538679351012906,
+          36.980415041520125,
+          44.96504817956962,
+          54.98045761957821
+        ],
+        "minimum_rank": 4,
+        "all_finite": true
+      }
+    },
+    {
+      "K": 512,
+      "null": {
+        "K": 512,
+        "trials": 512,
+        "correction": 0.9041095890410958,
+        "whitened_rate": 0.060546875,
+        "unwhitened_rate": 0.173828125,
+        "whitened_quantiles": [
+          3.718456533913414,
+          8.108420404106962,
+          10.14568750209658,
+          12.494813924028193
+        ],
+        "unwhitened_quantiles": [
+          4.9299961950965265,
+          11.693880677708387,
+          14.218525740536242,
+          18.997859870938274
+        ],
+        "minimum_rank": 4,
+        "all_finite": true
+      },
+      "alternative": {
+        "K": 512,
+        "trials": 512,
+        "correction": 0.9041095890410958,
+        "whitened_rate": 0.595703125,
+        "unwhitened_rate": 0.828125,
+        "whitened_quantiles": [
+          10.768570717922483,
+          20.2516480023428,
+          22.98934085084414,
+          29.536925452256867
+        ],
+        "unwhitened_quantiles": [
+          17.29782104079561,
+          34.41426347915099,
+          38.25513176652731,
+          50.05895224236263
+        ],
+        "minimum_rank": 4,
+        "all_finite": true
+      }
+    }
+  ],
+  "gates": {
+    "all_finite_and_full_rank": true,
+    "K512_whitened_null_between_0025_and_0075": true,
+    "K512_power_prediction_error_at_most_008": true,
+    "K512_whitening_improves_null_size": true,
+    "population_collision_rank_C": true
+  },
+  "hashes": {
+    "WHITENING_PROTOCOL.md": "92027c2feefbe49fafb666f2fdc0efbd37f200ab5d6fc9346e2e0b3cfe14274f",
+    "COVARIANCE_WHITENING_THEORY.tex": "eab50a27c400e60cc0b0d2bc0db9d1dbb45da9790a898d874ef56532db73b897",
+    "whitening_benchmark.py": "6cf8d34050db4c8285f1645060ee57d5e3d9d27f77d461c7ed593681c8c38317"
+  }
+}

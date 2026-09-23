@@ -1,0 +1,79 @@
+\section{Independent-training prewhitening}
+\label{app:whitening}
+
+Let $d=Cn$ be fixed and suppose
+\[
+\operatorname{vec}(\bar Y)=\operatorname{vec}(M)+m^{-1/2}\xi,
+\qquad \xi\sim N_d(0,\Sigma),
+\]
+where the eigenvalues of $\Sigma$ lie in a fixed interval
+$[\underline\sigma^2,\overline\sigma^2]$. Independently observe $K$ i.i.d.
+$N_d(0,\Sigma)$ noise-training vectors and let $\widehat\Sigma_K$ be their
+sample covariance. All fits and projections below use the estimated
+inner product
+$\langle x,y\rangle_{\widehat\Sigma^{-1}}=x^T\widehat\Sigma^{-1}y$.
+
+\begin{theorem}[plug-in covariance phase score]
+\label{thm:whitening}
+Assume $K\to\infty$, the null parameters remain in the same compact regular
+set as Theorem~\ref{thm:score}, and the eigenvalue bounds above hold uniformly.
+Construct the fitted null tangent $\widehat{\mathcal T}$ and project the raw
+collision directions
+\[
+\{u(f'_{\widehat\theta})^T:u\in\mathbb R^C\}
++\operatorname{span}\{\widehat s(f''_{\widehat\theta})^T\}
+\]
+off $\widehat{\mathcal T}$ in the
+$\widehat\Sigma^{-1}$ metric.  Let $\widehat{\mathcal E}_\Sigma$ be the
+resulting $C$-dimensional space.  Then the squared norm of the whitened fitted
+residual projected onto $\widehat{\mathcal E}_\Sigma$, multiplied by $m$; call
+this statistic $T_{m,K}$. Under compact collision-local alternatives covered
+by Theorem~\ref{thm:distance}, its distribution is uniformly $o(1)$ in
+Kolmogorov distance from $\chi_C^2(\rho_{m,\Sigma}^2)$, where
+\[
+\rho_{m,\Sigma}^2=
+m\|M-\Pi_{\mathcal M_1}^{\Sigma^{-1}}M\|_{\Sigma^{-1}}^2+o(1).
+\]
+Under the null $\rho_{m,\Sigma}^2=0$, so $T_{m,K}\Rightarrow\chi_C^2$; if
+$\rho_{m,\Sigma}^2\to\rho_\Sigma^2$, then
+$T_{m,K}\Rightarrow\chi_C^2(\rho_\Sigma^2)$.
+No restriction on the relative rates of $K$ and $m$ is needed beyond
+$K\to\infty$ in fixed dimension.
+\end{theorem}
+
+\begin{proof}
+Fixed-dimensional Gaussian covariance estimation and the uniform eigenvalue
+bounds imply
+$\|\widehat\Sigma_K-\Sigma\|_{\rm op}=O_p(K^{-1/2})$ and, by functional
+calculus,
+$\|\widehat\Sigma_K^{-1/2}-\Sigma^{-1/2}\|_{\rm op}=O_p(K^{-1/2})$.
+Independence makes these perturbations external to the signal central
+sequence.  Uniform nonsingularity of the whitened null tangent Gram matrix
+then gives the usual root-$m$ expansion of the generalized least-squares null
+fit.  QR/SVD perturbation of the tangent and collision spaces is
+$O_p(m^{-1/2}+K^{-1/2})$.  Acting on the root-$m$ fitted residual, which is
+$O_p(1)$ on compact local sets, this perturbation is $o_p(1)$.  In an
+orthonormal frame of the population whitened collision space, the resulting
+coordinates therefore equal $h_\Sigma+Z+o_p(1)$ with
+$Z\sim N_C(0,I_C)$.  Squaring proves both limits.  Since the two perturbations
+enter additively after root-$m$ scaling, $K/m$ need not converge to a positive
+constant.
+\end{proof}
+
+For ordered rates, nonnegative component amplitudes, and a strictly positive
+merged-amplitude vector, the physical local parameter set is a half-space
+before whitening. Its image under the
+nonsingular coordinate map to $\widehat{\mathcal E}_\Sigma$ is again a
+half-space.  Projection onto its consistently estimated inward normal yields
+the same equal-weight
+$\frac12\chi^2_{C-1}+\frac12\chi^2_C$ null limit.  The result covers general
+cross-channel and across-time covariance, provided the training vectors are
+independent and generated under the same covariance law as the signal noise.
+It does not justify covariance estimated from the tested fitted residual.
+
+The theorem is fixed-dimensional and asymptotic in the independent training
+size.  If the full covariance is estimated with $K$ only slightly larger than
+$d$, neither the chi-square critical value nor a scalar inverse-Wishart
+centering correction is exact because the estimated metric also changes the
+fitted tangent and collision spaces.  Structured covariance estimation or a
+finite-training calibration is therefore required in that regime.

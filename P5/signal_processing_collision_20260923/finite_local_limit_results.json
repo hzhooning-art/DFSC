@@ -1,0 +1,598 @@
+{
+  "settings": {
+    "C": 6,
+    "n": 24,
+    "lambda": 0.4,
+    "S": 10000.0,
+    "target_nc": 36.0,
+    "m_values": [
+      256,
+      1024,
+      4096,
+      16384
+    ],
+    "alternative_trials": 1024,
+    "null_trials": 2048,
+    "V": 1.3261962351753267,
+    "W": 2.270295942156333,
+    "kappas": {
+      "diversity": 0.26050577740481073,
+      "crossover": 0.25501949355413367,
+      "proportional": 0.5644168887746592
+    }
+  },
+  "rows": [
+    {
+      "path": "diversity",
+      "m": 256,
+      "trials": 1024,
+      "r": 0.04,
+      "delta": 0.01628161108780067,
+      "minimum_amplitude": 6.270278899462204,
+      "distance2": 0.13865834857642767,
+      "nearest_null_rate": 0.40811636487707526,
+      "exact_noncentrality": 35.496537235565484,
+      "target_noncentrality": 36.0,
+      "empirical_rejection": 0.6435546875,
+      "local_prediction_exact_distance": 0.6156151690907282,
+      "local_prediction_target": 0.6250603178493448,
+      "absolute_power_error": 0.02793951840927178,
+      "ks_distance": 0.04081726510433026,
+      "replay": [
+        {
+          "seed": 6091030000000,
+          "rss": 0.5771088518995384,
+          "rate": 0.4073309423362761,
+          "s2": 1.00097846179209,
+          "statistic": 1.118147345289267,
+          "reject": false
+        },
+        {
+          "seed": 6091030001023,
+          "rss": 0.5376651223923545,
+          "rate": 0.40917761624985927,
+          "s2": 1.015766216572934,
+          "statistic": 1.0265595200727586,
+          "reject": false
+        }
+      ]
+    },
+    {
+      "path": "diversity",
+      "m": 1024,
+      "trials": 1024,
+      "r": 0.04,
+      "delta": 0.008140805543900335,
+      "minimum_amplitude": 6.270278899462204,
+      "distance2": 0.03491239940922242,
+      "nearest_null_rate": 0.4040645633707099,
+      "exact_noncentrality": 35.750296995043755,
+      "target_noncentrality": 36.0,
+      "empirical_rejection": 0.6240234375,
+      "local_prediction_exact_distance": 0.6214502526845439,
+      "local_prediction_target": 0.6261242068703305,
+      "absolute_power_error": 0.0025731848154560977,
+      "ks_distance": 0.016688599571580198,
+      "replay": [
+        {
+          "seed": 6091030100000,
+          "rss": 0.19615439489280106,
+          "rate": 0.4042816026815471,
+          "s2": 1.0016570783507124,
+          "statistic": 1.5191652027936307,
+          "reject": true
+        },
+        {
+          "seed": 6091030101023,
+          "rss": 0.1585958851792384,
+          "rate": 0.40393932414274764,
+          "s2": 0.9962439189451783,
+          "statistic": 1.2349581972057495,
+          "reject": true
+        }
+      ]
+    },
+    {
+      "path": "diversity",
+      "m": 4096,
+      "trials": 1024,
+      "r": 0.04,
+      "delta": 0.004070402771950168,
+      "minimum_amplitude": 6.270278899462204,
+      "distance2": 0.008758714961004443,
+      "nearest_null_rate": 0.4020337786173444,
+      "exact_noncentrality": 35.8756964802742,
+      "target_noncentrality": 36.0,
+      "empirical_rejection": 0.6279296875,
+      "local_prediction_exact_distance": 0.6240658665782722,
+      "local_prediction_target": 0.626389685952928,
+      "absolute_power_error": 0.0038638209217277675,
+      "ks_distance": 0.022480967790293738,
+      "replay": [
+        {
+          "seed": 6091030200000,
+          "rss": 0.04650566904456355,
+          "rate": 0.40201156173173297,
+          "s2": 0.9987129550866028,
+          "statistic": 1.44494471182128,
+          "reject": true
+        },
+        {
+          "seed": 6091030201023,
+          "rss": 0.04573971080390038,
+          "rate": 0.40211525598239367,
+          "s2": 0.999428340267361,
+          "statistic": 1.4201289172806197,
+          "reject": true
+        }
+      ]
+    },
+    {
+      "path": "diversity",
+      "m": 16384,
+      "trials": 1024,
+      "r": 0.04,
+      "delta": 0.002035201385975084,
+      "minimum_amplitude": 6.270278899462204,
+      "distance2": 0.0021934808610239998,
+      "nearest_null_rate": 0.4010172689793892,
+      "exact_noncentrality": 35.93799042701721,
+      "target_noncentrality": 36.0,
+      "empirical_rejection": 0.626953125,
+      "local_prediction_exact_distance": 0.625297526342743,
+      "local_prediction_target": 0.6264560249312401,
+      "absolute_power_error": 0.0016555986572569514,
+      "ks_distance": 0.012191625153093688,
+      "replay": [
+        {
+          "seed": 6091030300000,
+          "rss": 0.009920945900375955,
+          "rate": 0.4011144335100722,
+          "s2": 1.0002589701856934,
+          "statistic": 1.2310810172639892,
+          "reject": true
+        },
+        {
+          "seed": 6091030301023,
+          "rss": 0.007911457232694374,
+          "rate": 0.40093202696491764,
+          "s2": 0.9987457051200764,
+          "statistic": 0.9832129002738446,
+          "reject": false
+        }
+      ]
+    },
+    {
+      "path": "crossover",
+      "m": 256,
+      "trials": 1024,
+      "r": 0.0025,
+      "delta": 0.06375487338853342,
+      "minimum_amplitude": 16.876880617260415,
+      "distance2": 0.132185936847236,
+      "nearest_null_rate": 0.4314158095104324,
+      "exact_noncentrality": 33.83959983289242,
+      "target_noncentrality": 36.0,
+      "empirical_rejection": 0.6103515625,
+      "local_prediction_exact_distance": 0.5838660924574905,
+      "local_prediction_target": 0.6250603178493448,
+      "absolute_power_error": 0.02648547004250945,
+      "ks_distance": 0.03568843359167234,
+      "replay": [
+        {
+          "seed": 6091030400000,
+          "rss": 0.6012604080424353,
+          "rate": 0.4306218134836291,
+          "s2": 0.997602891982423,
+          "statistic": 1.16888272951756,
+          "reject": false
+        },
+        {
+          "seed": 6091030401023,
+          "rss": 0.5746638752534636,
+          "rate": 0.43170741233912824,
+          "s2": 1.0026290093687242,
+          "statistic": 1.1115772897463978,
+          "reject": false
+        }
+      ]
+    },
+    {
+      "path": "crossover",
+      "m": 1024,
+      "trials": 1024,
+      "r": 0.00125,
+      "delta": 0.04508150330672175,
+      "minimum_amplitude": 17.912414523193153,
+      "distance2": 0.03369469047902385,
+      "nearest_null_rate": 0.42232263611148785,
+      "exact_noncentrality": 34.50336305052042,
+      "target_noncentrality": 36.0,
+      "empirical_rejection": 0.6064453125,
+      "local_prediction_exact_distance": 0.5977504061079775,
+      "local_prediction_target": 0.6261242068703305,
+      "absolute_power_error": 0.008694906392022528,
+      "ks_distance": 0.044952040905087365,
+      "replay": [
+        {
+          "seed": 6091030500000,
+          "rss": 0.14967617560978397,
+          "rate": 0.4222566767162084,
+          "s2": 0.9935352905283893,
+          "statistic": 1.1686794444710609,
+          "reject": false
+        },
+        {
+          "seed": 6091030501023,
+          "rss": 0.18139902689290466,
+          "rate": 0.42272062811376215,
+          "s2": 1.0009719655889373,
+          "statistic": 1.4058502554007817,
+          "reject": true
+        }
+      ]
+    },
+    {
+      "path": "crossover",
+      "m": 4096,
+      "trials": 1024,
+      "r": 0.000625,
+      "delta": 0.03187743669426671,
+      "minimum_amplitude": 18.644647570226784,
+      "distance2": 0.008535086937627057,
+      "nearest_null_rate": 0.4158345396780703,
+      "exact_noncentrality": 34.959716096520424,
+      "target_noncentrality": 36.0,
+      "empirical_rejection": 0.6064453125,
+      "local_prediction_exact_distance": 0.6067545786228989,
+      "local_prediction_target": 0.626389685952928,
+      "absolute_power_error": 0.0003092661228989435,
+      "ks_distance": 0.01408921742365249,
+      "replay": [
+        {
+          "seed": 6091030600000,
+          "rss": 0.03353344229617505,
+          "rate": 0.41564118723567184,
+          "s2": 1.0026327437341338,
+          "statistic": 1.037820560521624,
+          "reject": false
+        },
+        {
+          "seed": 6091030601023,
+          "rss": 0.050963391906407196,
+          "rate": 0.4155581653041061,
+          "s2": 1.0013966604066216,
+          "statistic": 1.5792038827708592,
+          "reject": true
+        }
+      ]
+    },
+    {
+      "path": "crossover",
+      "m": 16384,
+      "trials": 1024,
+      "r": 0.0003125,
+      "delta": 0.022540751653360874,
+      "minimum_amplitude": 19.162414523193153,
+      "distance2": 0.002152976525394479,
+      "nearest_null_rate": 0.41122011237668016,
+      "exact_noncentrality": 35.27436739206314,
+      "target_noncentrality": 36.0,
+      "empirical_rejection": 0.603515625,
+      "local_prediction_exact_distance": 0.612803590431682,
+      "local_prediction_target": 0.6264560249312401,
+      "absolute_power_error": 0.009287965431681977,
+      "ks_distance": 0.023927468941558172,
+      "replay": [
+        {
+          "seed": 6091030700000,
+          "rss": 0.009869666129816324,
+          "rate": 0.4111994646191008,
+          "s2": 0.9980369268354085,
+          "statistic": 1.2274444865971392,
+          "reject": true
+        },
+        {
+          "seed": 6091030701023,
+          "rss": 0.010135416381672258,
+          "rate": 0.411277988327263,
+          "s2": 0.9998552442221548,
+          "statistic": 1.2582022986987853,
+          "reject": true
+        }
+      ]
+    },
+    {
+      "path": "proportional",
+      "m": 256,
+      "trials": 1024,
+      "r": 0.0,
+      "delta": 0.1411042221936648,
+      "minimum_amplitude": 20.412414523193153,
+      "distance2": 0.11407491063073394,
+      "nearest_null_rate": 0.46788333528234977,
+      "exact_noncentrality": 29.20317712146789,
+      "target_noncentrality": 36.0,
+      "empirical_rejection": 0.525390625,
+      "local_prediction_exact_distance": 0.49095170835345825,
+      "local_prediction_target": 0.6250603178493448,
+      "absolute_power_error": 0.03443891664654175,
+      "ks_distance": 0.03978716940603333,
+      "replay": [
+        {
+          "seed": 6091030800000,
+          "rss": 0.7330986359702365,
+          "rate": 0.46804465926801264,
+          "s2": 1.0037236971018213,
+          "statistic": 1.4164924627005309,
+          "reject": true
+        },
+        {
+          "seed": 6091030801023,
+          "rss": 0.5921472464724502,
+          "rate": 0.4689037856412577,
+          "s2": 0.9928370189391235,
+          "statistic": 1.156692144965129,
+          "reject": false
+        }
+      ]
+    },
+    {
+      "path": "proportional",
+      "m": 1024,
+      "trials": 1024,
+      "r": 0.0,
+      "delta": 0.09977575236719373,
+      "minimum_amplitude": 20.412414523193153,
+      "distance2": 0.030508142190228682,
+      "nearest_null_rate": 0.4486514701449912,
+      "exact_noncentrality": 31.24033760279417,
+      "target_noncentrality": 36.0,
+      "empirical_rejection": 0.548828125,
+      "local_prediction_exact_distance": 0.5333441795016548,
+      "local_prediction_target": 0.6261242068703305,
+      "absolute_power_error": 0.015483945498345197,
+      "ks_distance": 0.03124696812149058,
+      "replay": [
+        {
+          "seed": 6091030900000,
+          "rss": 0.1574420094693778,
+          "rate": 0.44882555400339413,
+          "s2": 0.9985051162281919,
+          "statistic": 1.2231968530089479,
+          "reject": true
+        },
+        {
+          "seed": 6091030901023,
+          "rss": 0.12366624101923662,
+          "rate": 0.4488973292594156,
+          "s2": 0.9937024797248526,
+          "statistic": 0.9654300486670682,
+          "reject": false
+        }
+      ]
+    },
+    {
+      "path": "proportional",
+      "m": 4096,
+      "trials": 1024,
+      "r": 0.0,
+      "delta": 0.0705521110968324,
+      "minimum_amplitude": 20.412414523193153,
+      "distance2": 0.007978534278663574,
+      "nearest_null_rate": 0.4346995337579441,
+      "exact_noncentrality": 32.680076405406,
+      "target_noncentrality": 36.0,
+      "empirical_rejection": 0.5654296875,
+      "local_prediction_exact_distance": 0.562388049606561,
+      "local_prediction_target": 0.626389685952928,
+      "absolute_power_error": 0.003041637893439031,
+      "ks_distance": 0.014068453610105391,
+      "replay": [
+        {
+          "seed": 6091031000000,
+          "rss": 0.04325472309574252,
+          "rate": 0.43466620730015176,
+          "s2": 0.9996875809868898,
+          "statistic": 1.342626627238595,
+          "reject": true
+        },
+        {
+          "seed": 6091031001023,
+          "rss": 0.039654450738453306,
+          "rate": 0.43455410175027787,
+          "s2": 0.9980240707440893,
+          "statistic": 1.232925797067222,
+          "reject": true
+        }
+      ]
+    },
+    {
+      "path": "proportional",
+      "m": 16384,
+      "trials": 1024,
+      "r": 0.0,
+      "delta": 0.049887876183596865,
+      "minimum_amplitude": 20.412414523193153,
+      "distance2": 0.0020559559379762504,
+      "nearest_null_rate": 0.42467242929944254,
+      "exact_noncentrality": 33.68478208780289,
+      "target_noncentrality": 36.0,
+      "empirical_rejection": 0.5869140625,
+      "local_prediction_exact_distance": 0.5822140134036928,
+      "local_prediction_target": 0.6264560249312401,
+      "absolute_power_error": 0.004700049096307168,
+      "ks_distance": 0.03255033614729075,
+      "replay": [
+        {
+          "seed": 6091031100000,
+          "rss": 0.009263968546292745,
+          "rate": 0.4247313814306391,
+          "s2": 1.0018721318260584,
+          "statistic": 1.1477063474386295,
+          "reject": false
+        },
+        {
+          "seed": 6091031101023,
+          "rss": 0.009421424871106865,
+          "rate": 0.42464574895409846,
+          "s2": 0.9988935496097576,
+          "statistic": 1.1706939897325126,
+          "reject": false
+        }
+      ]
+    },
+    {
+      "path": "null",
+      "m": 256,
+      "trials": 2048,
+      "r": 0.0,
+      "delta": 0.0,
+      "minimum_amplitude": 20.412414523193153,
+      "distance2": 0.0,
+      "nearest_null_rate": 0.39999998874675885,
+      "exact_noncentrality": 0.0,
+      "target_noncentrality": 0.0,
+      "empirical_rejection": 0.03759765625,
+      "local_prediction_exact_distance": 0.04414188515659245,
+      "local_prediction_target": 0.04414188515659245,
+      "absolute_power_error": 0.006544228906592453,
+      "ks_distance": 0.012683986911629086,
+      "replay": [
+        {
+          "seed": 6091031200000,
+          "rss": 0.4155117445625365,
+          "rate": 0.40014689141418075,
+          "s2": 1.0061166567714772,
+          "statistic": 0.8009418726228478,
+          "reject": false
+        },
+        {
+          "seed": 6091031202047,
+          "rss": 0.5906524698839348,
+          "rate": 0.3990691236059759,
+          "s2": 1.0126316653004692,
+          "statistic": 1.1312186450747304,
+          "reject": false
+        }
+      ]
+    },
+    {
+      "path": "null",
+      "m": 1024,
+      "trials": 2048,
+      "r": 0.0,
+      "delta": 0.0,
+      "minimum_amplitude": 20.412414523193153,
+      "distance2": 0.0,
+      "nearest_null_rate": 0.39999998874675885,
+      "exact_noncentrality": 0.0,
+      "target_noncentrality": 0.0,
+      "empirical_rejection": 0.041015625,
+      "local_prediction_exact_distance": 0.044133658049736346,
+      "local_prediction_target": 0.044133658049736346,
+      "absolute_power_error": 0.003118033049736346,
+      "ks_distance": 0.009334804788370565,
+      "replay": [
+        {
+          "seed": 6091031300000,
+          "rss": 0.12201994405404548,
+          "rate": 0.3994816429247262,
+          "s2": 0.9996973936108804,
+          "statistic": 0.9468654874805619,
+          "reject": false
+        },
+        {
+          "seed": 6091031302047,
+          "rss": 0.14274444838883937,
+          "rate": 0.40023608625581747,
+          "s2": 1.0036153703115518,
+          "statistic": 1.1033618108160599,
+          "reject": false
+        }
+      ]
+    },
+    {
+      "path": "null",
+      "m": 4096,
+      "trials": 2048,
+      "r": 0.0,
+      "delta": 0.0,
+      "minimum_amplitude": 20.412414523193153,
+      "distance2": 0.0,
+      "nearest_null_rate": 0.39999998874675885,
+      "exact_noncentrality": 0.0,
+      "target_noncentrality": 0.0,
+      "empirical_rejection": 0.04443359375,
+      "local_prediction_exact_distance": 0.04413160376588943,
+      "local_prediction_target": 0.04413160376588943,
+      "absolute_power_error": 0.0003019899841105733,
+      "ks_distance": 0.014938391769863973,
+      "replay": [
+        {
+          "seed": 6091031400000,
+          "rss": 0.03627804515781463,
+          "rate": 0.40015341991578024,
+          "s2": 0.9979189142933244,
+          "statistic": 1.128066337324794,
+          "reject": false
+        },
+        {
+          "seed": 6091031402047,
+          "rss": 0.036432577046070946,
+          "rate": 0.40009377191277523,
+          "s2": 1.0010870995036818,
+          "statistic": 1.1292862593823547,
+          "reject": false
+        }
+      ]
+    },
+    {
+      "path": "null",
+      "m": 16384,
+      "trials": 2048,
+      "r": 0.0,
+      "delta": 0.0,
+      "minimum_amplitude": 20.412414523193153,
+      "distance2": 0.0,
+      "nearest_null_rate": 0.39999998874675885,
+      "exact_noncentrality": 0.0,
+      "target_noncentrality": 0.0,
+      "empirical_rejection": 0.04833984375,
+      "local_prediction_exact_distance": 0.04413109035044094,
+      "local_prediction_target": 0.04413109035044094,
+      "absolute_power_error": 0.004208753399559062,
+      "ks_distance": 0.014547843893755824,
+      "replay": [
+        {
+          "seed": 6091031500000,
+          "rss": 0.007099291593476664,
+          "rate": 0.39996135045489106,
+          "s2": 1.001418732450765,
+          "statistic": 0.8799243006247419,
+          "reject": false
+        },
+        {
+          "seed": 6091031502047,
+          "rss": 0.007923277884401614,
+          "rate": 0.40006925751846395,
+          "s2": 0.9998631348070417,
+          "statistic": 0.9835814730532211,
+          "reject": false
+        }
+      ]
+    }
+  ],
+  "gates": {
+    "largest_exact_nc_within_8pct": true,
+    "largest_power_error_at_most_006": true,
+    "largest_ks_at_most_007": true,
+    "null_rejection_at_most_007": true,
+    "all_finite_and_positive_amplitudes": true
+  },
+  "hashes": {
+    "FINITE_LOCAL_LIMIT_PROTOCOL.md": "f66e0570b9b74eb30b037b9cb55cfff286ed6f19436afaea1b1cf5035cce720d",
+    "finite_local_limit.py": "a1a1201a99b92cafc46d9ca6be9c52c105ce5b3e8bcb6d3c68e481c81ea6525b",
+    "LOCAL_LIMIT_POWER_THEORY.md": "5b2b0f6673209abe21f20febd6de7a7a0515707056eee2e605b450cf68373475"
+  }
+}

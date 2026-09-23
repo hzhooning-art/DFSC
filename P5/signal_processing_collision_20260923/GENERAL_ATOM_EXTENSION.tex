@@ -1,0 +1,92 @@
+\section{Extension to smooth one-parameter atom families}
+\label{app:general-atom}
+
+The diversity--collision mechanism is not specific to exponentials.  Let
+$\mathcal H$ be a finite-dimensional real Hilbert space, let $\mathcal L$ be
+a fixed linear nuisance subspace, and let $\theta\mapsto f_\theta\in\mathcal H$
+be five times continuously differentiable.  For $C$ channels define
+\[
+\mathcal M_1=\{\ell+s f_k^T:\ell\in\mathbb R^C\otimes\mathcal L,
+s\in\mathbb R^C,k\in K\}
+\]
+and the two-atom mean
+\[
+M_{\theta,\delta}=\ell+a f_\theta^T+b f_{\theta+\delta}^T.
+\]
+As before, put $s=a+b$, $S=\|s\|^2$,
+$p=\langle b,s\rangle/S$, $b_\perp=b-ps$, $B=\|b_\perp\|^2$, and
+$c=p(1-p)/2$.  Let
+\[
+P_2=P_{(\mathcal L+\operatorname{span}\{f_\theta\})^\perp},\qquad
+P_3=P_{(\mathcal L+\operatorname{span}\{f_\theta,f'_\theta\})^\perp},
+\]
+and define $V_\theta=\|P_2f'_\theta\|^2$ and
+$W_\theta=\|P_3f''_\theta\|^2$.
+
+\begin{theorem}[smooth-atom diversity--collision law]
+\label{thm:general-atom}
+Suppose $\theta$ ranges over a compact subset $K_0\subset\operatorname{int}K$,
+$S>0$, $p\in[\epsilon,1-\epsilon]$, $B/S$ lies in a fixed compact subset of
+$[0,\infty)$, and:
+\begin{enumerate}
+\item $f$ and its first five derivatives are uniformly bounded on a
+neighborhood of $K_0$;
+\item $V_\theta$ and $W_\theta$ are uniformly bounded away from zero;
+\item the relevant nuisance-plus-atom and tangent Gram matrices have constant
+rank, with their nonzero singular values uniformly bounded away from zero;
+\item for every fixed $\eta>0$ small enough,
+\[
+\inf_{\theta\in K_0}\inf_{|k-\theta|\ge\eta}
+\|P_{(\mathcal L+\operatorname{span}\{f_k\})^\perp}f_\theta\|>0.
+\]
+\end{enumerate}
+Then, uniformly over the stated sets as $\delta\to0$,
+\[
+\operatorname{dist}^2(M_{\theta,\delta},\mathcal M_1)
+=BV_\theta\delta^2+Sc^2W_\theta\delta^4
++O(B|\delta|^3+S|\delta|^5).
+\]
+Consequently the distance-based phase diagram remains valid after replacing
+the exponential derivatives by $f'_\theta,f''_\theta$. The plug-in
+phase-matched score limit additionally requires the null-chart smoothness,
+tangent nonsingularity, amplitude lower bound, remote-fit separation, and
+local-array conditions of Lemma~\ref{lem:fitted-frame} and
+Theorem~\ref{thm:score}.
+\end{theorem}
+
+\begin{proof}
+For $P_k=P_{(\mathcal L+\operatorname{span}\{f_k\})^\perp}$ and
+$g_\delta=f_{\theta+\delta}-f_\theta$, exact profiling of the channelwise
+linear coefficients gives
+\[
+D^2=S\min_{k\in K}\left\{
+\|P_k(f_\theta+pg_\delta)\|^2
++{B\over S}\|P_kg_\delta\|^2\right\}.
+\]
+The cross term is zero because $s^Tb_\perp=0$. Assumption 4 localizes every
+global minimizer to $k=\theta+o(1)$.  At $(k,\delta)=(\theta,0)$ the second
+derivative in $k$ is $2V_\theta$, so Assumptions 1--3 and the uniform implicit
+function theorem give a unique minimizing branch
+$k_*=\theta+p\delta+O(\delta^2+(B/S)\delta^2)$.
+
+Let $r=B/S$ and denote the profiled objective by $H(r,\delta)$.  The envelope
+identity and $g_\delta=\delta f'_\theta+O(\delta^2)$ yield
+\[
+\partial_rH(r,\delta)=V_\theta\delta^2+O(|\delta|^3).
+\]
+Integration from zero to $r$ preserves the factor $r$ and gives
+$H(r,\delta)-H(0,\delta)=rV_\theta\delta^2+O(r|\delta|^3)$.
+When $r=0$, the fitted displacement $p\delta$ removes the first derivative.
+After optimizing its second-order correction and all linear nuisance
+coefficients, the residual at order $\delta^2$ is exactly
+$c\delta^2P_3f''_\theta$.  Hence
+$H(0,\delta)=c^2W_\theta\delta^4+O(|\delta|^5)$ uniformly.  Multiplication by
+$S$ proves the result.
+\end{proof}
+
+The exponential family takes $\mathcal L=\operatorname{span}\{\mathbf1\}$
+and $f_\lambda(t)=e^{-\lambda t}$.  Other covered examples include Gaussian
+scale atoms $e^{-\theta t^2}$ and known-carrier damped atoms after stacking real
+and imaginary parts, provided all rank and global no-alias conditions above
+hold. Thus the theorem identifies a generic
+osculating-curve phenomenon rather than an isolated exponential identity.

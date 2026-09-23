@@ -1,0 +1,137 @@
+{
+  "settings": {
+    "m": 16384,
+    "targets": [
+      4.0,
+      8.0,
+      12.0,
+      18.0
+    ],
+    "trials": 1024,
+    "null_trials": 4096,
+    "critical": 11.911339691903429
+  },
+  "rows": [
+    {
+      "target_nc": 4.0,
+      "path": "diversity",
+      "m": 16384,
+      "two_sided_power": 0.2744140625,
+      "cone_power": 0.283203125,
+      "gain": 0.0087890625
+    },
+    {
+      "target_nc": 4.0,
+      "path": "crossover",
+      "m": 16384,
+      "two_sided_power": 0.2841796875,
+      "cone_power": 0.2958984375,
+      "gain": 0.01171875
+    },
+    {
+      "target_nc": 4.0,
+      "path": "proportional",
+      "m": 16384,
+      "two_sided_power": 0.27734375,
+      "cone_power": 0.306640625,
+      "gain": 0.029296875
+    },
+    {
+      "target_nc": 8.0,
+      "path": "diversity",
+      "m": 16384,
+      "two_sided_power": 0.5244140625,
+      "cone_power": 0.5400390625,
+      "gain": 0.015625
+    },
+    {
+      "target_nc": 8.0,
+      "path": "crossover",
+      "m": 16384,
+      "two_sided_power": 0.529296875,
+      "cone_power": 0.5458984375,
+      "gain": 0.0166015625
+    },
+    {
+      "target_nc": 8.0,
+      "path": "proportional",
+      "m": 16384,
+      "two_sided_power": 0.5205078125,
+      "cone_power": 0.5498046875,
+      "gain": 0.029296875
+    },
+    {
+      "target_nc": 12.0,
+      "path": "diversity",
+      "m": 16384,
+      "two_sided_power": 0.736328125,
+      "cone_power": 0.7470703125,
+      "gain": 0.0107421875
+    },
+    {
+      "target_nc": 12.0,
+      "path": "crossover",
+      "m": 16384,
+      "two_sided_power": 0.73828125,
+      "cone_power": 0.7646484375,
+      "gain": 0.0263671875
+    },
+    {
+      "target_nc": 12.0,
+      "path": "proportional",
+      "m": 16384,
+      "two_sided_power": 0.724609375,
+      "cone_power": 0.759765625,
+      "gain": 0.03515625
+    },
+    {
+      "target_nc": 18.0,
+      "path": "diversity",
+      "m": 16384,
+      "two_sided_power": 0.900390625,
+      "cone_power": 0.9052734375,
+      "gain": 0.0048828125
+    },
+    {
+      "target_nc": 18.0,
+      "path": "crossover",
+      "m": 16384,
+      "two_sided_power": 0.91015625,
+      "cone_power": 0.9267578125,
+      "gain": 0.0166015625
+    },
+    {
+      "target_nc": 18.0,
+      "path": "proportional",
+      "m": 16384,
+      "two_sided_power": 0.8994140625,
+      "cone_power": 0.9208984375,
+      "gain": 0.021484375
+    }
+  ],
+  "null_rows": [
+    {
+      "m": 4096,
+      "trials": 4096,
+      "critical": 11.91140251206845,
+      "rejection": 0.0498046875
+    },
+    {
+      "m": 16384,
+      "trials": 4096,
+      "critical": 11.911339691903429,
+      "rejection": 0.052001953125
+    }
+  ],
+  "gates": {
+    "null_between_003_and_007": true,
+    "proportional_low_nonnegative_and_mean_gain_0015": true,
+    "no_cell_loses_more_than_003": true,
+    "all_finite": true
+  },
+  "hashes": {
+    "CONE_MATCHED_SCORE_PROTOCOL.md": "df0fe609f7dc8332189df5ec4c2e0d3c35cd0e61ea257a1bc8d7e5797f71725b",
+    "CONE_MATCHED_SCORE_THEORY.md": "d61a5dc09a172d17bac1758227d28a1de9cc50990c8715b4a3b5c09309609118",
+    "cone_matched_score.py": "610d4ddcf623bdad3000b58c78dd1f8ee8189e7898067bfd672933f4fca955ee"
+  }
+}

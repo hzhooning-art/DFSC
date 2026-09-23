@@ -1,0 +1,104 @@
+{
+  "settings": {
+    "C": 1,
+    "n": 24,
+    "m": 16384,
+    "null_trials": 2048,
+    "alternative_trials": 1024,
+    "alpha": 0.05
+  },
+  "official_SAMP": {
+    "null": {
+      "effective_rank": 1,
+      "pole_frequencies": [
+        0.0
+      ],
+      "frequency_denominators": [
+        0.0
+      ],
+      "applicable": false
+    },
+    "two_rate": {
+      "effective_rank": 1,
+      "pole_frequencies": [
+        0.0
+      ],
+      "frequency_denominators": [
+        0.0
+      ],
+      "applicable": false
+    }
+  },
+  "rows": [
+    {
+      "target_nc": 0.0,
+      "trials": 2048,
+      "phase_rejections": 114,
+      "phase_rate": 0.0556640625,
+      "samp_decay_order2": 0,
+      "samp_decay_rate": 0.0,
+      "order_histogram": {
+        "1": 2048
+      },
+      "phase_stat_quantiles": [
+        0.517409380610523,
+        2.800188611716291,
+        3.968901410819341,
+        7.340090580392623
+      ]
+    },
+    {
+      "target_nc": 4.0,
+      "delta": 0.029074072785088466,
+      "phase_prediction": 0.5160052739761748,
+      "trials": 1024,
+      "phase_rejections": 503,
+      "phase_rate": 0.4912109375,
+      "samp_decay_order2": 0,
+      "samp_decay_rate": 0.0,
+      "order_histogram": {
+        "1": 1024
+      },
+      "phase_stat_quantiles": [
+        3.726759394671256,
+        10.284792761635014,
+        12.050022009587245,
+        16.691541688978933
+      ]
+    },
+    {
+      "target_nc": 8.0,
+      "delta": 0.03464074007116527,
+      "phase_prediction": 0.8074304194325572,
+      "trials": 1024,
+      "phase_rejections": 831,
+      "phase_rate": 0.8115234375,
+      "samp_decay_order2": 0,
+      "samp_decay_rate": 0.0,
+      "order_histogram": {
+        "1": 1024
+      },
+      "phase_stat_quantiles": [
+        8.09608198391511,
+        17.048275644243013,
+        19.809553433202364,
+        26.819758014159678
+      ]
+    }
+  ],
+  "gates": {
+    "official_formula_verified_in_source": true,
+    "official_samp_flagged_inapplicable": true,
+    "phase_null_between_003_and_007": true,
+    "samp_decay_all_rates_reported": true,
+    "no_posthoc_calibration": true
+  },
+  "source": {
+    "commit": "3f8cf58a32d7c7849da89ef911827fbfd57a11bd",
+    "hashes": {
+      "toolbox\\compute_SAMP_signal_detection_features.m": "f4a8bfa2e78645ce823481be323f25d2871c2b32227fe2e0de0e28a1f2299854",
+      "toolbox\\get_MP_components.m": "7130177d6349a3062a63344dc38db31ad1f380cbb79c4f7d28c1f82adf45e646",
+      "toolbox\\get_true_idx.m": "25902ac42477978bed0b84333af5d668f43dd49f4d749e9101e9a971d30ea5e6"
+    }
+  }
+}
