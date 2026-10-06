@@ -1,0 +1,195 @@
+{
+  "schema": "P4-Historical-Benchmark-v1",
+  "cases": [
+    {
+      "case_id": "pytorch_80770",
+      "project": "PyTorch",
+      "upstream_url": "https://github.com/pytorch/pytorch/issues/80770",
+      "defect_family": "xlogy-zero-gradient",
+      "observable": "xlogy(0,2) derivative equals log(2)",
+      "runner_path": "experiments/pytorch_historical_pair_runner.py",
+      "environment": {"device": "cpu", "dtype": "float64"},
+      "buggy_version": "1.11.0+cpu",
+      "fixed_version": "2.11.0+cu128",
+      "admission_state": "admitted_complete",
+      "exclusion_reason": null
+    },
+    {
+      "case_id": "scipy_8906",
+      "project": "SciPy",
+      "upstream_url": "https://github.com/scipy/scipy/issues/8906",
+      "defect_family": "solve-banded-singleton-indexing",
+      "observable": "1x1 solve_banded returns the scalar solution",
+      "runner_path": "experiments/scipy_historical_pair_runner.py",
+      "environment": {"device": "cpu", "dtype": "float64"},
+      "buggy_version": "1.14.1",
+      "fixed_version": "1.18.0",
+      "admission_state": "admitted_complete",
+      "exclusion_reason": null
+    },
+    {
+      "case_id": "scipy_15620",
+      "project": "SciPy",
+      "upstream_url": "https://github.com/scipy/scipy/issues/15620",
+      "defect_family": "resample-poly-padtype-line",
+      "observable": "resample_poly line padtype preserves the expected samples",
+      "runner_path": "experiments/scipy_resample_poly_historical_pair_runner.py",
+      "environment": {"device": "cpu", "dtype": "float64"},
+      "buggy_version": "1.14.1",
+      "fixed_version": "1.18.0",
+      "admission_state": "admitted_complete",
+      "exclusion_reason": null
+    },
+    {
+      "case_id": "pytorch_30303",
+      "project": "PyTorch",
+      "upstream_url": "https://github.com/pytorch/pytorch/issues/30303",
+      "defect_family": "einsum-noncontiguous-cuda-gradient",
+      "observable": "einsum gradient agrees for expanded non-contiguous CUDA input",
+      "runner_path": "experiments/pytorch_historical_pair_runner.py",
+      "environment": {"device": "cuda", "dtype": "float64"},
+      "buggy_version": "1.3.1",
+      "fixed_version": "2.11.0+cu128",
+      "admission_state": "excluded",
+      "exclusion_reason": "required legacy CUDA runtime and compatible GPU replay environment are unavailable"
+    },
+    {
+      "case_id": "jax_15400",
+      "project": "JAX",
+      "upstream_url": "https://github.com/jax-ml/jax/issues/15400",
+      "defect_family": "complex-conjugate-jit-vjp",
+      "observable": "JIT/VJP accepts complex conjugation and returns the reference cotangent",
+      "runner_path": "experiments/p4_historical_defect_intake.py",
+      "environment": {"device": "cpu", "dtype": "complex128"},
+      "buggy_version": "0.4.1",
+      "fixed_version": "0.4.9",
+      "admission_state": "excluded",
+      "exclusion_reason": "affected JAX/JAXLIB releases predate official Windows CPU wheels and no compatible Linux or Apple replay host is available"
+    },
+    {
+      "case_id": "pybnf_538",
+      "project": "PyBNF",
+      "upstream_url": "https://github.com/lanl/PyBNF/issues/538",
+      "defect_family": "species-condition-gradient-route",
+      "observable": "species-condition parameters retain a differentiable route",
+      "runner_path": "experiments/p4_historical_defect_intake.py",
+      "environment": {"device": "cpu", "dependency_profile": "upstream issue snapshot"},
+      "buggy_version": null,
+      "fixed_version": null,
+      "admission_state": "excluded",
+      "exclusion_reason": "no released affected/fixed package pair or frozen executable source snapshots could be established"
+    },
+    {
+      "case_id": "jax_32411", "project": "JAX", "upstream_url": "https://github.com/jax-ml/jax/issues/32411",
+      "defect_family": "vjp3-array-ref-gradient", "observable": "VJP3 with array refs matches the non-ref gradient",
+      "runner_path": "benchmark/runners/jax/jax_32411.py", "environment": {"device": "cpu", "runner_sha256": "1ad8975d3781bcff20b3c6048e9d2e6d13a31a60a6d7bc224dc91c2bed26c856", "clean_runs_per_side": 2},
+      "buggy_version": "0.7.2", "fixed_version": "0.8.0", "admission_state": "admitted_complete",
+      "exclusion_reason": null
+    },
+    {
+      "case_id": "jax_35916", "project": "JAX", "upstream_url": "https://github.com/jax-ml/jax/issues/35916",
+      "defect_family": "tpu-v6e-fused-attention", "observable": "fused attention agrees with an explicit einsum reference",
+      "runner_path": "benchmark/runners/jax/jax_35916.py", "environment": {"device": "TPU v6e", "status": "hardware_unavailable"},
+      "buggy_version": "0.9.1", "fixed_version": null, "admission_state": "excluded",
+      "exclusion_reason": "no confirmed fixed release and required TPU v6e hardware is unavailable"
+    },
+    {
+      "case_id": "jax_37821", "project": "JAX", "upstream_url": "https://github.com/jax-ml/jax/issues/37821",
+      "defect_family": "maximum-zero-subgradient-convention", "observable": "maximum and where formulations use the same zero subgradient",
+      "runner_path": "benchmark/runners/jax/jax_37821.py", "environment": {"device": "cpu", "status": "semantic_dispute"},
+      "buggy_version": "0.10.0", "fixed_version": null, "admission_state": "excluded",
+      "exclusion_reason": "reported value is a mathematically valid subgradient and no fixed release is confirmed"
+    },
+    {
+      "case_id": "jax_39025", "project": "JAX", "upstream_url": "https://github.com/jax-ml/jax/issues/39025",
+      "defect_family": "tpu-gather-vjp-batch", "observable": "eager gather VJP agrees with JIT and NumPy references",
+      "runner_path": "benchmark/runners/jax/jax_39025.py", "environment": {"device": "TPU", "status": "open_issue"},
+      "buggy_version": "0.10.2", "fixed_version": null, "admission_state": "excluded",
+      "exclusion_reason": "open report with no confirmed fixed release and unavailable TPU environment"
+    },
+    {
+      "case_id": "jax_39796", "project": "JAX", "upstream_url": "https://github.com/jax-ml/jax/issues/39796",
+      "defect_family": "selu-negative-tail-gradient", "observable": "SELU derivative remains representable near x=-700 in float64",
+      "runner_path": "benchmark/runners/jax/jax_39796.py", "environment": {"device": "cpu", "dtype": "float64"},
+      "buggy_version": null, "fixed_version": null, "admission_state": "excluded",
+      "exclusion_reason": "open report with no confirmed fixed release"
+    },
+    {
+      "case_id": "pytorch_106456", "project": "PyTorch", "upstream_url": "https://github.com/pytorch/pytorch/issues/106456",
+      "defect_family": "aotautograd-noncontiguous-mutation", "observable": "compiled mutation accepts non-contiguous input and matches eager execution",
+      "runner_path": "benchmark/runners/pytorch/pytorch_106456.py", "environment": {"device": "cpu", "status": "runner_pending"},
+      "buggy_version": null, "fixed_version": null, "admission_state": "excluded",
+      "exclusion_reason": "closed report has no confirmed released affected/fixed pair"
+    },
+    {
+      "case_id": "pytorch_192212", "project": "PyTorch", "upstream_url": "https://github.com/pytorch/pytorch/issues/192212",
+      "defect_family": "mps-conv2d-noncontiguous-weight", "observable": "MPS convolution agrees for contiguous and equivalent non-contiguous weights",
+      "runner_path": "benchmark/runners/pytorch/pytorch_192212.py", "environment": {"device": "Apple MPS", "status": "hardware_unavailable"},
+      "buggy_version": "2.12.0", "fixed_version": null, "admission_state": "excluded",
+      "exclusion_reason": "no released fixed version and required Apple MPS hardware is unavailable"
+    },
+    {
+      "case_id": "pytorch_47562", "project": "PyTorch", "upstream_url": "https://github.com/pytorch/pytorch/issues/47562",
+      "defect_family": "ddp-autograd-grad-reduction", "observable": "distributed autograd gradients are reduced consistently",
+      "runner_path": "benchmark/runners/pytorch/pytorch_47562.py", "environment": {"device": "multi-GPU", "status": "semantic_ambiguity"},
+      "buggy_version": null, "fixed_version": null, "admission_state": "excluded",
+      "exclusion_reason": "upstream discussion includes expected-behavior ambiguity and no release pair is confirmed"
+    },
+    {
+      "case_id": "numpy_22502", "project": "NumPy", "upstream_url": "https://github.com/numpy/numpy/issues/22502",
+      "defect_family": "linalg-inv-host-specific", "observable": "matrix inverse satisfies the residual bound",
+      "runner_path": "benchmark/runners/numpy/numpy_22502.py", "environment": {"device": "cpu", "status": "host_specific"},
+      "buggy_version": "1.23", "fixed_version": null, "admission_state": "excluded",
+      "exclusion_reason": "report was host-specific, not independently reproduced upstream, and has no confirmed fixed release"
+    },
+    {
+      "case_id": "numpy_10918", "project": "NumPy", "upstream_url": "https://github.com/numpy/numpy/issues/10918",
+      "defect_family": "mkl-float32-dot-norm", "observable": "float32 dot and norm agree with a higher-precision reference",
+      "runner_path": "benchmark/runners/numpy/numpy_10918.py", "environment": {"device": "cpu", "backend": "MKL"},
+      "buggy_version": null, "fixed_version": null, "admission_state": "excluded",
+      "exclusion_reason": "upstream classified the report as a duplicate external MKL defect"
+    },
+    {
+      "case_id": "pytorch_99638", "project": "PyTorch", "upstream_url": "https://github.com/pytorch/pytorch/issues/99638", "defect_family": "masked-select-noncontiguous-gradient", "observable": "masked_select and index_select produce equivalent gradients", "runner_path": "benchmark/runners/pytorch/pytorch_99638.py", "environment": {"device": "cpu", "runner_sha256": "8b16d785ab74fbf67f679eace7c31d2eb02652a94c25f497f783f5c261ebdc03", "clean_runs_per_side": 2}, "buggy_version": "1.13.1+cpu", "fixed_version": "2.11.0+cu128", "admission_state": "admitted_complete", "exclusion_reason": null
+    },
+    {
+      "case_id": "pytorch_113895", "project": "PyTorch", "upstream_url": "https://github.com/pytorch/pytorch/issues/113895", "defect_family": "c10d-cudagraph-collective-order", "observable": "reduce-overhead output agrees with eager collectives", "runner_path": "benchmark/runners/pytorch/pytorch_113895.py", "environment": {"device": "multi-GPU", "status": "hardware_unavailable"}, "buggy_version": null, "fixed_version": null, "admission_state": "excluded", "exclusion_reason": "required multi-GPU CUDA-graph environment and confirmed released version pair are unavailable"
+    },
+    {
+      "case_id": "scipy_20129", "project": "SciPy", "upstream_url": "https://github.com/scipy/scipy/issues/20129", "defect_family": "eval-chebyt-complex-regression", "observable": "complex-zero-imaginary and real Chebyshev evaluations agree", "runner_path": "benchmark/runners/scipy/scipy_20129.py", "environment": {"device": "cpu", "dtype": "complex128"}, "buggy_version": null, "fixed_version": "1.13.0", "admission_state": "excluded", "exclusion_reason": "regression existed only in nightly builds and was fixed before the 1.13.0 release"
+    },
+    {
+      "case_id": "pytorch_109517", "project": "PyTorch", "upstream_url": "https://github.com/pytorch/pytorch/issues/109517", "defect_family": "sdpa-mask-nan", "observable": "memory-efficient attention remains finite for valid masked rows", "runner_path": "benchmark/runners/pytorch/pytorch_109517.py", "environment": {"device": "CUDA A100", "status": "hardware_unavailable"}, "buggy_version": null, "fixed_version": null, "admission_state": "excluded", "exclusion_reason": "required A100 memory-efficient-attention environment and confirmed released version pair are unavailable"
+    },
+    {
+      "case_id": "pytorch_184528", "project": "PyTorch", "upstream_url": "https://github.com/pytorch/pytorch/issues/184528", "defect_family": "scan-closed-parameter-gradient", "observable": "scan and Python loop produce equivalent closed-parameter gradients", "runner_path": "benchmark/runners/pytorch/pytorch_184528.py", "environment": {"device": "cpu", "status": "nightly_only"}, "buggy_version": "2.13.0a0", "fixed_version": null, "admission_state": "excluded", "exclusion_reason": "report concerns a development nightly and no released affected/fixed pair exists"
+    },
+    {
+      "case_id": "pytorch_158892", "project": "PyTorch", "upstream_url": "https://github.com/pytorch/pytorch/issues/158892", "defect_family": "inductor-float8-custom-op-layout", "observable": "compiled custom-op result agrees with eager execution", "runner_path": "benchmark/runners/pytorch/pytorch_158892.py", "environment": {"device": "accelerator", "dtype": "float8_e8m0fnu", "status": "hardware_unavailable"}, "buggy_version": null, "fixed_version": null, "admission_state": "excluded", "exclusion_reason": "required float8 accelerator environment and confirmed released version pair are unavailable"
+    },
+    {
+      "case_id": "numpy_26197", "project": "NumPy", "upstream_url": "https://github.com/numpy/numpy/issues/26197", "defect_family": "simd-any-all-false", "observable": "any returns false for all-false boolean arrays across SIMD lengths", "runner_path": "benchmark/runners/numpy/numpy_26197.py", "environment": {"device": "cpu", "compiler": "Intel", "status": "toolchain_unavailable"}, "buggy_version": "1.26.2", "fixed_version": null, "admission_state": "excluded", "exclusion_reason": "defect requires a nonstandard Intel-compiler build not represented by released NumPy wheels, and no fixed release pair is confirmed"
+    },
+    {
+      "case_id": "pytorch_180807", "project": "PyTorch", "upstream_url": "https://github.com/pytorch/pytorch/issues/180807", "defect_family": "triton-pointer-dtype-validation", "observable": "static launcher rejects or correctly executes runtime dtype changes", "runner_path": "benchmark/runners/pytorch/pytorch_180807.py", "environment": {"device": "CUDA", "status": "hardware_unavailable"}, "buggy_version": "2.8.0", "fixed_version": null, "admission_state": "excluded", "exclusion_reason": "required CUDA/Triton launcher environment is unavailable and no fixed release is confirmed"
+    },
+    {
+      "case_id": "pytorch_185509", "project": "PyTorch", "upstream_url": "https://github.com/pytorch/pytorch/issues/185509", "defect_family": "inductor-interpolate-conv-pool-gradient", "observable": "compiled composite gradient agrees with eager reference", "runner_path": "benchmark/runners/pytorch/pytorch_185509.py", "environment": {"device": "cpu", "status": "nightly_only"}, "buggy_version": "2.13.0a0", "fixed_version": null, "admission_state": "excluded", "exclusion_reason": "report concerns a 2.13 development nightly and no released affected/fixed pair exists"
+    },
+    {
+      "case_id": "scipy_4130", "project": "SciPy", "upstream_url": "https://github.com/scipy/scipy/issues/4130", "defect_family": "fisher-exact-pvalue", "observable": "fisher_exact p-value agrees with exact enumeration", "runner_path": "benchmark/runners/scipy/scipy_4130.py", "environment": {"device": "cpu", "runner_sha256": "4a485176f46421f45f9de82ddf1821c2cff15fe40b60cb672bf35a8ccb09ea8f", "clean_runs_per_side": 2}, "buggy_version": "1.8.1", "fixed_version": "1.18.0", "admission_state": "admitted_complete", "exclusion_reason": null
+    },
+    {
+      "case_id": "scipy_8928", "project": "SciPy", "upstream_url": "https://github.com/scipy/scipy/issues/8928", "defect_family": "norm-expect-loc", "observable": "normal-distribution expectation respects location", "runner_path": "benchmark/runners/scipy/scipy_8928.py", "environment": {"device": "cpu", "runner_sha256": "dd2c6930731c373e40a42749cba46f40f98a7013e05491634415f256c55205a8", "clean_runs_per_side": 2}, "buggy_version": "1.8.1", "fixed_version": "1.18.0", "admission_state": "admitted_complete", "exclusion_reason": null
+    },
+    {
+      "case_id": "numpy_20707", "project": "NumPy", "upstream_url": "https://github.com/numpy/numpy/issues/20707", "defect_family": "view-getsizeof-accounting", "observable": "sys.getsizeof reports Python-owned storage", "runner_path": "benchmark/runners/numpy/numpy_20707.py", "environment": {"device": "cpu", "status": "expected_behavior"}, "buggy_version": "1.21.5", "fixed_version": null, "admission_state": "excluded", "exclusion_reason": "difference reflects view ownership and Python object overhead, not numerical component correctness"
+    },
+    {
+      "case_id": "pytorch_162722", "project": "PyTorch", "upstream_url": "https://github.com/pytorch/pytorch/issues/162722", "defect_family": "compile-transformer-rng-stream", "observable": "compiled and eager executions use controlled RNG streams", "runner_path": "benchmark/runners/pytorch/pytorch_162722.py", "environment": {"device": "cpu", "status": "expected_rng_difference"}, "buggy_version": null, "fixed_version": null, "admission_state": "excluded", "exclusion_reason": "upstream attributed the difference to intentionally distinct RNG implementations"
+    },
+    {
+      "case_id": "pytorch_76232", "project": "PyTorch", "upstream_url": "https://github.com/pytorch/pytorch/issues/76232", "defect_family": "row-parallel-roundoff", "observable": "row-parallel decomposition agrees within declared tolerance", "runner_path": "benchmark/runners/pytorch/pytorch_76232.py", "environment": {"device": "cpu", "status": "expected_roundoff"}, "buggy_version": "1.10.0", "fixed_version": null, "admission_state": "excluded", "exclusion_reason": "upstream confirmed results agree under explicit floating-point tolerance"
+    }
+  ]
+}

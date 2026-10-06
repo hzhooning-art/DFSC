@@ -1,0 +1,45 @@
+{
+  "schema": "P4-Live-Relation-Coverage-v1",
+  "updated": "2026-10-02",
+  "benchmark_manifest": "benchmark/frozen.json",
+  "criterion": "A family counts only when every relation selected in its saved plan has a fresh PASS or FAIL execution observation and the complete saved report is bound to that plan. Historical captured-pair validation alone does not count.",
+  "admitted_family_count": 7,
+  "live_complete_family_count": 7,
+  "cases": {
+    "scipy_4130": {
+      "status": "live_complete",
+      "plan": "results/reconstruction/scipy_4130_full_execution_plan.json",
+      "report": "results/reconstruction/scipy_4130_full_execution_181_vs_1163.json"
+    },
+    "scipy_8928": {
+      "status": "live_complete",
+      "plan": "results/reconstruction/scipy_8928_full_execution_plan.json",
+      "report": "results/reconstruction/scipy_8928_full_execution_181_vs_1163.json"
+    },
+    "scipy_8906": {
+      "status": "live_complete",
+      "plan": "results/reconstruction/scipy_8906_full_execution_plan.json",
+      "report": "results/reconstruction/scipy_8906_full_execution_1141_vs_1163.json"
+    },
+    "scipy_15620": {
+      "status": "live_complete",
+      "plan": "results/reconstruction/scipy_15620_full_execution_plan.json",
+      "report": "results/reconstruction/scipy_15620_full_execution_1141_vs_1163.json"
+    },
+    "jax_32411": {
+      "status": "live_complete",
+      "plan": "results/reconstruction/jax_32411_full_execution_plan.json",
+      "report": "results/reconstruction/jax_32411_full_execution_072_vs_080.json"
+    },
+    "pytorch_80770": {
+      "status": "live_complete",
+      "plan": "results/reconstruction/pytorch_80770_full_execution_plan.json",
+      "report": "results/reconstruction/pytorch_80770_full_execution_111_vs_2110.json"
+    },
+    "pytorch_99638": {
+      "status": "live_complete",
+      "plan": "results/reconstruction/pytorch_99638_full_execution_plan.json",
+      "report": "results/reconstruction/pytorch_99638_full_execution_1131_vs_2110.json"
+    }
+  }
+}

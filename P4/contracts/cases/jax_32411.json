@@ -1,0 +1,14 @@
+{
+  "schema": "P4-Component-Contract-v1",
+  "contract_id": "jax-vjp-ref-gradient-accumulation-v1",
+  "component": {"project": "jax-ml/jax", "interface": "vjp3 pullback with array refs inside lax.scan", "implementation": "released wheel"},
+  "domain": {"inputs": "finite real dense weights and microbatches", "parameters": {"layers": [2], "embedding_size": [32], "microbatches": [3], "microbatch_size": [4]}},
+  "execution": {"deterministic": true, "dtypes": ["float32"], "devices": ["cpu"], "transforms": ["jit", "scan", "reverse-mode"]},
+  "references": {"independent_path": "value_and_grad with value accumulation", "rtol": 1e-6, "atol": 1e-6},
+  "relations": {
+    "gradient_accumulation_equivalence": {"layer": "property", "generator": "seeded_microbatch_problem", "comparator": "max_absolute_gradient_error", "parameters": {"atol": 1e-6}, "max_invocations": 2, "mechanisms": ["derivative_error"]},
+    "version_pair": {"layer": "replay", "generator": "unchanged_runner_pair", "comparator": "paired_role_semantics", "parameters": {}, "max_invocations": 2, "mechanisms": ["historical_regression", "replay"]}
+  },
+  "rejection": {"unsupported_ref_api": "non_evaluable"},
+  "provenance": {"upstream_issue": "https://github.com/jax-ml/jax/issues/32411", "fixed_release": "0.8.0"}
+}

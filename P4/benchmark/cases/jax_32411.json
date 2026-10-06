@@ -1,0 +1,11 @@
+{
+  "schema": "P4-Captured-Case-v1",
+  "case_id": "jax_32411",
+  "project": "JAX",
+  "defect_family": "vjp3-array-ref-gradient",
+  "upstream_url": "https://github.com/jax-ml/jax/issues/32411",
+  "runner_path": "benchmark/runners/jax/jax_32411.py",
+  "capture_path": "results/reconstruction/jax_32411_pair.json",
+  "runner_sha256": "1ad8975d3781bcff20b3c6048e9d2e6d13a31a60a6d7bc224dc91c2bed26c856",
+  "detected_by": ["reference", "differential", "compiled_layered"]
+}

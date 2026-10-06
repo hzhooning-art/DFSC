@@ -1,0 +1,82 @@
+{
+  "contract_sha256": "ccd48e542f9c0ebd36e2579b860f436d27a36be394db73c25e4641a59f6c9b40",
+  "coverage_certificate": {
+    "budget": 2,
+    "coverage_ratio": 1.0,
+    "covered": [
+      "derivative_error",
+      "value_error"
+    ],
+    "missing": [],
+    "requested": [
+      "derivative_error",
+      "value_error"
+    ],
+    "used": 2
+  },
+  "observations": [
+    {
+      "command_argv": [
+        "D:\\program projects\\st_mlee\\P4\\tmp\\scp-transfer-20261006\\Scripts\\python.exe",
+        "D:\\program projects\\st_mlee\\P4/examples/workflow_observation_control.py",
+        "--test-id",
+        "reference.decimal_value",
+        "--mode",
+        "invalid_json"
+      ],
+      "command_file_sha256": {
+        "D:\\program projects\\st_mlee\\P4\\examples\\workflow_observation_control.py": "ed7ef14711b0ee7ea9453548fb489d460dd34d11d37c8373a1b384b05da557b2",
+        "D:\\program projects\\st_mlee\\P4\\tmp\\scp-transfer-20261006\\Scripts\\python.exe": "935016795f3e6908e75acbc2040a01e2e4cdb494a57c42f63a0d6eedb2372256"
+      },
+      "exit_code": 0,
+      "outcome": "ABSTAIN",
+      "reason": "Expecting value: line 1 column 1 (char 0)",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "not JSON\r\n",
+      "stdout_sha256": "a2e359f46a34d3de00514f2065375c5929cf7f2d546f53b255a46b22ddd2857c",
+      "test_id": "reference.decimal_value"
+    },
+    {
+      "command_argv": [
+        "D:\\program projects\\st_mlee\\P4\\tmp\\scp-transfer-20261006\\Scripts\\python.exe",
+        "D:\\program projects\\st_mlee\\P4/examples/expm1_relation_worker.py",
+        "--test-id",
+        "property.central_derivative"
+      ],
+      "command_file_sha256": {
+        "D:\\program projects\\st_mlee\\P4\\examples\\expm1_relation_worker.py": "7d05723ad28326b15fd8fef8690d6d41bf1798330432974962c93ed7adf80777",
+        "D:\\program projects\\st_mlee\\P4\\tmp\\scp-transfer-20261006\\Scripts\\python.exe": "935016795f3e6908e75acbc2040a01e2e4cdb494a57c42f63a0d6eedb2372256"
+      },
+      "details": {
+        "max_absolute_error": 1.9492629732553723e-11,
+        "points": [
+          {
+            "absolute_error": 1.9492629732553723e-11,
+            "observed": 1.133148453086319,
+            "reference": 1.1331484530668263,
+            "x": 0.125
+          },
+          {
+            "absolute_error": 1.9338086687525902e-11,
+            "observed": 1.6487212707194663,
+            "reference": 1.6487212707001282,
+            "x": 0.5
+          }
+        ],
+        "threshold": 1e-07
+      },
+      "exit_code": 0,
+      "outcome": "PASS",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"schema\": \"P4-Relation-Observation-v1\", \"test_id\": \"property.central_derivative\", \"outcome\": \"PASS\", \"subject_invocations\": 4, \"details\": {\"points\": [{\"x\": 0.125, \"observed\": 1.133148453086319, \"reference\": 1.1331484530668263, \"absolute_error\": 1.9492629732553723e-11}, {\"x\": 0.5, \"observed\": 1.6487212707194663, \"reference\": 1.6487212707001282, \"absolute_error\": 1.9338086687525902e-11}], \"threshold\": 1e-07, \"max_absolute_error\": 1.9492629732553723e-11}}\r\n",
+      "stdout_sha256": "a42206bf3e49a1d2da5380f5d9d55ed0270a17f58e7601a3979f18cc7d8c6103",
+      "subject_invocations": 4,
+      "test_id": "property.central_derivative"
+    }
+  ],
+  "plan_digest": "daa888a091712e8df0d3fd9f641741fd5c8fec0dd8e864e77436126ed68647c4",
+  "registry_sha256": "8ee6dee481d761e30972386d5d9b9fb3dd1100619a6eb9dfbb6e43951a6ba0b2",
+  "status": "ABSTAIN"
+}

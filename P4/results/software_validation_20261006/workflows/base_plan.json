@@ -1,0 +1,67 @@
+{
+  "contract_id": "stdlib-expm1-execution-demo-v1",
+  "coverage_certificate": {
+    "budget": 2,
+    "coverage_ratio": 1.0,
+    "covered": [
+      "derivative_error",
+      "value_error"
+    ],
+    "missing": [],
+    "requested": [
+      "derivative_error",
+      "value_error"
+    ],
+    "used": 2
+  },
+  "digest": "daa888a091712e8df0d3fd9f641741fd5c8fec0dd8e864e77436126ed68647c4",
+  "layers": [
+    "reference",
+    "property"
+  ],
+  "max_invocations": 2,
+  "reason_code": null,
+  "risk_mechanisms": [
+    "derivative_error",
+    "value_error"
+  ],
+  "schema": "P4-Test-Plan-v1",
+  "seed": 17,
+  "status": "READY",
+  "tests": [
+    {
+      "estimated_cost": 1.0,
+      "layer": "reference",
+      "marginal_mechanisms": [
+        "value_error"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "absolute_tolerance": 1e-12,
+        "comparator": "decimal_exponential_difference",
+        "generator": "constant_demo_points",
+        "seed": 16132735776708879769
+      },
+      "relation": "constant_demo_points -> decimal_exponential_difference",
+      "test_id": "reference.decimal_value"
+    },
+    {
+      "estimated_cost": 1.0,
+      "layer": "property",
+      "marginal_mechanisms": [
+        "derivative_error"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "absolute_tolerance": 1e-07,
+        "comparator": "analytic_exponential_derivative",
+        "generator": "centered_difference",
+        "seed": 6460454057005520513,
+        "step": 1e-05
+      },
+      "relation": "centered_difference -> analytic_exponential_derivative",
+      "test_id": "property.central_derivative"
+    }
+  ],
+  "wall_seconds": 10.0
+}

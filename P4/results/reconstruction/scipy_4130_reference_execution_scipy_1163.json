@@ -1,0 +1,76 @@
+{
+  "contract_file_sha256": "5544b1822fd3d8fec589702bbd56b3c1d42653310b453972804bc369b5d479bc",
+  "contract_id": "scipy-fisher-exact-two-sided-v1",
+  "coverage_certificate": {
+    "budget": 1,
+    "coverage_ratio": 1.0,
+    "covered": [
+      "value_error"
+    ],
+    "missing": [],
+    "requested": [
+      "value_error"
+    ],
+    "used": 1
+  },
+  "elapsed_seconds": 0.7086457999976119,
+  "evidence_scope": "selected_relations_only; worker_oracles_and_invocation_counts_are_not_independently_verified",
+  "observations": [
+    {
+      "command_argv": [
+        "D:\\python\\python.exe",
+        "D:\\program projects\\st_mlee\\P4/examples/scipy_4130_reference_worker.py",
+        "--test-id",
+        "reference.exact_enumeration",
+        "--contract",
+        "D:\\program projects\\st_mlee\\P4/contracts/cases/scipy_4130.json"
+      ],
+      "command_file_sha256": {
+        "D:\\program projects\\st_mlee\\P4\\contracts\\cases\\scipy_4130.json": "5544b1822fd3d8fec589702bbd56b3c1d42653310b453972804bc369b5d479bc",
+        "D:\\program projects\\st_mlee\\P4\\examples\\scipy_4130_reference_worker.py": "82405a0c74e0f364b4022158981a0928a18b9abb4a239d806de854fdd9bc89c7",
+        "D:\\python\\python.exe": "5341746f92483a93e44c313de830f2fba2956f0759094404a16b2fed06c9a2ed"
+      },
+      "command_sha256": "22aed357420602813664f4718e68803975d15d1a0ea1304fb72e2fb11e5e181f",
+      "details": {
+        "absolute_pvalue_error": 3.3306690738754696e-16,
+        "atol": 1e-12,
+        "contract_sha256": "5544b1822fd3d8fec589702bbd56b3c1d42653310b453972804bc369b5d479bc",
+        "historical_pair_executed": false,
+        "observed_pvalue": 0.9566778639926432,
+        "python_executable": "D:\\python\\python.exe",
+        "reference_method": "integer-hypergeometric-enumeration",
+        "reference_pvalue": 0.9566778639926435,
+        "scipy_file": "D:\\Anaconda\\Lib\\site-packages\\scipy\\__init__.py",
+        "scipy_version": "1.16.3",
+        "table": [
+          [
+            345,
+            455
+          ],
+          [
+            260,
+            345
+          ]
+        ]
+      },
+      "elapsed_seconds": 0.7073318999973708,
+      "exit_code": 0,
+      "outcome": "PASS",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"details\": {\"absolute_pvalue_error\": 3.3306690738754696e-16, \"atol\": 1e-12, \"contract_sha256\": \"5544b1822fd3d8fec589702bbd56b3c1d42653310b453972804bc369b5d479bc\", \"historical_pair_executed\": false, \"observed_pvalue\": 0.9566778639926432, \"python_executable\": \"D:\\\\python\\\\python.exe\", \"reference_method\": \"integer-hypergeometric-enumeration\", \"reference_pvalue\": 0.9566778639926435, \"scipy_file\": \"D:\\\\Anaconda\\\\Lib\\\\site-packages\\\\scipy\\\\__init__.py\", \"scipy_version\": \"1.16.3\", \"table\": [[345, 455], [260, 345]]}, \"outcome\": \"PASS\", \"schema\": \"P4-Relation-Observation-v1\", \"subject_invocations\": 1, \"test_id\": \"reference.exact_enumeration\"}\r\n",
+      "stdout_sha256": "ffe4ac6ea4802c62361aedac6d484119ed14b0dafebd72bf85a4e8a1aa36d836",
+      "subject_invocations": 1,
+      "test_id": "reference.exact_enumeration"
+    }
+  ],
+  "plan_digest": "6ae0db8b7891be0808dbc34949e812c943fdea380a0ac4f1166a91b2dda53f89",
+  "plan_status": "READY",
+  "reason_code": null,
+  "registry_file_sha256": "7cbcded033174d6b29d28bf35a2c534848505f8c2c041c02aa5cc91377277634",
+  "reported_subject_invocations": 1,
+  "schema": "P4-Plan-Execution-v1",
+  "selected_relation_count": 1,
+  "selected_relations_executed": true,
+  "status": "CONFORMANT"
+}

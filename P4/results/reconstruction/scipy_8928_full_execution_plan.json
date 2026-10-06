@@ -1,0 +1,69 @@
+{
+  "contract_id": "scipy-normal-expect-location-v1",
+  "coverage_certificate": {
+    "budget": 2,
+    "coverage_ratio": 1.0,
+    "covered": [
+      "historical_regression",
+      "replay",
+      "value_error"
+    ],
+    "missing": [],
+    "requested": [
+      "historical_regression",
+      "replay",
+      "value_error"
+    ],
+    "used": 2
+  },
+  "digest": "075b42f29ac1815cc81c2ee428cf5080fe8d160de859a3714086e4a0bd6f7336",
+  "layers": [
+    "reference",
+    "replay"
+  ],
+  "max_invocations": 2,
+  "reason_code": null,
+  "risk_mechanisms": [
+    "historical_regression",
+    "replay",
+    "value_error"
+  ],
+  "schema": "P4-Test-Plan-v1",
+  "seed": 8928,
+  "status": "READY",
+  "tests": [
+    {
+      "estimated_cost": 1.0,
+      "layer": "replay",
+      "marginal_mechanisms": [
+        "historical_regression",
+        "replay"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "comparator": "paired_role_semantics",
+        "generator": "unchanged_runner_pair",
+        "seed": 14033851786041915926
+      },
+      "relation": "unchanged_runner_pair -> paired_role_semantics",
+      "test_id": "replay.version_pair"
+    },
+    {
+      "estimated_cost": 1.0,
+      "layer": "reference",
+      "marginal_mechanisms": [
+        "value_error"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "atol": 1e-10,
+        "comparator": "absolute_expectation_error",
+        "generator": "normal_location_scale_cases",
+        "seed": 17559454169147249099
+      },
+      "relation": "normal_location_scale_cases -> absolute_expectation_error",
+      "test_id": "reference.analytic_mean"
+    }
+  ],
+  "wall_seconds": 15.0
+}

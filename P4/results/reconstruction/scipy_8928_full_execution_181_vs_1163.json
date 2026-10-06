@@ -1,0 +1,214 @@
+{
+  "contract_file_sha256": "781422065fffe9fdc4bf6d6a22039d022c18ec3f59ae48940bcf67cc4207a260",
+  "contract_id": "scipy-normal-expect-location-v1",
+  "coverage_certificate": {
+    "budget": 2,
+    "coverage_ratio": 1.0,
+    "covered": [
+      "historical_regression",
+      "replay",
+      "value_error"
+    ],
+    "missing": [],
+    "requested": [
+      "historical_regression",
+      "replay",
+      "value_error"
+    ],
+    "used": 2
+  },
+  "elapsed_seconds": 2.0392766000004485,
+  "evidence_scope": "selected_relations_only; worker_oracles_and_invocation_counts_are_not_independently_verified",
+  "observations": [
+    {
+      "command_argv": [
+        "D:\\python\\python.exe",
+        "D:\\program projects\\st_mlee\\P4/examples/scipy_8928_pair_worker.py",
+        "--test-id",
+        "replay.version_pair",
+        "--case",
+        "D:\\program projects\\st_mlee\\P4/benchmark/cases/scipy_8928.json",
+        "--contract",
+        "D:\\program projects\\st_mlee\\P4/contracts/cases/scipy_8928.json",
+        "--runner",
+        "D:\\program projects\\st_mlee\\P4/benchmark/runners/scipy/scipy_8928.py",
+        "--legacy-python",
+        "D:\\program projects\\st_mlee\\P4/.runtime/p4_scipy181_replay/python310/python.exe",
+        "--current-python",
+        "D:\\python\\python.exe"
+      ],
+      "command_file_sha256": {
+        "D:\\program projects\\st_mlee\\P4\\.runtime\\p4_scipy181_replay\\python310\\python.exe": "3cce33d75d6fdae4e004d0bdf149320b3147482a9caf370079dcb9c191a1b260",
+        "D:\\program projects\\st_mlee\\P4\\benchmark\\cases\\scipy_8928.json": "a7bcd021556fd4aa868b7fbad7e238b3eb33825a36cf1919891e64316a53714b",
+        "D:\\program projects\\st_mlee\\P4\\benchmark\\runners\\scipy\\scipy_8928.py": "dd2c6930731c373e40a42749cba46f40f98a7013e05491634415f256c55205a8",
+        "D:\\program projects\\st_mlee\\P4\\contracts\\cases\\scipy_8928.json": "781422065fffe9fdc4bf6d6a22039d022c18ec3f59ae48940bcf67cc4207a260",
+        "D:\\program projects\\st_mlee\\P4\\examples\\scipy_8928_pair_worker.py": "acb46a1e4720232f68b42c9537eef9435eb0614610b58240041cea55890fe4ac",
+        "D:\\python\\python.exe": "5341746f92483a93e44c313de830f2fba2956f0759094404a16b2fed06c9a2ed"
+      },
+      "command_sha256": "a244dddd9a33b20705336020daad34efd335dd3869c9e4c9018c8ec785e58361",
+      "details": {
+        "atol": 1e-10,
+        "buggy": {
+          "command": [
+            "D:\\program projects\\st_mlee\\P4\\.runtime\\p4_scipy181_replay\\python310\\python.exe",
+            "-B",
+            "D:\\program projects\\st_mlee\\P4\\benchmark\\runners\\scipy\\scipy_8928.py"
+          ],
+          "exit_code": 0,
+          "payload": {
+            "case_id": "scipy_8928",
+            "details": {
+              "checks": [
+                {
+                  "absolute_error": 35.99999999966363,
+                  "analytic_reference": 36.0,
+                  "loc": 36.0,
+                  "observed": 3.3637320653305685e-10,
+                  "scale": 1.0
+                },
+                {
+                  "absolute_error": 10.0,
+                  "analytic_reference": 10.0,
+                  "loc": 10.0,
+                  "observed": 2.3378433179863228e-37,
+                  "scale": 0.1
+                }
+              ],
+              "max_absolute_expectation_error": 35.99999999966363,
+              "reference_method": "analytic-normal-mean"
+            },
+            "invocations": 2,
+            "outcome": "fail",
+            "package": "scipy",
+            "schema": "P4-Role-Independent-Runner-v1",
+            "version": "1.8.1"
+          },
+          "status": "OBSERVED",
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "{\"case_id\": \"scipy_8928\", \"details\": {\"checks\": [{\"absolute_error\": 35.99999999966363, \"analytic_reference\": 36.0, \"loc\": 36.0, \"observed\": 3.3637320653305685e-10, \"scale\": 1.0}, {\"absolute_error\": 10.0, \"analytic_reference\": 10.0, \"loc\": 10.0, \"observed\": 2.3378433179863228e-37, \"scale\": 0.1}], \"max_absolute_expectation_error\": 35.99999999966363, \"reference_method\": \"analytic-normal-mean\"}, \"invocations\": 2, \"outcome\": \"fail\", \"package\": \"scipy\", \"schema\": \"P4-Role-Independent-Runner-v1\", \"version\": \"1.8.1\"}\r\n",
+          "stdout_sha256": "9703f05d6226947caad0174e4028bf4b1176b95e8b04577928fddd9da8b10346"
+        },
+        "buggy_max_absolute_error": 35.99999999966363,
+        "buggy_version": "1.8.1",
+        "captured_pair_file_used_as_observation": false,
+        "current_python_sha256": "5341746f92483a93e44c313de830f2fba2956f0759094404a16b2fed06c9a2ed",
+        "fixed": {
+          "command": [
+            "D:\\python\\python.exe",
+            "-B",
+            "D:\\program projects\\st_mlee\\P4\\benchmark\\runners\\scipy\\scipy_8928.py"
+          ],
+          "exit_code": 0,
+          "payload": {
+            "case_id": "scipy_8928",
+            "details": {
+              "checks": [
+                {
+                  "absolute_error": 1.4210854715202004e-14,
+                  "analytic_reference": 36.0,
+                  "loc": 36.0,
+                  "observed": 35.999999999999986,
+                  "scale": 1.0
+                },
+                {
+                  "absolute_error": 1.0658141036401503e-14,
+                  "analytic_reference": 10.0,
+                  "loc": 10.0,
+                  "observed": 10.00000000000001,
+                  "scale": 0.1
+                }
+              ],
+              "max_absolute_expectation_error": 1.4210854715202004e-14,
+              "reference_method": "analytic-normal-mean"
+            },
+            "invocations": 2,
+            "outcome": "pass",
+            "package": "scipy",
+            "schema": "P4-Role-Independent-Runner-v1",
+            "version": "1.16.3"
+          },
+          "status": "OBSERVED",
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "{\"case_id\": \"scipy_8928\", \"details\": {\"checks\": [{\"absolute_error\": 1.4210854715202004e-14, \"analytic_reference\": 36.0, \"loc\": 36.0, \"observed\": 35.999999999999986, \"scale\": 1.0}, {\"absolute_error\": 1.0658141036401503e-14, \"analytic_reference\": 10.0, \"loc\": 10.0, \"observed\": 10.00000000000001, \"scale\": 0.1}], \"max_absolute_expectation_error\": 1.4210854715202004e-14, \"reference_method\": \"analytic-normal-mean\"}, \"invocations\": 2, \"outcome\": \"pass\", \"package\": \"scipy\", \"schema\": \"P4-Role-Independent-Runner-v1\", \"version\": \"1.16.3\"}\r\n",
+          "stdout_sha256": "9577b0439c0f32f8f7e00bd1efd74a23075922e052a140a3a9ab096b8e4e7bfa"
+        },
+        "fixed_max_absolute_error": 1.4210854715202004e-14,
+        "fixed_version": "1.16.3",
+        "legacy_python_sha256": "3cce33d75d6fdae4e004d0bdf149320b3147482a9caf370079dcb9c191a1b260",
+        "reason": "LIVE_UNCHANGED_RUNNER_PAIR",
+        "runner_sha256": "dd2c6930731c373e40a42749cba46f40f98a7013e05491634415f256c55205a8",
+        "same_runner_for_both_roles": true
+      },
+      "elapsed_seconds": 1.3211340000052587,
+      "exit_code": 0,
+      "outcome": "PASS",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"details\": {\"atol\": 1e-10, \"buggy\": {\"command\": [\"D:\\\\program projects\\\\st_mlee\\\\P4\\\\.runtime\\\\p4_scipy181_replay\\\\python310\\\\python.exe\", \"-B\", \"D:\\\\program projects\\\\st_mlee\\\\P4\\\\benchmark\\\\runners\\\\scipy\\\\scipy_8928.py\"], \"exit_code\": 0, \"payload\": {\"case_id\": \"scipy_8928\", \"details\": {\"checks\": [{\"absolute_error\": 35.99999999966363, \"analytic_reference\": 36.0, \"loc\": 36.0, \"observed\": 3.3637320653305685e-10, \"scale\": 1.0}, {\"absolute_error\": 10.0, \"analytic_reference\": 10.0, \"loc\": 10.0, \"observed\": 2.3378433179863228e-37, \"scale\": 0.1}], \"max_absolute_expectation_error\": 35.99999999966363, \"reference_method\": \"analytic-normal-mean\"}, \"invocations\": 2, \"outcome\": \"fail\", \"package\": \"scipy\", \"schema\": \"P4-Role-Independent-Runner-v1\", \"version\": \"1.8.1\"}, \"status\": \"OBSERVED\", \"stderr\": \"\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout\": \"{\\\"case_id\\\": \\\"scipy_8928\\\", \\\"details\\\": {\\\"checks\\\": [{\\\"absolute_error\\\": 35.99999999966363, \\\"analytic_reference\\\": 36.0, \\\"loc\\\": 36.0, \\\"observed\\\": 3.3637320653305685e-10, \\\"scale\\\": 1.0}, {\\\"absolute_error\\\": 10.0, \\\"analytic_reference\\\": 10.0, \\\"loc\\\": 10.0, \\\"observed\\\": 2.3378433179863228e-37, \\\"scale\\\": 0.1}], \\\"max_absolute_expectation_error\\\": 35.99999999966363, \\\"reference_method\\\": \\\"analytic-normal-mean\\\"}, \\\"invocations\\\": 2, \\\"outcome\\\": \\\"fail\\\", \\\"package\\\": \\\"scipy\\\", \\\"schema\\\": \\\"P4-Role-Independent-Runner-v1\\\", \\\"version\\\": \\\"1.8.1\\\"}\\r\\n\", \"stdout_sha256\": \"9703f05d6226947caad0174e4028bf4b1176b95e8b04577928fddd9da8b10346\"}, \"buggy_max_absolute_error\": 35.99999999966363, \"buggy_version\": \"1.8.1\", \"captured_pair_file_used_as_observation\": false, \"current_python_sha256\": \"5341746f92483a93e44c313de830f2fba2956f0759094404a16b2fed06c9a2ed\", \"fixed\": {\"command\": [\"D:\\\\python\\\\python.exe\", \"-B\", \"D:\\\\program projects\\\\st_mlee\\\\P4\\\\benchmark\\\\runners\\\\scipy\\\\scipy_8928.py\"], \"exit_code\": 0, \"payload\": {\"case_id\": \"scipy_8928\", \"details\": {\"checks\": [{\"absolute_error\": 1.4210854715202004e-14, \"analytic_reference\": 36.0, \"loc\": 36.0, \"observed\": 35.999999999999986, \"scale\": 1.0}, {\"absolute_error\": 1.0658141036401503e-14, \"analytic_reference\": 10.0, \"loc\": 10.0, \"observed\": 10.00000000000001, \"scale\": 0.1}], \"max_absolute_expectation_error\": 1.4210854715202004e-14, \"reference_method\": \"analytic-normal-mean\"}, \"invocations\": 2, \"outcome\": \"pass\", \"package\": \"scipy\", \"schema\": \"P4-Role-Independent-Runner-v1\", \"version\": \"1.16.3\"}, \"status\": \"OBSERVED\", \"stderr\": \"\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout\": \"{\\\"case_id\\\": \\\"scipy_8928\\\", \\\"details\\\": {\\\"checks\\\": [{\\\"absolute_error\\\": 1.4210854715202004e-14, \\\"analytic_reference\\\": 36.0, \\\"loc\\\": 36.0, \\\"observed\\\": 35.999999999999986, \\\"scale\\\": 1.0}, {\\\"absolute_error\\\": 1.0658141036401503e-14, \\\"analytic_reference\\\": 10.0, \\\"loc\\\": 10.0, \\\"observed\\\": 10.00000000000001, \\\"scale\\\": 0.1}], \\\"max_absolute_expectation_error\\\": 1.4210854715202004e-14, \\\"reference_method\\\": \\\"analytic-normal-mean\\\"}, \\\"invocations\\\": 2, \\\"outcome\\\": \\\"pass\\\", \\\"package\\\": \\\"scipy\\\", \\\"schema\\\": \\\"P4-Role-Independent-Runner-v1\\\", \\\"version\\\": \\\"1.16.3\\\"}\\r\\n\", \"stdout_sha256\": \"9577b0439c0f32f8f7e00bd1efd74a23075922e052a140a3a9ab096b8e4e7bfa\"}, \"fixed_max_absolute_error\": 1.4210854715202004e-14, \"fixed_version\": \"1.16.3\", \"legacy_python_sha256\": \"3cce33d75d6fdae4e004d0bdf149320b3147482a9caf370079dcb9c191a1b260\", \"reason\": \"LIVE_UNCHANGED_RUNNER_PAIR\", \"runner_sha256\": \"dd2c6930731c373e40a42749cba46f40f98a7013e05491634415f256c55205a8\", \"same_runner_for_both_roles\": true}, \"outcome\": \"PASS\", \"schema\": \"P4-Relation-Observation-v1\", \"subject_invocations\": 4, \"test_id\": \"replay.version_pair\"}\r\n",
+      "stdout_sha256": "7f5d96af525530a5f4789765d2589e8e859d64088ffdaaa2888a2533a098aed7",
+      "subject_invocations": 4,
+      "test_id": "replay.version_pair"
+    },
+    {
+      "command_argv": [
+        "D:\\python\\python.exe",
+        "D:\\program projects\\st_mlee\\P4/examples/scipy_8928_reference_worker.py",
+        "--test-id",
+        "reference.analytic_mean",
+        "--contract",
+        "D:\\program projects\\st_mlee\\P4/contracts/cases/scipy_8928.json"
+      ],
+      "command_file_sha256": {
+        "D:\\program projects\\st_mlee\\P4\\contracts\\cases\\scipy_8928.json": "781422065fffe9fdc4bf6d6a22039d022c18ec3f59ae48940bcf67cc4207a260",
+        "D:\\program projects\\st_mlee\\P4\\examples\\scipy_8928_reference_worker.py": "5f1610304fc1686046a297c17d34dbc5fcb971d76949e5b02b520f7c20a69183",
+        "D:\\python\\python.exe": "5341746f92483a93e44c313de830f2fba2956f0759094404a16b2fed06c9a2ed"
+      },
+      "command_sha256": "06233c51f54277370c7eba5fa6d52b8aec7d2b1d60ce676a8f4bd1d6f9dcdb24",
+      "details": {
+        "atol": 1e-10,
+        "checks": [
+          {
+            "absolute_error": 1.4210854715202004e-14,
+            "analytic_reference": 36.0,
+            "loc": 36.0,
+            "observed": 35.999999999999986,
+            "scale": 1.0
+          },
+          {
+            "absolute_error": 1.0658141036401503e-14,
+            "analytic_reference": 10.0,
+            "loc": 10.0,
+            "observed": 10.00000000000001,
+            "scale": 0.1
+          }
+        ],
+        "contract_sha256": "781422065fffe9fdc4bf6d6a22039d022c18ec3f59ae48940bcf67cc4207a260",
+        "historical_pair_executed": false,
+        "python_executable": "D:\\python\\python.exe",
+        "reference_method": "analytic-normal-mean",
+        "scipy_file": "D:\\Anaconda\\Lib\\site-packages\\scipy\\__init__.py",
+        "scipy_version": "1.16.3"
+      },
+      "elapsed_seconds": 0.7139177999997628,
+      "exit_code": 0,
+      "outcome": "PASS",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"details\": {\"atol\": 1e-10, \"checks\": [{\"absolute_error\": 1.4210854715202004e-14, \"analytic_reference\": 36.0, \"loc\": 36.0, \"observed\": 35.999999999999986, \"scale\": 1.0}, {\"absolute_error\": 1.0658141036401503e-14, \"analytic_reference\": 10.0, \"loc\": 10.0, \"observed\": 10.00000000000001, \"scale\": 0.1}], \"contract_sha256\": \"781422065fffe9fdc4bf6d6a22039d022c18ec3f59ae48940bcf67cc4207a260\", \"historical_pair_executed\": false, \"python_executable\": \"D:\\\\python\\\\python.exe\", \"reference_method\": \"analytic-normal-mean\", \"scipy_file\": \"D:\\\\Anaconda\\\\Lib\\\\site-packages\\\\scipy\\\\__init__.py\", \"scipy_version\": \"1.16.3\"}, \"outcome\": \"PASS\", \"schema\": \"P4-Relation-Observation-v1\", \"subject_invocations\": 2, \"test_id\": \"reference.analytic_mean\"}\r\n",
+      "stdout_sha256": "e478951222d60e231f8a783c740555ab7344635b783c71d59fc8c88d2d416e6a",
+      "subject_invocations": 2,
+      "test_id": "reference.analytic_mean"
+    }
+  ],
+  "plan_digest": "075b42f29ac1815cc81c2ee428cf5080fe8d160de859a3714086e4a0bd6f7336",
+  "plan_status": "READY",
+  "reason_code": null,
+  "registry_file_sha256": "a41ec022e7de426d9f774f6baf368f834062095f16c5d1ff7132db9bbf779927",
+  "reported_subject_invocations": 6,
+  "schema": "P4-Plan-Execution-v1",
+  "selected_relation_count": 2,
+  "selected_relations_executed": true,
+  "status": "CONFORMANT"
+}

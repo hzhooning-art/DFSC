@@ -1,0 +1,23 @@
+{
+  "observations": [
+    {
+      "outcome": "ABSTAIN",
+      "reason": "missing command",
+      "test_id": "reference.decimal_value"
+    },
+    {
+      "command_argv": [
+        "D:\\program projects\\st_mlee\\P4\\tmp\\scp-transfer-20261006\\Scripts\\python.exe",
+        "D:\\program projects\\st_mlee\\P4/examples/expm1_relation_worker.py",
+        "--test-id",
+        "property.central_derivative"
+      ],
+      "exit_code": 0,
+      "outcome": "PASS",
+      "stderr": "",
+      "stdout": "{\"schema\": \"P4-Relation-Observation-v1\", \"test_id\": \"property.central_derivative\", \"outcome\": \"PASS\", \"subject_invocations\": 4, \"details\": {\"points\": [{\"x\": 0.125, \"observed\": 1.133148453086319, \"reference\": 1.1331484530668263, \"absolute_error\": 1.9492629732553723e-11}, {\"x\": 0.5, \"observed\": 1.6487212707194663, \"reference\": 1.6487212707001282, \"absolute_error\": 1.9338086687525902e-11}], \"threshold\": 1e-07, \"max_absolute_error\": 1.9492629732553723e-11}}\r\n",
+      "test_id": "property.central_derivative"
+    }
+  ],
+  "status": "CONFORMANT"
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "P4-Component-Contract-v1",
+  "contract_id": "scipy-solve-ivp-decay-v1",
+  "component": {"project": "scipy", "interface": "integrate.solve_ivp", "implementation": "DOP853"},
+  "domain": {"rates": [0.3, 1.2], "initial_values": [1.0, 2.0], "dtype": "binary64"},
+  "execution": {"deterministic": true, "device": "cpu"},
+  "references": {"analytic_solution": true, "analytic_half_life": true},
+  "relations": {
+    "trajectory": {"layer": "reference", "generator": "decay_grid", "comparator": "analytic_decay", "mechanisms": ["value_error"], "parameters": {"absolute_tolerance": 1e-8}, "max_invocations": 1},
+    "amplitude_scaling": {"layer": "property", "generator": "scaled_initial_value", "comparator": "linear_amplitude", "mechanisms": ["representation_mismatch"], "parameters": {"absolute_tolerance": 1e-8}, "max_invocations": 1},
+    "half_life_event": {"layer": "execution", "generator": "terminal_half_life", "comparator": "analytic_event_time", "mechanisms": ["execution_policy_mismatch"], "parameters": {"absolute_tolerance": 1e-8}, "max_invocations": 1}
+  }
+}

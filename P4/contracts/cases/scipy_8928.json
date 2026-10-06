@@ -1,0 +1,14 @@
+{
+  "schema": "P4-Component-Contract-v1",
+  "contract_id": "scipy-normal-expect-location-v1",
+  "component": {"project": "scipy/scipy", "interface": "scipy.stats.norm.expect", "implementation": "released wheel"},
+  "domain": {"inputs": "finite normal location and positive scale", "parameters": {"loc": [36.0, 10.0], "scale": [1.0, 0.1]}},
+  "execution": {"deterministic": true, "dtypes": ["float64"], "devices": ["cpu"]},
+  "references": {"analytic_expectation": "E[X] = loc", "rtol": 1e-15, "atol": 1e-10},
+  "relations": {
+    "analytic_mean": {"layer": "reference", "generator": "normal_location_scale_cases", "comparator": "absolute_expectation_error", "parameters": {"atol": 1e-10}, "max_invocations": 2, "mechanisms": ["value_error"]},
+    "version_pair": {"layer": "replay", "generator": "unchanged_runner_pair", "comparator": "paired_role_semantics", "parameters": {}, "max_invocations": 2, "mechanisms": ["historical_regression", "replay"]}
+  },
+  "rejection": {"nonpositive_scale": "invalid_case"},
+  "provenance": {"upstream_issue": "https://github.com/scipy/scipy/issues/8928", "fixed_release": "1.9.0"}
+}

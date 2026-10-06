@@ -1,0 +1,8 @@
+{
+  "schema": "P4-Execution-Registry-v1",
+  "commands": {
+    "reference.analytic_derivative": ["{python}", "{p4_root}/examples/pytorch_80770_relation_worker.py", "--test-id", "{test_id}"],
+    "execution.repeatability": ["{python}", "{p4_root}/examples/pytorch_80770_relation_worker.py", "--test-id", "{test_id}"],
+    "replay.version_pair": ["{python}", "{p4_root}/examples/pytorch_80770_relation_worker.py", "--test-id", "{test_id}"]
+  }
+}

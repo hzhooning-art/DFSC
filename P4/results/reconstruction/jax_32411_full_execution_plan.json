@@ -1,0 +1,69 @@
+{
+  "contract_id": "jax-vjp-ref-gradient-accumulation-v1",
+  "coverage_certificate": {
+    "budget": 2,
+    "coverage_ratio": 1.0,
+    "covered": [
+      "derivative_error",
+      "historical_regression",
+      "replay"
+    ],
+    "missing": [],
+    "requested": [
+      "derivative_error",
+      "historical_regression",
+      "replay"
+    ],
+    "used": 2
+  },
+  "digest": "67cc3d215bfd3466f7cbc3b20abc28ec7a26055f1cd8314fc48f0671ff5956e8",
+  "layers": [
+    "property",
+    "replay"
+  ],
+  "max_invocations": 2,
+  "reason_code": null,
+  "risk_mechanisms": [
+    "derivative_error",
+    "historical_regression",
+    "replay"
+  ],
+  "schema": "P4-Test-Plan-v1",
+  "seed": 32411,
+  "status": "READY",
+  "tests": [
+    {
+      "estimated_cost": 1.0,
+      "layer": "replay",
+      "marginal_mechanisms": [
+        "historical_regression",
+        "replay"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "comparator": "paired_role_semantics",
+        "generator": "unchanged_runner_pair",
+        "seed": 14882895563194358881
+      },
+      "relation": "unchanged_runner_pair -> paired_role_semantics",
+      "test_id": "replay.version_pair"
+    },
+    {
+      "estimated_cost": 1.0,
+      "layer": "property",
+      "marginal_mechanisms": [
+        "derivative_error"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "atol": 1e-06,
+        "comparator": "max_absolute_gradient_error",
+        "generator": "seeded_microbatch_problem",
+        "seed": 1016906099979972055
+      },
+      "relation": "seeded_microbatch_problem -> max_absolute_gradient_error",
+      "test_id": "property.gradient_accumulation_equivalence"
+    }
+  ],
+  "wall_seconds": 30.0
+}

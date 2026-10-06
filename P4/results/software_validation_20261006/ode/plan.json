@@ -1,0 +1,86 @@
+{
+  "contract_id": "scipy-solve-ivp-decay-v1",
+  "coverage_certificate": {
+    "budget": 3,
+    "coverage_ratio": 1.0,
+    "covered": [
+      "execution_policy_mismatch",
+      "representation_mismatch",
+      "value_error"
+    ],
+    "missing": [],
+    "requested": [
+      "execution_policy_mismatch",
+      "representation_mismatch",
+      "value_error"
+    ],
+    "used": 3
+  },
+  "digest": "6ba203c320a6486c9c5b6aab28246dc43e95d6fbfd001d59156229df73ec5a91",
+  "layers": [
+    "reference",
+    "property",
+    "execution"
+  ],
+  "max_invocations": 3,
+  "reason_code": null,
+  "risk_mechanisms": [
+    "execution_policy_mismatch",
+    "representation_mismatch",
+    "value_error"
+  ],
+  "schema": "P4-Test-Plan-v1",
+  "seed": 31,
+  "status": "READY",
+  "tests": [
+    {
+      "estimated_cost": 1.0,
+      "layer": "reference",
+      "marginal_mechanisms": [
+        "value_error"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "absolute_tolerance": 1e-08,
+        "comparator": "analytic_decay",
+        "generator": "decay_grid",
+        "seed": 8933107989847580230
+      },
+      "relation": "decay_grid -> analytic_decay",
+      "test_id": "reference.trajectory"
+    },
+    {
+      "estimated_cost": 1.0,
+      "layer": "property",
+      "marginal_mechanisms": [
+        "representation_mismatch"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "absolute_tolerance": 1e-08,
+        "comparator": "linear_amplitude",
+        "generator": "scaled_initial_value",
+        "seed": 15403521267871020699
+      },
+      "relation": "scaled_initial_value -> linear_amplitude",
+      "test_id": "property.amplitude_scaling"
+    },
+    {
+      "estimated_cost": 1.0,
+      "layer": "execution",
+      "marginal_mechanisms": [
+        "execution_policy_mismatch"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "absolute_tolerance": 1e-08,
+        "comparator": "analytic_event_time",
+        "generator": "terminal_half_life",
+        "seed": 6934466836249377819
+      },
+      "relation": "terminal_half_life -> analytic_event_time",
+      "test_id": "execution.half_life_event"
+    }
+  ],
+  "wall_seconds": 30.0
+}

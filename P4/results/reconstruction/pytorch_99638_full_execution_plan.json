@@ -1,0 +1,89 @@
+{
+  "contract_id": "pytorch-masked-select-gradient-v1",
+  "coverage_certificate": {
+    "budget": 3,
+    "coverage_ratio": 1.0,
+    "covered": [
+      "derivative_error",
+      "historical_regression",
+      "repeatability",
+      "replay"
+    ],
+    "missing": [],
+    "requested": [
+      "derivative_error",
+      "historical_regression",
+      "repeatability",
+      "replay"
+    ],
+    "used": 3
+  },
+  "digest": "aa04d488bb9e15263f39471bc3763c32ebcedee575c74e2c104dd60f6b97c5fd",
+  "layers": [
+    "property",
+    "execution",
+    "replay"
+  ],
+  "max_invocations": 3,
+  "reason_code": null,
+  "risk_mechanisms": [
+    "derivative_error",
+    "historical_regression",
+    "repeatability",
+    "replay"
+  ],
+  "schema": "P4-Test-Plan-v1",
+  "seed": 99638,
+  "status": "READY",
+  "tests": [
+    {
+      "estimated_cost": 1.0,
+      "layer": "replay",
+      "marginal_mechanisms": [
+        "historical_regression",
+        "replay"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "comparator": "paired_role_semantics",
+        "generator": "unchanged_runner_pair",
+        "seed": 14305239333240053006
+      },
+      "relation": "unchanged_runner_pair -> paired_role_semantics",
+      "test_id": "replay.version_pair"
+    },
+    {
+      "estimated_cost": 1.0,
+      "layer": "execution",
+      "marginal_mechanisms": [
+        "repeatability"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "comparator": "exact_repeat",
+        "generator": "repeat_seeded_graph",
+        "seed": 1006043300097365430
+      },
+      "relation": "repeat_seeded_graph -> exact_repeat",
+      "test_id": "execution.deterministic_repeat"
+    },
+    {
+      "estimated_cost": 1.0,
+      "layer": "property",
+      "marginal_mechanisms": [
+        "derivative_error"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "atol": 1e-10,
+        "comparator": "bias_gradients_allclose",
+        "generator": "equivalent_masked_and_index_selection",
+        "rtol": 1e-10,
+        "seed": 12483365373978928858
+      },
+      "relation": "equivalent_masked_and_index_selection -> bias_gradients_allclose",
+      "test_id": "property.selection_gradient_equivalence"
+    }
+  ],
+  "wall_seconds": 90.0
+}

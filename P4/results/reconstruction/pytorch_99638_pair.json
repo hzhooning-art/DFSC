@@ -1,0 +1,25 @@
+{
+  "schema": "P4-Complete-Historical-Pair-v1",
+  "case_id": "pytorch_99638",
+  "upstream_issue": "https://github.com/pytorch/pytorch/issues/99638",
+  "runner_sha256": "8b16d785ab74fbf67f679eace7c31d2eb02652a94c25f497f783f5c261ebdc03",
+  "runner_unchanged_between_sides": true,
+  "legacy_environment": {
+    "python": "3.10.11",
+    "python_archive_sha256": "608619f8619075629c9c69f361352a0da6ed7e62f83a0e19c63e0ea32eb7629d",
+    "torch": "1.13.1+cpu",
+    "torch_wheel_sha256": "207ab3700cd9c4349f4fd1892597eb3d385eb78221c0f2974ec54b8ea903aa00",
+    "typing_extensions_sha256": "af72aea155e91adfc61c3ae9e0e342dbc0cba726d6cba4b6c72c1f34e47291cd"
+  },
+  "buggy_side": {
+    "clean_runs": 2,
+    "result": {"role_confirmed": true, "outcome": "fail", "version": "1.13.1+cpu", "max_absolute_gradient_error": 2.816199779510498}
+  },
+  "fixed_side": {
+    "clean_runs": 2,
+    "result": {"role_confirmed": true, "outcome": "pass", "version": "2.11.0+cu128", "max_absolute_gradient_error": 0.0}
+  },
+  "complete_pair": true,
+  "complete_pair_count": 1,
+  "claim_boundary": "One CPU defect family reproduced twice per side with one unchanged role-independent runner."
+}

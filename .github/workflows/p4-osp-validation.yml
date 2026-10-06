@@ -1,0 +1,52 @@
+name: P4 OSP reproducible software validation
+on:
+  push:
+    branches: ["codex/p4-scp-osp-v0.3.0"]
+    tags: ["p4-scp-osp-v*"]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  portable-and-ode:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python: ["3.11", "3.13"]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Build and install wheel
+        shell: bash
+        run: |
+          python -m pip wheel --no-deps --wheel-dir "$RUNNER_TEMP/wheels" ./P4
+          python -m pip install --no-deps "$RUNNER_TEMP"/wheels/*.whl
+      - name: Verify base installation without numerical libraries
+        run: python P4/scripts/verify_software_install.py
+      - name: Compare disclosed workflow controls
+        shell: bash
+        run: python P4/scripts/compare_workflows.py --output-dir "$RUNNER_TEMP/workflow-rerun"
+      - name: Run included executor and evidence checks
+        shell: bash
+        run: |
+          python -m unittest discover -s P4/tests/reconstruction -p "test_*execution*unittest.py" -v
+          python -m unittest discover -s P4/tests/reconstruction -p "test_live_relation_coverage_unittest.py" -v
+          python -m unittest discover -s P4/tests/reconstruction -p "test_workflow_controls_unittest.py" -v
+          python -m unittest discover -s P4/tests/reconstruction -p "test_targeted_evidence_unittest.py" -v
+      - name: Install fixed current numerical dependencies
+        run: python -m pip install numpy==2.3.3 scipy==1.16.3
+      - name: Verify ODE transfer
+        shell: bash
+        run: python P4/scripts/verify_ode_transfer.py --output-dir "$RUNNER_TEMP/ode-rerun"
+      - name: Retain rerun evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: p4-osp-${{ matrix.os }}-py${{ matrix.python }}
+          path: |
+            ${{ runner.temp }}/workflow-rerun
+            ${{ runner.temp }}/ode-rerun

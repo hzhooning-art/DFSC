@@ -1,0 +1,181 @@
+{
+  "contract_file_sha256": "e7230118f501f65528acebbc56dbd684d079b188bf1ea65d1bd15dfbadb4fcee",
+  "contract_id": "scipy-solve-ivp-decay-v1",
+  "coverage_certificate": {
+    "budget": 3,
+    "coverage_ratio": 1.0,
+    "covered": [
+      "execution_policy_mismatch",
+      "representation_mismatch",
+      "value_error"
+    ],
+    "missing": [],
+    "requested": [
+      "execution_policy_mismatch",
+      "representation_mismatch",
+      "value_error"
+    ],
+    "used": 3
+  },
+  "elapsed_seconds": 1.5646068999776617,
+  "evidence_scope": "selected_relations_only; worker_oracles_and_invocation_counts_are_not_independently_verified",
+  "observations": [
+    {
+      "command_argv": [
+        "D:\\program projects\\st_mlee\\P4\\tmp\\scp-transfer-20261006\\Scripts\\python.exe",
+        "D:\\program projects\\st_mlee\\P4/examples/ode_decay_worker.py",
+        "--contract",
+        "D:\\program projects\\st_mlee\\P4/contracts/examples/ode_decay.json",
+        "--test-id",
+        "reference.trajectory",
+        "--bias",
+        "0.01"
+      ],
+      "command_file_sha256": {
+        "D:\\program projects\\st_mlee\\P4\\contracts\\examples\\ode_decay.json": "e7230118f501f65528acebbc56dbd684d079b188bf1ea65d1bd15dfbadb4fcee",
+        "D:\\program projects\\st_mlee\\P4\\examples\\ode_decay_worker.py": "ec156129905582cf4002743365d5104fb74fefb92ea6156f992612bf514fe7e1",
+        "D:\\program projects\\st_mlee\\P4\\tmp\\scp-transfer-20261006\\Scripts\\python.exe": "935016795f3e6908e75acbc2040a01e2e4cdb494a57c42f63a0d6eedb2372256"
+      },
+      "command_sha256": "59791a86d30688965275b16a01e784baf1e13d2d566ee0c2eea5ac0e54e0706c",
+      "details": {
+        "calls_mean": "reported solve_ivp calls, not RHS evaluations",
+        "max_absolute_error": 0.0100000001084255,
+        "numpy_version": "2.3.3",
+        "rows": [
+          {
+            "error": 0.010000000054359859,
+            "initial": 1.0,
+            "nfev": 62,
+            "rate": 0.3
+          },
+          {
+            "error": 0.0100000001084255,
+            "initial": 2.0,
+            "nfev": 62,
+            "rate": 0.3
+          },
+          {
+            "error": 0.010000000030725986,
+            "initial": 1.0,
+            "nfev": 137,
+            "rate": 1.2
+          },
+          {
+            "error": 0.01000000006136692,
+            "initial": 2.0,
+            "nfev": 137,
+            "rate": 1.2
+          }
+        ],
+        "scipy_version": "1.16.3",
+        "threshold": 1e-08
+      },
+      "elapsed_seconds": 0.5131689000409096,
+      "exit_code": 0,
+      "outcome": "FAIL",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"schema\": \"P4-Relation-Observation-v1\", \"test_id\": \"reference.trajectory\", \"outcome\": \"FAIL\", \"subject_invocations\": 4, \"details\": {\"rows\": [{\"rate\": 0.3, \"initial\": 1.0, \"error\": 0.010000000054359859, \"nfev\": 62}, {\"rate\": 0.3, \"initial\": 2.0, \"error\": 0.0100000001084255, \"nfev\": 62}, {\"rate\": 1.2, \"initial\": 1.0, \"error\": 0.010000000030725986, \"nfev\": 137}, {\"rate\": 1.2, \"initial\": 2.0, \"error\": 0.01000000006136692, \"nfev\": 137}], \"max_absolute_error\": 0.0100000001084255, \"threshold\": 1e-08, \"scipy_version\": \"1.16.3\", \"numpy_version\": \"2.3.3\", \"calls_mean\": \"reported solve_ivp calls, not RHS evaluations\"}}\r\n",
+      "stdout_sha256": "153ee50a804bdd368cbd87c8246e766148b87cee645d20ed896eb42680ee312c",
+      "subject_invocations": 4,
+      "test_id": "reference.trajectory"
+    },
+    {
+      "command_argv": [
+        "D:\\program projects\\st_mlee\\P4\\tmp\\scp-transfer-20261006\\Scripts\\python.exe",
+        "D:\\program projects\\st_mlee\\P4/examples/ode_decay_worker.py",
+        "--contract",
+        "D:\\program projects\\st_mlee\\P4/contracts/examples/ode_decay.json",
+        "--test-id",
+        "property.amplitude_scaling"
+      ],
+      "command_file_sha256": {
+        "D:\\program projects\\st_mlee\\P4\\contracts\\examples\\ode_decay.json": "e7230118f501f65528acebbc56dbd684d079b188bf1ea65d1bd15dfbadb4fcee",
+        "D:\\program projects\\st_mlee\\P4\\examples\\ode_decay_worker.py": "ec156129905582cf4002743365d5104fb74fefb92ea6156f992612bf514fe7e1",
+        "D:\\program projects\\st_mlee\\P4\\tmp\\scp-transfer-20261006\\Scripts\\python.exe": "935016795f3e6908e75acbc2040a01e2e4cdb494a57c42f63a0d6eedb2372256"
+      },
+      "command_sha256": "c7210c0d5b460611834de64e22e0889ca1bfac53b1776b44930687e590cf9bc4",
+      "details": {
+        "calls_mean": "reported solve_ivp calls, not RHS evaluations",
+        "max_absolute_error": 2.0513590825999017e-12,
+        "numpy_version": "2.3.3",
+        "rows": [
+          {
+            "error": 1.857181075592962e-12,
+            "rate": 0.3
+          },
+          {
+            "error": 2.0513590825999017e-12,
+            "rate": 1.2
+          }
+        ],
+        "scipy_version": "1.16.3",
+        "threshold": 1e-08
+      },
+      "elapsed_seconds": 0.5210981999989599,
+      "exit_code": 0,
+      "outcome": "PASS",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"schema\": \"P4-Relation-Observation-v1\", \"test_id\": \"property.amplitude_scaling\", \"outcome\": \"PASS\", \"subject_invocations\": 4, \"details\": {\"rows\": [{\"rate\": 0.3, \"error\": 1.857181075592962e-12}, {\"rate\": 1.2, \"error\": 2.0513590825999017e-12}], \"max_absolute_error\": 2.0513590825999017e-12, \"threshold\": 1e-08, \"scipy_version\": \"1.16.3\", \"numpy_version\": \"2.3.3\", \"calls_mean\": \"reported solve_ivp calls, not RHS evaluations\"}}\r\n",
+      "stdout_sha256": "1b8925f3d9719ec9c5beed6b81bb681569d1dfb6b8a581544742fadfa56a3f27",
+      "subject_invocations": 4,
+      "test_id": "property.amplitude_scaling"
+    },
+    {
+      "command_argv": [
+        "D:\\program projects\\st_mlee\\P4\\tmp\\scp-transfer-20261006\\Scripts\\python.exe",
+        "D:\\program projects\\st_mlee\\P4/examples/ode_decay_worker.py",
+        "--contract",
+        "D:\\program projects\\st_mlee\\P4/contracts/examples/ode_decay.json",
+        "--test-id",
+        "execution.half_life_event"
+      ],
+      "command_file_sha256": {
+        "D:\\program projects\\st_mlee\\P4\\contracts\\examples\\ode_decay.json": "e7230118f501f65528acebbc56dbd684d079b188bf1ea65d1bd15dfbadb4fcee",
+        "D:\\program projects\\st_mlee\\P4\\examples\\ode_decay_worker.py": "ec156129905582cf4002743365d5104fb74fefb92ea6156f992612bf514fe7e1",
+        "D:\\program projects\\st_mlee\\P4\\tmp\\scp-transfer-20261006\\Scripts\\python.exe": "935016795f3e6908e75acbc2040a01e2e4cdb494a57c42f63a0d6eedb2372256"
+      },
+      "command_sha256": "e1a3212b1cc0ab79867c1ff6133b691e3cdcb02d18abafbb9aa798f204731894",
+      "details": {
+        "calls_mean": "reported solve_ivp calls, not RHS evaluations",
+        "max_absolute_error": 4.2040015912903073e-10,
+        "numpy_version": "2.3.3",
+        "rows": [
+          {
+            "error": 4.2040015912903073e-10,
+            "observed": 2.310490601446084,
+            "rate": 0.3,
+            "reference": 2.3104906018664844
+          },
+          {
+            "error": 5.713096662418593e-12,
+            "observed": 0.5776226504723342,
+            "rate": 1.2,
+            "reference": 0.5776226504666211
+          }
+        ],
+        "scipy_version": "1.16.3",
+        "threshold": 1e-08
+      },
+      "elapsed_seconds": 0.5256259000161663,
+      "exit_code": 0,
+      "outcome": "PASS",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"schema\": \"P4-Relation-Observation-v1\", \"test_id\": \"execution.half_life_event\", \"outcome\": \"PASS\", \"subject_invocations\": 2, \"details\": {\"rows\": [{\"rate\": 0.3, \"observed\": 2.310490601446084, \"reference\": 2.3104906018664844, \"error\": 4.2040015912903073e-10}, {\"rate\": 1.2, \"observed\": 0.5776226504723342, \"reference\": 0.5776226504666211, \"error\": 5.713096662418593e-12}], \"max_absolute_error\": 4.2040015912903073e-10, \"threshold\": 1e-08, \"scipy_version\": \"1.16.3\", \"numpy_version\": \"2.3.3\", \"calls_mean\": \"reported solve_ivp calls, not RHS evaluations\"}}\r\n",
+      "stdout_sha256": "7d00a753a463b7700b434658363ca8858ffe26e1945f768f46e1d21cb4d1f4b9",
+      "subject_invocations": 2,
+      "test_id": "execution.half_life_event"
+    }
+  ],
+  "plan_digest": "6ba203c320a6486c9c5b6aab28246dc43e95d6fbfd001d59156229df73ec5a91",
+  "plan_status": "READY",
+  "reason_code": "OBSERVED_RELATION_FAILURE",
+  "registry_file_sha256": "e57a8fcd1b9e1cda297e06aa4b18e9ba38ba5f3bf58b670aed9f96e643b79291",
+  "reported_subject_invocations": 10,
+  "schema": "P4-Plan-Execution-v1",
+  "selected_relation_count": 3,
+  "selected_relations_executed": true,
+  "status": "NONCONFORMANT"
+}

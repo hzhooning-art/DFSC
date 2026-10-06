@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/p4-component-contract-v1.schema.json",
+  "title": "P4 Component Contract v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "contract_id", "component", "domain", "execution", "relations"],
+  "properties": {
+    "schema": {"const": "P4-Component-Contract-v1"},
+    "contract_id": {"type": "string", "minLength": 1},
+    "component": {"type": "object", "minProperties": 1},
+    "domain": {"type": "object", "minProperties": 1},
+    "execution": {"type": "object", "minProperties": 1},
+    "references": {"type": "object"},
+    "relations": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "object",
+        "required": ["layer", "generator", "comparator", "max_invocations"],
+        "properties": {
+          "layer": {"enum": ["reference", "property", "execution", "replay"]},
+          "generator": {"type": "string", "minLength": 1},
+          "comparator": {"type": "string", "minLength": 1},
+          "parameters": {"type": "object"},
+          "mechanisms": {"type": "array", "uniqueItems": true, "items": {"enum": ["value_error", "derivative_error", "representation_mismatch", "batch_isolation", "dtype_device_mismatch", "execution_policy_mismatch", "historical_regression", "replay", "repeatability"]}},
+          "max_invocations": {"type": "integer", "minimum": 1}
+        }
+      }
+    },
+    "rejection": {"type": "object"},
+    "provenance": {"type": "object"}
+  }
+}

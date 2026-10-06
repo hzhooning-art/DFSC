@@ -1,0 +1,20 @@
+{
+  "schema": "P4-Complete-Historical-Pair-v1",
+  "case_id": "scipy_4130",
+  "upstream_issue": "https://github.com/scipy/scipy/issues/4130",
+  "runner_sha256": "4a485176f46421f45f9de82ddf1821c2cff15fe40b60cb672bf35a8ccb09ea8f",
+  "runner_unchanged_between_sides": true,
+  "legacy_environment": {
+    "python": "3.10.11",
+    "python_archive_sha256": "608619f8619075629c9c69f361352a0da6ed7e62f83a0e19c63e0ea32eb7629d",
+    "scipy": "1.8.1",
+    "scipy_wheel_sha256": "4e53a55f6a4f22de01ffe1d2f016e30adedb67a699a310cdcac312806807ca81",
+    "numpy": "1.22.4",
+    "numpy_wheel_sha256": "3e1ffa4748168e1cc8d3cde93f006fe92b5421396221a02f2274aab6ac83b077"
+  },
+  "buggy_side": {"clean_runs": 2, "result": {"role_confirmed": true, "outcome": "fail", "version": "1.8.1", "observed_pvalue": 1.0, "reference_pvalue": 0.9566778639926435, "absolute_pvalue_error": 0.04332213600735646}},
+  "fixed_side": {"clean_runs": 2, "result": {"role_confirmed": true, "outcome": "pass", "version": "1.18.0", "observed_pvalue": 0.9566778639926432, "reference_pvalue": 0.9566778639926435, "absolute_pvalue_error": 3.3306690738754696e-16}},
+  "complete_pair": true,
+  "complete_pair_count": 1,
+  "claim_boundary": "One CPU defect family reproduced twice per side with one unchanged role-independent runner."
+}

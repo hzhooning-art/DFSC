@@ -1,0 +1,22 @@
+{
+  "schema": "P4-Execution-Registry-v1",
+  "commands": {
+    "property.gradient_accumulation_equivalence": [
+      "{python}", "{p4_root}/examples/jax_32411_relation_worker.py",
+      "--test-id", "{test_id}",
+      "--contract", "{p4_root}/contracts/cases/jax_32411.json",
+      "--case", "{p4_root}/benchmark/cases/jax_32411.json",
+      "--runner", "{p4_root}/benchmark/runners/jax/jax_32411.py",
+      "--current-python", "{p4_root}/.runtime/p4_jax080/Scripts/python.exe"
+    ],
+    "replay.version_pair": [
+      "{python}", "{p4_root}/examples/jax_32411_relation_worker.py",
+      "--test-id", "{test_id}",
+      "--contract", "{p4_root}/contracts/cases/jax_32411.json",
+      "--case", "{p4_root}/benchmark/cases/jax_32411.json",
+      "--runner", "{p4_root}/benchmark/runners/jax/jax_32411.py",
+      "--legacy-python", "{p4_root}/.runtime/p4_jax072/Scripts/python.exe",
+      "--current-python", "{p4_root}/.runtime/p4_jax080/Scripts/python.exe"
+    ]
+  }
+}

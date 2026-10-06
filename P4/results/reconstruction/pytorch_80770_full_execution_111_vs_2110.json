@@ -1,0 +1,337 @@
+{
+  "contract_file_sha256": "cdc5e7bb93e62199ff10b6da7e52bc1ecfb921e042b1e95d3a49a63fcfc1c5cd",
+  "contract_id": "pytorch-xlogy-derivative-v1",
+  "coverage_certificate": {
+    "budget": 3,
+    "coverage_ratio": 1.0,
+    "covered": [
+      "derivative_error",
+      "historical_regression",
+      "repeatability",
+      "replay"
+    ],
+    "missing": [],
+    "requested": [
+      "derivative_error",
+      "historical_regression",
+      "repeatability",
+      "replay"
+    ],
+    "used": 3
+  },
+  "elapsed_seconds": 9.96104799999739,
+  "evidence_scope": "selected_relations_only; worker_oracles_and_invocation_counts_are_not_independently_verified",
+  "observations": [
+    {
+      "command_argv": [
+        "D:\\python\\python.exe",
+        "D:\\program projects\\st_mlee\\P4/examples/pytorch_80770_relation_worker.py",
+        "--test-id",
+        "replay.version_pair"
+      ],
+      "command_file_sha256": {
+        "D:\\program projects\\st_mlee\\P4\\examples\\pytorch_80770_relation_worker.py": "09d46f1610920539d2efe03a6d9dd63cf7aa6f4b8e965ce231aa3e2911fde653",
+        "D:\\python\\python.exe": "5341746f92483a93e44c313de830f2fba2956f0759094404a16b2fed06c9a2ed"
+      },
+      "command_sha256": "c7955e9ced46987e5a6974f512543d4d14e4595a352f9c05cda47041165876aa",
+      "details": {
+        "analytic_expected_gradient": 0.6931471805599453,
+        "atol": 1e-12,
+        "buggy": {
+          "command": [
+            "D:\\program projects\\st_mlee\\P4\\.runtime\\p4_torch111_replay\\python310\\python.exe",
+            "-B",
+            "D:\\program projects\\st_mlee\\P4\\experiments\\pytorch_historical_pair_runner.py",
+            "--case",
+            "pytorch_80770",
+            "--expected-role",
+            "buggy"
+          ],
+          "exit_code": 0,
+          "payload": {
+            "case_id": "pytorch_80770",
+            "expected_role": "buggy",
+            "observation": {
+              "device": "cpu",
+              "executed": true,
+              "expected_gradient": 0.6931471805599453,
+              "matches_fixed_expectation": false,
+              "matches_reported_bug": true,
+              "maximum_absolute_error": 0.6931471805599453,
+              "observed_gradient": 0.0
+            },
+            "python": "3.10.11",
+            "reported_buggy_version": "1.11.0",
+            "role_confirmed": true,
+            "schema": "P4-Historical-Pair-Runner-v1",
+            "torch": "1.11.0+cpu",
+            "upstream_issue": "https://github.com/pytorch/pytorch/issues/80770"
+          },
+          "status": "OBSERVED",
+          "stderr": "D:\\program projects\\st_mlee\\P4\\.runtime\\p4_torch111_replay\\python310\\Lib\\site-packages\\torch\\_masked\\__init__.py:223: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at  ..\\torch\\csrc\\utils\\tensor_numpy.cpp:68.)\r\n  example_input = torch.tensor([[-3, -2, -1], [0, 1, 2]])\r\n",
+          "stderr_sha256": "179f926ee2c3e9c1313e75b6204d858047add42577530fc0cb9a90b1f2670f8d",
+          "stdout": "{\r\n  \"schema\": \"P4-Historical-Pair-Runner-v1\",\r\n  \"case_id\": \"pytorch_80770\",\r\n  \"expected_role\": \"buggy\",\r\n  \"role_confirmed\": true,\r\n  \"python\": \"3.10.11\",\r\n  \"torch\": \"1.11.0+cpu\",\r\n  \"upstream_issue\": \"https://github.com/pytorch/pytorch/issues/80770\",\r\n  \"reported_buggy_version\": \"1.11.0\",\r\n  \"observation\": {\r\n    \"executed\": true,\r\n    \"observed_gradient\": 0.0,\r\n    \"expected_gradient\": 0.6931471805599453,\r\n    \"maximum_absolute_error\": 0.6931471805599453,\r\n    \"matches_fixed_expectation\": false,\r\n    \"matches_reported_bug\": true,\r\n    \"device\": \"cpu\"\r\n  }\r\n}\r\n",
+          "stdout_sha256": "4dfd1fb774becf615f3d73245394fc4e45cfa3e895e973ba442fe2f5da8431e2"
+        },
+        "captured_pair_file_used_as_observation": false,
+        "contract_sha256": "cdc5e7bb93e62199ff10b6da7e52bc1ecfb921e042b1e95d3a49a63fcfc1c5cd",
+        "current_python_sha256": "5912d0884b23c0343983a864c6064242391e2265536f50b88624857e353882c9",
+        "fixed": {
+          "command": [
+            "D:\\program projects\\st_mlee\\P1\\.venv\\Scripts\\python.exe",
+            "-B",
+            "D:\\program projects\\st_mlee\\P4\\experiments\\pytorch_historical_pair_runner.py",
+            "--case",
+            "pytorch_80770",
+            "--expected-role",
+            "fixed"
+          ],
+          "exit_code": 0,
+          "payload": {
+            "case_id": "pytorch_80770",
+            "expected_role": "fixed",
+            "observation": {
+              "device": "cpu",
+              "executed": true,
+              "expected_gradient": 0.6931471805599453,
+              "matches_fixed_expectation": true,
+              "matches_reported_bug": false,
+              "maximum_absolute_error": 0.0,
+              "observed_gradient": 0.6931471805599453
+            },
+            "python": "3.12.14",
+            "reported_buggy_version": "1.11.0",
+            "role_confirmed": true,
+            "schema": "P4-Historical-Pair-Runner-v1",
+            "torch": "2.11.0+cu128",
+            "upstream_issue": "https://github.com/pytorch/pytorch/issues/80770"
+          },
+          "status": "OBSERVED",
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "{\r\n  \"schema\": \"P4-Historical-Pair-Runner-v1\",\r\n  \"case_id\": \"pytorch_80770\",\r\n  \"expected_role\": \"fixed\",\r\n  \"role_confirmed\": true,\r\n  \"python\": \"3.12.14\",\r\n  \"torch\": \"2.11.0+cu128\",\r\n  \"upstream_issue\": \"https://github.com/pytorch/pytorch/issues/80770\",\r\n  \"reported_buggy_version\": \"1.11.0\",\r\n  \"observation\": {\r\n    \"executed\": true,\r\n    \"observed_gradient\": 0.6931471805599453,\r\n    \"expected_gradient\": 0.6931471805599453,\r\n    \"maximum_absolute_error\": 0.0,\r\n    \"matches_fixed_expectation\": true,\r\n    \"matches_reported_bug\": false,\r\n    \"device\": \"cpu\"\r\n  }\r\n}\r\n",
+          "stdout_sha256": "19e76f02d0bd4814140774e0890e1d7dc1c4f793107b70858a14619942b9e758"
+        },
+        "legacy_python_sha256": "3cce33d75d6fdae4e004d0bdf149320b3147482a9caf370079dcb9c191a1b260",
+        "reason": "LIVE_UNCHANGED_RUNNER_PAIR",
+        "runner_sha256": "fdb828ccad16c301981a9334352ae47a337b3a00ca8913e40f4b028334ee4014",
+        "versions_and_gradients": {
+          "buggy": [
+            "1.11.0+cpu",
+            0.0
+          ],
+          "fixed": [
+            "2.11.0+cu128",
+            0.6931471805599453
+          ]
+        }
+      },
+      "elapsed_seconds": 2.9872692999779247,
+      "exit_code": 0,
+      "outcome": "PASS",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"details\": {\"analytic_expected_gradient\": 0.6931471805599453, \"atol\": 1e-12, \"buggy\": {\"command\": [\"D:\\\\program projects\\\\st_mlee\\\\P4\\\\.runtime\\\\p4_torch111_replay\\\\python310\\\\python.exe\", \"-B\", \"D:\\\\program projects\\\\st_mlee\\\\P4\\\\experiments\\\\pytorch_historical_pair_runner.py\", \"--case\", \"pytorch_80770\", \"--expected-role\", \"buggy\"], \"exit_code\": 0, \"payload\": {\"case_id\": \"pytorch_80770\", \"expected_role\": \"buggy\", \"observation\": {\"device\": \"cpu\", \"executed\": true, \"expected_gradient\": 0.6931471805599453, \"matches_fixed_expectation\": false, \"matches_reported_bug\": true, \"maximum_absolute_error\": 0.6931471805599453, \"observed_gradient\": 0.0}, \"python\": \"3.10.11\", \"reported_buggy_version\": \"1.11.0\", \"role_confirmed\": true, \"schema\": \"P4-Historical-Pair-Runner-v1\", \"torch\": \"1.11.0+cpu\", \"upstream_issue\": \"https://github.com/pytorch/pytorch/issues/80770\"}, \"status\": \"OBSERVED\", \"stderr\": \"D:\\\\program projects\\\\st_mlee\\\\P4\\\\.runtime\\\\p4_torch111_replay\\\\python310\\\\Lib\\\\site-packages\\\\torch\\\\_masked\\\\__init__.py:223: UserWarning: Failed to initialize NumPy: No module named 'numpy' (Triggered internally at  ..\\\\torch\\\\csrc\\\\utils\\\\tensor_numpy.cpp:68.)\\r\\n  example_input = torch.tensor([[-3, -2, -1], [0, 1, 2]])\\r\\n\", \"stderr_sha256\": \"179f926ee2c3e9c1313e75b6204d858047add42577530fc0cb9a90b1f2670f8d\", \"stdout\": \"{\\r\\n  \\\"schema\\\": \\\"P4-Historical-Pair-Runner-v1\\\",\\r\\n  \\\"case_id\\\": \\\"pytorch_80770\\\",\\r\\n  \\\"expected_role\\\": \\\"buggy\\\",\\r\\n  \\\"role_confirmed\\\": true,\\r\\n  \\\"python\\\": \\\"3.10.11\\\",\\r\\n  \\\"torch\\\": \\\"1.11.0+cpu\\\",\\r\\n  \\\"upstream_issue\\\": \\\"https://github.com/pytorch/pytorch/issues/80770\\\",\\r\\n  \\\"reported_buggy_version\\\": \\\"1.11.0\\\",\\r\\n  \\\"observation\\\": {\\r\\n    \\\"executed\\\": true,\\r\\n    \\\"observed_gradient\\\": 0.0,\\r\\n    \\\"expected_gradient\\\": 0.6931471805599453,\\r\\n    \\\"maximum_absolute_error\\\": 0.6931471805599453,\\r\\n    \\\"matches_fixed_expectation\\\": false,\\r\\n    \\\"matches_reported_bug\\\": true,\\r\\n    \\\"device\\\": \\\"cpu\\\"\\r\\n  }\\r\\n}\\r\\n\", \"stdout_sha256\": \"4dfd1fb774becf615f3d73245394fc4e45cfa3e895e973ba442fe2f5da8431e2\"}, \"captured_pair_file_used_as_observation\": false, \"contract_sha256\": \"cdc5e7bb93e62199ff10b6da7e52bc1ecfb921e042b1e95d3a49a63fcfc1c5cd\", \"current_python_sha256\": \"5912d0884b23c0343983a864c6064242391e2265536f50b88624857e353882c9\", \"fixed\": {\"command\": [\"D:\\\\program projects\\\\st_mlee\\\\P1\\\\.venv\\\\Scripts\\\\python.exe\", \"-B\", \"D:\\\\program projects\\\\st_mlee\\\\P4\\\\experiments\\\\pytorch_historical_pair_runner.py\", \"--case\", \"pytorch_80770\", \"--expected-role\", \"fixed\"], \"exit_code\": 0, \"payload\": {\"case_id\": \"pytorch_80770\", \"expected_role\": \"fixed\", \"observation\": {\"device\": \"cpu\", \"executed\": true, \"expected_gradient\": 0.6931471805599453, \"matches_fixed_expectation\": true, \"matches_reported_bug\": false, \"maximum_absolute_error\": 0.0, \"observed_gradient\": 0.6931471805599453}, \"python\": \"3.12.14\", \"reported_buggy_version\": \"1.11.0\", \"role_confirmed\": true, \"schema\": \"P4-Historical-Pair-Runner-v1\", \"torch\": \"2.11.0+cu128\", \"upstream_issue\": \"https://github.com/pytorch/pytorch/issues/80770\"}, \"status\": \"OBSERVED\", \"stderr\": \"\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout\": \"{\\r\\n  \\\"schema\\\": \\\"P4-Historical-Pair-Runner-v1\\\",\\r\\n  \\\"case_id\\\": \\\"pytorch_80770\\\",\\r\\n  \\\"expected_role\\\": \\\"fixed\\\",\\r\\n  \\\"role_confirmed\\\": true,\\r\\n  \\\"python\\\": \\\"3.12.14\\\",\\r\\n  \\\"torch\\\": \\\"2.11.0+cu128\\\",\\r\\n  \\\"upstream_issue\\\": \\\"https://github.com/pytorch/pytorch/issues/80770\\\",\\r\\n  \\\"reported_buggy_version\\\": \\\"1.11.0\\\",\\r\\n  \\\"observation\\\": {\\r\\n    \\\"executed\\\": true,\\r\\n    \\\"observed_gradient\\\": 0.6931471805599453,\\r\\n    \\\"expected_gradient\\\": 0.6931471805599453,\\r\\n    \\\"maximum_absolute_error\\\": 0.0,\\r\\n    \\\"matches_fixed_expectation\\\": true,\\r\\n    \\\"matches_reported_bug\\\": false,\\r\\n    \\\"device\\\": \\\"cpu\\\"\\r\\n  }\\r\\n}\\r\\n\", \"stdout_sha256\": \"19e76f02d0bd4814140774e0890e1d7dc1c4f793107b70858a14619942b9e758\"}, \"legacy_python_sha256\": \"3cce33d75d6fdae4e004d0bdf149320b3147482a9caf370079dcb9c191a1b260\", \"reason\": \"LIVE_UNCHANGED_RUNNER_PAIR\", \"runner_sha256\": \"fdb828ccad16c301981a9334352ae47a337b3a00ca8913e40f4b028334ee4014\", \"versions_and_gradients\": {\"buggy\": [\"1.11.0+cpu\", 0.0], \"fixed\": [\"2.11.0+cu128\", 0.6931471805599453]}}, \"outcome\": \"PASS\", \"schema\": \"P4-Relation-Observation-v1\", \"subject_invocations\": 2, \"test_id\": \"replay.version_pair\"}\r\n",
+      "stdout_sha256": "ee7b8a307b0fdf6828e4e79c5a3a949d218f1ade7a96514cfef81facaed3fa48",
+      "subject_invocations": 2,
+      "test_id": "replay.version_pair"
+    },
+    {
+      "command_argv": [
+        "D:\\python\\python.exe",
+        "D:\\program projects\\st_mlee\\P4/examples/pytorch_80770_relation_worker.py",
+        "--test-id",
+        "execution.repeatability"
+      ],
+      "command_file_sha256": {
+        "D:\\program projects\\st_mlee\\P4\\examples\\pytorch_80770_relation_worker.py": "09d46f1610920539d2efe03a6d9dd63cf7aa6f4b8e965ce231aa3e2911fde653",
+        "D:\\python\\python.exe": "5341746f92483a93e44c313de830f2fba2956f0759094404a16b2fed06c9a2ed"
+      },
+      "command_sha256": "d88fbf2ea8ab949a9b2c718d0e3de6fcaad4790d713f70d62b2e0746b4ddcfaa",
+      "details": {
+        "analytic_expected_gradient": 0.6931471805599453,
+        "atol": 1e-12,
+        "captured_pair_file_used_as_observation": false,
+        "contract_sha256": "cdc5e7bb93e62199ff10b6da7e52bc1ecfb921e042b1e95d3a49a63fcfc1c5cd",
+        "current_python_sha256": "5912d0884b23c0343983a864c6064242391e2265536f50b88624857e353882c9",
+        "fixed_first": {
+          "command": [
+            "D:\\program projects\\st_mlee\\P1\\.venv\\Scripts\\python.exe",
+            "-B",
+            "D:\\program projects\\st_mlee\\P4\\experiments\\pytorch_historical_pair_runner.py",
+            "--case",
+            "pytorch_80770",
+            "--expected-role",
+            "fixed"
+          ],
+          "exit_code": 0,
+          "payload": {
+            "case_id": "pytorch_80770",
+            "expected_role": "fixed",
+            "observation": {
+              "device": "cpu",
+              "executed": true,
+              "expected_gradient": 0.6931471805599453,
+              "matches_fixed_expectation": true,
+              "matches_reported_bug": false,
+              "maximum_absolute_error": 0.0,
+              "observed_gradient": 0.6931471805599453
+            },
+            "python": "3.12.14",
+            "reported_buggy_version": "1.11.0",
+            "role_confirmed": true,
+            "schema": "P4-Historical-Pair-Runner-v1",
+            "torch": "2.11.0+cu128",
+            "upstream_issue": "https://github.com/pytorch/pytorch/issues/80770"
+          },
+          "status": "OBSERVED",
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "{\r\n  \"schema\": \"P4-Historical-Pair-Runner-v1\",\r\n  \"case_id\": \"pytorch_80770\",\r\n  \"expected_role\": \"fixed\",\r\n  \"role_confirmed\": true,\r\n  \"python\": \"3.12.14\",\r\n  \"torch\": \"2.11.0+cu128\",\r\n  \"upstream_issue\": \"https://github.com/pytorch/pytorch/issues/80770\",\r\n  \"reported_buggy_version\": \"1.11.0\",\r\n  \"observation\": {\r\n    \"executed\": true,\r\n    \"observed_gradient\": 0.6931471805599453,\r\n    \"expected_gradient\": 0.6931471805599453,\r\n    \"maximum_absolute_error\": 0.0,\r\n    \"matches_fixed_expectation\": true,\r\n    \"matches_reported_bug\": false,\r\n    \"device\": \"cpu\"\r\n  }\r\n}\r\n",
+          "stdout_sha256": "19e76f02d0bd4814140774e0890e1d7dc1c4f793107b70858a14619942b9e758"
+        },
+        "fixed_second": {
+          "command": [
+            "D:\\program projects\\st_mlee\\P1\\.venv\\Scripts\\python.exe",
+            "-B",
+            "D:\\program projects\\st_mlee\\P4\\experiments\\pytorch_historical_pair_runner.py",
+            "--case",
+            "pytorch_80770",
+            "--expected-role",
+            "fixed"
+          ],
+          "exit_code": 0,
+          "payload": {
+            "case_id": "pytorch_80770",
+            "expected_role": "fixed",
+            "observation": {
+              "device": "cpu",
+              "executed": true,
+              "expected_gradient": 0.6931471805599453,
+              "matches_fixed_expectation": true,
+              "matches_reported_bug": false,
+              "maximum_absolute_error": 0.0,
+              "observed_gradient": 0.6931471805599453
+            },
+            "python": "3.12.14",
+            "reported_buggy_version": "1.11.0",
+            "role_confirmed": true,
+            "schema": "P4-Historical-Pair-Runner-v1",
+            "torch": "2.11.0+cu128",
+            "upstream_issue": "https://github.com/pytorch/pytorch/issues/80770"
+          },
+          "status": "OBSERVED",
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "{\r\n  \"schema\": \"P4-Historical-Pair-Runner-v1\",\r\n  \"case_id\": \"pytorch_80770\",\r\n  \"expected_role\": \"fixed\",\r\n  \"role_confirmed\": true,\r\n  \"python\": \"3.12.14\",\r\n  \"torch\": \"2.11.0+cu128\",\r\n  \"upstream_issue\": \"https://github.com/pytorch/pytorch/issues/80770\",\r\n  \"reported_buggy_version\": \"1.11.0\",\r\n  \"observation\": {\r\n    \"executed\": true,\r\n    \"observed_gradient\": 0.6931471805599453,\r\n    \"expected_gradient\": 0.6931471805599453,\r\n    \"maximum_absolute_error\": 0.0,\r\n    \"matches_fixed_expectation\": true,\r\n    \"matches_reported_bug\": false,\r\n    \"device\": \"cpu\"\r\n  }\r\n}\r\n",
+          "stdout_sha256": "19e76f02d0bd4814140774e0890e1d7dc1c4f793107b70858a14619942b9e758"
+        },
+        "legacy_python_sha256": null,
+        "reason": "TWO_INDEPENDENT_FIXED_PROCESSES_EXACT_NUMERIC_REPEAT",
+        "runner_sha256": "fdb828ccad16c301981a9334352ae47a337b3a00ca8913e40f4b028334ee4014",
+        "versions_and_gradients": {
+          "fixed_first": [
+            "2.11.0+cu128",
+            0.6931471805599453
+          ],
+          "fixed_second": [
+            "2.11.0+cu128",
+            0.6931471805599453
+          ]
+        }
+      },
+      "elapsed_seconds": 4.66411079998943,
+      "exit_code": 0,
+      "outcome": "PASS",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"details\": {\"analytic_expected_gradient\": 0.6931471805599453, \"atol\": 1e-12, \"captured_pair_file_used_as_observation\": false, \"contract_sha256\": \"cdc5e7bb93e62199ff10b6da7e52bc1ecfb921e042b1e95d3a49a63fcfc1c5cd\", \"current_python_sha256\": \"5912d0884b23c0343983a864c6064242391e2265536f50b88624857e353882c9\", \"fixed_first\": {\"command\": [\"D:\\\\program projects\\\\st_mlee\\\\P1\\\\.venv\\\\Scripts\\\\python.exe\", \"-B\", \"D:\\\\program projects\\\\st_mlee\\\\P4\\\\experiments\\\\pytorch_historical_pair_runner.py\", \"--case\", \"pytorch_80770\", \"--expected-role\", \"fixed\"], \"exit_code\": 0, \"payload\": {\"case_id\": \"pytorch_80770\", \"expected_role\": \"fixed\", \"observation\": {\"device\": \"cpu\", \"executed\": true, \"expected_gradient\": 0.6931471805599453, \"matches_fixed_expectation\": true, \"matches_reported_bug\": false, \"maximum_absolute_error\": 0.0, \"observed_gradient\": 0.6931471805599453}, \"python\": \"3.12.14\", \"reported_buggy_version\": \"1.11.0\", \"role_confirmed\": true, \"schema\": \"P4-Historical-Pair-Runner-v1\", \"torch\": \"2.11.0+cu128\", \"upstream_issue\": \"https://github.com/pytorch/pytorch/issues/80770\"}, \"status\": \"OBSERVED\", \"stderr\": \"\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout\": \"{\\r\\n  \\\"schema\\\": \\\"P4-Historical-Pair-Runner-v1\\\",\\r\\n  \\\"case_id\\\": \\\"pytorch_80770\\\",\\r\\n  \\\"expected_role\\\": \\\"fixed\\\",\\r\\n  \\\"role_confirmed\\\": true,\\r\\n  \\\"python\\\": \\\"3.12.14\\\",\\r\\n  \\\"torch\\\": \\\"2.11.0+cu128\\\",\\r\\n  \\\"upstream_issue\\\": \\\"https://github.com/pytorch/pytorch/issues/80770\\\",\\r\\n  \\\"reported_buggy_version\\\": \\\"1.11.0\\\",\\r\\n  \\\"observation\\\": {\\r\\n    \\\"executed\\\": true,\\r\\n    \\\"observed_gradient\\\": 0.6931471805599453,\\r\\n    \\\"expected_gradient\\\": 0.6931471805599453,\\r\\n    \\\"maximum_absolute_error\\\": 0.0,\\r\\n    \\\"matches_fixed_expectation\\\": true,\\r\\n    \\\"matches_reported_bug\\\": false,\\r\\n    \\\"device\\\": \\\"cpu\\\"\\r\\n  }\\r\\n}\\r\\n\", \"stdout_sha256\": \"19e76f02d0bd4814140774e0890e1d7dc1c4f793107b70858a14619942b9e758\"}, \"fixed_second\": {\"command\": [\"D:\\\\program projects\\\\st_mlee\\\\P1\\\\.venv\\\\Scripts\\\\python.exe\", \"-B\", \"D:\\\\program projects\\\\st_mlee\\\\P4\\\\experiments\\\\pytorch_historical_pair_runner.py\", \"--case\", \"pytorch_80770\", \"--expected-role\", \"fixed\"], \"exit_code\": 0, \"payload\": {\"case_id\": \"pytorch_80770\", \"expected_role\": \"fixed\", \"observation\": {\"device\": \"cpu\", \"executed\": true, \"expected_gradient\": 0.6931471805599453, \"matches_fixed_expectation\": true, \"matches_reported_bug\": false, \"maximum_absolute_error\": 0.0, \"observed_gradient\": 0.6931471805599453}, \"python\": \"3.12.14\", \"reported_buggy_version\": \"1.11.0\", \"role_confirmed\": true, \"schema\": \"P4-Historical-Pair-Runner-v1\", \"torch\": \"2.11.0+cu128\", \"upstream_issue\": \"https://github.com/pytorch/pytorch/issues/80770\"}, \"status\": \"OBSERVED\", \"stderr\": \"\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout\": \"{\\r\\n  \\\"schema\\\": \\\"P4-Historical-Pair-Runner-v1\\\",\\r\\n  \\\"case_id\\\": \\\"pytorch_80770\\\",\\r\\n  \\\"expected_role\\\": \\\"fixed\\\",\\r\\n  \\\"role_confirmed\\\": true,\\r\\n  \\\"python\\\": \\\"3.12.14\\\",\\r\\n  \\\"torch\\\": \\\"2.11.0+cu128\\\",\\r\\n  \\\"upstream_issue\\\": \\\"https://github.com/pytorch/pytorch/issues/80770\\\",\\r\\n  \\\"reported_buggy_version\\\": \\\"1.11.0\\\",\\r\\n  \\\"observation\\\": {\\r\\n    \\\"executed\\\": true,\\r\\n    \\\"observed_gradient\\\": 0.6931471805599453,\\r\\n    \\\"expected_gradient\\\": 0.6931471805599453,\\r\\n    \\\"maximum_absolute_error\\\": 0.0,\\r\\n    \\\"matches_fixed_expectation\\\": true,\\r\\n    \\\"matches_reported_bug\\\": false,\\r\\n    \\\"device\\\": \\\"cpu\\\"\\r\\n  }\\r\\n}\\r\\n\", \"stdout_sha256\": \"19e76f02d0bd4814140774e0890e1d7dc1c4f793107b70858a14619942b9e758\"}, \"legacy_python_sha256\": null, \"reason\": \"TWO_INDEPENDENT_FIXED_PROCESSES_EXACT_NUMERIC_REPEAT\", \"runner_sha256\": \"fdb828ccad16c301981a9334352ae47a337b3a00ca8913e40f4b028334ee4014\", \"versions_and_gradients\": {\"fixed_first\": [\"2.11.0+cu128\", 0.6931471805599453], \"fixed_second\": [\"2.11.0+cu128\", 0.6931471805599453]}}, \"outcome\": \"PASS\", \"schema\": \"P4-Relation-Observation-v1\", \"subject_invocations\": 2, \"test_id\": \"execution.repeatability\"}\r\n",
+      "stdout_sha256": "f8294394d88284fd9759e45a1a3c8462308fa1cb37ee184e05ebc895098a7f3e",
+      "subject_invocations": 2,
+      "test_id": "execution.repeatability"
+    },
+    {
+      "command_argv": [
+        "D:\\python\\python.exe",
+        "D:\\program projects\\st_mlee\\P4/examples/pytorch_80770_relation_worker.py",
+        "--test-id",
+        "reference.analytic_derivative"
+      ],
+      "command_file_sha256": {
+        "D:\\program projects\\st_mlee\\P4\\examples\\pytorch_80770_relation_worker.py": "09d46f1610920539d2efe03a6d9dd63cf7aa6f4b8e965ce231aa3e2911fde653",
+        "D:\\python\\python.exe": "5341746f92483a93e44c313de830f2fba2956f0759094404a16b2fed06c9a2ed"
+      },
+      "command_sha256": "32a2ca8e8218b602a9e587663a8c02c3c89130723290c4cede341332b581959a",
+      "details": {
+        "analytic_expected_gradient": 0.6931471805599453,
+        "atol": 1e-12,
+        "captured_pair_file_used_as_observation": false,
+        "contract_sha256": "cdc5e7bb93e62199ff10b6da7e52bc1ecfb921e042b1e95d3a49a63fcfc1c5cd",
+        "current_python_sha256": "5912d0884b23c0343983a864c6064242391e2265536f50b88624857e353882c9",
+        "fixed": {
+          "command": [
+            "D:\\program projects\\st_mlee\\P1\\.venv\\Scripts\\python.exe",
+            "-B",
+            "D:\\program projects\\st_mlee\\P4\\experiments\\pytorch_historical_pair_runner.py",
+            "--case",
+            "pytorch_80770",
+            "--expected-role",
+            "fixed"
+          ],
+          "exit_code": 0,
+          "payload": {
+            "case_id": "pytorch_80770",
+            "expected_role": "fixed",
+            "observation": {
+              "device": "cpu",
+              "executed": true,
+              "expected_gradient": 0.6931471805599453,
+              "matches_fixed_expectation": true,
+              "matches_reported_bug": false,
+              "maximum_absolute_error": 0.0,
+              "observed_gradient": 0.6931471805599453
+            },
+            "python": "3.12.14",
+            "reported_buggy_version": "1.11.0",
+            "role_confirmed": true,
+            "schema": "P4-Historical-Pair-Runner-v1",
+            "torch": "2.11.0+cu128",
+            "upstream_issue": "https://github.com/pytorch/pytorch/issues/80770"
+          },
+          "status": "OBSERVED",
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "{\r\n  \"schema\": \"P4-Historical-Pair-Runner-v1\",\r\n  \"case_id\": \"pytorch_80770\",\r\n  \"expected_role\": \"fixed\",\r\n  \"role_confirmed\": true,\r\n  \"python\": \"3.12.14\",\r\n  \"torch\": \"2.11.0+cu128\",\r\n  \"upstream_issue\": \"https://github.com/pytorch/pytorch/issues/80770\",\r\n  \"reported_buggy_version\": \"1.11.0\",\r\n  \"observation\": {\r\n    \"executed\": true,\r\n    \"observed_gradient\": 0.6931471805599453,\r\n    \"expected_gradient\": 0.6931471805599453,\r\n    \"maximum_absolute_error\": 0.0,\r\n    \"matches_fixed_expectation\": true,\r\n    \"matches_reported_bug\": false,\r\n    \"device\": \"cpu\"\r\n  }\r\n}\r\n",
+          "stdout_sha256": "19e76f02d0bd4814140774e0890e1d7dc1c4f793107b70858a14619942b9e758"
+        },
+        "legacy_python_sha256": null,
+        "reason": "LIVE_ANALYTIC_DERIVATIVE_CHECK",
+        "runner_sha256": "fdb828ccad16c301981a9334352ae47a337b3a00ca8913e40f4b028334ee4014",
+        "versions_and_gradients": {
+          "fixed": [
+            "2.11.0+cu128",
+            0.6931471805599453
+          ]
+        }
+      },
+      "elapsed_seconds": 2.3057193999993615,
+      "exit_code": 0,
+      "outcome": "PASS",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"details\": {\"analytic_expected_gradient\": 0.6931471805599453, \"atol\": 1e-12, \"captured_pair_file_used_as_observation\": false, \"contract_sha256\": \"cdc5e7bb93e62199ff10b6da7e52bc1ecfb921e042b1e95d3a49a63fcfc1c5cd\", \"current_python_sha256\": \"5912d0884b23c0343983a864c6064242391e2265536f50b88624857e353882c9\", \"fixed\": {\"command\": [\"D:\\\\program projects\\\\st_mlee\\\\P1\\\\.venv\\\\Scripts\\\\python.exe\", \"-B\", \"D:\\\\program projects\\\\st_mlee\\\\P4\\\\experiments\\\\pytorch_historical_pair_runner.py\", \"--case\", \"pytorch_80770\", \"--expected-role\", \"fixed\"], \"exit_code\": 0, \"payload\": {\"case_id\": \"pytorch_80770\", \"expected_role\": \"fixed\", \"observation\": {\"device\": \"cpu\", \"executed\": true, \"expected_gradient\": 0.6931471805599453, \"matches_fixed_expectation\": true, \"matches_reported_bug\": false, \"maximum_absolute_error\": 0.0, \"observed_gradient\": 0.6931471805599453}, \"python\": \"3.12.14\", \"reported_buggy_version\": \"1.11.0\", \"role_confirmed\": true, \"schema\": \"P4-Historical-Pair-Runner-v1\", \"torch\": \"2.11.0+cu128\", \"upstream_issue\": \"https://github.com/pytorch/pytorch/issues/80770\"}, \"status\": \"OBSERVED\", \"stderr\": \"\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout\": \"{\\r\\n  \\\"schema\\\": \\\"P4-Historical-Pair-Runner-v1\\\",\\r\\n  \\\"case_id\\\": \\\"pytorch_80770\\\",\\r\\n  \\\"expected_role\\\": \\\"fixed\\\",\\r\\n  \\\"role_confirmed\\\": true,\\r\\n  \\\"python\\\": \\\"3.12.14\\\",\\r\\n  \\\"torch\\\": \\\"2.11.0+cu128\\\",\\r\\n  \\\"upstream_issue\\\": \\\"https://github.com/pytorch/pytorch/issues/80770\\\",\\r\\n  \\\"reported_buggy_version\\\": \\\"1.11.0\\\",\\r\\n  \\\"observation\\\": {\\r\\n    \\\"executed\\\": true,\\r\\n    \\\"observed_gradient\\\": 0.6931471805599453,\\r\\n    \\\"expected_gradient\\\": 0.6931471805599453,\\r\\n    \\\"maximum_absolute_error\\\": 0.0,\\r\\n    \\\"matches_fixed_expectation\\\": true,\\r\\n    \\\"matches_reported_bug\\\": false,\\r\\n    \\\"device\\\": \\\"cpu\\\"\\r\\n  }\\r\\n}\\r\\n\", \"stdout_sha256\": \"19e76f02d0bd4814140774e0890e1d7dc1c4f793107b70858a14619942b9e758\"}, \"legacy_python_sha256\": null, \"reason\": \"LIVE_ANALYTIC_DERIVATIVE_CHECK\", \"runner_sha256\": \"fdb828ccad16c301981a9334352ae47a337b3a00ca8913e40f4b028334ee4014\", \"versions_and_gradients\": {\"fixed\": [\"2.11.0+cu128\", 0.6931471805599453]}}, \"outcome\": \"PASS\", \"schema\": \"P4-Relation-Observation-v1\", \"subject_invocations\": 1, \"test_id\": \"reference.analytic_derivative\"}\r\n",
+      "stdout_sha256": "6f763506acc8fefffbb171c955661f504f497cb171034fe3ff090956d34e49e7",
+      "subject_invocations": 1,
+      "test_id": "reference.analytic_derivative"
+    }
+  ],
+  "plan_digest": "2ba8ddd144597349c69f524a85624c21d43631c373b9bad61290b5017e7d39b8",
+  "plan_status": "READY",
+  "reason_code": null,
+  "registry_file_sha256": "67beec2e5f7f376caf732a82815f83941cc9f68f312ac760850986244448fb16",
+  "reported_subject_invocations": 5,
+  "schema": "P4-Plan-Execution-v1",
+  "selected_relation_count": 3,
+  "selected_relations_executed": true,
+  "status": "CONFORMANT"
+}

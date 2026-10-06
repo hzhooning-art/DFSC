@@ -1,0 +1,15 @@
+{
+  "schema": "P4-Component-Contract-v1",
+  "contract_id": "pytorch-xlogy-derivative-v1",
+  "component": {"project": "pytorch/pytorch", "interface": "torch.xlogy", "implementation": "released wheel"},
+  "domain": {"inputs": "finite real scalar x and positive scalar y", "parameters": {"x": [0.0], "y": [2.0]}},
+  "execution": {"deterministic": true, "dtypes": ["float64"], "devices": ["cpu"]},
+  "references": {"analytic_derivative": "d xlogy(x,y) / dx = log(y)", "rtol": 1e-12, "atol": 1e-12},
+  "relations": {
+    "analytic_derivative": {"layer": "reference", "generator": "positive_y_at_zero_x", "comparator": "autograd_matches_log_y", "parameters": {"rtol": 1e-12, "atol": 1e-12}, "max_invocations": 8, "mechanisms": ["derivative_error"]},
+    "repeatability": {"layer": "execution", "generator": "repeat_identical_request", "comparator": "exact_repeat", "parameters": {}, "max_invocations": 2, "mechanisms": ["repeatability"]},
+    "version_pair": {"layer": "replay", "generator": "unchanged_runner_pair", "comparator": "paired_role_semantics", "parameters": {}, "max_invocations": 2, "mechanisms": ["historical_regression", "replay"]}
+  },
+  "rejection": {"nonpositive_y": "invalid_case"},
+  "provenance": {"upstream_issue": "https://github.com/pytorch/pytorch/issues/80770"}
+}

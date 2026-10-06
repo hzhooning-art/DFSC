@@ -1,0 +1,237 @@
+{
+  "contract_file_sha256": "7b42c5718039523ab85c1d5d1cb0f234e4588e6486c653605e8fe8d5d7dd6754",
+  "contract_id": "jax-vjp-ref-gradient-accumulation-v1",
+  "coverage_certificate": {
+    "budget": 2,
+    "coverage_ratio": 1.0,
+    "covered": [
+      "derivative_error",
+      "historical_regression",
+      "replay"
+    ],
+    "missing": [],
+    "requested": [
+      "derivative_error",
+      "historical_regression",
+      "replay"
+    ],
+    "used": 2
+  },
+  "elapsed_seconds": 4.60670940001728,
+  "evidence_scope": "selected_relations_only; worker_oracles_and_invocation_counts_are_not_independently_verified",
+  "observations": [
+    {
+      "command_argv": [
+        "D:\\python\\python.exe",
+        "D:\\program projects\\st_mlee\\P4/examples/jax_32411_relation_worker.py",
+        "--test-id",
+        "replay.version_pair",
+        "--contract",
+        "D:\\program projects\\st_mlee\\P4/contracts/cases/jax_32411.json",
+        "--case",
+        "D:\\program projects\\st_mlee\\P4/benchmark/cases/jax_32411.json",
+        "--runner",
+        "D:\\program projects\\st_mlee\\P4/benchmark/runners/jax/jax_32411.py",
+        "--legacy-python",
+        "D:\\program projects\\st_mlee\\P4/.runtime/p4_jax072/Scripts/python.exe",
+        "--current-python",
+        "D:\\program projects\\st_mlee\\P4/.runtime/p4_jax080/Scripts/python.exe"
+      ],
+      "command_file_sha256": {
+        "D:\\program projects\\st_mlee\\P4\\.runtime\\p4_jax072\\Scripts\\python.exe": "5fc3c5244b5eef01a82fbefd1932d1382b79c72fe6e64ffe8df1e3ce3643f02f",
+        "D:\\program projects\\st_mlee\\P4\\.runtime\\p4_jax080\\Scripts\\python.exe": "5fc3c5244b5eef01a82fbefd1932d1382b79c72fe6e64ffe8df1e3ce3643f02f",
+        "D:\\program projects\\st_mlee\\P4\\benchmark\\cases\\jax_32411.json": "6b2b9506c7ce471bf2cd04831e5b2d0a40c5ae8234b27cd51c21e2b9c6bd0536",
+        "D:\\program projects\\st_mlee\\P4\\benchmark\\runners\\jax\\jax_32411.py": "1ad8975d3781bcff20b3c6048e9d2e6d13a31a60a6d7bc224dc91c2bed26c856",
+        "D:\\program projects\\st_mlee\\P4\\contracts\\cases\\jax_32411.json": "7b42c5718039523ab85c1d5d1cb0f234e4588e6486c653605e8fe8d5d7dd6754",
+        "D:\\program projects\\st_mlee\\P4\\examples\\jax_32411_relation_worker.py": "e823ee4ac83b44be5b07ccf6cc43162bfed907f6a0804589623a522a371c3060",
+        "D:\\python\\python.exe": "5341746f92483a93e44c313de830f2fba2956f0759094404a16b2fed06c9a2ed"
+      },
+      "command_sha256": "92ec2f84da8f1b9442869639d71989335dcb517d0ecbe7ba3335971608bc92c9",
+      "details": {
+        "atol": 1e-06,
+        "buggy": {
+          "command": [
+            "D:\\program projects\\st_mlee\\P4\\.runtime\\p4_jax072\\Scripts\\python.exe",
+            "-B",
+            "D:\\program projects\\st_mlee\\P4\\benchmark\\runners\\jax\\jax_32411.py"
+          ],
+          "exit_code": 0,
+          "payload": {
+            "case_id": "jax_32411",
+            "details": {
+              "max_absolute_gradient_error": 0.03254644572734833,
+              "max_absolute_value_error": 0.0,
+              "microbatches": 3,
+              "reference_method": "value-and-grad-scan-accumulation",
+              "shape": [
+                2,
+                32,
+                32
+              ]
+            },
+            "invocations": 2,
+            "outcome": "fail",
+            "package": "jax",
+            "schema": "P4-Role-Independent-Runner-v1",
+            "version": "0.7.2"
+          },
+          "status": "OBSERVED",
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "{\"case_id\": \"jax_32411\", \"details\": {\"max_absolute_gradient_error\": 0.03254644572734833, \"max_absolute_value_error\": 0.0, \"microbatches\": 3, \"reference_method\": \"value-and-grad-scan-accumulation\", \"shape\": [2, 32, 32]}, \"invocations\": 2, \"outcome\": \"fail\", \"package\": \"jax\", \"schema\": \"P4-Role-Independent-Runner-v1\", \"version\": \"0.7.2\"}\r\n",
+          "stdout_sha256": "732bd292d8bcef68ce2fca36df6d6841ed6c274bf0ca422a7d6a635b1716a966"
+        },
+        "buggy_gradient_error": 0.03254644572734833,
+        "buggy_version": "0.7.2",
+        "captured_pair_file_used_as_observation": false,
+        "contract_sha256": "7b42c5718039523ab85c1d5d1cb0f234e4588e6486c653605e8fe8d5d7dd6754",
+        "current_python_sha256": "5fc3c5244b5eef01a82fbefd1932d1382b79c72fe6e64ffe8df1e3ce3643f02f",
+        "fixed": {
+          "command": [
+            "D:\\program projects\\st_mlee\\P4\\.runtime\\p4_jax080\\Scripts\\python.exe",
+            "-B",
+            "D:\\program projects\\st_mlee\\P4\\benchmark\\runners\\jax\\jax_32411.py"
+          ],
+          "exit_code": 0,
+          "payload": {
+            "case_id": "jax_32411",
+            "details": {
+              "max_absolute_gradient_error": 0.0,
+              "max_absolute_value_error": 0.0,
+              "microbatches": 3,
+              "reference_method": "value-and-grad-scan-accumulation",
+              "shape": [
+                2,
+                32,
+                32
+              ]
+            },
+            "invocations": 2,
+            "outcome": "pass",
+            "package": "jax",
+            "schema": "P4-Role-Independent-Runner-v1",
+            "version": "0.8.0"
+          },
+          "status": "OBSERVED",
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "{\"case_id\": \"jax_32411\", \"details\": {\"max_absolute_gradient_error\": 0.0, \"max_absolute_value_error\": 0.0, \"microbatches\": 3, \"reference_method\": \"value-and-grad-scan-accumulation\", \"shape\": [2, 32, 32]}, \"invocations\": 2, \"outcome\": \"pass\", \"package\": \"jax\", \"schema\": \"P4-Role-Independent-Runner-v1\", \"version\": \"0.8.0\"}\r\n",
+          "stdout_sha256": "73e3f0bcd43b98f293dfe26dcd739d26a9b366ada02ab60eb7ba726463874c63"
+        },
+        "fixed_gradient_error": 0.0,
+        "fixed_release": [
+          0,
+          8,
+          0
+        ],
+        "fixed_version": "0.8.0",
+        "legacy_python_sha256": "5fc3c5244b5eef01a82fbefd1932d1382b79c72fe6e64ffe8df1e3ce3643f02f",
+        "reason": "LIVE_UNCHANGED_RUNNER_PAIR",
+        "runner_sha256": "1ad8975d3781bcff20b3c6048e9d2e6d13a31a60a6d7bc224dc91c2bed26c856",
+        "same_runner_for_both_roles": true
+      },
+      "elapsed_seconds": 3.07760980000603,
+      "exit_code": 0,
+      "outcome": "PASS",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"details\": {\"atol\": 1e-06, \"buggy\": {\"command\": [\"D:\\\\program projects\\\\st_mlee\\\\P4\\\\.runtime\\\\p4_jax072\\\\Scripts\\\\python.exe\", \"-B\", \"D:\\\\program projects\\\\st_mlee\\\\P4\\\\benchmark\\\\runners\\\\jax\\\\jax_32411.py\"], \"exit_code\": 0, \"payload\": {\"case_id\": \"jax_32411\", \"details\": {\"max_absolute_gradient_error\": 0.03254644572734833, \"max_absolute_value_error\": 0.0, \"microbatches\": 3, \"reference_method\": \"value-and-grad-scan-accumulation\", \"shape\": [2, 32, 32]}, \"invocations\": 2, \"outcome\": \"fail\", \"package\": \"jax\", \"schema\": \"P4-Role-Independent-Runner-v1\", \"version\": \"0.7.2\"}, \"status\": \"OBSERVED\", \"stderr\": \"\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout\": \"{\\\"case_id\\\": \\\"jax_32411\\\", \\\"details\\\": {\\\"max_absolute_gradient_error\\\": 0.03254644572734833, \\\"max_absolute_value_error\\\": 0.0, \\\"microbatches\\\": 3, \\\"reference_method\\\": \\\"value-and-grad-scan-accumulation\\\", \\\"shape\\\": [2, 32, 32]}, \\\"invocations\\\": 2, \\\"outcome\\\": \\\"fail\\\", \\\"package\\\": \\\"jax\\\", \\\"schema\\\": \\\"P4-Role-Independent-Runner-v1\\\", \\\"version\\\": \\\"0.7.2\\\"}\\r\\n\", \"stdout_sha256\": \"732bd292d8bcef68ce2fca36df6d6841ed6c274bf0ca422a7d6a635b1716a966\"}, \"buggy_gradient_error\": 0.03254644572734833, \"buggy_version\": \"0.7.2\", \"captured_pair_file_used_as_observation\": false, \"contract_sha256\": \"7b42c5718039523ab85c1d5d1cb0f234e4588e6486c653605e8fe8d5d7dd6754\", \"current_python_sha256\": \"5fc3c5244b5eef01a82fbefd1932d1382b79c72fe6e64ffe8df1e3ce3643f02f\", \"fixed\": {\"command\": [\"D:\\\\program projects\\\\st_mlee\\\\P4\\\\.runtime\\\\p4_jax080\\\\Scripts\\\\python.exe\", \"-B\", \"D:\\\\program projects\\\\st_mlee\\\\P4\\\\benchmark\\\\runners\\\\jax\\\\jax_32411.py\"], \"exit_code\": 0, \"payload\": {\"case_id\": \"jax_32411\", \"details\": {\"max_absolute_gradient_error\": 0.0, \"max_absolute_value_error\": 0.0, \"microbatches\": 3, \"reference_method\": \"value-and-grad-scan-accumulation\", \"shape\": [2, 32, 32]}, \"invocations\": 2, \"outcome\": \"pass\", \"package\": \"jax\", \"schema\": \"P4-Role-Independent-Runner-v1\", \"version\": \"0.8.0\"}, \"status\": \"OBSERVED\", \"stderr\": \"\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout\": \"{\\\"case_id\\\": \\\"jax_32411\\\", \\\"details\\\": {\\\"max_absolute_gradient_error\\\": 0.0, \\\"max_absolute_value_error\\\": 0.0, \\\"microbatches\\\": 3, \\\"reference_method\\\": \\\"value-and-grad-scan-accumulation\\\", \\\"shape\\\": [2, 32, 32]}, \\\"invocations\\\": 2, \\\"outcome\\\": \\\"pass\\\", \\\"package\\\": \\\"jax\\\", \\\"schema\\\": \\\"P4-Role-Independent-Runner-v1\\\", \\\"version\\\": \\\"0.8.0\\\"}\\r\\n\", \"stdout_sha256\": \"73e3f0bcd43b98f293dfe26dcd739d26a9b366ada02ab60eb7ba726463874c63\"}, \"fixed_gradient_error\": 0.0, \"fixed_release\": [0, 8, 0], \"fixed_version\": \"0.8.0\", \"legacy_python_sha256\": \"5fc3c5244b5eef01a82fbefd1932d1382b79c72fe6e64ffe8df1e3ce3643f02f\", \"reason\": \"LIVE_UNCHANGED_RUNNER_PAIR\", \"runner_sha256\": \"1ad8975d3781bcff20b3c6048e9d2e6d13a31a60a6d7bc224dc91c2bed26c856\", \"same_runner_for_both_roles\": true}, \"outcome\": \"PASS\", \"schema\": \"P4-Relation-Observation-v1\", \"subject_invocations\": 4, \"test_id\": \"replay.version_pair\"}\r\n",
+      "stdout_sha256": "8b1143a0674dcb12b456679434d2748196c496d5862207c328c5e272986d9b4f",
+      "subject_invocations": 4,
+      "test_id": "replay.version_pair"
+    },
+    {
+      "command_argv": [
+        "D:\\python\\python.exe",
+        "D:\\program projects\\st_mlee\\P4/examples/jax_32411_relation_worker.py",
+        "--test-id",
+        "property.gradient_accumulation_equivalence",
+        "--contract",
+        "D:\\program projects\\st_mlee\\P4/contracts/cases/jax_32411.json",
+        "--case",
+        "D:\\program projects\\st_mlee\\P4/benchmark/cases/jax_32411.json",
+        "--runner",
+        "D:\\program projects\\st_mlee\\P4/benchmark/runners/jax/jax_32411.py",
+        "--current-python",
+        "D:\\program projects\\st_mlee\\P4/.runtime/p4_jax080/Scripts/python.exe"
+      ],
+      "command_file_sha256": {
+        "D:\\program projects\\st_mlee\\P4\\.runtime\\p4_jax080\\Scripts\\python.exe": "5fc3c5244b5eef01a82fbefd1932d1382b79c72fe6e64ffe8df1e3ce3643f02f",
+        "D:\\program projects\\st_mlee\\P4\\benchmark\\cases\\jax_32411.json": "6b2b9506c7ce471bf2cd04831e5b2d0a40c5ae8234b27cd51c21e2b9c6bd0536",
+        "D:\\program projects\\st_mlee\\P4\\benchmark\\runners\\jax\\jax_32411.py": "1ad8975d3781bcff20b3c6048e9d2e6d13a31a60a6d7bc224dc91c2bed26c856",
+        "D:\\program projects\\st_mlee\\P4\\contracts\\cases\\jax_32411.json": "7b42c5718039523ab85c1d5d1cb0f234e4588e6486c653605e8fe8d5d7dd6754",
+        "D:\\program projects\\st_mlee\\P4\\examples\\jax_32411_relation_worker.py": "e823ee4ac83b44be5b07ccf6cc43162bfed907f6a0804589623a522a371c3060",
+        "D:\\python\\python.exe": "5341746f92483a93e44c313de830f2fba2956f0759094404a16b2fed06c9a2ed"
+      },
+      "command_sha256": "57a89725924a22f6efc0361d9a1d0f6b289d49261bed1c4af9ca919341340f29",
+      "details": {
+        "atol": 1e-06,
+        "captured_pair_file_used_as_observation": false,
+        "contract_sha256": "7b42c5718039523ab85c1d5d1cb0f234e4588e6486c653605e8fe8d5d7dd6754",
+        "current_python_sha256": "5fc3c5244b5eef01a82fbefd1932d1382b79c72fe6e64ffe8df1e3ce3643f02f",
+        "current_version": "0.8.0",
+        "fixed": {
+          "command": [
+            "D:\\program projects\\st_mlee\\P4\\.runtime\\p4_jax080\\Scripts\\python.exe",
+            "-B",
+            "D:\\program projects\\st_mlee\\P4\\benchmark\\runners\\jax\\jax_32411.py"
+          ],
+          "exit_code": 0,
+          "payload": {
+            "case_id": "jax_32411",
+            "details": {
+              "max_absolute_gradient_error": 0.0,
+              "max_absolute_value_error": 0.0,
+              "microbatches": 3,
+              "reference_method": "value-and-grad-scan-accumulation",
+              "shape": [
+                2,
+                32,
+                32
+              ]
+            },
+            "invocations": 2,
+            "outcome": "pass",
+            "package": "jax",
+            "schema": "P4-Role-Independent-Runner-v1",
+            "version": "0.8.0"
+          },
+          "status": "OBSERVED",
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "{\"case_id\": \"jax_32411\", \"details\": {\"max_absolute_gradient_error\": 0.0, \"max_absolute_value_error\": 0.0, \"microbatches\": 3, \"reference_method\": \"value-and-grad-scan-accumulation\", \"shape\": [2, 32, 32]}, \"invocations\": 2, \"outcome\": \"pass\", \"package\": \"jax\", \"schema\": \"P4-Role-Independent-Runner-v1\", \"version\": \"0.8.0\"}\r\n",
+          "stdout_sha256": "73e3f0bcd43b98f293dfe26dcd739d26a9b366ada02ab60eb7ba726463874c63"
+        },
+        "fixed_release": [
+          0,
+          8,
+          0
+        ],
+        "historical_pair_executed": false,
+        "legacy_python_sha256": null,
+        "max_absolute_gradient_error": 0.0,
+        "max_absolute_value_error": 0.0,
+        "reason": "LIVE_CURRENT_GRADIENT_COMPARISON",
+        "runner_sha256": "1ad8975d3781bcff20b3c6048e9d2e6d13a31a60a6d7bc224dc91c2bed26c856"
+      },
+      "elapsed_seconds": 1.5225275999982841,
+      "exit_code": 0,
+      "outcome": "PASS",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"details\": {\"atol\": 1e-06, \"captured_pair_file_used_as_observation\": false, \"contract_sha256\": \"7b42c5718039523ab85c1d5d1cb0f234e4588e6486c653605e8fe8d5d7dd6754\", \"current_python_sha256\": \"5fc3c5244b5eef01a82fbefd1932d1382b79c72fe6e64ffe8df1e3ce3643f02f\", \"current_version\": \"0.8.0\", \"fixed\": {\"command\": [\"D:\\\\program projects\\\\st_mlee\\\\P4\\\\.runtime\\\\p4_jax080\\\\Scripts\\\\python.exe\", \"-B\", \"D:\\\\program projects\\\\st_mlee\\\\P4\\\\benchmark\\\\runners\\\\jax\\\\jax_32411.py\"], \"exit_code\": 0, \"payload\": {\"case_id\": \"jax_32411\", \"details\": {\"max_absolute_gradient_error\": 0.0, \"max_absolute_value_error\": 0.0, \"microbatches\": 3, \"reference_method\": \"value-and-grad-scan-accumulation\", \"shape\": [2, 32, 32]}, \"invocations\": 2, \"outcome\": \"pass\", \"package\": \"jax\", \"schema\": \"P4-Role-Independent-Runner-v1\", \"version\": \"0.8.0\"}, \"status\": \"OBSERVED\", \"stderr\": \"\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout\": \"{\\\"case_id\\\": \\\"jax_32411\\\", \\\"details\\\": {\\\"max_absolute_gradient_error\\\": 0.0, \\\"max_absolute_value_error\\\": 0.0, \\\"microbatches\\\": 3, \\\"reference_method\\\": \\\"value-and-grad-scan-accumulation\\\", \\\"shape\\\": [2, 32, 32]}, \\\"invocations\\\": 2, \\\"outcome\\\": \\\"pass\\\", \\\"package\\\": \\\"jax\\\", \\\"schema\\\": \\\"P4-Role-Independent-Runner-v1\\\", \\\"version\\\": \\\"0.8.0\\\"}\\r\\n\", \"stdout_sha256\": \"73e3f0bcd43b98f293dfe26dcd739d26a9b366ada02ab60eb7ba726463874c63\"}, \"fixed_release\": [0, 8, 0], \"historical_pair_executed\": false, \"legacy_python_sha256\": null, \"max_absolute_gradient_error\": 0.0, \"max_absolute_value_error\": 0.0, \"reason\": \"LIVE_CURRENT_GRADIENT_COMPARISON\", \"runner_sha256\": \"1ad8975d3781bcff20b3c6048e9d2e6d13a31a60a6d7bc224dc91c2bed26c856\"}, \"outcome\": \"PASS\", \"schema\": \"P4-Relation-Observation-v1\", \"subject_invocations\": 2, \"test_id\": \"property.gradient_accumulation_equivalence\"}\r\n",
+      "stdout_sha256": "e92b7b3264100ae979f21447e3b1034664b5f1018a444b1c3fd37738c231122a",
+      "subject_invocations": 2,
+      "test_id": "property.gradient_accumulation_equivalence"
+    }
+  ],
+  "plan_digest": "67cc3d215bfd3466f7cbc3b20abc28ec7a26055f1cd8314fc48f0671ff5956e8",
+  "plan_status": "READY",
+  "reason_code": null,
+  "registry_file_sha256": "0e93b020888abf4acc2bb8ea4d67a211a7b3b3888bba76ed8016e23edb31da02",
+  "reported_subject_invocations": 6,
+  "schema": "P4-Plan-Execution-v1",
+  "selected_relation_count": 2,
+  "selected_relations_executed": true,
+  "status": "CONFORMANT"
+}

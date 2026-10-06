@@ -1,0 +1,11 @@
+{
+  "schema": "P4-Captured-Case-v1",
+  "case_id": "pytorch_99638",
+  "project": "PyTorch",
+  "defect_family": "masked-select-noncontiguous-gradient",
+  "upstream_url": "https://github.com/pytorch/pytorch/issues/99638",
+  "runner_path": "benchmark/runners/pytorch/pytorch_99638.py",
+  "capture_path": "results/reconstruction/pytorch_99638_pair.json",
+  "runner_sha256": "8b16d785ab74fbf67f679eace7c31d2eb02652a94c25f497f783f5c261ebdc03",
+  "detected_by": ["property", "differential", "compiled_layered"]
+}

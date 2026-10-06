@@ -1,0 +1,15 @@
+{
+  "schema": "P4-ODE-Transfer-v1",
+  "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+  "executable": "D:\\program projects\\st_mlee\\P4\\tmp\\scp-transfer-20261006\\Scripts\\python.exe",
+  "p4_import": "D:\\program projects\\st_mlee\\P4\\tmp\\scp-transfer-20261006\\Lib\\site-packages\\p4_testing\\__init__.py",
+  "p4_version": "0.3.0",
+  "scipy": "1.16.3",
+  "numpy": "2.3.3",
+  "positive_status": "CONFORMANT",
+  "biased_status": "NONCONFORMANT",
+  "relations_per_plan": 3,
+  "reported_solve_ivp_calls_per_run": 10,
+  "core_example_specific_changes": false,
+  "scope": "author-performed current-API transfer; not independent adoption or a historical defect"
+}

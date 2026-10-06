@@ -1,0 +1,10 @@
+{
+  "schema": "P4-Environment-Capture-v1",
+  "implementation": "CPython",
+  "python": "3.10.11",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": [["numpy", "2.1.3"], ["scipy", "1.14.1"]],
+  "python_archive_sha256": "608619f8619075629c9c69f361352a0da6ed7e62f83a0e19c63e0ea32eb7629d",
+  "numpy_wheel_sha256": "ecc76a9ba2911d8d37ac01de72834d8849e55473457558e12995f4cd53e778e0",
+  "scipy_wheel_sha256": "a49f6ed96f83966f576b33a44257d869756df6cf1ef4934f59dd58b25e0327e5"
+}

@@ -1,0 +1,549 @@
+{
+  "contract_file_sha256": "a224498d0568f668eeb41675eda216681d7ecd73f0b8e7b1fbe250f63c38b0ee",
+  "contract_id": "scipy-resample-poly-dtype-v1",
+  "coverage_certificate": {
+    "budget": 3,
+    "coverage_ratio": 1.0,
+    "covered": [
+      "dtype_device_mismatch",
+      "historical_regression",
+      "replay",
+      "value_error"
+    ],
+    "missing": [],
+    "requested": [
+      "dtype_device_mismatch",
+      "historical_regression",
+      "replay",
+      "value_error"
+    ],
+    "used": 3
+  },
+  "elapsed_seconds": 3.6240519999992102,
+  "evidence_scope": "selected_relations_only; worker_oracles_and_invocation_counts_are_not_independently_verified",
+  "observations": [
+    {
+      "command_argv": [
+        "D:\\python\\python.exe",
+        "D:\\program projects\\st_mlee\\P4/examples/scipy_15620_relation_worker.py",
+        "--test-id",
+        "replay.version_pair",
+        "--contract",
+        "D:\\program projects\\st_mlee\\P4/contracts/cases/scipy_15620.json",
+        "--fixture",
+        "D:\\program projects\\st_mlee\\P4/contracts/cases/scipy_15620_reference_fixture.json",
+        "--case",
+        "D:\\program projects\\st_mlee\\P4/benchmark/cases/scipy_15620.json",
+        "--runner",
+        "D:\\program projects\\st_mlee\\P4/experiments/scipy_resample_poly_historical_pair_runner.py",
+        "--legacy-python",
+        "D:\\program projects\\st_mlee\\P4/.runtime/p4_scipy114_replay/python310/python.exe",
+        "--current-python",
+        "D:\\python\\python.exe"
+      ],
+      "command_file_sha256": {
+        "D:\\program projects\\st_mlee\\P4\\.runtime\\p4_scipy114_replay\\python310\\python.exe": "3cce33d75d6fdae4e004d0bdf149320b3147482a9caf370079dcb9c191a1b260",
+        "D:\\program projects\\st_mlee\\P4\\benchmark\\cases\\scipy_15620.json": "583a5b15ad121050c5a1f78cf5a9b95d06220c5fc43582449b28a17cb5c8a86e",
+        "D:\\program projects\\st_mlee\\P4\\contracts\\cases\\scipy_15620.json": "a224498d0568f668eeb41675eda216681d7ecd73f0b8e7b1fbe250f63c38b0ee",
+        "D:\\program projects\\st_mlee\\P4\\contracts\\cases\\scipy_15620_reference_fixture.json": "7a992e5dababaf51355bb981f7c6ef6d998ebcddd95f2acd963ceb99420eb33b",
+        "D:\\program projects\\st_mlee\\P4\\examples\\scipy_15620_relation_worker.py": "0b73feb329709325711d4f4e8f119c74d0562347fd89459f74c53a0794ecce81",
+        "D:\\program projects\\st_mlee\\P4\\experiments\\scipy_resample_poly_historical_pair_runner.py": "0a7a72bb1fb803e4c60a4531d4376e1b04659d3fb0eae3c5fea16f9ad01cdf79",
+        "D:\\python\\python.exe": "5341746f92483a93e44c313de830f2fba2956f0759094404a16b2fed06c9a2ed"
+      },
+      "command_sha256": "31452608380c1884cad263602fc4242752838a275cdc4711b365d39243dc9f70",
+      "details": {
+        "buggy": {
+          "command": [
+            "D:\\program projects\\st_mlee\\P4\\.runtime\\p4_scipy114_replay\\python310\\python.exe",
+            "-B",
+            "D:\\program projects\\st_mlee\\P4\\experiments\\scipy_resample_poly_historical_pair_runner.py",
+            "--expected-role",
+            "buggy"
+          ],
+          "exit_code": 0,
+          "payload": {
+            "case_id": "scipy_15620",
+            "expected_role": "buggy",
+            "first_fixed_release": "1.15.0",
+            "numpy": "2.1.3",
+            "observation": {
+              "by_dtype": {
+                "float32": {
+                  "dtype": "float32",
+                  "max_abs": 3.0015525817871094,
+                  "nonzero_count": 14,
+                  "output": [
+                    2.0403420623328967e-17,
+                    0.5590140223503113,
+                    1.00051748752594,
+                    1.422094702720642,
+                    2.00103497505188,
+                    2.6888959407806396,
+                    3.0015525817871094,
+                    2.6888959407806396,
+                    2.00103497505188,
+                    1.4220945835113525,
+                    1.00051748752594,
+                    0.559014081954956,
+                    2.0403423932051418e-17,
+                    -0.525219738483429
+                  ],
+                  "output_dtype": "float32"
+                },
+                "float64": {
+                  "dtype": "float64",
+                  "max_abs": 3.0015524117881807,
+                  "nonzero_count": 14,
+                  "output": [
+                    2.0403419669567586e-17,
+                    0.5590140833869813,
+                    1.0005174705960602,
+                    1.422094676517249,
+                    2.0010349411921204,
+                    2.688896059238451,
+                    3.0015524117881807,
+                    2.6888960592384517,
+                    2.0010349411921204,
+                    1.4220946765172493,
+                    1.0005174705960602,
+                    0.5590140833869816,
+                    2.040341966956759e-17,
+                    -0.5252196453907141
+                  ],
+                  "output_dtype": "float64"
+                },
+                "int16": {
+                  "dtype": "int16",
+                  "max_abs": 0.0,
+                  "nonzero_count": 0,
+                  "output": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "output_dtype": "float32"
+                },
+                "int32": {
+                  "dtype": "int32",
+                  "max_abs": 0.0,
+                  "nonzero_count": 0,
+                  "output": [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  "output_dtype": "float64"
+                }
+              },
+              "float_reference_nonzero": true,
+              "integer_max_abs_error_vs_float64": {
+                "int16": 3.0015524117881807,
+                "int32": 3.0015524117881807
+              },
+              "integer_outputs_all_zero": true,
+              "integer_outputs_match_reference": false,
+              "matches_fixed_expectation": false,
+              "matches_reported_bug": true
+            },
+            "parameters": {
+              "down": 1,
+              "input": [
+                0,
+                1,
+                2,
+                3,
+                2,
+                1,
+                0
+              ],
+              "padtype": "smooth",
+              "up": 2
+            },
+            "python": "3.10.11",
+            "reported_buggy_release": "1.14.1",
+            "role_confirmed": true,
+            "schema": "P4-SciPy-Resample-Poly-Historical-Pair-Runner-v1",
+            "scipy": "1.14.1",
+            "upstream_issue": "https://github.com/scipy/scipy/issues/15620"
+          },
+          "status": "OBSERVED",
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "{\r\n  \"schema\": \"P4-SciPy-Resample-Poly-Historical-Pair-Runner-v1\",\r\n  \"case_id\": \"scipy_15620\",\r\n  \"expected_role\": \"buggy\",\r\n  \"role_confirmed\": true,\r\n  \"python\": \"3.10.11\",\r\n  \"numpy\": \"2.1.3\",\r\n  \"scipy\": \"1.14.1\",\r\n  \"upstream_issue\": \"https://github.com/scipy/scipy/issues/15620\",\r\n  \"reported_buggy_release\": \"1.14.1\",\r\n  \"first_fixed_release\": \"1.15.0\",\r\n  \"parameters\": {\r\n    \"input\": [\r\n      0,\r\n      1,\r\n      2,\r\n      3,\r\n      2,\r\n      1,\r\n      0\r\n    ],\r\n    \"up\": 2,\r\n    \"down\": 1,\r\n    \"padtype\": \"smooth\"\r\n  },\r\n  \"observation\": {\r\n    \"by_dtype\": {\r\n      \"int16\": {\r\n        \"dtype\": \"int16\",\r\n        \"output_dtype\": \"float32\",\r\n        \"output\": [\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0\r\n        ],\r\n        \"nonzero_count\": 0,\r\n        \"max_abs\": 0.0\r\n      },\r\n      \"int32\": {\r\n        \"dtype\": \"int32\",\r\n        \"output_dtype\": \"float64\",\r\n        \"output\": [\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0,\r\n          0.0\r\n        ],\r\n        \"nonzero_count\": 0,\r\n        \"max_abs\": 0.0\r\n      },\r\n      \"float32\": {\r\n        \"dtype\": \"float32\",\r\n        \"output_dtype\": \"float32\",\r\n        \"output\": [\r\n          2.0403420623328967e-17,\r\n          0.5590140223503113,\r\n          1.00051748752594,\r\n          1.422094702720642,\r\n          2.00103497505188,\r\n          2.6888959407806396,\r\n          3.0015525817871094,\r\n          2.6888959407806396,\r\n          2.00103497505188,\r\n          1.4220945835113525,\r\n          1.00051748752594,\r\n          0.559014081954956,\r\n          2.0403423932051418e-17,\r\n          -0.525219738483429\r\n        ],\r\n        \"nonzero_count\": 14,\r\n        \"max_abs\": 3.0015525817871094\r\n      },\r\n      \"float64\": {\r\n        \"dtype\": \"float64\",\r\n        \"output_dtype\": \"float64\",\r\n        \"output\": [\r\n          2.0403419669567586e-17,\r\n          0.5590140833869813,\r\n          1.0005174705960602,\r\n          1.422094676517249,\r\n          2.0010349411921204,\r\n          2.688896059238451,\r\n          3.0015524117881807,\r\n          2.6888960592384517,\r\n          2.0010349411921204,\r\n          1.4220946765172493,\r\n          1.0005174705960602,\r\n          0.5590140833869816,\r\n          2.040341966956759e-17,\r\n          -0.5252196453907141\r\n        ],\r\n        \"nonzero_count\": 14,\r\n        \"max_abs\": 3.0015524117881807\r\n      }\r\n    },\r\n    \"integer_max_abs_error_vs_float64\": {\r\n      \"int16\": 3.0015524117881807,\r\n      \"int32\": 3.0015524117881807\r\n    },\r\n    \"float_reference_nonzero\": true,\r\n    \"integer_outputs_all_zero\": true,\r\n    \"integer_outputs_match_reference\": false,\r\n    \"matches_reported_bug\": true,\r\n    \"matches_fixed_expectation\": false\r\n  }\r\n}\r\n",
+          "stdout_sha256": "9970ffe683b075f1528e03bc1620000743b42a7943ae2c29dbef15ac381b7170"
+        },
+        "buggy_version": "1.14.1",
+        "captured_pair_file_used_as_observation": false,
+        "contract_sha256": "a224498d0568f668eeb41675eda216681d7ecd73f0b8e7b1fbe250f63c38b0ee",
+        "current_python_sha256": "5341746f92483a93e44c313de830f2fba2956f0759094404a16b2fed06c9a2ed",
+        "fixed": {
+          "command": [
+            "D:\\python\\python.exe",
+            "-B",
+            "D:\\program projects\\st_mlee\\P4\\experiments\\scipy_resample_poly_historical_pair_runner.py",
+            "--expected-role",
+            "fixed"
+          ],
+          "exit_code": 0,
+          "payload": {
+            "case_id": "scipy_15620",
+            "expected_role": "fixed",
+            "first_fixed_release": "1.15.0",
+            "numpy": "2.3.5",
+            "observation": {
+              "by_dtype": {
+                "float32": {
+                  "dtype": "float32",
+                  "max_abs": 3.0015525817871094,
+                  "nonzero_count": 14,
+                  "output": [
+                    2.0403420623328967e-17,
+                    0.5590140223503113,
+                    1.00051748752594,
+                    1.422094702720642,
+                    2.00103497505188,
+                    2.6888959407806396,
+                    3.0015525817871094,
+                    2.6888959407806396,
+                    2.00103497505188,
+                    1.4220945835113525,
+                    1.00051748752594,
+                    0.559014081954956,
+                    2.0403423932051418e-17,
+                    -0.525219738483429
+                  ],
+                  "output_dtype": "float32"
+                },
+                "float64": {
+                  "dtype": "float64",
+                  "max_abs": 3.0015524117881807,
+                  "nonzero_count": 14,
+                  "output": [
+                    2.0403419669567537e-17,
+                    0.5590140833869816,
+                    1.0005174705960602,
+                    1.422094676517249,
+                    2.0010349411921204,
+                    2.688896059238451,
+                    3.0015524117881807,
+                    2.6888960592384517,
+                    2.0010349411921204,
+                    1.4220946765172493,
+                    1.0005174705960602,
+                    0.5590140833869816,
+                    2.0403419669567534e-17,
+                    -0.5252196453907141
+                  ],
+                  "output_dtype": "float64"
+                },
+                "int16": {
+                  "dtype": "int16",
+                  "max_abs": 3.0015524117881807,
+                  "nonzero_count": 14,
+                  "output": [
+                    2.0403419669567537e-17,
+                    0.5590140833869816,
+                    1.0005174705960602,
+                    1.422094676517249,
+                    2.0010349411921204,
+                    2.688896059238451,
+                    3.0015524117881807,
+                    2.6888960592384517,
+                    2.0010349411921204,
+                    1.4220946765172493,
+                    1.0005174705960602,
+                    0.5590140833869816,
+                    2.0403419669567534e-17,
+                    -0.5252196453907141
+                  ],
+                  "output_dtype": "float64"
+                },
+                "int32": {
+                  "dtype": "int32",
+                  "max_abs": 3.0015524117881807,
+                  "nonzero_count": 14,
+                  "output": [
+                    2.0403419669567537e-17,
+                    0.5590140833869816,
+                    1.0005174705960602,
+                    1.422094676517249,
+                    2.0010349411921204,
+                    2.688896059238451,
+                    3.0015524117881807,
+                    2.6888960592384517,
+                    2.0010349411921204,
+                    1.4220946765172493,
+                    1.0005174705960602,
+                    0.5590140833869816,
+                    2.0403419669567534e-17,
+                    -0.5252196453907141
+                  ],
+                  "output_dtype": "float64"
+                }
+              },
+              "float_reference_nonzero": true,
+              "integer_max_abs_error_vs_float64": {
+                "int16": 0.0,
+                "int32": 0.0
+              },
+              "integer_outputs_all_zero": false,
+              "integer_outputs_match_reference": true,
+              "matches_fixed_expectation": true,
+              "matches_reported_bug": false
+            },
+            "parameters": {
+              "down": 1,
+              "input": [
+                0,
+                1,
+                2,
+                3,
+                2,
+                1,
+                0
+              ],
+              "padtype": "smooth",
+              "up": 2
+            },
+            "python": "3.13.5",
+            "reported_buggy_release": "1.14.1",
+            "role_confirmed": true,
+            "schema": "P4-SciPy-Resample-Poly-Historical-Pair-Runner-v1",
+            "scipy": "1.16.3",
+            "upstream_issue": "https://github.com/scipy/scipy/issues/15620"
+          },
+          "status": "OBSERVED",
+          "stderr": "",
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout": "{\r\n  \"schema\": \"P4-SciPy-Resample-Poly-Historical-Pair-Runner-v1\",\r\n  \"case_id\": \"scipy_15620\",\r\n  \"expected_role\": \"fixed\",\r\n  \"role_confirmed\": true,\r\n  \"python\": \"3.13.5\",\r\n  \"numpy\": \"2.3.5\",\r\n  \"scipy\": \"1.16.3\",\r\n  \"upstream_issue\": \"https://github.com/scipy/scipy/issues/15620\",\r\n  \"reported_buggy_release\": \"1.14.1\",\r\n  \"first_fixed_release\": \"1.15.0\",\r\n  \"parameters\": {\r\n    \"input\": [\r\n      0,\r\n      1,\r\n      2,\r\n      3,\r\n      2,\r\n      1,\r\n      0\r\n    ],\r\n    \"up\": 2,\r\n    \"down\": 1,\r\n    \"padtype\": \"smooth\"\r\n  },\r\n  \"observation\": {\r\n    \"by_dtype\": {\r\n      \"int16\": {\r\n        \"dtype\": \"int16\",\r\n        \"output_dtype\": \"float64\",\r\n        \"output\": [\r\n          2.0403419669567537e-17,\r\n          0.5590140833869816,\r\n          1.0005174705960602,\r\n          1.422094676517249,\r\n          2.0010349411921204,\r\n          2.688896059238451,\r\n          3.0015524117881807,\r\n          2.6888960592384517,\r\n          2.0010349411921204,\r\n          1.4220946765172493,\r\n          1.0005174705960602,\r\n          0.5590140833869816,\r\n          2.0403419669567534e-17,\r\n          -0.5252196453907141\r\n        ],\r\n        \"nonzero_count\": 14,\r\n        \"max_abs\": 3.0015524117881807\r\n      },\r\n      \"int32\": {\r\n        \"dtype\": \"int32\",\r\n        \"output_dtype\": \"float64\",\r\n        \"output\": [\r\n          2.0403419669567537e-17,\r\n          0.5590140833869816,\r\n          1.0005174705960602,\r\n          1.422094676517249,\r\n          2.0010349411921204,\r\n          2.688896059238451,\r\n          3.0015524117881807,\r\n          2.6888960592384517,\r\n          2.0010349411921204,\r\n          1.4220946765172493,\r\n          1.0005174705960602,\r\n          0.5590140833869816,\r\n          2.0403419669567534e-17,\r\n          -0.5252196453907141\r\n        ],\r\n        \"nonzero_count\": 14,\r\n        \"max_abs\": 3.0015524117881807\r\n      },\r\n      \"float32\": {\r\n        \"dtype\": \"float32\",\r\n        \"output_dtype\": \"float32\",\r\n        \"output\": [\r\n          2.0403420623328967e-17,\r\n          0.5590140223503113,\r\n          1.00051748752594,\r\n          1.422094702720642,\r\n          2.00103497505188,\r\n          2.6888959407806396,\r\n          3.0015525817871094,\r\n          2.6888959407806396,\r\n          2.00103497505188,\r\n          1.4220945835113525,\r\n          1.00051748752594,\r\n          0.559014081954956,\r\n          2.0403423932051418e-17,\r\n          -0.525219738483429\r\n        ],\r\n        \"nonzero_count\": 14,\r\n        \"max_abs\": 3.0015525817871094\r\n      },\r\n      \"float64\": {\r\n        \"dtype\": \"float64\",\r\n        \"output_dtype\": \"float64\",\r\n        \"output\": [\r\n          2.0403419669567537e-17,\r\n          0.5590140833869816,\r\n          1.0005174705960602,\r\n          1.422094676517249,\r\n          2.0010349411921204,\r\n          2.688896059238451,\r\n          3.0015524117881807,\r\n          2.6888960592384517,\r\n          2.0010349411921204,\r\n          1.4220946765172493,\r\n          1.0005174705960602,\r\n          0.5590140833869816,\r\n          2.0403419669567534e-17,\r\n          -0.5252196453907141\r\n        ],\r\n        \"nonzero_count\": 14,\r\n        \"max_abs\": 3.0015524117881807\r\n      }\r\n    },\r\n    \"integer_max_abs_error_vs_float64\": {\r\n      \"int16\": 0.0,\r\n      \"int32\": 0.0\r\n    },\r\n    \"float_reference_nonzero\": true,\r\n    \"integer_outputs_all_zero\": false,\r\n    \"integer_outputs_match_reference\": true,\r\n    \"matches_reported_bug\": false,\r\n    \"matches_fixed_expectation\": true\r\n  }\r\n}\r\n",
+          "stdout_sha256": "d18dfeac9d1735eecb8d89697afc70ae9346a7a9f7811cf1b7dfac5d6d74e34f"
+        },
+        "fixed_version": "1.16.3",
+        "fixture_sha256": "7a992e5dababaf51355bb981f7c6ef6d998ebcddd95f2acd963ceb99420eb33b",
+        "legacy_python_sha256": "3cce33d75d6fdae4e004d0bdf149320b3147482a9caf370079dcb9c191a1b260",
+        "reason": "LIVE_UNCHANGED_RUNNER_PAIR",
+        "recorded_reference_is_independent_oracle": false,
+        "runner_sha256": "0a7a72bb1fb803e4c60a4531d4376e1b04659d3fb0eae3c5fea16f9ad01cdf79",
+        "same_runner_for_both_roles": true
+      },
+      "elapsed_seconds": 1.8224863999930676,
+      "exit_code": 0,
+      "outcome": "PASS",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"details\": {\"buggy\": {\"command\": [\"D:\\\\program projects\\\\st_mlee\\\\P4\\\\.runtime\\\\p4_scipy114_replay\\\\python310\\\\python.exe\", \"-B\", \"D:\\\\program projects\\\\st_mlee\\\\P4\\\\experiments\\\\scipy_resample_poly_historical_pair_runner.py\", \"--expected-role\", \"buggy\"], \"exit_code\": 0, \"payload\": {\"case_id\": \"scipy_15620\", \"expected_role\": \"buggy\", \"first_fixed_release\": \"1.15.0\", \"numpy\": \"2.1.3\", \"observation\": {\"by_dtype\": {\"float32\": {\"dtype\": \"float32\", \"max_abs\": 3.0015525817871094, \"nonzero_count\": 14, \"output\": [2.0403420623328967e-17, 0.5590140223503113, 1.00051748752594, 1.422094702720642, 2.00103497505188, 2.6888959407806396, 3.0015525817871094, 2.6888959407806396, 2.00103497505188, 1.4220945835113525, 1.00051748752594, 0.559014081954956, 2.0403423932051418e-17, -0.525219738483429], \"output_dtype\": \"float32\"}, \"float64\": {\"dtype\": \"float64\", \"max_abs\": 3.0015524117881807, \"nonzero_count\": 14, \"output\": [2.0403419669567586e-17, 0.5590140833869813, 1.0005174705960602, 1.422094676517249, 2.0010349411921204, 2.688896059238451, 3.0015524117881807, 2.6888960592384517, 2.0010349411921204, 1.4220946765172493, 1.0005174705960602, 0.5590140833869816, 2.040341966956759e-17, -0.5252196453907141], \"output_dtype\": \"float64\"}, \"int16\": {\"dtype\": \"int16\", \"max_abs\": 0.0, \"nonzero_count\": 0, \"output\": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], \"output_dtype\": \"float32\"}, \"int32\": {\"dtype\": \"int32\", \"max_abs\": 0.0, \"nonzero_count\": 0, \"output\": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], \"output_dtype\": \"float64\"}}, \"float_reference_nonzero\": true, \"integer_max_abs_error_vs_float64\": {\"int16\": 3.0015524117881807, \"int32\": 3.0015524117881807}, \"integer_outputs_all_zero\": true, \"integer_outputs_match_reference\": false, \"matches_fixed_expectation\": false, \"matches_reported_bug\": true}, \"parameters\": {\"down\": 1, \"input\": [0, 1, 2, 3, 2, 1, 0], \"padtype\": \"smooth\", \"up\": 2}, \"python\": \"3.10.11\", \"reported_buggy_release\": \"1.14.1\", \"role_confirmed\": true, \"schema\": \"P4-SciPy-Resample-Poly-Historical-Pair-Runner-v1\", \"scipy\": \"1.14.1\", \"upstream_issue\": \"https://github.com/scipy/scipy/issues/15620\"}, \"status\": \"OBSERVED\", \"stderr\": \"\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout\": \"{\\r\\n  \\\"schema\\\": \\\"P4-SciPy-Resample-Poly-Historical-Pair-Runner-v1\\\",\\r\\n  \\\"case_id\\\": \\\"scipy_15620\\\",\\r\\n  \\\"expected_role\\\": \\\"buggy\\\",\\r\\n  \\\"role_confirmed\\\": true,\\r\\n  \\\"python\\\": \\\"3.10.11\\\",\\r\\n  \\\"numpy\\\": \\\"2.1.3\\\",\\r\\n  \\\"scipy\\\": \\\"1.14.1\\\",\\r\\n  \\\"upstream_issue\\\": \\\"https://github.com/scipy/scipy/issues/15620\\\",\\r\\n  \\\"reported_buggy_release\\\": \\\"1.14.1\\\",\\r\\n  \\\"first_fixed_release\\\": \\\"1.15.0\\\",\\r\\n  \\\"parameters\\\": {\\r\\n    \\\"input\\\": [\\r\\n      0,\\r\\n      1,\\r\\n      2,\\r\\n      3,\\r\\n      2,\\r\\n      1,\\r\\n      0\\r\\n    ],\\r\\n    \\\"up\\\": 2,\\r\\n    \\\"down\\\": 1,\\r\\n    \\\"padtype\\\": \\\"smooth\\\"\\r\\n  },\\r\\n  \\\"observation\\\": {\\r\\n    \\\"by_dtype\\\": {\\r\\n      \\\"int16\\\": {\\r\\n        \\\"dtype\\\": \\\"int16\\\",\\r\\n        \\\"output_dtype\\\": \\\"float32\\\",\\r\\n        \\\"output\\\": [\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0\\r\\n        ],\\r\\n        \\\"nonzero_count\\\": 0,\\r\\n        \\\"max_abs\\\": 0.0\\r\\n      },\\r\\n      \\\"int32\\\": {\\r\\n        \\\"dtype\\\": \\\"int32\\\",\\r\\n        \\\"output_dtype\\\": \\\"float64\\\",\\r\\n        \\\"output\\\": [\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0,\\r\\n          0.0\\r\\n        ],\\r\\n        \\\"nonzero_count\\\": 0,\\r\\n        \\\"max_abs\\\": 0.0\\r\\n      },\\r\\n      \\\"float32\\\": {\\r\\n        \\\"dtype\\\": \\\"float32\\\",\\r\\n        \\\"output_dtype\\\": \\\"float32\\\",\\r\\n        \\\"output\\\": [\\r\\n          2.0403420623328967e-17,\\r\\n          0.5590140223503113,\\r\\n          1.00051748752594,\\r\\n          1.422094702720642,\\r\\n          2.00103497505188,\\r\\n          2.6888959407806396,\\r\\n          3.0015525817871094,\\r\\n          2.6888959407806396,\\r\\n          2.00103497505188,\\r\\n          1.4220945835113525,\\r\\n          1.00051748752594,\\r\\n          0.559014081954956,\\r\\n          2.0403423932051418e-17,\\r\\n          -0.525219738483429\\r\\n        ],\\r\\n        \\\"nonzero_count\\\": 14,\\r\\n        \\\"max_abs\\\": 3.0015525817871094\\r\\n      },\\r\\n      \\\"float64\\\": {\\r\\n        \\\"dtype\\\": \\\"float64\\\",\\r\\n        \\\"output_dtype\\\": \\\"float64\\\",\\r\\n        \\\"output\\\": [\\r\\n          2.0403419669567586e-17,\\r\\n          0.5590140833869813,\\r\\n          1.0005174705960602,\\r\\n          1.422094676517249,\\r\\n          2.0010349411921204,\\r\\n          2.688896059238451,\\r\\n          3.0015524117881807,\\r\\n          2.6888960592384517,\\r\\n          2.0010349411921204,\\r\\n          1.4220946765172493,\\r\\n          1.0005174705960602,\\r\\n          0.5590140833869816,\\r\\n          2.040341966956759e-17,\\r\\n          -0.5252196453907141\\r\\n        ],\\r\\n        \\\"nonzero_count\\\": 14,\\r\\n        \\\"max_abs\\\": 3.0015524117881807\\r\\n      }\\r\\n    },\\r\\n    \\\"integer_max_abs_error_vs_float64\\\": {\\r\\n      \\\"int16\\\": 3.0015524117881807,\\r\\n      \\\"int32\\\": 3.0015524117881807\\r\\n    },\\r\\n    \\\"float_reference_nonzero\\\": true,\\r\\n    \\\"integer_outputs_all_zero\\\": true,\\r\\n    \\\"integer_outputs_match_reference\\\": false,\\r\\n    \\\"matches_reported_bug\\\": true,\\r\\n    \\\"matches_fixed_expectation\\\": false\\r\\n  }\\r\\n}\\r\\n\", \"stdout_sha256\": \"9970ffe683b075f1528e03bc1620000743b42a7943ae2c29dbef15ac381b7170\"}, \"buggy_version\": \"1.14.1\", \"captured_pair_file_used_as_observation\": false, \"contract_sha256\": \"a224498d0568f668eeb41675eda216681d7ecd73f0b8e7b1fbe250f63c38b0ee\", \"current_python_sha256\": \"5341746f92483a93e44c313de830f2fba2956f0759094404a16b2fed06c9a2ed\", \"fixed\": {\"command\": [\"D:\\\\python\\\\python.exe\", \"-B\", \"D:\\\\program projects\\\\st_mlee\\\\P4\\\\experiments\\\\scipy_resample_poly_historical_pair_runner.py\", \"--expected-role\", \"fixed\"], \"exit_code\": 0, \"payload\": {\"case_id\": \"scipy_15620\", \"expected_role\": \"fixed\", \"first_fixed_release\": \"1.15.0\", \"numpy\": \"2.3.5\", \"observation\": {\"by_dtype\": {\"float32\": {\"dtype\": \"float32\", \"max_abs\": 3.0015525817871094, \"nonzero_count\": 14, \"output\": [2.0403420623328967e-17, 0.5590140223503113, 1.00051748752594, 1.422094702720642, 2.00103497505188, 2.6888959407806396, 3.0015525817871094, 2.6888959407806396, 2.00103497505188, 1.4220945835113525, 1.00051748752594, 0.559014081954956, 2.0403423932051418e-17, -0.525219738483429], \"output_dtype\": \"float32\"}, \"float64\": {\"dtype\": \"float64\", \"max_abs\": 3.0015524117881807, \"nonzero_count\": 14, \"output\": [2.0403419669567537e-17, 0.5590140833869816, 1.0005174705960602, 1.422094676517249, 2.0010349411921204, 2.688896059238451, 3.0015524117881807, 2.6888960592384517, 2.0010349411921204, 1.4220946765172493, 1.0005174705960602, 0.5590140833869816, 2.0403419669567534e-17, -0.5252196453907141], \"output_dtype\": \"float64\"}, \"int16\": {\"dtype\": \"int16\", \"max_abs\": 3.0015524117881807, \"nonzero_count\": 14, \"output\": [2.0403419669567537e-17, 0.5590140833869816, 1.0005174705960602, 1.422094676517249, 2.0010349411921204, 2.688896059238451, 3.0015524117881807, 2.6888960592384517, 2.0010349411921204, 1.4220946765172493, 1.0005174705960602, 0.5590140833869816, 2.0403419669567534e-17, -0.5252196453907141], \"output_dtype\": \"float64\"}, \"int32\": {\"dtype\": \"int32\", \"max_abs\": 3.0015524117881807, \"nonzero_count\": 14, \"output\": [2.0403419669567537e-17, 0.5590140833869816, 1.0005174705960602, 1.422094676517249, 2.0010349411921204, 2.688896059238451, 3.0015524117881807, 2.6888960592384517, 2.0010349411921204, 1.4220946765172493, 1.0005174705960602, 0.5590140833869816, 2.0403419669567534e-17, -0.5252196453907141], \"output_dtype\": \"float64\"}}, \"float_reference_nonzero\": true, \"integer_max_abs_error_vs_float64\": {\"int16\": 0.0, \"int32\": 0.0}, \"integer_outputs_all_zero\": false, \"integer_outputs_match_reference\": true, \"matches_fixed_expectation\": true, \"matches_reported_bug\": false}, \"parameters\": {\"down\": 1, \"input\": [0, 1, 2, 3, 2, 1, 0], \"padtype\": \"smooth\", \"up\": 2}, \"python\": \"3.13.5\", \"reported_buggy_release\": \"1.14.1\", \"role_confirmed\": true, \"schema\": \"P4-SciPy-Resample-Poly-Historical-Pair-Runner-v1\", \"scipy\": \"1.16.3\", \"upstream_issue\": \"https://github.com/scipy/scipy/issues/15620\"}, \"status\": \"OBSERVED\", \"stderr\": \"\", \"stderr_sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\", \"stdout\": \"{\\r\\n  \\\"schema\\\": \\\"P4-SciPy-Resample-Poly-Historical-Pair-Runner-v1\\\",\\r\\n  \\\"case_id\\\": \\\"scipy_15620\\\",\\r\\n  \\\"expected_role\\\": \\\"fixed\\\",\\r\\n  \\\"role_confirmed\\\": true,\\r\\n  \\\"python\\\": \\\"3.13.5\\\",\\r\\n  \\\"numpy\\\": \\\"2.3.5\\\",\\r\\n  \\\"scipy\\\": \\\"1.16.3\\\",\\r\\n  \\\"upstream_issue\\\": \\\"https://github.com/scipy/scipy/issues/15620\\\",\\r\\n  \\\"reported_buggy_release\\\": \\\"1.14.1\\\",\\r\\n  \\\"first_fixed_release\\\": \\\"1.15.0\\\",\\r\\n  \\\"parameters\\\": {\\r\\n    \\\"input\\\": [\\r\\n      0,\\r\\n      1,\\r\\n      2,\\r\\n      3,\\r\\n      2,\\r\\n      1,\\r\\n      0\\r\\n    ],\\r\\n    \\\"up\\\": 2,\\r\\n    \\\"down\\\": 1,\\r\\n    \\\"padtype\\\": \\\"smooth\\\"\\r\\n  },\\r\\n  \\\"observation\\\": {\\r\\n    \\\"by_dtype\\\": {\\r\\n      \\\"int16\\\": {\\r\\n        \\\"dtype\\\": \\\"int16\\\",\\r\\n        \\\"output_dtype\\\": \\\"float64\\\",\\r\\n        \\\"output\\\": [\\r\\n          2.0403419669567537e-17,\\r\\n          0.5590140833869816,\\r\\n          1.0005174705960602,\\r\\n          1.422094676517249,\\r\\n          2.0010349411921204,\\r\\n          2.688896059238451,\\r\\n          3.0015524117881807,\\r\\n          2.6888960592384517,\\r\\n          2.0010349411921204,\\r\\n          1.4220946765172493,\\r\\n          1.0005174705960602,\\r\\n          0.5590140833869816,\\r\\n          2.0403419669567534e-17,\\r\\n          -0.5252196453907141\\r\\n        ],\\r\\n        \\\"nonzero_count\\\": 14,\\r\\n        \\\"max_abs\\\": 3.0015524117881807\\r\\n      },\\r\\n      \\\"int32\\\": {\\r\\n        \\\"dtype\\\": \\\"int32\\\",\\r\\n        \\\"output_dtype\\\": \\\"float64\\\",\\r\\n        \\\"output\\\": [\\r\\n          2.0403419669567537e-17,\\r\\n          0.5590140833869816,\\r\\n          1.0005174705960602,\\r\\n          1.422094676517249,\\r\\n          2.0010349411921204,\\r\\n          2.688896059238451,\\r\\n          3.0015524117881807,\\r\\n          2.6888960592384517,\\r\\n          2.0010349411921204,\\r\\n          1.4220946765172493,\\r\\n          1.0005174705960602,\\r\\n          0.5590140833869816,\\r\\n          2.0403419669567534e-17,\\r\\n          -0.5252196453907141\\r\\n        ],\\r\\n        \\\"nonzero_count\\\": 14,\\r\\n        \\\"max_abs\\\": 3.0015524117881807\\r\\n      },\\r\\n      \\\"float32\\\": {\\r\\n        \\\"dtype\\\": \\\"float32\\\",\\r\\n        \\\"output_dtype\\\": \\\"float32\\\",\\r\\n        \\\"output\\\": [\\r\\n          2.0403420623328967e-17,\\r\\n          0.5590140223503113,\\r\\n          1.00051748752594,\\r\\n          1.422094702720642,\\r\\n          2.00103497505188,\\r\\n          2.6888959407806396,\\r\\n          3.0015525817871094,\\r\\n          2.6888959407806396,\\r\\n          2.00103497505188,\\r\\n          1.4220945835113525,\\r\\n          1.00051748752594,\\r\\n          0.559014081954956,\\r\\n          2.0403423932051418e-17,\\r\\n          -0.525219738483429\\r\\n        ],\\r\\n        \\\"nonzero_count\\\": 14,\\r\\n        \\\"max_abs\\\": 3.0015525817871094\\r\\n      },\\r\\n      \\\"float64\\\": {\\r\\n        \\\"dtype\\\": \\\"float64\\\",\\r\\n        \\\"output_dtype\\\": \\\"float64\\\",\\r\\n        \\\"output\\\": [\\r\\n          2.0403419669567537e-17,\\r\\n          0.5590140833869816,\\r\\n          1.0005174705960602,\\r\\n          1.422094676517249,\\r\\n          2.0010349411921204,\\r\\n          2.688896059238451,\\r\\n          3.0015524117881807,\\r\\n          2.6888960592384517,\\r\\n          2.0010349411921204,\\r\\n          1.4220946765172493,\\r\\n          1.0005174705960602,\\r\\n          0.5590140833869816,\\r\\n          2.0403419669567534e-17,\\r\\n          -0.5252196453907141\\r\\n        ],\\r\\n        \\\"nonzero_count\\\": 14,\\r\\n        \\\"max_abs\\\": 3.0015524117881807\\r\\n      }\\r\\n    },\\r\\n    \\\"integer_max_abs_error_vs_float64\\\": {\\r\\n      \\\"int16\\\": 0.0,\\r\\n      \\\"int32\\\": 0.0\\r\\n    },\\r\\n    \\\"float_reference_nonzero\\\": true,\\r\\n    \\\"integer_outputs_all_zero\\\": false,\\r\\n    \\\"integer_outputs_match_reference\\\": true,\\r\\n    \\\"matches_reported_bug\\\": false,\\r\\n    \\\"matches_fixed_expectation\\\": true\\r\\n  }\\r\\n}\\r\\n\", \"stdout_sha256\": \"d18dfeac9d1735eecb8d89697afc70ae9346a7a9f7811cf1b7dfac5d6d74e34f\"}, \"fixed_version\": \"1.16.3\", \"fixture_sha256\": \"7a992e5dababaf51355bb981f7c6ef6d998ebcddd95f2acd963ceb99420eb33b\", \"legacy_python_sha256\": \"3cce33d75d6fdae4e004d0bdf149320b3147482a9caf370079dcb9c191a1b260\", \"reason\": \"LIVE_UNCHANGED_RUNNER_PAIR\", \"recorded_reference_is_independent_oracle\": false, \"runner_sha256\": \"0a7a72bb1fb803e4c60a4531d4376e1b04659d3fb0eae3c5fea16f9ad01cdf79\", \"same_runner_for_both_roles\": true}, \"outcome\": \"PASS\", \"schema\": \"P4-Relation-Observation-v1\", \"subject_invocations\": 8, \"test_id\": \"replay.version_pair\"}\r\n",
+      "stdout_sha256": "f7753ca93819241cc7e7062c6766df85c1a5bc8f645236c8cda2244324afe190",
+      "subject_invocations": 8,
+      "test_id": "replay.version_pair"
+    },
+    {
+      "command_argv": [
+        "D:\\python\\python.exe",
+        "D:\\program projects\\st_mlee\\P4/examples/scipy_15620_relation_worker.py",
+        "--test-id",
+        "reference.float64_reference",
+        "--contract",
+        "D:\\program projects\\st_mlee\\P4/contracts/cases/scipy_15620.json",
+        "--fixture",
+        "D:\\program projects\\st_mlee\\P4/contracts/cases/scipy_15620_reference_fixture.json"
+      ],
+      "command_file_sha256": {
+        "D:\\program projects\\st_mlee\\P4\\contracts\\cases\\scipy_15620.json": "a224498d0568f668eeb41675eda216681d7ecd73f0b8e7b1fbe250f63c38b0ee",
+        "D:\\program projects\\st_mlee\\P4\\contracts\\cases\\scipy_15620_reference_fixture.json": "7a992e5dababaf51355bb981f7c6ef6d998ebcddd95f2acd963ceb99420eb33b",
+        "D:\\program projects\\st_mlee\\P4\\examples\\scipy_15620_relation_worker.py": "0b73feb329709325711d4f4e8f119c74d0562347fd89459f74c53a0794ecce81",
+        "D:\\python\\python.exe": "5341746f92483a93e44c313de830f2fba2956f0759094404a16b2fed06c9a2ed"
+      },
+      "command_sha256": "c278d99df882e631fb1fda4059e2c6c6497393218a34b499d845911c804be34c",
+      "details": {
+        "atol": 1e-12,
+        "contract_sha256": "a224498d0568f668eeb41675eda216681d7ecd73f0b8e7b1fbe250f63c38b0ee",
+        "fixture_sha256": "7a992e5dababaf51355bb981f7c6ef6d998ebcddd95f2acd963ceb99420eb33b",
+        "historical_pair_executed": false,
+        "observed": {
+          "float64": [
+            2.0403419669567537e-17,
+            0.5590140833869816,
+            1.0005174705960602,
+            1.422094676517249,
+            2.0010349411921204,
+            2.688896059238451,
+            3.0015524117881807,
+            2.6888960592384517,
+            2.0010349411921204,
+            1.4220946765172493,
+            1.0005174705960602,
+            0.5590140833869816,
+            2.0403419669567534e-17,
+            -0.5252196453907141
+          ]
+        },
+        "python_executable": "D:\\python\\python.exe",
+        "recorded_reference": [
+          2.0403419669567586e-17,
+          0.5590140833869813,
+          1.0005174705960602,
+          1.422094676517249,
+          2.0010349411921204,
+          2.688896059238451,
+          3.0015524117881807,
+          2.6888960592384517,
+          2.0010349411921204,
+          1.4220946765172493,
+          1.0005174705960602,
+          0.5590140833869816,
+          2.040341966956759e-17,
+          -0.5252196453907141
+        ],
+        "recorded_reference_is_independent_oracle": false,
+        "rtol": 1e-12,
+        "scipy_file": "D:\\Anaconda\\Lib\\site-packages\\scipy\\__init__.py",
+        "scipy_version": "1.16.3"
+      },
+      "elapsed_seconds": 0.8889795999857597,
+      "exit_code": 0,
+      "outcome": "PASS",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"details\": {\"atol\": 1e-12, \"contract_sha256\": \"a224498d0568f668eeb41675eda216681d7ecd73f0b8e7b1fbe250f63c38b0ee\", \"fixture_sha256\": \"7a992e5dababaf51355bb981f7c6ef6d998ebcddd95f2acd963ceb99420eb33b\", \"historical_pair_executed\": false, \"observed\": {\"float64\": [2.0403419669567537e-17, 0.5590140833869816, 1.0005174705960602, 1.422094676517249, 2.0010349411921204, 2.688896059238451, 3.0015524117881807, 2.6888960592384517, 2.0010349411921204, 1.4220946765172493, 1.0005174705960602, 0.5590140833869816, 2.0403419669567534e-17, -0.5252196453907141]}, \"python_executable\": \"D:\\\\python\\\\python.exe\", \"recorded_reference\": [2.0403419669567586e-17, 0.5590140833869813, 1.0005174705960602, 1.422094676517249, 2.0010349411921204, 2.688896059238451, 3.0015524117881807, 2.6888960592384517, 2.0010349411921204, 1.4220946765172493, 1.0005174705960602, 0.5590140833869816, 2.040341966956759e-17, -0.5252196453907141], \"recorded_reference_is_independent_oracle\": false, \"rtol\": 1e-12, \"scipy_file\": \"D:\\\\Anaconda\\\\Lib\\\\site-packages\\\\scipy\\\\__init__.py\", \"scipy_version\": \"1.16.3\"}, \"outcome\": \"PASS\", \"schema\": \"P4-Relation-Observation-v1\", \"subject_invocations\": 1, \"test_id\": \"reference.float64_reference\"}\r\n",
+      "stdout_sha256": "9243f291b15f125ece4788f6b53e98a1139d161a36ca1ed1048a00c413e62f5b",
+      "subject_invocations": 1,
+      "test_id": "reference.float64_reference"
+    },
+    {
+      "command_argv": [
+        "D:\\python\\python.exe",
+        "D:\\program projects\\st_mlee\\P4/examples/scipy_15620_relation_worker.py",
+        "--test-id",
+        "property.dtype_consistency",
+        "--contract",
+        "D:\\program projects\\st_mlee\\P4/contracts/cases/scipy_15620.json",
+        "--fixture",
+        "D:\\program projects\\st_mlee\\P4/contracts/cases/scipy_15620_reference_fixture.json"
+      ],
+      "command_file_sha256": {
+        "D:\\program projects\\st_mlee\\P4\\contracts\\cases\\scipy_15620.json": "a224498d0568f668eeb41675eda216681d7ecd73f0b8e7b1fbe250f63c38b0ee",
+        "D:\\program projects\\st_mlee\\P4\\contracts\\cases\\scipy_15620_reference_fixture.json": "7a992e5dababaf51355bb981f7c6ef6d998ebcddd95f2acd963ceb99420eb33b",
+        "D:\\program projects\\st_mlee\\P4\\examples\\scipy_15620_relation_worker.py": "0b73feb329709325711d4f4e8f119c74d0562347fd89459f74c53a0794ecce81",
+        "D:\\python\\python.exe": "5341746f92483a93e44c313de830f2fba2956f0759094404a16b2fed06c9a2ed"
+      },
+      "command_sha256": "885b4af85b19f0eba05107cafa3f7d64d19efdd73ddb680653feb8a5d2fda2d2",
+      "details": {
+        "atol": 1e-08,
+        "contract_sha256": "a224498d0568f668eeb41675eda216681d7ecd73f0b8e7b1fbe250f63c38b0ee",
+        "fixture_sha256": "7a992e5dababaf51355bb981f7c6ef6d998ebcddd95f2acd963ceb99420eb33b",
+        "historical_pair_executed": false,
+        "observed": {
+          "float64": [
+            2.0403419669567537e-17,
+            0.5590140833869816,
+            1.0005174705960602,
+            1.422094676517249,
+            2.0010349411921204,
+            2.688896059238451,
+            3.0015524117881807,
+            2.6888960592384517,
+            2.0010349411921204,
+            1.4220946765172493,
+            1.0005174705960602,
+            0.5590140833869816,
+            2.0403419669567534e-17,
+            -0.5252196453907141
+          ],
+          "int16": [
+            2.0403419669567537e-17,
+            0.5590140833869816,
+            1.0005174705960602,
+            1.422094676517249,
+            2.0010349411921204,
+            2.688896059238451,
+            3.0015524117881807,
+            2.6888960592384517,
+            2.0010349411921204,
+            1.4220946765172493,
+            1.0005174705960602,
+            0.5590140833869816,
+            2.0403419669567534e-17,
+            -0.5252196453907141
+          ],
+          "int32": [
+            2.0403419669567537e-17,
+            0.5590140833869816,
+            1.0005174705960602,
+            1.422094676517249,
+            2.0010349411921204,
+            2.688896059238451,
+            3.0015524117881807,
+            2.6888960592384517,
+            2.0010349411921204,
+            1.4220946765172493,
+            1.0005174705960602,
+            0.5590140833869816,
+            2.0403419669567534e-17,
+            -0.5252196453907141
+          ]
+        },
+        "python_executable": "D:\\python\\python.exe",
+        "recorded_reference": [
+          2.0403419669567586e-17,
+          0.5590140833869813,
+          1.0005174705960602,
+          1.422094676517249,
+          2.0010349411921204,
+          2.688896059238451,
+          3.0015524117881807,
+          2.6888960592384517,
+          2.0010349411921204,
+          1.4220946765172493,
+          1.0005174705960602,
+          0.5590140833869816,
+          2.040341966956759e-17,
+          -0.5252196453907141
+        ],
+        "recorded_reference_is_independent_oracle": false,
+        "rtol": 1e-06,
+        "scipy_file": "D:\\Anaconda\\Lib\\site-packages\\scipy\\__init__.py",
+        "scipy_version": "1.16.3"
+      },
+      "elapsed_seconds": 0.9040999000135344,
+      "exit_code": 0,
+      "outcome": "PASS",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"details\": {\"atol\": 1e-08, \"contract_sha256\": \"a224498d0568f668eeb41675eda216681d7ecd73f0b8e7b1fbe250f63c38b0ee\", \"fixture_sha256\": \"7a992e5dababaf51355bb981f7c6ef6d998ebcddd95f2acd963ceb99420eb33b\", \"historical_pair_executed\": false, \"observed\": {\"float64\": [2.0403419669567537e-17, 0.5590140833869816, 1.0005174705960602, 1.422094676517249, 2.0010349411921204, 2.688896059238451, 3.0015524117881807, 2.6888960592384517, 2.0010349411921204, 1.4220946765172493, 1.0005174705960602, 0.5590140833869816, 2.0403419669567534e-17, -0.5252196453907141], \"int16\": [2.0403419669567537e-17, 0.5590140833869816, 1.0005174705960602, 1.422094676517249, 2.0010349411921204, 2.688896059238451, 3.0015524117881807, 2.6888960592384517, 2.0010349411921204, 1.4220946765172493, 1.0005174705960602, 0.5590140833869816, 2.0403419669567534e-17, -0.5252196453907141], \"int32\": [2.0403419669567537e-17, 0.5590140833869816, 1.0005174705960602, 1.422094676517249, 2.0010349411921204, 2.688896059238451, 3.0015524117881807, 2.6888960592384517, 2.0010349411921204, 1.4220946765172493, 1.0005174705960602, 0.5590140833869816, 2.0403419669567534e-17, -0.5252196453907141]}, \"python_executable\": \"D:\\\\python\\\\python.exe\", \"recorded_reference\": [2.0403419669567586e-17, 0.5590140833869813, 1.0005174705960602, 1.422094676517249, 2.0010349411921204, 2.688896059238451, 3.0015524117881807, 2.6888960592384517, 2.0010349411921204, 1.4220946765172493, 1.0005174705960602, 0.5590140833869816, 2.040341966956759e-17, -0.5252196453907141], \"recorded_reference_is_independent_oracle\": false, \"rtol\": 1e-06, \"scipy_file\": \"D:\\\\Anaconda\\\\Lib\\\\site-packages\\\\scipy\\\\__init__.py\", \"scipy_version\": \"1.16.3\"}, \"outcome\": \"PASS\", \"schema\": \"P4-Relation-Observation-v1\", \"subject_invocations\": 3, \"test_id\": \"property.dtype_consistency\"}\r\n",
+      "stdout_sha256": "7fe5f906d66fc9a99a28cae27ac889df9832455e439e20e7843e366ebb46bede",
+      "subject_invocations": 3,
+      "test_id": "property.dtype_consistency"
+    }
+  ],
+  "plan_digest": "093e9ffdf11639c271e171498f3aaca7eca6301767870a11907d8e4a5fb496c0",
+  "plan_status": "READY",
+  "reason_code": null,
+  "registry_file_sha256": "10883d9c59c3b10aeefd31196ab4fe434d5dc74cbc7f07330aba91800e1854a2",
+  "reported_subject_invocations": 12,
+  "schema": "P4-Plan-Execution-v1",
+  "selected_relation_count": 3,
+  "selected_relations_executed": true,
+  "status": "CONFORMANT"
+}

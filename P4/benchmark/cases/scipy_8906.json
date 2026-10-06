@@ -1,0 +1,11 @@
+{
+  "schema": "P4-Captured-Case-v1",
+  "case_id": "scipy_8906",
+  "project": "SciPy",
+  "defect_family": "solve-banded-singleton-indexing",
+  "upstream_url": "https://github.com/scipy/scipy/issues/8906",
+  "runner_path": "experiments/scipy_historical_pair_runner.py",
+  "capture_path": "results/p4_scipy_complete_pair.json",
+  "runner_sha256": "ce901b112325640d58db45dd31b1244f32e5752de85e1bbf5e3d69454c9e1bc8",
+  "detected_by": ["example", "property", "metamorphic", "differential", "compiled_layered"]
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "P4-Complete-Historical-Pair-v1",
+  "case_id": "jax_32411",
+  "upstream_issue": "https://github.com/jax-ml/jax/issues/32411",
+  "runner_sha256": "1ad8975d3781bcff20b3c6048e9d2e6d13a31a60a6d7bc224dc91c2bed26c856",
+  "runner_unchanged_between_sides": true,
+  "buggy_environment": {
+    "python": "3.12.14",
+    "jax": "0.7.2",
+    "jax_wheel_sha256": "e7e32f9be51ae5cc6854225958c57de8cca2187d279844338465b15e8a1fe7f2",
+    "jaxlib": "0.7.2",
+    "jaxlib_wheel_sha256": "b53cf3a7ed342ca1a9f419cc7a3c387598fc743043ba4a7c5895ebc4d62fa05a"
+  },
+  "fixed_environment": {
+    "python": "3.12.14",
+    "jax": "0.8.0",
+    "jax_wheel_sha256": "d190158bc019756c6a0f6b3d5fc8783471fb407e6deaff559eaac60dd5ee850a",
+    "jaxlib": "0.8.0",
+    "jaxlib_wheel_sha256": "659d894d93876e3675c2132d13c3d241f204b21172a58f928b96f654f603f6dc"
+  },
+  "buggy_side": {"clean_runs": 2, "result": {"role_confirmed": true, "outcome": "fail", "version": "0.7.2", "max_absolute_gradient_error": 0.03254644572734833, "max_absolute_value_error": 0.0}},
+  "fixed_side": {"clean_runs": 2, "result": {"role_confirmed": true, "outcome": "pass", "version": "0.8.0", "max_absolute_gradient_error": 0.0, "max_absolute_value_error": 0.0}},
+  "complete_pair": true,
+  "complete_pair_count": 1,
+  "claim_boundary": "One CPU defect family reproduced twice per side with one unchanged role-independent runner."
+}

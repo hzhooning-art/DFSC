@@ -1,0 +1,18 @@
+{
+  "schema": "P4-Component-Contract-v1",
+  "contract_id": "stdlib-expm1-execution-demo-v1",
+  "component": {"project": "python-stdlib", "interface": "math.expm1", "implementation": "current local interpreter"},
+  "domain": {"inputs": [0.125, 0.5], "dtype": "binary64"},
+  "execution": {"deterministic": true, "device": "cpu"},
+  "references": {"independent_path": "50-digit decimal exponential", "analytic_derivative": true},
+  "relations": {
+    "decimal_value": {
+      "layer": "reference", "generator": "constant_demo_points", "comparator": "decimal_exponential_difference",
+      "mechanisms": ["value_error"], "parameters": {"absolute_tolerance": 1e-12}, "max_invocations": 2
+    },
+    "central_derivative": {
+      "layer": "property", "generator": "centered_difference", "comparator": "analytic_exponential_derivative",
+      "mechanisms": ["derivative_error"], "parameters": {"step": 1e-5, "absolute_tolerance": 1e-7}, "max_invocations": 4
+    }
+  }
+}

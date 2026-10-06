@@ -1,0 +1,27 @@
+{
+  "schema": "P4-Execution-Registry-v1",
+  "commands": {
+    "reference.float64_reference": [
+      "{python}", "{p4_root}/examples/scipy_15620_relation_worker.py",
+      "--test-id", "{test_id}",
+      "--contract", "{p4_root}/contracts/cases/scipy_15620.json",
+      "--fixture", "{p4_root}/contracts/cases/scipy_15620_reference_fixture.json"
+    ],
+    "property.dtype_consistency": [
+      "{python}", "{p4_root}/examples/scipy_15620_relation_worker.py",
+      "--test-id", "{test_id}",
+      "--contract", "{p4_root}/contracts/cases/scipy_15620.json",
+      "--fixture", "{p4_root}/contracts/cases/scipy_15620_reference_fixture.json"
+    ],
+    "replay.version_pair": [
+      "{python}", "{p4_root}/examples/scipy_15620_relation_worker.py",
+      "--test-id", "{test_id}",
+      "--contract", "{p4_root}/contracts/cases/scipy_15620.json",
+      "--fixture", "{p4_root}/contracts/cases/scipy_15620_reference_fixture.json",
+      "--case", "{p4_root}/benchmark/cases/scipy_15620.json",
+      "--runner", "{p4_root}/experiments/scipy_resample_poly_historical_pair_runner.py",
+      "--legacy-python", "{p4_root}/.runtime/p4_scipy114_replay/python310/python.exe",
+      "--current-python", "{python}"
+    ]
+  }
+}

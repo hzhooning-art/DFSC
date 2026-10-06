@@ -1,0 +1,75 @@
+{
+  "p4_import": "D:\\program projects\\st_mlee\\P4\\tmp\\scp-transfer-20261006\\Lib\\site-packages\\p4_testing\\__init__.py",
+  "protocol_sha256": "24d8c11dab08bb9526b2cb756209420de1705111b592555d11b189d619fe5956",
+  "python": "3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)]",
+  "rows": [
+    {
+      "exit_only": "CONFORMANT",
+      "expected": "CONFORMANT",
+      "p4": "CONFORMANT",
+      "scenario": "normal",
+      "strict_scripted": "CONFORMANT"
+    },
+    {
+      "exit_only": "CONFORMANT",
+      "expected": "NONCONFORMANT",
+      "p4": "NONCONFORMANT",
+      "scenario": "numerical_bias",
+      "strict_scripted": "NONCONFORMANT"
+    },
+    {
+      "exit_only": "CONFORMANT",
+      "expected": "ABSTAIN",
+      "p4": "ABSTAIN",
+      "scenario": "missing_worker",
+      "strict_scripted": "ABSTAIN"
+    },
+    {
+      "exit_only": "CONFORMANT",
+      "expected": "ABSTAIN",
+      "p4": "ABSTAIN",
+      "scenario": "invalid_json",
+      "strict_scripted": "ABSTAIN"
+    },
+    {
+      "exit_only": "CONFORMANT",
+      "expected": "ABSTAIN",
+      "p4": "ABSTAIN",
+      "scenario": "wrong_id",
+      "strict_scripted": "ABSTAIN"
+    },
+    {
+      "exit_only": "CONFORMANT",
+      "expected": "ABSTAIN",
+      "p4": "ABSTAIN",
+      "scenario": "zero_calls",
+      "strict_scripted": "ABSTAIN"
+    },
+    {
+      "exit_only": "CONFORMANT",
+      "expected": "ABSTAIN",
+      "p4": "ABSTAIN",
+      "scenario": "non_evaluable",
+      "strict_scripted": "ABSTAIN"
+    },
+    {
+      "exit_only": "CONFORMANT",
+      "expected": "REFUSED",
+      "p4": "REFUSED",
+      "scenario": "modified_plan",
+      "strict_scripted": "REFUSED"
+    },
+    {
+      "exit_only": "CONFORMANT",
+      "expected": "REFUSED",
+      "p4": "REFUSED",
+      "scenario": "changed_contract",
+      "strict_scripted": "REFUSED"
+    }
+  ],
+  "same_plan_and_workers_within_scenario": true,
+  "schema": "P4-Workflow-Comparison-v1",
+  "scope": "nine disclosed local controls; not framework superiority or detection rates",
+  "strict_agrees_with_p4": true,
+  "worker_file_sha256": "7d05723ad28326b15fd8fef8690d6d41bf1798330432974962c93ed7adf80777"
+}

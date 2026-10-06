@@ -1,0 +1,15 @@
+{
+  "schema": "P4-Component-Contract-v1",
+  "contract_id": "scipy-resample-poly-dtype-v1",
+  "component": {"project": "scipy/scipy", "interface": "scipy.signal.resample_poly", "implementation": "released wheel"},
+  "domain": {"inputs": "finite one-dimensional numeric arrays", "parameters": {"up": [2], "down": [1], "padtype": ["smooth"]}},
+  "execution": {"deterministic": true, "dtypes": ["int16", "int32", "float32", "float64"], "devices": ["cpu"]},
+  "references": {"reference_dtype": "float64", "rtol": 1e-6, "atol": 1e-8},
+  "relations": {
+    "float64_reference": {"layer": "reference", "generator": "finite_signal_float64", "comparator": "allclose_to_recorded_reference", "parameters": {"rtol": 1e-12, "atol": 1e-12}, "max_invocations": 2, "mechanisms": ["value_error"]},
+    "dtype_consistency": {"layer": "property", "generator": "lossless_integer_casts", "comparator": "allclose_to_float64_reference", "parameters": {"rtol": 1e-6, "atol": 1e-8}, "max_invocations": 8, "mechanisms": ["dtype_device_mismatch"]},
+    "version_pair": {"layer": "replay", "generator": "unchanged_runner_pair", "comparator": "paired_role_semantics", "parameters": {}, "max_invocations": 2, "mechanisms": ["historical_regression", "replay"]}
+  },
+  "rejection": {"nonfinite_input": "invalid_case"},
+  "provenance": {"upstream_issue": "https://github.com/scipy/scipy/issues/15620"}
+}

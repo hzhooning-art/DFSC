@@ -1,0 +1,111 @@
+{
+  "contract_file_sha256": "5e5db01c3b3d56cf824751de8c7feba464a2f3dd1d94ea575bd27004ee00a55d",
+  "contract_id": "stdlib-expm1-execution-demo-v1",
+  "coverage_certificate": {
+    "budget": 2,
+    "coverage_ratio": 1.0,
+    "covered": [
+      "derivative_error",
+      "value_error"
+    ],
+    "missing": [],
+    "requested": [
+      "derivative_error",
+      "value_error"
+    ],
+    "used": 2
+  },
+  "elapsed_seconds": 0.12067360000219196,
+  "evidence_scope": "selected_relations_only; worker_oracles_and_invocation_counts_are_not_independently_verified",
+  "observations": [
+    {
+      "command_argv": [
+        "D:\\program projects\\st_mlee\\P4\\tmp\\scp-transfer-20261006\\Scripts\\python.exe",
+        "D:\\program projects\\st_mlee\\P4/examples/expm1_relation_worker.py",
+        "--test-id",
+        "reference.decimal_value"
+      ],
+      "command_file_sha256": {
+        "D:\\program projects\\st_mlee\\P4\\examples\\expm1_relation_worker.py": "7d05723ad28326b15fd8fef8690d6d41bf1798330432974962c93ed7adf80777",
+        "D:\\program projects\\st_mlee\\P4\\tmp\\scp-transfer-20261006\\Scripts\\python.exe": "935016795f3e6908e75acbc2040a01e2e4cdb494a57c42f63a0d6eedb2372256"
+      },
+      "command_sha256": "db021696212ce21fe57fac696900e82abff9955098c2b9d3d7cafa4c876ed52d",
+      "details": {
+        "max_absolute_error": 0.0,
+        "points": [
+          {
+            "absolute_error": 0.0,
+            "observed": 0.13314845306682632,
+            "reference": 0.13314845306682632,
+            "x": 0.125
+          },
+          {
+            "absolute_error": 0.0,
+            "observed": 0.6487212707001282,
+            "reference": 0.6487212707001282,
+            "x": 0.5
+          }
+        ],
+        "threshold": 1e-12
+      },
+      "elapsed_seconds": 0.05940019991248846,
+      "exit_code": 0,
+      "outcome": "PASS",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"schema\": \"P4-Relation-Observation-v1\", \"test_id\": \"reference.decimal_value\", \"outcome\": \"PASS\", \"subject_invocations\": 2, \"details\": {\"points\": [{\"x\": 0.125, \"observed\": 0.13314845306682632, \"reference\": 0.13314845306682632, \"absolute_error\": 0.0}, {\"x\": 0.5, \"observed\": 0.6487212707001282, \"reference\": 0.6487212707001282, \"absolute_error\": 0.0}], \"threshold\": 1e-12, \"max_absolute_error\": 0.0}}\r\n",
+      "stdout_sha256": "4ef7a9fdf399bafd757bc2e5144912ea3e9170a5fc46e263a9f26a3b2fdcce4b",
+      "subject_invocations": 2,
+      "test_id": "reference.decimal_value"
+    },
+    {
+      "command_argv": [
+        "D:\\program projects\\st_mlee\\P4\\tmp\\scp-transfer-20261006\\Scripts\\python.exe",
+        "D:\\program projects\\st_mlee\\P4/examples/expm1_relation_worker.py",
+        "--test-id",
+        "property.central_derivative"
+      ],
+      "command_file_sha256": {
+        "D:\\program projects\\st_mlee\\P4\\examples\\expm1_relation_worker.py": "7d05723ad28326b15fd8fef8690d6d41bf1798330432974962c93ed7adf80777",
+        "D:\\program projects\\st_mlee\\P4\\tmp\\scp-transfer-20261006\\Scripts\\python.exe": "935016795f3e6908e75acbc2040a01e2e4cdb494a57c42f63a0d6eedb2372256"
+      },
+      "command_sha256": "7aaa3a6fe7f64e1492aa9260a9d7c6d16be4db9eb7e7da2a5bb13d79ff649485",
+      "details": {
+        "max_absolute_error": 1.9492629732553723e-11,
+        "points": [
+          {
+            "absolute_error": 1.9492629732553723e-11,
+            "observed": 1.133148453086319,
+            "reference": 1.1331484530668263,
+            "x": 0.125
+          },
+          {
+            "absolute_error": 1.9338086687525902e-11,
+            "observed": 1.6487212707194663,
+            "reference": 1.6487212707001282,
+            "x": 0.5
+          }
+        ],
+        "threshold": 1e-07
+      },
+      "elapsed_seconds": 0.05893570010084659,
+      "exit_code": 0,
+      "outcome": "PASS",
+      "stderr": "",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout": "{\"schema\": \"P4-Relation-Observation-v1\", \"test_id\": \"property.central_derivative\", \"outcome\": \"PASS\", \"subject_invocations\": 4, \"details\": {\"points\": [{\"x\": 0.125, \"observed\": 1.133148453086319, \"reference\": 1.1331484530668263, \"absolute_error\": 1.9492629732553723e-11}, {\"x\": 0.5, \"observed\": 1.6487212707194663, \"reference\": 1.6487212707001282, \"absolute_error\": 1.9338086687525902e-11}], \"threshold\": 1e-07, \"max_absolute_error\": 1.9492629732553723e-11}}\r\n",
+      "stdout_sha256": "a42206bf3e49a1d2da5380f5d9d55ed0270a17f58e7601a3979f18cc7d8c6103",
+      "subject_invocations": 4,
+      "test_id": "property.central_derivative"
+    }
+  ],
+  "plan_digest": "daa888a091712e8df0d3fd9f641741fd5c8fec0dd8e864e77436126ed68647c4",
+  "plan_status": "READY",
+  "reason_code": null,
+  "registry_file_sha256": "4deea685f0153cb3829cce61cd790ac244f0123f78fc69daeb8e1aab02121bf8",
+  "reported_subject_invocations": 6,
+  "schema": "P4-Plan-Execution-v1",
+  "selected_relation_count": 2,
+  "selected_relations_executed": true,
+  "status": "CONFORMANT"
+}

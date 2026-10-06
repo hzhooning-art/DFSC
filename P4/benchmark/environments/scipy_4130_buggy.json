@@ -1,0 +1,19 @@
+{
+  "executable_name": "python.exe",
+  "implementation": "CPython",
+  "packages": [
+    [
+      "numpy",
+      "1.22.4"
+    ],
+    [
+      "scipy",
+      "1.8.1"
+    ]
+  ],
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.10.11",
+  "runner_name": "scipy_4130.py",
+  "runner_sha256": "4a485176f46421f45f9de82ddf1821c2cff15fe40b60cb672bf35a8ccb09ea8f",
+  "schema": "P4-Environment-Capture-v1"
+}

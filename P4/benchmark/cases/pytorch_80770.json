@@ -1,0 +1,11 @@
+{
+  "schema": "P4-Captured-Case-v1",
+  "case_id": "pytorch_80770",
+  "project": "PyTorch",
+  "defect_family": "xlogy-zero-gradient",
+  "upstream_url": "https://github.com/pytorch/pytorch/issues/80770",
+  "runner_path": "experiments/pytorch_historical_pair_runner.py",
+  "capture_path": "results/p4_complete_historical_pair.json",
+  "runner_sha256": "fdb828ccad16c301981a9334352ae47a337b3a00ca8913e40f4b028334ee4014",
+  "detected_by": ["tolerance", "differential", "compiled_layered"]
+}

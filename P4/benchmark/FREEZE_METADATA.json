@@ -1,0 +1,13 @@
+{
+  "schema": "P4-Benchmark-Freeze-v1",
+  "frozen_at": "2026-09-16T17:08:16+08:00",
+  "manifest_path": "benchmark/frozen.json",
+  "manifest_sha256": "61e74e799811747553ef7b2c3ca4cecb03fd9ceb30befae79adb0d9a26d058c1",
+  "admitted_manifest_digest": "36463f2826a7ec597a209c5c07eebe22874927c008f4b0aee2a3682ca72e0058",
+  "screened_candidates": 30,
+  "admitted_complete": 7,
+  "excluded": 23,
+  "gate_resolved": true,
+  "gate_passes": false,
+  "route": "bounded_tool_experience_paper"
+}

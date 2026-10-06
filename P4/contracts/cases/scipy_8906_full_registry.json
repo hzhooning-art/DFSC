@@ -1,0 +1,24 @@
+{
+  "schema": "P4-Execution-Registry-v1",
+  "commands": {
+    "reference.reference_solution": [
+      "{python}", "{p4_root}/examples/scipy_8906_relation_worker.py",
+      "--test-id", "{test_id}",
+      "--contract", "{p4_root}/contracts/cases/scipy_8906.json"
+    ],
+    "property.representation_equivalence": [
+      "{python}", "{p4_root}/examples/scipy_8906_relation_worker.py",
+      "--test-id", "{test_id}",
+      "--contract", "{p4_root}/contracts/cases/scipy_8906.json"
+    ],
+    "replay.version_pair": [
+      "{python}", "{p4_root}/examples/scipy_8906_relation_worker.py",
+      "--test-id", "{test_id}",
+      "--contract", "{p4_root}/contracts/cases/scipy_8906.json",
+      "--case", "{p4_root}/benchmark/cases/scipy_8906.json",
+      "--runner", "{p4_root}/experiments/scipy_historical_pair_runner.py",
+      "--legacy-python", "{p4_root}/.runtime/p4_scipy114_replay/python310/python.exe",
+      "--current-python", "{python}"
+    ]
+  }
+}

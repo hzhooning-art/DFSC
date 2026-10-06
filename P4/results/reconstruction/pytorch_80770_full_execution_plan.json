@@ -1,0 +1,89 @@
+{
+  "contract_id": "pytorch-xlogy-derivative-v1",
+  "coverage_certificate": {
+    "budget": 3,
+    "coverage_ratio": 1.0,
+    "covered": [
+      "derivative_error",
+      "historical_regression",
+      "repeatability",
+      "replay"
+    ],
+    "missing": [],
+    "requested": [
+      "derivative_error",
+      "historical_regression",
+      "repeatability",
+      "replay"
+    ],
+    "used": 3
+  },
+  "digest": "2ba8ddd144597349c69f524a85624c21d43631c373b9bad61290b5017e7d39b8",
+  "layers": [
+    "reference",
+    "execution",
+    "replay"
+  ],
+  "max_invocations": 3,
+  "reason_code": null,
+  "risk_mechanisms": [
+    "derivative_error",
+    "historical_regression",
+    "repeatability",
+    "replay"
+  ],
+  "schema": "P4-Test-Plan-v1",
+  "seed": 80770,
+  "status": "READY",
+  "tests": [
+    {
+      "estimated_cost": 1.0,
+      "layer": "replay",
+      "marginal_mechanisms": [
+        "historical_regression",
+        "replay"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "comparator": "paired_role_semantics",
+        "generator": "unchanged_runner_pair",
+        "seed": 10373885138242723291
+      },
+      "relation": "unchanged_runner_pair -> paired_role_semantics",
+      "test_id": "replay.version_pair"
+    },
+    {
+      "estimated_cost": 1.0,
+      "layer": "execution",
+      "marginal_mechanisms": [
+        "repeatability"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "comparator": "exact_repeat",
+        "generator": "repeat_identical_request",
+        "seed": 16867045078940201786
+      },
+      "relation": "repeat_identical_request -> exact_repeat",
+      "test_id": "execution.repeatability"
+    },
+    {
+      "estimated_cost": 1.0,
+      "layer": "reference",
+      "marginal_mechanisms": [
+        "derivative_error"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "atol": 1e-12,
+        "comparator": "autograd_matches_log_y",
+        "generator": "positive_y_at_zero_x",
+        "rtol": 1e-12,
+        "seed": 1018968348939023257
+      },
+      "relation": "positive_y_at_zero_x -> autograd_matches_log_y",
+      "test_id": "reference.analytic_derivative"
+    }
+  ],
+  "wall_seconds": 90.0
+}

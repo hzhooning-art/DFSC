@@ -1,0 +1,19 @@
+{
+  "executable_name": "python.exe",
+  "implementation": "CPython",
+  "packages": [
+    [
+      "torch",
+      "1.13.1+cpu"
+    ],
+    [
+      "typing_extensions",
+      "4.9.0"
+    ]
+  ],
+  "platform": "Windows-10-10.0.26200-SP0",
+  "python": "3.10.11",
+  "runner_name": "pytorch_99638.py",
+  "runner_sha256": "8b16d785ab74fbf67f679eace7c31d2eb02652a94c25f497f783f5c261ebdc03",
+  "schema": "P4-Environment-Capture-v1"
+}

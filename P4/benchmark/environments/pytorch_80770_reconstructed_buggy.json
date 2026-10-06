@@ -1,0 +1,10 @@
+{
+  "schema": "P4-Environment-Capture-v1",
+  "implementation": "CPython",
+  "python": "3.10.11",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": [["torch", "1.11.0+cpu"]],
+  "python_archive_sha256": "608619f8619075629c9c69f361352a0da6ed7e62f83a0e19c63e0ea32eb7629d",
+  "torch_wheel_sha256": "bd984fa8676b2f7c9611b40af3a7c168fb90be3e29028219f822696bb357f472",
+  "reconstruction": "Restored from the official wheel; role independently confirmed before baseline execution."
+}

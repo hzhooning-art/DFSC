@@ -1,0 +1,8 @@
+{
+  "schema": "P4-Execution-Registry-v1",
+  "commands": {
+    "reference.trajectory": ["{python}", "{p4_root}/examples/ode_decay_worker.py", "--contract", "{p4_root}/contracts/examples/ode_decay.json", "--test-id", "{test_id}"],
+    "property.amplitude_scaling": ["{python}", "{p4_root}/examples/ode_decay_worker.py", "--contract", "{p4_root}/contracts/examples/ode_decay.json", "--test-id", "{test_id}"],
+    "execution.half_life_event": ["{python}", "{p4_root}/examples/ode_decay_worker.py", "--contract", "{p4_root}/contracts/examples/ode_decay.json", "--test-id", "{test_id}"]
+  }
+}

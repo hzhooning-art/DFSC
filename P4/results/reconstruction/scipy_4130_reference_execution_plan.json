@@ -1,0 +1,46 @@
+{
+  "contract_id": "scipy-fisher-exact-two-sided-v1",
+  "coverage_certificate": {
+    "budget": 1,
+    "coverage_ratio": 1.0,
+    "covered": [
+      "value_error"
+    ],
+    "missing": [],
+    "requested": [
+      "value_error"
+    ],
+    "used": 1
+  },
+  "digest": "6ae0db8b7891be0808dbc34949e812c943fdea380a0ac4f1166a91b2dda53f89",
+  "layers": [
+    "reference"
+  ],
+  "max_invocations": 1,
+  "reason_code": null,
+  "risk_mechanisms": [
+    "value_error"
+  ],
+  "schema": "P4-Test-Plan-v1",
+  "seed": 4130,
+  "status": "READY",
+  "tests": [
+    {
+      "estimated_cost": 1.0,
+      "layer": "reference",
+      "marginal_mechanisms": [
+        "value_error"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "atol": 1e-12,
+        "comparator": "absolute_pvalue_error",
+        "generator": "contingency_margin_2x2_table",
+        "seed": 4089561817778905999
+      },
+      "relation": "contingency_margin_2x2_table -> absolute_pvalue_error",
+      "test_id": "reference.exact_enumeration"
+    }
+  ],
+  "wall_seconds": 10.0
+}

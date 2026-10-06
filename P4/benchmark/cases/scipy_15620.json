@@ -1,0 +1,11 @@
+{
+  "schema": "P4-Captured-Case-v1",
+  "case_id": "scipy_15620",
+  "project": "SciPy",
+  "defect_family": "resample-poly-padtype-line",
+  "upstream_url": "https://github.com/scipy/scipy/issues/15620",
+  "runner_path": "experiments/scipy_resample_poly_historical_pair_runner.py",
+  "capture_path": "results/p4_scipy_resample_poly_pair.json",
+  "runner_sha256": "0a7a72bb1fb803e4c60a4531d4376e1b04659d3fb0eae3c5fea16f9ad01cdf79",
+  "detected_by": ["property", "differential", "compiled_layered"]
+}

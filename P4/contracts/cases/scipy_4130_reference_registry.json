@@ -1,0 +1,10 @@
+{
+  "schema": "P4-Execution-Registry-v1",
+  "commands": {
+    "reference.exact_enumeration": [
+      "{python}", "{p4_root}/examples/scipy_4130_reference_worker.py",
+      "--test-id", "{test_id}",
+      "--contract", "{p4_root}/contracts/cases/scipy_4130.json"
+    ]
+  }
+}

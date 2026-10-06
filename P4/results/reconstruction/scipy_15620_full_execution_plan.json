@@ -1,0 +1,91 @@
+{
+  "contract_id": "scipy-resample-poly-dtype-v1",
+  "coverage_certificate": {
+    "budget": 3,
+    "coverage_ratio": 1.0,
+    "covered": [
+      "dtype_device_mismatch",
+      "historical_regression",
+      "replay",
+      "value_error"
+    ],
+    "missing": [],
+    "requested": [
+      "dtype_device_mismatch",
+      "historical_regression",
+      "replay",
+      "value_error"
+    ],
+    "used": 3
+  },
+  "digest": "093e9ffdf11639c271e171498f3aaca7eca6301767870a11907d8e4a5fb496c0",
+  "layers": [
+    "reference",
+    "property",
+    "replay"
+  ],
+  "max_invocations": 3,
+  "reason_code": null,
+  "risk_mechanisms": [
+    "dtype_device_mismatch",
+    "historical_regression",
+    "replay",
+    "value_error"
+  ],
+  "schema": "P4-Test-Plan-v1",
+  "seed": 15620,
+  "status": "READY",
+  "tests": [
+    {
+      "estimated_cost": 1.0,
+      "layer": "replay",
+      "marginal_mechanisms": [
+        "historical_regression",
+        "replay"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "comparator": "paired_role_semantics",
+        "generator": "unchanged_runner_pair",
+        "seed": 7546423955212948572
+      },
+      "relation": "unchanged_runner_pair -> paired_role_semantics",
+      "test_id": "replay.version_pair"
+    },
+    {
+      "estimated_cost": 1.0,
+      "layer": "reference",
+      "marginal_mechanisms": [
+        "value_error"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "atol": 1e-12,
+        "comparator": "allclose_to_recorded_reference",
+        "generator": "finite_signal_float64",
+        "rtol": 1e-12,
+        "seed": 9251581292113235300
+      },
+      "relation": "finite_signal_float64 -> allclose_to_recorded_reference",
+      "test_id": "reference.float64_reference"
+    },
+    {
+      "estimated_cost": 1.0,
+      "layer": "property",
+      "marginal_mechanisms": [
+        "dtype_device_mismatch"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "atol": 1e-08,
+        "comparator": "allclose_to_float64_reference",
+        "generator": "lossless_integer_casts",
+        "rtol": 1e-06,
+        "seed": 8127160484059716896
+      },
+      "relation": "lossless_integer_casts -> allclose_to_float64_reference",
+      "test_id": "property.dtype_consistency"
+    }
+  ],
+  "wall_seconds": 25.0
+}

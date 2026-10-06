@@ -1,0 +1,39 @@
+{
+  "executable_name": "python.exe",
+  "implementation": "CPython",
+  "packages": [
+    [
+      "jax",
+      "0.7.2"
+    ],
+    [
+      "jaxlib",
+      "0.7.2"
+    ],
+    [
+      "ml_dtypes",
+      "0.6.0"
+    ],
+    [
+      "numpy",
+      "2.5.3"
+    ],
+    [
+      "opt_einsum",
+      "3.4.0"
+    ],
+    [
+      "pip",
+      "25.0.1"
+    ],
+    [
+      "scipy",
+      "1.18.1"
+    ]
+  ],
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "runner_name": "jax_32411.py",
+  "runner_sha256": "1ad8975d3781bcff20b3c6048e9d2e6d13a31a60a6d7bc224dc91c2bed26c856",
+  "schema": "P4-Environment-Capture-v1"
+}

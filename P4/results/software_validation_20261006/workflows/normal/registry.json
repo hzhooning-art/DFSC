@@ -1,0 +1,17 @@
+{
+  "commands": {
+    "property.central_derivative": [
+      "{python}",
+      "{p4_root}/examples/expm1_relation_worker.py",
+      "--test-id",
+      "{test_id}"
+    ],
+    "reference.decimal_value": [
+      "{python}",
+      "{p4_root}/examples/expm1_relation_worker.py",
+      "--test-id",
+      "{test_id}"
+    ]
+  },
+  "schema": "P4-Execution-Registry-v1"
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/p4-historical-benchmark-v1.schema.json",
+  "title": "P4 Historical Buggy/Fixed Benchmark",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema", "cases"],
+  "properties": {
+    "schema": {"const": "P4-Historical-Benchmark-v1"},
+    "cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["case_id", "project", "upstream_url", "defect_family", "observable", "runner_path", "environment", "buggy_version", "fixed_version", "admission_state", "exclusion_reason"],
+        "properties": {
+          "case_id": {"type": "string", "minLength": 1},
+          "project": {"type": "string", "minLength": 1},
+          "upstream_url": {"type": "string", "format": "uri"},
+          "defect_family": {"type": "string", "minLength": 1},
+          "observable": {"type": "string", "minLength": 1},
+          "runner_path": {"type": "string", "minLength": 1},
+          "environment": {"type": "object", "minProperties": 1},
+          "buggy_version": {"type": ["string", "null"]},
+          "fixed_version": {"type": ["string", "null"]},
+          "admission_state": {"enum": ["admitted_complete", "candidate", "excluded"]},
+          "exclusion_reason": {"type": ["string", "null"]}
+        }
+      }
+    }
+  }
+}

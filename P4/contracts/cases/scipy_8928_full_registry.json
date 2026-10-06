@@ -1,0 +1,19 @@
+{
+  "schema": "P4-Execution-Registry-v1",
+  "commands": {
+    "reference.analytic_mean": [
+      "{python}", "{p4_root}/examples/scipy_8928_reference_worker.py",
+      "--test-id", "{test_id}",
+      "--contract", "{p4_root}/contracts/cases/scipy_8928.json"
+    ],
+    "replay.version_pair": [
+      "{python}", "{p4_root}/examples/scipy_8928_pair_worker.py",
+      "--test-id", "{test_id}",
+      "--case", "{p4_root}/benchmark/cases/scipy_8928.json",
+      "--contract", "{p4_root}/contracts/cases/scipy_8928.json",
+      "--runner", "{p4_root}/benchmark/runners/scipy/scipy_8928.py",
+      "--legacy-python", "{p4_root}/.runtime/p4_scipy181_replay/python310/python.exe",
+      "--current-python", "{python}"
+    ]
+  }
+}

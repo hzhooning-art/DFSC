@@ -1,0 +1,91 @@
+{
+  "contract_id": "scipy-solve-banded-representation-v1",
+  "coverage_certificate": {
+    "budget": 3,
+    "coverage_ratio": 1.0,
+    "covered": [
+      "historical_regression",
+      "replay",
+      "representation_mismatch",
+      "value_error"
+    ],
+    "missing": [],
+    "requested": [
+      "historical_regression",
+      "replay",
+      "representation_mismatch",
+      "value_error"
+    ],
+    "used": 3
+  },
+  "digest": "a83a6c19f179828d95efd7ecc781752b570000a77b13c6ae43888914c6f385a6",
+  "layers": [
+    "reference",
+    "property",
+    "replay"
+  ],
+  "max_invocations": 3,
+  "reason_code": null,
+  "risk_mechanisms": [
+    "historical_regression",
+    "replay",
+    "representation_mismatch",
+    "value_error"
+  ],
+  "schema": "P4-Test-Plan-v1",
+  "seed": 8906,
+  "status": "READY",
+  "tests": [
+    {
+      "estimated_cost": 1.0,
+      "layer": "replay",
+      "marginal_mechanisms": [
+        "historical_regression",
+        "replay"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "comparator": "paired_role_semantics",
+        "generator": "unchanged_runner_pair",
+        "seed": 5449166869975976900
+      },
+      "relation": "unchanged_runner_pair -> paired_role_semantics",
+      "test_id": "replay.version_pair"
+    },
+    {
+      "estimated_cost": 1.0,
+      "layer": "reference",
+      "marginal_mechanisms": [
+        "value_error"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "atol": 1e-12,
+        "comparator": "allclose_to_analytic_solution",
+        "generator": "singleton_diagonal_system",
+        "rtol": 1e-12,
+        "seed": 11386738045633367088
+      },
+      "relation": "singleton_diagonal_system -> allclose_to_analytic_solution",
+      "test_id": "reference.reference_solution"
+    },
+    {
+      "estimated_cost": 1.0,
+      "layer": "property",
+      "marginal_mechanisms": [
+        "representation_mismatch"
+      ],
+      "max_invocations": 1,
+      "parameters": {
+        "atol": 1e-12,
+        "comparator": "allclose_between_representations",
+        "generator": "equivalent_band_representations",
+        "rtol": 1e-12,
+        "seed": 8012732473556200391
+      },
+      "relation": "equivalent_band_representations -> allclose_between_representations",
+      "test_id": "property.representation_equivalence"
+    }
+  ],
+  "wall_seconds": 20.0
+}

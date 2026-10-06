@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dfsc-primitive-protocol"
+version = "0.3.0"
+description = "Auditable reliability qualification for differentiable engineering-computing components"
+readme = "dfsc_protocol/README.md"
+requires-python = ">=3.10"
+dependencies = []
+license = { text = "MIT" }
+
+[project.optional-dependencies]
+research = ["hypothesis>=6.100"]
+protocol = ["torch>=2.1"]
+ode-example = ["numpy==2.3.3", "scipy==1.16.3"]
+
+[project.scripts]
+dfsc-conformance = "dfsc_protocol.cli:main"
+p4-testing = "p4_testing.cli:main"
+
+[tool.setuptools]
+packages = ["dfsc_protocol", "p4_testing"]
+package-dir = {p4_testing = "src/p4_testing"}
