@@ -1,0 +1,49 @@
+{
+  "schema": "P4-MCS-computational-details-v1",
+  "all_checks_pass": true,
+  "input_sha256": {
+    "results/p4_observation_weighted_prediction_20261011.json": "78b8f426238c8adafa42743f2483e4648f75963b376e2e77f81a114cf0920e2d",
+    "experiments/specs/observation_weighted_prediction_20261011.json": "d99ea08f60e6eb3c2d16baf3980244117097f3e2f2deabe4b0cc74a59fddd5be"
+  },
+  "builder_sha256": "c800eb67ce3f14a8d1f7b2bd6abebe837bc530cba6bdecc07dc275aa06763582",
+  "generated_sha256": {
+    "grid_refinement_table.tex": "206f5529d55ced94644f277be2939a62d51e16d56fd023613f1dac15d810b35c"
+  },
+  "summaries": [
+    {
+      "cells": 16,
+      "target_cases": 16,
+      "max_endpoint_bracket": 0.33489562038869264,
+      "truths_contained": 16
+    },
+    {
+      "cells": 64,
+      "target_cases": 16,
+      "max_endpoint_bracket": 0.10969870507205298,
+      "truths_contained": 16
+    },
+    {
+      "cells": 256,
+      "target_cases": 16,
+      "max_endpoint_bracket": 0.029917782349490718,
+      "truths_contained": 16
+    },
+    {
+      "cells": 1024,
+      "target_cases": 16,
+      "max_endpoint_bracket": 0.007941556147016915,
+      "truths_contained": 16
+    },
+    {
+      "cells": 4096,
+      "target_cases": 16,
+      "max_endpoint_bracket": 0.0035964051895479576,
+      "truths_contained": 16
+    }
+  ],
+  "saved_programs": 320,
+  "nested_endpoint_checks": 256,
+  "new_experiments": false,
+  "new_solver_runs": false,
+  "limits": "Retrospective summary of one saved refinement study; not certification of every capped/noisy experiment or floating-point containment."
+}

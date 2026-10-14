@@ -1,0 +1,20 @@
+\begin{table}[ht]
+\centering\small
+\caption{Direct point prediction on all 256 frozen cases per window. Mean absolute errors (MAE) condition on successful final fits. Joint exceedance means either absolute error exceeds $0.10$ for $G(20)$ or $0.05$ for held-out stress. These correlated window records are not independent trials. Midpoints are point estimates, not fitted models.}
+\label{tab:direct-fits}
+\begin{tabular}{llrrrr}
+\toprule
+Window & Estimate & Success & MAE $G$ & MAE stress & Joint exceed\\\midrule
+8 & Grid LS & 256/256 & 0.01582 & 0.00677 & 0/256\\
+8 & Grid ridge & 256/256 & 0.01843 & 0.00798 & 0/256\\
+8 & Free-rate Prony & 194/256 & 0.01775 & 0.00764 & 1/194\\
+8 & Symmetric midpoint & 256/256 & 0.01749 & 0.00864 & 0/256\\
+8 & Classical midpoint & 256/256 & 0.01735 & 0.00853 & 0/256\\
+\midrule
+16 & Grid LS & 256/256 & 0.00349 & 0.00218 & 0/256\\
+16 & Grid ridge & 256/256 & 0.00370 & 0.00245 & 0/256\\
+16 & Free-rate Prony & 204/256 & 0.00376 & 0.00220 & 0/204\\
+16 & Symmetric midpoint & 256/256 & 0.00284 & 0.00193 & 0/256\\
+16 & Classical midpoint & 256/256 & 0.00279 & 0.00189 & 0/256\\
+\bottomrule\end{tabular}
+\end{table}

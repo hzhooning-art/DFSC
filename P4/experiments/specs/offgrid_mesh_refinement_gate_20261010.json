@@ -1,0 +1,27 @@
+{
+  "status": "Frozen before first run; do not tune from resulting scores",
+  "purpose": "Distinguish coarse-grid envelope conservatism from limited response information",
+  "parent_spec": "calibrated_multiload_gate_20261010.json",
+  "reference_result": "p4_offgrid_cell_envelope_gate_20261010.json",
+  "method": "same positive cell-mass LP and rigorous termwise segment envelopes as prior gate",
+  "rate_support": [0.02, 4.0],
+  "grid_kind": "logarithmic with geometric midpoint cells",
+  "grid_counts": [12, 24, 48, 96],
+  "truths": ["on_grid", "off_grid"],
+  "designs": ["single_ramp_hold", "ramp_hold_plus_cycle"],
+  "replicates": 128,
+  "observations": "identical frozen 80 samples per design, independent calibration and noise seeds",
+  "targets": ["G20", "heldout_sigma20"],
+  "coverage_gate": "all valid-calibration trials include both targets at every grid size",
+  "utility_gate": {
+    "off_grid_G20_mean_width_feasible_max": 0.2,
+    "off_grid_heldout_sigma20_mean_width_feasible_max": 0.1
+  },
+  "analysis": [
+    "Report every grid size; do not choose a size after viewing scores",
+    "Record interval widths, validity, feasibility, and runtime separately",
+    "Compare the 12-rate run against the exact prior result as a reproducibility check",
+    "A width gain under a finer grid is not evidence of method novelty",
+    "Do not claim coverage for stretched exponential or rates outside support"
+  ]
+}

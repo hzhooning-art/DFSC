@@ -1,0 +1,127 @@
+{
+  "schema": "P4-matched-endpoint-design-audit-v1",
+  "result_sha256": "bba1b60b8ec9026206c185fd8756bae37f84f053fa962574d09c7b1439b25ad4",
+  "audit_source_sha256": "83c08c615d83a39e535605f2923c0a18a85f5c7798cf6ef9a883bad78ffdb56d",
+  "LPs_replayed": 512,
+  "independent_observation_checks": 200,
+  "physical_inner_endpoints": 256,
+  "independent_cell_ratio_checks": 3120,
+  "unboundedness_examples_replayed": 48,
+  "dead_time_control_witnesses": [
+    {
+      "design": "constant",
+      "rate": 10.0,
+      "physical_mass": 0.13592026219330913,
+      "max_observation_change": 0.005000000000000001,
+      "active_target_change": 0.027000887734109764
+    },
+    {
+      "design": "constant",
+      "rate": 100.0,
+      "physical_mass": 11013.232897403357,
+      "max_observation_change": 0.005000000000000001,
+      "active_target_change": 220.26465794806714
+    },
+    {
+      "design": "constant",
+      "rate": 1000.0,
+      "physical_mass": 1.3440585709080676e+44,
+      "max_observation_change": 0.005000000000000001,
+      "active_target_change": 2.6881171418161353e+41
+    },
+    {
+      "design": "early_linear_endpoint",
+      "rate": 10.0,
+      "physical_mass": 0.6297846868931986,
+      "max_observation_change": 0.005,
+      "active_target_change": 0.1251082462104153
+    },
+    {
+      "design": "early_linear_endpoint",
+      "rate": 100.0,
+      "physical_mass": 381926.51190884144,
+      "max_observation_change": 0.005000000000000001,
+      "active_target_change": 7638.530238176829
+    },
+    {
+      "design": "early_linear_endpoint",
+      "rate": 1000.0,
+      "physical_mass": 4.4981337939304554e+46,
+      "max_observation_change": 0.005000000000000001,
+      "active_target_change": 8.99626758786091e+43
+    },
+    {
+      "design": "late_linear_start",
+      "rate": 10.0,
+      "physical_mass": 0.05898996102043082,
+      "max_observation_change": 0.005,
+      "active_target_change": 0.011718497957919407
+    },
+    {
+      "design": "late_linear_start",
+      "rate": 100.0,
+      "physical_mass": 3781.544098678379,
+      "max_observation_change": 0.005000000000000001,
+      "active_target_change": 75.63088197356758
+    },
+    {
+      "design": "late_linear_start",
+      "rate": 1000.0,
+      "physical_mass": 4.493640261947658e+43,
+      "max_observation_change": 0.005000000000000001,
+      "active_target_change": 8.987280523895315e+40
+    },
+    {
+      "design": "early_quadratic_endpoint",
+      "rate": 10.0,
+      "physical_mass": 2.271525610342161,
+      "max_observation_change": 0.005,
+      "active_target_change": 0.451244038234522
+    },
+    {
+      "design": "early_quadratic_endpoint",
+      "rate": 100.0,
+      "physical_mass": 18355388.162338916,
+      "max_observation_change": 0.005000000000000001,
+      "active_target_change": 367107.76324677834
+    },
+    {
+      "design": "early_quadratic_endpoint",
+      "rate": 1000.0,
+      "physical_mass": 2.2400976181801483e+49,
+      "max_observation_change": 0.005000000000000001,
+      "active_target_change": 4.4801952363602964e+46
+    },
+    {
+      "design": "late_quadratic_start",
+      "rate": 10.0,
+      "physical_mass": 0.05524969183856909,
+      "max_observation_change": 0.005,
+      "active_target_change": 0.010975484468649002
+    },
+    {
+      "design": "late_quadratic_start",
+      "rate": 100.0,
+      "physical_mass": 3745.233250834306,
+      "max_observation_change": 0.005000000000000001,
+      "active_target_change": 74.90466501668612
+    },
+    {
+      "design": "late_quadratic_start",
+      "rate": 1000.0,
+      "physical_mass": 4.4891645872054625e+43,
+      "max_observation_change": 0.005000000000000001,
+      "active_target_change": 8.978329174410926e+40
+    }
+  ],
+  "max_residuals": {
+    "primal": 4.551914400963142e-14,
+    "stationarity": 3.7133409576395326e-09,
+    "gap": 7.271960811294775e-14,
+    "sign": 9.979483905908637e-11,
+    "physical_observation_excess": 4.55278176270113e-14,
+    "physical_target_error": 8.104628079763643e-15
+  },
+  "all_checks_pass": true,
+  "limits": "Same developer, alternative quadrature and saved LP replay; no external review, random validation, measured calibration or directed rounding"
+}

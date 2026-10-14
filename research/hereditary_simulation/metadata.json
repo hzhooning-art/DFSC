@@ -1,0 +1,45 @@
+{
+  "title": "Loading-Dependent Predictability and Precision Assessment for Positive Hereditary Simulations — Data, Code and Reproducibility Artifacts",
+  "upload_type": "dataset",
+  "version": "1.0.0",
+  "publication_date": "2026-10-14",
+  "language": "eng",
+  "access_right": "open",
+  "license": "mit",
+  "description": "This reproducibility archive accompanies the manuscript \"Loading-Dependent Predictability and Precision Assessment for Positive Hereditary Simulations\". It provides author-generated synthetic numerical evidence and computation code, not measured material data or a claim of journal acceptance.\n\nThe archive includes frozen simulation specifications, generating and analysis programs, loading histories and synthetic observations, complete saved primal/dual solver witnesses, per-case outcomes, numerical audit reports, editable figure assets, recorded dependencies, and reproduction instructions. It covers loading endpoint order and observation dead time, matched loading comparisons, delayed rectangular controls, input-uncertainty scenarios, continuous-spectrum inner/outer brackets, and observation-resource assessment. Negative precision results and underestimated calibration cases are retained.\n\nThe capped calibration study contains 256 saved synthetic cases and 512 paired window records. All 12 calibration-underestimation cases remain available. Extending the confirmation window changes six additional calibration-valid cases from insufficient to sufficient, from 238 to 244 of 244 valid cases. The direct-fitting supplement reuses the same observations for grid least squares, response-validated regularized fitting, free-rate Prony fitting, and continuous-interval midpoint references. Grid and regularized fits meet the fixed point-error tolerances in all cases; 114 Prony final-refit nonconvergence records are retained. These results do not establish a general point-prediction accuracy or runtime advantage, calibrated fitting prediction intervals, a global optimum, or physical material validity.\n\nArchive version 1.0.0 is a frozen evidence release assembled on 14 October 2026. Packaging introduces no new scientific calculation or random trial. Numerical evidence and frozen source payloads are preserved unchanged from the complete submission supplement. A document-layout QA receipt is omitted because it is not research evidence; no numerical record is omitted. The archive has a file-level SHA-256 manifest, a verification script, and a README identifying the audit and reproduction commands. Existing output files are guarded against accidental overwrite. Frozen internal paths are retained solely for executable compatibility.\n\nThe results are developer-run checks on specified synthetic information classes, not independent human validation, universal method superiority, or material qualification. Historical journal correspondence, author-only submission disclosures, manuscript PDFs, virtual environments, and third-party source trees are not bundled. The authors' code and accompanying artifacts use the project's existing MIT License; third-party dependencies retain their own licenses and are installed separately.",
+  "creators": [
+    {
+      "name": "Duan, Haitao",
+      "orcid": "0009-0006-4611-8639",
+      "affiliation": "School of Computer Science, Hangzhou Dianzi University, Hangzhou, China"
+    },
+    {
+      "name": "Hu, Ning",
+      "orcid": "0000-0002-2718-0385",
+      "affiliation": "School of Mechanical Engineering, Hangzhou Dianzi University, Hangzhou, China"
+    },
+    {
+      "name": "Li, Shuqun",
+      "orcid": "0009-0007-1787-685X",
+      "affiliation": "School of Mathematics and Physics, Xi'an Jiaotong-Liverpool University, Suzhou, China"
+    },
+    {
+      "name": "Hu, Chuyang",
+      "orcid": "0009-0007-9255-018X",
+      "affiliation": "Department of Computer Science and Engineering, University of California, Santa Cruz, USA"
+    }
+  ],
+  "keywords": [
+    "positive hereditary models",
+    "linear viscoelasticity",
+    "target prediction",
+    "partial identification",
+    "loading history",
+    "precision assessment",
+    "synthetic simulation",
+    "continuous-spectrum bounds",
+    "observation resource",
+    "Prony fitting",
+    "reproducible computation"
+  ]
+}
