@@ -1,0 +1,210 @@
+{
+  "started_utc": "2026-10-25T01:42:59.285733+00:00",
+  "tracks_done": [
+    "A",
+    "C"
+  ],
+  "environment_checks": [
+    {
+      "checked_utc": "2026-10-25T01:42:59.666420+00:00",
+      "observer_pid": 34212,
+      "python_processes": [
+        {
+          "ProcessId": 22552,
+          "ParentProcessId": 25288,
+          "CommandLine": "\"D:\\program projects\\rag\\dependencies\\python\\python.exe\" -X utf8 -B \"D:\\program projects\\rag\\platform\\server.py\" --port 8126"
+        },
+        {
+          "ProcessId": 10140,
+          "ParentProcessId": 25288,
+          "CommandLine": "\"D:\\program projects\\rag\\dependencies\\python-gpu\\python.exe\" -X utf8 -B \"D:\\program projects\\rag\\platform\\vector_index.py\" serve --port 8127"
+        },
+        {
+          "ProcessId": 33620,
+          "ParentProcessId": 14672,
+          "CommandLine": "\"D:\\Anaconda\\python.exe\" P4/tools/verify_public_v110_download_20261025.py"
+        },
+        {
+          "ProcessId": 27032,
+          "ParentProcessId": 3576,
+          "CommandLine": "\"D:\\program projects\\st_mlee\\P1\\.venv\\Scripts\\python.exe\" -B -X utf8 P1/revision_neurocomputing_20261016/targeted_validation_recovery_20261025/run_observed_host.py"
+        },
+        {
+          "ProcessId": 34212,
+          "ParentProcessId": 27032,
+          "CommandLine": "\"C:\\Users\\23747\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" -B -X utf8 P1/revision_neurocomputing_20261016/targeted_validation_recovery_20261025/run_observed_host.py"
+        }
+      ],
+      "unexpected_python_processes": [
+        {
+          "ProcessId": 22552,
+          "ParentProcessId": 25288,
+          "CommandLine": "\"D:\\program projects\\rag\\dependencies\\python\\python.exe\" -X utf8 -B \"D:\\program projects\\rag\\platform\\server.py\" --port 8126"
+        },
+        {
+          "ProcessId": 10140,
+          "ParentProcessId": 25288,
+          "CommandLine": "\"D:\\program projects\\rag\\dependencies\\python-gpu\\python.exe\" -X utf8 -B \"D:\\program projects\\rag\\platform\\vector_index.py\" serve --port 8127"
+        },
+        {
+          "ProcessId": 33620,
+          "ParentProcessId": 14672,
+          "CommandLine": "\"D:\\Anaconda\\python.exe\" P4/tools/verify_public_v110_download_20261025.py"
+        }
+      ],
+      "no_known_python_contention": false,
+      "track": "A",
+      "boundary": "before"
+    },
+    {
+      "checked_utc": "2026-10-25T02:36:44.749801+00:00",
+      "observer_pid": 34212,
+      "python_processes": [
+        {
+          "ProcessId": 22552,
+          "ParentProcessId": 25288,
+          "CommandLine": "\"D:\\program projects\\rag\\dependencies\\python\\python.exe\" -X utf8 -B \"D:\\program projects\\rag\\platform\\server.py\" --port 8126"
+        },
+        {
+          "ProcessId": 10140,
+          "ParentProcessId": 25288,
+          "CommandLine": "\"D:\\program projects\\rag\\dependencies\\python-gpu\\python.exe\" -X utf8 -B \"D:\\program projects\\rag\\platform\\vector_index.py\" serve --port 8127"
+        },
+        {
+          "ProcessId": 27032,
+          "ParentProcessId": 3576,
+          "CommandLine": "\"D:\\program projects\\st_mlee\\P1\\.venv\\Scripts\\python.exe\" -B -X utf8 P1/revision_neurocomputing_20261016/targeted_validation_recovery_20261025/run_observed_host.py"
+        },
+        {
+          "ProcessId": 34212,
+          "ParentProcessId": 27032,
+          "CommandLine": "\"C:\\Users\\23747\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" -B -X utf8 P1/revision_neurocomputing_20261016/targeted_validation_recovery_20261025/run_observed_host.py"
+        },
+        {
+          "ProcessId": 10148,
+          "ParentProcessId": 11604,
+          "CommandLine": "\"D:\\Anaconda\\python.exe\" -B -X utf8 P1/revision_neurocomputing_20261016/visual_revision_20261025/prepare_delivery.py"
+        }
+      ],
+      "unexpected_python_processes": [
+        {
+          "ProcessId": 22552,
+          "ParentProcessId": 25288,
+          "CommandLine": "\"D:\\program projects\\rag\\dependencies\\python\\python.exe\" -X utf8 -B \"D:\\program projects\\rag\\platform\\server.py\" --port 8126"
+        },
+        {
+          "ProcessId": 10140,
+          "ParentProcessId": 25288,
+          "CommandLine": "\"D:\\program projects\\rag\\dependencies\\python-gpu\\python.exe\" -X utf8 -B \"D:\\program projects\\rag\\platform\\vector_index.py\" serve --port 8127"
+        },
+        {
+          "ProcessId": 10148,
+          "ParentProcessId": 11604,
+          "CommandLine": "\"D:\\Anaconda\\python.exe\" -B -X utf8 P1/revision_neurocomputing_20261016/visual_revision_20261025/prepare_delivery.py"
+        }
+      ],
+      "no_known_python_contention": false,
+      "track": "A",
+      "boundary": "after"
+    },
+    {
+      "checked_utc": "2026-10-25T02:36:45.181334+00:00",
+      "observer_pid": 34212,
+      "python_processes": [
+        {
+          "ProcessId": 22552,
+          "ParentProcessId": 25288,
+          "CommandLine": "\"D:\\program projects\\rag\\dependencies\\python\\python.exe\" -X utf8 -B \"D:\\program projects\\rag\\platform\\server.py\" --port 8126"
+        },
+        {
+          "ProcessId": 10140,
+          "ParentProcessId": 25288,
+          "CommandLine": "\"D:\\program projects\\rag\\dependencies\\python-gpu\\python.exe\" -X utf8 -B \"D:\\program projects\\rag\\platform\\vector_index.py\" serve --port 8127"
+        },
+        {
+          "ProcessId": 27032,
+          "ParentProcessId": 3576,
+          "CommandLine": "\"D:\\program projects\\st_mlee\\P1\\.venv\\Scripts\\python.exe\" -B -X utf8 P1/revision_neurocomputing_20261016/targeted_validation_recovery_20261025/run_observed_host.py"
+        },
+        {
+          "ProcessId": 34212,
+          "ParentProcessId": 27032,
+          "CommandLine": "\"C:\\Users\\23747\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" -B -X utf8 P1/revision_neurocomputing_20261016/targeted_validation_recovery_20261025/run_observed_host.py"
+        },
+        {
+          "ProcessId": 10148,
+          "ParentProcessId": 11604,
+          "CommandLine": "\"D:\\Anaconda\\python.exe\" -B -X utf8 P1/revision_neurocomputing_20261016/visual_revision_20261025/prepare_delivery.py"
+        }
+      ],
+      "unexpected_python_processes": [
+        {
+          "ProcessId": 22552,
+          "ParentProcessId": 25288,
+          "CommandLine": "\"D:\\program projects\\rag\\dependencies\\python\\python.exe\" -X utf8 -B \"D:\\program projects\\rag\\platform\\server.py\" --port 8126"
+        },
+        {
+          "ProcessId": 10140,
+          "ParentProcessId": 25288,
+          "CommandLine": "\"D:\\program projects\\rag\\dependencies\\python-gpu\\python.exe\" -X utf8 -B \"D:\\program projects\\rag\\platform\\vector_index.py\" serve --port 8127"
+        },
+        {
+          "ProcessId": 10148,
+          "ParentProcessId": 11604,
+          "CommandLine": "\"D:\\Anaconda\\python.exe\" -B -X utf8 P1/revision_neurocomputing_20261016/visual_revision_20261025/prepare_delivery.py"
+        }
+      ],
+      "no_known_python_contention": false,
+      "track": "C",
+      "boundary": "before"
+    },
+    {
+      "checked_utc": "2026-10-25T05:27:35.645664+00:00",
+      "observer_pid": 34212,
+      "python_processes": [
+        {
+          "ProcessId": 27032,
+          "ParentProcessId": 3576,
+          "CommandLine": "\"D:\\program projects\\st_mlee\\P1\\.venv\\Scripts\\python.exe\" -B -X utf8 P1/revision_neurocomputing_20261016/targeted_validation_recovery_20261025/run_observed_host.py"
+        },
+        {
+          "ProcessId": 34212,
+          "ParentProcessId": 27032,
+          "CommandLine": "\"C:\\Users\\23747\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" -B -X utf8 P1/revision_neurocomputing_20261016/targeted_validation_recovery_20261025/run_observed_host.py"
+        },
+        {
+          "ProcessId": 3712,
+          "ParentProcessId": 17604,
+          "CommandLine": "\"D:\\program projects\\rag\\dependencies\\python\\python.exe\" -X utf8 -B \"D:\\program projects\\rag\\platform\\server.py\" --port 8126"
+        },
+        {
+          "ProcessId": 27624,
+          "ParentProcessId": 17604,
+          "CommandLine": "\"D:\\program projects\\rag\\dependencies\\python-gpu\\python.exe\" -X utf8 -B \"D:\\program projects\\rag\\platform\\vector_index.py\" serve --port 8127"
+        }
+      ],
+      "unexpected_python_processes": [
+        {
+          "ProcessId": 3712,
+          "ParentProcessId": 17604,
+          "CommandLine": "\"D:\\program projects\\rag\\dependencies\\python\\python.exe\" -X utf8 -B \"D:\\program projects\\rag\\platform\\server.py\" --port 8126"
+        },
+        {
+          "ProcessId": 27624,
+          "ParentProcessId": 17604,
+          "CommandLine": "\"D:\\program projects\\rag\\dependencies\\python-gpu\\python.exe\" -X utf8 -B \"D:\\program projects\\rag\\platform\\vector_index.py\" serve --port 8127"
+        }
+      ],
+      "no_known_python_contention": false,
+      "track": "C",
+      "boundary": "after"
+    }
+  ],
+  "status": "needs_attention",
+  "primary_uncontended_runtime_claim_supported": false,
+  "current_track": "C",
+  "last_update_utc": "2026-10-25T05:27:35.699424+00:00",
+  "error_type": "ValueError",
+  "error": "Original changed: freeze_receipt.json",
+  "traceback": "Traceback (most recent call last):\n  File \"D:\\program projects\\st_mlee\\P1\\revision_neurocomputing_20261016\\targeted_validation_recovery_20261025\\run_observed_host.py\", line 86, in execute\n    state['original_files_unchanged']=r.assert_old_preserved()\n                                      ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\program projects\\st_mlee\\P1\\revision_neurocomputing_20261016\\targeted_validation_recovery_20261025\\recover_experiments.py\", line 131, in assert_old_preserved\n    raise ValueError('Original changed: '+rel)\nValueError: Original changed: freeze_receipt.json\n"
+}

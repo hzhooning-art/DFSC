@@ -1,0 +1,66 @@
+{
+  "created_utc": "2026-10-25T06:24:33.847601+00:00",
+  "reason": "Concurrent manuscript archival relocated paths in two freeze receipts.",
+  "authorization": "User requested completion of four closeout items and replacement of current delivery.",
+  "original_inventory_files": 1950,
+  "original_inventory_exceptions": [
+    {
+      "path": "freeze_receipt.json",
+      "expected": "4ebdde4d678af9399e95873fd8847b4757976d86781c664a5a6537bbd25c036d",
+      "actual": "e229056244bc6ff607f62db75785d4a3725fbc062881058d87256973393f5166"
+    }
+  ],
+  "exact_original_receipts_verified": true,
+  "proofs": [
+    {
+      "experiment": "targeted_validation_20261023",
+      "original_receipt": "docs\\relocation_20261025\\targeted_validation_20261023_freeze_receipt_original.json",
+      "original_sha256": "4ebdde4d678af9399e95873fd8847b4757976d86781c664a5a6537bbd25c036d",
+      "relocated_sha256": "e229056244bc6ff607f62db75785d4a3725fbc062881058d87256973393f5166",
+      "all_scientific_binding_hashes_unchanged": true,
+      "relocated_paths": [
+        {
+          "name": "design",
+          "before": "..\\..\\..\\docs\\superpowers\\specs\\2026-10-23-p1-targeted-validation-design.md",
+          "after": "..\\..\\docs\\superpowers\\specs\\2026-10-23-p1-targeted-validation-design.md",
+          "sha256": "442967d2fd5071545e37c04b46fc3dd019b9584a64db4883102255b675ffaf22"
+        },
+        {
+          "name": "plan",
+          "before": "..\\..\\..\\docs\\superpowers\\plans\\2026-10-24-p1-targeted-validation.md",
+          "after": "..\\..\\docs\\superpowers\\plans\\2026-10-24-p1-targeted-validation.md",
+          "sha256": "b9760352215eaaa1c823395b2f376f87145a919a4d2160461e85be0bb4bf45be"
+        }
+      ]
+    },
+    {
+      "experiment": "targeted_validation_recovery_20261025",
+      "original_receipt": "docs\\relocation_20261025\\targeted_validation_recovery_20261025_freeze_receipt_original.json",
+      "original_sha256": "131a06ac6d64932591f4585df54f23729302a0cb2ae27d71aac0706c80359123",
+      "relocated_sha256": "829030d3659740f9187b8d5195b26ef3d65a56a38bb2ed87189b9f34c45b8575",
+      "all_scientific_binding_hashes_unchanged": true,
+      "relocated_paths": [
+        {
+          "name": "design",
+          "before": "..\\..\\..\\docs\\superpowers\\specs\\2026-10-23-p1-targeted-validation-design.md",
+          "after": "..\\..\\docs\\superpowers\\specs\\2026-10-23-p1-targeted-validation-design.md",
+          "sha256": "442967d2fd5071545e37c04b46fc3dd019b9584a64db4883102255b675ffaf22"
+        },
+        {
+          "name": "plan",
+          "before": "..\\..\\..\\docs\\superpowers\\plans\\2026-10-24-p1-targeted-validation.md",
+          "after": "..\\..\\docs\\superpowers\\plans\\2026-10-24-p1-targeted-validation.md",
+          "sha256": "b9760352215eaaa1c823395b2f376f87145a919a4d2160461e85be0bb4bf45be"
+        },
+        {
+          "name": "original_freeze",
+          "before": "..\\targeted_validation_20261023\\freeze_receipt.json",
+          "after": "..\\..\\docs\\relocation_20261025\\targeted_validation_20261023_freeze_receipt_original.json",
+          "sha256": "4ebdde4d678af9399e95873fd8847b4757976d86781c664a5a6537bbd25c036d"
+        }
+      ]
+    }
+  ],
+  "original_status_and_receipts_not_overwritten": true,
+  "shared_host_runtime_not_qualified": true
+}

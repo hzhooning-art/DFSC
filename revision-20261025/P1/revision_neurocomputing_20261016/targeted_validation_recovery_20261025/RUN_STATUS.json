@@ -1,0 +1,61 @@
+{
+  "started_utc": "2026-10-25T01:40:01.005107+00:00",
+  "tracks_done": [],
+  "environment_checks": [
+    {
+      "checked_utc": "2026-10-25T01:40:01.490933+00:00",
+      "observer_pid": 12212,
+      "python_processes": [
+        {
+          "ProcessId": 22552,
+          "ParentProcessId": 25288,
+          "CommandLine": "\"D:\\program projects\\rag\\dependencies\\python\\python.exe\" -X utf8 -B \"D:\\program projects\\rag\\platform\\server.py\" --port 8126"
+        },
+        {
+          "ProcessId": 10140,
+          "ParentProcessId": 25288,
+          "CommandLine": "\"D:\\program projects\\rag\\dependencies\\python-gpu\\python.exe\" -X utf8 -B \"D:\\program projects\\rag\\platform\\vector_index.py\" serve --port 8127"
+        },
+        {
+          "ProcessId": 19908,
+          "ParentProcessId": 33984,
+          "CommandLine": "\"D:\\Anaconda\\python.exe\" P4/tmp/publish_public_v110_20261024.py --publish"
+        },
+        {
+          "ProcessId": 3816,
+          "ParentProcessId": 13504,
+          "CommandLine": "\"D:\\program projects\\st_mlee\\P1\\.venv\\Scripts\\python.exe\" -B -X utf8 P1/revision_neurocomputing_20261016/targeted_validation_recovery_20261025/recover_experiments.py --run"
+        },
+        {
+          "ProcessId": 12212,
+          "ParentProcessId": 3816,
+          "CommandLine": "\"C:\\Users\\23747\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" -B -X utf8 P1/revision_neurocomputing_20261016/targeted_validation_recovery_20261025/recover_experiments.py --run"
+        }
+      ],
+      "unexpected_python_processes": [
+        {
+          "ProcessId": 22552,
+          "ParentProcessId": 25288,
+          "CommandLine": "\"D:\\program projects\\rag\\dependencies\\python\\python.exe\" -X utf8 -B \"D:\\program projects\\rag\\platform\\server.py\" --port 8126"
+        },
+        {
+          "ProcessId": 10140,
+          "ParentProcessId": 25288,
+          "CommandLine": "\"D:\\program projects\\rag\\dependencies\\python-gpu\\python.exe\" -X utf8 -B \"D:\\program projects\\rag\\platform\\vector_index.py\" serve --port 8127"
+        },
+        {
+          "ProcessId": 19908,
+          "ParentProcessId": 33984,
+          "CommandLine": "\"D:\\Anaconda\\python.exe\" P4/tmp/publish_public_v110_20261024.py --publish"
+        }
+      ],
+      "no_known_python_contention": false
+    }
+  ],
+  "status": "needs_attention",
+  "new_run_all_planned_ids": true,
+  "current_track": "A",
+  "last_update_utc": "2026-10-25T01:40:01.492931+00:00",
+  "error_type": "RuntimeError",
+  "error": "Unexpected Python process; no process was killed. Inspect environment before resume."
+}

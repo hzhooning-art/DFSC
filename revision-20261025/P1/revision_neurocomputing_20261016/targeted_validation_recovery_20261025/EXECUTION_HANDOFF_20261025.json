@@ -1,0 +1,30 @@
+{
+  "user_request": "尝试恢复完整实验运行",
+  "date_timezone": "2026-10-25 Asia/Shanghai",
+  "execution_state_at_handoff_creation": "running_track_A",
+  "active_entry": "run_observed_host.py",
+  "active_status": "SHARED_HOST_STATUS.json",
+  "unified_exec_session_id": 45902,
+  "strict_entry_stopped_before_science": true,
+  "strict_entry_history": "RUN_STATUS.json",
+  "scientific_source_receipt": "freeze_receipt.json",
+  "shared_host_amendment": "SHARED_HOST_AMENDMENT.json",
+  "recovery_protocol_sha256": "aaed0bcda4b0f215497392488c7fba8bf57510da5303d067e50675dd7c721383",
+  "tests_before_start": {"count": 47, "passed": 47, "failures": 0},
+  "execution_plan": {"A_jobs": 175, "C_jobs": 72, "B_original_records_reused": 336},
+  "resource_limits_seconds": {"A": 7200, "C": 21600, "ordinary_worker": 600, "inverse_worker": 900},
+  "numeric_candidates_or_tolerances_changed": false,
+  "original_files_modified": false,
+  "primary_uncontended_runtime_claim_supported": false,
+  "reason_for_shared_host": "Other independent RAG services and a P4 process exist. They were not terminated. A short CPU sample found them nearly idle, but this is not a host-wide contention certificate.",
+  "five_second_cpu_sample": [
+    {"pid": 22552, "role": "RAG server", "delta_cpu_seconds": 0.0},
+    {"pid": 10140, "role": "RAG vector index service", "delta_cpu_seconds": 0.015625},
+    {"pid": 19908, "role": "independent P4 task", "delta_cpu_seconds": 0.0}
+  ],
+  "automatic_after_science": ["original-file preservation check", "qualified audit and report", "new and prior regression tests", "standalone archive and extraction replay attempt"],
+  "no_final_completion_claim": true,
+  "resume_rule": "Inspect the active status and process first. Do not start a second controller. Only after a genuine interruption, use run_observed_host.py --resume. Never delete terminal files or reset budgets.",
+  "external_or_portal_writes": false,
+  "remaining_after_execution": "Review all new outcomes before manuscript/reviewer-response integration. Clean isolated performance evidence remains unestablished."
+}

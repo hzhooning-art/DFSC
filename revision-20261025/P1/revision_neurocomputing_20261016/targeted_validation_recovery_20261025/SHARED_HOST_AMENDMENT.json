@@ -1,0 +1,24 @@
+{
+  "version": "2.0.1-shared-host-entry",
+  "declared_utc": "2026-10-25T01:42:59.283220+00:00",
+  "user_request": "尝试恢复完整实验运行",
+  "reason": "Strict entry stopped before science on presence of independent RAG and P4 Python services; short CPU sample showed near-idle services.",
+  "frozen_recovery_receipt_sha256": "131a06ac6d64932591f4585df54f23729302a0cb2ae27d71aac0706c80359123",
+  "strict_start_attempt_status_sha256": "1c9254cd478d8e78f729aa483fb0e5fed7caea9ffc812c98882682cd372ec7bd",
+  "numeric_settings_and_candidates_unchanged": true,
+  "budgets_unchanged": {
+    "A": 7200,
+    "C": 21600,
+    "ordinary_worker": 600,
+    "training_worker": 900
+  },
+  "primary_uncontended_runtime_claim_supported": false,
+  "never_kill_unrelated_processes": true,
+  "single_numerical_worker": true,
+  "additional_source_bindings": {
+    "run_observed_host.py": "f0396b6d779d2f4eb138d814b8af8a7d98be630a5850f7987352b1521e742aec",
+    "tests/test_observed_host.py": "44f8978b01477b8f1d578c5cdea37e688c68f37337789154258fafed49272a83"
+  },
+  "strict_start_attempts_preserved": true,
+  "complete_schedule_not_all_methods_pass": true
+}

@@ -1,0 +1,138 @@
+{
+  "version": "2.0.0-recovery-20261025",
+  "author_approved": "2026-10-25",
+  "seed": 20261023,
+  "post_existing_results_not_blind_preregistration": true,
+  "cpu_threads": 1,
+  "dtype": "float64",
+  "track_budget_seconds": 1800,
+  "worker_limit_seconds": 600,
+  "training_limit_seconds": 900,
+  "reference_digits": [
+    300,
+    380
+  ],
+  "reference_max_terms": 6000,
+  "reference_pair_rtol": 1e-35,
+  "reference_tiny_terms": 8,
+  "fd_steps": [
+    0.01,
+    0.005,
+    0.0025
+  ],
+  "laplace_digits": [
+    55,
+    85
+  ],
+  "independent_value_atol": 1e-11,
+  "independent_value_rtol": 1e-09,
+  "independent_gradient_atol": 2e-08,
+  "independent_gradient_rtol": 2e-06,
+  "value_atol": 1e-12,
+  "gradient_atol": 1e-10,
+  "rtol": 1e-09,
+  "gradient_target_atol": 1e-07,
+  "gradient_target_rtol": 0.001,
+  "accuracy_bands": [
+    0.001,
+    0.0001
+  ],
+  "a_times": [
+    0,
+    0.125,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "a_test_times": [
+    0.0625,
+    0.1875,
+    0.375,
+    0.625,
+    0.875,
+    1.25
+  ],
+  "a_alphas": [
+    0.5,
+    0.7,
+    0.9
+  ],
+  "external_steps": [
+    64,
+    128,
+    256,
+    512,
+    1024
+  ],
+  "gradient_steps": [
+    64,
+    256,
+    1024
+  ],
+  "warmups": 1,
+  "timed_repeats": 3,
+  "a_inverse_truth": [
+    0.55,
+    0.85
+  ],
+  "seeds": [
+    101,
+    211,
+    307
+  ],
+  "a_inverse_steps": 60,
+  "a_inverse_lr": 0.02,
+  "a_inverse_resolution": 256,
+  "a_inverse_fd_step": 0.0001,
+  "c_sizes": [
+    4,
+    8,
+    16
+  ],
+  "c_times": [
+    0.1,
+    0.3,
+    0.6,
+    1
+  ],
+  "c_test_times": [
+    0.15,
+    0.45,
+    0.8,
+    1.5
+  ],
+  "c_updates": 100,
+  "c_lr": 0.05,
+  "c_warmups": 1,
+  "paired_steps": [
+    1,
+    12,
+    25,
+    50,
+    100
+  ],
+  "pair_atol": 1e-07,
+  "pair_rtol": 1e-06,
+  "parameter_recovery_abs": 0.02,
+  "prediction_recovery_l2": 0.01,
+  "optional_wheel_sha256": "467aa4de1fed0b9de7aed53d33cccf8455a874f32e442c85f5e8593ff8b415fb",
+  "execution": "preserved_source_snapshot_verified_against_wheel_not_fresh_install",
+  "a_structural_advantage": "Known spectral propagator versus history-aware time steppers",
+  "timing_exclusions": [
+    "imports",
+    "process_startup",
+    "reference_generation"
+  ],
+  "parent_budget_includes_exclusions": true,
+  "schedule_order": "A preflight then interleaved forward/gradient/inverse; B rotated uniform/log/boundary; C seed outer then six operators, rotated methods",
+  "no_candidate_tuning": true,
+  "scientific_global_certificate": false,
+  "authorization": "User requested attempt to restore full experiments",
+  "track_budgets_seconds": {
+    "A": 7200,
+    "C": 21600
+  },
+  "recovery_policy": "Fresh complete A and C attempts; retain unchanged B numerical evidence with provenance",
+  "no_science_tolerance_or_candidate_change": true
+}
