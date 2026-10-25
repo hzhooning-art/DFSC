@@ -1,0 +1,1212 @@
+[
+  {
+    "temperature_K": 313,
+    "window_fraction": 0.1,
+    "fits": {
+      "nnls": {
+        "success": true,
+        "training_residual": 0.0018606262150491076
+      },
+      "ridge": {
+        "success": true,
+        "message": "The first-order optimality measure is less than `tol`."
+      },
+      "prony": {
+        "success": true,
+        "candidates": [
+          {
+            "components": 1,
+            "success": true,
+            "attempts": [
+              {
+                "success": true,
+                "rss": 0.014507859216821321,
+                "parameters": [
+                  0.9291704399461278,
+                  2.324094291653018
+                ],
+                "nfev": 8,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 0.014507859216821345,
+                "parameters": [
+                  0.929170434570309,
+                  2.3240941664252963
+                ],
+                "nfev": 8,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 0.014507859216821366,
+                "parameters": [
+                  0.9291704428744941,
+                  2.3240943651192465
+                ],
+                "nfev": 7,
+                "message": "`ftol` termination condition is satisfied."
+              }
+            ],
+            "parameters": [
+              0.9291704399461278,
+              2.324094291653018
+            ],
+            "rss": 0.014507859216821321,
+            "aic": -25.212513369367812,
+            "predictions": [
+              0.2961729333097367,
+              0.17907111099513956,
+              0.09093981338864734
+            ]
+          },
+          {
+            "components": 2,
+            "success": true,
+            "attempts": [
+              {
+                "success": true,
+                "rss": 3.4198250640455824e-06,
+                "parameters": [
+                  0.7850327472568186,
+                  0.21497128733843207,
+                  0.008464844181086794,
+                  100.1449675044188
+                ],
+                "nfev": 33,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 3.4198250640454867e-06,
+                "parameters": [
+                  0.7850327468413664,
+                  0.21497128774477994,
+                  0.008464838975331977,
+                  100.14496623819886
+                ],
+                "nfev": 25,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 3.419825064045865e-06,
+                "parameters": [
+                  0.7850327468039747,
+                  0.21497128776831473,
+                  0.00846483868702243,
+                  100.14496601447499
+                ],
+                "nfev": 12,
+                "message": "`gtol` termination condition is satisfied."
+              }
+            ],
+            "parameters": [
+              0.7850327468413664,
+              0.21497128774477994,
+              0.008464838975331977,
+              100.14496623819886
+            ],
+            "rss": 3.4198250640454867e-06,
+            "aic": -62.976795357480015,
+            "predictions": [
+              0.7817704200295973,
+              0.7803390468876882,
+              0.7784156170298199
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "temperature_K": 313,
+    "window_fraction": 0.25,
+    "fits": {
+      "nnls": {
+        "success": true,
+        "training_residual": 0.0013850121084555426
+      },
+      "ridge": {
+        "success": true,
+        "message": "The first-order optimality measure is less than `tol`."
+      },
+      "prony": {
+        "success": true,
+        "candidates": [
+          {
+            "components": 1,
+            "success": true,
+            "attempts": [
+              {
+                "success": true,
+                "rss": 0.01528410409661301,
+                "parameters": [
+                  0.9275805845056477,
+                  1.014811910393952
+                ],
+                "nfev": 7,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 0.015284104096613047,
+                "parameters": [
+                  0.9275805851416657,
+                  1.0148119165237737
+                ],
+                "nfev": 7,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 0.015284104096613026,
+                "parameters": [
+                  0.9275805833535545,
+                  1.0148118997256015
+                ],
+                "nfev": 9,
+                "message": "`ftol` termination condition is satisfied."
+              }
+            ],
+            "parameters": [
+              0.9275805845056477,
+              1.014811910393952
+            ],
+            "rss": 0.01528410409661301,
+            "aic": -24.95189925516076,
+            "predictions": [
+              0.5630330768112045,
+              0.45197830064414546,
+              0.3362206913606871
+            ]
+          },
+          {
+            "components": 2,
+            "success": true,
+            "attempts": [
+              {
+                "success": true,
+                "rss": 2.6922180481915714e-06,
+                "parameters": [
+                  0.7944570577588516,
+                  0.20554293310294455,
+                  0.14201830143007058,
+                  91.28171004484567
+                ],
+                "nfev": 29,
+                "message": "`gtol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 2.692218048191313e-06,
+                "parameters": [
+                  0.7944570582579787,
+                  0.20554293260416776,
+                  0.1420183044867443,
+                  91.28172492771901
+                ],
+                "nfev": 21,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 2.7633773097700388e-06,
+                "parameters": [
+                  0.7949569894593274,
+                  0.20504301090912652,
+                  0.1450818175819957,
+                  463.4403951927086
+                ],
+                "nfev": 1394,
+                "message": "`ftol` termination condition is satisfied."
+              }
+            ],
+            "parameters": [
+              0.7944570582579787,
+              0.20554293260416776,
+              0.1420183044867443,
+              91.28172492771901
+            ],
+            "rss": 2.692218048191313e-06,
+            "aic": -64.1729153165546,
+            "predictions": [
+              0.7408457138988837,
+              0.7184138439509804,
+              0.6892752141653966
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "temperature_K": 323,
+    "window_fraction": 0.1,
+    "fits": {
+      "nnls": {
+        "success": true,
+        "training_residual": 0.0008146903107223363
+      },
+      "ridge": {
+        "success": true,
+        "message": "The first-order optimality measure is less than `tol`."
+      },
+      "prony": {
+        "success": true,
+        "candidates": [
+          {
+            "components": 1,
+            "success": true,
+            "attempts": [
+              {
+                "success": true,
+                "rss": 0.024035784662083413,
+                "parameters": [
+                  0.9164517423977515,
+                  4.111355483544187
+                ],
+                "nfev": 9,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 0.02403578466208336,
+                "parameters": [
+                  0.9164517454371905,
+                  4.111355563872995
+                ],
+                "nfev": 9,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 0.024035784662083347,
+                "parameters": [
+                  0.9164517448778372,
+                  4.111355557525393
+                ],
+                "nfev": 8,
+                "message": "`ftol` termination condition is satisfied."
+              }
+            ],
+            "parameters": [
+              0.9164517448778372,
+              4.111355557525393
+            ],
+            "rss": 0.024035784662083347,
+            "aic": -22.6882472197971,
+            "predictions": [
+              0.1262191939711181,
+              0.052747861372961814,
+              0.015016563974905115
+            ]
+          },
+          {
+            "components": 2,
+            "success": true,
+            "attempts": [
+              {
+                "success": true,
+                "rss": 6.374144385812301e-07,
+                "parameters": [
+                  0.713396361984758,
+                  0.2866038622421778,
+                  0.5553951355050232,
+                  129.3760128609387
+                ],
+                "nfev": 30,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 6.374144385812246e-07,
+                "parameters": [
+                  0.7133963616256268,
+                  0.2866038626012214,
+                  0.555395128913798,
+                  129.37601198628698
+                ],
+                "nfev": 20,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 6.374144385810745e-07,
+                "parameters": [
+                  0.7133963616443096,
+                  0.2866038625894055,
+                  0.5553951282800638,
+                  129.37601266426418
+                ],
+                "nfev": 11,
+                "message": "`ftol` termination condition is satisfied."
+              }
+            ],
+            "parameters": [
+              0.7133963616443096,
+              0.2866038625894055,
+              0.5553951282800638,
+              129.37601266426418
+            ],
+            "rss": 6.374144385810745e-07,
+            "aic": -71.37641847672953,
+            "predictions": [
+              0.5457857439886338,
+              0.4851036458004653,
+              0.4093792731687014
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "temperature_K": 323,
+    "window_fraction": 0.25,
+    "fits": {
+      "nnls": {
+        "success": true,
+        "training_residual": 0.0
+      },
+      "ridge": {
+        "success": true,
+        "message": "The first-order optimality measure is less than `tol`."
+      },
+      "prony": {
+        "success": true,
+        "candidates": [
+          {
+            "components": 1,
+            "success": true,
+            "attempts": [
+              {
+                "success": true,
+                "rss": 0.02739124896961282,
+                "parameters": [
+                  0.9124092837502652,
+                  1.8939928341335333
+                ],
+                "nfev": 9,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 0.027391248969612814,
+                "parameters": [
+                  0.9124092845166962,
+                  1.8939928434159767
+                ],
+                "nfev": 9,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 0.02739124896961282,
+                "parameters": [
+                  0.9124092869204088,
+                  1.8939928719362058
+                ],
+                "nfev": 8,
+                "message": "`ftol` termination condition is satisfied."
+              }
+            ],
+            "parameters": [
+              0.9124092845166962,
+              1.8939928434159767
+            ],
+            "rss": 0.027391248969612814,
+            "aic": -22.034848048530733,
+            "predictions": [
+              0.36606400810152007,
+              0.24490539351984733,
+              0.1372900474969879
+            ]
+          },
+          {
+            "components": 2,
+            "success": true,
+            "attempts": [
+              {
+                "success": true,
+                "rss": 5.557585350387497e-07,
+                "parameters": [
+                  0.6880237428038295,
+                  0.31197597101788954,
+                  0.2755830101032011,
+                  49.438685961389794
+                ],
+                "nfev": 20,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 5.557585350387649e-07,
+                "parameters": [
+                  0.6880237421505073,
+                  0.31197597166724084,
+                  0.2755830052519416,
+                  49.43868540274632
+                ],
+                "nfev": 15,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 5.557585350389276e-07,
+                "parameters": [
+                  0.6880237418316301,
+                  0.3119759719818954,
+                  0.2755830031187888,
+                  49.43868501670472
+                ],
+                "nfev": 22,
+                "message": "`ftol` termination condition is satisfied."
+              }
+            ],
+            "parameters": [
+              0.6880237428038295,
+              0.31197597101788954,
+              0.2755830101032011,
+              49.438685961389794
+            ],
+            "rss": 5.557585350387497e-07,
+            "aic": -72.0618491947979,
+            "predictions": [
+              0.6024096163571374,
+              0.568189178389907,
+              0.5222990607392091
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "temperature_K": 333,
+    "window_fraction": 0.1,
+    "fits": {
+      "nnls": {
+        "success": true,
+        "training_residual": 0.0035863598057836615
+      },
+      "ridge": {
+        "success": true,
+        "message": "The first-order optimality measure is less than `tol`."
+      },
+      "prony": {
+        "success": true,
+        "candidates": [
+          {
+            "components": 1,
+            "success": true,
+            "attempts": [
+              {
+                "success": true,
+                "rss": 0.04785381415650717,
+                "parameters": [
+                  0.8955171317248602,
+                  8.301099585614596
+                ],
+                "nfev": 11,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 0.04785381415650705,
+                "parameters": [
+                  0.895517135090556,
+                  8.301099706788856
+                ],
+                "nfev": 11,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 0.04785381415650704,
+                "parameters": [
+                  0.8955171348489015,
+                  8.301099697670573
+                ],
+                "nfev": 10,
+                "message": "`ftol` termination condition is satisfied."
+              }
+            ],
+            "parameters": [
+              0.8955171348489015,
+              8.301099697670573
+            ],
+            "rss": 0.04785381415650704,
+            "aic": -19.245211830021,
+            "predictions": [
+              0.016358367955481578,
+              0.0028096675795049823,
+              0.00022230647259260648
+            ]
+          },
+          {
+            "components": 2,
+            "success": true,
+            "attempts": [
+              {
+                "success": true,
+                "rss": 1.2362320995282174e-06,
+                "parameters": [
+                  0.5738338964624573,
+                  0.4261660221688228,
+                  1.6039664474345496,
+                  154.7448155572513
+                ],
+                "nfev": 30,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 1.2362320995284285e-06,
+                "parameters": [
+                  0.5738338972844562,
+                  0.4261660213480746,
+                  1.603966465890763,
+                  154.74481847734137
+                ],
+                "nfev": 16,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 1.2362320995282587e-06,
+                "parameters": [
+                  0.573833895653291,
+                  0.4261660229774572,
+                  1.6039664289608682,
+                  154.74481288130227
+                ],
+                "nfev": 14,
+                "message": "`ftol` termination condition is satisfied."
+              }
+            ],
+            "parameters": [
+              0.5738338964624573,
+              0.4261660221688228,
+              1.6039664474345496,
+              154.7448155572513
+            ],
+            "rss": 1.2362320995282174e-06,
+            "aic": -68.06440173101018,
+            "predictions": [
+              0.26478870838262597,
+              0.1883940375844103,
+              0.11539644272837861
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "temperature_K": 333,
+    "window_fraction": 0.25,
+    "fits": {
+      "nnls": {
+        "success": true,
+        "training_residual": 0.0044267872582953675
+      },
+      "ridge": {
+        "success": true,
+        "message": "The first-order optimality measure is less than `tol`."
+      },
+      "prony": {
+        "success": true,
+        "candidates": [
+          {
+            "components": 1,
+            "success": true,
+            "attempts": [
+              {
+                "success": true,
+                "rss": 0.05702641391603801,
+                "parameters": [
+                  0.8909180085679537,
+                  3.8943626069563604
+                ],
+                "nfev": 11,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 0.05702641391603794,
+                "parameters": [
+                  0.8909180100462478,
+                  3.8943626302511545
+                ],
+                "nfev": 11,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 0.05702641391603813,
+                "parameters": [
+                  0.8909180058937025,
+                  3.8943625646978726
+                ],
+                "nfev": 9,
+                "message": "`ftol` termination condition is satisfied."
+              }
+            ],
+            "parameters": [
+              0.8909180100462478,
+              3.8943626302511545
+            ],
+            "rss": 0.05702641391603794,
+            "aic": -18.368393144417492,
+            "predictions": [
+              0.13624449386014723,
+              0.05961950641191154,
+              0.018135834231010874
+            ]
+          },
+          {
+            "components": 2,
+            "success": true,
+            "attempts": [
+              {
+                "success": true,
+                "rss": 1.9573697855149336e-05,
+                "parameters": [
+                  0.5269188716696397,
+                  0.4730813375014718,
+                  0.6594237354888935,
+                  65.3891116375545
+                ],
+                "nfev": 22,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 1.9573697855150884e-05,
+                "parameters": [
+                  0.5269188684306939,
+                  0.4730813407369777,
+                  0.6594237035262408,
+                  65.3891065282635
+                ],
+                "nfev": 13,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 1.9573697855149726e-05,
+                "parameters": [
+                  0.526918871291115,
+                  0.47308133787919177,
+                  0.6594237318685288,
+                  65.38911095482342
+                ],
+                "nfev": 14,
+                "message": "`ftol` termination condition is satisfied."
+              }
+            ],
+            "parameters": [
+              0.5269188716696397,
+              0.4730813375014718,
+              0.6594237354888935,
+              65.3891116375545
+            ],
+            "rss": 1.9573697855149336e-05,
+            "aic": -54.25380875771927,
+            "predictions": [
+              0.38340147373491307,
+              0.333331888617744,
+              0.2724957063597132
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "temperature_K": 343,
+    "window_fraction": 0.1,
+    "fits": {
+      "nnls": {
+        "success": true,
+        "training_residual": 0.00305002320622009
+      },
+      "ridge": {
+        "success": true,
+        "message": "The first-order optimality measure is less than `tol`."
+      },
+      "prony": {
+        "success": true,
+        "candidates": [
+          {
+            "components": 1,
+            "success": true,
+            "attempts": [
+              {
+                "success": true,
+                "rss": 0.05100673336163958,
+                "parameters": [
+                  0.8984713829459536,
+                  10.166021781757127
+                ],
+                "nfev": 12,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 0.051006733361639536,
+                "parameters": [
+                  0.8984713833517848,
+                  10.16602181369272
+                ],
+                "nfev": 12,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 0.05100673336163933,
+                "parameters": [
+                  0.8984713904074787,
+                  10.166022071553309
+                ],
+                "nfev": 11,
+                "message": "`ftol` termination condition is satisfied."
+              }
+            ],
+            "parameters": [
+              0.8984713904074787,
+              10.166022071553309
+            ],
+            "rss": 0.05100673336163933,
+            "aic": -18.926177703539295,
+            "predictions": [
+              0.006678566274064627,
+              0.0007721540605056431,
+              3.455070902256067e-05
+            ]
+          },
+          {
+            "components": 2,
+            "success": true,
+            "attempts": [
+              {
+                "success": true,
+                "rss": 1.6192037443086944e-05,
+                "parameters": [
+                  0.5191572128774316,
+                  0.4808400789810701,
+                  1.803667222842848,
+                  111.77644720366423
+                ],
+                "nfev": 28,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 1.6192037443087225e-05,
+                "parameters": [
+                  0.519157212307033,
+                  0.4808400795289746,
+                  1.8036672107677643,
+                  111.77644637529703
+                ],
+                "nfev": 15,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 1.6192037443087588e-05,
+                "parameters": [
+                  0.5191572126770588,
+                  0.4808400791538932,
+                  1.8036672217980818,
+                  111.77644644418858
+                ],
+                "nfev": 9,
+                "message": "`ftol` termination condition is satisfied."
+              }
+            ],
+            "parameters": [
+              0.5191572128774316,
+              0.4808400789810701,
+              1.803667222842848,
+              111.77644720366423
+            ],
+            "rss": 1.6192037443086944e-05,
+            "aic": -55.20214432426191,
+            "predictions": [
+              0.21757101701425177,
+              0.14837512913543704,
+              0.08550197964684818
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "temperature_K": 343,
+    "window_fraction": 0.25,
+    "fits": {
+      "nnls": {
+        "success": true,
+        "training_residual": 0.0
+      },
+      "ridge": {
+        "success": true,
+        "message": "The first-order optimality measure is less than `tol`."
+      },
+      "prony": {
+        "success": true,
+        "candidates": [
+          {
+            "components": 1,
+            "success": true,
+            "attempts": [
+              {
+                "success": true,
+                "rss": 0.061143373175639185,
+                "parameters": [
+                  0.8963028067975325,
+                  4.941392608848622
+                ],
+                "nfev": 12,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 0.06114337317563914,
+                "parameters": [
+                  0.8963028071249277,
+                  4.941392626133788
+                ],
+                "nfev": 12,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 0.06114337317563878,
+                "parameters": [
+                  0.8963028163602278,
+                  4.941392791970709
+                ],
+                "nfev": 11,
+                "message": "`ftol` termination condition is satisfied."
+              }
+            ],
+            "parameters": [
+              0.8963028163602278,
+              4.941392791970709
+            ],
+            "rss": 0.06114337317563878,
+            "aic": -18.01985852568442,
+            "predictions": [
+              0.08273702389554954,
+              0.028990979462458627,
+              0.00640376134952667
+            ]
+          },
+          {
+            "components": 2,
+            "success": true,
+            "attempts": [
+              {
+                "success": true,
+                "rss": 6.899622008224334e-07,
+                "parameters": [
+                  0.47558049685355236,
+                  0.5244193718617399,
+                  0.9005915958818073,
+                  56.034819238080836
+                ],
+                "nfev": 19,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 6.899622008224504e-07,
+                "parameters": [
+                  0.47558049698307925,
+                  0.5244193717326148,
+                  0.9005915971575489,
+                  56.03481936838472
+                ],
+                "nfev": 12,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 6.899622008224892e-07,
+                "parameters": [
+                  0.47558049765224836,
+                  0.5244193710638473,
+                  0.9005916044317644,
+                  56.0348198764508
+                ],
+                "nfev": 14,
+                "message": "`ftol` termination condition is satisfied."
+              }
+            ],
+            "parameters": [
+              0.47558049685355236,
+              0.5244193718617399,
+              0.9005915958818073,
+              56.034819238080836
+            ],
+            "rss": 6.899622008224334e-07,
+            "aic": -70.98033467353264,
+            "predictions": [
+              0.3080599183355471,
+              0.254465965243671,
+              0.19324224564561918
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "temperature_K": 353,
+    "window_fraction": 0.1,
+    "fits": {
+      "nnls": {
+        "success": true,
+        "training_residual": 0.0022669805609865723
+      },
+      "ridge": {
+        "success": true,
+        "message": "The first-order optimality measure is less than `tol`."
+      },
+      "prony": {
+        "success": true,
+        "candidates": [
+          {
+            "components": 1,
+            "success": true,
+            "attempts": [
+              {
+                "success": true,
+                "rss": 0.008857348320576856,
+                "parameters": [
+                  0.9981913405300307,
+                  71.6712788198363
+                ],
+                "nfev": 17,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 0.008857348320576844,
+                "parameters": [
+                  0.9981913406849875,
+                  71.67127900189101
+                ],
+                "nfev": 17,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 0.0088573483205768,
+                "parameters": [
+                  0.9981913414316653,
+                  71.67128015675358
+                ],
+                "nfev": 16,
+                "message": "`ftol` termination condition is satisfied."
+              }
+            ],
+            "parameters": [
+              0.9981913414316653,
+              71.67128015675358
+            ],
+            "rss": 0.0088573483205768,
+            "aic": -27.679728791055197,
+            "predictions": [
+              9.80401153773607e-16,
+              2.429502731645767e-22,
+              7.46057525288699e-32
+            ]
+          },
+          {
+            "components": 2,
+            "success": true,
+            "attempts": [
+              {
+                "success": true,
+                "rss": 5.070524945775253e-06,
+                "parameters": [
+                  0.12761966073527448,
+                  0.8723810330022582,
+                  9.993019308829401,
+                  122.49323750066439
+                ],
+                "nfev": 17,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 5.0705249457752505e-06,
+                "parameters": [
+                  0.1276196611297034,
+                  0.8723810326070938,
+                  9.9930193519805,
+                  122.49323768777049
+                ],
+                "nfev": 16,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 0.0001208423317926866,
+                "parameters": [
+                  0.19956020679765438,
+                  0.8004397964596283,
+                  16.0031374929942,
+                  1281.1148368010054
+                ],
+                "nfev": 1637,
+                "message": "`ftol` termination condition is satisfied."
+              }
+            ],
+            "parameters": [
+              0.1276196611297034,
+              0.8723810326070938,
+              9.9930193519805,
+              122.49323768777049
+            ],
+            "rss": 5.0705249457752505e-06,
+            "aic": -61.00752059277248,
+            "predictions": [
+              0.0010313381829546596,
+              0.00012369502629514103,
+              5.834510489665329e-06
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "temperature_K": 353,
+    "window_fraction": 0.25,
+    "fits": {
+      "nnls": {
+        "success": true,
+        "training_residual": 0.001889062633017537
+      },
+      "ridge": {
+        "success": true,
+        "message": "The first-order optimality measure is less than `tol`."
+      },
+      "prony": {
+        "success": true,
+        "candidates": [
+          {
+            "components": 1,
+            "success": true,
+            "attempts": [
+              {
+                "success": true,
+                "rss": 0.001541378185179291,
+                "parameters": [
+                  0.9998461265904044,
+                  40.77187956400448
+                ],
+                "nfev": 14,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 0.0015413781851792907,
+                "parameters": [
+                  0.9998461266090062,
+                  40.771879596541886
+                ],
+                "nfev": 14,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 0.0015413781851792907,
+                "parameters": [
+                  0.9998461266494805,
+                  40.7718797351148
+                ],
+                "nfev": 13,
+                "message": "`ftol` termination condition is satisfied."
+              }
+            ],
+            "parameters": [
+              0.9998461266090062,
+              40.771879596541886
+            ],
+            "rss": 0.0015413781851792907,
+            "aic": -36.4225812487831,
+            "predictions": [
+              2.8999490705383373e-09,
+              5.063814451185213e-13,
+              1.9630476559876943e-18
+            ]
+          },
+          {
+            "components": 2,
+            "success": true,
+            "attempts": [
+              {
+                "success": true,
+                "rss": 4.862294197003676e-06,
+                "parameters": [
+                  0.11195557971109066,
+                  0.8880444151221544,
+                  8.788830494509686,
+                  83.82527585677101
+                ],
+                "nfev": 23,
+                "message": "`gtol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 5.594392440114294e-06,
+                "parameters": [
+                  0.12266046146207792,
+                  0.8773395401681645,
+                  9.320212986758541,
+                  556.7569687897736
+                ],
+                "nfev": 4346,
+                "message": "`ftol` termination condition is satisfied."
+              },
+              {
+                "success": true,
+                "rss": 5.594392432706205e-06,
+                "parameters": [
+                  0.12266019767101743,
+                  0.8773398023287599,
+                  9.320189674199172,
+                  640.8713094333925
+                ],
+                "nfev": 3367,
+                "message": "`ftol` termination condition is satisfied."
+              }
+            ],
+            "parameters": [
+              0.11195557971109066,
+              0.8880444151221544,
+              8.788830494509686,
+              83.82527585677101
+            ],
+            "rss": 4.862294197003676e-06,
+            "aic": -61.21719043436592,
+            "predictions": [
+              0.00161690229389642,
+              0.00025039408914772217,
+              1.7064955375356955e-05
+            ]
+          }
+        ]
+      }
+    }
+  }
+]

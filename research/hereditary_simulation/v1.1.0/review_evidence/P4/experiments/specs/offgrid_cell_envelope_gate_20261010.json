@@ -1,0 +1,24 @@
+{
+  "status": "Frozen before first run; do not tune from results",
+  "parent_spec": "calibrated_multiload_gate_20261010.json",
+  "method": "positive cell-mass LP with rigorous termwise piecewise-linear-input rate-cell envelopes",
+  "rate_support": "closed interval from first to last frozen grid rate",
+  "cell_boundaries": "geometric midpoint of adjacent frozen rates",
+  "truths": ["on_grid", "off_grid"],
+  "excluded_truth": "stretched has spectral mass outside the prespecified bounded support",
+  "designs": ["single_ramp_hold", "ramp_hold_plus_cycle"],
+  "replicates": 128,
+  "targets": ["G20", "heldout_sigma20"],
+  "comparison": "paired with frozen sensor-only LP on identical calibration and observation seeds",
+  "coverage_gate": "all trials with a valid sensor-noise amplitude bound must include both true targets",
+  "utility_gate": {
+    "off_grid_G20_mean_width_feasible_max": 0.2,
+    "off_grid_heldout_sigma20_mean_width_feasible_max": 0.1
+  },
+  "stop_rules": [
+    "Do not claim unconditional or distribution-free coverage",
+    "Do not apply bounded-support guarantee to stretched-exponential truth",
+    "Do not change support, cells, noise, inputs, seeds, or width thresholds after observing results",
+    "A valid but excessively wide interval is not a successful P4 method contribution"
+  ]
+}

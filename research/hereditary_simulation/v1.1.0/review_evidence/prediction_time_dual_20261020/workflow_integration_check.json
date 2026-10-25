@@ -1,0 +1,734 @@
+{
+  "all_checks_passed": true,
+  "workflow_cases": 72,
+  "checks": [
+    {
+      "scenario": "two_rate_p0_g0",
+      "rho": 0.0,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "two_rate_p0_g0",
+      "rho": 0.03,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "two_rate_p0_g0",
+      "rho": 0.06,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "two_rate_p0_g1",
+      "rho": 0.0,
+      "applicable": true,
+      "attempted_targets": 31,
+      "resolved_sufficient": 7,
+      "resolved_insufficient": 24,
+      "additional_endpoint_LPs": 64,
+      "residual_cells": 1563
+    },
+    {
+      "scenario": "two_rate_p0_g1",
+      "rho": 0.03,
+      "applicable": true,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "two_rate_p0_g1",
+      "rho": 0.06,
+      "applicable": true,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "two_rate_p1_g0",
+      "rho": 0.0,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "two_rate_p1_g0",
+      "rho": 0.03,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "two_rate_p1_g0",
+      "rho": 0.06,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "two_rate_p1_g1",
+      "rho": 0.0,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "two_rate_p1_g1",
+      "rho": 0.03,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "two_rate_p1_g1",
+      "rho": 0.06,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "two_rate_p2_g0",
+      "rho": 0.0,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "two_rate_p2_g0",
+      "rho": 0.03,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "two_rate_p2_g0",
+      "rho": 0.06,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "two_rate_p2_g1",
+      "rho": 0.0,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "two_rate_p2_g1",
+      "rho": 0.03,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "two_rate_p2_g1",
+      "rho": 0.06,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "wide_rate_p0_g0",
+      "rho": 0.0,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "wide_rate_p0_g0",
+      "rho": 0.03,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "wide_rate_p0_g0",
+      "rho": 0.06,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "wide_rate_p0_g1",
+      "rho": 0.0,
+      "applicable": true,
+      "attempted_targets": 16,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 16,
+      "additional_endpoint_LPs": 32,
+      "residual_cells": 745
+    },
+    {
+      "scenario": "wide_rate_p0_g1",
+      "rho": 0.03,
+      "applicable": true,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "wide_rate_p0_g1",
+      "rho": 0.06,
+      "applicable": true,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "wide_rate_p1_g0",
+      "rho": 0.0,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "wide_rate_p1_g0",
+      "rho": 0.03,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "wide_rate_p1_g0",
+      "rho": 0.06,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "wide_rate_p1_g1",
+      "rho": 0.0,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "wide_rate_p1_g1",
+      "rho": 0.03,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "wide_rate_p1_g1",
+      "rho": 0.06,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "wide_rate_p2_g0",
+      "rho": 0.0,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "wide_rate_p2_g0",
+      "rho": 0.03,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "wide_rate_p2_g0",
+      "rho": 0.06,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "wide_rate_p2_g1",
+      "rho": 0.0,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "wide_rate_p2_g1",
+      "rho": 0.03,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "wide_rate_p2_g1",
+      "rho": 0.06,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "uniform_p0_g0",
+      "rho": 0.0,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "uniform_p0_g0",
+      "rho": 0.03,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "uniform_p0_g0",
+      "rho": 0.06,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "uniform_p0_g1",
+      "rho": 0.0,
+      "applicable": true,
+      "attempted_targets": 11,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 11,
+      "additional_endpoint_LPs": 22,
+      "residual_cells": 578
+    },
+    {
+      "scenario": "uniform_p0_g1",
+      "rho": 0.03,
+      "applicable": true,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "uniform_p0_g1",
+      "rho": 0.06,
+      "applicable": true,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "uniform_p1_g0",
+      "rho": 0.0,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "uniform_p1_g0",
+      "rho": 0.03,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "uniform_p1_g0",
+      "rho": 0.06,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "uniform_p1_g1",
+      "rho": 0.0,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "uniform_p1_g1",
+      "rho": 0.03,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "uniform_p1_g1",
+      "rho": 0.06,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "uniform_p2_g0",
+      "rho": 0.0,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "uniform_p2_g0",
+      "rho": 0.03,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "uniform_p2_g0",
+      "rho": 0.06,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "uniform_p2_g1",
+      "rho": 0.0,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "uniform_p2_g1",
+      "rho": 0.03,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "uniform_p2_g1",
+      "rho": 0.06,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "logwide_p0_g0",
+      "rho": 0.0,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "logwide_p0_g0",
+      "rho": 0.03,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "logwide_p0_g0",
+      "rho": 0.06,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "logwide_p0_g1",
+      "rho": 0.0,
+      "applicable": true,
+      "attempted_targets": 18,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 18,
+      "additional_endpoint_LPs": 36,
+      "residual_cells": 856
+    },
+    {
+      "scenario": "logwide_p0_g1",
+      "rho": 0.03,
+      "applicable": true,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "logwide_p0_g1",
+      "rho": 0.06,
+      "applicable": true,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "logwide_p1_g0",
+      "rho": 0.0,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "logwide_p1_g0",
+      "rho": 0.03,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "logwide_p1_g0",
+      "rho": 0.06,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "logwide_p1_g1",
+      "rho": 0.0,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "logwide_p1_g1",
+      "rho": 0.03,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "logwide_p1_g1",
+      "rho": 0.06,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "logwide_p2_g0",
+      "rho": 0.0,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "logwide_p2_g0",
+      "rho": 0.03,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "logwide_p2_g0",
+      "rho": 0.06,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "logwide_p2_g1",
+      "rho": 0.0,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "logwide_p2_g1",
+      "rho": 0.03,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    },
+    {
+      "scenario": "logwide_p2_g1",
+      "rho": 0.06,
+      "applicable": false,
+      "attempted_targets": 0,
+      "resolved_sufficient": 0,
+      "resolved_insufficient": 0,
+      "additional_endpoint_LPs": 0,
+      "residual_cells": 0
+    }
+  ],
+  "bindings": {
+    "experiments/prediction_time_polish.py": "f855c614e898b0dbc56158e621ee2744d277baeea665ba3b4d381365b6245779",
+    "tools/search_prediction_times.py": "e3f69b0c3cb1a8a5b6fcb051e4853fb9ba14928edcba527d4d2941b2bd3a728a",
+    "tests/test_prediction_time_polish.py": "03876999dfddce8a5b435e1a26ec1ead3d45905559caab6642b209c3acf05f24"
+  },
+  "additional_endpoint_LPs": 154,
+  "additional_sufficient": 7,
+  "additional_insufficient": 69
+}

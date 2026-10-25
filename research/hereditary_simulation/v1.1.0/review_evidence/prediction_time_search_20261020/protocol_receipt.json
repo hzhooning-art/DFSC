@@ -1,0 +1,12 @@
+{
+  "schema": "P4-prediction-time-search-protocol-receipt-v1",
+  "bindings": {
+    "experiments/specs/prediction_time_search_20261020.json": "d0f0dfa8733663e029a379ca12073ddd92c08d323a0530ad96918296a95277e9",
+    "experiments/run_prediction_time_search.py": "5b078669387ea4de43f138467d300732beeeb537647616b577a487c24f501e1e",
+    "experiments/prediction_time_search.py": "d7741592ce4bab8a64bc13924ce4e772921cfb2e0a73f4662a7acf546099f8da",
+    "experiments/observation_weighted_prediction.py": "15850d36e783038b319212da69987937b0041b8879b4d135612c065b6ce91e01",
+    "experiments/specs/observation_weighted_prediction_20261011.json": "d99ea08f60e6eb3c2d16baf3980244117097f3e2f2deabe4b0cc74a59fddd5be"
+  },
+  "scope": "Exploratory method-development study; protocol fixed before this execution, not a preregistered external study",
+  "frozen_before_numerical_execution": true
+}

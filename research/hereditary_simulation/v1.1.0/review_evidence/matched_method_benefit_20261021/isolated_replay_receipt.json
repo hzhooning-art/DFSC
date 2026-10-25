@@ -1,0 +1,20 @@
+{
+  "matched_method_benefit_20261021/run_01": {
+    "deterministic_outcomes_match": true,
+    "all_saved_arrays_match": true,
+    "isolated_audit_passed": true,
+    "timings_allowed_to_vary": true,
+    "physical_validation_passed": null,
+    "original_result_sha256": "dd5a9aaca4a968ead10e6eb9d2f3e9cdef5a7d9a4793f81c36148f3e2cc72d74",
+    "replayed_result_sha256": "d8dfc8f66fa918a3ad40186e51ccbcaffb05cff8746711878ec9f4533f784cc3"
+  },
+  "orbital_hold_pilot_20261021": {
+    "deterministic_outcomes_match": true,
+    "all_saved_arrays_match": true,
+    "isolated_audit_passed": true,
+    "timings_allowed_to_vary": true,
+    "physical_validation_passed": false,
+    "original_result_sha256": "7d9b0ae0309bf2d2efd5e7c4628ea7ab8d4479fcbf2bf042c5d00295661ea76b",
+    "replayed_result_sha256": "6dc50c0f9224bec20ea2b9dabf6185c2258359f3e5aac1dcde1feac5b2aa4607"
+  }
+}

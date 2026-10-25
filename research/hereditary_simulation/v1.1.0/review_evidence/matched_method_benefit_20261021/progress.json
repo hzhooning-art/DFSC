@@ -1,0 +1,17 @@
+{
+  "completed_workflows": 48,
+  "last": {
+    "repetition": 2,
+    "scenario": "logwide",
+    "rho": 0.03,
+    "algorithm": "loading_guided_reuse",
+    "endpoint_programs": 44,
+    "total_seconds": 0.13804659998277202,
+    "states": {
+      "unbounded": 1,
+      "insufficient": 72,
+      "sufficient": 0,
+      "unresolved": 0
+    }
+  }
+}

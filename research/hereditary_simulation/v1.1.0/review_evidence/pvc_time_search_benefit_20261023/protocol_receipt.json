@@ -1,0 +1,16 @@
+{
+  "bindings": {
+    "experiments/specs/pvc_time_search_benefit_20261023.json": "4015bc121119eedc68ddb21fa7ac7d40b3917ebde16e1df644db554d0c0ae972",
+    "experiments/run_pvc_time_search_benefit_20261023.py": "530708179a5fe7b6a21dc260e945f70fbc14253d897c083cebc12ab9fde4d7dd",
+    "experiments/specs/polymer_glass_hold_20261021.json": "ff225ea6355a72ee12933238e6903d1ca63e086c18a04d5878eb6b5f11c18be1",
+    "results/polymer_glass_hold_20261021/extracted.json": "90da4f73a4910194b0285e050985a68d9bb32fbe95f5c757e96a43078266dda2",
+    "experiments/run_matched_method_benefit_20261021.py": "d4931c85b64a16d4342147632d36cac01fbeb0a4db597431ba19205ba9320468",
+    "experiments/prediction_time_search.py": "d7741592ce4bab8a64bc13924ce4e772921cfb2e0a73f4662a7acf546099f8da",
+    "experiments/prediction_time_dual.py": "113ec473f7625fa1707c6b5a41c4f9e843c35fc69e92aa3c1cdc8513795ea878",
+    "experiments/prediction_time_transport.py": "81b732f59e77d981251b65009f3e1371afa4ef403d3c1be6afe9789c6b0ade73",
+    "experiments/observation_weighted_prediction.py": "15850d36e783038b319212da69987937b0041b8879b4d135612c065b6ce91e01"
+  },
+  "frozen_before_this_study_execution": true,
+  "previous_material_results_known": true,
+  "claim_ceiling": "Conditional task-cost benefit only. Existing real measurements and assumed observation bands do not establish calibrated material guarantees. Earlier responses/results were already inspected, so this is exploratory and not independent validation. Temporal reuse is available to classical solvers too; no claim of unique capability or a universal speedup"
+}

@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-21",
+  "purpose": "Fair strong nearest-framework adaptation and real completed-check task benefit, not another weak interval-LP ablation",
+  "parent_result": "results/prediction_time_transport_20261020/run_02/result.json",
+  "truth_spec": "experiments/specs/observation_weighted_prediction_20261011.json",
+  "observation_delays": [0.0, 0.5, 1.0, 2.0, 4.0],
+  "rhos": [0.0, 0.03],
+  "absolute": 0.025,
+  "relative": 0.05,
+  "levels": [128, 512, 2048],
+  "tail_exponent": 20.0,
+  "residual_tolerance": 0.0000001,
+  "max_certificate_cells": 4096,
+  "repetitions": 3,
+  "endpoint_program_budgets": [8, 16, 32, 64, 128, 256, 512],
+  "wall_second_budgets": [0.25, 0.5, 1.0, 2.0, 4.0, 8.0, 16.0, 32.0],
+  "contract": "Both use identical full-halfline continuous dual validation, target-completed finite physical witnesses, observation error bands, mesh/refinement limits, joint tolerances, same preflight phase gate and single-thread environment. Pointwise comparator uses endpoints then median among unresolved uncomputed candidates. Only loading-guided cross-time transport changes. No cross-algorithm numerical cache. Whole-cell and secant checking costs included. Each algorithm starts a fresh strict-feasibility solve. Warmup and disk serialization excluded identically. Three AB/BA/AB timing repeats in the same process; not fresh-process or independent-machine repetitions.",
+  "criteria": ["Report all opposite decisive labels, losses and failures", "Replay all retained LPs and continuous residual cells", "Check all positive decisions against generating truths and both input-envelope endpoint scalings", "Compare full task elapsed time including setup and scheduling", "At each preregistered budget count completed decisive requests and sufficient predictions; never count an unfinished LP or certificate", "Freeze before this study's first execution; inherited truths and earlier results are already known, so this is exploratory not blind"],
+  "limitations": ["Four previously used synthetic spectra, four same-profile observation sets and two correlated input-envelope settings; 584 correlated target requests are not 584 independent trials", "Our adaptation of the nearest classical framework, not the authors original code or a global best-possible implementation", "Same-profile temporal transport can also be added to other classical solvers; cannot establish that prior frameworks are incapable of these tasks", "No claim of earlier first sufficient time, improved point prediction, continuum optimum or universal acceleration", "Floating-point replay is not directed rounding", "Timing is machine-specific and three repeats do not establish a population runtime guarantee", "Real material validity is assessed separately; synthetic timing does not fill its information gap"]
+}

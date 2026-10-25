@@ -1,0 +1,21 @@
+{
+  "schema": "P4-delayed-rectangle-control-audit-v1",
+  "result_sha256": "41db5003f87f6be45bc4577fbb6903e0581da311ce5d6638833b13f3ef67192c",
+  "source_sha256": "366b8ed7af4134a212d9bdd989b6579ab854d1df2883e56e9402a810092a9561",
+  "LPs_replayed": 128,
+  "physical_inner_endpoints": 64,
+  "independent_observation_checks": 40,
+  "independent_ratio_checks": 652,
+  "inherited_rows_checked": 64,
+  "max_residuals": {
+    "primal": 1.5543122344752192e-15,
+    "stationarity": 1.6028602493096554e-09,
+    "gap": 1.5654144647214707e-14,
+    "sign": 9.265577194383923e-11,
+    "physical_excess": 1.4519635493925875e-15,
+    "physical_target_error": 2.220446049250313e-16
+  },
+  "max_finest_endpoint_bracket": 0.00011798938399421033,
+  "all_checks_pass": true,
+  "limits": "Same developer alternative time integral; frozen parent rows hash/equality checked, not rerun. No directed rounding or external proof review."
+}

@@ -1,0 +1,38 @@
+{
+  "schema": "P4-continuous-dual-spec-v1",
+  "date": "2026-10-20",
+  "scope": "Exploratory follow-up to 76 identical-profile unresolved requests; a disposable probe preceded this freeze and is not confirmatory evidence",
+  "parent_result": "results/prediction_time_transport_20261020/run_02/result.json",
+  "truth_spec": "observation_weighted_prediction_20261011.json",
+  "reference_orders": [0, 1, 2],
+  "reference_dead_time": 0.1,
+  "observation_delays_from_anchor": [0.0, 0.5, 1.0, 2.0, 4.0],
+  "observation_half_width": 0.01,
+  "absolute_error_tolerance": 0.025,
+  "relative_error_tolerance": 0.05,
+  "parent_rhos": [0.0, 0.03, 0.06],
+  "additional_excess_delays": [0.0015, 0.006, 0.025, 0.075, 0.25, 0.75, 2.5],
+  "additional_rhos": [0.0, 0.03],
+  "mesh_levels": [128, 512, 2048],
+  "tail_exponent": 20.0,
+  "residual_tolerance": 0.0000001,
+  "max_certificate_cells": 4096,
+  "numerical_margin": 0.0000002,
+  "algorithms": ["uniform_interval", "tail_completed_interval", "continuous_dual"],
+  "comparison_contract": "Same observations, declared positive-spectrum class, targets, margins and progressive nominal node budgets. Completed methods add one finite target-aware witness atom, never impose a rate cap. Uniform interval uses four LPs per level. Tail-completed interval uses two outer interval LPs plus two completed finite-node LPs; continuous dual uses two completed finite-node LPs and whole-halfline residual checking. Count residual cells separately from LP variables; no wall-clock speed claim.",
+  "go_criteria": [
+    "Report every sufficient/insufficient/unresolved outcome including lost resolved decisions and opposite decisive labels",
+    "Audit all finite physical primal witnesses and continuous dual residual bounds including the infinite tail",
+    "Check every returned positive joint prediction at nominal and endpoint input scalings",
+    "Retain all non-applicable unequal-profile requests unchanged when reporting the 5256-request parent portfolio",
+    "Report the tail-completion ablation separately: closing numerical indecision is not a new information theorem"
+  ],
+  "limitations": [
+    "Same four synthetic generating spectra and 12 observation sets; added times and loading profiles are not independent external material validation",
+    "Accelerator restricted to identical positive loading profiles gamma=beta; other targets retain the preceding method",
+    "Very fast physical witness atoms can have enormous but finite original mass, allowed only in the explicitly uncapped model",
+    "The residual bound and physical repair are analytically justified; floating-point implementation is not outward-rounded certification",
+    "Weak duality, interval derivative bounds and exchange-like finite supports are classical tools; no claim of a new general optimization algorithm",
+    "This is post-diagnostic exploratory evidence, not a prospectively independent replication or guaranteed journal acceptance"
+  ]
+}

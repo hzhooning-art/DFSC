@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "result_sha256": "94ae505a4dc220586ca99b3b4ad74d4eadaacf457856eb99cb07e9d0b05dbfb3",
+  "spec_sha256": "de80b20d547953a2e12efc1cd64a402590d627aac2edf93f8a1f986febfcdc4f",
+  "replayed_successful_lp_count": 4096,
+  "counts": {
+    "pair_inner": 1024,
+    "pair_outer": 1024,
+    "posterior": 2048
+  },
+  "maximum_residuals": {
+    "inequality": 1.1578260572520094e-10,
+    "equality": 5.965006266706041e-12,
+    "negative_mass": 0.0,
+    "stationarity": 2.86633474785164e-08,
+    "duality_gap": 1.236594160403115e-12,
+    "dual_sign": 1.5925610004642243e-34
+  },
+  "infeasible_lp_report_count": 0,
+  "calibration_and_noise_seed_replays": 256,
+  "valid_calibration_target_coverage_checks": 976,
+  "independent_ode_response_checks": 32,
+  "maximum_ode_error": 1.2069234500700077e-12,
+  "independent_rate_quadrature_response_checks": 32,
+  "maximum_rate_quadrature_error": 6.661338147750939e-16,
+  "limitations": "Uses shared LP matrix and summary builders; infeasible solver reports are not independently certified; no external review or interval arithmetic"
+}

@@ -1,0 +1,909 @@
+{
+  "all_checks_passed": true,
+  "result_sha256": "53f5579a09d43e76f28dc50670e7d8fc01f924edf8a4ef63f3a6b3cc3c7c6462",
+  "cases_sha256": "1dd777225d118c97e51c1a57b4144b3cd7b24a8a947669b087244f6ca56faab1",
+  "protocol_sha256": "edbe0a9b01af75da770cc84cbae4035b72abe3844a184363ff9f0b54eba733a8",
+  "retained_files_sha256": {
+    "T313_w0.1_b0.01_pointwise_classical.json": "5b52c5911b5926d41b8c088e46ff18bec5c72b3f41910cf36d0b145fe039b7d2",
+    "T313_w0.1_b0.01_pointwise_classical.npz": "d249859d9c58e65dc7554ed40a5eaa9fde759ae14d6a84645faa0aa842abf875",
+    "T313_w0.1_b0.01_loading_guided_reuse.json": "44cbbabd33eb017d2c6699cf8a392fb81c9b7ac51f566cf67291c323e1c9891b",
+    "T313_w0.1_b0.01_loading_guided_reuse.npz": "62c40f861fd03d502445a4659393e3b03355b776f17f1126fdc09844ce8313a7",
+    "T313_w0.1_b0.03_pointwise_classical.json": "84ba490bb420fcffdb6d21cc2ca408bb48b54da5e5407ac7f8454781f63a02c4",
+    "T313_w0.1_b0.03_pointwise_classical.npz": "bccddd3a6a834fed1491747f4a7a67398d462eec442df7954a8b6a889c7ecd1c",
+    "T313_w0.1_b0.03_loading_guided_reuse.json": "56c6f8ef671753ffba9941084ffc325ce51eac0bd5d123ca4b5bf1436531d353",
+    "T313_w0.1_b0.03_loading_guided_reuse.npz": "942144fdc43f4c6a129d07adde4c3eaade96a6eb9d3c8e831208937ebbd73774",
+    "T313_w0.1_b0.05_pointwise_classical.json": "e15ed5c54e2add786c1ebce8a44eccaaaee6785b24005be3c073bd11d5eeecdc",
+    "T313_w0.1_b0.05_pointwise_classical.npz": "54965a557b30757a03ed2c9440b36f34671c72df483d2b77500c54aaf485f8d4",
+    "T313_w0.1_b0.05_loading_guided_reuse.json": "d0e5fc0f82db943b0e4125433a75317d0c924259c8103df0f622db065baaf42d",
+    "T313_w0.1_b0.05_loading_guided_reuse.npz": "b544281a9e3fe1b9222571e78bdfbdd33f60cb2227055cb958d744a98aef3d97",
+    "T313_w0.25_b0.01_pointwise_classical.json": "bfb9dea06759fbd3d05203f398d4607f83ab180bf1085cbb21a452b3df634fd6",
+    "T313_w0.25_b0.01_pointwise_classical.npz": "e373e48b2ef3522757b3951c1cc5f9b420ca016447b292955b433892baaca615",
+    "T313_w0.25_b0.01_loading_guided_reuse.json": "be021bdd819475928460ad28e42d8d7d8245a3e44b0b781af21dfcfd7d1c56c2",
+    "T313_w0.25_b0.01_loading_guided_reuse.npz": "675c93a93f6c70b9c8cae546a11c19aa9679b9650fce3f363d5065dda666fa83",
+    "T313_w0.25_b0.03_pointwise_classical.json": "536bfdb18b165672b1118885013c6b0bf403a2aedcf4a059980c67bc3d7123f4",
+    "T313_w0.25_b0.03_pointwise_classical.npz": "f948ad0c938007654636e425ec450c1f2813e913fd68d7d424fbaaf27da08a7c",
+    "T313_w0.25_b0.03_loading_guided_reuse.json": "4149a08454dc9587343f15fb58b6227aa2eec657ed3afb2cfc68fffacefe5799",
+    "T313_w0.25_b0.03_loading_guided_reuse.npz": "45df7606e054a184686141435e28aac27d6b477c59a1c67f269a92ec6aabc391",
+    "T313_w0.25_b0.05_pointwise_classical.json": "153238be521d09fe985914eea422dbba4b8388a6d08869e8fd8e68fa3f45c8b7",
+    "T313_w0.25_b0.05_pointwise_classical.npz": "b74c8bfc47c05f10fe3e299ba108743e1bc3ba6dab637563d48533cea2301755",
+    "T313_w0.25_b0.05_loading_guided_reuse.json": "6b85cc11b663bb810882aaa4b0aa21c11b17b8e16835affe62f0e819f95afe76",
+    "T313_w0.25_b0.05_loading_guided_reuse.npz": "f3e4e9441f766608b17ffca32ecbaf8b362ef4fce131634d25f4b5b3b6bd7a13",
+    "T323_w0.1_b0.01_pointwise_classical.json": "00269c9909a3018803cc6607694020bab79276cac4cfa142e41311e06fc158c5",
+    "T323_w0.1_b0.01_pointwise_classical.npz": "64981bc22c6ec7b3ac5265b37e00a498c4a76ef126969d263ad4ca0735b643c0",
+    "T323_w0.1_b0.01_loading_guided_reuse.json": "2573ba0c60ea6ab0878c74e8d398cd9696cdeca9c6157cae4cb789db9970abcb",
+    "T323_w0.1_b0.01_loading_guided_reuse.npz": "d88dabda5c977151383c41bd90f352febb2719c49aeee2599824cfd0c288dac9",
+    "T323_w0.1_b0.03_pointwise_classical.json": "4b5ba3665bd26e826f655409bc83c8390e5c8924df0e68e72f6f1505fcb5c963",
+    "T323_w0.1_b0.03_pointwise_classical.npz": "962979d44375e843971af9dbd7a070d355f66d94b45d3d7c2adf50cc83a84393",
+    "T323_w0.1_b0.03_loading_guided_reuse.json": "b6106919c585e464ba51ec830482e2a4bad1ec2ca3b04e91b5f0463b6fb85d4f",
+    "T323_w0.1_b0.03_loading_guided_reuse.npz": "558e17588704279d6d39d8bdf1f541fa12830269f1a15654cfc1cb8bd86d0aa5",
+    "T323_w0.1_b0.05_pointwise_classical.json": "5d412d0b59a57db935c3621528c7f1052d4af6e4f8c3ecb24ed19ed5e31ca911",
+    "T323_w0.1_b0.05_pointwise_classical.npz": "b1acf14836d0c1075cc225664cd28450bd3cd99ec0b305c6000da8c17eef4632",
+    "T323_w0.1_b0.05_loading_guided_reuse.json": "69d228c05433ba1d88d4fb8089554856365a5b9524595f0109aedc97b1d32d5c",
+    "T323_w0.1_b0.05_loading_guided_reuse.npz": "6960578422f81a7377a250e770fae2d2f9b14b11567ece632742b12e29561053",
+    "T323_w0.25_b0.01_pointwise_classical.json": "6eb2e12287defac271754213b41eca168bb0355e6c4f6acfd03175fc93185e8c",
+    "T323_w0.25_b0.01_pointwise_classical.npz": "ebaf007d182ab65c13d4d29e096d253be19d5e7c9b13f7edd1f1950a2065d897",
+    "T323_w0.25_b0.01_loading_guided_reuse.json": "dff3a5a1dd882fb7136c8ed0134a322f93563657481f4d189ecfbb2f57b8c36a",
+    "T323_w0.25_b0.01_loading_guided_reuse.npz": "251676b48fdff5fd03271af0e55da2d36518a9a8b6f9dc1aa89fb3deb532ad4e",
+    "T323_w0.25_b0.03_pointwise_classical.json": "1251eafcfb4f5c31a143b84129ca75fed8ff061473948ddbdf23096b2c27b235",
+    "T323_w0.25_b0.03_pointwise_classical.npz": "f049e6e4b2189495233946faafe1e2cdc0541c9ecd45dd589e987471594a2427",
+    "T323_w0.25_b0.03_loading_guided_reuse.json": "0dcad40d86b34d78813d543655d420f7f49482d4636e8bdca254f718654b71ff",
+    "T323_w0.25_b0.03_loading_guided_reuse.npz": "95afde94d4e84ce70b1456778363153aa95b8ac74376bca0d20007ca294cfca9",
+    "T323_w0.25_b0.05_pointwise_classical.json": "461bc5382755ea6c39956035d19eb9bb5c44bb2e45fe9a4077c0049335f68fa5",
+    "T323_w0.25_b0.05_pointwise_classical.npz": "30c7429fda64566de5234f877f9c5018d847f0dfe7545530ed818fd9163db9bd",
+    "T323_w0.25_b0.05_loading_guided_reuse.json": "c2bb59610a295ccc1d2a3bd56430b92d4e78a0c25244e718a39e61b32cb3bbfd",
+    "T323_w0.25_b0.05_loading_guided_reuse.npz": "5590d35600ef53bf00f25af9eb5c08ff8a78d726e5c9f6f8f3f6c09d6a25747a",
+    "T333_w0.1_b0.01_pointwise_classical.json": "802cdf4a2b856ba5248a74f59413aed8e361e36c2fc8797b36aecf1a01b159d6",
+    "T333_w0.1_b0.01_pointwise_classical.npz": "8fed67cfe71b8c56661ca4b7eca1d8897fc1e49a9615d33523db12d343586102",
+    "T333_w0.1_b0.01_loading_guided_reuse.json": "ee42e73e4bd5935facb82b0362bbdf630eaa871f68722cad4e8dcb8b6de03538",
+    "T333_w0.1_b0.01_loading_guided_reuse.npz": "fecf3be8db328c5bb504db451d0e372dab3be167195c582838104f699c2168d4",
+    "T333_w0.1_b0.03_pointwise_classical.json": "2d393f88f0f80120c60a49fc6c80f80574c0d4798405459a402d9af709ed6377",
+    "T333_w0.1_b0.03_pointwise_classical.npz": "967210f7facfb5ce381f5ff7ae884265399bb4025784cfce7d5dcc6550aa2539",
+    "T333_w0.1_b0.03_loading_guided_reuse.json": "0efbb3fb065c88f10c480d2ff24f2239b909c5261a8284b5bcc611a0bdfe7f8f",
+    "T333_w0.1_b0.03_loading_guided_reuse.npz": "ea203697e06f04ad0c50108a14942f286220f2b14ba8a62258b281e3ea912bf2",
+    "T333_w0.1_b0.05_pointwise_classical.json": "e49cda71eb748c8f952c73e9de8be98c988409f6a6dd94880fba5f31d8ac6117",
+    "T333_w0.1_b0.05_pointwise_classical.npz": "6fdb93dde45cefd9d97008407232aad45215a10a562c95e8a11e63ad3ccd0c67",
+    "T333_w0.1_b0.05_loading_guided_reuse.json": "cc8cb5d6050fc118b16aebbf01e6d774afd490202c05273a10c7fc2484a16d28",
+    "T333_w0.1_b0.05_loading_guided_reuse.npz": "1acf61de968ea8b4e42a95aa01f5d355c792dc5dac9314f8a9308e07c7310aaa",
+    "T333_w0.25_b0.01_pointwise_classical.json": "cb8760f91c8f7fcb203d15151339e4789ccd5804523fa63d70baeb9f108c520e",
+    "T333_w0.25_b0.01_pointwise_classical.npz": "5dd128f233e834fe9c90cd0fc9913553aafb3b7320c0b12a1a3e2947b543f709",
+    "T333_w0.25_b0.01_loading_guided_reuse.json": "a4ec2613b1a57161b7a3a17d4f4a1c9319ce2c9efcde4e34124bd7c87854cced",
+    "T333_w0.25_b0.01_loading_guided_reuse.npz": "2b20c6eb3a8ea01ccbbd96d489de54b8971a075e9da33c3eaa42c8c3e7f1f167",
+    "T333_w0.25_b0.03_pointwise_classical.json": "ee7831a441f67618ed65398017b610d3fa1f98ccfb2a0d0f54d15c722c55d93d",
+    "T333_w0.25_b0.03_pointwise_classical.npz": "0c22357350f6937aeb1faf4bdf81eb9dc4c7fb49ea53e1ec1ee8abf970f5a7ad",
+    "T333_w0.25_b0.03_loading_guided_reuse.json": "8db4f45289a75ddc43fe098f4b4575e222ddbffd559d6576ccb8488470a40ab3",
+    "T333_w0.25_b0.03_loading_guided_reuse.npz": "6df3fc0030c04621434eb2887f5a95e976ac322c72a35bd3e621531231660c62",
+    "T333_w0.25_b0.05_pointwise_classical.json": "fd5cf22891f4857b59abe0e920526e73b4e9273f27256f328f3de5deabad8fd0",
+    "T333_w0.25_b0.05_pointwise_classical.npz": "89e2a5aaafdd6d25ef8b6e5c6c6b38c9a83a143a907dc6e36737a0267af803b3",
+    "T333_w0.25_b0.05_loading_guided_reuse.json": "b6763c8cdd6d2715277add5d3d3051d8dd3ad79cdd69f5ffcbb28b57c4aa511f",
+    "T333_w0.25_b0.05_loading_guided_reuse.npz": "4266a9d2a9d80b66fd153351e617e039dc2027ab4610a99839aae56663350bc0",
+    "T343_w0.1_b0.01_pointwise_classical.json": "db0bcb8c4cde3809565d6d36f326c80328190366f2ed723cda1ce3cca31cb9d5",
+    "T343_w0.1_b0.01_pointwise_classical.npz": "9d0a46b09d307b8c284b98cea99f3e13d9230a254d4817d73d364c143320de7c",
+    "T343_w0.1_b0.01_loading_guided_reuse.json": "289528abd783ff06d8db4655e957f4cfc6219d93579be578a7cbca9bd216eb56",
+    "T343_w0.1_b0.01_loading_guided_reuse.npz": "c349e72f6de24d8a6f8220e9e105a2a7f560162b8bade16328b453f25fe20454",
+    "T343_w0.1_b0.03_pointwise_classical.json": "001917579da22650142a7d9f846f9ccd882c7730e3ed175a816da84477c798cf",
+    "T343_w0.1_b0.03_pointwise_classical.npz": "c6042c359de6f0f8da910cc68c36c20e0696cc81d1eba6cdda207d99059e3709",
+    "T343_w0.1_b0.03_loading_guided_reuse.json": "dd1dd5fd7c14e922a9792af227f1c05fb941287260c96ddf94d567888002e797",
+    "T343_w0.1_b0.03_loading_guided_reuse.npz": "e0e179038d3081f56e5dea74423915a0664f1000ab842347ad11ec9f2472fdde",
+    "T343_w0.1_b0.05_pointwise_classical.json": "4ef94776d8998f3a64d6573c4998c3bcdda6f5f26e3b77c9170a0708844139e8",
+    "T343_w0.1_b0.05_pointwise_classical.npz": "ac2be2c058a607d9bcaaf8758a75fbf742c82558140f70ecd61c6127e270886c",
+    "T343_w0.1_b0.05_loading_guided_reuse.json": "b86b048b02fa1896aa3845d8d2aba84f527718ffeba365ce7dcf88da5f809886",
+    "T343_w0.1_b0.05_loading_guided_reuse.npz": "a789f25818776a30027bcb7a05852131de386966379142ac819f0030ae5705c2",
+    "T343_w0.25_b0.01_pointwise_classical.json": "ab19666cf6bd276a54eaca0b537bcdb62c46992edaf43dc8085853c7ba95e925",
+    "T343_w0.25_b0.01_pointwise_classical.npz": "939801200672fabd9a49930a0b6eb198a2f844f8ac769948d85c15ab03ebf8f5",
+    "T343_w0.25_b0.01_loading_guided_reuse.json": "7f0b4a33db03009340f682cdd8d1ad7409fe6389c5be348d51fb9ef417f506f1",
+    "T343_w0.25_b0.01_loading_guided_reuse.npz": "fc19826c0447502caf5ee66f4876beeb579940643f519b2b162d301215fa161d",
+    "T343_w0.25_b0.03_pointwise_classical.json": "95fc2858f9f52cafce12f710114235af036ae96313a31f571735f22806e3ad76",
+    "T343_w0.25_b0.03_pointwise_classical.npz": "6cdb991cfe0b5336c81d9f07b0b94b579ab23b3f52ffe761bad0dc6df1e8f4a4",
+    "T343_w0.25_b0.03_loading_guided_reuse.json": "d3716468282b12ddd39d581497c2562c055c5cb136bb0fa866bef6e09ff358fc",
+    "T343_w0.25_b0.03_loading_guided_reuse.npz": "ec6d96ef0fc43f233994e870deeb48317091f9ccea3074888373c028d074f257",
+    "T343_w0.25_b0.05_pointwise_classical.json": "f97214f5595b2253a1d2fe0756abcae10c732205645fdb9c902924faffa5995d",
+    "T343_w0.25_b0.05_pointwise_classical.npz": "b5cfd07c942123b7796ea15430476cf9a6941ed2a3eff09a0d84b3307a9e4b7d",
+    "T343_w0.25_b0.05_loading_guided_reuse.json": "a9539d5393589f0596fdeeab2ef354c06fb663fdce64955878c89203efb09804",
+    "T343_w0.25_b0.05_loading_guided_reuse.npz": "16518317c75557b3e720c0c7442a6d4c4db9d235d05e79968c6f0d8f869f5a3b",
+    "T353_w0.1_b0.01_pointwise_classical.json": "72b578c5e3927cbe5ab0ad69cf63939012a28196374578f4464efacf92043782",
+    "T353_w0.1_b0.01_pointwise_classical.npz": "74fb106dcc8d4894728a018912516ee70560d55f8c619fce092d6b6ca588a843",
+    "T353_w0.1_b0.01_loading_guided_reuse.json": "ce34b9d6de4576ef1ea04f9557c15fdcf3d21f484f3f0a7774dc265bbfc7db91",
+    "T353_w0.1_b0.01_loading_guided_reuse.npz": "72d223f732bd0fbefb257d3138e4690c5fbf5785cc2a7c4d0329cc813bf5ef8c",
+    "T353_w0.1_b0.03_pointwise_classical.json": "1e94c05fe272be08919bd7c1dd794e34dcead792e9c42ad8b1be422e1168c8ec",
+    "T353_w0.1_b0.03_pointwise_classical.npz": "bde4e555a3ea5fcb8e622d9d8f2b77a43acdbd5b26c9ae2fddbef448299fd177",
+    "T353_w0.1_b0.03_loading_guided_reuse.json": "342eb52aaa2b3f60df8128ddcba48772280a55ce7bb3ee334611db7240919478",
+    "T353_w0.1_b0.03_loading_guided_reuse.npz": "4f32375e23ba5760eafe66e8663d22a7d35bdb0aa3110e8415efeecf2f21b288",
+    "T353_w0.1_b0.05_pointwise_classical.json": "372720d4ae2ead6cb15b124e6835964b88bf799d9c881c7faf6b95dc959bde49",
+    "T353_w0.1_b0.05_pointwise_classical.npz": "201290c095885c3f34de15c504b60ee5f814a8a99181950df08d077aa6a8f854",
+    "T353_w0.1_b0.05_loading_guided_reuse.json": "5244400c7cf48c836290f2944320fdd35cbd4466bb1b8dddc9dfef5c0bcf1aea",
+    "T353_w0.1_b0.05_loading_guided_reuse.npz": "6c74ede257750fb61c869c80972415b46cfe3c9c84d210ff8a9b8508ed428613",
+    "T353_w0.25_b0.01_pointwise_classical.json": "9c36cd97b4d1adfabfa36c0623518736a2653869d837032a81cc8067c01e6c61",
+    "T353_w0.25_b0.01_pointwise_classical.npz": "b35435637c655df722c5399a3b3ea11f6684558cc233101cf4be72d663dffc6b",
+    "T353_w0.25_b0.01_loading_guided_reuse.json": "30ca3afc630e97e88839e940bd18780e780c0f60841deb365aad4f07ccb4f4f1",
+    "T353_w0.25_b0.01_loading_guided_reuse.npz": "b21e651579f7c99a3be3dce4d509708ab25408af10c8b672e61285f5d3e955db",
+    "T353_w0.25_b0.03_pointwise_classical.json": "5a1be5c7cdb816244f91b16d7fe06278e756dd77e3bc5f0e4ca1d3f8e5bfbe4e",
+    "T353_w0.25_b0.03_pointwise_classical.npz": "75e0f1a957afb437f722d48f0ca6ab2712bb8cf55c8d11edaf7d3806d5ae7aed",
+    "T353_w0.25_b0.03_loading_guided_reuse.json": "9616e731b95dee9e04f3355abd1d68c512f43640377ea9bf217f94343b45d536",
+    "T353_w0.25_b0.03_loading_guided_reuse.npz": "81a57ed7ae411af2b41922421545f1212b73595580459e27a29163cb44bb8856",
+    "T353_w0.25_b0.05_pointwise_classical.json": "b8575f1bfa77cbb4bf2c7b222de573b24f13c2473281a513839ced607fbab46d",
+    "T353_w0.25_b0.05_pointwise_classical.npz": "c9ffdb648ca01349a1c676fb25c654c5117add696a3a21e04f2b2183ed2dd19f",
+    "T353_w0.25_b0.05_loading_guided_reuse.json": "d5fee0379712c38e05f1f5e6087332cadf5cb3462ed99f82a7fa22b4143535af",
+    "T353_w0.25_b0.05_loading_guided_reuse.npz": "d70f28ec4bba2b2d760a1cfe59383eca7711f37a87fbcf5bc876b84a9c87c555"
+  },
+  "counts": {
+    "lp": 884,
+    "physical": 884,
+    "finite_cells": 11454,
+    "tails": 884,
+    "transport_decisions": 208,
+    "positive_raw_target_checks": 54
+  },
+  "maximum_LP_residual": 8.211079082290351e-10,
+  "cases": 30,
+  "correlated_requests": 315,
+  "physical_curves": 5,
+  "distinct_observation_windows": 10,
+  "conditional_band_settings": 3,
+  "final_states": {
+    "pointwise_classical": {
+      "sufficient": 27,
+      "insufficient": 283,
+      "unresolved": 5
+    },
+    "loading_guided_reuse": {
+      "sufficient": 27,
+      "insufficient": 283,
+      "unresolved": 5
+    }
+  },
+  "aggregate_times": [
+    {
+      "repetition": 0,
+      "pointwise_classical": {
+        "total_seconds": 1.9569302999989304,
+        "endpoint_programs": 650
+      },
+      "loading_guided_reuse": {
+        "total_seconds": 0.9593607999959204,
+        "endpoint_programs": 234
+      },
+      "speed_ratio": 2.0398272474831702
+    },
+    {
+      "repetition": 1,
+      "pointwise_classical": {
+        "total_seconds": 1.9531915999959892,
+        "endpoint_programs": 650
+      },
+      "loading_guided_reuse": {
+        "total_seconds": 0.9508240000068326,
+        "endpoint_programs": 234
+      },
+      "speed_ratio": 2.054209401510641
+    },
+    {
+      "repetition": 2,
+      "pointwise_classical": {
+        "total_seconds": 1.9547387000075105,
+        "endpoint_programs": 650
+      },
+      "loading_guided_reuse": {
+        "total_seconds": 0.9509981999945012,
+        "endpoint_programs": 234
+      },
+      "speed_ratio": 2.055459936747318
+    }
+  ],
+  "median_speed_ratio": 2.054209401510641,
+  "endpoint_program_reduction_fraction": 0.64,
+  "case_repeat_runtime_losses": [],
+  "paired_timings": [
+    {
+      "case": "T313_w0.1_b0.01",
+      "repetition": 0,
+      "pointwise_seconds": 0.2713450000010198,
+      "reuse_seconds": 0.24634469999909925,
+      "speed_ratio": 1.1014850329721402
+    },
+    {
+      "case": "T313_w0.1_b0.03",
+      "repetition": 0,
+      "pointwise_seconds": 0.06331350000073144,
+      "reuse_seconds": 0.03148040000087349,
+      "speed_ratio": 2.011203796615503
+    },
+    {
+      "case": "T313_w0.1_b0.05",
+      "repetition": 0,
+      "pointwise_seconds": 0.06282190000092669,
+      "reuse_seconds": 0.01230559999930847,
+      "speed_ratio": 5.105147250394703
+    },
+    {
+      "case": "T313_w0.25_b0.01",
+      "repetition": 0,
+      "pointwise_seconds": 0.04138439999951515,
+      "reuse_seconds": 0.026975299999321578,
+      "speed_ratio": 1.534159026982312
+    },
+    {
+      "case": "T313_w0.25_b0.03",
+      "repetition": 0,
+      "pointwise_seconds": 0.04004700000041339,
+      "reuse_seconds": 0.026487999999517342,
+      "speed_ratio": 1.511892177633008
+    },
+    {
+      "case": "T313_w0.25_b0.05",
+      "repetition": 0,
+      "pointwise_seconds": 0.0410730000003241,
+      "reuse_seconds": 0.012414900000294438,
+      "speed_ratio": 3.3083633375500403
+    },
+    {
+      "case": "T323_w0.1_b0.01",
+      "repetition": 0,
+      "pointwise_seconds": 0.1342201000006753,
+      "reuse_seconds": 0.10055109999848355,
+      "speed_ratio": 1.334844671044867
+    },
+    {
+      "case": "T323_w0.1_b0.03",
+      "repetition": 0,
+      "pointwise_seconds": 0.06290420000004815,
+      "reuse_seconds": 0.031180999998468906,
+      "speed_ratio": 2.0173887945587685
+    },
+    {
+      "case": "T323_w0.1_b0.05",
+      "repetition": 0,
+      "pointwise_seconds": 0.06307150000066031,
+      "reuse_seconds": 0.012314600000536302,
+      "speed_ratio": 5.121684829220075
+    },
+    {
+      "case": "T323_w0.25_b0.01",
+      "repetition": 0,
+      "pointwise_seconds": 0.043457100000523496,
+      "reuse_seconds": 0.02844569999979285,
+      "speed_ratio": 1.5277212373342883
+    },
+    {
+      "case": "T323_w0.25_b0.03",
+      "repetition": 0,
+      "pointwise_seconds": 0.04202579999946465,
+      "reuse_seconds": 0.02744170000005397,
+      "speed_ratio": 1.5314575991786952
+    },
+    {
+      "case": "T323_w0.25_b0.05",
+      "repetition": 0,
+      "pointwise_seconds": 0.04294279999885475,
+      "reuse_seconds": 0.012698099999397527,
+      "speed_ratio": 3.38182877760391
+    },
+    {
+      "case": "T333_w0.1_b0.01",
+      "repetition": 0,
+      "pointwise_seconds": 0.13487150000037218,
+      "reuse_seconds": 0.10044409999864001,
+      "speed_ratio": 1.34275183910452
+    },
+    {
+      "case": "T333_w0.1_b0.03",
+      "repetition": 0,
+      "pointwise_seconds": 0.06373439999879338,
+      "reuse_seconds": 0.03147990000070422,
+      "speed_ratio": 2.024606177191402
+    },
+    {
+      "case": "T333_w0.1_b0.05",
+      "repetition": 0,
+      "pointwise_seconds": 0.06312599999910162,
+      "reuse_seconds": 0.012615899999218527,
+      "speed_ratio": 5.003685825269055
+    },
+    {
+      "case": "T333_w0.25_b0.01",
+      "repetition": 0,
+      "pointwise_seconds": 0.04672319999917818,
+      "reuse_seconds": 0.031507400000919006,
+      "speed_ratio": 1.4829278200618063
+    },
+    {
+      "case": "T333_w0.25_b0.03",
+      "repetition": 0,
+      "pointwise_seconds": 0.04407759999958216,
+      "reuse_seconds": 0.013007899999138317,
+      "speed_ratio": 3.3885254347359677
+    },
+    {
+      "case": "T333_w0.25_b0.05",
+      "repetition": 0,
+      "pointwise_seconds": 0.043909899999562185,
+      "reuse_seconds": 0.013275199999043252,
+      "speed_ratio": 3.307663914873357
+    },
+    {
+      "case": "T343_w0.1_b0.01",
+      "repetition": 0,
+      "pointwise_seconds": 0.06694590000006428,
+      "reuse_seconds": 0.03261630000088189,
+      "speed_ratio": 2.052528950195276
+    },
+    {
+      "case": "T343_w0.1_b0.03",
+      "repetition": 0,
+      "pointwise_seconds": 0.06778809999923396,
+      "reuse_seconds": 0.012817600001653773,
+      "speed_ratio": 5.288673385851306
+    },
+    {
+      "case": "T343_w0.1_b0.05",
+      "repetition": 0,
+      "pointwise_seconds": 0.0632577999986097,
+      "reuse_seconds": 0.012205700000777142,
+      "speed_ratio": 5.182644173999201
+    },
+    {
+      "case": "T343_w0.25_b0.01",
+      "repetition": 0,
+      "pointwise_seconds": 0.04710909999994328,
+      "reuse_seconds": 0.030617799999163253,
+      "speed_ratio": 1.5386180588164635
+    },
+    {
+      "case": "T343_w0.25_b0.03",
+      "repetition": 0,
+      "pointwise_seconds": 0.045371400001386064,
+      "reuse_seconds": 0.01328549999925599,
+      "speed_ratio": 3.4151066955648592
+    },
+    {
+      "case": "T343_w0.25_b0.05",
+      "repetition": 0,
+      "pointwise_seconds": 0.04340599999886763,
+      "reuse_seconds": 0.01284279999890714,
+      "speed_ratio": 3.3797925687981802
+    },
+    {
+      "case": "T353_w0.1_b0.01",
+      "repetition": 0,
+      "pointwise_seconds": 0.06934680000085791,
+      "reuse_seconds": 0.012953499999639462,
+      "speed_ratio": 5.353518354328024
+    },
+    {
+      "case": "T353_w0.1_b0.03",
+      "repetition": 0,
+      "pointwise_seconds": 0.0645146000006207,
+      "reuse_seconds": 0.012307000000873813,
+      "speed_ratio": 5.242106118147403
+    },
+    {
+      "case": "T353_w0.1_b0.05",
+      "repetition": 0,
+      "pointwise_seconds": 0.061755900000207475,
+      "reuse_seconds": 0.012129499998991378,
+      "speed_ratio": 5.091380519010904
+    },
+    {
+      "case": "T353_w0.25_b0.01",
+      "repetition": 0,
+      "pointwise_seconds": 0.04624109999895154,
+      "reuse_seconds": 0.0130263000010018,
+      "speed_ratio": 3.549826120647868
+    },
+    {
+      "case": "T353_w0.25_b0.03",
+      "repetition": 0,
+      "pointwise_seconds": 0.03844299999946088,
+      "reuse_seconds": 0.011900400000740774,
+      "speed_ratio": 3.230395616707664
+    },
+    {
+      "case": "T353_w0.25_b0.05",
+      "repetition": 0,
+      "pointwise_seconds": 0.037701700000980054,
+      "reuse_seconds": 0.011686900001222966,
+      "speed_ratio": 3.22597951527221
+    },
+    {
+      "case": "T313_w0.1_b0.01",
+      "repetition": 1,
+      "pointwise_seconds": 0.27100879999852623,
+      "reuse_seconds": 0.24262149999958638,
+      "speed_ratio": 1.1170024090980735
+    },
+    {
+      "case": "T313_w0.1_b0.03",
+      "repetition": 1,
+      "pointwise_seconds": 0.06334210000022722,
+      "reuse_seconds": 0.03153569999994943,
+      "speed_ratio": 2.0085839223587487
+    },
+    {
+      "case": "T313_w0.1_b0.05",
+      "repetition": 1,
+      "pointwise_seconds": 0.06299000000035448,
+      "reuse_seconds": 0.012127200001486926,
+      "speed_ratio": 5.194109109491987
+    },
+    {
+      "case": "T313_w0.25_b0.01",
+      "repetition": 1,
+      "pointwise_seconds": 0.041691099999297876,
+      "reuse_seconds": 0.02706899999975576,
+      "speed_ratio": 1.5401788023079555
+    },
+    {
+      "case": "T313_w0.25_b0.03",
+      "repetition": 1,
+      "pointwise_seconds": 0.04143060000023979,
+      "reuse_seconds": 0.027502900000399677,
+      "speed_ratio": 1.5064084150994155
+    },
+    {
+      "case": "T313_w0.25_b0.05",
+      "repetition": 1,
+      "pointwise_seconds": 0.04238280000026862,
+      "reuse_seconds": 0.012790599999789265,
+      "speed_ratio": 3.3135896674876006
+    },
+    {
+      "case": "T323_w0.1_b0.01",
+      "repetition": 1,
+      "pointwise_seconds": 0.1356854999994539,
+      "reuse_seconds": 0.10047830000075919,
+      "speed_ratio": 1.3503960556501124
+    },
+    {
+      "case": "T323_w0.1_b0.03",
+      "repetition": 1,
+      "pointwise_seconds": 0.06273440000040864,
+      "reuse_seconds": 0.031135299999732524,
+      "speed_ratio": 2.0148962753192543
+    },
+    {
+      "case": "T323_w0.1_b0.05",
+      "repetition": 1,
+      "pointwise_seconds": 0.06294110000089859,
+      "reuse_seconds": 0.012085400001524249,
+      "speed_ratio": 5.2080278677545015
+    },
+    {
+      "case": "T323_w0.25_b0.01",
+      "repetition": 1,
+      "pointwise_seconds": 0.0434053999997559,
+      "reuse_seconds": 0.02819200000158162,
+      "speed_ratio": 1.539635357453206
+    },
+    {
+      "case": "T323_w0.25_b0.03",
+      "repetition": 1,
+      "pointwise_seconds": 0.04178429999956279,
+      "reuse_seconds": 0.027020000001357403,
+      "speed_ratio": 1.5464211694102026
+    },
+    {
+      "case": "T323_w0.25_b0.05",
+      "repetition": 1,
+      "pointwise_seconds": 0.04262140000173531,
+      "reuse_seconds": 0.012446200000340468,
+      "speed_ratio": 3.4244508364456134
+    },
+    {
+      "case": "T333_w0.1_b0.01",
+      "repetition": 1,
+      "pointwise_seconds": 0.13444969999909517,
+      "reuse_seconds": 0.10036810000019614,
+      "speed_ratio": 1.339566057331288
+    },
+    {
+      "case": "T333_w0.1_b0.03",
+      "repetition": 1,
+      "pointwise_seconds": 0.06318180000016582,
+      "reuse_seconds": 0.031011699998998665,
+      "speed_ratio": 2.0373536440184155
+    },
+    {
+      "case": "T333_w0.1_b0.05",
+      "repetition": 1,
+      "pointwise_seconds": 0.06292779999967024,
+      "reuse_seconds": 0.012245399999301299,
+      "speed_ratio": 5.138892972321099
+    },
+    {
+      "case": "T333_w0.25_b0.01",
+      "repetition": 1,
+      "pointwise_seconds": 0.046701799999937066,
+      "reuse_seconds": 0.03022389999932784,
+      "speed_ratio": 1.545194366080343
+    },
+    {
+      "case": "T333_w0.25_b0.03",
+      "repetition": 1,
+      "pointwise_seconds": 0.04326939999918977,
+      "reuse_seconds": 0.01269510000020091,
+      "speed_ratio": 3.4083544043375005
+    },
+    {
+      "case": "T333_w0.25_b0.05",
+      "repetition": 1,
+      "pointwise_seconds": 0.043672800000422285,
+      "reuse_seconds": 0.012870099999418017,
+      "speed_ratio": 3.393353587182474
+    },
+    {
+      "case": "T343_w0.1_b0.01",
+      "repetition": 1,
+      "pointwise_seconds": 0.06672279999838793,
+      "reuse_seconds": 0.032741600000008475,
+      "speed_ratio": 2.037860092309803
+    },
+    {
+      "case": "T343_w0.1_b0.03",
+      "repetition": 1,
+      "pointwise_seconds": 0.06782389999898442,
+      "reuse_seconds": 0.012645500000871834,
+      "speed_ratio": 5.363481079776075
+    },
+    {
+      "case": "T343_w0.1_b0.05",
+      "repetition": 1,
+      "pointwise_seconds": 0.06290910000097938,
+      "reuse_seconds": 0.012098399998649256,
+      "speed_ratio": 5.1997867493224685
+    },
+    {
+      "case": "T343_w0.25_b0.01",
+      "repetition": 1,
+      "pointwise_seconds": 0.04709059999913734,
+      "reuse_seconds": 0.030329200000778656,
+      "speed_ratio": 1.5526489323136898
+    },
+    {
+      "case": "T343_w0.25_b0.03",
+      "repetition": 1,
+      "pointwise_seconds": 0.04522429999997257,
+      "reuse_seconds": 0.013165300000764546,
+      "speed_ratio": 3.4351135179104366
+    },
+    {
+      "case": "T343_w0.25_b0.05",
+      "repetition": 1,
+      "pointwise_seconds": 0.04311030000098981,
+      "reuse_seconds": 0.01279189999877417,
+      "speed_ratio": 3.3701248450285735
+    },
+    {
+      "case": "T353_w0.1_b0.01",
+      "repetition": 1,
+      "pointwise_seconds": 0.06876170000032289,
+      "reuse_seconds": 0.012699599999905331,
+      "speed_ratio": 5.414477621408192
+    },
+    {
+      "case": "T353_w0.1_b0.03",
+      "repetition": 1,
+      "pointwise_seconds": 0.06286849999924016,
+      "reuse_seconds": 0.011964900000748457,
+      "speed_ratio": 5.254410817918031
+    },
+    {
+      "case": "T353_w0.1_b0.05",
+      "repetition": 1,
+      "pointwise_seconds": 0.06122540000069421,
+      "reuse_seconds": 0.011809900001026108,
+      "speed_ratio": 5.184243727328311
+    },
+    {
+      "case": "T353_w0.25_b0.01",
+      "repetition": 1,
+      "pointwise_seconds": 0.045168499998908374,
+      "reuse_seconds": 0.012924200000270503,
+      "speed_ratio": 3.4948778259360735
+    },
+    {
+      "case": "T353_w0.25_b0.03",
+      "repetition": 1,
+      "pointwise_seconds": 0.038570400000025984,
+      "reuse_seconds": 0.011764000000766828,
+      "speed_ratio": 3.278680720631741
+    },
+    {
+      "case": "T353_w0.25_b0.05",
+      "repetition": 1,
+      "pointwise_seconds": 0.03749529999913648,
+      "reuse_seconds": 0.011471100000562728,
+      "speed_ratio": 3.268675192204505
+    },
+    {
+      "case": "T313_w0.1_b0.01",
+      "repetition": 2,
+      "pointwise_seconds": 0.2661617000012484,
+      "reuse_seconds": 0.2399753999998211,
+      "speed_ratio": 1.1091207682181041
+    },
+    {
+      "case": "T313_w0.1_b0.03",
+      "repetition": 2,
+      "pointwise_seconds": 0.06391550000080315,
+      "reuse_seconds": 0.03045439999914379,
+      "speed_ratio": 2.0987279343083465
+    },
+    {
+      "case": "T313_w0.1_b0.05",
+      "repetition": 2,
+      "pointwise_seconds": 0.0631892000001244,
+      "reuse_seconds": 0.012218100000609411,
+      "speed_ratio": 5.171769751186573
+    },
+    {
+      "case": "T313_w0.25_b0.01",
+      "repetition": 2,
+      "pointwise_seconds": 0.041882000001351116,
+      "reuse_seconds": 0.02719499999875552,
+      "speed_ratio": 1.5400625116112407
+    },
+    {
+      "case": "T313_w0.25_b0.03",
+      "repetition": 2,
+      "pointwise_seconds": 0.041589899999962654,
+      "reuse_seconds": 0.02727469999990717,
+      "speed_ratio": 1.5248527023250193
+    },
+    {
+      "case": "T313_w0.25_b0.05",
+      "repetition": 2,
+      "pointwise_seconds": 0.042610800001057214,
+      "reuse_seconds": 0.012723599998935242,
+      "speed_ratio": 3.3489578424834985
+    },
+    {
+      "case": "T323_w0.1_b0.01",
+      "repetition": 2,
+      "pointwise_seconds": 0.13446939999994356,
+      "reuse_seconds": 0.10048530000130995,
+      "speed_ratio": 1.3381997167564865
+    },
+    {
+      "case": "T323_w0.1_b0.03",
+      "repetition": 2,
+      "pointwise_seconds": 0.06247419999999693,
+      "reuse_seconds": 0.030738699999346863,
+      "speed_ratio": 2.032428176901573
+    },
+    {
+      "case": "T323_w0.1_b0.05",
+      "repetition": 2,
+      "pointwise_seconds": 0.06231819999993604,
+      "reuse_seconds": 0.012042000000292319,
+      "speed_ratio": 5.1750705861504125
+    },
+    {
+      "case": "T323_w0.25_b0.01",
+      "repetition": 2,
+      "pointwise_seconds": 0.043280599998979596,
+      "reuse_seconds": 0.028091700000004494,
+      "speed_ratio": 1.5406899546475532
+    },
+    {
+      "case": "T323_w0.25_b0.03",
+      "repetition": 2,
+      "pointwise_seconds": 0.04225170000063372,
+      "reuse_seconds": 0.027164900000570924,
+      "speed_ratio": 1.5553784479142465
+    },
+    {
+      "case": "T323_w0.25_b0.05",
+      "repetition": 2,
+      "pointwise_seconds": 0.042668899999625864,
+      "reuse_seconds": 0.012454699999580043,
+      "speed_ratio": 3.425927561568292
+    },
+    {
+      "case": "T333_w0.1_b0.01",
+      "repetition": 2,
+      "pointwise_seconds": 0.13467140000102518,
+      "reuse_seconds": 0.10048400000050606,
+      "speed_ratio": 1.3402272998720886
+    },
+    {
+      "case": "T333_w0.1_b0.03",
+      "repetition": 2,
+      "pointwise_seconds": 0.0627580999989732,
+      "reuse_seconds": 0.03074890000061714,
+      "speed_ratio": 2.04098683197492
+    },
+    {
+      "case": "T333_w0.1_b0.05",
+      "repetition": 2,
+      "pointwise_seconds": 0.06266060000052676,
+      "reuse_seconds": 0.012103099999876576,
+      "speed_ratio": 5.177235584368116
+    },
+    {
+      "case": "T333_w0.25_b0.01",
+      "repetition": 2,
+      "pointwise_seconds": 0.04659759999958624,
+      "reuse_seconds": 0.03003309999985504,
+      "speed_ratio": 1.5515414659096514
+    },
+    {
+      "case": "T333_w0.25_b0.03",
+      "repetition": 2,
+      "pointwise_seconds": 0.04350460000023304,
+      "reuse_seconds": 0.012560299999677227,
+      "speed_ratio": 3.4636593076081796
+    },
+    {
+      "case": "T333_w0.25_b0.05",
+      "repetition": 2,
+      "pointwise_seconds": 0.043576099998972495,
+      "reuse_seconds": 0.012883299999884912,
+      "speed_ratio": 3.3823709763307357
+    },
+    {
+      "case": "T343_w0.1_b0.01",
+      "repetition": 2,
+      "pointwise_seconds": 0.06670950000079756,
+      "reuse_seconds": 0.032489600000189967,
+      "speed_ratio": 2.053257042266064
+    },
+    {
+      "case": "T343_w0.1_b0.03",
+      "repetition": 2,
+      "pointwise_seconds": 0.06723179999971762,
+      "reuse_seconds": 0.012660099999266095,
+      "speed_ratio": 5.310526773375806
+    },
+    {
+      "case": "T343_w0.1_b0.05",
+      "repetition": 2,
+      "pointwise_seconds": 0.06268620000082592,
+      "reuse_seconds": 0.012076899998646695,
+      "speed_ratio": 5.190586989032812
+    },
+    {
+      "case": "T343_w0.25_b0.01",
+      "repetition": 2,
+      "pointwise_seconds": 0.047162099999695783,
+      "reuse_seconds": 0.030215500000849715,
+      "speed_ratio": 1.5608578378107096
+    },
+    {
+      "case": "T343_w0.25_b0.03",
+      "repetition": 2,
+      "pointwise_seconds": 0.045126900000468595,
+      "reuse_seconds": 0.013183999999455409,
+      "speed_ratio": 3.4228534589147945
+    },
+    {
+      "case": "T343_w0.25_b0.05",
+      "repetition": 2,
+      "pointwise_seconds": 0.04444620000140276,
+      "reuse_seconds": 0.01270489999842539,
+      "speed_ratio": 3.4983510304615777
+    },
+    {
+      "case": "T353_w0.1_b0.01",
+      "repetition": 2,
+      "pointwise_seconds": 0.0688441000002058,
+      "reuse_seconds": 0.012773200000083307,
+      "speed_ratio": 5.389730059793693
+    },
+    {
+      "case": "T353_w0.1_b0.03",
+      "repetition": 2,
+      "pointwise_seconds": 0.06272440000066126,
+      "reuse_seconds": 0.011983999998847139,
+      "speed_ratio": 5.234012016580053
+    },
+    {
+      "case": "T353_w0.1_b0.05",
+      "repetition": 2,
+      "pointwise_seconds": 0.0616848999998183,
+      "reuse_seconds": 0.011934799998925882,
+      "speed_ratio": 5.168490465309001
+    },
+    {
+      "case": "T353_w0.25_b0.01",
+      "repetition": 2,
+      "pointwise_seconds": 0.04438050000135263,
+      "reuse_seconds": 0.013110800000504241,
+      "speed_ratio": 3.385033712637349
+    },
+    {
+      "case": "T353_w0.25_b0.03",
+      "repetition": 2,
+      "pointwise_seconds": 0.0386318000000756,
+      "reuse_seconds": 0.01561270000092918,
+      "speed_ratio": 2.474383034182201
+    },
+    {
+      "case": "T353_w0.25_b0.05",
+      "repetition": 2,
+      "pointwise_seconds": 0.04452979999950912,
+      "reuse_seconds": 0.012620499999684398,
+      "speed_ratio": 3.5283705083493273
+    }
+  ],
+  "budget_results": [
+    {
+      "endpoint_program_budget_per_case": 4,
+      "pointwise_classical": {
+        "sufficient": 13,
+        "insufficient": 47,
+        "unresolved": 255
+      },
+      "loading_guided_reuse": {
+        "sufficient": 13,
+        "insufficient": 189,
+        "unresolved": 113
+      }
+    },
+    {
+      "endpoint_program_budget_per_case": 8,
+      "pointwise_classical": {
+        "sufficient": 15,
+        "insufficient": 105,
+        "unresolved": 195
+      },
+      "loading_guided_reuse": {
+        "sufficient": 19,
+        "insufficient": 270,
+        "unresolved": 26
+      }
+    },
+    {
+      "endpoint_program_budget_per_case": 16,
+      "pointwise_classical": {
+        "sufficient": 21,
+        "insufficient": 216,
+        "unresolved": 78
+      },
+      "loading_guided_reuse": {
+        "sufficient": 25,
+        "insufficient": 283,
+        "unresolved": 7
+      }
+    },
+    {
+      "endpoint_program_budget_per_case": 32,
+      "pointwise_classical": {
+        "sufficient": 25,
+        "insufficient": 282,
+        "unresolved": 8
+      },
+      "loading_guided_reuse": {
+        "sufficient": 27,
+        "insufficient": 283,
+        "unresolved": 5
+      }
+    },
+    {
+      "endpoint_program_budget_per_case": 64,
+      "pointwise_classical": {
+        "sufficient": 27,
+        "insufficient": 283,
+        "unresolved": 5
+      },
+      "loading_guided_reuse": {
+        "sufficient": 27,
+        "insufficient": 283,
+        "unresolved": 5
+      }
+    }
+  ],
+  "final_label_differences": [],
+  "first_sufficient_changes": 0,
+  "positive_decisions_per_algorithm": 27,
+  "raw_target_joint_exceedances": 0,
+  "raw_target_outer_misses": [],
+  "calibrated_material_validation": false,
+  "cross_loading_boundary_validated": false,
+  "waiting_time_recovery_exponent_validated_on_material": false,
+  "cautions": [
+    "Assumed bands and conditional hold-state class; not calibrated material guarantee",
+    "Same real curves previously inspected; exploratory reuse study, not independent validation",
+    "Identical classical oracle; time reuse can also be implemented by prior frameworks",
+    "Same-process machine-specific timings; no universal speedup or better point prediction",
+    "80-digit replay is not external audit or directed-rounding proof"
+  ]
+}

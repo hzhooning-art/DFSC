@@ -1,0 +1,64 @@
+{
+  "fresh_directory_replay_passed": true,
+  "case_mapping_byte_identical": true,
+  "workflow_non_timing_results_exactly_equal": true,
+  "workflow_files": 60,
+  "witness_arrays_exactly_equal": true,
+  "array_count": 6188,
+  "all_180_workflow_outcomes_and_traces_equal": true,
+  "fresh_audit_passed": true,
+  "original_median_speed_ratio": 2.054209401510641,
+  "replay_median_speed_ratio": 2.0579963509712202,
+  "replay_aggregate_times": [
+    {
+      "repetition": 0,
+      "pointwise_classical": {
+        "total_seconds": 1.9619567999980063,
+        "endpoint_programs": 650
+      },
+      "loading_guided_reuse": {
+        "total_seconds": 0.9649623999939649,
+        "endpoint_programs": 234
+      },
+      "speed_ratio": 2.033195075798059
+    },
+    {
+      "repetition": 1,
+      "pointwise_classical": {
+        "total_seconds": 1.963682699995843,
+        "endpoint_programs": 650
+      },
+      "loading_guided_reuse": {
+        "total_seconds": 0.9541720999986865,
+        "endpoint_programs": 234
+      },
+      "speed_ratio": 2.0579963509712202
+    },
+    {
+      "repetition": 2,
+      "pointwise_classical": {
+        "total_seconds": 1.9660771999951976,
+        "endpoint_programs": 650
+      },
+      "loading_guided_reuse": {
+        "total_seconds": 0.9546948999923188,
+        "endpoint_programs": 234
+      },
+      "speed_ratio": 2.0593775037564526
+    }
+  ],
+  "calibrated_material_validation": false,
+  "source_sha256": {
+    "experiments/specs/pvc_time_search_benefit_20261023.json": "4015bc121119eedc68ddb21fa7ac7d40b3917ebde16e1df644db554d0c0ae972",
+    "experiments/run_pvc_time_search_benefit_20261023.py": "530708179a5fe7b6a21dc260e945f70fbc14253d897c083cebc12ab9fde4d7dd",
+    "experiments/specs/polymer_glass_hold_20261021.json": "ff225ea6355a72ee12933238e6903d1ca63e086c18a04d5878eb6b5f11c18be1",
+    "results/polymer_glass_hold_20261021/extracted.json": "90da4f73a4910194b0285e050985a68d9bb32fbe95f5c757e96a43078266dda2",
+    "experiments/run_matched_method_benefit_20261021.py": "d4931c85b64a16d4342147632d36cac01fbeb0a4db597431ba19205ba9320468",
+    "experiments/prediction_time_search.py": "d7741592ce4bab8a64bc13924ce4e772921cfb2e0a73f4662a7acf546099f8da",
+    "experiments/prediction_time_dual.py": "113ec473f7625fa1707c6b5a41c4f9e843c35fc69e92aa3c1cdc8513795ea878",
+    "experiments/prediction_time_transport.py": "81b732f59e77d981251b65009f3e1371afa4ef403d3c1be6afe9789c6b0ade73",
+    "experiments/observation_weighted_prediction.py": "15850d36e783038b319212da69987937b0041b8879b4d135612c065b6ce91e01",
+    "experiments/audit_pvc_time_search_benefit_20261023.py": "0887de63acadc321293e36a1785964720bcff5549c0270a94826e1c30f88b7e2"
+  },
+  "replay_directory": "D:\\program projects\\st_mlee\\P4\\tmp\\pvc_time_search_replay_20261023\\P4"
+}

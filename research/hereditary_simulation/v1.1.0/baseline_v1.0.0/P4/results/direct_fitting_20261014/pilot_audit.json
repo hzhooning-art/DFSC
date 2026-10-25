@@ -1,0 +1,23 @@
+{
+  "schema": "P4-direct-fitting-audit-v1",
+  "phase": "pilot",
+  "all_checks_pass": true,
+  "result_sha256": "f8077ceda20cfd2947051eab81edcf3cc718e1f01eefd1fca0d750b88babdc31",
+  "protocol_sha256": "96de7e7663d0de7247b801f51417f1f741340d1121eb09f37074c68c1f5e068a",
+  "checked_successful_fits": 90,
+  "maximum_independent_prediction_gap": 3.774758283725532e-15,
+  "candidate_order_or_penalty_failures": {
+    "grid_ls": 0,
+    "grid_ridge": 0,
+    "prony_cv": 40
+  },
+  "final_refit_failures": {
+    "grid_ls": 0,
+    "grid_ridge": 0,
+    "prony_cv": 6
+  },
+  "failed_nonlinear_starts": 171,
+  "new_random_trials": false,
+  "independent_external_validation": false,
+  "limits": "Separate primitive replay, metadata and aggregation checks; not a global-optimum certificate or an independent maintainer review."
+}

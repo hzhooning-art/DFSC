@@ -1,0 +1,42 @@
+{
+  "schema": "P4-time-transport-spec-v1",
+  "date": "2026-10-20",
+  "scope": "Exploratory continuation after the finite-list physical-pair method; freeze this comparison before executing it",
+  "revision": "run_02 adds the loading-controlled curvature remainder and whole-cell time-varying joint predictor. Original run_01 sources/results preserved. Candidate lists, observation information, tolerances, pointwise solver budget and previous variants unchanged.",
+  "reference_orders": [0, 1, 2],
+  "target_orders_gamma": [0, 1],
+  "reference_dead_time": 0.1,
+  "geometric_grid_sizes": [17, 65],
+  "excess_range": [0.001, 3.0],
+  "always_include_delays": [0.0, 0.1, 0.101, 0.103, 0.11, 0.13, 0.2, 0.4, 1.1, 3.1],
+  "observation_delays_from_anchor": [0.0, 0.5, 1.0, 2.0, 4.0],
+  "observation_half_width": 0.01,
+  "absolute_error_tolerance": 0.025,
+  "relative_error_tolerance": 0.05,
+  "common_input_relative_envelopes": [0.0, 0.03, 0.06],
+  "mesh_levels": [128, 512, 2048],
+  "numerical_margin": 0.0000002,
+  "truth_spec": "observation_weighted_prediction_20261011.json",
+  "algorithms": ["v1_physical_pair_progressive", "adaptive_monotone_hulls", "adaptive_secant_transport", "adaptive_curvature_transport"],
+  "primary_comparator": "v1_physical_pair_progressive",
+  "comparison_contract": "All variants share v1 phase/input-floor/physical-pair gates, exact kernels, full-tail envelopes, solver fallback, pointwise mesh budget and tolerances. Only reuse across target times changes. Shared numerical cache is charged separately to each workflow; no wall-clock speed claim.",
+  "go_criteria": [
+    "Zero opposite decisive labels",
+    "Record gains AND losses relative to every resolved v1 candidate, not only aggregate sufficient counts",
+    "Check every sufficient returned joint estimate at nominal and both endpoint input scalings",
+    "Check whole-time-cell guarantees at additional interior physical times, not only listed candidates",
+    "Report work at both candidate densities and the convex-secant ablation",
+    "Do not conflate continuous covered subintervals with a continuum earliest prediction time"
+  ],
+  "limitations": [
+    "Same four deterministic synthetic spectra and 12 observation sets; densities and input envelopes reuse information",
+    "Known positive polynomial loading histories, deterministic bands, zero prehistory, no common mass/rate caps",
+    "The upper endpoint is convex and both endpoints decrease; no monotonicity or convexity of the diameter is assumed",
+    "Empty transported inner overlap is a missing lower witness, not an infeasibility result",
+    "No extrapolation outside two computed bounded target times",
+    "Positive input-envelope scaling is inherited from the earlier exact reduction",
+    "Failure remains unresolved; floating-point replay is not directed rounding or external review",
+    "A fixed candidate search can cover continuous subintervals but does not prove a global earliest time",
+    "The test does not establish improved physical point-prediction accuracy or real-material validity"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "status": "Frozen before first execution; do not tune from observed scores",
+  "purpose": "Test whether a curvature-bounded endpoint interpolation outer LP closes the inner-outer width gap at tractable cell counts",
+  "parent_spec": "calibrated_multiload_gate_20261010.json",
+  "prior_outer_result": "p4_offgrid_mesh_refinement_gate_20261010.json",
+  "prior_inner_result": "p4_offgrid_inner_outer_sandwich_20261010.json",
+  "rate_support": [0.02, 4.0],
+  "cell_counts": [12, 24, 48, 96],
+  "cell_boundary_rule": "logarithmic endpoints, including both frozen support endpoints",
+  "method": "One nonnegative mass at each rate-cell endpoint, retaining duplicate endpoint columns across adjacent cells; the equilibrium mass plus all endpoint masses equals the known G(0)=1. For each atom in a cell, barycentrically interpolate its two endpoint responses and bound its error by cell_width^2/8 times a uniform absolute second-rate-derivative bound, multiplied by cell mass. Apply the same construction to targets.",
+  "derivative_bound": "For a piecewise-constant strain-rate segment (start,end,slope) and observation time t, upper-bound the absolute second rate derivative by abs(slope) times the integral of u^2 exp(-cell_left*u) from max(t-end,0) to max(t-start,0); sum over segments. For G20 use 20^2 exp(-20*cell_left).",
+  "replicates": 128,
+  "truths": ["on_grid", "off_grid"],
+  "designs": ["single_ramp_hold", "ramp_hold_plus_cycle"],
+  "targets": ["G20", "heldout_sigma20"],
+  "valid_calibration_coverage_requirement": "All 117 previously valid-calibration trials per truth/design must be feasible and include both true targets",
+  "off_grid_dual_mean_width_limits": {"G20": 0.2, "heldout_sigma20": 0.1},
+  "desirable_cell_count_max": 48,
+  "hard_cell_count_max": 96,
+  "rules": [
+    "Use exactly the parent loading histories, calibration, observations, seeds, support, targets, and known initial modulus",
+    "Verify the interpolated true masses satisfy every noiseless observation and target envelope",
+    "Verify every feasible finite-grid inner interval lies within the new outer interval",
+    "Compare against the previous 96-cell outer bound and 192-rate inner diagnostic without changing either result",
+    "A gate pass demonstrates utility under frozen synthetic assumptions, not novelty or external validity",
+    "If the 96-cell method fails either coverage or both width limits, stop this endpoint-interpolation route for an independent P4 kernel-method paper"
+  ]
+}

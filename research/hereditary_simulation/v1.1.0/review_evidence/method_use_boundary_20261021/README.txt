@@ -1,0 +1,1 @@
+Retrospective aggregation only: no new solves, observations or simulations. The JSON records bindings, exact old/new candidate comparisons, positive-gain concentration and the saved nonmonotone example. Input result files are already supplied under prediction_time_transport_20261020/ and prediction_time_dual_20261020/. No new independent validation is claimed.

@@ -1,0 +1,11 @@
+{
+  "schema": "P4-observation-weighted-delay-frontier-v1",
+  "date": "2026-10-11",
+  "role": "Separate deterministic consequence check of the derived sharp delay-rate theorem; not retroactive amendment of the completed interval experiment",
+  "parent_spec": "observation_weighted_prediction_20261011.json",
+  "delays": [1.0, 0.3, 0.1, 0.03, 0.01, 0.003, 0.001],
+  "step_amplitude": 1.0,
+  "comparison": "Fixed data bands; finite physical atom at rate 1/delay leaves all observation changes <=0.005. Compare its target difference to the theorem's lower bound and whole-class upper bound.",
+  "bounds_validity": "Strictly feasible exact synthetic baseline with band half-width 0.01; source response bands are assumptions, not calibration",
+  "novelty": "Conditional deterministic inverse-delay minimax-rate candidate; not statistical minimax or an established originality claim"
+}

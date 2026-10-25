@@ -1,0 +1,26 @@
+{
+  "schema": "P4-delayed-rectangle-control-spec-v1",
+  "frozen_before_execution": true,
+  "parent_spec": "matched_endpoint_design_20261011.json",
+  "parent_result_sha256": "bba1b60b8ec9026206c185fd8756bae37f84f053fa962574d09c7b1439b25ad4",
+  "new_design": "delayed_rectangle",
+  "rectangle_start": 0.6666666666666666,
+  "rectangle_rate": 3,
+  "retained_designs": [
+    "constant",
+    "late_quadratic_start"
+  ],
+  "comparison_baselines": [
+    "constant",
+    "late_quadratic_start"
+  ],
+  "required_mean_gain_lower": 0.1,
+  "limits": [
+    "Same four frozen spectra and synthetic response centers; no new independent random trials",
+    "Same primary absolute error bands and original diagnostic relative-anchor branch",
+    "Unit dose, duration budget 1, peak cap 3 and fixed original five observation times; actual load-active duration differs",
+    "Classical rectangular control, not a new waveform or optimization algorithm",
+    "Frozen parents reused by SHA; no overwrite or reinterpretation of original passed/failed gates",
+    "Floating-point continuous envelopes; no directed rounding"
+  ]
+}

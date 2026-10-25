@@ -1,0 +1,28 @@
+{
+  "schema": "P4-observation-weighted-prediction-v1",
+  "question": "Can finite target bounds be computed with neither a rate-support bound nor an initial-modulus bound, using a positive loading observation?",
+  "date": "2026-10-11",
+  "anchor": {"strain_rate": 1.0, "duration": 1.0, "observation_time": 1.0},
+  "observation_times": [1.0, 1.5, 2.0, 3.0, 5.0, 8.0, 12.0, 16.0],
+  "response_error_bound": 0.01,
+  "data_rule": "Exact synthetic reference values at all observation times, with declared deterministic +/-0.01 bands; not sensor calibration or statistical coverage estimation",
+  "rate_support_prior": null,
+  "initial_modulus_prior": null,
+  "cell_counts": [16, 64, 256, 1024, 4096],
+  "inner_minimum_x": 1e-12,
+  "bounded_targets": ["G20", "quiet_half_ramp", "active_half_ramp", "reversal_sigma"],
+  "utility_limits": {"G20": 0.2, "quiet_half_ramp": 0.1},
+  "endpoint_bracket_tolerance": 0.005,
+  "lp_replay_tolerance": 0.0000002,
+  "truths": [
+    {"name": "two_rate", "kind": "atoms", "rates": [0.0, 0.15, 0.8], "weights": [0.3, 0.4, 0.3]},
+    {"name": "wide_rate", "kind": "atoms", "rates": [0.0, 0.03, 2.7, 30.0], "weights": [0.15, 0.35, 0.3, 0.2]},
+    {"name": "uniform", "kind": "uniform", "rate_interval": [0.02, 3.7], "equilibrium": 0.2, "mass": 0.8},
+    {"name": "logwide", "kind": "log_uniform", "rate_interval": [0.005, 30.0], "equilibrium": 0.1, "mass": 0.9}
+  ],
+  "fast_witness_rates": [10.0, 1000.0, 100000.0, 10000000.0],
+  "fast_witness_weighted_mass": 0.005,
+  "frozen_scope": "Proof-led deterministic feasibility and adversarial boundary test, not another same-family statistical robustness ladder or a superiority benchmark",
+  "gate": "All declared truths and fast witnesses are enclosed by continuum outer bounds; finest endpoint brackets <= tolerance; required finite targets satisfy utility; initial modulus and instantaneous ideal-step target have a strict-slack unboundedness construction",
+  "limits": ["Positive scalar linear kernel, known exact input and qualified zero initial state remain assumptions", "Declared error bands are not measured calibration", "x=0 boundary measures describe a closure and are not finite-modulus physical spectra", "Inner grid excludes x=0; numerical witnesses are finite-modulus spectra", "Cell bounds use classical positive-measure/moment optimization; no global novelty claim", "LP replay is floating point, not outward-rounded certification", "No real-material validation", "No software contribution is promoted"]
+}

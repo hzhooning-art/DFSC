@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "result_sha256": "bb4d1fa18cde988c02a2c343747bdc6cfef5c484eafd1ed31d1771da2f7105ef",
+  "archive_sha256": "e056457a1e27743b533d6fe2f32cfc5d511b28133902bbf0f5cf0fca446912c0",
+  "audit_source_sha256": "c858e4e4497787aac25d4d3228e33c70fd6363105ed6ab1419aaa614bdb637ae",
+  "replayed_successful_lp_count": 4160,
+  "counts": {
+    "current_symmetric": 64,
+    "classical_sign_convex": 2048,
+    "finite_grid_diagnostic": 2048
+  },
+  "maximum_residuals": {
+    "inequality": 1.1662371068865696e-10,
+    "equality": 8.27971025074703e-12,
+    "negative_mass": 0.0,
+    "stationarity": 2.9100387766156643e-08,
+    "duality_gap": 2.1130111549361175e-12,
+    "dual_sign": 4.314460749059946e-27
+  },
+  "nested_endpoint_checks": 2048,
+  "valid_classical_target_checks": 976,
+  "valid_finite_target_checks": 976,
+  "valid_finite_target_exclusions": 0,
+  "current_replay_case_count": 16,
+  "technical_increment_gate_pass": false,
+  "scope": "Local saved-witness replay, not external blind replication or outward-rounded arithmetic"
+}

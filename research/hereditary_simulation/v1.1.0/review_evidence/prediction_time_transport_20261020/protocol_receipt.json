@@ -1,0 +1,18 @@
+{
+  "bindings": {
+    "experiments/specs/prediction_time_transport_20261020.json": "950c3b8aef901b3fee46d6d9436ac36f0372b9257caaebd330e254115e6ef8f3",
+    "experiments/run_prediction_time_transport.py": "c9988b69a70888df791c5caab59386ddba7b72229430ea8b30dbdba1fa5370a9",
+    "experiments/prediction_time_transport.py": "81b732f59e77d981251b65009f3e1371afa4ef403d3c1be6afe9789c6b0ade73",
+    "experiments/prediction_time_curvature.py": "14b04cfb7c3cc7ce1ecb5dfe3b946b67721e2db90c111a1258f37ac246e1f5d9",
+    "experiments/prediction_time_search.py": "d7741592ce4bab8a64bc13924ce4e772921cfb2e0a73f4662a7acf546099f8da",
+    "experiments/observation_weighted_prediction.py": "15850d36e783038b319212da69987937b0041b8879b4d135612c065b6ce91e01",
+    "experiments/specs/observation_weighted_prediction_20261011.json": "d99ea08f60e6eb3c2d16baf3980244117097f3e2f2deabe4b0cc74a59fddd5be"
+  },
+  "scope": "Exploratory continuation after the finite-list physical-pair method; freeze this comparison before executing it",
+  "frozen_before_execution": true,
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "mpmath": "1.3.0"
+  }
+}

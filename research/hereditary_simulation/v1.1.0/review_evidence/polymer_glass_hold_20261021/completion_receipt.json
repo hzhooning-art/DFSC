@@ -1,0 +1,61 @@
+{
+  "screened_new_directions": 3,
+  "numerically_tested_new_directions": 1,
+  "qualification_decisions": [
+    {
+      "source": "10.18434/mds2-3795",
+      "decision": "Metrology/input information obtained; current finite-strain model qualification unresolved. No prediction fits"
+    },
+    {
+      "source": "10.5281/zenodo.18507412",
+      "decision": "25-percent compression/aging study; current small-strain model qualification unresolved. No prediction fits"
+    },
+    {
+      "source": "10.5281/zenodo.19532416",
+      "decision": "Small-strain raw-unit exploratory sensitivity only; one accepted assumed-band cell. No independently calibrated material guarantee"
+    }
+  ],
+  "nist_document_checks": [
+    {
+      "source_filepath": "README.txt",
+      "download_url": "https://data.nist.gov/od/ds/ark:/88434/mds2-3795/README.txt",
+      "local_sha256": "c134d44e80a6269cc1cd7c367bddd4fc6d663458255d1aefe5acd666c27338ac",
+      "official_checksum_available": true,
+      "official_checksum_verified": true
+    },
+    {
+      "source_filepath": "data_summary.txt",
+      "download_url": "https://data.nist.gov/od/ds/ark:/88434/mds2-3795/data_summary.txt",
+      "local_sha256": "f1ea4b721ab3fb41821e4946bd17b62e2f505f2ee17d68b4a463410b444d5590",
+      "official_checksum_available": true,
+      "official_checksum_verified": true
+    },
+    {
+      "source_filepath": "lcei_data/README_lcei_test_data.txt",
+      "download_url": "https://data.nist.gov/od/ds/mds2-3795/lcei_data%2FREADME_lcei_test_data.txt",
+      "local_sha256": "bf30ab1c583bba1412611ae845c9f2f9fb87103d2836d8734ef2e76ba787df0b",
+      "official_checksum_available": true,
+      "official_checksum_verified": true
+    },
+    {
+      "source_filepath": "vhbt_data/README_vhbt_test_data.txt",
+      "download_url": "https://data.nist.gov/od/ds/mds2-3795/vhbt_data%2FREADME_vhbt_test_data.txt",
+      "local_sha256": "e70269e519fa6cafa6278f033d8ffa10bb8ce4d0d8f13fcefe9ffa502bcc5aea",
+      "official_checksum_available": true,
+      "official_checksum_verified": true
+    }
+  ],
+  "source_xml_audit_passed": true,
+  "fresh_source_replay_passed": true,
+  "all_90_correlated_tasks_retained": true,
+  "unique_measured_targets": 15,
+  "conditional_positive_examples": 1,
+  "calibrated_real_material_validation": false,
+  "current_paper_and_package_unchanged": true,
+  "paper_sha256": "b00098d8893b9d712b5fa16c9a1f4f22a11dbae7b57a9b2feb77f146ea58c8fb",
+  "package_sha256": "69b978c1f3ca34f8070ae71159e3ad0fb2c0d7bc4f8a7ccc3bc84fcdd8687a08",
+  "result_sha256": "dfc2e5411165aa467a74664a5a55844f68c16b72fb9131acbd8ef791564f8aff",
+  "audit_sha256": "e0f3857cd9114105e9ffb7ad92d6f64c0b37dfd2fd934eef04fb2c79cb46dd1f",
+  "replay_sha256": "402edfed6b0a70b37df012d89658c062448ce0dd7d9927a979687eb836a8adfb",
+  "report_sha256": "6452ffa9b0172aeb882af633c728093a1e203ad985cb7875d089ca8f2508dab5"
+}

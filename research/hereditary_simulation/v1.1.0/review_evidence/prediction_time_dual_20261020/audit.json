@@ -1,0 +1,39 @@
+{
+  "all_checks_passed": true,
+  "result_sha256": "6b03559bdcc55c898a246c6fb64d1d9d753a8627b046bf6a56fe2c4de0b68a8b",
+  "protocol_bindings_match": true,
+  "lp_witnesses_sha256": "f56702ae8a3c0dec817f247c0bc568068146f7212bb18f9070c0033eec1effa0",
+  "lp_replays": 3834,
+  "max_lp_residual": 2.4957481636889156e-09,
+  "physical_witnesses_at_80_digits": 1278,
+  "max_physical_band_violation_at_80_digits": "0.0",
+  "continuous_finite_cell_bounds_at_80_digits": 34351,
+  "infinite_tail_bounds_at_80_digits": 1278,
+  "maximum_residual_certificate_gap": 9.988626917178225e-08,
+  "positive_joint_prediction_checks": 1203,
+  "exact_cell_variable_counts": {
+    "parent": {
+      "uniform_interval": 1458672,
+      "tail_completed_interval": 752880,
+      "continuous_dual": 227374
+    },
+    "additional": {
+      "uniform_interval": 290472,
+      "tail_completed_interval": 178038,
+      "continuous_dual": 44016
+    }
+  },
+  "cost_accounting_note": "Runner tail-completed-interval cell_variables conservatively counts both outer LPs at the augmented inner node count; exact mixed sizes are given here.",
+  "opposite_parent_labels": 0,
+  "lost_parent_resolved": 0,
+  "parent_patch_cost": {
+    "additional_endpoint_LPs": 154,
+    "additional_LP_variables": 20942,
+    "additional_residual_cells": 3742,
+    "total_endpoint_LPs_with_prior_secant": 5306
+  },
+  "limits": [
+    "Same-developer high-precision replay, not independent external review",
+    "Analytic interval remainder bounds checked at 80 digits; solver and production computations are floating point, not directed rounding"
+  ]
+}

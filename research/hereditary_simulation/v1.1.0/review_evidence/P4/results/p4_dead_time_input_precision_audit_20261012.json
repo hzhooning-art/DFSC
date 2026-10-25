@@ -1,0 +1,25 @@
+{
+  "schema": "P4-dead-time-input-precision-audit-v1",
+  "source_sha256": "1b819c8b199c10c75a2ddb9b6e46a5aeb796365f6d0aca1526b820e035fe0159",
+  "result_sha256": "add5e67ec47f8780e10b92c0d581d60cb9b5312666b4823d921fb4847209a777",
+  "LPs_replayed": 576,
+  "nominal_physical_endpoints": 288,
+  "envelope_physical_endpoints": 864,
+  "independent_observation_integrals": 80,
+  "independent_cell_ratio_checks": 2994,
+  "unbounded_pairs": 72,
+  "nonconstant_input_shape_checks": 72,
+  "max_residuals": {
+    "primal": 8.392159189796189e-11,
+    "stationarity": 3.778090729156247e-09,
+    "gap": 1.0258460747536446e-13,
+    "sign": 9.627976194082066e-11,
+    "physical_excess": 6.527301789349682e-11,
+    "target_error": 2.7755575615628914e-16,
+    "input_pair_observation_error": 2.220446049250313e-16
+  },
+  "max_finest_endpoint_bracket": 0.00016694969105124358,
+  "continuation_gate_pass": false,
+  "all_checks_pass": true,
+  "limits": "Same developer alternative time integrals, physical envelope pairs and saved-LP replay; not external review or directed rounding."
+}

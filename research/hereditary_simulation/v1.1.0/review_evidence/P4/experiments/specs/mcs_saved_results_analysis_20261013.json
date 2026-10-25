@@ -1,0 +1,18 @@
+{
+  "schema": "P4-MCS-saved-results-analysis-spec-v1",
+  "status": "Retrospective analysis plan written after inspecting existing outcomes; not preregistered",
+  "date": "2026-10-13",
+  "purpose": "Assess practical prediction decisions against observation-time resources for the MCS article",
+  "parent_result": "p4_ultraslow_calibrated_validation_20261011.json",
+  "comparator_result": "p4_matched_convex_baseline_20261011.json",
+  "new_trials": false,
+  "new_solvers": false,
+  "horizons": [8.0, 16.0],
+  "response_duration_sums": {"8.0": 24, "16.0": 40},
+  "response_observations": 80,
+  "blank_observations": 64,
+  "utility_limits": {"G20": 0.20, "heldout_sigma20": 0.10},
+  "decision": "sufficient when both outer diameters meet original limits; insufficient when either physical inner diameter exceeds its limit; unresolved otherwise",
+  "reporting": "Report each of four groups and every calibration failure; paired windows are not independent observations; valid-calibration conditioning is for offline evaluation only",
+  "limits": "Response duration sums are a resource proxy, not measured apparatus cost or CPU time. This is not a prospective adaptive acquisition policy or a validation of a new algorithm."
+}

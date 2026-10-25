@@ -1,0 +1,16 @@
+{
+  "purpose": "Matched scheduling benefit on already inspected real PVC early observations, not new physical validation",
+  "parent_spec": "experiments/specs/polymer_glass_hold_20261021.json",
+  "parent_data": "results/polymer_glass_hold_20261021/extracted.json",
+  "design": "Use all five temperatures, both original observation windows and all three original assumed bands. Candidate times are ALL actual source times strictly after the last selected observation; no interpolation or response-based subset",
+  "absolute": 0.05,
+  "relative": 0.10,
+  "levels": [128,512,2048],
+  "tail_exponent": 20.0,
+  "residual_tolerance": 1e-7,
+  "max_certificate_cells": 4096,
+  "repetitions": 3,
+  "endpoint_program_budgets": [4,8,16,32,64],
+  "contract": "Both algorithms call the identical strong full-half-line continuous positive-measure LP oracle, strict-feasibility solve and residual checker. Endpoints then median scheduling; only cross-time interval/secant reuse differs. No cross-algorithm cache; serial single-thread AB/BA/AB timing; setup/scheduling included, disk serialization excluded. Retain all first-repeat witnesses. Three same-process repeats are not independent machine measurements",
+  "claim_ceiling": "Conditional task-cost benefit only. Existing real measurements and assumed observation bands do not establish calibrated material guarantees. Earlier responses/results were already inspected, so this is exploratory and not independent validation. Temporal reuse is available to classical solvers too; no claim of unique capability or a universal speedup"
+}

@@ -1,0 +1,49 @@
+{
+  "status": "Frozen before first numerical execution; no tuning from new outcomes",
+  "purpose": "Validate finite-target prediction on new ultra-slow spectra and fresh noise with independent blank calibration",
+  "scope": "Prespecified synthetic holdout-style validation; not external material data or independent human blind review",
+  "parent_spec": "target_support_sensitivity_20261011.json",
+  "parent_result": "p4_target_support_sensitivity_20261011.json",
+  "rate_support": [0.0, 4.0],
+  "known_initial_modulus": 1.0,
+  "confirmation_horizons": [8.0, 16.0],
+  "pilot_count": 16,
+  "confirmation_count_each": 32,
+  "response_observations_per_design": 80,
+  "calibration": {
+    "blank_count": 64,
+    "upper_confidence": 0.95,
+    "distribution": "iid symmetric uniform with common stationary amplitude across blank, pilot and confirmation observations",
+    "amplitude_truth_for_generation_and_evaluation_only": 0.01,
+    "formula": "b_hat=max(abs(blank))/(0.05**(1/64))",
+    "use": "Inference receives b_hat only, not the true amplitude; calibration event is common to both horizons and both targets"
+  },
+  "seed_base": 2026101107,
+  "replicates_per_truth": 64,
+  "streams": "SeedSequence([seed_base,truth_index,replicate,stream]), streams 0=blank,1=pilot,2=confirmation; same confirmation noise vector pairs horizons",
+  "truths": {
+    "ultraslow_two": {"kind": "discrete", "equilibrium": 0.1, "rates": [0.00013, 0.23], "weights": [0.65, 0.25]},
+    "mixed_four": {"kind": "discrete", "equilibrium": 0.08, "rates": [0.0000037, 0.0013, 0.087, 2.3], "weights": [0.3, 0.22, 0.25, 0.15]},
+    "uniform_slow": {"kind": "uniform_rate", "equilibrium": 0.1, "rate_low": 0.000007, "rate_high": 0.013, "transient_mass": 0.9},
+    "logwide_continuous": {"kind": "uniform_log_rate", "equilibrium": 0.15, "rate_low": 0.000003, "rate_high": 3.7, "transient_mass": 0.85}
+  },
+  "inference": "Keep the previous fixed loading, zero-floor 145-cell curvature outer envelope and 289-positive-rate inner grid; no truth-dependent grid or schedule",
+  "targets": ["G20", "heldout_sigma20"],
+  "utility_limits": {"G20": 0.2, "heldout_sigma20": 0.1},
+  "gate": {
+    "minimum_observed_joint_coverage_per_truth": 0.9,
+    "minimum_valid_calibration_long_utility_fraction_per_truth": 0.9,
+    "headroom_ratio_max": 0.8,
+    "requirement": "All valid-calibration long-window targets covered and outer feasible; each truth meets >=90% unconditional observed joint coverage and >=90% valid-calibration worst-diameter utility; all valid-calibration pair brackets available; >=2 groups including >=1 continuous group have mean long outer score <=0.8 mean short inner score",
+    "interpretation": "A feasibility gate only. Empirical coverage is not proof of population coverage, and extra observation time is not new-method superiority."
+  },
+  "reporting": "Report calibration failures, all infeasibilities, unconditional trial-level joint coverage, valid-calibration coverage and widths, exact binomial confidence intervals; do not count correlated targets/horizons as independent replications",
+  "limitations": [
+    "Only four prespecified synthetic families and one stationary uniform-noise model",
+    "Known G(0), positive spectrum, exact loading and finite upper rate support remain assumed",
+    "Calibration count adds 64 measurements to the 80 response observations; summed response-run windows are 24 versus 40, with blank acquisition cost separately unmodeled",
+    "New data are generated and checked by the same researcher/agent, not external blind review",
+    "Floating-point outer and dual checks are not outward-rounded certificates",
+    "No new algorithm or competitive-method advantage is claimed"
+  ]
+}

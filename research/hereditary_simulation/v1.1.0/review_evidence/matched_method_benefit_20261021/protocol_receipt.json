@@ -1,0 +1,33 @@
+{
+  "frozen_before_execution": true,
+  "bindings": {
+    "experiments/specs/matched_method_benefit_20261021.json": "7bcb77689d39f4b8ae938460a94e8d9318c54257ce3cc863d00fbce507ba7ebc",
+    "experiments/run_matched_method_benefit_20261021.py": "d4931c85b64a16d4342147632d36cac01fbeb0a4db597431ba19205ba9320468",
+    "results/prediction_time_transport_20261020/run_02/result.json": "4a70a387688b71981dced146c40ed58ac907586859f54a94f2662b39ad006219",
+    "experiments/specs/observation_weighted_prediction_20261011.json": "d99ea08f60e6eb3c2d16baf3980244117097f3e2f2deabe4b0cc74a59fddd5be",
+    "experiments/prediction_time_search.py": "d7741592ce4bab8a64bc13924ce4e772921cfb2e0a73f4662a7acf546099f8da",
+    "experiments/prediction_time_transport.py": "81b732f59e77d981251b65009f3e1371afa4ef403d3c1be6afe9789c6b0ade73",
+    "experiments/prediction_time_dual.py": "113ec473f7625fa1707c6b5a41c4f9e843c35fc69e92aa3c1cdc8513795ea878",
+    "experiments/observation_weighted_prediction.py": "15850d36e783038b319212da69987937b0041b8879b4d135612c065b6ce91e01"
+  },
+  "versions": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3"
+  },
+  "machine": {
+    "system": "Windows-11-10.0.26200-SP0",
+    "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "cpu_count": 24
+  },
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "sources": [
+    "https://arxiv.org/html/2606.19503v1#S3.SS2",
+    "https://arxiv.org/html/2606.19503v1#S3.SS3"
+  ],
+  "interpretation": "Own matched adaptation, not authors original software. Classical continuous LP oracle is shared; only temporal scheduling changes."
+}

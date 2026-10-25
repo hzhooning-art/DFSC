@@ -1,0 +1,2060 @@
+{
+  "schema": "P4-MCS-saved-results-analysis-v1",
+  "date": "2026-10-13",
+  "retrospective": true,
+  "new_trials": false,
+  "new_solvers": false,
+  "spec_sha256": "5ff322e2e388e4a778523bd3d948abb61af0c8d00c4aad5d26f41d59fe542122",
+  "source_sha256": "676d76b14c98142314584c45baf3dcc92e40faa26cd12a87b813fd4a0ff35efa",
+  "parent_result_sha256": "94ae505a4dc220586ca99b3b4ad74d4eadaacf457856eb99cb07e9d0b05dbfb3",
+  "comparator_result_sha256": "bb4d1fa18cde988c02a2c343747bdc6cfef5c484eafd1ed31d1771da2f7105ef",
+  "case_count": 256,
+  "valid_count": 244,
+  "summaries": {
+    "ultraslow_two": {
+      "trials": 64,
+      "valid": 57,
+      "counts": {
+        "8.0": {
+          "all": {
+            "sufficient": 58,
+            "insufficient": 6,
+            "unresolved": 0
+          },
+          "valid": {
+            "sufficient": 51,
+            "insufficient": 6,
+            "unresolved": 0
+          },
+          "invalid": {
+            "sufficient": 7,
+            "insufficient": 0,
+            "unresolved": 0
+          }
+        },
+        "16.0": {
+          "all": {
+            "sufficient": 64,
+            "insufficient": 0,
+            "unresolved": 0
+          },
+          "valid": {
+            "sufficient": 57,
+            "insufficient": 0,
+            "unresolved": 0
+          },
+          "invalid": {
+            "sufficient": 7,
+            "insufficient": 0,
+            "unresolved": 0
+          }
+        }
+      },
+      "valid_transitions": {
+        "sufficient->sufficient": 51,
+        "sufficient->insufficient": 0,
+        "sufficient->unresolved": 0,
+        "insufficient->sufficient": 6,
+        "insufficient->insufficient": 0,
+        "insufficient->unresolved": 0,
+        "unresolved->sufficient": 0,
+        "unresolved->insufficient": 0,
+        "unresolved->unresolved": 0
+      },
+      "conservative_combined_width_gain_percent": 53.170616883588906
+    },
+    "mixed_four": {
+      "trials": 64,
+      "valid": 63,
+      "counts": {
+        "8.0": {
+          "all": {
+            "sufficient": 64,
+            "insufficient": 0,
+            "unresolved": 0
+          },
+          "valid": {
+            "sufficient": 63,
+            "insufficient": 0,
+            "unresolved": 0
+          },
+          "invalid": {
+            "sufficient": 1,
+            "insufficient": 0,
+            "unresolved": 0
+          }
+        },
+        "16.0": {
+          "all": {
+            "sufficient": 64,
+            "insufficient": 0,
+            "unresolved": 0
+          },
+          "valid": {
+            "sufficient": 63,
+            "insufficient": 0,
+            "unresolved": 0
+          },
+          "invalid": {
+            "sufficient": 1,
+            "insufficient": 0,
+            "unresolved": 0
+          }
+        }
+      },
+      "valid_transitions": {
+        "sufficient->sufficient": 63,
+        "sufficient->insufficient": 0,
+        "sufficient->unresolved": 0,
+        "insufficient->sufficient": 0,
+        "insufficient->insufficient": 0,
+        "insufficient->unresolved": 0,
+        "unresolved->sufficient": 0,
+        "unresolved->insufficient": 0,
+        "unresolved->unresolved": 0
+      },
+      "conservative_combined_width_gain_percent": 47.09192128317247
+    },
+    "uniform_slow": {
+      "trials": 64,
+      "valid": 60,
+      "counts": {
+        "8.0": {
+          "all": {
+            "sufficient": 64,
+            "insufficient": 0,
+            "unresolved": 0
+          },
+          "valid": {
+            "sufficient": 60,
+            "insufficient": 0,
+            "unresolved": 0
+          },
+          "invalid": {
+            "sufficient": 4,
+            "insufficient": 0,
+            "unresolved": 0
+          }
+        },
+        "16.0": {
+          "all": {
+            "sufficient": 64,
+            "insufficient": 0,
+            "unresolved": 0
+          },
+          "valid": {
+            "sufficient": 60,
+            "insufficient": 0,
+            "unresolved": 0
+          },
+          "invalid": {
+            "sufficient": 4,
+            "insufficient": 0,
+            "unresolved": 0
+          }
+        }
+      },
+      "valid_transitions": {
+        "sufficient->sufficient": 60,
+        "sufficient->insufficient": 0,
+        "sufficient->unresolved": 0,
+        "insufficient->sufficient": 0,
+        "insufficient->insufficient": 0,
+        "insufficient->unresolved": 0,
+        "unresolved->sufficient": 0,
+        "unresolved->insufficient": 0,
+        "unresolved->unresolved": 0
+      },
+      "conservative_combined_width_gain_percent": 35.43654335472611
+    },
+    "logwide_continuous": {
+      "trials": 64,
+      "valid": 64,
+      "counts": {
+        "8.0": {
+          "all": {
+            "sufficient": 64,
+            "insufficient": 0,
+            "unresolved": 0
+          },
+          "valid": {
+            "sufficient": 64,
+            "insufficient": 0,
+            "unresolved": 0
+          },
+          "invalid": {
+            "sufficient": 0,
+            "insufficient": 0,
+            "unresolved": 0
+          }
+        },
+        "16.0": {
+          "all": {
+            "sufficient": 64,
+            "insufficient": 0,
+            "unresolved": 0
+          },
+          "valid": {
+            "sufficient": 64,
+            "insufficient": 0,
+            "unresolved": 0
+          },
+          "invalid": {
+            "sufficient": 0,
+            "insufficient": 0,
+            "unresolved": 0
+          }
+        }
+      },
+      "valid_transitions": {
+        "sufficient->sufficient": 64,
+        "sufficient->insufficient": 0,
+        "sufficient->unresolved": 0,
+        "insufficient->sufficient": 0,
+        "insufficient->insufficient": 0,
+        "insufficient->unresolved": 0,
+        "unresolved->sufficient": 0,
+        "unresolved->insufficient": 0,
+        "unresolved->unresolved": 0
+      },
+      "conservative_combined_width_gain_percent": 47.95235085529564
+    }
+  },
+  "totals": {
+    "8.0": {
+      "all": {
+        "sufficient": 250,
+        "insufficient": 6,
+        "unresolved": 0
+      },
+      "valid": {
+        "sufficient": 238,
+        "insufficient": 6,
+        "unresolved": 0
+      },
+      "invalid": {
+        "sufficient": 12,
+        "insufficient": 0,
+        "unresolved": 0
+      }
+    },
+    "16.0": {
+      "all": {
+        "sufficient": 256,
+        "insufficient": 0,
+        "unresolved": 0
+      },
+      "valid": {
+        "sufficient": 244,
+        "insufficient": 0,
+        "unresolved": 0
+      },
+      "invalid": {
+        "sufficient": 12,
+        "insufficient": 0,
+        "unresolved": 0
+      }
+    }
+  },
+  "duration_proxy_increase_percent": 66.66666666666667,
+  "conditional_decision_gain_percentage_points": 2.459016393442623,
+  "paired_records": [
+    {
+      "case": 0,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 1,
+      "truth": "ultraslow_two",
+      "calibration_valid": false,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 2,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 3,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 4,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 5,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 6,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 7,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 8,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 9,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 10,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 11,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "insufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 12,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 13,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 14,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 15,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 16,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 17,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 18,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 19,
+      "truth": "ultraslow_two",
+      "calibration_valid": false,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 20,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 21,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 22,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 23,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 24,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 25,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "insufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 26,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 27,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 28,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 29,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 30,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 31,
+      "truth": "ultraslow_two",
+      "calibration_valid": false,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 32,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 33,
+      "truth": "ultraslow_two",
+      "calibration_valid": false,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 34,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 35,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 36,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "insufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 37,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 38,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 39,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 40,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 41,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "insufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 42,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 43,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 44,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 45,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "insufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 46,
+      "truth": "ultraslow_two",
+      "calibration_valid": false,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 47,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 48,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 49,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 50,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 51,
+      "truth": "ultraslow_two",
+      "calibration_valid": false,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 52,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 53,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 54,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 55,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 56,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 57,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 58,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 59,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 60,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "insufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 61,
+      "truth": "ultraslow_two",
+      "calibration_valid": false,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 62,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 63,
+      "truth": "ultraslow_two",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 64,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 65,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 66,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 67,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 68,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 69,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 70,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 71,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 72,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 73,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 74,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 75,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 76,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 77,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 78,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 79,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 80,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 81,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 82,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 83,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 84,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 85,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 86,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 87,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 88,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 89,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 90,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 91,
+      "truth": "mixed_four",
+      "calibration_valid": false,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 92,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 93,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 94,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 95,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 96,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 97,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 98,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 99,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 100,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 101,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 102,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 103,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 104,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 105,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 106,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 107,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 108,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 109,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 110,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 111,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 112,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 113,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 114,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 115,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 116,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 117,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 118,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 119,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 120,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 121,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 122,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 123,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 124,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 125,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 126,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 127,
+      "truth": "mixed_four",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 128,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 129,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 130,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 131,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 132,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 133,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 134,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 135,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 136,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 137,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 138,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 139,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 140,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 141,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 142,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 143,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 144,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 145,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 146,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 147,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 148,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 149,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 150,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 151,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 152,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 153,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 154,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 155,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 156,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 157,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 158,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 159,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 160,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 161,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 162,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 163,
+      "truth": "uniform_slow",
+      "calibration_valid": false,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 164,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 165,
+      "truth": "uniform_slow",
+      "calibration_valid": false,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 166,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 167,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 168,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 169,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 170,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 171,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 172,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 173,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 174,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 175,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 176,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 177,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 178,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 179,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 180,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 181,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 182,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 183,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 184,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 185,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 186,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 187,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 188,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 189,
+      "truth": "uniform_slow",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 190,
+      "truth": "uniform_slow",
+      "calibration_valid": false,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 191,
+      "truth": "uniform_slow",
+      "calibration_valid": false,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 192,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 193,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 194,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 195,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 196,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 197,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 198,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 199,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 200,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 201,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 202,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 203,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 204,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 205,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 206,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 207,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 208,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 209,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 210,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 211,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 212,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 213,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 214,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 215,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 216,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 217,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 218,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 219,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 220,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 221,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 222,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 223,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 224,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 225,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 226,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 227,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 228,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 229,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 230,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 231,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 232,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 233,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 234,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 235,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 236,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 237,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 238,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 239,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 240,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 241,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 242,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 243,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 244,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 245,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 246,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 247,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 248,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 249,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 250,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 251,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 252,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 253,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 254,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    },
+    {
+      "case": 255,
+      "truth": "logwide_continuous",
+      "calibration_valid": true,
+      "short_decision": "sufficient",
+      "long_decision": "sufficient"
+    }
+  ],
+  "generated_sha256": {
+    "resource_decisions.pdf": "88d15a158c7b1024a0765cf9a9a799f613fcd18af4bd987f26e73a7a506b39ef",
+    "resource_decisions_table.tex": "60a197e8b7aed1e16ea67ccdd13085f5d61c7aa4adb9ac14f87b5b1287d447f5"
+  },
+  "limits": "Secondary analysis of existing simulations; not an adaptive-policy experiment, independent sample expansion, full cost assessment or new solver comparison."
+}

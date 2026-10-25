@@ -1,0 +1,41 @@
+{
+  "status": "Frozen before numerical execution; do not tune support floors or success criteria from results",
+  "purpose": "Test whether prediction resource headroom relies on a known positive lower relaxation rate",
+  "scope": "Conditional prior-sensitivity screen on existing synthetic development observations, not a new algorithm or independent replication",
+  "parent_spec": "target_resource_frontier_20261011.json",
+  "parent_result": "p4_target_resource_frontier_20261011.json",
+  "parent_archive": "p4_target_resource_frontier_20261011.npz",
+  "confirmation_horizons": [8.0, 16.0],
+  "future_noise_amplitude": 0.01,
+  "pilot_noise_amplitude": 0.01,
+  "support_floors": [0.02, 0.002, 0.0002, 0.00002, 0.0],
+  "support_ceiling": 4.0,
+  "normalization": "Known G(0)=1, unknown nonnegative equilibrium mass; zero-rate mass is merged observationally with equilibrium",
+  "outer_grid": "Keep original 96 cells on [0.02,4] unchanged; add 16 cells per lower decade and one [0,0.00002] cell at floor zero",
+  "inner_grid": "Keep original 193 rates unchanged; add 32 rates per lower decade; floor zero has no duplicate equilibrium atom",
+  "reuse": "All 16 original pilots and saved future observations at resource indices 0 and 6; no new noise or truth generated",
+  "utility_limits": {"G20": 0.2, "heldout_sigma20": 0.1},
+  "gate": {
+    "headroom_ratio_max": 0.8,
+    "criterion": "At floor zero, all 16 long-window outer scores are <=1 and at least two truth groups including continuous_uniform have long-window mean outer score <=0.8 times the matched floor-zero short-window mean inner score",
+    "retention_ratio_max": 1.25,
+    "retention_check": "For each truth, floor-zero long-window mean outer score <=1.25 times original-support long-window mean inner score; report separately from resource utility"
+  },
+  "validation": [
+    "Reproduce both horizons' original-support inner/outer bounds and realized posterior intervals",
+    "Verify nested original rates/cells remain present at every support floor",
+    "Pair diameters cannot shrink and realized intervals cannot contract as the spectral support expands",
+    "Inner diameters <= outer diameters and realized posterior widths <= outer pair bounds",
+    "All supported simulated targets remain contained",
+    "Replay all saved primal/dual LP evidence without optimization",
+    "Check zero-rate and small-rate responses and endpoint curvature envelopes with independent time quadrature"
+  ],
+  "limitations": [
+    "Upper rate bound 4, positive spectrum, exact G(0), linear hereditary operator and exact known noise remain assumed",
+    "No support beyond rate 4 or signed/nonlinear kernels are covered",
+    "All observations are reused development data; no new ultra-slow truth or external material validation",
+    "Prediction interval utility does not imply full-kernel or equilibrium identifiability",
+    "Floating-point primal/dual checks do not provide outward-rounded certificates",
+    "Relaxing a prior within established set-membership inference does not itself establish novelty"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "all_numerical_checks_passed": true,
+  "physical_validation_passed": false,
+  "result_sha256": "7d9b0ae0309bf2d2efd5e7c4628ea7ab8d4479fcbf2bf042c5d00295661ea76b",
+  "spec_sha256": "49bb55868c1d4f177b8c169861f9d2a826b42f28d227738340b86a08f6b9570e",
+  "lp_replays": 12,
+  "physical_witnesses_at_80_digits": 12,
+  "finite_cells_at_80_digits": 331,
+  "infinite_tails_at_80_digits": 12,
+  "max_lp_residual": 2.1587866216865592e-09,
+  "strict_feasibility_failures_are_unresolved_not_infeasibility_certificates": true,
+  "accepted_but_measured_error_exceeds_tolerance": [
+    {
+      "sheet": "08182022_4",
+      "band": 0.03,
+      "actual_target_seconds": 49.625,
+      "measured_normalized_response": 0.8505349276274387,
+      "computed_outer": [
+        0.6194523210601198,
+        0.7136734734528333
+      ],
+      "joint_estimate": 0.6665628972564765,
+      "absolute_error": 0.1839720303709621,
+      "relative_error": 0.21630155846056884
+    }
+  ],
+  "decision": "Do not promote to calibrated real-material validation or expand this source after its failed prespecified pilot.",
+  "limits": [
+    "No independent time-resolved loading column in relaxation sheets",
+    "No independent deterministic response-error and denominator-error budgets in the acquired archive",
+    "Positive effective hold-state spectrum remains a modeling assumption; source linear oscillatory limit alone does not establish it",
+    "Source author summary sheets average and select records; pilot instead retains every individual raw-sheet trace"
+  ]
+}

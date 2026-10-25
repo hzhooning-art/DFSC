@@ -1,0 +1,74 @@
+{
+  "title": "Sharp Predictability Criteria and Waiting-Time Recovery Rates for Positive Hereditary Models - Data, Code and Reproducibility Artifacts",
+  "version": "1.1.0",
+  "publication_date": "2026-10-24",
+  "resource_type": "Dataset",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Duan, Haitao",
+      "orcid": "0009-0006-4611-8639",
+      "affiliation": "School of Computer Science, Hangzhou Dianzi University, Hangzhou, China"
+    },
+    {
+      "name": "Hu, Ning",
+      "orcid": "0000-0002-2718-0385",
+      "affiliation": "School of Mechanical Engineering, Hangzhou Dianzi University, Hangzhou, China"
+    },
+    {
+      "name": "Li, Shuqun",
+      "orcid": "0009-0007-1787-685X",
+      "affiliation": "School of Mathematics and Physics, Xi'an Jiaotong-Liverpool University, Suzhou, China"
+    },
+    {
+      "name": "Hu, Chuyang",
+      "orcid": "0009-0007-9255-018X",
+      "affiliation": "Department of Computer Science and Engineering, University of California, Santa Cruz, USA"
+    }
+  ],
+  "description": "This archive supports the manuscript \"Sharp Predictability Criteria and Waiting-Time Recovery Rates for Positive Hereditary Models\". It provides loading-aware prediction-time computation code, frozen protocols, complete saved numerical outcomes and optimization witnesses, audits, figure-generation records and reproduction entry points. It is a research reproducibility release, not a claim of journal acceptance.\n\nVersion 1.1.0 is self-contained: baseline_v1.0.0/ retains every file of the preceding complete public archive, and review_evidence/ adds the complete prediction-time search, temporal transport, continuous-dual, matched strong-oracle and two measured-PVC studies. Distinct frozen source snapshots are preserved at their original relative paths. Only a manuscript-attachment layout QA receipt is excluded; no numerical case, negative result, fitting failure or solver witness is filtered out.\n\nA matched synthetic strong-oracle comparison reduces endpoint programs from 1154 to 810 for 584 correlated requests, with a machine-specific median aggregate speed ratio of 1.359 and some slower tasks. A measured-PVC scheduling comparison uses 234 instead of 650 programs for 315 correlated requests, preserving final labels and first sufficient candidates; the original median ratio is 2.054. An earlier PVC sensitivity study retains one sufficient request out of 90 correlated requests on a different target list. These counts are not independent material trials or an improvement from one study's success count to the other.\n\nThe full failed orbital-fat pilot remains negative evidence. PVC error bands are assumed, and same-profile hold-state continuation does not validate cross-loading criteria or a positive waiting-time recovery exponent. Numerical replay does not establish calibrated material guarantees, population coverage, universal speedup, superior point-prediction accuracy or exclusive capability over classical optimization.\n\nOriginal orbital-fat and PVC source files are attributed and retained unchanged under their source terms; derived analyses are identified separately. The authors' code is MIT-licensed, with separate third-party licence scopes in THIRD_PARTY_NOTICES.md. Do not treat the original source files as wholly MIT. The archive contains no editorial correspondence, author-only submission disclosures, manuscript PDF, virtual environment or third-party dependency source tree. It has a file-level SHA-256 manifest and a standard-library integrity verifier. No new physical measurements or scientific experiments are introduced by packaging.",
+  "keywords": [
+    "positive hereditary models",
+    "loading-aware prediction",
+    "prediction-time search",
+    "optimal recovery",
+    "positive spectra",
+    "continuous-spectrum bounds",
+    "temporal reuse",
+    "numerical reproducibility",
+    "viscoelastic relaxation"
+  ],
+  "licenses": [
+    {
+      "id": "MIT",
+      "scope": "Author-generated code and supporting materials"
+    },
+    {
+      "id": "CC-BY-4.0",
+      "scope": "Original orbital-fat source archive"
+    },
+    {
+      "id": "CC-BY-NC-ND-4.0",
+      "scope": "Unmodified PVC publisher-associated source workbook; see notices"
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/hzhooning-art/DFSC/releases/tag/hereditary-simulation-v1.1.0",
+      "relation": "isIdenticalTo",
+      "scheme": "url"
+    }
+  ],
+  "doi": null,
+  "metadata_use": "Manual Zenodo field reference; not a legacy deposition-API payload.",
+  "funding": [
+    {
+      "funder": "State Key Laboratory of Ocean Engineering, Shanghai Jiao Tong University",
+      "award": "GKZD010089"
+    },
+    {
+      "funder": "State Key Laboratory of Acoustics, Chinese Academy of Sciences",
+      "award": "SKLA202406"
+    }
+  ]
+}

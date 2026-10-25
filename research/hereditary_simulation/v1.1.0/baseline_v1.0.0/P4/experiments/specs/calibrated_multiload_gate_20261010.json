@@ -1,0 +1,48 @@
+{
+  "status": "Frozen before the first run; do not tune from the resulting scores",
+  "purpose": "Can independent sensor-noise calibration and a second strain protocol support qualified tail/functionals?",
+  "model": "sigma(t)=integral_0^t G(t-s) strain_rate(s) ds; zero initial strain; known G(0)=1",
+  "positive_grid_rates": {
+    "kind": "geomspace",
+    "start": 0.02,
+    "stop": 4.0,
+    "count": 12
+  },
+  "training_end": 8.0,
+  "samples_per_design": 80,
+  "single_design": {
+    "ramp_hold_segments": [[0.0, 1.0, 1.0]],
+    "sample_step": 0.1,
+    "sample_times": "0.1,0.2,...,8.0"
+  },
+  "dual_design": {
+    "ramp_hold_segments": [[0.0, 1.0, 1.0]],
+    "cyclic_segments": [[0.0, 0.5, 2.0], [2.0, 2.5, -2.0], [3.5, 4.0, 1.2], [5.0, 5.5, -1.2]],
+    "sample_step_each": 0.2,
+    "sample_times_each": "0.2,0.4,...,8.0"
+  },
+  "heldout_input_segments": [[0.0, 0.7, 1.4285714285714286], [3.0, 3.5, -2.0], [5.0, 5.9, 0.6666666666666666], [9.0, 9.6, -1.0], [18.0, 19.0, 1.0]],
+  "targets": ["G(20)", "heldout_input_sigma(20)"],
+  "truths": {
+    "on_grid": {"equilibrium": 0.2, "transient_grid_weights": {"3": 0.5, "9": 0.3}},
+    "off_grid": {"equilibrium": 0.2, "rates": [0.055, 1.25], "weights": [0.5, 0.3]},
+    "stretched": {"equilibrium": 0.2, "tau": 3.1, "beta": 0.58}
+  },
+  "sensor_noise": {
+    "distribution": "independent symmetric uniform",
+    "unknown_amplitude_truth": 0.01,
+    "independent_zero_input_calibration_count": 64,
+    "upper_amplitude_confidence": 0.95,
+    "estimator": "max_abs_calibration / (0.05 ** (1/64))",
+    "assumptions": ["same stationary noise amplitude under zero and nonzero input", "independence across calibration and observations"]
+  },
+  "replicates": 128,
+  "seed_base": 202610100,
+  "comparison": "Both designs have 80 response measurements; compare feasible interval widths and true-functional inclusion separately for each truth family.",
+  "stop_rules": [
+    "Do not claim a distribution-free confidence bound from the assumed-uniform calibration formula.",
+    "Do not call intervals valid physical certificates when the true kernel is outside the fixed-rate model class.",
+    "If an additional input fails to narrow intervals, retain the negative result; do not redesign from test scores.",
+    "Do not transport P2 Mittag-Leffler numerical control to this Prony hereditary integral."
+  ]
+}

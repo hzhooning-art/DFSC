@@ -1,0 +1,21 @@
+{
+  "schema": "P4-prediction-time-search-audit-v1",
+  "all_checks_pass": true,
+  "result_sha256": "3388e0a3e6d9a2643a07fe2830fd8fac097c2445a09d917cca6f235fc5938cef",
+  "same_developer_audit": true,
+  "independent_external_review": false,
+  "high_precision_digits": 80,
+  "physical_pair_request_checks": 192,
+  "maximum_pair_increment_relative_error": 9.992007221626409e-16,
+  "accepted_joint_estimate_checks_including_input_endpoints": 252,
+  "checked_lp_replays": 1332,
+  "maximum_lp_replay_residual": 1.9767026060435455e-07,
+  "opposite_decisive_labels": 0,
+  "lost_resolved_decisions": 0,
+  "candidate_requests": 720,
+  "distinct_information_sets": 12,
+  "distinct_target_profile_scenarios": 24,
+  "independent_synthetic_generators": 4,
+  "actually_submitted": false,
+  "directed_rounding_certificate": false
+}

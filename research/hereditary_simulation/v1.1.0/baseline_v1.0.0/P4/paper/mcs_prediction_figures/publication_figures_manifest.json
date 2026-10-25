@@ -1,0 +1,91 @@
+{
+  "schema": "P4-MCS-publication-figures-v1",
+  "date": "2026-10-13",
+  "input_sha256": {
+    "results/p4_ultraslow_calibrated_validation_20261011.json": "94ae505a4dc220586ca99b3b4ad74d4eadaacf457856eb99cb07e9d0b05dbfb3",
+    "results/p4_matched_convex_baseline_20261011.json": "bb4d1fa18cde988c02a2c343747bdc6cfef5c484eafd1ed31d1771da2f7105ef"
+  },
+  "builder_sha256": "bfdd7a5eaaba7e65846b1e55f02730b110b715df1f47351364e4af4eb705a1a2",
+  "generated_sha256": {
+    "qualification_workflow.pdf": "bb4d3299012f732d46c587ae0964a37c228a9f962e2120192f3a5d3fe32c23b2",
+    "qualification_workflow.png": "a8eb67fede8eaf126b8f94fdff571654fd8d3d8e9399484100239cae15f4bc29",
+    "qualification_workflow.svg": "0e854d2a685fa65f2214ba8eb876f7f8e243857e9435f4f7a4e6f010aae94b7d",
+    "calibrated_practical_widths.pdf": "c62d9cf576a48c1265680de60813f8496980796777279d8c57d0d36574334ac4",
+    "calibrated_practical_widths.png": "2c4f0c35937f737f97e2d212d48f99c42eab057b2a8bf257d1408c1c23431a03",
+    "calibrated_practical_widths.svg": "b5bc0bce66bfc3e706036fd5bcb334b58f432aa7bf4f9b80def4b5483bf43046",
+    "classical_comparator.pdf": "71f7b00d2578fc438657c8e25b5428fc112289087a27169dad9cf59554272caa",
+    "classical_comparator.png": "071d77826d0d297abcb194149d30a07bfa294b62f1fb0cdc64a2138a7d5e02b3",
+    "classical_comparator.svg": "aca5de1807f1ccffeaf1313b7f316c01bd1691b1791ab30b07ea5050d0810717"
+  },
+  "saved_bar_values": {
+    "figure_5": {
+      "G20_8.0": [
+        0.16312776341715127,
+        0.15851513934345846,
+        0.05626733818171635,
+        0.15717967799494365
+      ],
+      "G20_16.0": [
+        0.052802749798423296,
+        0.05063231302937407,
+        0.035945320119763265,
+        0.050361280684840776
+      ],
+      "heldout_sigma20_8.0": [
+        0.06669447474235855,
+        0.07019397911143944,
+        0.02050157154830232,
+        0.0691352744118684
+      ],
+      "heldout_sigma20_16.0": [
+        0.03799651160552293,
+        0.041869969078013373,
+        0.01677629683581295,
+        0.040796016638685206
+      ]
+    },
+    "figure_7": {
+      "G20_current_symmetric": [
+        0.011832197924856094,
+        0.02110616028489192,
+        0.010513730620387891,
+        0.022790581381961977
+      ],
+      "G20_classical_sign_convex": [
+        0.011507307706825887,
+        0.020570331963831144,
+        0.01033013062435639,
+        0.022474922105773436
+      ],
+      "G20_finite_grid_diagnostic": [
+        0.011150162610289416,
+        0.02004669537269766,
+        0.010154983530101922,
+        0.022147761951016445
+      ],
+      "heldout_sigma20_current_symmetric": [
+        0.008107168499198873,
+        0.016291413510415072,
+        0.005260443810934991,
+        0.01844298856702569
+      ],
+      "heldout_sigma20_classical_sign_convex": [
+        0.007818078867642984,
+        0.015726358218091756,
+        0.0050861835205679145,
+        0.018097425589003693
+      ],
+      "heldout_sigma20_finite_grid_diagnostic": [
+        0.0074964841761043285,
+        0.015201076840541049,
+        0.004918737916610614,
+        0.017744590341349484
+      ]
+    }
+  },
+  "new_experiments": false,
+  "all_numeric_values_from_frozen_records": true,
+  "legends_outside_axes": true,
+  "workflow_schematic": true,
+  "reference_style_only": "User-supplied grouped workflow image and existing Stage 62 panel code; no P5 scientific content imported."
+}

@@ -1,0 +1,18 @@
+{
+  "bindings": {
+    "experiments/specs/prediction_time_dual_20261020.json": "bb45d0fbac8eeb106dc175acc275162d3eeea78c6d5f554444eef4f809473367",
+    "experiments/run_prediction_time_dual.py": "05cf39dd07be7af11281436e2d6907b8fe93f10cea04e82cb344b382feff186d",
+    "experiments/prediction_time_dual.py": "113ec473f7625fa1707c6b5a41c4f9e843c35fc69e92aa3c1cdc8513795ea878",
+    "experiments/prediction_time_search.py": "d7741592ce4bab8a64bc13924ce4e772921cfb2e0a73f4662a7acf546099f8da",
+    "experiments/observation_weighted_prediction.py": "15850d36e783038b319212da69987937b0041b8879b4d135612c065b6ce91e01",
+    "tests/test_prediction_time_dual.py": "6c477937eb17ebd381caa8c73ba0f650b8c080dd1c54d623b47bf715eaa1afcf",
+    "experiments/specs/observation_weighted_prediction_20261011.json": "d99ea08f60e6eb3c2d16baf3980244117097f3e2f2deabe4b0cc74a59fddd5be",
+    "results/prediction_time_transport_20261020/run_02/result.json": "4a70a387688b71981dced146c40ed58ac907586859f54a94f2662b39ad006219"
+  },
+  "frozen_before_execution": true,
+  "scope": "Exploratory follow-up to 76 identical-profile unresolved requests; a disposable probe preceded this freeze and is not confirmatory evidence",
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.16.3"
+  }
+}

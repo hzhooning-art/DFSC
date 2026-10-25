@@ -1,0 +1,16 @@
+{
+  "frozen_before_predictions": true,
+  "bindings": {
+    "experiments/specs/polymer_glass_hold_20261021.json": "ff225ea6355a72ee12933238e6903d1ca63e086c18a04d5878eb6b5f11c18be1",
+    "experiments/run_polymer_glass_hold_20261021.py": "934d05e1e0a1dd4ba33d5f6f38935eaf9efccbbe8d621244ea1dcf5a34be4247",
+    "results/polymer_glass_hold_20261021/extracted.json": "90da4f73a4910194b0285e050985a68d9bb32fbe95f5c757e96a43078266dda2",
+    "results/polymer_glass_hold_20261021/extraction_protocol_receipt.json": "33ecdb89f96717f1488e5c1f83865e9f94e659cc345b11103ec00228e7741b4f",
+    "tools/extract_polymer_glass_hold_20261021.py": "dde127cb6de96537908973a94d95171c8fd6f66c204d3f73d351cdaf466623d4",
+    "experiments/run_polyborosiloxane_hold_20261021.py": "1dd2aa65aa54413db043de29e4d243244c99477b84adc512491db1a80f0bdc96",
+    "experiments/prediction_time_search.py": "d7741592ce4bab8a64bc13924ce4e772921cfb2e0a73f4662a7acf546099f8da",
+    "experiments/prediction_time_dual.py": "113ec473f7625fa1707c6b5a41c4f9e843c35fc69e92aa3c1cdc8513795ea878",
+    "experiments/observation_weighted_prediction.py": "15850d36e783038b319212da69987937b0041b8879b4d135612c065b6ce91e01"
+  },
+  "assumed_not_calibrated_bands": true,
+  "claim_ceiling": "Exploratory conditional feasibility and assumption sensitivity on published real measurements. Even successful cells do not establish calibrated material guarantee or superiority over the identical classical continuous LP"
+}

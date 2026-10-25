@@ -1,0 +1,6 @@
+# Observed local research environment; Python 3.12.14.
+# Tectonic/TeX and Poppler are separate external tools.
+numpy==2.5.0
+scipy==1.18.0
+matplotlib==3.11.0
+PyMuPDF==1.28.2

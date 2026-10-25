@@ -1,0 +1,42 @@
+{
+  "status": "Frozen before numerical execution; all resource cells will be reported",
+  "purpose": "Determine whether observation-window or future-noise resources relieve the previously saved prediction ambiguity",
+  "scope": "Conditional synthetic resource diagnosis, not a new design algorithm or external validation",
+  "parent_spec": "target_loading_headroom_gate_20261011.json",
+  "parent_result": "p4_target_loading_headroom_gate_20261011.json",
+  "parent_archive": "p4_target_loading_headroom_gate_20261011.npz",
+  "reuse": "The same 16 observed pilots, four spectra, known G(0)=1, rate support and two target functions; no new pilot replication claim",
+  "confirmation_horizons": [8.0, 12.0, 16.0],
+  "future_noise_amplitudes": [0.01, 0.005, 0.0025],
+  "pilot_noise_amplitude": 0.01,
+  "confirmation_plan": "Fixed ramp_hold and fixed cycle, 32 samples each at linspace(0.25,T,32); no outcome-dependent schedule selection",
+  "target_time": 20.0,
+  "cost": "80 response observations in three runs; summed observation-window duration 8+2*T, not equal time or equal instrumentation cost",
+  "future_noise": "Exactly known uniform amplitude; common standard uniform vector within each pilot case, scaled by amplitude across resource cells; disjoint from original pilot stream",
+  "seed_base": 2026101105,
+  "inner_rate_count": 193,
+  "outer_cell_count": 96,
+  "utility_limits": {"G20": 0.2, "heldout_sigma20": 0.1},
+  "score": "max(G20 worst conditional diameter/0.2, heldout_sigma20 worst conditional diameter/0.1)",
+  "resource_gate": {
+    "maximum_ratio": 0.8,
+    "requirement": "For a reported resource cell, its group-mean outer score is <=0.8 times the original fixed-baseline group-mean inner score for at least two truth groups including continuous_uniform, and every slow_three pilot has outer score <=1",
+    "interpretation": "This diagnoses physical information headroom with changed resources. It does not reverse the failed equal-resource loading-library gate or establish innovation."
+  },
+  "validation": [
+    "T=8, future amplitude=0.01 reproduces the previous fixed-cycle inner and outer bounds",
+    "Each outer bracket exceeds the inner bracket and contains the realized posterior widths",
+    "All simulated supported targets are contained in realized outer intervals",
+    "Every saved LP primal/dual witness is replayed without optimization",
+    "At fixed sampling horizon, worst conditional diameters cannot increase when future noise decreases",
+    "No monotonicity is assumed across horizons because a stretched sampling schedule is not nested",
+    "Track old finite-spectrum pair survival and reoptimize fresh pairs; removal of old pairs alone does not prove identification"
+  ],
+  "limitations": [
+    "Known support, normalization and exact bounded noise; no calibration or model-validation claim",
+    "Only four development pilots per truth; no population confidence or blind-test inference",
+    "Smaller noise is a hypothetical instrument resource, not a demonstrated attainable precision",
+    "Floating-point LP dual checks are not outward-rounded continuum certificates",
+    "No comparison against an adaptive algorithm and no new-method superiority claim"
+  ]
+}

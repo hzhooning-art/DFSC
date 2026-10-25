@@ -1,0 +1,44 @@
+{
+  "schema": "P4-prediction-time-search-spec-v1",
+  "date": "2026-10-20",
+  "scope": "Exploratory method-development study; protocol fixed before this execution, not a preregistered external study",
+  "revision": "run_05: retain run_04 joint-estimate rule and common fallback/accounting; cancel identical reference/target polynomial factors analytically in ALL variants, retaining the correct nonzero zero-excess tail limit. Candidate list, bands, meshes and thresholds remain unchanged; all earlier pilots preserved.",
+  "reference_orders": [0, 1, 2],
+  "target_orders_gamma": [0, 1],
+  "reference_dead_time": 0.1,
+  "target_delays": [0.0, 0.1, 0.101, 0.103, 0.11, 0.13, 0.2, 0.4, 1.1, 3.1],
+  "observation_delays_from_anchor": [0.0, 0.5, 1.0, 2.0, 4.0],
+  "observation_half_width": 0.01,
+  "absolute_error_tolerance": 0.025,
+  "relative_error_tolerance": 0.05,
+  "common_input_relative_envelopes": [0.0, 0.03, 0.06],
+  "mesh_levels": [128, 512, 2048],
+  "numerical_margin": 0.0000002,
+  "truth_spec": "observation_weighted_prediction_20261011.json",
+  "algorithms": [
+    "phase_and_floor_then_fixed_fine",
+    "phase_and_floor_then_progressive",
+    "phase_floor_rate_pair_then_progressive"
+  ],
+  "primary_comparator": "phase_and_floor_then_progressive",
+  "comparison_contract": "Identical observations, priors, tolerances, phase/floor gates, rate-aware full-tail envelopes, LP solver and mesh schedule; isolate the additional rate-located physical-pair screening. Fixed-fine scan is secondary.",
+  "go_criteria": [
+    "Zero opposite decisive labels between proposed and either baseline",
+    "Every accepted prediction contains the generating response and meets its declared tolerance in the tested cases",
+    "Every physical-pair region has finite-rate admissible spectra and independently checked kernel increments",
+    "Report LP work against the progressive comparator, not only against fixed-fine scans",
+    "Do not assert speedup if witness screening adds no work reduction or loses resolved decisions"
+  ],
+  "limitations": [
+    "Same four historical deterministic synthetic generating spectra, not independent new material trials",
+    "No physical mass/rate cap; a supplied cap changes the class and is rejected by this implementation",
+    "Known polynomial loading histories, known target input, zero prehistory and deterministic response bands",
+    "Input uncertainty is a common multiplicative envelope with known timing, not additive or timing error",
+    "Different target delays mean different requested responses; no improvement is claimed for the original earlier target",
+    "Only a finite candidate list is searched; neither continuum earliest time nor monotone diameter is assumed",
+    "The waiting exponent locates a physical witness rate; exact kernels determine exclusions, not a fitted asymptotic constant",
+    "LP residual checks and envelope padding are floating-point checks, not directed-rounding certificates",
+    "Shared LP-result caching is used for reproducible comparisons; logical LP counts and variable counts are compared, not wall-clock speed",
+    "No new general LP solver, universally better point predictor or globally novel search principle is claimed"
+  ]
+}

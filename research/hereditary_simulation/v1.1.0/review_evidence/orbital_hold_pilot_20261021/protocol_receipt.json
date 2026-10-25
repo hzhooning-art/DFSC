@@ -1,0 +1,16 @@
+{
+  "frozen_before_prediction": true,
+  "bindings": {
+    "experiments/specs/orbital_hold_pilot_20261021.json": "49bb55868c1d4f177b8c169861f9d2a826b42f28d227738340b86a08f6b9570e",
+    "results/orbital_hold_pilot_20261021/extracted.json": "f653bdda81059d291dd3c512ceb41b539b226cd38c891040246fa342fd1a9b2d",
+    "experiments/run_orbital_hold_pilot_20261021.py": "b9800082c828ee73eb022a3fd85346777466b1066b4084f9b5a332084d228eec",
+    "tools/extract_orbital_hold_20261021.py": "a85b30ccafa754a2b733d20d72f89e3c8a6f0f132c0963ecdd0ea3804f84a552",
+    "experiments/prediction_time_dual.py": "113ec473f7625fa1707c6b5a41c4f9e843c35fc69e92aa3c1cdc8513795ea878",
+    "experiments/prediction_time_search.py": "d7741592ce4bab8a64bc13924ce4e772921cfb2e0a73f4662a7acf546099f8da",
+    "experiments/observation_weighted_prediction.py": "15850d36e783038b319212da69987937b0041b8879b4d135612c065b6ce91e01"
+  },
+  "noise_calibrated": false,
+  "positive_hold_state_qualified": false,
+  "full_loading_history_qualified": false,
+  "scope": "Empirical restricted hold continuation and failure analysis only, not validated cross-loading response prediction or a test of the loading endpoint boundary theorem"
+}

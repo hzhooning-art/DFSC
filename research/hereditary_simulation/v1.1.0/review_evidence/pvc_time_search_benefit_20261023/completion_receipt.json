@@ -1,0 +1,47 @@
+{
+  "audited_conditional_real_data_task_benefit": true,
+  "endpoint_programs": {
+    "pointwise_classical": 650,
+    "time_reuse": 234
+  },
+  "reduction_fraction": 0.64,
+  "final_labels_identical": true,
+  "final_states": {
+    "pointwise_classical": {
+      "sufficient": 27,
+      "insufficient": 283,
+      "unresolved": 5
+    },
+    "loading_guided_reuse": {
+      "sufficient": 27,
+      "insufficient": 283,
+      "unresolved": 5
+    }
+  },
+  "correlated_requests": 315,
+  "unique_measured_target_values": 65,
+  "distinct_accepted_target_values": 22,
+  "transferred_full_intervals_independently_reconstructed": 208,
+  "first_sufficient_candidate_times_unchanged": true,
+  "median_speed_ratio": 2.054209401510641,
+  "fresh_replay_median_speed_ratio": 2.0579963509712202,
+  "all_6188_witness_arrays_exactly_replayed": true,
+  "assumed_error_bands": true,
+  "calibrated_material_validation": false,
+  "cross_loading_boundary_material_validation": false,
+  "positive_waiting_recovery_exponent_material_validation": false,
+  "older_material_pilots_unchanged": true,
+  "original_workbook_sha256": "9b6f91da3988397d6eb477f5de3d52736eff57813a881ea60a70e5b8992ec5d3",
+  "current_paper_and_package_unchanged": true,
+  "paper_sha256": "b00098d8893b9d712b5fa16c9a1f4f22a11dbae7b57a9b2feb77f146ea58c8fb",
+  "package_sha256": "69b978c1f3ca34f8070ae71159e3ad0fb2c0d7bc4f8a7ccc3bc84fcdd8687a08",
+  "evidence_sha256": {
+    "results/pvc_time_search_benefit_20261023/result.json": "53f5579a09d43e76f28dc50670e7d8fc01f924edf8a4ef63f3a6b3cc3c7c6462",
+    "results/pvc_time_search_benefit_20261023/audit.json": "a367c15731db01d5786b220ebb532531847cc37e965682c0a1304d3fb5beb773",
+    "results/pvc_time_search_benefit_20261023/replay_verification.json": "ee278b6ab4e8b512519a68722e4a673aa8f8f1fc2497df91a6025d12ed20e2f7",
+    "docs/P4_REAL_DATA_METHOD_ADVANTAGE_20261023.md": "51e2e7ab78672b362c64bc4641e63161b5486ee6d6d5e7187c7aced7c223958d",
+    "CURRENT_STATUS.md": "98f5de8444ff73b6626ee4dd81fa1ff43ba3875bfcfd541b12fdef8e0b6a97f5",
+    "README.md": "d0ea6a0d60730502b7e97055d69a7abf93dfce23c10468665a70b38c4e6e2b7d"
+  },
+  "remaining_gap": "Independent loading/history/error/model qualifications and held-out same-condition material tests. No claim that nearest frameworks cannot implement the same reuse."
+}

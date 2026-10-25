@@ -1,0 +1,22 @@
+{
+  "bindings": {
+    "experiments\\specs\\direct_fitting_baselines_20261014.json": "96de7e7663d0de7247b801f51417f1f741340d1121eb09f37074c68c1f5e068a",
+    "experiments\\direct_fitting_baselines.py": "5dda801353ffdec55cd06660d48e90ac6f1f82a0a3d5a48c58786afdc92506f9",
+    "results\\p4_ultraslow_calibrated_validation_20261011.json": "94ae505a4dc220586ca99b3b4ad74d4eadaacf457856eb99cb07e9d0b05dbfb3",
+    "results\\p4_ultraslow_calibrated_validation_20261011.npz": "94eacd702ef5c89c9dce064a4978ad93f1294d557dc586b287b5f71d0be7a765",
+    "results\\p4_matched_convex_baseline_20261011.json": "bb4d1fa18cde988c02a2c343747bdc6cfef5c484eafd1ed31d1771da2f7105ef",
+    "experiments\\run_direct_fitting_full.py": "5830ddd63f82bd85e3aca551deeb7701133f91984b9a031f89805a3096967045",
+    "experiments/audit_direct_fitting_baselines.py": "6d226bac6c09811b27b691b047e4782d7c913e9dae563cf1f2ac46b1cfeb5ea7",
+    "experiments/constitutive_response_gate.py": "691e2a4a334d9e2ff74a5559ee36467b22a35ada086d624cbc9352fb1c6ef7b1",
+    "experiments/ultraslow_calibrated_validation.py": "ba6e4f558f1b930d3e235284988b862c6c013655e6e354bd65ada284ff455782",
+    "experiments/target_support_sensitivity.py": "f8310377104a25fecc0d100fa82eef035f6f53cdafe0d505534ce5ed172d8d99"
+  },
+  "phase": "full",
+  "before_first_fit": true,
+  "workers": 4,
+  "numpy": "2.5.0",
+  "scipy": "1.18.0",
+  "blas_thread_limit": "1",
+  "scope": "New fits on frozen synthetic data; not new random trials or independent blind validation",
+  "pilot_fit_implementation_unchanged": true
+}

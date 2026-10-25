@@ -1,0 +1,35 @@
+{
+  "status": "Frozen before first numerical execution; no outcome-dependent tuning",
+  "purpose": "Test technical increment against standard sign-aware convex secant bounds on exactly matched observations",
+  "parent_result": "p4_ultraslow_calibrated_validation_20261011.json",
+  "cases": "All 256 parent cases, both horizons, both targets; retain calibration failures",
+  "methods": {
+    "current_symmetric": "Reuse frozen 145-cell symmetric-curvature intervals; replay first four seeds of each truth at horizon 16",
+    "classical_sign_convex": "Same 145 cells, 291 nonnegative weights, loading, noise bands and solver; positive-segment convex secants give only downward remainder and negative segments only upward remainder",
+    "finite_grid_diagnostic": "Same parent 289 positive rates plus equilibrium, no interpolation error; narrower finite-spectrum model, not a continuum-valid competitor"
+  },
+  "rate_support": [0.0, 4.0],
+  "known_initial_modulus": 1.0,
+  "utility_limits": {"G20": 0.2, "heldout_sigma20": 0.1},
+  "gate": {
+    "current_mean_width_ratio_max": 0.9,
+    "minimum_truth_groups": 2,
+    "require_continuous_group": true,
+    "require_all_valid_calibration_covered": true,
+    "definition": "At horizon 16, current symmetric method must reduce BOTH target mean widths by >=10% versus classical_sign_convex for >=2 truth groups including one continuous family, while both continuum methods cover all valid-calibration cases",
+    "interpretation": "Engineering increment screen, not novelty proof; domination by an elementary convex bound closes the present solver-superiority claim"
+  },
+  "reference": {
+    "url": "https://www.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf",
+    "location": "Boyd and Vandenberghe, Convex Optimization (2004), Section 3.1.1",
+    "scope": "Convex function lies below its endpoint chord. Our implementation combines this established fact with the already used interpolation remainder; not a replication of a named relaxation-spectrum software package."
+  },
+  "limitations": [
+    "Synthetic matched post-observation interval comparison; no external material experiment",
+    "No new loading, noise, seed, mesh, target or truth selection",
+    "Known G(0), positivity, linear hereditary response, support upper bound and stationary uniform blank calibration remain assumed",
+    "No comparative runtime claim; frozen historical runtimes are not matched benchmarks",
+    "Floating-point primal/dual replay is not interval-arithmetic certification",
+    "A failed increment screen does not prove every continuous-spectrum research direction impossible"
+  ]
+}

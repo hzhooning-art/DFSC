@@ -1,0 +1,15 @@
+{
+  "schema": "P4-loading-endpoint-phase-audit-v1",
+  "result_sha256": "14509e1a0934556289f22ebff4b43056a307b00a744e3c474f3ebb196e77e1eb",
+  "source_sha256": "4441f49e4b5111a8efe789baaa6f8e3496b08ff73c0682158be282c39c0098f9",
+  "precision_digits": 60,
+  "quadrature_kernel_checks": 48,
+  "base_observation_checks": 30,
+  "physical_pair_checks": 240,
+  "physical_target_checks": 240,
+  "whole_class_upper_comparisons": 168,
+  "max_relative_error": 4.226968886206613e-14,
+  "max_observation_change": 0.005000000000000083,
+  "all_checks_pass": true,
+  "limits": "Independent numerical implementation only; same developer, not external review or an exhaustive proof/novelty certificate"
+}

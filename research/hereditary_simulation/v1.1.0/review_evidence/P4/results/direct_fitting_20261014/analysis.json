@@ -1,0 +1,67 @@
+{
+  "result_sha256": "3ff11f5b901aeedf42eb17f3d4d787bf79db9fe905c27a4c1ada5e37de34be87",
+  "audit_sha256": "cb483ebcbc27eef9780a7a10117524a21ed64cef55c0ebd4dbe449d0f6154a33",
+  "protocol_sha256": "96de7e7663d0de7247b801f51417f1f741340d1121eb09f37074c68c1f5e068a",
+  "diagnostics": {
+    "grid_ls": {
+      "window_records": 512,
+      "successes": 512,
+      "joint_exceedances": 0,
+      "paired_case_any_window_exceedances": 0,
+      "paired_case_any_window_fit_failures": 0,
+      "band_compatible_but_target_exceeds": 0,
+      "band_compatible_outside_classical": 0
+    },
+    "grid_ridge": {
+      "window_records": 512,
+      "successes": 512,
+      "joint_exceedances": 0,
+      "paired_case_any_window_exceedances": 0,
+      "paired_case_any_window_fit_failures": 0,
+      "band_compatible_but_target_exceeds": 0,
+      "band_compatible_outside_classical": 0
+    },
+    "prony_cv": {
+      "window_records": 512,
+      "successes": 398,
+      "joint_exceedances": 1,
+      "paired_case_any_window_exceedances": 1,
+      "paired_case_any_window_fit_failures": 90,
+      "band_compatible_but_target_exceeds": 0,
+      "band_compatible_outside_classical": 0
+    },
+    "mid_symmetric": {
+      "window_records": 512,
+      "successes": 512,
+      "joint_exceedances": 0,
+      "paired_case_any_window_exceedances": 0,
+      "paired_case_any_window_fit_failures": 0,
+      "band_compatible_but_target_exceeds": 0,
+      "band_compatible_outside_classical": null
+    },
+    "mid_classical": {
+      "window_records": 512,
+      "successes": 512,
+      "joint_exceedances": 0,
+      "paired_case_any_window_exceedances": 0,
+      "paired_case_any_window_fit_failures": 0,
+      "band_compatible_but_target_exceeds": 0,
+      "band_compatible_outside_classical": null
+    }
+  },
+  "selected_orders": {
+    "2": 282,
+    "4": 105,
+    "8": 110
+  },
+  "selected_penalties": {
+    "0.0": 164,
+    "1e-07": 35,
+    "1e-05": 172,
+    "0.001": 141
+  },
+  "generated_sha256": {
+    "paper\\mcs_prediction_figures\\direct_fitting_table.tex": "68f0ad8ac39457fc9925b858a34e9f8aef3e2f7616dd6364e1b8a7ebd679aa55",
+    "docs\\P4_DIRECT_FITTING_RESULTS_20261014.md": "6452aec8d7074db4f4740793c3a938b97a9d21972aa1a6f905c9e971f51e7f5f"
+  }
+}

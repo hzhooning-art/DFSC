@@ -1,0 +1,6803 @@
+{
+  "all_checks_passed": true,
+  "result_sha256": "dd5a9aaca4a968ead10e6eb9d2f3e9cdef5a7d9a4793f81c36148f3e2cc72d74",
+  "protocol_sha256": "a94ae8b94a550fe5777d15e808c53fe3e2c5112bb4fa162e46333f8997a8bc81",
+  "retained_files_sha256": {
+    "logwide_r0.03_loading_guided_reuse.json": "48a3410d84fd001bd3fc089deb1ed224330b14a2e45952ff88e03452609a085e",
+    "logwide_r0.03_loading_guided_reuse_witnesses.npz": "f672b4f5e4046995d1dfe6936df3b02f0f0fbd4ee489683f9e61c0220dc6b7b6",
+    "logwide_r0.03_pointwise_classical.json": "300f639b808d150d386ae3b7e9934a50ded749fe8fb172db1c2110f62b2e96c4",
+    "logwide_r0.03_pointwise_classical_witnesses.npz": "5b438e1926ed75b8d705b91f66270280eb3434f00687e268d443db2edeb270f1",
+    "logwide_r0.0_loading_guided_reuse.json": "aa5d2c006d640184527e0c5a788ef3e95fb4f0fd646f96a96383ce8292cfb0f7",
+    "logwide_r0.0_loading_guided_reuse_witnesses.npz": "28ad3905bf86fef620637d983702390b5afe40c314e21afacee69d94e19c3082",
+    "logwide_r0.0_pointwise_classical.json": "84545e7192d0afe790c8bd886127b49c035857a6f7ca6a3a27d2c07bd6571dd3",
+    "logwide_r0.0_pointwise_classical_witnesses.npz": "eb9f611dbe4da1ec76e632a1b515575909ecf6b67ed7b24468119b4b92a6b9ea",
+    "two_rate_r0.03_loading_guided_reuse.json": "556e4ccf74017a7fe39d7e4cc7f0bc7e286ac549a65449163e0e96f025035afb",
+    "two_rate_r0.03_loading_guided_reuse_witnesses.npz": "5648243e809fcf1c7ef858f4f21ff9e6b9b3e78a2072025d9b1cf7550f43a8ec",
+    "two_rate_r0.03_pointwise_classical.json": "0f416d737cf2bf4d01ba2f08991a4d9f310114f7e3fb766121d5655714210712",
+    "two_rate_r0.03_pointwise_classical_witnesses.npz": "f4eedad72605ba5b9238a24ddd6741bfe81049101df1f672f37729047942e470",
+    "two_rate_r0.0_loading_guided_reuse.json": "c5866bfb09d11a87c18d17d3e34871cd94890d97019d78ee1769d4a63460456d",
+    "two_rate_r0.0_loading_guided_reuse_witnesses.npz": "08fc3396ae684526d6fd583e04368c713e4902aa11c0b360be3d80bae1e4ec0d",
+    "two_rate_r0.0_pointwise_classical.json": "1ed27c5b878b5dc8af670cfd46b3712e22a0e10d9c3105f8491aa9e670e3732e",
+    "two_rate_r0.0_pointwise_classical_witnesses.npz": "4fae0360f98a7982cf62c987f513ca11d20befd27c95e0cab9a910725c52a229",
+    "uniform_r0.03_loading_guided_reuse.json": "3a8afe18cc56b5d4f6d02270bbac9b1d5d8fd5cf6bdffbac11111209bebcb29e",
+    "uniform_r0.03_loading_guided_reuse_witnesses.npz": "eefc69fb0bebf4e9b50935e9a598bb9f62f7860d0d2c924cac950b2304c3fd9c",
+    "uniform_r0.03_pointwise_classical.json": "7b92bc75791b38a79eaf03a5612cb903a4198900bf227f3a6e6e09c397f332e1",
+    "uniform_r0.03_pointwise_classical_witnesses.npz": "95d70ed626260c62f8ff419f234ba6e63b32ad9ee49bd45dbc288746caf61e9a",
+    "uniform_r0.0_loading_guided_reuse.json": "5ee0ab3b7fe499296176491f8c1f87184530629193a63c4ce6227a395eef66ed",
+    "uniform_r0.0_loading_guided_reuse_witnesses.npz": "0fe9a00dc4d23b542393687f3d72bcfba292c63cdb19d1412c95b7a8627c21b0",
+    "uniform_r0.0_pointwise_classical.json": "211c8fbe45d0a781db1f2293b48c05c5da3500b108b6189e705541a6073682d4",
+    "uniform_r0.0_pointwise_classical_witnesses.npz": "2d0fdff25e69f66a7d4cc5abd3b0549b105efe6c736623dc99770f3f3622b58f",
+    "wide_rate_r0.03_loading_guided_reuse.json": "f729aab8520152b7f6986bb03c17a9f748e5de8696f895a3563ac61fcbfe960e",
+    "wide_rate_r0.03_loading_guided_reuse_witnesses.npz": "4628950692f4b8d4c7be26ce7bec453780f5d3cc95fc6fcdc8dc1886fd300b9b",
+    "wide_rate_r0.03_pointwise_classical.json": "ba346fa786f68220a2f2be6963d05fe386c6b883327f4a0a5c33a5ef5439da45",
+    "wide_rate_r0.03_pointwise_classical_witnesses.npz": "c1b4e756a17f932f5b12bec928c7878ca4771af64c31bcf61d951d993f536884",
+    "wide_rate_r0.0_loading_guided_reuse.json": "9faad5682d8499e814bed60d425b1da5ff0064cfc7149c763f78f8bd8dec5999",
+    "wide_rate_r0.0_loading_guided_reuse_witnesses.npz": "5d0bdfb586c72619b2acd6530f39fb23da1ed0d931aaed60e887803680b046b9",
+    "wide_rate_r0.0_pointwise_classical.json": "7a4224c92ef1f66bdc5c0e75d1c0edab3ddba25e0af4405739facb3781a677e7",
+    "wide_rate_r0.0_pointwise_classical_witnesses.npz": "5619cc71f803e3da9b0d0aa09824aa893ea26fb282644f956872f986f37bf7b4"
+  },
+  "counts": {
+    "lp": 1964,
+    "physical": 1964,
+    "finite_cells": 54238,
+    "tails": 1964,
+    "positive_truth": 708,
+    "transport": 172
+  },
+  "maximum_LP_residual": 8.395788508863689e-10,
+  "paired": [
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "pointwise_seconds": 0.4225970000261441,
+      "reuse_seconds": 0.4100955000030808,
+      "pointwise_programs": 146,
+      "reuse_programs": 132,
+      "speedup": 1.0304843628446774
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "pointwise_seconds": 0.4167417000280693,
+      "reuse_seconds": 0.14688650000607595,
+      "pointwise_programs": 144,
+      "reuse_programs": 46,
+      "speedup": 2.837168153716174
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "pointwise_seconds": 0.41387869999744,
+      "reuse_seconds": 0.3719083999749273,
+      "pointwise_programs": 144,
+      "reuse_programs": 126,
+      "speedup": 1.1128511752499868
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "pointwise_seconds": 0.4079558000084944,
+      "reuse_seconds": 0.2015042999992147,
+      "pointwise_programs": 144,
+      "reuse_programs": 68,
+      "speedup": 2.024551337167913
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "pointwise_seconds": 0.42656689998693764,
+      "reuse_seconds": 0.4434004999930039,
+      "pointwise_programs": 144,
+      "reuse_programs": 144,
+      "speedup": 0.9620352254759932
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "pointwise_seconds": 0.43291119998320937,
+      "reuse_seconds": 0.3358282999834046,
+      "pointwise_programs": 144,
+      "reuse_programs": 108,
+      "speedup": 1.2890849282344647
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "pointwise_seconds": 0.41666909999912605,
+      "reuse_seconds": 0.43030490004457533,
+      "pointwise_programs": 144,
+      "reuse_programs": 142,
+      "speedup": 0.96831130660135
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "pointwise_seconds": 0.4214932000031695,
+      "reuse_seconds": 0.1424131999956444,
+      "pointwise_programs": 144,
+      "reuse_programs": 44,
+      "speedup": 2.9596498078553153
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "pointwise_seconds": 0.43239219998940825,
+      "reuse_seconds": 0.4087870999937877,
+      "pointwise_programs": 146,
+      "reuse_programs": 132,
+      "speedup": 1.0577442389840073
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "pointwise_seconds": 0.424587799992878,
+      "reuse_seconds": 0.14732179994462058,
+      "pointwise_programs": 144,
+      "reuse_programs": 46,
+      "speedup": 2.8820432560047724
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "pointwise_seconds": 0.4078738000243902,
+      "reuse_seconds": 0.364892499987036,
+      "pointwise_programs": 144,
+      "reuse_programs": 126,
+      "speedup": 1.1177916784775825
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "pointwise_seconds": 0.40510739997262135,
+      "reuse_seconds": 0.20469149999553338,
+      "pointwise_programs": 144,
+      "reuse_programs": 68,
+      "speedup": 1.979111980621869
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "pointwise_seconds": 0.42942679999396205,
+      "reuse_seconds": 0.4259060000185855,
+      "pointwise_programs": 144,
+      "reuse_programs": 144,
+      "speedup": 1.0082666127624944
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "pointwise_seconds": 0.4280903000035323,
+      "reuse_seconds": 0.33566159999463707,
+      "pointwise_programs": 144,
+      "reuse_programs": 108,
+      "speedup": 1.2753627463206159
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "pointwise_seconds": 0.41771609999705106,
+      "reuse_seconds": 0.43116149998968467,
+      "pointwise_programs": 144,
+      "reuse_programs": 142,
+      "speedup": 0.9688158613583187
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "pointwise_seconds": 0.4152515000314452,
+      "reuse_seconds": 0.13899020000826567,
+      "pointwise_programs": 144,
+      "reuse_programs": 44,
+      "speedup": 2.987631502125692
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "pointwise_seconds": 0.435040200012736,
+      "reuse_seconds": 0.40701839997200295,
+      "pointwise_programs": 146,
+      "reuse_programs": 132,
+      "speedup": 1.0688465190828242
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "pointwise_seconds": 0.42272269999375567,
+      "reuse_seconds": 0.1472889000433497,
+      "pointwise_programs": 144,
+      "reuse_programs": 46,
+      "speedup": 2.8700241489300344
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "pointwise_seconds": 0.40774159994907677,
+      "reuse_seconds": 0.3662921000504866,
+      "pointwise_programs": 144,
+      "reuse_programs": 126,
+      "speedup": 1.113159688382242
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "pointwise_seconds": 0.41084110003430396,
+      "reuse_seconds": 0.21606539998902008,
+      "pointwise_programs": 144,
+      "reuse_programs": 68,
+      "speedup": 1.9014664081115344
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "pointwise_seconds": 0.42616490001091734,
+      "reuse_seconds": 0.4416370000108145,
+      "pointwise_programs": 144,
+      "reuse_programs": 144,
+      "speedup": 0.9649664769946397
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "pointwise_seconds": 0.42435499996645376,
+      "reuse_seconds": 0.32307460001902655,
+      "pointwise_programs": 144,
+      "reuse_programs": 108,
+      "speedup": 1.3134892063364394
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "pointwise_seconds": 0.4042849999968894,
+      "reuse_seconds": 0.41596640000352636,
+      "pointwise_programs": 144,
+      "reuse_programs": 142,
+      "speedup": 0.971917443316244
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "pointwise_seconds": 0.40456779999658465,
+      "reuse_seconds": 0.13804659998277202,
+      "pointwise_programs": 144,
+      "reuse_programs": 44,
+      "speedup": 2.9306610959420514
+    }
+  ],
+  "aggregate_times": [
+    {
+      "repetition": 0,
+      "pointwise_seconds": 3.3588136000325903,
+      "reuse_seconds": 2.482341599999927,
+      "speedup": 1.3530827505902852
+    },
+    {
+      "repetition": 1,
+      "pointwise_seconds": 3.3604459000052884,
+      "reuse_seconds": 2.4574121999321505,
+      "speedup": 1.3674734340856902
+    },
+    {
+      "repetition": 2,
+      "pointwise_seconds": 3.3357182999607176,
+      "reuse_seconds": 2.455389400070999,
+      "speedup": 1.3585292417831012
+    }
+  ],
+  "aggregate_median_speedup": 1.3585292417831012,
+  "endpoint_budgets": [
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 0,
+        "sufficient": 4,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 0,
+        "sufficient": 6,
+        "unresolved": 66
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 0,
+        "sufficient": 8,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 0,
+        "sufficient": 13,
+        "unresolved": 59
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 0,
+        "sufficient": 16,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 0,
+        "sufficient": 22,
+        "unresolved": 50
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 3,
+        "sufficient": 28,
+        "unresolved": 41
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 6,
+        "sufficient": 31,
+        "unresolved": 35
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 19,
+        "sufficient": 44,
+        "unresolved": 9
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 23,
+        "sufficient": 47,
+        "unresolved": 2
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 4,
+        "sufficient": 0,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 39,
+        "sufficient": 0,
+        "unresolved": 33
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 8,
+        "sufficient": 0,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 43,
+        "sufficient": 0,
+        "unresolved": 29
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 16,
+        "sufficient": 0,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 65,
+        "sufficient": 0,
+        "unresolved": 7
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 32,
+        "sufficient": 0,
+        "unresolved": 40
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 64,
+        "sufficient": 0,
+        "unresolved": 8
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 2,
+        "sufficient": 2,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 2,
+        "sufficient": 4,
+        "unresolved": 66
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 6,
+        "sufficient": 2,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 6,
+        "sufficient": 4,
+        "unresolved": 62
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 14,
+        "sufficient": 2,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 14,
+        "sufficient": 4,
+        "unresolved": 54
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 27,
+        "sufficient": 5,
+        "unresolved": 40
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 28,
+        "sufficient": 6,
+        "unresolved": 38
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 43,
+        "sufficient": 21,
+        "unresolved": 8
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 4,
+        "sufficient": 0,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 4,
+        "sufficient": 0,
+        "unresolved": 68
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 8,
+        "sufficient": 0,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 8,
+        "sufficient": 0,
+        "unresolved": 64
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 16,
+        "sufficient": 0,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 16,
+        "sufficient": 0,
+        "unresolved": 56
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 32,
+        "sufficient": 0,
+        "unresolved": 40
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 70,
+        "sufficient": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 64,
+        "sufficient": 0,
+        "unresolved": 8
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 3,
+        "sufficient": 1,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 3,
+        "sufficient": 1,
+        "unresolved": 68
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 7,
+        "sufficient": 1,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 7,
+        "sufficient": 1,
+        "unresolved": 64
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 15,
+        "sufficient": 1,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 15,
+        "sufficient": 1,
+        "unresolved": 56
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 31,
+        "sufficient": 1,
+        "unresolved": 40
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 31,
+        "sufficient": 1,
+        "unresolved": 40
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 49,
+        "sufficient": 15,
+        "unresolved": 8
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 49,
+        "sufficient": 15,
+        "unresolved": 8
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 4,
+        "sufficient": 0,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 4,
+        "sufficient": 0,
+        "unresolved": 68
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 8,
+        "sufficient": 0,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 8,
+        "sufficient": 0,
+        "unresolved": 64
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 16,
+        "sufficient": 0,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 16,
+        "sufficient": 0,
+        "unresolved": 56
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 32,
+        "sufficient": 0,
+        "unresolved": 40
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 32,
+        "sufficient": 0,
+        "unresolved": 40
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 64,
+        "sufficient": 0,
+        "unresolved": 8
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 2,
+        "sufficient": 2,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 2,
+        "sufficient": 2,
+        "unresolved": 68
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 6,
+        "sufficient": 2,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 6,
+        "sufficient": 2,
+        "unresolved": 64
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 14,
+        "sufficient": 2,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 14,
+        "sufficient": 2,
+        "unresolved": 56
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 25,
+        "sufficient": 7,
+        "unresolved": 40
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 25,
+        "sufficient": 8,
+        "unresolved": 39
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 41,
+        "sufficient": 23,
+        "unresolved": 8
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 41,
+        "sufficient": 24,
+        "unresolved": 7
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 4,
+        "sufficient": 0,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 38,
+        "sufficient": 0,
+        "unresolved": 34
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 8,
+        "sufficient": 0,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 58,
+        "sufficient": 0,
+        "unresolved": 14
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 16,
+        "sufficient": 0,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 66,
+        "sufficient": 0,
+        "unresolved": 6
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 32,
+        "sufficient": 0,
+        "unresolved": 40
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 64,
+        "sufficient": 0,
+        "unresolved": 8
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 0,
+        "sufficient": 4,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 0,
+        "sufficient": 6,
+        "unresolved": 66
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 0,
+        "sufficient": 8,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 0,
+        "sufficient": 13,
+        "unresolved": 59
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 0,
+        "sufficient": 16,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 0,
+        "sufficient": 22,
+        "unresolved": 50
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 3,
+        "sufficient": 28,
+        "unresolved": 41
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 6,
+        "sufficient": 31,
+        "unresolved": 35
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 19,
+        "sufficient": 44,
+        "unresolved": 9
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 23,
+        "sufficient": 47,
+        "unresolved": 2
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 4,
+        "sufficient": 0,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 39,
+        "sufficient": 0,
+        "unresolved": 33
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 8,
+        "sufficient": 0,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 43,
+        "sufficient": 0,
+        "unresolved": 29
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 16,
+        "sufficient": 0,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 65,
+        "sufficient": 0,
+        "unresolved": 7
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 32,
+        "sufficient": 0,
+        "unresolved": 40
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 64,
+        "sufficient": 0,
+        "unresolved": 8
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 2,
+        "sufficient": 2,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 2,
+        "sufficient": 4,
+        "unresolved": 66
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 6,
+        "sufficient": 2,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 6,
+        "sufficient": 4,
+        "unresolved": 62
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 14,
+        "sufficient": 2,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 14,
+        "sufficient": 4,
+        "unresolved": 54
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 27,
+        "sufficient": 5,
+        "unresolved": 40
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 28,
+        "sufficient": 6,
+        "unresolved": 38
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 43,
+        "sufficient": 21,
+        "unresolved": 8
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 4,
+        "sufficient": 0,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 4,
+        "sufficient": 0,
+        "unresolved": 68
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 8,
+        "sufficient": 0,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 8,
+        "sufficient": 0,
+        "unresolved": 64
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 16,
+        "sufficient": 0,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 16,
+        "sufficient": 0,
+        "unresolved": 56
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 32,
+        "sufficient": 0,
+        "unresolved": 40
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 70,
+        "sufficient": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 64,
+        "sufficient": 0,
+        "unresolved": 8
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 3,
+        "sufficient": 1,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 3,
+        "sufficient": 1,
+        "unresolved": 68
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 7,
+        "sufficient": 1,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 7,
+        "sufficient": 1,
+        "unresolved": 64
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 15,
+        "sufficient": 1,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 15,
+        "sufficient": 1,
+        "unresolved": 56
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 31,
+        "sufficient": 1,
+        "unresolved": 40
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 31,
+        "sufficient": 1,
+        "unresolved": 40
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 49,
+        "sufficient": 15,
+        "unresolved": 8
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 49,
+        "sufficient": 15,
+        "unresolved": 8
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 4,
+        "sufficient": 0,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 4,
+        "sufficient": 0,
+        "unresolved": 68
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 8,
+        "sufficient": 0,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 8,
+        "sufficient": 0,
+        "unresolved": 64
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 16,
+        "sufficient": 0,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 16,
+        "sufficient": 0,
+        "unresolved": 56
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 32,
+        "sufficient": 0,
+        "unresolved": 40
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 32,
+        "sufficient": 0,
+        "unresolved": 40
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 64,
+        "sufficient": 0,
+        "unresolved": 8
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 2,
+        "sufficient": 2,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 2,
+        "sufficient": 2,
+        "unresolved": 68
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 6,
+        "sufficient": 2,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 6,
+        "sufficient": 2,
+        "unresolved": 64
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 14,
+        "sufficient": 2,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 14,
+        "sufficient": 2,
+        "unresolved": 56
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 25,
+        "sufficient": 7,
+        "unresolved": 40
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 25,
+        "sufficient": 8,
+        "unresolved": 39
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 41,
+        "sufficient": 23,
+        "unresolved": 8
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 41,
+        "sufficient": 24,
+        "unresolved": 7
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 4,
+        "sufficient": 0,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 38,
+        "sufficient": 0,
+        "unresolved": 34
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 8,
+        "sufficient": 0,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 58,
+        "sufficient": 0,
+        "unresolved": 14
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 16,
+        "sufficient": 0,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 66,
+        "sufficient": 0,
+        "unresolved": 6
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 32,
+        "sufficient": 0,
+        "unresolved": 40
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 64,
+        "sufficient": 0,
+        "unresolved": 8
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 0,
+        "sufficient": 4,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 0,
+        "sufficient": 6,
+        "unresolved": 66
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 0,
+        "sufficient": 8,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 0,
+        "sufficient": 13,
+        "unresolved": 59
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 0,
+        "sufficient": 16,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 0,
+        "sufficient": 22,
+        "unresolved": 50
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 3,
+        "sufficient": 28,
+        "unresolved": 41
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 6,
+        "sufficient": 31,
+        "unresolved": 35
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 19,
+        "sufficient": 44,
+        "unresolved": 9
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 23,
+        "sufficient": 47,
+        "unresolved": 2
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 4,
+        "sufficient": 0,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 39,
+        "sufficient": 0,
+        "unresolved": 33
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 8,
+        "sufficient": 0,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 43,
+        "sufficient": 0,
+        "unresolved": 29
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 16,
+        "sufficient": 0,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 65,
+        "sufficient": 0,
+        "unresolved": 7
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 32,
+        "sufficient": 0,
+        "unresolved": 40
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 64,
+        "sufficient": 0,
+        "unresolved": 8
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 2,
+        "sufficient": 2,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 2,
+        "sufficient": 4,
+        "unresolved": 66
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 6,
+        "sufficient": 2,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 6,
+        "sufficient": 4,
+        "unresolved": 62
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 14,
+        "sufficient": 2,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 14,
+        "sufficient": 4,
+        "unresolved": 54
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 27,
+        "sufficient": 5,
+        "unresolved": 40
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 28,
+        "sufficient": 6,
+        "unresolved": 38
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 43,
+        "sufficient": 21,
+        "unresolved": 8
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 4,
+        "sufficient": 0,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 4,
+        "sufficient": 0,
+        "unresolved": 68
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 8,
+        "sufficient": 0,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 8,
+        "sufficient": 0,
+        "unresolved": 64
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 16,
+        "sufficient": 0,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 16,
+        "sufficient": 0,
+        "unresolved": 56
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 32,
+        "sufficient": 0,
+        "unresolved": 40
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 70,
+        "sufficient": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 64,
+        "sufficient": 0,
+        "unresolved": 8
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 3,
+        "sufficient": 1,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 3,
+        "sufficient": 1,
+        "unresolved": 68
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 7,
+        "sufficient": 1,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 7,
+        "sufficient": 1,
+        "unresolved": 64
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 15,
+        "sufficient": 1,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 15,
+        "sufficient": 1,
+        "unresolved": 56
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 31,
+        "sufficient": 1,
+        "unresolved": 40
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 31,
+        "sufficient": 1,
+        "unresolved": 40
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 49,
+        "sufficient": 15,
+        "unresolved": 8
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 49,
+        "sufficient": 15,
+        "unresolved": 8
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 4,
+        "sufficient": 0,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 4,
+        "sufficient": 0,
+        "unresolved": 68
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 8,
+        "sufficient": 0,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 8,
+        "sufficient": 0,
+        "unresolved": 64
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 16,
+        "sufficient": 0,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 16,
+        "sufficient": 0,
+        "unresolved": 56
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 32,
+        "sufficient": 0,
+        "unresolved": 40
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 32,
+        "sufficient": 0,
+        "unresolved": 40
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 64,
+        "sufficient": 0,
+        "unresolved": 8
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 2,
+        "sufficient": 2,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 2,
+        "sufficient": 2,
+        "unresolved": 68
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 6,
+        "sufficient": 2,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 6,
+        "sufficient": 2,
+        "unresolved": 64
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 14,
+        "sufficient": 2,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 14,
+        "sufficient": 2,
+        "unresolved": 56
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 25,
+        "sufficient": 7,
+        "unresolved": 40
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 25,
+        "sufficient": 8,
+        "unresolved": 39
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 41,
+        "sufficient": 23,
+        "unresolved": 8
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 41,
+        "sufficient": 24,
+        "unresolved": 7
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 8,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 4,
+        "sufficient": 0,
+        "unresolved": 68
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 38,
+        "sufficient": 0,
+        "unresolved": 34
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 16,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 8,
+        "sufficient": 0,
+        "unresolved": 64
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 58,
+        "sufficient": 0,
+        "unresolved": 14
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 32,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 16,
+        "sufficient": 0,
+        "unresolved": 56
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 66,
+        "sufficient": 0,
+        "unresolved": 6
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 64,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 32,
+        "sufficient": 0,
+        "unresolved": 40
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 128,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 64,
+        "sufficient": 0,
+        "unresolved": 8
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 256,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 512,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    }
+  ],
+  "wall_budgets": [
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 9,
+        "sufficient": 33,
+        "unresolved": 30
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 10,
+        "sufficient": 35,
+        "unresolved": 27
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 44,
+        "sufficient": 0,
+        "unresolved": 28
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 32,
+        "sufficient": 11,
+        "unresolved": 29
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 33,
+        "sufficient": 12,
+        "unresolved": 27
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 44,
+        "sufficient": 0,
+        "unresolved": 28
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 38,
+        "sufficient": 4,
+        "unresolved": 30
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 37,
+        "sufficient": 3,
+        "unresolved": 32
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 41,
+        "sufficient": 0,
+        "unresolved": 31
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 57,
+        "sufficient": 0,
+        "unresolved": 15
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 30,
+        "sufficient": 13,
+        "unresolved": 29
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 30,
+        "sufficient": 12,
+        "unresolved": 30
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 43,
+        "sufficient": 0,
+        "unresolved": 29
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 0,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 8,
+        "sufficient": 33,
+        "unresolved": 31
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 10,
+        "sufficient": 35,
+        "unresolved": 27
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 42,
+        "sufficient": 0,
+        "unresolved": 30
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 33,
+        "sufficient": 11,
+        "unresolved": 28
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 34,
+        "sufficient": 12,
+        "unresolved": 26
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 44,
+        "sufficient": 0,
+        "unresolved": 28
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 38,
+        "sufficient": 4,
+        "unresolved": 30
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 38,
+        "sufficient": 4,
+        "unresolved": 30
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 42,
+        "sufficient": 0,
+        "unresolved": 30
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 57,
+        "sufficient": 0,
+        "unresolved": 15
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 30,
+        "sufficient": 13,
+        "unresolved": 29
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 30,
+        "sufficient": 12,
+        "unresolved": 30
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 44,
+        "sufficient": 0,
+        "unresolved": 28
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 1,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 8,
+        "sufficient": 33,
+        "unresolved": 31
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 10,
+        "sufficient": 35,
+        "unresolved": 27
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.0,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 24,
+        "sufficient": 48,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 42,
+        "sufficient": 0,
+        "unresolved": 30
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "two_rate",
+      "rho": 0.03,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 33,
+        "sufficient": 11,
+        "unresolved": 28
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 34,
+        "sufficient": 12,
+        "unresolved": 26
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.0,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 47,
+        "sufficient": 25,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 43,
+        "sufficient": 0,
+        "unresolved": 29
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "wide_rate",
+      "rho": 0.03,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 38,
+        "sufficient": 4,
+        "unresolved": 30
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 37,
+        "sufficient": 4,
+        "unresolved": 31
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.0,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 54,
+        "sufficient": 18,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 42,
+        "sufficient": 0,
+        "unresolved": 30
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 59,
+        "sufficient": 0,
+        "unresolved": 13
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "uniform",
+      "rho": 0.03,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 31,
+        "sufficient": 13,
+        "unresolved": 28
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 30,
+        "sufficient": 13,
+        "unresolved": 29
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.0,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 45,
+        "sufficient": 27,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 0.25,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 44,
+        "sufficient": 0,
+        "unresolved": 28
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 0.5,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 1.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 2.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 4.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 8.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 16.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "repetition": 2,
+      "scenario": "logwide",
+      "rho": 0.03,
+      "budget": 32.0,
+      "pointwise": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      },
+      "reuse": {
+        "unbounded": 1,
+        "insufficient": 72,
+        "sufficient": 0,
+        "unresolved": 0
+      }
+    }
+  ],
+  "opposite_or_lost_final_labels": 0,
+  "earliest_sufficient_changes": 0,
+  "cautions": [
+    "Own classical-framework adaptation with shared oracle; not external author software comparison",
+    "Four reused synthetic observation sets, not 584 independent experiments",
+    "Some tasks are slower; no universal speedup or improved physical point prediction",
+    "Same-developer 80-digit replay, not external review or directed rounding"
+  ]
+}

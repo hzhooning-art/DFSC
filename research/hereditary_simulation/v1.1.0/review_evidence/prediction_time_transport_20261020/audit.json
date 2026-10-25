@@ -1,0 +1,22 @@
+{
+  "schema": "P4-time-transport-audit-v1",
+  "all_checks_pass": true,
+  "result_sha256": "4a70a387688b71981dced146c40ed58ac907586859f54a94f2662b39ad006219",
+  "checked_lp_replays": 5020,
+  "maximum_replay_residual": 5.154044302457805e-09,
+  "accepted_joint_estimate_checks": 3696,
+  "off_grid_and_endpoint_time_cell_checks": 2400,
+  "whole_time_cell_records": {
+    "sufficient": 6,
+    "insufficient": 474
+  },
+  "varying_predictor_cell_records": 2,
+  "opposite_decisive_labels": 0,
+  "lost_resolved_candidates": 0,
+  "independent_observation_sets": 12,
+  "synthetic_generating_spectra": 4,
+  "same_developer_audit": true,
+  "independent_external_review": false,
+  "directed_rounding_certificate": false,
+  "actually_submitted": false
+}

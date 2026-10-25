@@ -1,0 +1,29 @@
+{
+  "all_numerical_checks_passed": true,
+  "source_xml_replay_passed": true,
+  "unmodified_measured_source_pairs": 251,
+  "source_fitted_columns_used": false,
+  "lp_replays": 180,
+  "physical_witnesses_at_80_digits": 180,
+  "finite_cells_at_80_digits": 2265,
+  "infinite_tails_at_80_digits": 180,
+  "max_lp_residual": 8.211079082290351e-10,
+  "result_sha256": "dfc2e5411165aa467a74664a5a55844f68c16b72fb9131acbd8ef791564f8aff",
+  "accepted_exploratory_cells": [
+    {
+      "temperature_K": 313,
+      "window_fraction": 0.25,
+      "band_fraction": 0.01,
+      "target_seconds": 42501.918,
+      "relative_error": 0.021148822348251623
+    }
+  ],
+  "unique_physical_target_values": 15,
+  "window_specific_tasks_before_repeated_band_sensitivity": 30,
+  "reported_correlated_sensitivity_requests": 90,
+  "independent_replicate_specimens_available": false,
+  "assumed_noise_bands_independently_calibrated": false,
+  "calibrated_real_material_validation": false,
+  "conditional_feasibility_positive_example": true,
+  "scope": "One successful assumed-band cell and complete retained grid. This is not a success rate, a calibrated deterministic material guarantee, or superiority over classical continuous LP/point fits."
+}
